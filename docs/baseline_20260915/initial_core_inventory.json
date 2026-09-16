@@ -1,0 +1,60 @@
+{
+  "src": {
+    "disk_files": 54,
+    "disk_bytes": 495540,
+    "git_candidates": 54,
+    "candidate_bytes": 495540
+  },
+  "scripts": {
+    "disk_files": 100,
+    "disk_bytes": 948025,
+    "git_candidates": 77,
+    "candidate_bytes": 582874
+  },
+  "cases": {
+    "disk_files": 94,
+    "disk_bytes": 17480650,
+    "git_candidates": 94,
+    "candidate_bytes": 17480650
+  },
+  "tests": {
+    "disk_files": 0,
+    "disk_bytes": 0,
+    "git_candidates": 0,
+    "candidate_bytes": 0
+  },
+  "docs": {
+    "disk_files": 32,
+    "disk_bytes": 170450,
+    "git_candidates": 32,
+    "candidate_bytes": 170450
+  },
+  "README.md": {
+    "files": 1,
+    "bytes": 5770
+  },
+  "AGENTS.md": {
+    "files": 1,
+    "bytes": 2356
+  },
+  "PROJECT_STATE.md": {
+    "files": 1,
+    "bytes": 3721
+  },
+  "VERSION": {
+    "files": 1,
+    "bytes": 26
+  },
+  ".gitignore": {
+    "files": 1,
+    "bytes": 360
+  },
+  "TPSolverV2.sln": {
+    "files": 1,
+    "bytes": 1050
+  },
+  "TPSolverV2.vfproj": {
+    "files": 1,
+    "bytes": 6108
+  }
+}

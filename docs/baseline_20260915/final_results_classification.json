@@ -1,0 +1,194 @@
+[
+  {
+    "path": "final_results/data/analytic_convergence.csv",
+    "bytes": 892,
+    "sha256": "d1916ae448632fbc77619cbc86818a42b68a6a9ec747eedf6cf2f219aa93f54e",
+    "status": "HISTORICAL",
+    "scope": "Analytic-only asset: not invalidated solely by hole geometry, not revalidated here",
+    "include": false
+  },
+  {
+    "path": "final_results/data/analytic_residuals.csv",
+    "bytes": 211,
+    "sha256": "47f0a1c1414d2e7aa366688bf0248d88b5cdc0c2e284497ddca032cecfbfaf26",
+    "status": "HISTORICAL",
+    "scope": "Analytic-only asset: not invalidated solely by hole geometry, not revalidated here",
+    "include": false
+  },
+  {
+    "path": "final_results/data/G12_R090_L2_nodal.dat",
+    "bytes": 324720,
+    "sha256": "45299206e20111b82fc0a4cccb760348847dd59421a69075a441d54145072169",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/data/hole_r090_l2_continuation.csv",
+    "bytes": 1238,
+    "sha256": "a2632a8f635471ab06c90ee6fba88719b49b2b1b1cb7969aa2e3ec3f38a867f4",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/data/hole_r090_l2_top_nodes.csv",
+    "bytes": 86142,
+    "sha256": "a4167efaa09f100c7c1fcea5414f02342b581808792ae33f6a0e72300a98ee21",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/data/radius_matrix_contrasts.csv",
+    "bytes": 811,
+    "sha256": "8a0d6be5612d5d2f038b1f2187a0fb1010b422ef2ac76748acc3332958af67ad",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_1_analytic_validation.pdf",
+    "bytes": 56589,
+    "sha256": "0dd9e9079a3d6e520d1316c86587c37576478cdfdbbd248aecc39240f9ccba41",
+    "status": "HISTORICAL",
+    "scope": "Analytic-only asset: not invalidated solely by hole geometry, not revalidated here",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_1_analytic_validation.png",
+    "bytes": 171798,
+    "sha256": "5028aec7f539ff5dba6b22d494cda56eb515f21e33797ac6e304d1737665c14c",
+    "status": "HISTORICAL",
+    "scope": "Analytic-only asset: not invalidated solely by hole geometry, not revalidated here",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_1_analytic_validation.svg",
+    "bytes": 108464,
+    "sha256": "ab9be51b79c48a131aa9559376ed2134dc9c9b5597f9d57b50efcddcb8e70f79",
+    "status": "HISTORICAL",
+    "scope": "Analytic-only asset: not invalidated solely by hole geometry, not revalidated here",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_1_analytic_validation.tiff",
+    "bytes": 1014480,
+    "sha256": "7323db04be9c50ae0d6c72a681078e1501f5e2d768ef72ecda6d3aeadcc64b85",
+    "status": "HISTORICAL",
+    "scope": "Analytic-only asset: not invalidated solely by hole geometry, not revalidated here",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_2_nonlinear_hole_fields.pdf",
+    "bytes": 118927,
+    "sha256": "549150edcc499df342b7e1c93673e95ed06e2cb07b9101073f510519e806c8fd",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_2_nonlinear_hole_fields.png",
+    "bytes": 464423,
+    "sha256": "968053f2c4f8f2a740c957a9bcdf414569d9a469c8f60dd5249394e21f2e3c40",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_2_nonlinear_hole_fields.svg",
+    "bytes": 364632,
+    "sha256": "d49e675521dd5538fcd3a5a7c8586379ebca046a577a03f058cf6ab2406e59ce",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_2_nonlinear_hole_fields.tiff",
+    "bytes": 2801604,
+    "sha256": "09d79df523f107f4e0213c0a0a075c73522105d07991b303a02a9a134b7c8973",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_3_radius_matrix.pdf",
+    "bytes": 46776,
+    "sha256": "e2a7a30e412c4c1bf57c63dbe1a4b53025e62a918c7a40e8156e4b51c34391f6",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_3_radius_matrix.png",
+    "bytes": 189923,
+    "sha256": "b1a744796ac9753d8bd6113280e054c2bfe4289136b8dff11b3116defce3acea",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_3_radius_matrix.svg",
+    "bytes": 43618,
+    "sha256": "ccb612c0d37ce6771936d50c6b2373a90b6b6ae54732f92c6709e08b93344ca4",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/figures/figure_3_radius_matrix.tiff",
+    "bytes": 949740,
+    "sha256": "d3b19138034115d6e7207be4bdfdc1784d504d6a419f70fdf6b8cc0dce2d192a",
+    "status": "SUPERSEDED",
+    "scope": "Old graded-hole field/radius/continuation asset; forbidden as current physical evidence",
+    "include": false
+  },
+  {
+    "path": "final_results/final_validation_report.md",
+    "bytes": 10132,
+    "sha256": "b7a94df30c1733bb05632e2f50ca7887b9bcfecdaf3f0ef5d6bfa39e53fb9eb3",
+    "status": "HISTORICAL",
+    "scope": "Mixed report/provenance: old hole claims SUPERSEDED",
+    "include": false
+  },
+  {
+    "path": "final_results/interview_project_guide_zh.md",
+    "bytes": 30140,
+    "sha256": "1bd4b9abab699c47429a2bb865f68ca14baa5baf744fed3db3abc5483ca523d2",
+    "status": "HISTORICAL",
+    "scope": "Mixed report/provenance: old hole claims SUPERSEDED",
+    "include": false
+  },
+  {
+    "path": "final_results/qa/figure_manifest.json",
+    "bytes": 1870,
+    "sha256": "cb88613a95eed06ac2982c09312a1c8ec44a21a203bcb3bd0b1f36e49246e0ed",
+    "status": "HISTORICAL",
+    "scope": "Mixed report/provenance: old hole claims SUPERSEDED",
+    "include": true
+  },
+  {
+    "path": "final_results/qa/visual_qa.md",
+    "bytes": 1761,
+    "sha256": "e22b9e412ca4bd9fe9ed36c00cf4fd8c91948f54a47f364c9f072a473cd5c33d",
+    "status": "HISTORICAL",
+    "scope": "Mixed report/provenance: old hole claims SUPERSEDED",
+    "include": false
+  },
+  {
+    "path": "final_results/README.md",
+    "bytes": 1207,
+    "sha256": "285107ea37b2253a36e4adb8f3a57b250e56014995ef625d5825025f4f3a0170",
+    "status": "HISTORICAL",
+    "scope": "Mixed report/provenance: old hole claims SUPERSEDED",
+    "include": true
+  },
+  {
+    "path": "final_results/resume_force_gate_assessment_zh.md",
+    "bytes": 11535,
+    "sha256": "d7425f10824b8e052fd99232e44aaecafba8f746fb77edff278451e60800c88e",
+    "status": "HISTORICAL",
+    "scope": "Mixed report/provenance: old hole claims SUPERSEDED",
+    "include": false
+  }
+]

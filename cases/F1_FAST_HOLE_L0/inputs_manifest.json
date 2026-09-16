@@ -1,0 +1,24 @@
+{
+  "purpose": "Fast presentation matrix; not final L2 mesh acceptance.",
+  "mesh_level": "L0",
+  "models": [
+    "LQ",
+    "N0",
+    "NT"
+  ],
+  "geometries": [
+    "H0",
+    "H1"
+  ],
+  "voltage_V": 3.0,
+  "cases": [
+    "FAST_H0_LQ_L0.nml",
+    "FAST_H0_N0_L0.nml",
+    "FAST_H0_NT_L0.nml",
+    "FAST_H1_LQ_L0.nml",
+    "FAST_H1_N0_L0.nml",
+    "FAST_H1_NT_L0.nml"
+  ],
+  "same_mesh_within_geometry": true,
+  "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED"
+}

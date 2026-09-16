@@ -1,0 +1,30 @@
+{
+  "backend": "python-matplotlib",
+  "source_files": {
+    "G05_run_1.txt": "d3dda00d1c79f47c8066585fd48b0d45b1f98dc9665562790064b167b42c84c3",
+    "G12_run_1.txt": "f5a6dfb8d280f99d599f8928f7eddaa27acac6ed445320adaec8484f65d3cf09",
+    "G12_R090_L2_nodal.dat": "45299206e20111b82fc0a4cccb760348847dd59421a69075a441d54145072169"
+  },
+  "hole_run": {
+    "run_result": "PASS",
+    "node_count": 1056,
+    "element_count": 128,
+    "accepted_points": 8,
+    "rejected_attempts": 0,
+    "maximum_balance_defect": 2.2134733221585316e-16
+  },
+  "outputs": {
+    "figure_1_analytic_validation.svg": "ab9be51b79c48a131aa9559376ed2134dc9c9b5597f9d57b50efcddcb8e70f79",
+    "figure_1_analytic_validation.pdf": "0dd9e9079a3d6e520d1316c86587c37576478cdfdbbd248aecc39240f9ccba41",
+    "figure_1_analytic_validation.png": "5028aec7f539ff5dba6b22d494cda56eb515f21e33797ac6e304d1737665c14c",
+    "figure_1_analytic_validation.tiff": "7323db04be9c50ae0d6c72a681078e1501f5e2d768ef72ecda6d3aeadcc64b85",
+    "figure_2_nonlinear_hole_fields.svg": "d49e675521dd5538fcd3a5a7c8586379ebca046a577a03f058cf6ab2406e59ce",
+    "figure_2_nonlinear_hole_fields.pdf": "549150edcc499df342b7e1c93673e95ed06e2cb07b9101073f510519e806c8fd",
+    "figure_2_nonlinear_hole_fields.png": "968053f2c4f8f2a740c957a9bcdf414569d9a469c8f60dd5249394e21f2e3c40",
+    "figure_2_nonlinear_hole_fields.tiff": "09d79df523f107f4e0213c0a0a075c73522105d07991b303a02a9a134b7c8973",
+    "figure_3_radius_matrix.svg": "ccb612c0d37ce6771936d50c6b2373a90b6b6ae54732f92c6709e08b93344ca4",
+    "figure_3_radius_matrix.pdf": "e2a7a30e412c4c1bf57c63dbe1a4b53025e62a918c7a40e8156e4b51c34391f6",
+    "figure_3_radius_matrix.png": "b1a744796ac9753d8bd6113280e054c2bfe4289136b8dff11b3116defce3acea",
+    "figure_3_radius_matrix.tiff": "d3b19138034115d6e7207be4bdfdc1784d504d6a419f70fdf6b8cc0dce2d192a"
+  }
+}

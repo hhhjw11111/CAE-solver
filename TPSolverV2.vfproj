@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{E0F5E015-731A-45A0-954E-6DB61CEAE8B2}">
+	<Platforms>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Debug|x64" UseCompiler="ifxCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalLibraryDirectories="C:\Program Files (x86)\Intel\oneAPI\mkl\latest\lib" AdditionalDependencies="mkl_intel_lp64.lib mkl_sequential.lib mkl_core.lib"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+		<Configuration Name="Release|x64" UseCompiler="ifxCompiler">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Optimization="optimizeMaxSpeed" WarnInterfaces="true" Traceback="true" RuntimeLibrary="rtMultiThreaded"/>
+			<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" AdditionalLibraryDirectories="C:\Program Files (x86)\Intel\oneAPI\mkl\latest\lib" AdditionalDependencies="mkl_intel_lp64.lib mkl_sequential.lib mkl_core.lib"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="Core" Filter="f90">
+			<File RelativePath=".\src\core\kinds_m.f90"/>
+			<File RelativePath=".\src\core\constants_m.f90"/>
+			<File RelativePath=".\src\core\status_m.f90"/>
+			<File RelativePath=".\src\core\field_layout_m.f90"/>
+			<File RelativePath=".\src\core\model_types_m.f90"/>
+			<File RelativePath=".\src\core\build_info_m.f90"/>
+		</Filter>
+		<Filter Name="IO" Filter="f90">
+			<File RelativePath=".\src\io\input_schema_m.f90"/>
+			<File RelativePath=".\src\io\native_input_m.f90"/>
+		</Filter>
+		<Filter Name="Physics" Filter="f90">
+			<File RelativePath=".\src\physics\equilibrium_m.f90"/>
+			<File RelativePath=".\src\physics\reference_material_m.f90"/>
+			<File RelativePath=".\src\physics\transport_m.f90"/>
+			<File RelativePath=".\src\physics\recombination_m.f90"/>
+			<File RelativePath=".\src\physics\thermo_piezo_m.f90"/>
+			<File RelativePath=".\src\physics\material_point_m.f90"/>
+		</Filter>
+		<Filter Name="Mesh" Filter="f90">
+			<File RelativePath=".\src\mesh\mesh_types_m.f90"/>
+			<File RelativePath=".\src\mesh\boundary_topology_m.f90"/>
+			<File RelativePath=".\src\mesh\hex20_shape_m.f90"/>
+			<File RelativePath=".\src\mesh\hex20_quadrature_m.f90"/>
+			<File RelativePath=".\src\mesh\dof_map_m.f90"/>
+			<File RelativePath=".\src\mesh\mesh_checks_m.f90"/>
+		</Filter>
+		<Filter Name="FEM" Filter="f90">
+			<File RelativePath=".\src\fem\element_kernel_m.f90"/>
+			<File RelativePath=".\src\fem\sparse_pattern_m.f90"/>
+			<File RelativePath=".\src\fem\dirichlet_m.f90"/>
+			<File RelativePath=".\src\fem\global_assembly_m.f90"/>
+		</Filter>
+		<Filter Name="Linear" Filter="f90">
+			<File RelativePath=".\src\linear\pardiso_solver_m.f90"/>
+		</Filter>
+		<Filter Name="Nonlinear" Filter="f90">
+			<File RelativePath=".\src\nonlinear\scaling_m.f90"/>
+			<File RelativePath=".\src\nonlinear\newton_solver_m.f90"/>
+			<File RelativePath=".\src\nonlinear\continuation_solver_m.f90"/>
+		</Filter>
+		<Filter Name="Problems" Filter="f90">
+			<File RelativePath=".\src\problems\reference_bar_problem_m.f90"/>
+		</Filter>
+		<Filter Name="Post" Filter="f90">
+			<File RelativePath=".\src\post\balance_audit_m.f90"/>
+			<File RelativePath=".\src\post\independent_flux_audit_m.f90"/>
+			<File RelativePath=".\src\post\field_metrics_m.f90"/>
+			<File RelativePath=".\src\post\result_writer_m.f90"/>
+		</Filter>
+		<Filter Name="Verification" Filter="f90">
+			<File RelativePath=".\src\verification\material_tangent_check_m.f90"/>
+			<File RelativePath=".\src\verification\element_tangent_check_m.f90"/>
+			<File RelativePath=".\src\verification\global_assembly_check_m.f90"/>
+			<File RelativePath=".\src\verification\global_block_jacobian_check_m.f90"/>
+			<File RelativePath=".\src\verification\linear_solver_check_m.f90"/>
+			<File RelativePath=".\src\verification\m0_benchmark_m.f90"/>
+			<File RelativePath=".\src\verification\a1_joint_check_m.f90"/>
+			<File RelativePath=".\src\verification\a2_hole_check_m.f90"/>
+			<File RelativePath=".\src\app\f1_case_runner_m.f90"/>
+			<File RelativePath=".\src\physics\zno_candidate_m.f90"/>
+			<File RelativePath=".\src\verification\analytic_benchmarks_m.f90"/>
+			<File RelativePath=".\src\verification\newton_solver_check_m.f90"/>
+			<File RelativePath=".\src\verification\continuation_solver_check_m.f90"/>
+			<File RelativePath=".\src\verification\center_hole_check_m.f90"/>
+			<File RelativePath=".\src\verification\mesh_convergence_check_m.f90"/>
+			<File RelativePath=".\src\verification\matched_control_check_m.f90"/>
+			<File RelativePath=".\src\verification\radius_matrix_check_m.f90"/>
+			<File RelativePath=".\src\verification\production_joule_check_m.f90"/>
+			<File RelativePath=".\src\verification\verification_driver_m.f90"/>
+		</Filter>
+		<Filter Name="Application" Filter="f90">
+			<File RelativePath=".\src\app\production_runner_m.f90"/>
+			<File RelativePath=".\src\app\main.f90"/>
+		</Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>

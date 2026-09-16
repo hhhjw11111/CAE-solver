@@ -1,0 +1,101 @@
+{
+  "utc": "2026-09-15T14:49:31.632048+00:00",
+  "checks": [
+    {
+      "args": [
+        "version"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "version.txt",
+      "sha256": "d9771b927a2802053df9894a56619f30be8d91ef58bc64f7b86928e11b995458"
+    },
+    {
+      "args": [
+        "verify",
+        "V01"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_V01.txt",
+      "sha256": "7728bb6596ca6abc753da218004d12391424be379355c0c33ce0e47a47ec3952"
+    },
+    {
+      "args": [
+        "verify",
+        "G02"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_G02.txt",
+      "sha256": "47e11849695ee252265d75b4664b3d674641e95627f18c8bf2c6bfe0aae1a044"
+    },
+    {
+      "args": [
+        "verify",
+        "G03"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_G03.txt",
+      "sha256": "bdd5f822a88c58ff9c4f479ddef6d7215c6617a3d094e8d5a715dd1445327001"
+    },
+    {
+      "args": [
+        "verify",
+        "G04"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_G04.txt",
+      "sha256": "aa0bd3297975b557bc1fd4bda30758ce80c8e76d0b73d25e8fd45b0546d3fa3a"
+    },
+    {
+      "args": [
+        "verify",
+        "L01"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_L01.txt",
+      "sha256": "65a3784984f25248c2265907308c2c69208b3cc750751c969f867f0b0be1435d"
+    },
+    {
+      "args": [
+        "verify",
+        "G06"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_G06.txt",
+      "sha256": "7474584768911ad0927a3c211bc5525e8f8b941278ea3c61c9193bce55ae5020"
+    },
+    {
+      "args": [
+        "verify",
+        "G07"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_G07.txt",
+      "sha256": "d289ff60e40d0e65f7e68577917d0c126fb4e6589c8c8f453c87b5676c047c17"
+    },
+    {
+      "args": [
+        "verify",
+        "G08"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "log": "verify_G08.txt",
+      "sha256": "c0c6d21901062db9b04d9ce3bef51f9b419e524c2c27107e137dc34eed72b6d0"
+    }
+  ],
+  "environment": {
+    "TPS_PARDISO_STORAGE": "UNSET",
+    "OMP_NUM_THREADS": "UNSET",
+    "MKL_NUM_THREADS": "UNSET",
+    "MKL_DYNAMIC": "UNSET",
+    "KMP_AFFINITY": "UNSET"
+  }
+}

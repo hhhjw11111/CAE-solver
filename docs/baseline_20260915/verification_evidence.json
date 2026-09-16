@@ -1,0 +1,146 @@
+[
+  {
+    "verification_id": "V01",
+    "path": "docs/baseline_20260915/verify_V01.txt",
+    "bytes": 533,
+    "sha256": "7728bb6596ca6abc753da218004d12391424be379355c0c33ce0e47a47ec3952",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "HEX20 shape/quadrature"
+  },
+  {
+    "verification_id": "G02",
+    "path": "docs/baseline_20260915/verify_G02.txt",
+    "bytes": 818,
+    "sha256": "47e11849695ee252265d75b4664b3d674641e95627f18c8bf2c6bfe0aae1a044",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "material tangent"
+  },
+  {
+    "verification_id": "G03",
+    "path": "docs/baseline_20260915/verify_G03.txt",
+    "bytes": 606,
+    "sha256": "bdd5f822a88c58ff9c4f479ddef6d7215c6617a3d094e8d5a715dd1445327001",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "element Jacobian"
+  },
+  {
+    "verification_id": "G04",
+    "path": "docs/baseline_20260915/verify_G04.txt",
+    "bytes": 637,
+    "sha256": "aa0bd3297975b557bc1fd4bda30758ce80c8e76d0b73d25e8fd45b0546d3fa3a",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "global assembly"
+  },
+  {
+    "verification_id": "L01",
+    "path": "docs/baseline_20260915/verify_L01.txt",
+    "bytes": 499,
+    "sha256": "65a3784984f25248c2265907308c2c69208b3cc750751c969f867f0b0be1435d",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "PARDISO/linear solve"
+  },
+  {
+    "verification_id": "G06",
+    "path": "docs/baseline_20260915/verify_G06.txt",
+    "bytes": 5077,
+    "sha256": "7474584768911ad0927a3c211bc5525e8f8b941278ea3c61c9193bce55ae5020",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "global block Jacobian"
+  },
+  {
+    "verification_id": "G07",
+    "path": "docs/baseline_20260915/verify_G07.txt",
+    "bytes": 4867,
+    "sha256": "d289ff60e40d0e65f7e68577917d0c126fb4e6589c8c8f453c87b5676c047c17",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "Newton"
+  },
+  {
+    "verification_id": "G08",
+    "path": "docs/baseline_20260915/verify_G08.txt",
+    "bytes": 6117,
+    "sha256": "c0c6d21901062db9b04d9ce3bef51f9b419e524c2c27107e137dc34eed72b6d0",
+    "status": "CURRENT_SMOKE_PASS",
+    "why_needed": "continuation"
+  },
+  {
+    "verification_id": "G10",
+    "path": "runs/20260906_REPAIRED_CORE_0132/G10_run_1.txt",
+    "bytes": 2934,
+    "sha256": "dbf040674d66e289582d9e543dc58758ace72e388123fb07c175c789d3efeebb",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Frozen mesh convergence scalar values"
+  },
+  {
+    "verification_id": "geometry",
+    "path": "runs/20260906_REPAIRED_CORE_0132/geometry_G10_mesh_convergence_L2.json",
+    "bytes": 2660,
+    "sha256": "b4a702eaab8faee510490de95d14469ef6167c55c19b7b0f2e44c9d21edc5939",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Independent volume and boundary-trace sampled Jacobians"
+  },
+  {
+    "verification_id": "geometry negative control",
+    "path": "runs/20260906_REPAIRED_CORE_0132/old_mesh_negative_control.txt",
+    "bytes": 113,
+    "sha256": "ac598a399db80026af2f3415aea002a9bdd1e58bddc00bf197ac8c4a034aea74",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Expected rejection; not a positive PASS log"
+  },
+  {
+    "verification_id": "repair summary",
+    "path": "runs/20260906_REPAIRED_CORE_0132/repaired_validation_report.md",
+    "bytes": 4660,
+    "sha256": "6be528e6678e32bff61b855a1b27e94a88089c40e3da7f62d9b4eec5f3869715",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Frozen acceptance scope and known limitations"
+  },
+  {
+    "verification_id": "repair provenance",
+    "path": "runs/20260906_REPAIRED_CORE_0132/repaired_evidence_audit.json",
+    "bytes": 67341,
+    "sha256": "d2f1199a6a8021e248674b96a88086442dec5ed86327ded9ad36ded6000790c9",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Source/executable/input hash checks"
+  },
+  {
+    "verification_id": "repair build",
+    "path": "runs/20260906_REPAIRED_CORE_0132/build_manifest.json",
+    "bytes": 19897,
+    "sha256": "d24337bf419018f94ec4b27606b4a06527d8d4e7251efe95e14c45dfd4f73382",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Historical source identity"
+  },
+  {
+    "verification_id": "repair checksums",
+    "path": "runs/20260906_REPAIRED_CORE_0132/SHA256SUMS.txt",
+    "bytes": 10954,
+    "sha256": "74e3ed5e4282c6f206bf15c44276b8db4682792c0149ae451fde585a314197df",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Original inventory, includes omitted local artifacts"
+  },
+  {
+    "verification_id": "A1",
+    "path": "runs/F1_20260906/A1/A1_stdout.txt",
+    "bytes": 2570,
+    "sha256": "b88729ccaadd18de5976e07fa2dde65e3da94850e44280e807f1a7dcd8978f5e",
+    "status": "FROZEN_HISTORICAL_PASS",
+    "why_needed": "Analytic convergence/errors/reference numerical values"
+  },
+  {
+    "verification_id": "A2",
+    "path": "runs/F1_20260906/A2/A2_stdout.txt",
+    "bytes": 1452,
+    "sha256": "bcfe57a790cf8be2d07552f608eead9f568ce31ddd0bd475bd9afb0aa480b222",
+    "status": "FROZEN_HISTORICAL_PASS",
+    "why_needed": "Analytic convergence/errors/reference numerical values"
+  },
+  {
+    "verification_id": "A1/A2 build",
+    "path": "runs/F1_20260906/evidence/analytic_build_manifest.json",
+    "bytes": 20822,
+    "sha256": "d5ecb390dc7cbb4b3fd13e814c348fc1b6708d60b1032d8e3b1eba4b7f1dab58",
+    "status": "FROZEN_HISTORICAL",
+    "why_needed": "Analytic build source/executable identities"
+  }
+]

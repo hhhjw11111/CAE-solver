@@ -1,0 +1,1292 @@
+[
+  {
+    "path": "cases/F1_20260906/H0_L2.mesh",
+    "bytes": 3262984,
+    "sha256": "f54b040a8129a71013be6c4a86da357e84f5599650df40e3d3e5030b301c585a",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_20260906/H1_L0.mesh",
+    "bytes": 1041614,
+    "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_20260906/H1_L1.mesh",
+    "bytes": 2176898,
+    "sha256": "44dd715220df77a2bf93be1cb8d38effab7741f6fa8361cfdf25e3f674ad867f",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_20260906/H1_L2.mesh",
+    "bytes": 3818976,
+    "sha256": "48a0ebdb3cbf3c30ed4624af11c3d53e063577ff0724ff81860c12a283f055cf",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_20260906/MAIN_H0_LQ_L2.nml",
+    "bytes": 666,
+    "sha256": "906aaa854e994f782f4ef127a933ff883105ed920f1a09abd435981ca9d403d3",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H0_L2.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "f54b040a8129a71013be6c4a86da357e84f5599650df40e3d3e5030b301c585a"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MAIN_H0_N0_L2.nml",
+    "bytes": 666,
+    "sha256": "8e8c97516e7a7bc1ed92caa4f25dfaa9930ae96d8b45f4246f47822d45d7251a",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H0_L2.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "f54b040a8129a71013be6c4a86da357e84f5599650df40e3d3e5030b301c585a"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MAIN_H0_NT_L2.nml",
+    "bytes": 666,
+    "sha256": "3818268184c207f638927141e72d3586d4118549e775430390cfa793dc1982ec",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H0_L2.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "f54b040a8129a71013be6c4a86da357e84f5599650df40e3d3e5030b301c585a"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MAIN_H1_LQ_L2.nml",
+    "bytes": 664,
+    "sha256": "51c79d52113c39e536b6b84eaee86e7ddbd0f1f4988188b9cf1834cbd37c625e",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L2.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "48a0ebdb3cbf3c30ed4624af11c3d53e063577ff0724ff81860c12a283f055cf"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MAIN_H1_N0_L2.nml",
+    "bytes": 664,
+    "sha256": "cf3e85c4e546601e8afb274895aaeaa28323c10de5c5bc995d106b8fafbc1c2b",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L2.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "48a0ebdb3cbf3c30ed4624af11c3d53e063577ff0724ff81860c12a283f055cf"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MESH_H1_NT_L0.nml",
+    "bytes": 664,
+    "sha256": "4e935c3bace883216a95ceb1b78487fa6dfaf1647640a37ac7401fa559874b18",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MESH_H1_NT_L1.nml",
+    "bytes": 664,
+    "sha256": "9a0f8930e9f75cdcfa3c38bb03438c0b51a0ec4c6c75be4120d15804557d434a",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L1.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "44dd715220df77a2bf93be1cb8d38effab7741f6fa8361cfdf25e3f674ad867f"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/MESH_H1_NT_L2.nml",
+    "bytes": 664,
+    "sha256": "b97944cf25bc68e4b31902a7fc729d22405fcba8ff8ae6a65c8b0dc5d74d7846",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L2.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "48a0ebdb3cbf3c30ed4624af11c3d53e063577ff0724ff81860c12a283f055cf"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/SMALL_H1_LQ_L0.nml",
+    "bytes": 665,
+    "sha256": "b09874be874ba1d2993d9ebcf68e1ca6b1ea77deee15a71a92092942ac010823",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/SMALL_H1_NT_L0.nml",
+    "bytes": 665,
+    "sha256": "e18e394fe0e3fa9e32f328fef5e40d19d8522f56647272c0b5b0d9ab34320dcd",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_20260906/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_20260906/inputs_manifest.json",
+    "bytes": 3420,
+    "sha256": "897f15d034e42b998abc29d06bf9150477afa6534da13e0be96280552157b0e1",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/FAST_H0_LQ_L0.nml",
+    "bytes": 666,
+    "sha256": "7c0d508968cfb0fbb279bfb8023d43e58d44ed68947b1f307e2c0a4efe4cca7e",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_FAST_HOLE_L0/H0_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "d101bc0b7a280919a1e1aab3430f1fc5cd53057e1f1dcf7046803a9d849c8544"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/FAST_H0_N0_L0.nml",
+    "bytes": 666,
+    "sha256": "c36aad2b2005c8953d7cec7d611e559238a603cb487356900312c843e52da3e7",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_FAST_HOLE_L0/H0_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "d101bc0b7a280919a1e1aab3430f1fc5cd53057e1f1dcf7046803a9d849c8544"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/FAST_H0_NT_L0.nml",
+    "bytes": 666,
+    "sha256": "fadf328625011b32db4001d28671b218da5cc315e26058feb7b4e704854726a1",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_FAST_HOLE_L0/H0_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "d101bc0b7a280919a1e1aab3430f1fc5cd53057e1f1dcf7046803a9d849c8544"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/FAST_H1_LQ_L0.nml",
+    "bytes": 664,
+    "sha256": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_FAST_HOLE_L0/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/FAST_H1_N0_L0.nml",
+    "bytes": 661,
+    "sha256": "e7f3fb0d1ab589d3e4eafd5bf3538fa7950570b37832c11e64dd437a769629ee",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_FAST_HOLE_L0/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/FAST_H1_NT_L0.nml",
+    "bytes": 664,
+    "sha256": "7cc6834a276104a90045e878420dbafb6a7ded8f5a7935f0e82ea06d51943a57",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F1_FAST_HOLE_L0/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/H0_L0.mesh",
+    "bytes": 947594,
+    "sha256": "d101bc0b7a280919a1e1aab3430f1fc5cd53057e1f1dcf7046803a9d849c8544",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/H1_L0.mesh",
+    "bytes": 1041614,
+    "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F1_FAST_HOLE_L0/inputs_manifest.json",
+    "bytes": 509,
+    "sha256": "87b62c096dee97345b9ee4296c7f830b1593ae078f3d3a8405f8ea116acedcc4",
+    "role": "KEEP_CANONICAL_PRODUCTION_L0",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_LQ_L0_V080_WARMSTART.nml",
+    "bytes": 621,
+    "sha256": "66822529fd9673177fae5f093369538c75aae1c1753b258004fb229b2b3ce7bf",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_N0_L0_V080_FROM_LQ.nml",
+    "bytes": 787,
+    "sha256": "68025bc52f63acd5ebc5298e06b000495b7d8aefdd194edd7c36fd9beac87251",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      },
+      {
+        "kind": "restart_nodes_file",
+        "path": "runs/F2_V080_MODEL_HOMOTOPY_20260909/LQ_V080/nodes.csv",
+        "exists": true,
+        "included": false,
+        "sha256": "b6516381cb6ee21b8775349f0dfdcd1f61bdf867632c860272905a29cca430a7"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_N0_L0_V080_FROM_LQ_LOG12.nml",
+    "bytes": 856,
+    "sha256": "55f1b337a3e8e1865ebc3cde7ba4d35e6f74e8fdd06c2d22c255dc744db2dee2",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      },
+      {
+        "kind": "restart_nodes_file",
+        "path": "runs/F2_V080_MODEL_HOMOTOPY_20260909/LQ_V080/nodes.csv",
+        "exists": true,
+        "included": false,
+        "sha256": "b6516381cb6ee21b8775349f0dfdcd1f61bdf867632c860272905a29cca430a7"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V060.nml",
+    "bytes": 614,
+    "sha256": "bec6c4b2320d6cc5eca2fd60566b90ecf2bc40f8960224e3ff77c40d1a8c19d4",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V070.nml",
+    "bytes": 614,
+    "sha256": "15d609e8be7144553bf6a242526a63096a9639a18d46a686c81d959bec7ae592",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V070_COUPLED.nml",
+    "bytes": 670,
+    "sha256": "ce7c5d21f0dc1c5ed3235b2da53295abe1180d66e265c69d4b36777e9e5cf364",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V070_RESTART_V060.nml",
+    "bytes": 878,
+    "sha256": "ff3e6be22a53883c134fb28170d44835af18bd0f0640c99a66dc6ed4f9ea5b8c",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      },
+      {
+        "kind": "restart_nodes_file",
+        "path": "runs/F2_NEWTON_FALLBACK_0146_20260909/V060_REGRESSION/nodes.csv",
+        "exists": true,
+        "included": false,
+        "sha256": "005bcba28591936d176e016d2ff3909b45f394b5966311b7ae2f6325f2a16d33"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V070_RESTART_V060_LOG5.nml",
+    "bytes": 978,
+    "sha256": "4a53c67018b2b778bcf6b3275bf585f9b49eeade989d7e6701459c5e85f023ef",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      },
+      {
+        "kind": "restart_nodes_file",
+        "path": "runs/F2_NEWTON_FALLBACK_0146_20260909/V060_REGRESSION/nodes.csv",
+        "exists": true,
+        "included": false,
+        "sha256": "005bcba28591936d176e016d2ff3909b45f394b5966311b7ae2f6325f2a16d33"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V080.nml",
+    "bytes": 614,
+    "sha256": "fc2f4894703c08c244bfea110de2367e5abf972dad869b62d342f02cb92a205c",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V080_FROM_LQ.nml",
+    "bytes": 787,
+    "sha256": "22ff31e170fc7e1e0275b416e497bb99db99ce840d8ba221ec35c7aaf6fa4581",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      },
+      {
+        "kind": "restart_nodes_file",
+        "path": "runs/F2_V080_MODEL_HOMOTOPY_20260909/LQ_V080/nodes.csv",
+        "exists": true,
+        "included": false,
+        "sha256": "b6516381cb6ee21b8775349f0dfdcd1f61bdf867632c860272905a29cca430a7"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V080_FROM_LQ_LOG12.nml",
+    "bytes": 856,
+    "sha256": "30fdad22a8b78c33fefaca580bd70e822dec653d5d998c8f9906a7816f64eeb4",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      },
+      {
+        "kind": "restart_nodes_file",
+        "path": "runs/F2_V080_MODEL_HOMOTOPY_20260909/LQ_V080/nodes.csv",
+        "exists": true,
+        "included": false,
+        "sha256": "b6516381cb6ee21b8775349f0dfdcd1f61bdf867632c860272905a29cca430a7"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V090.nml",
+    "bytes": 614,
+    "sha256": "68a7cf25bafe305434bf57bb815b1c39b316e269816fbaeb630df49bb6fab704",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/F2_H1_NT_L0_V100.nml",
+    "bytes": 616,
+    "sha256": "19b966d949d70afb7dca9c98797ec78cef042223954d36e43b6043b14a1614e4",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+        "exists": true,
+        "included": true,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_HIGH_VOLTAGE_20260909/H1_L0.mesh",
+    "bytes": 1041614,
+    "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+    "role": "KEEP_EXPERIMENTAL_DEFINITION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V005.nml",
+    "bytes": 667,
+    "sha256": "15e9f11120b8e7a6800ae9021f1d4cb2855836bfde2f2c61ebce72ec40ac3679",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V010.nml",
+    "bytes": 665,
+    "sha256": "325c5f90922d0cedce40251210ed2dd98eb64ed2e874d38b3e95d60f8b22b55e",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V015.nml",
+    "bytes": 667,
+    "sha256": "41981812643bb9da1c582ab318155d6f72c6a35b1f8e9b6cc266a535ac83b1d1",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V020.nml",
+    "bytes": 665,
+    "sha256": "38f44a0bd5c8bc1dc5b0aa6fc219c24eb99f4acc57bf61e965afb455000e0f92",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V025.nml",
+    "bytes": 667,
+    "sha256": "b503443612e8956460662db05d4cd8c3142c199bc08e0b7f289f07565056e8bb",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V035.nml",
+    "bytes": 667,
+    "sha256": "c3d48a628c2108ab22a4fd2766b246cb6aed46628df444ffc0f332fadd16545e",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V040.nml",
+    "bytes": 665,
+    "sha256": "655da9a243d006fa4d340107cb1ac7dd844b6f5be194cc937772fe7dc6d5367c",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V045.nml",
+    "bytes": 667,
+    "sha256": "e20f77c977846c96d537d3cc3f20b1b83ef4b67691bab348af57ddcb797bd717",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V050.nml",
+    "bytes": 665,
+    "sha256": "107e36f2828b72e44893da2f0a4e91718776dd5053251b941829140a049afdac",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+      }
+    ]
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+    "bytes": 1041614,
+    "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/inputs_manifest.json",
+    "bytes": 1352,
+    "sha256": "d7179f911ee0d18c057df7312e9765c1fb2d523a62217f4bd2fe191af90e7cf7",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_L0.mesh",
+    "bytes": 1041614,
+    "sha256": "39e0f91a5eb931c0e4a992b88251deff3ddf2e9a329f5ed5987cb27947dc4b76",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_LQ_L0.nml",
+    "bytes": 667,
+    "sha256": "9967d50a3626623a445f9f48ecddda95f5cac5ac07d8a50012dbe766de851a06",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "39e0f91a5eb931c0e4a992b88251deff3ddf2e9a329f5ed5987cb27947dc4b76"
+      }
+    ]
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_N0_L0.nml",
+    "bytes": 667,
+    "sha256": "04cfac60f1af0646ccb4948087b4b29d458d05f1411ffc106bd3c93cb082b8e6",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "39e0f91a5eb931c0e4a992b88251deff3ddf2e9a329f5ed5987cb27947dc4b76"
+      }
+    ]
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_NT_L0.nml",
+    "bytes": 667,
+    "sha256": "d8bee49af1d0047bad0936a868f0f218c57f5d0cd9fc433facebe8eea4af74ec",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "39e0f91a5eb931c0e4a992b88251deff3ddf2e9a329f5ed5987cb27947dc4b76"
+      }
+    ]
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_L0.mesh",
+    "bytes": 1041614,
+    "sha256": "7bf26f45afe390604d4fa5299b53d7d092f4ad8845bec8419607e00c8bef7904",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_LQ_L0.nml",
+    "bytes": 667,
+    "sha256": "bca7af63da4fb6836d304fc298e1eb99975c58bec9677d0dfbbaea2487f6a3ef",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "7bf26f45afe390604d4fa5299b53d7d092f4ad8845bec8419607e00c8bef7904"
+      }
+    ]
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_N0_L0.nml",
+    "bytes": 667,
+    "sha256": "5e8731619e3f2d0b16e6fe169723f781966dfe6036e79b91b426de48d54c0cac",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "7bf26f45afe390604d4fa5299b53d7d092f4ad8845bec8419607e00c8bef7904"
+      }
+    ]
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_NT_L0.nml",
+    "bytes": 667,
+    "sha256": "d569e649c74cf7909172d8e39a12db828e31fef69976da38dd768b8f025c0e29",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_L0.mesh",
+        "exists": true,
+        "included": false,
+        "sha256": "7bf26f45afe390604d4fa5299b53d7d092f4ad8845bec8419607e00c8bef7904"
+      }
+    ]
+  },
+  {
+    "path": "cases/F3_RADIUS_SWEEP_20260908/inputs_manifest.json",
+    "bytes": 2668,
+    "sha256": "7f3cbe2e8b9da5a1583172ea7147f0c4694af397cabc3fb293424b94e562890f",
+    "role": "GENERATED",
+    "include": false,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G08_reference_bar/case.nml",
+    "bytes": 995,
+    "sha256": "6f6cf0c4603a1e727776ddbc3a56bc92fbe05b103f429aee180af2fa6975c0ac",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G08_reference_bar/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "270be73947bdd816aedcfde1c18daaa840f4ae2ee6757adcf531e671e4c116ba"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G08_reference_bar/mesh.dat",
+    "bytes": 516,
+    "sha256": "270be73947bdd816aedcfde1c18daaa840f4ae2ee6757adcf531e671e4c116ba",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G09_center_hole/H00_plain/case.nml",
+    "bytes": 947,
+    "sha256": "8eeed23adab24ca8391e5fd0a43dd94faccbd1e4154f1d6bac6701c3699f5de9",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G09_center_hole/H00_plain/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "85837fd9676f561165142257354201461dbb4e4939954be5d1ab07a1dbd37bdc"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G09_center_hole/H00_plain/mesh.dat",
+    "bytes": 13034,
+    "sha256": "85837fd9676f561165142257354201461dbb4e4939954be5d1ab07a1dbd37bdc",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G09_center_hole/H02_r090/case.nml",
+    "bytes": 946,
+    "sha256": "bdba6c30aab47052ccffebdc5c5d7c713411d43df5acdf55607b06be1cbdb9f5",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G09_center_hole/H02_r090/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "67e66b64bd18ef147044e777eae1c2a8bd5a09139a27fad8b383fd3fbec38fb1"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G09_center_hole/H02_r090/mesh.dat",
+    "bytes": 25939,
+    "sha256": "67e66b64bd18ef147044e777eae1c2a8bd5a09139a27fad8b383fd3fbec38fb1",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G10_mesh_convergence/L0/case.nml",
+    "bytes": 942,
+    "sha256": "51177a228e75bf48d3296118528600c57d84dbe7d7d2396b7673f8c543ada552",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G10_mesh_convergence/L0/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "fdd4eea88d0e6c6455f7303bb71c600764280de95b54f770db412766609c5974"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G10_mesh_convergence/L0/mesh.dat",
+    "bytes": 25939,
+    "sha256": "fdd4eea88d0e6c6455f7303bb71c600764280de95b54f770db412766609c5974",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G10_mesh_convergence/L1/case.nml",
+    "bytes": 942,
+    "sha256": "a2a0cc01c33223261544408fb35a1347455c10cf3c3f805db7808a4971096167",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G10_mesh_convergence/L1/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "95172276bb5e3dc544b0fbc0cce57c54dec06bc3c29dd9594c9b43fb06ba5198"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G10_mesh_convergence/L1/mesh.dat",
+    "bytes": 54131,
+    "sha256": "95172276bb5e3dc544b0fbc0cce57c54dec06bc3c29dd9594c9b43fb06ba5198",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G10_mesh_convergence/L2/case.nml",
+    "bytes": 942,
+    "sha256": "7a07d50243d8140eba03d53697f104fc3dfa24fcae314b2be7184770b80f5657",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G10_mesh_convergence/L2/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "2934ac4ece99e9a1ac5a606776e8fcae93696c7ea9fd68e95392330dd1bd7e23"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G10_mesh_convergence/L2/mesh.dat",
+    "bytes": 92603,
+    "sha256": "2934ac4ece99e9a1ac5a606776e8fcae93696c7ea9fd68e95392330dd1bd7e23",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G11_matched_control/H00_L2/case.nml",
+    "bytes": 944,
+    "sha256": "ff9331cc11fb535aa903e8ddeca8ddf80375f606dd6cea8ab197c20e6a4e7b17",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G11_matched_control/H00_L2/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "ac7ec05564c903bca472eb00dda6e8e1ffdb0b05509204b39495db8af66299ea"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G11_matched_control/H00_L2/mesh.dat",
+    "bytes": 46271,
+    "sha256": "ac7ec05564c903bca472eb00dda6e8e1ffdb0b05509204b39495db8af66299ea",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G12_radius_matrix/R060/case.nml",
+    "bytes": 937,
+    "sha256": "9860bbe963fac9c5e3d581932076bebe8a7f5330326260159d460f47617e11ef",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G12_radius_matrix/R060/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "f25019ff662f35ccbe22f9554582e4cece5a2a05364f69ed2cae48ae4c713543"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G12_radius_matrix/R060/mesh.dat",
+    "bytes": 92603,
+    "sha256": "f25019ff662f35ccbe22f9554582e4cece5a2a05364f69ed2cae48ae4c713543",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G12_radius_matrix/R090/case.nml",
+    "bytes": 937,
+    "sha256": "ce979802ead2d305daf86f29803d4bd87b09d6edc5e57c95c7e63f166f7a0533",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G12_radius_matrix/R090/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "2934ac4ece99e9a1ac5a606776e8fcae93696c7ea9fd68e95392330dd1bd7e23"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G12_radius_matrix/R090/mesh.dat",
+    "bytes": 92603,
+    "sha256": "2934ac4ece99e9a1ac5a606776e8fcae93696c7ea9fd68e95392330dd1bd7e23",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G12_radius_matrix/R120/case.nml",
+    "bytes": 937,
+    "sha256": "273ff3d973e712fd57fb569deced7c14bb0e5728657f7df5fa16fb76ad78f8bf",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G12_radius_matrix/R120/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "7b8f75e1926b1f9c073e6661a448ae1244be9b5beffd8c7b8ec2e1fdd2a49b0d"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G12_radius_matrix/R120/mesh.dat",
+    "bytes": 92603,
+    "sha256": "7b8f75e1926b1f9c073e6661a448ae1244be9b5beffd8c7b8ec2e1fdd2a49b0d",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L0/case.nml",
+    "bytes": 942,
+    "sha256": "158483400d8cb8d310489eed119e0ed34b22fc8adbfa1467f1ed41773a30d19e",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L0/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "8c043088c12956a6f04fd14d93122e3b12202284381cb03cb34d5d5d64f34439"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L0/mesh.dat",
+    "bytes": 25939,
+    "sha256": "8c043088c12956a6f04fd14d93122e3b12202284381cb03cb34d5d5d64f34439",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L1/case.nml",
+    "bytes": 942,
+    "sha256": "725848eea329994980f3e30d19bc31292d8b443a1a68230a9186edcd465781b4",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L1/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "cb7955652e89a36aadb80f4feceb4d934994d86e232ac22612b68148495bea48"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L1/mesh.dat",
+    "bytes": 54131,
+    "sha256": "cb7955652e89a36aadb80f4feceb4d934994d86e232ac22612b68148495bea48",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L2/case.nml",
+    "bytes": 942,
+    "sha256": "d4572b15f1ddae810cb0612edb5a4bf5c91afa34c32935b5ef314262eee54e7b",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L2/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "f25019ff662f35ccbe22f9554582e4cece5a2a05364f69ed2cae48ae4c713543"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R060/L2/mesh.dat",
+    "bytes": 92603,
+    "sha256": "f25019ff662f35ccbe22f9554582e4cece5a2a05364f69ed2cae48ae4c713543",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L0/case.nml",
+    "bytes": 942,
+    "sha256": "cc6806b074a1a43b31f1ce55caa21c30e43e138333d5b2490520921fc61e2850",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L0/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "216fc90adf484eac610630a7e01f2a70b30f8d76754a93aef07b5762edb93c04"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L0/mesh.dat",
+    "bytes": 25939,
+    "sha256": "216fc90adf484eac610630a7e01f2a70b30f8d76754a93aef07b5762edb93c04",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L1/case.nml",
+    "bytes": 942,
+    "sha256": "2ee35ac187464030802244b499e3444fab5b2e88cfea0a273e062770cf80f297",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L1/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "d3a9601d2face5e49aee359f83469a3f8348ed6399ee523ceaf3d59c39663e3e"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L1/mesh.dat",
+    "bytes": 54131,
+    "sha256": "d3a9601d2face5e49aee359f83469a3f8348ed6399ee523ceaf3d59c39663e3e",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L2/case.nml",
+    "bytes": 942,
+    "sha256": "5ea40a8a149d86a2270f8d1476aadbf5b27aace7bf4e8fde49c4e2953bc45a6b",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L2/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "7b8f75e1926b1f9c073e6661a448ae1244be9b5beffd8c7b8ec2e1fdd2a49b0d"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G13_endpoint_mesh_sensitivity/R120/L2/mesh.dat",
+    "bytes": 92603,
+    "sha256": "7b8f75e1926b1f9c073e6661a448ae1244be9b5beffd8c7b8ec2e1fdd2a49b0d",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/G14_boundary_geometry_candidate/R090_L2/case.nml",
+    "bytes": 983,
+    "sha256": "35facecd244c3c11389b96fdaa811beef78d0d0d4e36e8892ba02f23c3a7b24d",
+    "role": "KEEP_VALIDATION_NEGATIVE_CONTROL",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/G14_boundary_geometry_candidate/R090_L2/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "a3e89f86d46d3e992c9222e37d5e8c62a0859e1ca256bb535e31dac2436b9029"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/G14_boundary_geometry_candidate/R090_L2/mesh.dat",
+    "bytes": 88250,
+    "sha256": "a3e89f86d46d3e992c9222e37d5e8c62a0859e1ca256bb535e31dac2436b9029",
+    "role": "KEEP_VALIDATION_NEGATIVE_CONTROL",
+    "include": true,
+    "dependencies": []
+  },
+  {
+    "path": "cases/validation/V01_patch/case.nml",
+    "bytes": 126,
+    "sha256": "f7acbcf1146df16d452c04edd24d927bfc6c3e2a08d75c415f4d438a19fa7502",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": [
+      {
+        "kind": "mesh_file",
+        "path": "cases/validation/V01_patch/mesh.dat",
+        "exists": true,
+        "included": true,
+        "sha256": "4b1d5c7bcd747364d7f005409d37979963b636eed80a51fa350d7b35b4bbbba5"
+      }
+    ]
+  },
+  {
+    "path": "cases/validation/V01_patch/mesh.dat",
+    "bytes": 360,
+    "sha256": "4b1d5c7bcd747364d7f005409d37979963b636eed80a51fa350d7b35b4bbbba5",
+    "role": "KEEP_VALIDATION",
+    "include": true,
+    "dependencies": []
+  }
+]

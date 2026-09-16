@@ -1,0 +1,26 @@
+# Build and IDE output
+/build/
+/x64/
+/.vs/
+/.codex_tmp/
+
+# Fortran/compiler generated files
+*.obj
+*.mod
+*.smod
+*.pdb
+*.exe
+*.ilk
+*.u2d
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary solver files
+fort.*
+*.tmp
+
+# Keep logs, CSV, runs, final_results, cases and .vscode reviewable.
+# Unignored files are candidates, not an instruction to stage everything.

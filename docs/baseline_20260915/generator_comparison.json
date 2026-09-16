@@ -1,0 +1,253 @@
+{
+  "F1_20260906": [
+    {
+      "path": "cases/F1_20260906/H0_L2.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "f54b040a8129a71013be6c4a86da357e84f5599650df40e3d3e5030b301c585a"
+    },
+    {
+      "path": "cases/F1_20260906/H1_L0.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+    },
+    {
+      "path": "cases/F1_20260906/H1_L1.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "44dd715220df77a2bf93be1cb8d38effab7741f6fa8361cfdf25e3f674ad867f"
+    },
+    {
+      "path": "cases/F1_20260906/H1_L2.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "48a0ebdb3cbf3c30ed4624af11c3d53e063577ff0724ff81860c12a283f055cf"
+    },
+    {
+      "path": "cases/F1_20260906/inputs_manifest.json",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "897f15d034e42b998abc29d06bf9150477afa6534da13e0be96280552157b0e1"
+    },
+    {
+      "path": "cases/F1_20260906/MAIN_H0_LQ_L2.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "906aaa854e994f782f4ef127a933ff883105ed920f1a09abd435981ca9d403d3"
+    },
+    {
+      "path": "cases/F1_20260906/MAIN_H0_N0_L2.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "8e8c97516e7a7bc1ed92caa4f25dfaa9930ae96d8b45f4246f47822d45d7251a"
+    },
+    {
+      "path": "cases/F1_20260906/MAIN_H0_NT_L2.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "3818268184c207f638927141e72d3586d4118549e775430390cfa793dc1982ec"
+    },
+    {
+      "path": "cases/F1_20260906/MAIN_H1_LQ_L2.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "51c79d52113c39e536b6b84eaee86e7ddbd0f1f4988188b9cf1834cbd37c625e"
+    },
+    {
+      "path": "cases/F1_20260906/MAIN_H1_N0_L2.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "cf3e85c4e546601e8afb274895aaeaa28323c10de5c5bc995d106b8fafbc1c2b"
+    },
+    {
+      "path": "cases/F1_20260906/MESH_H1_NT_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "4e935c3bace883216a95ceb1b78487fa6dfaf1647640a37ac7401fa559874b18"
+    },
+    {
+      "path": "cases/F1_20260906/MESH_H1_NT_L1.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "9a0f8930e9f75cdcfa3c38bb03438c0b51a0ec4c6c75be4120d15804557d434a"
+    },
+    {
+      "path": "cases/F1_20260906/MESH_H1_NT_L2.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "b97944cf25bc68e4b31902a7fc729d22405fcba8ff8ae6a65c8b0dc5d74d7846"
+    },
+    {
+      "path": "cases/F1_20260906/SMALL_H1_LQ_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "b09874be874ba1d2993d9ebcf68e1ca6b1ea77deee15a71a92092942ac010823"
+    },
+    {
+      "path": "cases/F1_20260906/SMALL_H1_NT_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "e18e394fe0e3fa9e32f328fef5e40d19d8522f56647272c0b5b0d9ab34320dcd"
+    }
+  ],
+  "F2_H1_VOLTAGE_SWEEP_20260908": [
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V005.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "15e9f11120b8e7a6800ae9021f1d4cb2855836bfde2f2c61ebce72ec40ac3679"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V010.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "325c5f90922d0cedce40251210ed2dd98eb64ed2e874d38b3e95d60f8b22b55e"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V015.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "41981812643bb9da1c582ab318155d6f72c6a35b1f8e9b6cc266a535ac83b1d1"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V020.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "38f44a0bd5c8bc1dc5b0aa6fc219c24eb99f4acc57bf61e965afb455000e0f92"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V025.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "b503443612e8956460662db05d4cd8c3142c199bc08e0b7f289f07565056e8bb"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V035.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "c3d48a628c2108ab22a4fd2766b246cb6aed46628df444ffc0f332fadd16545e"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V040.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "655da9a243d006fa4d340107cb1ac7dd844b6f5be194cc937772fe7dc6d5367c"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V045.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "e20f77c977846c96d537d3cc3f20b1b83ef4b67691bab348af57ddcb797bd717"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/F2_H1_NT_L0_V050.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "107e36f2828b72e44893da2f0a4e91718776dd5053251b941829140a049afdac"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/H1_L0.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+    },
+    {
+      "path": "cases/F2_H1_VOLTAGE_SWEEP_20260908/inputs_manifest.json",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "d7179f911ee0d18c057df7312e9765c1fb2d523a62217f4bd2fe191af90e7cf7"
+    }
+  ],
+  "F3_RADIUS_SWEEP_20260908": [
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_L0.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "39e0f91a5eb931c0e4a992b88251deff3ddf2e9a329f5ed5987cb27947dc4b76"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_LQ_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "9967d50a3626623a445f9f48ecddda95f5cac5ac07d8a50012dbe766de851a06"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_N0_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "04cfac60f1af0646ccb4948087b4b29d458d05f1411ffc106bd3c93cb082b8e6"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R02_NT_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "d8bee49af1d0047bad0936a868f0f218c57f5d0cd9fc433facebe8eea4af74ec"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_L0.mesh",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "7bf26f45afe390604d4fa5299b53d7d092f4ad8845bec8419607e00c8bef7904"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_LQ_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "bca7af63da4fb6836d304fc298e1eb99975c58bec9677d0dfbbaea2487f6a3ef"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_N0_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "5e8731619e3f2d0b16e6fe169723f781966dfe6036e79b91b426de48d54c0cac"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/F3_R04_NT_L0.nml",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "d569e649c74cf7909172d8e39a12db828e31fef69976da38dd768b8f025c0e29"
+    },
+    {
+      "path": "cases/F3_RADIUS_SWEEP_20260908/inputs_manifest.json",
+      "exists": true,
+      "bytes_equal": true,
+      "text_equal": true,
+      "sha256": "7f3cbe2e8b9da5a1583172ea7147f0c4694af397cabc3fb293424b94e562890f"
+    }
+  ]
+}

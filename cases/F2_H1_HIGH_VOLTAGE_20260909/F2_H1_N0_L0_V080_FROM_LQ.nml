@@ -1,0 +1,19 @@
+&case_control
+ schema_version=2, case_id='F2_H1_N0_L0_V080_FROM_LQ', model_level='M2_THERMO_TWO_CARRIER',
+ mesh_file='H1_L0.mesh'
+/
+&problem_control
+ problem_type='CENTER_HOLE_PLATE',
+ material_profile='ZNO_F1_N0', target_voltage=-8.0,
+ target_voltage_factor=1.0, target_joule_factor=1.0, hole_radius=3.0e-6,
+ restart_nodes_file='..\..\runs\F2_V080_MODEL_HOMOTOPY_20260909\LQ_V080\nodes.csv',
+ restart_voltage_factor=1.0, restart_joule_factor=1.0
+/
+&solver_control
+ field_scales=1e-10,1e-10,1e-10,8.0,0.1,0.1,35.0,
+ max_newton=60, residual_tolerance=1e-9, update_tolerance=1e-9,
+ maximum_log_density_update=1.0,
+ continuation_initial_step=0.1, continuation_minimum_step=0.01,
+ continuation_maximum_step=0.1, continuation_maximum_attempts=5,
+ continuation_maximum_newton_per_attempt=60
+/
