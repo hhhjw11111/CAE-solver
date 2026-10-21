@@ -1,0 +1,7 @@
+verification_id=ARC_saddle_node
+arc_fold_detected=T
+arc_fold_located=T
+arc_fold_voltage_factor= 9.9999971947497057E-001
+arc_fold_bracket_width= 1.9550373728491597E-003
+arc_final_state= 5.2964613607941287E-004
+verification_result=PASS

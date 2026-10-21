@@ -1,0 +1,250 @@
+{
+  "status": "AUDIT_NEEDS_ATTENTION",
+  "numerical_checks_passed": false,
+  "checks": {
+    "FAST_H0_LQ_L0/exit_and_acceptance": true,
+    "FAST_H0_LQ_L0/positive_fields": true,
+    "FAST_H0_LQ_L0/maximum_stage_balance": true,
+    "FAST_H0_LQ_L0/maximum_accepted_residual": true,
+    "FAST_H0_LQ_L0/maximum_accepted_update": true,
+    "FAST_H0_LQ_L0/heat_balance_relative": true,
+    "FAST_H0_LQ_L0/electron_balance_relative": true,
+    "FAST_H0_LQ_L0/joule_quadrature_4_5_relative": true,
+    "FAST_H0_LQ_L0/source_check": true,
+    "FAST_H0_N0_L0/exit_and_acceptance": true,
+    "FAST_H0_N0_L0/positive_fields": true,
+    "FAST_H0_N0_L0/maximum_stage_balance": true,
+    "FAST_H0_N0_L0/maximum_accepted_residual": true,
+    "FAST_H0_N0_L0/maximum_accepted_update": true,
+    "FAST_H0_N0_L0/heat_balance_relative": true,
+    "FAST_H0_N0_L0/electron_balance_relative": true,
+    "FAST_H0_N0_L0/joule_quadrature_4_5_relative": true,
+    "FAST_H0_N0_L0/source_check": true,
+    "FAST_H0_NT_L0/exit_and_acceptance": true,
+    "FAST_H0_NT_L0/positive_fields": true,
+    "FAST_H0_NT_L0/maximum_stage_balance": true,
+    "FAST_H0_NT_L0/maximum_accepted_residual": true,
+    "FAST_H0_NT_L0/maximum_accepted_update": true,
+    "FAST_H0_NT_L0/heat_balance_relative": true,
+    "FAST_H0_NT_L0/electron_balance_relative": true,
+    "FAST_H0_NT_L0/joule_quadrature_4_5_relative": true,
+    "FAST_H0_NT_L0/source_check": true,
+    "FAST_H1_LQ_L0/exit_and_acceptance": true,
+    "FAST_H1_LQ_L0/positive_fields": true,
+    "FAST_H1_LQ_L0/maximum_stage_balance": true,
+    "FAST_H1_LQ_L0/maximum_accepted_residual": true,
+    "FAST_H1_LQ_L0/maximum_accepted_update": true,
+    "FAST_H1_LQ_L0/heat_balance_relative": true,
+    "FAST_H1_LQ_L0/electron_balance_relative": true,
+    "FAST_H1_LQ_L0/joule_quadrature_4_5_relative": true,
+    "FAST_H1_LQ_L0/source_check": true,
+    "FAST_H1_N0_L0/exit_and_acceptance": true,
+    "FAST_H1_N0_L0/positive_fields": true,
+    "FAST_H1_N0_L0/maximum_stage_balance": true,
+    "FAST_H1_N0_L0/maximum_accepted_residual": true,
+    "FAST_H1_N0_L0/maximum_accepted_update": true,
+    "FAST_H1_N0_L0/heat_balance_relative": true,
+    "FAST_H1_N0_L0/electron_balance_relative": true,
+    "FAST_H1_N0_L0/joule_quadrature_4_5_relative": true,
+    "FAST_H1_N0_L0/source_check": true,
+    "FAST_H1_NT_L0/exit_and_acceptance": true,
+    "FAST_H1_NT_L0/positive_fields": true,
+    "FAST_H1_NT_L0/maximum_stage_balance": true,
+    "FAST_H1_NT_L0/maximum_accepted_residual": true,
+    "FAST_H1_NT_L0/maximum_accepted_update": true,
+    "FAST_H1_NT_L0/heat_balance_relative": true,
+    "FAST_H1_NT_L0/electron_balance_relative": true,
+    "FAST_H1_NT_L0/joule_quadrature_4_5_relative": true,
+    "FAST_H1_NT_L0/source_check": true,
+    "same_mesh_within_geometry": true,
+    "representative_repeat_byte_identical": false,
+    "repeat_same_configuration": true,
+    "representative_repeat_accepted": true
+  },
+  "mesh_convergence_status": "NOT_FINAL_THREE_LEVEL_MESH_ACCEPTANCE",
+  "scope_change": "User authorized reduced meshes on 2026-09-07 for same-day completion. Same physics and numerical tolerances retained.",
+  "repeat": {
+    "representative_repeat_executed": true,
+    "file_byte_identity": {
+      "metrics.txt": false,
+      "nodes.csv": false,
+      "field_samples.csv": false
+    },
+    "maximum_absolute_field_difference": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      6.72084247699335e-25,
+      6.00390990911039e-25,
+      7.20551861716114e-24,
+      3.1086244689504383e-15,
+      1.8620521791135047e-14,
+      1.858582732161551e-14,
+      4.440892098500626e-15,
+      1132462080.0,
+      3.1529215447308384e-44
+    ],
+    "elapsed_seconds": 703.0276374,
+    "original_provenance": {
+      "MKL_DYNAMIC": "FALSE",
+      "threads": 4,
+      "started_utc": "2026-09-06T16:46:51.2483886Z",
+      "executable_sha256": "8B23EC17CC129D2C3CFDC91DEDB67D5A4AA174D0107E7BB219233A80D0B5BF01",
+      "storage": "IC",
+      "input_name": "FAST_H1_NT_L0",
+      "input_sha256": "7CC6834A276104A90045E878420DBAFB6A7DED8F5A7935F0E82EA06D51943A57",
+      "case": "FAST_H1_NT_L0",
+      "KMP_AFFINITY": "granularity=fine,compact,1,0"
+    },
+    "repeat_provenance": {
+      "case": "REPEAT_H1_NT_L0",
+      "MKL_DYNAMIC": "FALSE",
+      "KMP_AFFINITY": "granularity=fine,compact,1,0",
+      "executable_sha256": "8B23EC17CC129D2C3CFDC91DEDB67D5A4AA174D0107E7BB219233A80D0B5BF01",
+      "started_utc": "2026-09-06T17:03:48.8451863Z",
+      "storage": "IC",
+      "threads": 4,
+      "input_sha256": "7CC6834A276104A90045E878420DBAFB6A7DED8F5A7935F0E82EA06D51943A57",
+      "input_name": "FAST_H1_NT_L0"
+    },
+    "maximum_solver_scaled_state_difference": 1.8620521791135047e-13,
+    "difference_columns": [
+      "node",
+      "x_m",
+      "y_m",
+      "z_m",
+      "ux_m",
+      "uy_m",
+      "uz_m",
+      "phi_V",
+      "eta_n",
+      "eta_p",
+      "theta_K",
+      "n_m3",
+      "p_m3"
+    ]
+  },
+  "source_hashes": {
+    "FAST_H0_LQ_L0/nodes.csv": "b3614930e5f23df158e512e46ae8e807a6ded60698a4e2b2bbb6d42116e79668",
+    "FAST_H0_LQ_L0/metrics.txt": "affe3ed174f6133a027b9717f8aa1192f241060171513dc7afd8da04950da818",
+    "FAST_H0_LQ_L0/field_samples.csv": "4ca2376ad414507a3b903c7241a3c2ac3b053ad16d9abc49edee80c5d1c7aafc",
+    "FAST_H0_LQ_L0/input.nml": "7c0d508968cfb0fbb279bfb8023d43e58d44ed68947b1f307e2c0a4efe4cca7e",
+    "FAST_H0_LQ_L0/stdout.txt": "fb6680319de8999eac058da20988339f991ea12d3253962c4838c9f20abf87b9",
+    "FAST_H0_N0_L0/nodes.csv": "2c01fc201a86c28e04b4ce74228c24b9a07d747adb1a518b901fdca79cbf7ed1",
+    "FAST_H0_N0_L0/metrics.txt": "6ef8dfdf5582119542a0f857129e0701a6f2727d7e89677f75c35533251c103f",
+    "FAST_H0_N0_L0/field_samples.csv": "20a7daecd0aba5e3b779d355a597c8d0297de4bf870322b2052d7fa800c5e635",
+    "FAST_H0_N0_L0/input.nml": "c36aad2b2005c8953d7cec7d611e559238a603cb487356900312c843e52da3e7",
+    "FAST_H0_N0_L0/stdout.txt": "54761cfe094117d56a3dc5dc1b23dea64f25ff4293f91f744c3488f922747bfe",
+    "FAST_H0_NT_L0/nodes.csv": "55b15af0f5d1d3322722d4ed2d98a43045e3942e982553793d0d909c30e3c79c",
+    "FAST_H0_NT_L0/metrics.txt": "3b07d28c9b8156142a5f62a65721c6ef0add2f1f0b22f8902759a8a716601d1a",
+    "FAST_H0_NT_L0/field_samples.csv": "ae88810c3e26c7e5055dcd0b7c591e811096eb3827fffe9f73790975e1825e05",
+    "FAST_H0_NT_L0/input.nml": "fadf328625011b32db4001d28671b218da5cc315e26058feb7b4e704854726a1",
+    "FAST_H0_NT_L0/stdout.txt": "457c9cc7ce9f32cc2075a011b68c1a7d6aeb13430d5bc31c947bbb7444225acb",
+    "FAST_H1_LQ_L0/nodes.csv": "a146cd6b63152524f3e49e4deafb537f4aeeb788ca428eec38cc4711c623087a",
+    "FAST_H1_LQ_L0/metrics.txt": "2cdbb69a2f1f4b5f807329082a4b202ba8b49b990b805f827345be190f1880fe",
+    "FAST_H1_LQ_L0/field_samples.csv": "1501d198b55744ac4df14e2683e3e5d9695c4b43d6307731da3fa10dd1bcd8ea",
+    "FAST_H1_LQ_L0/input.nml": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+    "FAST_H1_LQ_L0/stdout.txt": "ce9a207705fd39a290996b58f6d5bc65172501b414f303eccb0c56906bd3c59a",
+    "FAST_H1_N0_L0/nodes.csv": "0db26b171f1249949f98420d2af455b2c6c401b5dfa72ab8faece5f0bf5b0114",
+    "FAST_H1_N0_L0/metrics.txt": "c8b0507cbbbc7bfb9f07eed0b849a0b3d3fae485b88fa5a9b490e97d21b214e7",
+    "FAST_H1_N0_L0/field_samples.csv": "c58c7a457c2403369ade89f240f7c315e9c0862e17b9779dc86372fcaf932136",
+    "FAST_H1_N0_L0/input.nml": "e7f3fb0d1ab589d3e4eafd5bf3538fa7950570b37832c11e64dd437a769629ee",
+    "FAST_H1_N0_L0/stdout.txt": "8914e71771eb841d642f2141af216e6e817ea8a43ff4410403dee40a42bb5b91",
+    "FAST_H1_NT_L0/nodes.csv": "a855a12b810c12c3e5b7c65f011504ae3aeb205c38fd989c588c7679d4005762",
+    "FAST_H1_NT_L0/metrics.txt": "edb0ecd0db0bd01aba71867366f518c086c70dff86d821867af3c76e27d879cb",
+    "FAST_H1_NT_L0/field_samples.csv": "85b9c68dd16507d555ee064b27ac391416523e22b132e2288216dc90951d4e7a",
+    "FAST_H1_NT_L0/input.nml": "7cc6834a276104a90045e878420dbafb6a7ded8f5a7935f0e82ea06d51943a57",
+    "FAST_H1_NT_L0/stdout.txt": "44e74d4e2903f28745c8cb5b5ecc3d10ced6e517519ea7887a033f4cc64f0758"
+  },
+  "gallery": {
+    "map_count": 72,
+    "metric_plot_count": 6,
+    "cuts": {
+      "FAST_H0_LQ_L0/x_y4_z0": {
+        "maximum_mapping_error_m": 3.788046498485219e-21,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H0_N0_L0/x_y4_z0": {
+        "maximum_mapping_error_m": 3.788046498485219e-21,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H0_NT_L0/x_y4_z0": {
+        "maximum_mapping_error_m": 3.788046498485219e-21,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H1_LQ_L0/x_y4_z0": {
+        "maximum_mapping_error_m": 8.05444386029962e-17,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H1_N0_L0/x_y4_z0": {
+        "maximum_mapping_error_m": 8.05444386029962e-17,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H1_NT_L0/x_y4_z0": {
+        "maximum_mapping_error_m": 8.05444386029962e-17,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H0_LQ_L0/y_x0_ztop": {
+        "maximum_mapping_error_m": 1.7072494855162848e-21,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H0_N0_L0/y_x0_ztop": {
+        "maximum_mapping_error_m": 1.7072494855162848e-21,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H0_NT_L0/y_x0_ztop": {
+        "maximum_mapping_error_m": 1.7072494855162848e-21,
+        "material_points": 201,
+        "hole_gap_points": 0
+      },
+      "FAST_H1_LQ_L0/y_x0_ztop": {
+        "maximum_mapping_error_m": 3.3981521630167294e-21,
+        "material_points": 142,
+        "hole_gap_points": 59
+      },
+      "FAST_H1_N0_L0/y_x0_ztop": {
+        "maximum_mapping_error_m": 3.3981521630167294e-21,
+        "material_points": 142,
+        "hole_gap_points": 59
+      },
+      "FAST_H1_NT_L0/y_x0_ztop": {
+        "maximum_mapping_error_m": 3.3981521630167294e-21,
+        "material_points": 142,
+        "hole_gap_points": 59
+      }
+    },
+    "spatial_plot_count": 18,
+    "method": "Original HEX20 inverse mapping and evaluation; deterministic one-sided gradients; NaN hole gap.",
+    "map_color_scales": "Shared across all six cases for each named map; no exaggerated LQ carrier noise.",
+    "csv_units": "Coordinates m (s_um in micrometers); phi V; E V/m; Q W/m3; theta K; n_change/p_change dimensionless; ux/uy/uz m.",
+    "visual_review": "PENDING"
+  },
+  "historical_L0_L1_change": {
+    "joule_W": 0.00021670553757659737,
+    "theta_max_K": 0.00024775658187597814,
+    "ring_E_mean_V_m": 0.0001710564728791975,
+    "ring_Q_mean_W_m3": 0.00039498944679338175,
+    "ring_abs_n_relative_mean": 0.0007270247365739199,
+    "ring_Q_p95_W_m3": 0.0007849340886142628
+  },
+  "visual_review": "REVIEWED_REPORT_9_PAGES_AND_100_CURRENT_FIGURES",
+  "case_numerical_checks_passed": true,
+  "delivery_scope_status": "SIX_CASE_L0_COMPLETE_STRICT_REPRODUCTION_NOT_PASSED",
+  "strict_reproduction_status": "FAIL_BYTE_IDENTITY",
+  "reproduction_note": "Original byte-identity gate retained and not passed. Small state differences are reported as diagnostics, not used to replace or relax that gate. All original files are preserved.",
+  "known_limitations": [
+    "Formal three-level L2 mesh acceptance not completed.",
+    "Strict byte-identical repeat failed; no replacement acceptance threshold introduced.",
+    "H0 annulus indicator quadrature underestimates exact annulus volume by about 28.48%.",
+    "Unsmoothed stress maps show element-gradient seams; not physical discontinuities."
+  ]
+}
