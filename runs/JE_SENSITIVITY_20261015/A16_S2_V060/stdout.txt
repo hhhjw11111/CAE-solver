@@ -1,0 +1,20 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.5656E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.5567E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.5567E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  1.8033E-01, raw_eta_p=  1.1954E+01, component_slope=  8.2009E-12, alpha=  7.8670E-03, log_scale=  1.0000E+00, fallback_slope= -1.3430E-12, raw_max=  1.1954E+01,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.2819E-06,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.3453E-06,
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.2122E-06,
+newton_iteration=6, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.2839E-07,
+newton_iteration=7, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.2788E-07,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  1.4501E-02, raw_eta_p=  5.5902E+01, component_slope=  2.4685E-12, alpha=  7.6539E-03, log_scale=  1.0000E+00, fallback_slope= -8.2749E-14, raw_max=  5.5902E+01,
+newton_iteration=8, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.5844E-07,
+newton_iteration=9, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.5783E-07,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  1.4551E-02, raw_eta_p=  3.3935E+01, component_slope=  1.3187E-12, alpha=  9.4481E-03, log_scale=  1.0000E+00, fallback_slope= -2.1840E-14, raw_max=  3.3935E+01,
+newton_iteration=10, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.3766E-07,
+newton_iteration=11, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.3760E-07,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  1.4337E-02, raw_eta_p=  2.2796E+01, component_slope=  7.6179E-14, alpha=  8.9338E-03, log_scale=  1.0000E+00, fallback_slope= -1.1104E-14, raw_max=  2.2796E+01,
+newton_iteration=12, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.2741E-07,

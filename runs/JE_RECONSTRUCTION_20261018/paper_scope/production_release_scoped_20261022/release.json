@@ -1,0 +1,129 @@
+{
+  "released_at": "2026-10-21T16:03:12.869464+00:00",
+  "authorization": {
+    "source": "user chat 2026-10-22",
+    "text": "Go with plan A: first write the scope-restricted release decision (it does not change the existing FAIL), then rebuild the production inputs with the certified settings. Show me the case matrix before starting any runs."
+  },
+  "release_type": "OBSERVABLE_SCOPED_PRODUCTION",
+  "nt_variant": "trace",
+  "thresholds_changed": false,
+  "physics_changed": false,
+  "original_fail_records_retained": true,
+  "trace_review_overall": "FAIL",
+  "trace_review_production_allowed_field_unchanged": false,
+  "supersedes": {
+    "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_release_scoped_20261021\\release.json",
+    "sha256": "66e673552bfcbd24e3fc63a6885cf206856899f25ec482c08f027cb2da5ea710",
+    "scope": "NT numerical variant and observable classification only; record retained unchanged"
+  },
+  "primary": [
+    "joule_W",
+    "theta_max_K",
+    "electron_right_A",
+    "ring_theta_mean_K",
+    "ring_E_mean_V_m",
+    "ring_Q_mean_W_m3",
+    "ring_abs_n_relative_mean",
+    "ring_Q_p95_W_m3",
+    "E_p95_V_m"
+  ],
+  "with_band": [],
+  "excluded": [
+    "ring_abs_p_relative_mean",
+    "local_hole_field_and_hole_profiles"
+  ],
+  "production_matrix": {
+    "r3_LQ_V": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0
+    ],
+    "r3_NT_V": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0
+    ],
+    "radius_NT": {
+      "radii_um": [
+        2,
+        4
+      ],
+      "voltages_V": [
+        6,
+        8
+      ]
+    },
+    "radius_LQ": {
+      "radii_um": [
+        2,
+        4
+      ],
+      "voltages_V": [
+        6,
+        8
+      ],
+      "added_by_user": true
+    }
+  },
+  "nt_numerics": {
+    "transport_supg": true,
+    "supg_scale": 1.0,
+    "supg_directional_tau": false,
+    "TPS_PARDISO_SPLIT_HOLES": "1",
+    "domain": "Y_HALF",
+    "r3_finest_half_mesh_sha256": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+    "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92",
+    "log_weighted_quadrature_order": 3
+  },
+  "lq_numerics": "Unchanged: transport_supg=.false.; the nonlinear SUPG gate does not apply",
+  "mesh": "Y-half A48/R22/Z18, byte-identical to the certified trace runs",
+  "preregistered_estimates": {
+    "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_release_scoped_20261021\\preregistered_estimates.csv",
+    "sha256": "a8d36088dc7fe0cfcc1b5dc6b5fbf890830e1bd61c01cf96c67aaf6bca6fdfb7",
+    "note": "Registered 2026-10-21 before any production solve; kept, not recalibrated"
+  },
+  "run_gate": "No native solve until the user approves case_matrix.csv; the runner requires its SHA-256",
+  "limitations": [
+    "Classification uses r=3 6/8 V trace evidence only; intermediate voltages inherit it",
+    "r=2/4 inherit the r=3 SUPG classification; each gets its own 8 V A40/A48 mesh pair and NT local-field audit",
+    "r=0 (no hole) is outside this matrix: the radius mesh generator supports 2/3/4 um only",
+    "LQ half-domain equivalence is checked in the lq_check group before LQ results are used",
+    "J.E heat source is a diagnostic current-work source, not a thermodynamic closure",
+    "Hole quantities stay reported where produced but carry no paper claim"
+  ],
+  "evidence_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\final_review\\report.json": "1a057fd01b4a45eb2d733411a594face5429fe3ac43127cf95e253e802ab241b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V060\\input.nml": "26c8e191a05f4babc40ef58224234888cf7dcd59dc4afd12735b961f6cba0b0f",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V060\\manifest.json": "024c6ed48fd1ea29e4c8ad00de3485450c47ee15c2caed96ba6e25a9a970da32",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\release_je_paper_scoped_20261022.py": "14d3ac993c5e3a1fbc7d311e2dfa3a13751e50efb606649a3b66b3d2b64ea4d2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_release_scoped_20261022\\observable_scope.csv": "61f054e2fab1fb63e84b85fd74c2905dada82719bfebe1574c6e057bd8340ae9"
+  }
+}

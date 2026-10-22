@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\Administrator\.codex\plugins\cache\openai-primary-runtime\documents\26.1007.11041\skills\documents\render_docx.py", line 79, in _resolve_soffice
+    raise FileNotFoundError(f"LibreOffice {executable_name} was not found on PATH")
+FileNotFoundError: LibreOffice soffice.exe was not found on PATH

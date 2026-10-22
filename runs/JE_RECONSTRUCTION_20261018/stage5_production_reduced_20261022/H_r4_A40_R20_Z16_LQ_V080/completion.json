@@ -1,0 +1,11 @@
+{
+  "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+  "fully_validated": false,
+  "power_audit": "NOT_APPLIED: the independent power assembler implements exponential carriers with SUPG; native independent flux gates apply",
+  "field_samples": {
+    "file": "field_samples.csv.gz",
+    "uncompressed_sha256": "c2d967724da8154c98a7ab4bdb574c0acdb34aac539314f96cd3db52e2ffb159",
+    "uncompressed_bytes": 320000150,
+    "note": "Lossless gzip; decompressed content verified byte-identical before removal of the CSV."
+  }
+}

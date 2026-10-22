@@ -1,0 +1,9 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=26928, elements=6144
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.2855E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.1029E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.0983E-06,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.2431E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  2.5172E-01, raw_eta_p=  4.1841E+00, component_slope=  2.4819E-12, alpha=  7.2043E-03, log_scale=  1.0000E+00, fallback_slope= -2.8446E-13, raw_max=  4.1841E+00,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1105E-06,

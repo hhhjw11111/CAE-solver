@@ -1,0 +1,8 @@
+{
+  "actual_checkpoint_path_recorded": true,
+  "source_nodes_sha256": "4a3fbfdeed313cee28c6a4ef1d018da6da2c4510281cd8a516fc8b2a676cd60e",
+  "source_load_sha256": "ff6fba3e12d62c061de0b8ff509ceaf218c7bfa425432674ac54bf713358cf00",
+  "missing_7V_rejected": true,
+  "missing_7V_error": "ValueError: No accepted checkpoint at 7 V; interpolation is not allowed",
+  "status": "PREPARATION_AND_REJECTION_CHECK_ONLY"
+}

@@ -1,0 +1,8 @@
+﻿voltage_V,state,theta_max_K,joule_half_W,electron_right_half_A,physical_exterior_heat_balance_relative,directory
+6.0,SOLVE_FLUX_PASS_MESH_PENDING,20.912578617218287,0.003906747178186589,0.0004699137628550951,0.0066185188514982125,C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\runs\HV_SUPG_20261007\r25_followthrough\V060
+6.25,SOLVE_FLUX_PASS_MESH_PENDING,24.61625581287626,0.004507247951203758,0.0004824325961679968,0.009008078390195674,C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\runs\HV_SUPG_20261007\r25_log_A64_fixed_V0625
+6.375,SOLVED_FLUX_GATE_FAILED,27.428687243700892,0.004943992372302772,0.00048679554541111264,0.011158874737774046,C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\runs\HV_SUPG_20261007\r26_high_voltage_priority\results\full_heat_voltage_V0638
+6.5,NO_FULL_HEAT_RESULT_YET,,,,,
+7.0,NO_FULL_HEAT_RESULT_YET,,,,,
+7.5,NO_FULL_HEAT_RESULT_YET,,,,,
+8.0,NO_FULL_HEAT_RESULT_YET,,,,,

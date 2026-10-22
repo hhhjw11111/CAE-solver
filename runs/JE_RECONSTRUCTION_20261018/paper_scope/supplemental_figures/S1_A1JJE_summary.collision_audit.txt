@@ -1,0 +1,114 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\Administrator\Desktop\gemini�޸�\Console3\solver_v2\runs\JE_RECONSTRUCTION_20261018\paper_scope\supplemental_figures\S1_A1JJE_summary.pdf
+pages: 1
+visible text boxes: 98
+stroke paths: 222
+
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'FEM peak'
+  text bbox: (77.03031158447266, 54.42544937133789, 111.20780944824219, 61.92544937133789)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� 'Independent flux error'
+  text bbox: (77.03031158447266, 273.7911376953125, 150.40286254882812, 281.2911376953125)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'Heat-source integral'
+  text bbox: (339.27001953125, 54.42544937133789, 406.7937927246094, 61.92544937133789)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'Integration limit: 1e-10'
+  text bbox: (339.27001953125, 273.7130126953125, 413.4686584472656, 281.2130126953125)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/1'
+  other text: 'P1/2'
+  text bbox: (47.62603759765625, 392.586181640625, 63.839019775390625, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/1'
+  other text: 'P1/2'
+  text bbox: (47.62605285644531, 184.39239501953125, 63.83905029296875, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/2'
+  other text: 'P1/4'
+  text bbox: (62.23143768310547, 184.39239501953125, 78.44442749023438, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/2'
+  other text: 'P1/4'
+  text bbox: (62.2314453125, 392.5862121582031, 78.44442749023438, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/4'
+  other text: 'P1/8'
+  text bbox: (76.83682250976562, 184.39239501953125, 93.0498275756836, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/4'
+  other text: 'P1/8'
+  text bbox: (76.83682250976562, 392.586181640625, 93.0498046875, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/8'
+  other text: 'P2/1'
+  text bbox: (91.44219970703125, 392.586181640625, 107.65521240234375, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/8'
+  other text: 'P2/1'
+  text bbox: (91.44220733642578, 184.39239501953125, 107.65521240234375, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/1'
+  other text: 'P2/2'
+  text bbox: (106.04757690429688, 392.586181640625, 122.26055908203125, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/1'
+  other text: 'P2/2'
+  text bbox: (106.04759216308594, 184.39239501953125, 122.2605972290039, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/2'
+  other text: 'P2/4'
+  text bbox: (120.6529769897461, 184.3924102783203, 136.86598205566406, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/2'
+  other text: 'P2/4'
+  text bbox: (120.65298461914062, 392.5862121582031, 136.86595153808594, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/4'
+  other text: 'P2/8'
+  text bbox: (135.25836181640625, 184.39239501953125, 151.47134399414062, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/4'
+  other text: 'P2/8'
+  text bbox: (135.25836181640625, 392.586181640625, 151.4713592529297, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 8.0% of the smaller box �� 'rev'
+  other text: 'zero'
+  text bbox: (168.00466918945312, 184.40028381347656, 180.67425537109375, 197.06985473632812)
+[FAIL] page 1 text-text: Text boxes overlap by 8.0% of the smaller box �� 'rev'
+  other text: 'zero'
+  text bbox: (168.00466918945312, 392.5941162109375, 180.67425537109375, 405.2637023925781)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/1'
+  other text: 'P1/2'
+  text bbox: (309.8657531738281, 184.3924102783203, 326.0787658691406, 200.6054229736328)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/1'
+  other text: 'P1/2'
+  text bbox: (309.8657531738281, 392.586181640625, 326.0787658691406, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/2'
+  other text: 'P1/4'
+  text bbox: (324.47113037109375, 184.39239501953125, 340.68414306640625, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/2'
+  other text: 'P1/4'
+  text bbox: (324.47113037109375, 392.586181640625, 340.68414306640625, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/4'
+  other text: 'P1/8'
+  text bbox: (339.0765380859375, 184.3924102783203, 355.28955078125, 200.6054229736328)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/4'
+  other text: 'P1/8'
+  text bbox: (339.0765380859375, 392.586181640625, 355.28955078125, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/8'
+  other text: 'P2/1'
+  text bbox: (353.6819152832031, 184.3924102783203, 369.8949279785156, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P1/8'
+  other text: 'P2/1'
+  text bbox: (353.6819152832031, 392.5862121582031, 369.8949279785156, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/1'
+  other text: 'P2/2'
+  text bbox: (368.28729248046875, 184.3924102783203, 384.50030517578125, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/1'
+  other text: 'P2/2'
+  text bbox: (368.287353515625, 392.5862121582031, 384.500244140625, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/2'
+  other text: 'P2/4'
+  text bbox: (382.8926086425781, 392.5862121582031, 399.1056213378906, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/2'
+  other text: 'P2/4'
+  text bbox: (382.8926696777344, 184.3924102783203, 399.10565185546875, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/4'
+  other text: 'P2/8'
+  text bbox: (397.4980773925781, 184.3923797607422, 413.7110900878906, 200.60540771484375)
+[FAIL] page 1 text-text: Text boxes overlap by 9.9% of the smaller box �� 'P2/4'
+  other text: 'P2/8'
+  text bbox: (397.4981384277344, 392.586181640625, 413.7110900878906, 408.7991943359375)
+[FAIL] page 1 text-text: Text boxes overlap by 8.0% of the smaller box �� 'rev'
+  other text: 'zero'
+  text bbox: (430.244384765625, 184.4002685546875, 442.9139404296875, 197.0698699951172)
+[FAIL] page 1 text-text: Text boxes overlap by 8.0% of the smaller box �� 'rev'
+  other text: 'zero'
+  text bbox: (430.24444580078125, 392.5941162109375, 442.9139709472656, 405.2637023925781)
+
+summary: 36 fail, 0 warn, 10 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

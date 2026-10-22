@@ -1,0 +1,11 @@
+{
+  "case": "REPEAT_H1_NT_L0",
+  "MKL_DYNAMIC": "FALSE",
+  "KMP_AFFINITY": "granularity=fine,compact,1,0",
+  "executable_sha256": "8B23EC17CC129D2C3CFDC91DEDB67D5A4AA174D0107E7BB219233A80D0B5BF01",
+  "started_utc": "2026-09-06T17:03:48.8451863Z",
+  "storage": "IC",
+  "threads": 4,
+  "input_sha256": "7CC6834A276104A90045E878420DBAFB6A7DED8F5A7935F0E82EA06D51943A57",
+  "input_name": "FAST_H1_NT_L0"
+}

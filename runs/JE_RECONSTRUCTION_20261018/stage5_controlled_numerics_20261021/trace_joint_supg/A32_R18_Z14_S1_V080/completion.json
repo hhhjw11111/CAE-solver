@@ -1,0 +1,5 @@
+{
+  "native_solve_flux_fields": true,
+  "independent_power_audit": true,
+  "fully_validated": false
+}

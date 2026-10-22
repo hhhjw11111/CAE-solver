@@ -1,0 +1,20 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_SOURCE_PREFLIGHT_WARNINGS",
+  "inspected": [
+    "S1 panels a b c d",
+    "S2 panels a b c d",
+    "whole-figure PNG previews"
+  ],
+  "no_data_exclusions": true,
+  "native_runs_started": 0,
+  "warnings_resolved": {
+    "PNG_not_TIFF": "PDF/SVG editable deliverables and 600dpi PNG are the agreed export scope; no journal-specific raster format claimed",
+    "log_guard": "Positive values filtered explicitly; exact zero retained in tables and omissions recorded; no pseudocount"
+  },
+  "immutable_evidence_revalidated": true,
+  "limitations": [
+    "No S1/S2 full FEM nodal spatial fields available",
+    "No high-Pe mesh/SUPG or production-state certificate",
+    "Original A1/A2, A2P FAIL and broader original FAIL unchanged"
+  ]
+}

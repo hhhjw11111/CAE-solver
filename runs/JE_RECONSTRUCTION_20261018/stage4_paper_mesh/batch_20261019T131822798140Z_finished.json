@@ -1,0 +1,21 @@
+{
+  "all_requested_attempts_completed": true,
+  "events": [
+    {
+      "name": "A40_R14_Z14_S1_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": false
+    },
+    {
+      "name": "A48_R14_Z14_S1_V060",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": true
+    },
+    {
+      "name": "A48_R14_Z14_S1_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": true
+    }
+  ],
+  "fully_validated": false
+}

@@ -1,0 +1,52 @@
+{
+  "mesh": {
+    "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh",
+    "sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f"
+  },
+  "6": {
+    "nodes.csv": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V060\\nodes.csv",
+      "sha256": "3ba1c6613e98cc13ef32b70d396aa8b57b425f5e3fb4fb54e46e0141e13a1683"
+    },
+    "metrics.txt": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V060\\metrics.txt",
+      "sha256": "e97f39861b2015f156597538c751f783051567ed30b7752e826aac0980c3feed"
+    },
+    "field_samples.csv": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V060\\field_samples.csv",
+      "sha256": "02b6a8f102f4d6bcd7dcd3269db77adbe2371afcc7181a7e4cb602962ccf7d05"
+    }
+  },
+  "7": {
+    "nodes.csv": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V070\\nodes.csv",
+      "sha256": "adcb4555fe67acce5c32a16cec480a9e693d1b60dadbae9e754500d0e893d933"
+    },
+    "metrics.txt": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V070\\metrics.txt",
+      "sha256": "f8b766160f3bcaf3991e438e4465d95ad7160369c4c093b60bf75eccf833fa0b"
+    },
+    "field_samples.csv": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V070\\field_samples.csv",
+      "sha256": "54bede83815be645da4a248c601a8816582b3493102b956041845a4020c0869c"
+    }
+  },
+  "8": {
+    "nodes.csv": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\nodes.csv",
+      "sha256": "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941"
+    },
+    "metrics.txt": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\metrics.txt",
+      "sha256": "f44e2a3d5a6791460bc1387f11eecf5289e3f1cccded14b6040c6afde70872a1"
+    },
+    "field_samples.csv": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\field_samples.csv",
+      "sha256": "772f035544249f4478798df820878c9e150124dd16edc6e67e8dd29dfb4d3678"
+    }
+  },
+  "evaluator": {
+    "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py",
+    "sha256": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be"
+  }
+}

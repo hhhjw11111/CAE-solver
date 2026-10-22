@@ -1,0 +1,34 @@
+{
+  "default_input_unchanged": true,
+  "log_weighted_enabled": true,
+  "half_enabled": true,
+  "first_seed_recorded": true,
+  "future_seed_not_fabricated": true,
+  "prepare_statuses": [
+    "PREPARED_NOT_RUN",
+    "PREPARED_NOT_RUN"
+  ],
+  "default_input_sha256": "4d80a826c36742c5452448581cf1fa9f2d67babcaf2292cf84868a3c725124bb",
+  "negative_checks": {
+    "q5_without_weighting": {
+      "exit_code": 1,
+      "output_not_created": true,
+      "last_error_line": "ValueError: Order 5 is restricted to log-weighted transport"
+    },
+    "inactive_supg_scale": {
+      "exit_code": 1,
+      "output_not_created": true,
+      "last_error_line": "ValueError: SUPG scale does not apply to log-weighted transport"
+    },
+    "colliding_names": {
+      "exit_code": 1,
+      "output_not_created": true,
+      "last_error_line": "ValueError: Requested voltages collide in the sweep folder labels; use run_hv_point for close off-grid points"
+    },
+    "descending_seed": {
+      "exit_code": 1,
+      "output_not_created": true,
+      "last_error_line": "ValueError: Starting seed must be a complete field at or below the first nonzero voltage"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "report": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\增补报告_140320.txt",
+  "sha256": "58c12a953d3604b94854c62968ce0e9ac86e9dd56bd74a59fa3c338fc9423c57",
+  "evidence": [
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\zno_material_point_v2\\evidence.json",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\zno_material_point_v2\\scan.csv",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\half_symmetry_scope_checked.json",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\r21_provenance_checked_1358.json"
+  ]
+}

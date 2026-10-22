@@ -1,0 +1,7 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_zero_heat_seed_A64_V060\\nodes.csv",
+  "sha256": "350272f0672df9296c72faef1b5b1900d9ddae58b7622a63c2cc3cdf56970617",
+  "voltage": 6.0,
+  "initial_load_joule_factor": 0.0,
+  "status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION"
+}

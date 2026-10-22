@@ -1,0 +1,37 @@
+[
+  {
+    "name": "execution.json",
+    "bytes": 904,
+    "sha256": "CB07D680B3925D4AC2F97591A076CF99BDD358EB4AB217F9BAA8907E99A2D6CF"
+  },
+  {
+    "name": "field_samples.csv",
+    "bytes": 230400150,
+    "sha256": "EABB56BF36714965DD3811AC84640AF6C4538F7948B4AA31B126AFBDB9DA92DB"
+  },
+  {
+    "name": "input.nml",
+    "bytes": 664,
+    "sha256": "9A0F8930E9F75CDCFA3C38BB03438C0B51A0EC4C6C75BE4120D15804557D434A"
+  },
+  {
+    "name": "metrics.txt",
+    "bytes": 3950,
+    "sha256": "D166E2AD1CCF1CE4C44EFE2F40B6A3E486FA307B36DD115F5043CC3D060DD7F0"
+  },
+  {
+    "name": "nodes.csv",
+    "bytes": 6281235,
+    "sha256": "13D2504EFE9B4D0B07E31388E6162EA1B7758C668F8B20FC677AF1421262CCD5"
+  },
+  {
+    "name": "stderr.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "name": "stdout.txt",
+    "bytes": 4231,
+    "sha256": "9E7639525450C3A72D4AAAD46101D12929BF501138ECEE3198863B4C176840EC"
+  }
+]

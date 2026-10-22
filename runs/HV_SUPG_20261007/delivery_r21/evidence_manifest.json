@@ -1,0 +1,150 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_BASELINE_20261007\\TPSolverV2.exe",
+      "sha256": "fc73dda49a90682ab565babc33455b567eb86052578ba83ce4645a8bcbfdc0dd",
+      "bytes": 84142592
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\TPSolverV2.exe",
+      "sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+      "bytes": 84430848
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_FAST_HOLE_L0\\FAST_H1_LQ_L0.nml",
+      "sha256": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+      "bytes": 664
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_FAST_HOLE_L0\\H1_L0.mesh",
+      "sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "bytes": 1041614
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\credibility_plan_r21.json",
+      "sha256": "3911c2c377fcfbe225ce57c012526c5c85b0028e515ad1ad72d5e59f17ffd35a",
+      "bytes": 3497
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\debug_r21_quiet_half_L0_V030\\execution.json",
+      "sha256": "92c7ba6a6976ea9d9f907d55edcaf9d62ae88cd81a0cbc642801d71ec2aca4a6",
+      "bytes": 258
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\debug_r21_quiet_half_L0_V030\\metrics.txt",
+      "sha256": "c31b33c3540135cdd4fce22eacbb1673f9e19d57c5806a1bd97cd045979a747d",
+      "bytes": 3383
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\delivery_r21\\evidence.json",
+      "sha256": "8fcf697dc7a4ef0c3c2a856d7a32c56ccdb2eb3bad0ba0f2788892de26c37a27",
+      "bytes": 58310
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\delivery_r21\\rechecked_evidence_hashes.json",
+      "sha256": "5f2037e326af1cb61ec640236f0799894a1eebfe8db8632a6d7d670a1648fcfa",
+      "bytes": 164
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\delivery_r21\\status_0_8V.csv",
+      "sha256": "ad2ab48ca9c745c7bb4364d7ed63b24d442acc1c76c0b51f0da433ad69378120",
+      "bytes": 6470
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\delivery_r21\\summary.json",
+      "sha256": "a244c7bdd4b6958ea0d462d6d294054e38b140170daf51a141cdb8af9617f83a",
+      "bytes": 1135
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\delivery_r21\\\u53ef\u4fe1\u8303\u56f4\u6838\u9a8c.md",
+      "sha256": "37dfe7fa5f861a7e0b2360a461089b4f0183def377f5b845e2b390df1afece7f",
+      "bytes": 6791
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\half_equivalence_r21_L0_V030.json",
+      "sha256": "90d9563d206bd71880249f45e6bfa915f0c29c62daad8db905c4382f48cb32bf",
+      "bytes": 5009
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\half_equivalence_r21_XY2Z3_V060.json",
+      "sha256": "46008a0065c4ac072522919f3570f2923c0f986e954e53496ad57a5b35fbcdba",
+      "bytes": 4884
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\half_input_checks_r21\\report.json",
+      "sha256": "cc5d7e8c957f6137a912c313e7a42a39e4f2315b03f8e05c5d30b62f86c629de",
+      "bytes": 235
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r21_half_A32_A48_A64_V060.json",
+      "sha256": "337250fa350d289fd92266aca13ede66da4af19f07d1debc725e4e5bf39169af",
+      "bytes": 1926
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r21_half_L0_L1_L2_V005.json",
+      "sha256": "6c3d925c2a4d3b388cfa838116b8e51f5772d96ca3b95a33510d89cc66932e6a",
+      "bytes": 1925
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r21_final\\executions.json",
+      "sha256": "8599c0a83ac67530e84abd619b068d603fc3bbfb785e35373c9c075a438ae0c2",
+      "bytes": 177
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r21_final\\numerical_comparison.json",
+      "sha256": "b6356607a9637273d5249018063b2c32ab4ee719b977fed48b6859ce6c8ee211",
+      "bytes": 4558
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r21_final\\report.json",
+      "sha256": "cd3c603b2061479b04f1946aa762d35a463471447a6d80c0e57ed2384222f194",
+      "bytes": 974
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\python_verification_r21_delivery.txt",
+      "sha256": "3f0ed03f25fe7c2ffa8c34fef06737163b2934a93f154d7eede7f7898fe06683",
+      "bytes": 5626
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\summary.json",
+      "sha256": "71f8640da78ccf266085483f2bb2b9f3dfb4d9cd9752b551a73d7e04c6d80e02",
+      "bytes": 4310
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_delivery_source_snapshot\\original_build_manifest.json",
+      "sha256": "a1548d68c68f1adc3823e04b6d750c25bb14b8c0dec51de96640c2aa23cf529b",
+      "bytes": 26611
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_delivery_source_snapshot\\snapshot.json",
+      "sha256": "74f0bd9d8588a3ff3182068c3d8bc127e8a32896034c734dda83669e897600d8",
+      "bytes": 29872
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_final_fortran_source_audit.json",
+      "sha256": "8002d6ec60fc1527624e3126b9d66d8a576fb76db21979729d827f99041db0a1",
+      "bytes": 15323
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\regression_r21\\report.json",
+      "sha256": "c2254133d2fd50e5c1b0b52a49bfdc0a5edb0767c5da801c15e0e778a7af4b94",
+      "bytes": 2115
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\stabilization_r21_half_L0_V005.json",
+      "sha256": "d0a45cbe6d1ffb170eb565ab01c18ae1dc270f4b80454a4fb1269f6380e1f527",
+      "bytes": 3194
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\transport_equilibrium_r21\\manifest.json",
+      "sha256": "85110000630498b320562924632200ccad7aef3a9c28c7df0e82a1522bc64c2b",
+      "bytes": 9026
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\transport_equilibrium_r21\\stdout.txt",
+      "sha256": "33d8f21d4b340c36a9441cdde11712861065f889848cb7db4812817c682fa54f",
+      "bytes": 3387
+    }
+  ],
+  "scope": "Delivery files and supporting records; native point output hashes are additionally embedded in evidence.json. Source snapshot lists its own files."
+}

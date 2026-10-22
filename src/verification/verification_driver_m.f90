@@ -1,4 +1,5 @@
 module verification_driver_m
+  use temperature_control_check_m, only : verify_temperature_control
   use kinds_m, only : dp
   use constants_m, only : VERIFICATION_TOL
   use status_m, only : SolverStatusType, clear_status, set_status, STATUS_VERIFICATION_FAILED
@@ -12,10 +13,11 @@ module verification_driver_m
   use element_tangent_check_m, only : verify_element_g03
   use global_assembly_check_m, only : verify_global_g04
   use global_block_jacobian_check_m, only : verify_global_block_jacobian_g06
-  use linear_solver_check_m, only : verify_linear_solver_l01
+  use linear_solver_check_m, only : verify_linear_solver_l01,verify_hole_split_linear_solver
   use analytic_benchmarks_m, only : run_m0_verification
   use newton_solver_check_m, only : verify_newton_solver_g07
   use continuation_solver_check_m, only : verify_continuation_solver_g08
+  use arclength_solver_check_m, only : verify_arclength_saddle_node
   use center_hole_check_m, only : verify_center_hole_g09
   use mesh_convergence_check_m, only : verify_mesh_convergence_g10
   use matched_control_check_m, only : verify_matched_control_g11
@@ -23,6 +25,9 @@ module verification_driver_m
   use production_joule_check_m, only : verify_production_joule_a1j
   use a1_joint_check_m, only : verify_a1_joint
   use a2_hole_check_m, only : verify_a2_hole
+  use a2_piezo_check_m, only : verify_a2_piezo,export_a2p_matrices
+  use je_gradient_check_m, only : verify_je_gradient
+  use supg_check_m, only : verify_supg
   implicit none
   private
 
@@ -35,12 +40,38 @@ contains
     type(SolverStatusType), intent(out) :: status
     character(len=*), intent(in), optional :: case_path_1,case_path_2,case_path_3,case_path_4
     character(len=512) :: g10_paths(3)
+    character(len=512) :: a2p_directory
+    integer :: a2p_argument_status
 
     select case (uppercase(trim(verification_id)))
+    case ('TCTRL')
+      call verify_temperature_control(status)
+    case ('SUPG')
+      call verify_supg(status)
+    case ('SUPGJ')
+      call verify_global_block_jacobian_g06(status,.true.,.true.)
+    case ('SUPGJT')
+      call verify_global_block_jacobian_g06(status,.true.)
+    case ('G08P')
+      call verify_continuation_solver_g08(status,.true.)
+    case ('G08G')
+      call verify_continuation_solver_g08(status,.true.,0.25_dp)
+    case ('G07S')
+      call verify_newton_solver_g07(status,.true.)
+    case ('G07TR')
+      call verify_newton_solver_g07(status,trust_check=.true.)
     case ('V01')
       call verify_v01(status)
     case ('G02')
       call verify_material_point_g02(status)
+    case ('G02JE')
+      call verify_material_point_g02(status,current_work=.true.)
+    case ('F1MJE')
+      call verify_material_point_g02(status,'NT',current_work=.true.)
+      if (.not. status%is_ok()) return
+      call verify_material_point_g02(status,'N0',current_work=.true.)
+      if (.not. status%is_ok()) return
+      call verify_material_point_g02(status,'LQ',current_work=.true.)
     case ('F1M')
       call verify_material_point_g02(status,'NT')
       if (.not. status%is_ok()) return
@@ -51,14 +82,54 @@ contains
       call verify_element_g03(status)
     case ('G04')
       call verify_global_g04(status)
+    case ('G04JE')
+      call verify_global_g04(status,current_work=.true.)
     case ('G06')
       call verify_global_block_jacobian_g06(status)
     case ('G07')
       call verify_newton_solver_g07(status)
     case ('G08')
       call verify_continuation_solver_g08(status)
+    case ('ARC')
+      call verify_arclength_saddle_node(status)
+    case ('ARCS')
+      call verify_arclength_saddle_node(status,1e-10_dp)
+      if(.not.status%is_ok()) return
+      call verify_arclength_saddle_node(status,35.0_dp)
     case ('A1J')
       call verify_production_joule_a1j(status)
+    case ('A1JJE')
+      call verify_production_joule_a1j(status,current_work=.true.)
+    case ('JEGRAD')
+      call verify_je_gradient(status)
+    case ('A2PMAT')
+      if (present(case_path_1)) then
+        call export_a2p_matrices(trim(case_path_1),status)
+      else if (command_argument_count()==3) then
+        call get_command_argument(3,a2p_directory,status=a2p_argument_status)
+        if (a2p_argument_status/=0) then
+          call set_status(status,STATUS_VERIFICATION_FAILED,'Cannot read A2PMAT export directory.')
+        else
+          call export_a2p_matrices(trim(a2p_directory),status)
+        end if
+      else
+        call set_status(status,STATUS_VERIFICATION_FAILED,'A2PMAT requires a new export directory.')
+      end if
+    case ('A2P')
+      if (present(case_path_1)) then
+        call verify_a2_piezo(trim(case_path_1),status)
+      else if (command_argument_count()==3) then
+        ! The frozen application entry forwards paths only for its legacy IDs.
+        ! Parse this new verification-only export argument without changing it.
+        call get_command_argument(3,a2p_directory,status=a2p_argument_status)
+        if (a2p_argument_status/=0) then
+          call set_status(status,STATUS_VERIFICATION_FAILED,'Cannot read A2P export directory.')
+        else
+          call verify_a2_piezo(trim(a2p_directory),status)
+        end if
+      else
+        call verify_a2_piezo('',status)
+      end if
     case ('A1')
       if (present(case_path_1)) then
         call verify_a1_joint(trim(case_path_1),status)
@@ -109,6 +180,8 @@ contains
       end if
     case ('L01')
       call verify_linear_solver_l01(status)
+    case ('BLK')
+      call verify_hole_split_linear_solver(status)
     case ('V02','V03','V04','V05','V06','G05')
       call run_m0_verification(verification_id,status)
     case default

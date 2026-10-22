@@ -1,0 +1,7 @@
+{
+  "state": "STOPPED_REVIEW_REQUIRED",
+  "utc": "2026-10-20T07:12:38.794612+00:00",
+  "reason": "RuntimeError('joint2 failed with exit 1; no retry or next step')",
+  "retries": 0,
+  "production_acceptance": false
+}

@@ -1,0 +1,22 @@
+{
+  "case": "MESH_H1_NT_L1",
+  "input_name": "MESH_H1_NT_L1",
+  "started_utc": "2026-09-06T15:31:41.7337515Z",
+  "executable_sha256": "028FE2E514744488EFDC5EA69D97FD18353334DC07E69624B985D3A2D4EAD892",
+  "solver_version": "0.14.4-f1-stack-safe",
+  "input_sha256": "9A0F8930E9F75CDCFA3C38BB03438C0B51A0EC4C6C75BE4120D15804557D434A",
+  "storage": "OOC",
+  "ooc_max_core_mb": 8192,
+  "ooc_max_swap_mb": 0,
+  "scratch": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906_R0144\\ooc_scratch\\MESH_H1_NT_L1",
+  "status": "PASS_NOT_MESH_ACCEPTANCE",
+  "pid": 77544,
+  "last_monitor_utc": "2026-09-06T16:28:13.9924596Z",
+  "elapsed_seconds": 3392.2587279,
+  "working_set_bytes": 1568567296,
+  "cpu_seconds": 3190.140625,
+  "stdout_bytes": 2631,
+  "long_runtime_advisory": false,
+  "exit_code": 0,
+  "finished_utc": "2026-09-06T16:28:41.8067077Z"
+}

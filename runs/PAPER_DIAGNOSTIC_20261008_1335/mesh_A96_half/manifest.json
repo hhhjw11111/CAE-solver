@@ -1,0 +1,17 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\mesh_A96_full\\H1_XY2_Z3.mesh",
+  "source_mesh_sha256": "214c4c05d1190b46c644940bec65aab50e96d5b84e2f1ae05655acf618d9448e",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\mesh_A96_half\\H1_Y_HALF.mesh",
+  "mesh_sha256": "623a39cc7fcd3cf3dca2fb19cb73c1b9466cf4dd73b5b19d9f66a1e9a6738a79",
+  "node_map_sha256": "95aec612c7b82ec28a4c491e0f76ea2dc6417fc1fcde317391b34a9ce50a7963",
+  "nodes": 61221,
+  "elements": 13824,
+  "minimum_sampled_jacobian": 1.503230493816079e-25,
+  "reflection_audit": {
+    "matched_nodes": 120576,
+    "matched_elements": 27648,
+    "maximum_coordinate_error_m": 1.6940658945086007e-20
+  }
+}

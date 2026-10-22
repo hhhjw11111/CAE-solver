@@ -1,0 +1,63 @@
+{
+  "case_family": "3V R23 LOG_WEIGHTED y-half L1_to_L2",
+  "source": "data/spatial_failure_source.csv",
+  "status": "FAIL_LOCAL_CARRIER_2_PERCENT",
+  "rows": [
+    {
+      "field": "phi_V",
+      "maximum_relative": "0.00011865404636942256",
+      "rms_relative": "2.6895913560155258e-05",
+      "normalization": "3.0000000000000018",
+      "limit": "0.02",
+      "passed": "True"
+    },
+    {
+      "field": "theta_K",
+      "maximum_relative": "0.002048622195038305",
+      "rms_relative": "0.00039819709261357836",
+      "normalization": "3.9084739599444287",
+      "limit": "0.02",
+      "passed": "True"
+    },
+    {
+      "field": "ux_m",
+      "maximum_relative": "0.002948717655667155",
+      "rms_relative": "0.0007323532349644574",
+      "normalization": "2.2926301912911866e-10",
+      "limit": "0.02",
+      "passed": "True"
+    },
+    {
+      "field": "uy_m",
+      "maximum_relative": "0.0014535750702727751",
+      "rms_relative": "0.00026314333194957153",
+      "normalization": "2.2926301912911866e-10",
+      "limit": "0.02",
+      "passed": "True"
+    },
+    {
+      "field": "uz_m",
+      "maximum_relative": "0.0012457763231981049",
+      "rms_relative": "0.00024439716462082905",
+      "normalization": "2.2926301912911866e-10",
+      "limit": "0.02",
+      "passed": "True"
+    },
+    {
+      "field": "eta_n_density_perturbation",
+      "maximum_relative": "0.030065437294098295",
+      "rms_relative": "0.0030448012065186774",
+      "normalization": "0.29379001684502176",
+      "limit": "0.02",
+      "passed": "False"
+    },
+    {
+      "field": "eta_p_density_perturbation",
+      "maximum_relative": "0.030097661439339323",
+      "rms_relative": "0.0027963560154475164",
+      "normalization": "0.32310100902225786",
+      "limit": "0.02",
+      "passed": "False"
+    }
+  ]
+}

@@ -1,0 +1,1100 @@
+{
+  "scope": "ORIGINAL_MODEL_REGISTERED_EVIDENCE_INVENTORY",
+  "plan": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_evidence_plan_stage1.json",
+  "plan_sha256": "52cdc5d67f56c88fb2ac553d980d5f0900afd5d557d15227275f33a7c839173b",
+  "points": [
+    {
+      "voltage_V": 0.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000\\manifest.json",
+      "state": "EXACT_ZERO_EQUILIBRIUM_VERIFIED",
+      "fully_validated": true,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000\\manifest.json": "f2cb19d262d5cb5c4c8a32ddb0a12d43b5eae8218d156c4f6545c8b21bfa5fd1",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000\\input.nml": "dee8913b7d51d3da1bd4a76b16fc0eafb575f997dc85b7056349fcd8611a6564",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000\\execution.json": "1e1b40477b1363e1fa55664bb57f274a59e95a529b0f5441714ac2ac7c22d150",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000\\metrics.txt": "2e27030aadd1b979796f6dda662aff6700992438a77d13ca8230f1054518995e",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V000\\nodes.csv": "2f16282f600a4c362ae9cda0b75ec70b917b0b36ce4a78fda014231aa994e380"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 5541,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 6e+22,
+        "minimum_p_m3": 1.4016666666666668e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+      "executable_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 0.0,
+        "joule_W": 0.0,
+        "electron_right_A": 0.0,
+        "hole_right_A": 0.0,
+        "heat_balance_relative": 0.0,
+        "physical_exterior_heat_balance_relative": 0.0,
+        "electron_balance_relative": 0.0,
+        "hole_balance_diagnostic": 0.0,
+        "ring_abs_n_relative_mean": 0.0,
+        "ring_abs_p_relative_mean": 0.0,
+        "maximum_accepted_residual": 0.0,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0,
+        "electron_right_A": 0.0,
+        "hole_right_A": 0.0
+      },
+      "exact_zero_equilibrium_verified": true
+    },
+    {
+      "voltage_V": 0.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\manifest.json": "66c5a2c3503781f5b22c5d95162acb3465105ce74aee3f2c084d4116db8df347",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\input.nml": "05e01e3a0152aa6f8f62cc636d5d28bf907eb597ae7df98b2efde0bd5d9b9b33",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\execution.json": "b4ec7aa32627458e5b8defb3b0a0b931c8847e9b19415a1522b64f53cf3f86d7",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\metrics.txt": "63680f89edcf0f82aa28d6dca49ba4e5b1844281d45e44d38bbefb324d073628",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\nodes.csv": "bd4a4681beaa62358c8cf80a79be31e235fd54c7959fa00fb67d366393f988f4"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 43637,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.957497795086555e+22,
+        "minimum_p_m3": 1.3917602599092301e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "889bedc6a347c1e738fc536ef8c9c89ee6d6e9007b71355a3fd25ec008c1dbb6",
+      "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 0.10278071088032448,
+        "joule_W": 2.1400743163456946e-05,
+        "electron_right_A": 4.273987688384132e-05,
+        "hole_right_A": 2.435246576038615e-58,
+        "heat_balance_relative": 0.00034000623562940673,
+        "physical_exterior_heat_balance_relative": 2.654516592506574e-06,
+        "electron_balance_relative": 4.8762258988397894e-11,
+        "hole_balance_diagnostic": 8.448165702979725e-11,
+        "ring_abs_n_relative_mean": 0.00016613598464061468,
+        "ring_abs_p_relative_mean": 0.00016746922133340338,
+        "maximum_accepted_residual": 2.4141965959568516e-17,
+        "maximum_accepted_update": 1.2171342258846156e-15
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 4.280148632691389e-05,
+        "electron_right_A": 8.547975376768264e-05,
+        "hole_right_A": 4.87049315207723e-58
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 1.0,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 1.5,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 2.0,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 2.5,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 3.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\manifest.json": "83102edcd60132dbb6b825ba7bb2232d43f1dc28b412df98f0a3b5379804fc0e",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\input.nml": "df89767b7f9b911c9e3cd5e0c164ca55e6f12af0649156a0439ced8aca983afe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\execution.json": "07019a0c24860cea941ccbd50b55fcffeca70d374417a9adf3dc6ac25b003b9a",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\metrics.txt": "c573e97fafd024eeed04b7d059e35e5c8ce083644d132ad8893a6a2d4f2f7cc2",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\nodes.csv": "7ec8f28b50103e69eeea183c5d881a7c78ba740f7e1a24676f866d3d1178f4b4"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 18517,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 4.532705159855502e+22,
+        "minimum_p_m3": 1.083384354004571e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "5c1738fd520655a2219dd492e159eb7e64c211956c49838764c69d6e735c1b12",
+      "executable_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 3.9081271732193272,
+        "joule_W": 0.0007974461883926063,
+        "electron_right_A": 0.000252194250025669,
+        "hole_right_A": 1.4369792545651025e-57,
+        "heat_balance_relative": 0.00035873967378639816,
+        "physical_exterior_heat_balance_relative": 0.0006967693332268516,
+        "electron_balance_relative": 1.6823998209982558e-07,
+        "hole_balance_diagnostic": 1.3609678879959686e-07,
+        "ring_abs_n_relative_mean": 0.00627487577357193,
+        "ring_abs_p_relative_mean": 0.006916156945098368,
+        "maximum_accepted_residual": 9.678798981593873e-17,
+        "maximum_accepted_update": 1.7743471647668432e-10
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0015948923767852125,
+        "electron_right_A": 0.000504388500051338,
+        "hole_right_A": 2.873958509130205e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 3.5,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 4.0,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 4.5,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 5.0,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 5.5,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 6.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060\\manifest.json": "de21c82a1e18d7ea3edab41bf2b0ec09ce2347b9b79658055e3fe9ffa64a5ae5",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060\\input.nml": "c202cff443795d1754473717762a87044bc30efc6a4e55940a93e99dd0c8d618",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060\\execution.json": "2c061a80bd8993ff2a1786c1e2c39e105905986bb5e5ac7deb07e3081fa3af0b",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060\\metrics.txt": "0743c76094181a826d5da340be06d00ec186ec837b105f1706dcfeeca8992d5c",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V060\\nodes.csv": "4a3fbfdeed313cee28c6a4ef1d018da6da2c4510281cd8a516fc8b2a676cd60e"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 18517,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.0003194046787787e+22,
+        "minimum_p_m3": 4.366882993414168e-31,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "5c1738fd520655a2219dd492e159eb7e64c211956c49838764c69d6e735c1b12",
+      "executable_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 20.911119289627095,
+        "joule_W": 0.0039064829997737735,
+        "electron_right_A": 0.0004699718658360906,
+        "hole_right_A": 2.678172329202904e-57,
+        "heat_balance_relative": 0.006303038542522348,
+        "physical_exterior_heat_balance_relative": 0.006617476859176485,
+        "electron_balance_relative": 5.241406269940594e-06,
+        "hole_balance_diagnostic": 5.12244675733418e-06,
+        "ring_abs_n_relative_mean": 0.032493535615773936,
+        "ring_abs_p_relative_mean": 0.05528969596937788,
+        "maximum_accepted_residual": 3.605816378277558e-16,
+        "maximum_accepted_update": 4.124708942275933e-13
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.007812965999547547,
+        "electron_right_A": 0.0009399437316721812,
+        "hole_right_A": 5.356344658405808e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 6.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay\\manifest.json",
+      "state": "SOLVED_FLUX_GATE_FAILED",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay\\manifest.json": "cc5cf5e22e81abc67d442a42e751b7688012c595e1ff1bc8b843561be7e2342a",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay\\input.nml": "ceed9dca780078cc8d5d2365d1257fb8a5e5a003e39f22c14614fcf2c4e93358",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay\\execution.json": "d32329e63252e8658b3fd482fe0c7e1e07e417e0af56c2d56d609b22b029f915",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay\\metrics.txt": "2eb5d2d482ab01f9f7d0ab422cee2fb873d2c863abc134c272a7f35a11049d94",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V065_replay\\nodes.csv": "d066cc607a5966eeeb7da9055596654a32c37b1b154757327bd04014901172d2"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 5541,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 2.7403939461447203e+21,
+        "minimum_p_m3": 2.615960442692531e-31,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+      "executable_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 31.12883905609823,
+        "joule_W": 0.005503404428251043,
+        "electron_right_A": 0.000489634272524386,
+        "hole_right_A": 2.815008794270357e-57,
+        "heat_balance_relative": 0.0799913306077972,
+        "physical_exterior_heat_balance_relative": 0.08242396247864536,
+        "electron_balance_relative": 0.00013448874374247312,
+        "hole_balance_diagnostic": 0.008229835391814797,
+        "ring_abs_n_relative_mean": 0.047213820000964274,
+        "ring_abs_p_relative_mean": 0.11250285363434338,
+        "maximum_accepted_residual": 5.875901931412463e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.011006808856502086,
+        "electron_right_A": 0.000979268545048772,
+        "hole_right_A": 5.630017588540714e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 7.0,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 7.5,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    },
+    {
+      "voltage_V": 8.0,
+      "state": "NO_REGISTERED_POINT",
+      "fully_validated": false
+    }
+  ],
+  "studies": [
+    {
+      "name": "0.5V original three-level mesh",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Ten original scalar/ring gates only",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L0_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005"
+      ],
+      "result": {
+        "voltages": [
+          {
+            "voltage_V": 0.5,
+            "complete_solve_flux_all_levels": true,
+            "mesh_pass": true,
+            "status": "MESH_PASS_QUADRATURE_SENSITIVITY_PENDING",
+            "changes": {
+              "joule_W": {
+                "L0_L1": 1.7550086230983383e-05,
+                "L1_L2": 3.110303542258313e-06,
+                "limit": 0.01
+              },
+              "theta_max_K": {
+                "L0_L1": 7.648753448593328e-05,
+                "L1_L2": 1.048097874976602e-05,
+                "limit": 0.01
+              },
+              "ring_theta_mean_K": {
+                "L0_L1": 4.9760266600158485e-05,
+                "L1_L2": 1.684258720690932e-06,
+                "limit": 0.01
+              },
+              "electron_right_A": {
+                "L0_L1": 0.00017553729644642293,
+                "L1_L2": 6.850227668756654e-05,
+                "limit": 0.01
+              },
+              "ring_E_mean_V_m": {
+                "L0_L1": 0.00012824021936436495,
+                "L1_L2": 2.1906012451593284e-05,
+                "limit": 0.02
+              },
+              "ring_Q_mean_W_m3": {
+                "L0_L1": 0.00022060352321124447,
+                "L1_L2": 4.151150545953767e-05,
+                "limit": 0.02
+              },
+              "ring_abs_n_relative_mean": {
+                "L0_L1": 0.00046165789052914546,
+                "L1_L2": 5.5240716073808837e-05,
+                "limit": 0.02
+              },
+              "ring_abs_p_relative_mean": {
+                "L0_L1": 0.00043962356758799753,
+                "L1_L2": 6.334276491151308e-05,
+                "limit": 0.02
+              },
+              "ring_Q_p95_W_m3": {
+                "L0_L1": 0.00011459884738635011,
+                "L1_L2": 0.00547220493847558,
+                "limit": 0.05
+              },
+              "E_p95_V_m": {
+                "L0_L1": 0.006272494320688022,
+                "L1_L2": 0.0016686740618985542,
+                "limit": 0.05
+              }
+            }
+          }
+        ],
+        "all_mesh_pass": true,
+        "provenance_errors": [],
+        "fully_validated": false,
+        "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+      }
+    },
+    {
+      "name": "3V original three-level mesh",
+      "kind": "mesh",
+      "voltage_V": 3,
+      "scope": "Ten original scalar/ring gates only",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V030",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030"
+      ],
+      "result": {
+        "voltages": [
+          {
+            "voltage_V": 3,
+            "complete_solve_flux_all_levels": true,
+            "mesh_pass": true,
+            "status": "MESH_PASS_QUADRATURE_SENSITIVITY_PENDING",
+            "changes": {
+              "joule_W": {
+                "L0_L1": 0.00021668257067002303,
+                "L1_L2": 4.642451639266939e-05,
+                "limit": 0.01
+              },
+              "theta_max_K": {
+                "L0_L1": 0.0002473641744086191,
+                "L1_L2": 7.175734138086528e-05,
+                "limit": 0.01
+              },
+              "ring_theta_mean_K": {
+                "L0_L1": 0.00031635100584205897,
+                "L1_L2": 5.5340002933380815e-05,
+                "limit": 0.01
+              },
+              "electron_right_A": {
+                "L0_L1": 5.1305949420082426e-05,
+                "L1_L2": 2.441906127777409e-05,
+                "limit": 0.01
+              },
+              "ring_E_mean_V_m": {
+                "L0_L1": 0.00017094673514756684,
+                "L1_L2": 3.0281097937166037e-05,
+                "limit": 0.02
+              },
+              "ring_Q_mean_W_m3": {
+                "L0_L1": 0.0003947474925768489,
+                "L1_L2": 7.534663449161957e-05,
+                "limit": 0.02
+              },
+              "ring_abs_n_relative_mean": {
+                "L0_L1": 0.0007267592374438194,
+                "L1_L2": 0.0001080578631497093,
+                "limit": 0.02
+              },
+              "ring_abs_p_relative_mean": {
+                "L0_L1": 0.0012340169837813293,
+                "L1_L2": 0.0002801592885728911,
+                "limit": 0.02
+              },
+              "ring_Q_p95_W_m3": {
+                "L0_L1": 0.000784858386701241,
+                "L1_L2": 0.00023245003875127735,
+                "limit": 0.05
+              },
+              "E_p95_V_m": {
+                "L0_L1": 0.0025174344459985313,
+                "L1_L2": 0.002336982393323548,
+                "limit": 0.05
+              }
+            }
+          }
+        ],
+        "all_mesh_pass": true,
+        "provenance_errors": [],
+        "fully_validated": false,
+        "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+      }
+    },
+    {
+      "name": "0.5V fixed-planar thickness subdivision",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Thickness-only refinement; angular error remains independent",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005"
+      ],
+      "result": {
+        "voltages": [
+          {
+            "voltage_V": 0.5,
+            "complete_solve_flux_all_levels": true,
+            "mesh_pass": true,
+            "status": "MESH_PASS_QUADRATURE_SENSITIVITY_PENDING",
+            "changes": {
+              "joule_W": {
+                "L0_L1": 6.942232962937846e-07,
+                "L1_L2": 4.673935735653616e-08,
+                "limit": 0.01
+              },
+              "theta_max_K": {
+                "L0_L1": 9.166875886556885e-07,
+                "L1_L2": 6.140739125380304e-08,
+                "limit": 0.01
+              },
+              "ring_theta_mean_K": {
+                "L0_L1": 8.298969296372298e-07,
+                "L1_L2": 5.5543689498867996e-08,
+                "limit": 0.01
+              },
+              "electron_right_A": {
+                "L0_L1": 3.88481582827593e-10,
+                "L1_L2": 2.5191950168779377e-11,
+                "limit": 0.01
+              },
+              "ring_E_mean_V_m": {
+                "L0_L1": 3.5292812242679564e-07,
+                "L1_L2": 1.9168434531519222e-08,
+                "limit": 0.02
+              },
+              "ring_Q_mean_W_m3": {
+                "L0_L1": 5.589031232385811e-07,
+                "L1_L2": 3.369033250256937e-08,
+                "limit": 0.02
+              },
+              "ring_abs_n_relative_mean": {
+                "L0_L1": 7.991680784348362e-05,
+                "L1_L2": 1.1397616615517888e-06,
+                "limit": 0.02
+              },
+              "ring_abs_p_relative_mean": {
+                "L0_L1": 0.00012725359241376932,
+                "L1_L2": 1.0265794584100228e-05,
+                "limit": 0.02
+              },
+              "ring_Q_p95_W_m3": {
+                "L0_L1": 2.414847523270134e-05,
+                "L1_L2": 8.471663866550607e-06,
+                "limit": 0.05
+              },
+              "E_p95_V_m": {
+                "L0_L1": 4.612508114517729e-06,
+                "L1_L2": 6.419874472147956e-07,
+                "limit": 0.05
+              }
+            }
+          }
+        ],
+        "all_mesh_pass": true,
+        "provenance_errors": [],
+        "fully_validated": false,
+        "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+      }
+    },
+    {
+      "name": "0.5V L1 quadrature3/5",
+      "kind": "quadrature",
+      "voltage_V": 0.5,
+      "scope": "L1 only; not the eventual finest mesh",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_q3_half_L1_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_q5_half_L1_V005"
+      ],
+      "result": {
+        "scope": "SINGLE_VOLTAGE_SAME_MESH_QUADRATURE_SENSITIVITY",
+        "orders": [
+          3,
+          5
+        ],
+        "runs": [
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_q3_half_L1_V005",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_q5_half_L1_V005"
+        ],
+        "errors": [],
+        "comparisons": {
+          "joule_W": {
+            "values": [
+              2.1400793869271175e-05,
+              2.1400793810086188e-05
+            ],
+            "relative_span": 2.7655510162343105e-09,
+            "limit": 0.01,
+            "passed": true
+          },
+          "theta_max_K": {
+            "values": [
+              0.10277953310963994,
+              0.10277954132982359
+            ],
+            "relative_span": 7.997879284653953e-08,
+            "limit": 0.01,
+            "passed": true
+          },
+          "electron_right_A": {
+            "values": [
+              4.2736949122648577e-05,
+              4.273691247811587e-05
+            ],
+            "relative_span": 8.574438151704204e-07,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_theta_mean_K": {
+            "values": [
+              0.08649745847840444,
+              0.08649751756526029
+            ],
+            "relative_span": 6.831046429507282e-07,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_E_mean_V_m": {
+            "values": [
+              27886.044341167595,
+              27885.988118575267
+            ],
+            "relative_span": 2.0161551649218783e-06,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_Q_mean_W_m3": {
+            "values": [
+              186474443894.20956,
+              186473637678.22308
+            ],
+            "relative_span": 4.323466366995009e-06,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_abs_n_relative_mean": {
+            "values": [
+              0.00016613989519497117,
+              0.0001661398999987762
+            ],
+            "relative_span": 2.8914216463040824e-08,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_abs_p_relative_mean": {
+            "values": [
+              0.00016747820647758564,
+              0.00016747833985992843
+            ],
+            "relative_span": 7.96415482187334e-07,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_Q_p95_W_m3": {
+            "values": [
+              384916683469.49646,
+              384920118299.3905
+            ],
+            "relative_span": 8.92348757767803e-06,
+            "limit": 0.01,
+            "passed": true
+          },
+          "E_p95_V_m": {
+            "values": [
+              31204.117120402978,
+              31204.10859874278
+            ],
+            "relative_span": 2.7309409734076686e-07,
+            "limit": 0.01,
+            "passed": true
+          }
+        },
+        "covered_metrics_passed": true,
+        "fully_validated": false,
+        "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+      }
+    },
+    {
+      "name": "L1-L2 local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005"
+      ],
+      "result": {
+        "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+        "comparisons": {
+          "phi_V": {
+            "maximum_relative": 0.0001107929231454196,
+            "rms_relative": 2.512145534179189e-05,
+            "normalization": 0.5000000000000003,
+            "limit": 0.02,
+            "passed": true
+          },
+          "theta_K": {
+            "maximum_relative": 0.002263287575050067,
+            "rms_relative": 0.0004486842936370682,
+            "normalization": 0.10279189812997538,
+            "limit": 0.02,
+            "passed": true
+          },
+          "ux_m": {
+            "maximum_relative": 0.0029724441591975222,
+            "rms_relative": 0.0007430359445732721,
+            "normalization": 6.0664303124646374e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uy_m": {
+            "maximum_relative": 0.0014426904752132994,
+            "rms_relative": 0.00026319537465539604,
+            "normalization": 6.0664303124646374e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uz_m": {
+            "maximum_relative": 0.0012851051817783126,
+            "rms_relative": 0.0002483011536352076,
+            "normalization": 6.0664303124646374e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_n_density_perturbation": {
+            "maximum_relative": 0.030070499493426776,
+            "rms_relative": 0.0033345217253276348,
+            "normalization": 0.007138257706908362,
+            "limit": 0.02,
+            "passed": false
+          },
+          "eta_p_density_perturbation": {
+            "maximum_relative": 0.030138710757482184,
+            "rms_relative": 0.0033247268376482768,
+            "normalization": 0.007154267657835098,
+            "limit": 0.02,
+            "passed": false
+          }
+        },
+        "passed": false,
+        "fully_validated": false,
+        "hashes": {
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_r22_L1_L2_V005\\nodes.csv": "2ef945f8e1205473e1d85ebac55e7989ffeb9b00f69a7d482c8584f3ff0ac643",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_r22_L1_L2_V005\\transfer_report.json": "fb67aade11df45105737e0c048da352bf4b6581d90ba4699d494c34abe34eec4",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\nodes.csv": "ab00bdfe9663caf6123e9482212e566774a30076870741a0c6a345a6faee38fc",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\manifest.json": "968e16e13f29c46fc42d7e4432e565854971e5af242e3fae4cee80c7f7fa53e3",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\execution.json": "b01c4d9c93199fe733e31e25564dc5a12ab5b6e12efb186f4793bf5fbdfeca84",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\input.nml": "d0a4e8ed6572a839781d19e32f63934dc7c760aeaaab40e690e6cc519907b640",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\metrics.txt": "528b376ff4d0415f926205147e4e0f7c19f981c30ff8e9080e4264b2c7c3a22d",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\field_audit.json": "0b6c8652cf7a722bbcb246f25579fdd2b50bf25a0b28475e345c40242b03d441",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\nodes.csv": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\manifest.json": "e8e84e0f2e53bd40c7d6285e099f778f2c32a3d372eb9de1fa41b238bdd9e233",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\execution.json": "45dcf0abc5fc51fa9be3500d2492c9d42d92375d391f26686e568815e635e130",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\input.nml": "8f7617878fe31d3aadc4939aa193f53427b052929151e3a86c7965a98113f33f",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\metrics.txt": "886613284d77b744290d86839147b6b53bceaa83b0c5141c7395ee9332fb537c",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\field_audit.json": "9b5d00d4babccef47c57bc37c8e13360ba180333a46715ac144c09072d24f2c2"
+        }
+      }
+    },
+    {
+      "name": "L2-A48 mixed angular/thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005"
+      ],
+      "result": {
+        "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+        "comparisons": {
+          "phi_V": {
+            "maximum_relative": 7.398798271440738e-05,
+            "rms_relative": 1.1532875237665257e-05,
+            "normalization": 0.5000000000000003,
+            "limit": 0.02,
+            "passed": true
+          },
+          "theta_K": {
+            "maximum_relative": 0.0015528042217269535,
+            "rms_relative": 0.00019261471731765866,
+            "normalization": 0.10278862426947327,
+            "limit": 0.02,
+            "passed": true
+          },
+          "ux_m": {
+            "maximum_relative": 0.0018415228604219862,
+            "rms_relative": 0.00033540052323623154,
+            "normalization": 6.072473941202495e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uy_m": {
+            "maximum_relative": 0.001007137700401305,
+            "rms_relative": 0.00015439411357606527,
+            "normalization": 6.072473941202495e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uz_m": {
+            "maximum_relative": 0.0008671577367603863,
+            "rms_relative": 0.00015118769115192153,
+            "normalization": 6.072473941202495e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_n_density_perturbation": {
+            "maximum_relative": 0.024813688968148628,
+            "rms_relative": 0.0023277113619703926,
+            "normalization": 0.007115076658737819,
+            "limit": 0.02,
+            "passed": false
+          },
+          "eta_p_density_perturbation": {
+            "maximum_relative": 0.024909054057182686,
+            "rms_relative": 0.002319860221593375,
+            "normalization": 0.007130934563862716,
+            "limit": 0.02,
+            "passed": false
+          }
+        },
+        "passed": false,
+        "fully_validated": false,
+        "hashes": {
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_log_A48_V005\\nodes.csv": "8a21f268faceca47b9f86afc7a3a73bfacedddb5fe904b7afc4a740185765687",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_log_A48_V005\\transfer_report.json": "0918a4ca91356b60dc00d4852499d7b9a0eb4812f22dcbf23e7a113fedcf1717",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\nodes.csv": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\manifest.json": "e8e84e0f2e53bd40c7d6285e099f778f2c32a3d372eb9de1fa41b238bdd9e233",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\execution.json": "45dcf0abc5fc51fa9be3500d2492c9d42d92375d391f26686e568815e635e130",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\input.nml": "8f7617878fe31d3aadc4939aa193f53427b052929151e3a86c7965a98113f33f",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\metrics.txt": "886613284d77b744290d86839147b6b53bceaa83b0c5141c7395ee9332fb537c",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\field_audit.json": "9b5d00d4babccef47c57bc37c8e13360ba180333a46715ac144c09072d24f2c2",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005\\nodes.csv": "668dbd0de99ad3a51a171adb6c8d24ae2508210fcec30a46fc8bc87516be2c06",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005\\manifest.json": "2a8b18f88734e72f46cbbd08bb01ae8adac58793399c0aabc6c35b02cf94234d",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005\\execution.json": "3f72c66e2e556541d1dc2eb1587e7604d959ed7f4552573c78d68484ba3781f3",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005\\input.nml": "5e26268af8f1f228fb1b74c6780bf259c3ae40486b746dd2d483c23d10cfd17b",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005\\metrics.txt": "db2a3ea8350582e22b02e8aa44ea4f534630717caf796af1d8ce98649d4ac639",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_A48_V005\\field_audit.json": "31621d082bd7673521df357ba089b15a48cec1d827683b1058b065b91b21ca2e"
+        }
+      }
+    },
+    {
+      "name": "L2-S2 thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005"
+      ],
+      "result": {
+        "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+        "comparisons": {
+          "phi_V": {
+            "maximum_relative": 1.533620289650982e-06,
+            "rms_relative": 2.5415805848173987e-07,
+            "normalization": 0.5000000000000004,
+            "limit": 0.02,
+            "passed": true
+          },
+          "theta_K": {
+            "maximum_relative": 9.176367481381249e-07,
+            "rms_relative": 5.97486956269596e-07,
+            "normalization": 0.10278871847694158,
+            "limit": 0.02,
+            "passed": true
+          },
+          "ux_m": {
+            "maximum_relative": 1.7861674047939874e-06,
+            "rms_relative": 4.049554780130139e-07,
+            "normalization": 6.066430312464636e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uy_m": {
+            "maximum_relative": 2.401665540278707e-06,
+            "rms_relative": 3.5945699855912696e-07,
+            "normalization": 6.066430312464636e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uz_m": {
+            "maximum_relative": 1.5392159080920936e-06,
+            "rms_relative": 2.445364527874383e-07,
+            "normalization": 6.066430312464636e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_n_density_perturbation": {
+            "maximum_relative": 0.004164239757606412,
+            "rms_relative": 0.0006904472725936518,
+            "normalization": 0.007117408364314248,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_p_density_perturbation": {
+            "maximum_relative": 0.004158456493693721,
+            "rms_relative": 0.0006889138455838273,
+            "normalization": 0.007133277530027852,
+            "limit": 0.02,
+            "passed": true
+          }
+        },
+        "passed": true,
+        "fully_validated": false,
+        "hashes": {
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_log_S2_V005\\nodes.csv": "cab7e4e74b1ed85785389ce6c9a2dc42b3619388998d2dcafac66d4172e4b79d",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_log_S2_V005\\transfer_report.json": "0cc50a5c355925538714c2140a0ca6cef4e121b2f1a7412552d6d3bc20b660dc",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\nodes.csv": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\manifest.json": "2168ca8555e43b5598999ac73c528ead4bc83e0df89b985bb2f2a3ad24af4a17",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\execution.json": "2da5c395b2e03b67ed355869f189f40180e92de54bdb85600d417e6879a0629a",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\input.nml": "560891bdae136c1f453715ec36da15389ffc0ec545b570a6c44de3561d3381ed",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\metrics.txt": "2f477f7d2b3f23b9caa2f23518292367eaceb5b32b920ef5b56191e42344ae9c",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\field_audit.json": "9b5d00d4babccef47c57bc37c8e13360ba180333a46715ac144c09072d24f2c2",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\nodes.csv": "1d0922143426fecdd1d53420a7e3d70bfaa3f1d62f650c3de48b0cadd80a1c7e",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\manifest.json": "c6e546dadaa57c8ffce583427fe7d2c2ffd1d27f2745c378a762c2f84c09cd25",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\execution.json": "6057894ffcc213632f572505780c2e2271cdceeba6995b69cd015fb27791b98e",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\input.nml": "f104d0b1176f86944fbacee67f287e03a65dd075b213daf39198dee4c728fea3",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\metrics.txt": "a1730d7fdc493b59bf3af93d299eddb55becffb4c41b42c2b7e53122675f1012",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\field_audit.json": "142786e04bcc76498e6fc6eb52e3c3c406427608882c07ff779f3cf7ab04e9df"
+        }
+      }
+    },
+    {
+      "name": "S2-S3 thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005"
+      ],
+      "result": {
+        "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+        "comparisons": {
+          "phi_V": {
+            "maximum_relative": 2.4363361472712326e-07,
+            "rms_relative": 5.0588717384643964e-08,
+            "normalization": 0.5000000000000003,
+            "limit": 0.02,
+            "passed": true
+          },
+          "theta_K": {
+            "maximum_relative": 6.155176733685472e-08,
+            "rms_relative": 3.998354667998822e-08,
+            "normalization": 0.10278872478593111,
+            "limit": 0.02,
+            "passed": true
+          },
+          "ux_m": {
+            "maximum_relative": 3.4907653324940517e-07,
+            "rms_relative": 9.50597653226091e-08,
+            "normalization": 6.066426969156718e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uy_m": {
+            "maximum_relative": 4.2605610786594275e-07,
+            "rms_relative": 4.7614330760861994e-08,
+            "normalization": 6.066426969156718e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uz_m": {
+            "maximum_relative": 3.7969911433482387e-07,
+            "rms_relative": 3.78972272353876e-08,
+            "normalization": 6.066426969156718e-12,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_n_density_perturbation": {
+            "maximum_relative": 0.0006612040836692733,
+            "rms_relative": 0.00013742747232618516,
+            "normalization": 0.007117536294797187,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_p_density_perturbation": {
+            "maximum_relative": 0.0006608885324153727,
+            "rms_relative": 0.00013712198348408056,
+            "normalization": 0.0071334060056878895,
+            "limit": 0.02,
+            "passed": true
+          }
+        },
+        "passed": true,
+        "fully_validated": false,
+        "hashes": {
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_log_S2_S3_V005\\nodes.csv": "e4453eb800394462bd6ccd05e6ae87d18b28490d364882199fbc89a338c4da36",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_log_S2_S3_V005\\transfer_report.json": "8cc865b194723c26eeb7db546dc1372bff3ec0892fe18dd09f57bb6e6c88c081",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\nodes.csv": "1d0922143426fecdd1d53420a7e3d70bfaa3f1d62f650c3de48b0cadd80a1c7e",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\manifest.json": "c6e546dadaa57c8ffce583427fe7d2c2ffd1d27f2745c378a762c2f84c09cd25",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\execution.json": "6057894ffcc213632f572505780c2e2271cdceeba6995b69cd015fb27791b98e",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\input.nml": "f104d0b1176f86944fbacee67f287e03a65dd075b213daf39198dee4c728fea3",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\metrics.txt": "a1730d7fdc493b59bf3af93d299eddb55becffb4c41b42c2b7e53122675f1012",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V005\\field_audit.json": "142786e04bcc76498e6fc6eb52e3c3c406427608882c07ff779f3cf7ab04e9df",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\nodes.csv": "bd4a4681beaa62358c8cf80a79be31e235fd54c7959fa00fb67d366393f988f4",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\manifest.json": "66c5a2c3503781f5b22c5d95162acb3465105ce74aee3f2c084d4116db8df347",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\execution.json": "b4ec7aa32627458e5b8defb3b0a0b931c8847e9b19415a1522b64f53cf3f86d7",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\input.nml": "05e01e3a0152aa6f8f62cc636d5d28bf907eb597ae7df98b2efde0bd5d9b9b33",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\metrics.txt": "63680f89edcf0f82aa28d6dca49ba4e5b1844281d45e44d38bbefb324d073628",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S3_V005\\field_audit.json": "2a008ff4fc2629e3def3002b5db2122dd98a6d8adaf94840cf539da5607a1aad"
+        }
+      }
+    },
+    {
+      "name": "3V L1-L2 local field",
+      "kind": "field_shape",
+      "voltage_V": 3,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030"
+      ],
+      "result": {
+        "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+        "comparisons": {
+          "phi_V": {
+            "maximum_relative": 0.00011865404636942256,
+            "rms_relative": 2.6895913560155258e-05,
+            "normalization": 3.0000000000000018,
+            "limit": 0.02,
+            "passed": true
+          },
+          "theta_K": {
+            "maximum_relative": 0.002048622195038305,
+            "rms_relative": 0.00039819709261357836,
+            "normalization": 3.9084739599444287,
+            "limit": 0.02,
+            "passed": true
+          },
+          "ux_m": {
+            "maximum_relative": 0.002948717655667155,
+            "rms_relative": 0.0007323532349644574,
+            "normalization": 2.2926301912911866e-10,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uy_m": {
+            "maximum_relative": 0.0014535750702727751,
+            "rms_relative": 0.00026314333194957153,
+            "normalization": 2.2926301912911866e-10,
+            "limit": 0.02,
+            "passed": true
+          },
+          "uz_m": {
+            "maximum_relative": 0.0012457763231981049,
+            "rms_relative": 0.00024439716462082905,
+            "normalization": 2.2926301912911866e-10,
+            "limit": 0.02,
+            "passed": true
+          },
+          "eta_n_density_perturbation": {
+            "maximum_relative": 0.030065437294098295,
+            "rms_relative": 0.0030448012065186774,
+            "normalization": 0.29379001684502176,
+            "limit": 0.02,
+            "passed": false
+          },
+          "eta_p_density_perturbation": {
+            "maximum_relative": 0.030097661439339323,
+            "rms_relative": 0.0027963560154475164,
+            "normalization": 0.32310100902225786,
+            "limit": 0.02,
+            "passed": false
+          }
+        },
+        "passed": false,
+        "fully_validated": false,
+        "hashes": {
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_r23_log_L2_V030\\nodes.csv": "a95eec56cd62a074ce70066e304536c77f8847d83dbb3771316f11056c969e39",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_r23_log_L2_V030\\transfer_report.json": "669fc8b8c30844ef7004862e88814a35e1ee545fe375b94bc5a011cac247babb",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\nodes.csv": "0e7795ac4417c8ae96845c4bed6d6a9c350251cdc69845d6bd6eaf9d9006c5a9",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\manifest.json": "f43765f6affe46d07e17d5123fd772abe76117277d8d7673427bf432ac4f47dc",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\execution.json": "657f06c4d3966fb37d04a48b1c05ea0e8f14d77adff01f087eef975ffec77623",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\input.nml": "0f88fa12883eb81bb275c1feec7234aaba7c03b4a2247e0308bdf6e0aa3c49ce",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\metrics.txt": "60566480b1d947ac88a1c11d8b7381ea69d5575b5916b6170c3368a8d483f961",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\field_audit.json": "36b595a8e92bbbe9284ffb2032cf496129a7fc02b9cf005fad39ade11dd61ec8",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\nodes.csv": "7ec8f28b50103e69eeea183c5d881a7c78ba740f7e1a24676f866d3d1178f4b4",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\manifest.json": "83102edcd60132dbb6b825ba7bb2232d43f1dc28b412df98f0a3b5379804fc0e",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\execution.json": "07019a0c24860cea941ccbd50b55fcffeca70d374417a9adf3dc6ac25b003b9a",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\input.nml": "df89767b7f9b911c9e3cd5e0c164ca55e6f12af0649156a0439ced8aca983afe",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\metrics.txt": "c573e97fafd024eeed04b7d059e35e5c8ce083644d132ad8893a6a2d4f2f7cc2",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L2_V030\\field_audit.json": "2f84aad68a1e5495a563c2d41ef6c8d37b0c8f15620964a4e5575acfc7e93df3"
+        }
+      }
+    }
+  ],
+  "off_grid_points": [],
+  "verified_exact_voltages_V": [
+    0.0
+  ],
+  "certified_nonzero_interval": null,
+  "complete_quantitative_0_8V": false,
+  "model": "FROZEN_DRIFT_HEAT_ZNO_NT",
+  "limitation": "Studies keep their own voltage, mesh, executable and domain scope. Nonzero field-shape/model review is not automated; no interpolation, interval certificate, dynamical stability or experimental calibration implied."
+}

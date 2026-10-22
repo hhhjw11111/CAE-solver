@@ -1,0 +1,2 @@
+MANIFEST_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_LOG_WEIGHTED_20261008_R22\build_manifest.json
+BUILD_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_LOG_WEIGHTED_20261008_R22\TPSolverV2.exe

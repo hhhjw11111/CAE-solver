@@ -1,0 +1,22 @@
+[
+  {
+    "check": "source_preflight",
+    "exit_code": 0
+  },
+  {
+    "check": "S1_A1JJE_summary.text_audit",
+    "exit_code": 0
+  },
+  {
+    "check": "S1_A1JJE_summary.collision_audit",
+    "exit_code": 1
+  },
+  {
+    "check": "S2_JEGRAD_summary.text_audit",
+    "exit_code": 0
+  },
+  {
+    "check": "S2_JEGRAD_summary.collision_audit",
+    "exit_code": 1
+  }
+]

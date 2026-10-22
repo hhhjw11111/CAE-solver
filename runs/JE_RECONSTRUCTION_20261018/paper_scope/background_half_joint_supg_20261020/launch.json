@@ -1,0 +1,8 @@
+{
+  "native_start_requires": "Four independent half/full equivalence passes rechecked",
+  "started_at": "2026-10-20T22:33:28.6972519+08:00",
+  "production_auto_release": false,
+  "script": "scripts/continue_je_half_mesh_supg_20261020.py",
+  "pid": 36024,
+  "script_sha256": "C572CC7AC03B34E8456DE4B161F4CB2420BD0305FF6EDEA06430A91E541D8E43"
+}

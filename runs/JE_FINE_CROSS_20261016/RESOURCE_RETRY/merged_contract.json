@@ -1,0 +1,227 @@
+{
+  "jobs": [
+    {
+      "name": "A32_R14_Z14_S0.5_V060",
+      "v": 6,
+      "scale": 0.5,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "mapping": null,
+      "counts": [
+        32,
+        14,
+        14
+      ],
+      "kind": "SUPG"
+    },
+    {
+      "name": "A32_R14_Z14_S0.5_V080",
+      "v": 8,
+      "scale": 0.5,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "mapping": null,
+      "counts": [
+        32,
+        14,
+        14
+      ],
+      "kind": "SUPG"
+    },
+    {
+      "name": "A32_R16_Z14_S1_V060",
+      "v": 6,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_16\\H1_XY1_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R16_Z14_S1_V060",
+      "counts": [
+        32,
+        16,
+        14
+      ],
+      "kind": "radial",
+      "xy": 1,
+      "z": 2,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R16_Z14_S1_V060"
+    },
+    {
+      "name": "A32_R16_Z14_S1_V080",
+      "v": 8,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_16\\H1_XY1_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R16_Z14_S1_V080",
+      "counts": [
+        32,
+        16,
+        14
+      ],
+      "kind": "radial",
+      "xy": 1,
+      "z": 2,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R16_Z14_S1_V080"
+    },
+    {
+      "name": "A32_R18_Z14_S1_V060",
+      "v": 6,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_18\\H1_XY2_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R16_Z14_S1_V060",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\transfer_A32_R18_Z14_S1_V060",
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "kind": "radial",
+      "xy": 2,
+      "z": 2,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R18_Z14_S1_V060"
+    },
+    {
+      "name": "A32_R18_Z14_S1_V080",
+      "v": 8,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_18\\H1_XY2_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R16_Z14_S1_V080",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\transfer_A32_R18_Z14_S1_V080",
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "kind": "radial",
+      "xy": 2,
+      "z": 2,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R18_Z14_S1_V080"
+    },
+    {
+      "name": "A32_R14_Z16_S1_V060",
+      "v": 6,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_16\\H1_XY0_Z3.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z16_S1_V060",
+      "counts": [
+        32,
+        14,
+        16
+      ],
+      "kind": "thickness",
+      "xy": 0,
+      "z": 3,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R14_Z16_S1_V060"
+    },
+    {
+      "name": "A32_R14_Z16_S1_V080",
+      "v": 8,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_16\\H1_XY0_Z3.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z16_S1_V080",
+      "counts": [
+        32,
+        14,
+        16
+      ],
+      "kind": "thickness",
+      "xy": 0,
+      "z": 3,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R14_Z16_S1_V080"
+    },
+    {
+      "name": "A32_R14_Z18_S1_V060",
+      "v": 6,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_18\\H1_XY0_Z4.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R14_Z16_S1_V060",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\transfer_A32_R14_Z18_S1_V060",
+      "counts": [
+        32,
+        14,
+        18
+      ],
+      "kind": "thickness",
+      "xy": 0,
+      "z": 4,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R14_Z18_S1_V060"
+    },
+    {
+      "name": "A32_R14_Z18_S1_V080",
+      "v": 8,
+      "scale": 1.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_18\\H1_XY0_Z4.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R14_Z16_S1_V080",
+      "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\transfer_A32_R14_Z18_S1_V080",
+      "counts": [
+        32,
+        14,
+        18
+      ],
+      "kind": "thickness",
+      "xy": 0,
+      "z": 4,
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\RESOURCE_RETRY\\A32_R14_Z18_S1_V080"
+    },
+    {
+      "name": "A32_R14_Z14_S2_V060",
+      "v": 6,
+      "scale": 2.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "mapping": null,
+      "counts": [
+        32,
+        14,
+        14
+      ],
+      "kind": "SUPG"
+    },
+    {
+      "name": "A32_R14_Z14_S2_V080",
+      "v": 8,
+      "scale": 2.0,
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "mapping": null,
+      "counts": [
+        32,
+        14,
+        14
+      ],
+      "kind": "SUPG"
+    }
+  ],
+  "baseline": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080"
+  ],
+  "model": "JE_CURRENT_WORK_DIAGNOSTIC_ZNO_NT",
+  "heat_source_unchanged": true,
+  "source_and_executable_unchanged": true,
+  "threads": 8,
+  "ooc_core_mb": 4000,
+  "wall_time_limit_seconds": 7200,
+  "local_carrier_measure": "exp(eta)-1; maximum absolute difference / maximum absolute perturbation in either field",
+  "field_limit": 0.02,
+  "SUPG_metric_limit": 0.01,
+  "mesh_limits_source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_hv_mesh.py",
+  "power_gap": "(JE_volume - physical_all_exterior_power)/JE_volume; also report electrode-only",
+  "no_new_power_gap_acceptance_threshold": true,
+  "limitations": [
+    "Independent directions, not a jointly refined mesh",
+    "Fine SUPG uses A32/R14/Z14",
+    "JE is a current-work diagnostic, not complete thermodynamic closure"
+  ],
+  "resource_retry": true,
+  "resource_retry_details": {
+    "OOC_MB": 6000,
+    "threads": 8,
+    "scope": "directional cases only",
+    "reason": "PARDISO -9: minimum internal OOC memory exceeded the 4000 MB cap",
+    "official_reference": "https://www.intel.com/content/www/us/en/developer/articles/training/how-to-use-ooc-pardiso.html",
+    "source_model_heat_mesh_tolerances_unchanged": true,
+    "prior_failed_attempts_preserved": true
+  }
+}

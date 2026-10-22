@@ -1,0 +1,60 @@
+f1_nodes=10144, elements=2240
+newton_iteration=0, voltage_factor=  0.0000E+00, joule_factor=  0.0000E+00, residual=  0.0000E+00,
+newton_iteration=0, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  2.3935E-02,
+newton_iteration=1, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  1.0337E-14,
+newton_iteration=2, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  1.3285E-17,
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  4.7871E-02,
+newton_iteration=1, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  4.2682E-15,
+newton_iteration=2, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  4.0984E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  2.3935E-02,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  5.7843E-16,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  5.3421E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  1.5719E-05,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  1.2171E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  7.5573E-10,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  6.2480E-16,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  6.9437E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  3.1259E-05,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  5.1385E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  2.7579E-08,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.1172E-12,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.6326E-16,
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.5159E-16,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.5444E-05,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.7900E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.4686E-09,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.2619E-14,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.1443E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 4.0000000000000000E+000
+minimum_jacobian= 2.8693360421241954E-023
+total_volume_m3= 3.7172706054965685E-016
+maximum_stage_balance= 4.1919297076208646E-014
+maximum_accepted_residual= 2.1443486122841263E-016
+maximum_accepted_update= 9.8283093675978739E-010
+joule_W= 2.9294516839904285E-003
+terminal_power_W= 2.6510238586286488E-003
+heat_out_W= 2.8939974470333324E-003
+heat_balance_relative= 1.2102687049202759E-002
+electron_balance_relative= 7.7364658789863288E-006
+hole_balance_diagnostic= 9.4680622872524911E-007
+joule_quadrature_4_5_relative= 6.5984061051091606E-009
+electron_right_A= 6.6278632724213037E-004
+hole_right_A= 3.7765312670090807E-057
+ring_volume_m3= 1.0209672579288209E-017
+ring_Q_mean_W_m3= 1.2750691657633629E+013
+ring_Q_p95_W_m3= 2.5458083558759039E+013
+ring_E_mean_V_m= 2.3390190928062706E+005
+ring_abs_n_relative_mean= 1.1652278378267341E-002
+ring_abs_p_relative_mean= 1.3782792045738890E-002
+ring_theta_mean_K= 6.0668631134579920E+000
+ring_displacement_mean_m= 2.7008973334695932E-010
+E_p95_V_m= 2.7903282719466102E+005
+E_above_1e6_volume_fraction= 0.0000000000000000E+000
+theta_max_K= 7.3059425887881275E+000
+maximum_abs_n_relative= 5.6409187903726221E-001
+maximum_abs_p_relative= 6.9334410105026256E-001
+displacement_max_m= 5.3657711794284515E-010
+minimum_mu_n_ratio= 9.5301687835337334E-001
+stress_von_mises_max_Pa= 2.0234135004887371E+006
+case_acceptance=FAIL

@@ -1,0 +1,9 @@
+{
+  "base_snapshot": "r25_checkpoint_code_snapshot",
+  "changed_files": {
+    "scripts/audit_hv_mesh.py": "41a0eaa2e1db16d4ed70a8630a7d836157d51137c9a9460eebe39aa85d75923b",
+    "tests/test_hv_mesh.py": "ff7167ff1eec7bae659ed4aa4613cfe2ae2bfae42b504c31e64643f3dbbf2682"
+  },
+  "tests": "59 HV tests passed",
+  "native_source_changed": false
+}

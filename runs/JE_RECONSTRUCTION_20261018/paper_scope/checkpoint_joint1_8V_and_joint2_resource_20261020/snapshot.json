@@ -1,0 +1,71 @@
+{
+  "completed": [
+    {
+      "run": "A40_R20_Z16_S1_V080",
+      "voltage_V": 8.0,
+      "supg_scale": 1.0,
+      "ooc_core_mb": 8000,
+      "theta_max_K": 24.258294681417908,
+      "joule_mW": 9.856141252058787,
+      "total_VM_sample_max_MPa": 6.240901715666213,
+      "total_VM_peak_change_vs_source_percent": 0.7545686319310008,
+      "power_gap_all_boundary_percent": 0.5108156581672105,
+      "power_gap_electrode_percent": 0.5147363002478266,
+      "SUPG_fraction_of_gap_percent": 99.69548697951868,
+      "n_local_change_percent": 1.8937710404898962,
+      "p_local_change_percent": 2.213539786498028,
+      "local_field_passed": false,
+      "native_seconds": 6221.937999999995,
+      "status": "SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080",
+      "carrier_worst_locations": {
+        "eta_n": {
+          "node": 1063,
+          "xyz_um": [
+            4.663303464075385,
+            9.15224836895291,
+            -0.5
+          ],
+          "source_mapped_perturbation": 1.6969433760426136,
+          "target_solved_perturbation": 1.7457541553467633,
+          "maximum_relative": 0.01893771040489896,
+          "normalization": 2.5774382573472505,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        },
+        "eta_p": {
+          "node": 55050,
+          "xyz_um": [
+            4.663303464075382,
+            -9.152248368952907,
+            0.5
+          ],
+          "source_mapped_perturbation": 3.43055280665424,
+          "target_solved_perturbation": 3.582472364425718,
+          "maximum_relative": 0.02213539786498028,
+          "normalization": 6.863195262996625,
+          "passed": false,
+          "scope": "Location only; no nodes removed from original audit"
+        }
+      },
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\completion.json": "c468adceeb693eff67436963b76e65bf2193d0a4b228b0a6a436646cd8c7bea2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\execution.json": "e76ac467f5f495a2366cb134c85a94a0bfa198bcb863764d497bb9a0452b4a3d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\manifest.json": "0b9ae3459b6c878018ad182ced2f395c08ce337c567938ed9d435a9b4d921218",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\metrics.txt": "d154fc9bddbecdfb0b04bf89cde6bd16eb9a322b12c8e51b0a5d3222d16894bc",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\mapped_field_comparison.json": "cb9dfbf442444b2c5183798b5e0b61f41086cf4b42eba22e019fcd0332b57622",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\power_audit\\decomposition.json": "5d241f5682af0fa16096563a912157123272e5d1d5f1b48ec1dfe5593ccc81bd"
+      }
+    }
+  ],
+  "incomplete": [
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A48_R22_Z18_S1_V060",
+      "status": "INCOMPLETE_NOT_USED"
+    }
+  ],
+  "production_acceptance": false,
+  "thresholds_changed": false,
+  "limitation": "Completed single-point audits only. Peak stress changes are diagnostics; no stress-field convergence certificate. Incomplete points and old FAIL records are not promoted.",
+  "script_sha256": "3858d01e10d2072881b903c077008583703003b4a367c1294be5f9b17bed0a9a"
+}

@@ -1,0 +1,20 @@
+{
+  "case": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_FAST_HOLE_L0\\FAST_H1_LQ_L0.nml",
+  "case_sha256": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+  "executables": {
+    "baseline": {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_BASELINE_20261007\\TPSolverV2.exe",
+      "sha256": "fc73dda49a90682ab565babc33455b567eb86052578ba83ce4645a8bcbfdc0dd"
+    },
+    "candidate": {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814"
+    }
+  },
+  "runtime_env": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "TPS_PARDISO_STORAGE": "IC",
+    "TPS_PARDISO_SPLIT_HOLES": "0"
+  }
+}

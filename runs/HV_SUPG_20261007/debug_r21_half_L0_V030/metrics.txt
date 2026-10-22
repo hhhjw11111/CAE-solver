@@ -1,0 +1,13 @@
+case_id=HV_NT_V030
+model=NT
+material_evidence=NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED
+source=ZNO_300K_CANDIDATE_V2; plan=F1_20260906
+heat_source=DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK
+domain_symmetry=Y_HALF
+integral_scope=ACTUAL_HALF_DOMAIN_NO_AUTOMATIC_DOUBLING
+transport_discretization=HEX20_CONSISTENT_SUPG_EXPERIMENTAL
+supg_scale= 1.0000000000000000E+000
+supg_directional_tau=T
+zero_source_heat_reference_W= 8.8680476691899992E-004
+restart_nodes_file=C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/runs/HV_SUPG_20261007/r21_half_L0_V030_perturbed/nodes.csv
+continuation_path=FULL_JOULE_DURING_VOLTAGE

@@ -1,0 +1,8 @@
+{
+  "reason": "Diagnostic runner stopped on exact floating-point direct/wrapper equality; the only observed difference was 7.888609052210118e-31. Report differences instead; no numerical setting or A2P gate changed.",
+  "runner_sha256": "3a12b79c26b23eede2adca5e030a0e194a847257fd510731afeaace83362bd49",
+  "protocol_sha256": "2088fb23265cc4997415991a9afe7913a1fab1377f3251948d5a84feaf533ad7",
+  "executable_sha256": "12341aadfb64b896ac54511c0441f16ba8fea1ec32c8f2d62cab22910d6e0767",
+  "existing_record": "results/A2PMAT_gauge1_L0_original_rhs_original.json",
+  "continuation_policy": "Reuse already recorded first solve. Execute all remaining preregistered representations and RHS sequentially."
+}

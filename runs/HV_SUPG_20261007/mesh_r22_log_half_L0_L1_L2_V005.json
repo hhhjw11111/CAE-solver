@@ -1,0 +1,66 @@
+{
+  "voltages": [
+    {
+      "voltage_V": 0.5,
+      "complete_solve_flux_all_levels": true,
+      "mesh_pass": true,
+      "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+      "changes": {
+        "joule_W": {
+          "L0_L1": 1.7550086230983383e-05,
+          "L1_L2": 3.110303542258313e-06,
+          "limit": 0.01
+        },
+        "theta_max_K": {
+          "L0_L1": 7.648753448593328e-05,
+          "L1_L2": 1.048097874976602e-05,
+          "limit": 0.01
+        },
+        "ring_theta_mean_K": {
+          "L0_L1": 4.9760266600158485e-05,
+          "L1_L2": 1.684258720690932e-06,
+          "limit": 0.01
+        },
+        "electron_right_A": {
+          "L0_L1": 0.00017553729644642293,
+          "L1_L2": 6.850227668756654e-05,
+          "limit": 0.01
+        },
+        "ring_E_mean_V_m": {
+          "L0_L1": 0.00012824021936436495,
+          "L1_L2": 2.1906012451593284e-05,
+          "limit": 0.02
+        },
+        "ring_Q_mean_W_m3": {
+          "L0_L1": 0.00022060352321124447,
+          "L1_L2": 4.151150545953767e-05,
+          "limit": 0.02
+        },
+        "ring_abs_n_relative_mean": {
+          "L0_L1": 0.00046165789052914546,
+          "L1_L2": 5.5240716073808837e-05,
+          "limit": 0.02
+        },
+        "ring_abs_p_relative_mean": {
+          "L0_L1": 0.00043962356758799753,
+          "L1_L2": 6.334276491151308e-05,
+          "limit": 0.02
+        },
+        "ring_Q_p95_W_m3": {
+          "L0_L1": 0.00011459884738635011,
+          "L1_L2": 0.00547220493847558,
+          "limit": 0.05
+        },
+        "E_p95_V_m": {
+          "L0_L1": 0.006272494320688022,
+          "L1_L2": 0.0016686740618985542,
+          "limit": 0.05
+        }
+      }
+    }
+  ],
+  "all_mesh_pass": true,
+  "provenance_errors": [],
+  "fully_validated": false,
+  "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+}

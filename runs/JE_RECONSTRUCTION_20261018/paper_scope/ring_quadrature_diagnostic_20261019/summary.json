@@ -1,0 +1,19 @@
+{
+  "scope": "FIXED_STATE_RING_QUADRATURE_DIAGNOSTIC",
+  "runs": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080"
+  ],
+  "native_rule": [
+    5,
+    5,
+    3
+  ],
+  "production_acceptance": false,
+  "thresholds_changed": false,
+  "maximum_native_to_order9_p_change_fraction": 0.00032497956184314084
+}

@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-08T13:47:51.6574378+08:00",
+  "model": "ZNO_F1_NT",
+  "voltage": 6,
+  "executable": "build/HV_SUPG_20261008_R21/TPSolverV2.exe",
+  "supg_scale": 1,
+  "directional_tau": true,
+  "radial_layers": 18,
+  "thickness_layers": 16,
+  "first_task": "solve_A96_V060",
+  "second_task": "solve_A128_V060",
+  "second_condition": "first solve/flux/fields pass; no competing solver; fixed gates unchanged",
+  "future_scale_condition": "angular mesh frozen metric gates pass; same mesh/executable/model/voltage",
+  "threads": 4,
+  "storage": "OOC",
+  "ooc_core_mb": 10000,
+  "max_seconds_per_solve": 7200,
+  "source_changes_allowed": false,
+  "physics_changes_allowed": false,
+  "gates_changes_allowed": false
+}

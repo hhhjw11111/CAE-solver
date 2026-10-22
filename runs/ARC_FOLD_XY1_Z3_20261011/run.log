@@ -1,0 +1,4 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=26928, elements=6144
+newton_iteration=0, voltage_factor=  8.0741E-01, joule_factor=  1.0000E+00, residual=  8.5817E-16,

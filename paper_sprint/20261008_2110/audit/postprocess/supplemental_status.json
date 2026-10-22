@@ -1,0 +1,5 @@
+{
+  "provenance_rechecks": "ALL_SELECTED_CASES_PASS_ARCHIVE_IDENTITY",
+  "plots": "F1_NT_midplane_only",
+  "field_interpolation": "HEX20 eta before exp; displayed linear subtriangles confined to each original patch"
+}

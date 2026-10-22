@@ -1,0 +1,755 @@
+{
+  "lq_full_half_equivalence": {
+    "scope": "SAMPLED_SYMMETRIC_BRANCH_EQUIVALENCE",
+    "full_run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\F_r3_A32_R18_Z14_LQ_V080",
+    "half_run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r3_A32_R18_Z14_LQ_V080",
+    "errors": [],
+    "passed": false,
+    "nodal": {
+      "ux_m": {
+        "maximum_scaled_difference": 4.342698215903395e-14,
+        "scale": 1e-10,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "uy_m": {
+        "maximum_scaled_difference": 2.0679515313825692e-14,
+        "scale": 1e-10,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "uz_m": {
+        "maximum_scaled_difference": 7.579123141873811e-14,
+        "scale": 1e-10,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "phi_V": {
+        "maximum_scaled_difference": 3.219646771412954e-15,
+        "scale": 8.0,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "eta_n": {
+        "maximum_scaled_difference": 1.6355664134307415e-13,
+        "scale": 0.1,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "eta_p": {
+        "maximum_scaled_difference": 1.9875261888938224e-13,
+        "scale": 0.1,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "theta_K": {
+        "maximum_scaled_difference": 1.573344629183079e-15,
+        "scale": 35.0,
+        "limit": 1e-08,
+        "passed": true
+      }
+    },
+    "physical": {
+      "joule_W": {
+        "full": 0.010947182414959152,
+        "half_reconstructed_full": 0.0109471824149593,
+        "relative_difference": 1.3469355845987957e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "electron_right_A": {
+        "full": 0.001368264504020378,
+        "half_reconstructed_full": 0.0013682645040203098,
+        "relative_difference": 4.992071099256514e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "hole_right_A": {
+        "full": 7.796141245807156e-57,
+        "half_reconstructed_full": 7.796141245806777e-57,
+        "relative_difference": 4.8640288762060296e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "total_volume_m3": {
+        "full": 3.717257535702436e-16,
+        "half_reconstructed_full": 3.717257535702307e-16,
+        "relative_difference": 3.4750342689272617e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "ring_volume_m3": {
+        "full": 1.0210144544087083e-17,
+        "half_reconstructed_full": 1.0210144544086655e-17,
+        "relative_difference": 4.195110243368441e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "theta_max_K": {
+        "full": 26.275308290250848,
+        "half_reconstructed_full": 26.275308290250848,
+        "relative_difference": 0.0,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "full": 22.114929660581538,
+        "half_reconstructed_full": 22.114929660582426,
+        "relative_difference": 4.016193735778465e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "full": 445724.9712017644,
+        "half_reconstructed_full": 445724.97120179265,
+        "relative_difference": 6.333662542377692e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "full": 47705119702190.266,
+        "half_reconstructed_full": 47705119702191.86,
+        "relative_difference": 3.340836392297688e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "full": 7.331354818668882e-17,
+        "half_reconstructed_full": 6.895922610519142e-17,
+        "relative_difference": 0.05939314341203834,
+        "limit": 1e-08,
+        "passed": false
+      },
+      "ring_abs_p_relative_mean": {
+        "full": 2.939415565196954e-15,
+        "half_reconstructed_full": 3.4399539489962493e-15,
+        "relative_difference": 0.14550729202213544,
+        "limit": 1e-08,
+        "passed": false
+      },
+      "stress_von_mises_max_Pa": {
+        "full": 5121241.0484751025,
+        "half_reconstructed_full": 5121241.048477132,
+        "relative_difference": 3.9626174024567384e-13,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "heat_out_W": {
+        "full": 0.010947173152260566,
+        "half_reconstructed_full": 0.010947173152259477,
+        "relative_difference": 9.951485445249168e-14,
+        "limit": 1e-08,
+        "passed": true
+      },
+      "terminal_power_W": {
+        "full": 0.010947173190902344,
+        "half_reconstructed_full": 0.010947173190917365,
+        "relative_difference": 1.3721323593332524e-12,
+        "limit": 1e-08,
+        "passed": true
+      }
+    },
+    "gauge": {
+      "translation_m": [
+        3.6311465569545345e-10,
+        1.9639393332763044e-10,
+        -3.1699743228074224e-11
+      ],
+      "rotation_rad": [
+        1.730248535082697e-19,
+        3.4848128090429063e-06,
+        -5.24159454417657e-20
+      ],
+      "maximum_symmetry_uy_m": 1.00574169708638e-24
+    },
+    "mesh_validated": false,
+    "complete_quantitative_0_8V": false
+  },
+  "lq_r3_three_level_8V": {
+    "L0_L1": {
+      "joule_W": {
+        "coarse": 0.00547359120747965,
+        "fine": 0.005473564074074777,
+        "relative": 4.957148578372874e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "coarse": 26.275308290250848,
+        "fine": 26.27542649226524,
+        "relative": 4.498576433242486e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "coarse": 22.114929660582426,
+        "fine": 22.114801723288103,
+        "relative": 5.785109710345034e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "coarse": 0.0006841322520101549,
+        "fine": 0.0006841517229910113,
+        "relative": 2.8460033355276547e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "coarse": 445724.97120179265,
+        "fine": 445727.27522797964,
+        "relative": 5.169138877156727e-06,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "coarse": 47705119702191.86,
+        "fine": 47708002982653.02,
+        "relative": 6.043599146693363e-05,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "coarse": 6.895922610519142e-17,
+        "fine": 8.352718907491339e-17,
+        "relative": 0.17440983147004188,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_abs_p_relative_mean": {
+        "coarse": 3.4399539489962493e-15,
+        "fine": 1.7994275844344198e-14,
+        "relative": 0.8088306537727404,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "coarse": 98831810704149.06,
+        "fine": 98647781749124.06,
+        "relative": 0.001862041722334591,
+        "limit": 0.05,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "coarse": 497460.33807652653,
+        "fine": 497956.52443729824,
+        "relative": 0.0009964451441466923,
+        "limit": 0.05,
+        "passed": true
+      }
+    },
+    "L1_L2": {
+      "joule_W": {
+        "coarse": 0.005473564074074777,
+        "fine": 0.005473547633226018,
+        "relative": 3.003682525004698e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "coarse": 26.27542649226524,
+        "fine": 26.27549155441409,
+        "relative": 2.4761534418566503e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "coarse": 22.114801723288103,
+        "fine": 22.1147153227805,
+        "relative": 3.906908534965336e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "coarse": 0.0006841517229910113,
+        "fine": 0.0006841649316949959,
+        "relative": 1.930631544050879e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "coarse": 445727.27522797964,
+        "fine": 445727.8030997733,
+        "relative": 1.184291825613824e-06,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "coarse": 47708002982653.02,
+        "fine": 47709804338141.52,
+        "relative": 3.775650547071956e-05,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "coarse": 8.352718907491339e-17,
+        "fine": 9.938552800512207e-17,
+        "relative": 0.15956386456377616,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_abs_p_relative_mean": {
+        "coarse": 1.7994275844344198e-14,
+        "fine": 1.3103578731624833e-15,
+        "relative": 0.927179182730249,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "coarse": 98647781749124.06,
+        "fine": 98641466712237.64,
+        "relative": 6.401600496686231e-05,
+        "limit": 0.05,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "coarse": 497956.52443729824,
+        "fine": 497221.8273878278,
+        "relative": 0.0014754240850657946,
+        "limit": 0.05,
+        "passed": true
+      }
+    }
+  },
+  "LQ_r2_two_level_8V": {
+    "L1_L2": {
+      "joule_W": {
+        "coarse": 0.005922124432154692,
+        "fine": 0.0059220956388162365,
+        "relative": 4.8619948441752085e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "coarse": 26.27580452521306,
+        "fine": 26.275742052795295,
+        "relative": 2.3775644131834892e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "coarse": 24.263639379192405,
+        "fine": 24.263442038491196,
+        "relative": 8.13318637511163e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "coarse": 0.0007402451815736842,
+        "fine": 0.0007402487876024083,
+        "relative": 4.871374035996744e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "coarse": 453069.3748197314,
+        "fine": 453081.30738540104,
+        "relative": 2.6336477526528035e-05,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "coarse": 48579631391696.49,
+        "fine": 48586664708415.97,
+        "relative": 0.00014475817102667436,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "coarse": 8.205998139226898e-17,
+        "fine": 9.90209303272749e-17,
+        "relative": 0.17128650355988528,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_abs_p_relative_mean": {
+        "coarse": 4.770630435519549e-15,
+        "fine": 2.7072309808372025e-15,
+        "relative": 0.4325213370793478,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "coarse": 101775487151736.3,
+        "fine": 101699137288518.19,
+        "relative": 0.0007501792951801837,
+        "limit": 0.05,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "coarse": 457168.238670351,
+        "fine": 458635.19871905586,
+        "relative": 0.0031985335028842455,
+        "limit": 0.05,
+        "passed": true
+      }
+    }
+  },
+  "NT_r2_two_level_8V": {
+    "L1_L2": {
+      "joule_W": {
+        "coarse": 0.005331668458970702,
+        "fine": 0.005331632994526136,
+        "relative": 6.6516597644517e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "coarse": 24.27728656666659,
+        "fine": 24.27723219186089,
+        "relative": 2.239739830499283e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "coarse": 22.36121079490599,
+        "fine": 22.360937104316292,
+        "relative": 1.2239524603906662e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "coarse": 0.0006665318431524519,
+        "fine": 0.0006665008639720529,
+        "relative": 4.6478170123875454e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "coarse": 516579.2253062981,
+        "fine": 516591.1067360717,
+        "relative": 2.2999679279517707e-05,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "coarse": 45724211801269.664,
+        "fine": 45730725646767.04,
+        "relative": 0.00014243914578765274,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "coarse": 0.042589828219558,
+        "fine": 0.04259215750407375,
+        "relative": 5.468810814582036e-05,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "coarse": 0.08846903006348077,
+        "fine": 0.08819145696002247,
+        "relative": 0.0031375171996248707,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_p95_W_m3": {
+        "coarse": 97737624219865.89,
+        "fine": 97674329507942.6,
+        "relative": 0.0006475982246193351,
+        "limit": 0.05,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "coarse": 597518.4823422147,
+        "fine": 599390.4115437687,
+        "relative": 0.003123054966349506,
+        "limit": 0.05,
+        "passed": true
+      }
+    },
+    "local_fields": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.00012488496755156547,
+          "rms_relative": 1.956620547137927e-05,
+          "normalization": 8.00021206140363,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.0005218363240235043,
+          "rms_relative": 9.568279778732044e-05,
+          "normalization": 24.277502254951877,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.0008836010028177348,
+          "rms_relative": 0.00017438120611756001,
+          "normalization": 1.4894901525296404e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0005866118879265818,
+          "rms_relative": 9.866254683794389e-05,
+          "normalization": 1.4894901525296404e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0004152039468745594,
+          "rms_relative": 7.320079211212504e-05,
+          "normalization": 1.4894901525296404e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.014769712476062182,
+          "rms_relative": 0.0010257147820537872,
+          "normalization": 2.6132797485144335,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.020575022623490126,
+          "rms_relative": 0.001030615518539623,
+          "normalization": 7.188449479394487,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\seeds\\H_r2_A40_R20_Z16_NT_V080\\nodes.csv": "899d170970dcd7af2eac6376b0fe457ef2c3be1eca2c7712bf1a38a1a19c7fc9",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\seeds\\H_r2_A40_R20_Z16_NT_V080\\transfer_report.json": "2589ea17cc44f54f137cafbf04088687c0b970dcb69f2e6f23ff38a00636f529",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A48_R22_Z18_NT_V080\\nodes.csv": "63c0d1f2ebb5d79e9d41a81fd578cefd9d3b4bb191ad9434e4c99b97d6b1e07f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A48_R22_Z18_NT_V080\\manifest.json": "4192243ac9ad282ecf60317723d9b4c054809d19473d05faa9c7f19bc8164ce7",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A48_R22_Z18_NT_V080\\execution.json": "269a9c75b7713ed7d8dc36bfdb2a8aac33d95335e076ae3d4cfc8e9834bbccb4",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A48_R22_Z18_NT_V080\\input.nml": "4b03c83a4b1a73520ab6f95ec6b6f39f59d3c4a27c11b7814245b3238976c1c4",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A48_R22_Z18_NT_V080\\metrics.txt": "0ca26fc3efb3bdacbae0e22cc7a1565af36cd0c37cf351354796b8e24833cbd0",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A48_R22_Z18_NT_V080\\field_audit.json": "f99e42004fb44ee17dac9405a288bc153d8f1a767f4460b5ee317d1b56ba7b51",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A40_R20_Z16_NT_V080\\nodes.csv": "40fabd9a6b40e7e8c5f7d2d55f848f65a00f7511b26dc4aa11308eafa8100954",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A40_R20_Z16_NT_V080\\manifest.json": "3305a839b4adbad1dd8777e20bca0d8e890f26aa2941e82d2954811241008e4e",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A40_R20_Z16_NT_V080\\execution.json": "fb213a746d15bf11a44eb7030c2d52878f0431d4c987fd756b6066e4e92c63be",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A40_R20_Z16_NT_V080\\input.nml": "1115786befa59e4ae9dfdefce265d61b1ceccdcde4c3dcb4e595e7e213c0a3b1",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A40_R20_Z16_NT_V080\\metrics.txt": "9c2f35d572970e93ab5bfff4d1764560c1f3645d70a9f1caca9728b2c0ca80bc",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r2_A40_R20_Z16_NT_V080\\field_audit.json": "a3a432400b424d6767f9d55dd3f3a4aa25c119ae1ccb5c682b5e0ad180412119"
+      }
+    }
+  },
+  "LQ_r4_two_level_8V": {
+    "L1_L2": {
+      "joule_W": {
+        "coarse": 0.004898121465823765,
+        "fine": 0.004898111506165603,
+        "relative": 2.033362837553917e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "coarse": 26.275016974926586,
+        "fine": 26.275227101672442,
+        "relative": 7.997142899756608e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "coarse": 19.606448074922525,
+        "fine": 19.606407865310945,
+        "relative": 2.050836103829581e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "coarse": 0.0006121910451176001,
+        "fine": 0.0006122153289084803,
+        "relative": 3.966544079101515e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "coarse": 428025.6184408471,
+        "fine": 428025.65964561113,
+        "relative": 9.626704173802481e-08,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "coarse": 44560376836467.85,
+        "fine": 44560953641315.35,
+        "relative": 1.2944176467650971e-05,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "coarse": 7.97332515330047e-17,
+        "fine": 1.0206081259992203e-16,
+        "relative": 0.21876722806863474,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_abs_p_relative_mean": {
+        "coarse": 4.0429186037111686e-15,
+        "fine": 3.5300677693174426e-15,
+        "relative": 0.12685163483701062,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "coarse": 92844090487776.88,
+        "fine": 92958074482477.23,
+        "relative": 0.0012261871315099751,
+        "limit": 0.05,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "coarse": 525663.8451232605,
+        "fine": 524892.4435487788,
+        "relative": 0.0014674807515073856,
+        "limit": 0.05,
+        "passed": true
+      }
+    }
+  },
+  "NT_r4_two_level_8V": {
+    "L1_L2": {
+      "joule_W": {
+        "coarse": 0.004409753845331561,
+        "fine": 0.004409740255924878,
+        "relative": 3.0816701246936744e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "coarse": 24.276318669930276,
+        "fine": 24.276517908021503,
+        "relative": 8.207029195121253e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "coarse": 18.00589835050353,
+        "fine": 18.005839532246547,
+        "relative": 3.2666105204215935e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "coarse": 0.000551224146736841,
+        "fine": 0.0005512202367995464,
+        "relative": 7.09318943620373e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "coarse": 471941.5572454663,
+        "fine": 471942.14175602,
+        "relative": 1.2385216365077143e-06,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "coarse": 41396365183857.92,
+        "fine": 41396759629824.12,
+        "relative": 9.528426130994456e-06,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "coarse": 0.0349341649374518,
+        "fine": 0.0349339483072001,
+        "relative": 6.201100043186626e-06,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "coarse": 0.06698919289488166,
+        "fine": 0.06684710209290824,
+        "relative": 0.002121100372061241,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_Q_p95_W_m3": {
+        "coarse": 88826983280605.16,
+        "fine": 88741024044803.88,
+        "relative": 0.0009677153566021187,
+        "limit": 0.05,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "coarse": 620552.712692278,
+        "fine": 619611.4766391132,
+        "relative": 0.0015167705078288156,
+        "limit": 0.05,
+        "passed": true
+      }
+    },
+    "local_fields": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 9.984666420249206e-05,
+          "rms_relative": 1.3728385217971115e-05,
+          "normalization": 8.00000161432323,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.00036236375953176695,
+          "rms_relative": 6.601639684548812e-05,
+          "normalization": 24.277108066834245,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.0008599086359393691,
+          "rms_relative": 0.00016463127384196494,
+          "normalization": 1.3618679281954507e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0005571261972781328,
+          "rms_relative": 9.263609502038047e-05,
+          "normalization": 1.3618679281954507e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.00038587917176612644,
+          "rms_relative": 7.103684183609403e-05,
+          "normalization": 1.3618679281954507e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.012737506057843706,
+          "rms_relative": 0.0009272099713816201,
+          "normalization": 2.5276655691368606,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.01670212156627823,
+          "rms_relative": 0.0008907034323959296,
+          "normalization": 6.650006531066304,
+          "limit": 0.02,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\seeds\\H_r4_A40_R20_Z16_NT_V080\\nodes.csv": "d21a9afb3a1eab1839fe102ab2d2e5c923fb3606a2b8abba1f8bc1eb30c58d33",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\seeds\\H_r4_A40_R20_Z16_NT_V080\\transfer_report.json": "f99b513d68fea9916ffb19f4fd9d85459cbbb6ec0e6bb1e86e1edaf96e1874cd",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A48_R22_Z18_NT_V080\\nodes.csv": "5785c6ef128f3d29d9ab7c847979c8382509b93c371be890f5a90eb5d52b63f8",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A48_R22_Z18_NT_V080\\manifest.json": "db4cee95a398dabeb0be77812018a051bc83d9e62877d039220702c906546f91",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A48_R22_Z18_NT_V080\\execution.json": "d7832f235a79c6e3f3292b3638d53d74e62170e4206b1ea913069b4c15b011ed",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A48_R22_Z18_NT_V080\\input.nml": "e6eb9e2fbf222bfbbda2ca05e337932282a244fb579a00e62b1d0b114d5a4766",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A48_R22_Z18_NT_V080\\metrics.txt": "608f3ef1793132feabaf73597b4e8eaf28c5fd58a888b64e9fb25b47e28ebf1b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A48_R22_Z18_NT_V080\\field_audit.json": "6c9639da43657c5d8220bad7d51a206a2cc12a860d9813cbb9b4547bdea80c15",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A40_R20_Z16_NT_V080\\nodes.csv": "7e677983db349f7c679222c451920c96020fdf40f24fe83178142eecfc756995",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A40_R20_Z16_NT_V080\\manifest.json": "84ccc3a3f96515630923d69ab6d68b6d8f0d1844c424b1e1edf677fe30e12a67",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A40_R20_Z16_NT_V080\\execution.json": "0eb94677ac9fd42b59c9d7f18d7a43692a112a890de0102740627276beb5f632",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A40_R20_Z16_NT_V080\\input.nml": "a84734e96e52a2e122494204d5f71d5fd5a85afa051520e43c9f5e0c2c7527d6",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A40_R20_Z16_NT_V080\\metrics.txt": "0919c3d20296c0d20329019ae3798319f6acde9c0b894269f98af5a01d0eb3a1",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\H_r4_A40_R20_Z16_NT_V080\\field_audit.json": "80aa41a8300e784d5accd0c6c3f2b8b3976e1193cfc41a49413825e881cdba1b"
+      }
+    }
+  },
+  "excluded_metrics_note": "ring_abs_p_relative_mean is reported but excluded from paper claims"
+}

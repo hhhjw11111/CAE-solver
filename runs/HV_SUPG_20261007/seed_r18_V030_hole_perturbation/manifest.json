@@ -1,0 +1,6 @@
+{
+  "scope": "PERTURBED_INITIAL_GUESS_NOT_A_RESULT",
+  "source": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V030\\nodes.csv",
+  "source_sha256": "5c907f14cb94b677e9612067a52f8ee944f1fd4cf51ee353d54caa95bfc847cc",
+  "maximum_log_hole_perturbation": 0.00955336489125606
+}

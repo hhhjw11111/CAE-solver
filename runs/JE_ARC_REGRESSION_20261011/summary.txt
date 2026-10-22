@@ -1,0 +1,7 @@
+G02 exit=0
+G02JE exit=0
+G04 exit=0
+G04JE exit=0
+G07 exit=0
+G08 exit=0
+ARC exit=1

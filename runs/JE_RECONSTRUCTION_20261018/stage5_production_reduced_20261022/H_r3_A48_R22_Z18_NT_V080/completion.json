@@ -1,0 +1,23 @@
+{
+  "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+  "fully_validated": false,
+  "physical_power": {
+    "domain_symmetry": "Y_HALF",
+    "voltage_V": 8.0,
+    "raw_JE_W": 0.004927804726283432,
+    "raw_symmetry_cut_power_W": 2.0168074980237108e-07,
+    "raw_physical_exterior_power_W": 0.004927685903073557,
+    "physical_exterior_gap_relative": 2.4112808131574756e-05,
+    "reconstructed_full_JE_W": 0.009855609452566864,
+    "independent_vs_native_relative": 1.8103457993599753e-12,
+    "comparison_limit": 1e-08,
+    "power_gap_acceptance_threshold": null,
+    "note": "Gap is diagnostic; never heat compensation."
+  },
+  "field_samples": {
+    "file": "field_samples.csv.gz",
+    "uncompressed_sha256": "48c2e31f327f26d4eb28e3b58f06fd2fa50cac12fea7d665a323ebf876e05a5f",
+    "uncompressed_bytes": 475200150,
+    "note": "Lossless gzip; decompressed content verified byte-identical before removal of the CSV."
+  }
+}

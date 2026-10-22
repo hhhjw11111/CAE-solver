@@ -1,0 +1,84 @@
+{
+  "scope": "CONDITIONAL_MAPPED_SIX_FIELDS_DIAGNOSTIC_ONLY",
+  "results": [
+    {
+      "scale": 1.0,
+      "ring_abs_p_relative_mean": 0.03867464853512713,
+      "history": [
+        {
+          "iteration": 0,
+          "scaled_residual": 0.015421922561721304,
+          "update": 0.032639174027499225,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 0.0001672323445628162,
+          "update": 0.0004492924827444492,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 2.885034442384534e-08,
+          "update": 8.780236447740195e-08,
+          "step": 1.0
+        },
+        {
+          "iteration": 3,
+          "scaled_residual": 8.902541591966247e-16,
+          "update": 0.0
+        }
+      ]
+    },
+    {
+      "scale": 0.5,
+      "ring_abs_p_relative_mean": 0.038670928156384184,
+      "history": [
+        {
+          "iteration": 0,
+          "scaled_residual": 0.0004222577421701337,
+          "update": 0.000813385635292002,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 4.9171745623363614e-08,
+          "update": 2.379644043685671e-07,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 4.732765328341253e-15,
+          "update": 0.0
+        }
+      ]
+    },
+    {
+      "scale": 2.0,
+      "ring_abs_p_relative_mean": 0.03868498280180982,
+      "history": [
+        {
+          "iteration": 0,
+          "scaled_residual": 0.001324757191969192,
+          "update": 0.002186672807182059,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 4.7500212096789107e-07,
+          "update": 1.564786501882074e-06,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 3.0497521014556447e-13,
+          "update": 0.0
+        }
+      ]
+    }
+  ],
+  "no_native_solve": true,
+  "production_acceptance": false,
+  "mesh_sha256": "a35ece11baa72274bb6436611c945b4ed50b8f92584761df1a06ce8549b91c3d",
+  "seed_sha256": "923f9a5d1285fb1c6f52019dace838548bd3608481bc6207b58e1ca4e4be57e9"
+}

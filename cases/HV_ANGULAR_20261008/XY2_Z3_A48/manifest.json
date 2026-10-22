@@ -1,0 +1,46 @@
+{
+  "xy_level": 2,
+  "z_level": 3,
+  "first_xy_m": 3.5e-09,
+  "first_z_m": 1.75e-09,
+  "counts": {
+    "circumferential": 48,
+    "radial": 18,
+    "thickness": 16
+  },
+  "z_corners_m": [
+    -5e-07,
+    -4.9825e-07,
+    -4.9475e-07,
+    -4.8775e-07,
+    -4.7374999999999996e-07,
+    -4.4575e-07,
+    -3.8974999999999995e-07,
+    -2.7775e-07,
+    0.0,
+    2.7775e-07,
+    3.8974999999999995e-07,
+    4.4575e-07,
+    4.7374999999999996e-07,
+    4.8775e-07,
+    4.9475e-07,
+    4.9825e-07,
+    5e-07
+  ],
+  "nodes": 60288,
+  "elements": 13824,
+  "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+  "geometry_audit": {
+    "minimum_jacobian_3x3x3": 3.004851290767569e-25,
+    "anchor_counts": [
+      1,
+      1,
+      1
+    ],
+    "contact_counts": [
+      633,
+      633
+    ]
+  },
+  "mesh_sha256": "24096f89a640bcadd24469d537215462231ba68e30e8a80d34a68a840fcc257e"
+}

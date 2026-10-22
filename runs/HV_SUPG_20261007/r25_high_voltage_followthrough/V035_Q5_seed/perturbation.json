@@ -1,0 +1,9 @@
+{
+  "status": "PERTURBED_INITIAL_GUESS_ONLY_REQUIRES_NATIVE_RESOLVE",
+  "source_nodes": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V035\\nodes.csv",
+  "source_nodes_sha256": "f9523030e973fec0d10186329c594ae9f66d813039493f76ccdd281ecc057e82",
+  "nodes_sha256": "25ce67f1216b0dba2623165788d371b2f403cd926b58b0bb7c7c2f2064bacb61",
+  "temperature_amplitude_K": 0.01,
+  "maximum_actual_temperature_change_K": 0.009120250000000002,
+  "formula": "delta_theta = amplitude * max(0,1-(x/1e-5)^2) * max(0,1-(y/1e-5)^2)"
+}

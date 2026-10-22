@@ -1,0 +1,334 @@
+{
+  "metrics": {
+    "case": "FAST_H0_NT_L0",
+    "family": "F1_L0",
+    "model": "NT",
+    "geometry": "H0",
+    "voltage_V": 3.0,
+    "integral_scope": "FULL_DOMAIN",
+    "nodes": 9345,
+    "elements": 1960,
+    "volume_m3": 3.9999999999999925e-16,
+    "Pd_W": 0.0018502111321829307,
+    "Pdiff_W": -0.00010719967210008995,
+    "Pdiff_abs_W": 0.0001072248565443164,
+    "P_JdotE_W": 0.0017430114600828404,
+    "Pterm_all_boundary_W": 0.0017429998331993594,
+    "Pterm_physical_exterior_W": 0.0017429998331993594,
+    "heat_out_all_boundary_W": 0.0018369526700425189,
+    "heat_out_physical_exterior_W": 0.0018369526700425189,
+    "power_identity_gap_relative": 6.670616519573796e-06,
+    "Pdiff_abs_over_Pd": 0.05795276802697081,
+    "reference_rms_K": 0.18221670117430058,
+    "reference_mean_K": 0.16469087500716628,
+    "reference_maxabs_K": 0.26854155484289643,
+    "theta_max_saved_K": 3.960884721935713,
+    "E95_volume_weighted_V_m": 158976.0523684135,
+    "thickness_change_m": 1.0701113256294829e-11,
+    "relative_displacement_line_max_m": 5.353016857700886e-12,
+    "ring_midplane_max_abs_stt_Pa": 279378.8030677466,
+    "ring_midplane_max_vm_Pa": 313345.6194607055,
+    "saved_sample_scaled_error": 1.774487261149368e-10,
+    "drift_heat_reconstruction_relative": 1.675926687161461e-14,
+    "heat_flux_gap": 0.007165918478037866,
+    "Pe_max": 13.818221658824413,
+    "Pe_count_gt1": 0.2857142857142857,
+    "Pe_volume_gt1": 0.95,
+    "status": "EXPLORATORY_L0"
+  },
+  "original_metrics": {
+    "case_id": "FAST_H0_NT_L0",
+    "model": "NT",
+    "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+    "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+    "heat_source": "DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK",
+    "zero_source_heat_reference_W": 0.0017736095338379998,
+    "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+    "balance_detail_point": "7, 1.0694115319192972E-014, 5.1139397940799496E-015, 5.0703169645243694E-015, 2.8084521126540206E-016,-8.6603787932916585E-019, 3.0836839817459084E-003",
+    "voltage_V": 3.0,
+    "minimum_jacobian": 3.4299999999963196e-25,
+    "total_volume_m3": 4.000000000000761e-16,
+    "maximum_stage_balance": 3.332652115395628e-14,
+    "maximum_accepted_residual": 1.4753728828035166e-16,
+    "maximum_accepted_update": 3.5261867879044644e-11,
+    "joule_W": 0.0018502111321828997,
+    "terminal_power_W": 0.0017429998331993594,
+    "heat_out_W": 0.0018369526700425189,
+    "heat_balance_relative": 0.007165918478037866,
+    "electron_balance_relative": 1.828275635320944e-07,
+    "hole_balance_diagnostic": 1.3691362866917846e-06,
+    "joule_quadrature_4_5_relative": 3.0629142376426514e-11,
+    "electron_right_A": 0.000581003424791979,
+    "hole_right_A": 3.3105240067385176e-57,
+    "ring_volume_m3": 7.30200493827161e-18,
+    "ring_Q_mean_W_m3": 4775946836536.479,
+    "ring_Q_p95_W_m3": 5425389082236.021,
+    "ring_E_mean_V_m": 155795.1286215396,
+    "ring_abs_n_relative_mean": 0.007031298996579288,
+    "ring_abs_p_relative_mean": 0.00767546438732353,
+    "ring_theta_mean_K": 3.716652882431332,
+    "ring_displacement_mean_m": 1.6212306488167598e-10,
+    "E_p95_V_m": 158976.05236844657,
+    "E_above_1e6_volume_fraction": 0.0,
+    "theta_max_K": 3.960884721935713,
+    "maximum_abs_n_relative": 0.29254510077317497,
+    "maximum_abs_p_relative": 0.3245580281439022,
+    "displacement_max_m": 3.1924321103189836e-10,
+    "minimum_mu_n_ratio": 0.9741079989698587,
+    "stress_von_mises_max_Pa": 1211054.493481608,
+    "total_newton_iterations": 21.0,
+    "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+  },
+  "paths": {
+    "root": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\FAST_H0_NT_L0",
+    "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\inputs\\H0_L0.mesh",
+    "exe": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\TPSolverV2.exe",
+    "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src"
+  },
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\FAST_H0_NT_L0\\input.nml": {
+      "bytes": 666,
+      "sha256": "fadf328625011b32db4001d28671b218da5cc315e26058feb7b4e704854726a1"
+    },
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\inputs\\H0_L0.mesh": {
+      "bytes": 947594,
+      "sha256": "d101bc0b7a280919a1e1aab3430f1fc5cd53057e1f1dcf7046803a9d849c8544"
+    },
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\FAST_H0_NT_L0\\nodes.csv": {
+      "bytes": 2858532,
+      "sha256": "55b15af0f5d1d3322722d4ed2d98a43045e3942e982553793d0d909c30e3c79c"
+    },
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\FAST_H0_NT_L0\\metrics.txt": {
+      "bytes": 3950,
+      "sha256": "3b07d28c9b8156142a5f62a65721c6ef0add2f1f0b22f8902759a8a716601d1a"
+    },
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\FAST_H0_NT_L0\\field_samples.csv": {
+      "bytes": 98000150,
+      "sha256": "ae88810c3e26c7e5055dcd0b7c591e811096eb3827fffe9f73790975e1825e05"
+    },
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\TPSolverV2.exe": {
+      "bytes": 84095488,
+      "sha256": "8b23ec17cc129d2c3cfdc91dedb67d5a4aa174d0107e7bb219233a80d0b5bf01"
+    }
+  },
+  "source_hashes": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+      "sha256": "079e0c668344e5a920eb6a8381235903715bf7eb8752e5515811033cbb83d130"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+      "sha256": "f84e759400d2b779fabecd4608dbec939fc01e9b71b035d7ca18d752f49faa55"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+      "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+      "sha256": "6c0c292cee035479d7d2dc787d9ecf43c9b26c0a547e006a55b267b0fd45abdb"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+      "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+      "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+      "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+      "sha256": "af43faf7a855f19484002a8d07711c9008ef6cc7e7ef41dd002fea1526c42442"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+      "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+      "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+      "sha256": "90f59b88ef08112567850abb3d7a272fcff60bb8556f33ad3692adf8414d5ab3"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+      "sha256": "42dc7bdb4c83b18db6b8025fbd71870c13e3ffbb6f039ef4528cfdfd82713980"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+      "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+      "sha256": "1a5694941c07f2455a5752aea014bc2236c6b6b4b332466395d81b12114afd28"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+      "sha256": "33af45ce966fe6b4f1d6468dd68ecf6318603da791abb0772920cc27b0b794d2"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+      "sha256": "5ad79b36637a76ee854c0d07f56600c81a2dfedfef5cf8cb2970e8e7aed5d9f8"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+      "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+      "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+      "sha256": "9276ba0307663c1bb28154c080c1240c8388c1ca3a074cd3185f661a36c7e80e"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+      "sha256": "00e2b42645b6da1280a14028aefa439eb7a46446e8c74cd3804f76b117250e49"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+      "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+      "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+      "sha256": "55cbb321a13e1a6772e275611002a071edbe351819a4a19830087c3a25488bbb"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+      "sha256": "6c43fb1d301cc74f27aaca63e87dcb69d2f368e7ae674cc1e33e289215823c51"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+      "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+      "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+      "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+      "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+      "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+      "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+      "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+      "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+      "sha256": "5ad98c59e20016bb61d39244c7bf640f8a2383aafdfd2e13eb27ac54f4ba8b27"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+      "sha256": "951d3972139818c04ab515da8b02abafbe33e4b11d4f359fb37ce178fc5a81d4"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+      "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+      "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+      "sha256": "42c9a3c9d0eb07d5e34f9517c0e132080a1f84c70cd170b15dac65fe096b3875"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+      "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+      "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+      "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+      "sha256": "38de3e9258f40bf6c3f243a46513d5720c6c7c883bc3e8c04b6cb19006b37394"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+      "sha256": "6ae724bcd905ccfae5eee8653147a3afa94fbfb806b1b3722a8998b9bff9cd21"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+      "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+      "sha256": "bba79947988b55940f352e0b47b61abcc188a3a3fdb9e975ed974ba8b53d7a33"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+      "sha256": "0ca8d8b34d620c38870e56b1847973f55318c147b9ed672e7e38e04334626e27"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+      "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+      "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+      "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+      "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+      "sha256": "87fdd7c82ed3161fce43165cedbf8a8c4630863e7a4a2de2c6fd595118f679d4"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+      "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+      "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+      "sha256": "0bce87f4971e750f8a7c0a3db1595aa51185334bc7c7fd6a9a5693b683ab72d4"
+    }
+  ],
+  "pe_definition": "Node range / (2 D/mu); NT Tmean, N0/LQ T0. LQ is background diagnostic only.",
+  "quadrature_order": 5
+}

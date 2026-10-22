@@ -1,0 +1,180 @@
+{
+  "cases": [
+    {
+      "case": "A1",
+      "source_directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906\\A1",
+      "source_status": "Previously accepted; copied byte-identically, NOT rerun under 0.14.4",
+      "files": [
+        {
+          "name": "A1_export_stdout.txt",
+          "sha256": "B88729CCAADD18DE5976E07FA2DDE65E3DA94850E44280E807F1A7DCD8978F5E",
+          "bytes": 2570
+        },
+        {
+          "name": "A1_ne1_nodes.csv",
+          "sha256": "25F636BBDA29D00AD04C82D70D94DFAA1982624E7CE75A62FBE7EC236FE04E6A",
+          "bytes": 6623
+        },
+        {
+          "name": "A1_ne16_nodes.csv",
+          "sha256": "CB38A93284137A1A242B7A287EE60BCBDDA3FA911E8CCBEB7B15FA430BEB4783",
+          "bytes": 65303
+        },
+        {
+          "name": "A1_ne2_nodes.csv",
+          "sha256": "9E9921F43BFF07BD0BC227074DA38E794B22E385719FB4E6DC3FD4C1035A7710",
+          "bytes": 10535
+        },
+        {
+          "name": "A1_ne4_nodes.csv",
+          "sha256": "F60756EBDE33F9BDCC3D14B281AC0539DD5DFAADC1C03B6B44C8CF6E72753E4E",
+          "bytes": 18359
+        },
+        {
+          "name": "A1_ne8_nodes.csv",
+          "sha256": "E4CD2B5D76F5EC5C6B75B9F79BA6BC549457BA2BEE8A37605D7F91B736B21350",
+          "bytes": 34007
+        },
+        {
+          "name": "A1_stdout.txt",
+          "sha256": "B88729CCAADD18DE5976E07FA2DDE65E3DA94850E44280E807F1A7DCD8978F5E",
+          "bytes": 2570
+        },
+        {
+          "name": "G05_targeted_regression.txt",
+          "sha256": "D3DDA00D1C79F47C8066585FD48B0D45B1F98DC9665562790064B167B42C84C3",
+          "bytes": 2338
+        }
+      ]
+    },
+    {
+      "case": "A2",
+      "source_directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906\\A2",
+      "source_status": "Previously accepted; copied byte-identically, NOT rerun under 0.14.4",
+      "files": [
+        {
+          "name": "A2_export_stdout.txt",
+          "sha256": "BCFE57A790CF8BE2D07552F608EEAD9F568CE31DDD0BD475BD9AFB0AA480B222",
+          "bytes": 1452
+        },
+        {
+          "name": "A2_L0_nodes.csv",
+          "sha256": "16604A76ABF8E96B841E9ACA875738EA447064812011BF69B5069DF3DA27EC03",
+          "bytes": 53547
+        },
+        {
+          "name": "A2_L0_wall.csv",
+          "sha256": "3DE56BE76F8DA6A157109C567E2E089CC2BDBE0A46ED359305030CB4226905B5",
+          "bytes": 67624
+        },
+        {
+          "name": "A2_L1_nodes.csv",
+          "sha256": "58CDCC2F4F50717720A6DA35F4D7D73F700E52F87259B683873929289B2A36DE",
+          "bytes": 109867
+        },
+        {
+          "name": "A2_L1_wall.csv",
+          "sha256": "450F2AAAB0ADE76047C042E14AD64F593C88718770FFA386A2623FDC8C7A4AFA",
+          "bytes": 101392
+        },
+        {
+          "name": "A2_L2_nodes.csv",
+          "sha256": "76D00829F5427D8CEDA2FD1A045D3FE446A90EF373A72A88D5E506C5B2F32CF8",
+          "bytes": 185899
+        },
+        {
+          "name": "A2_L2_wall.csv",
+          "sha256": "7EC5E89976664F5E20437A6FF3F67C81E4CDA0C4BBA19A427C468B7001037C94",
+          "bytes": 135160
+        },
+        {
+          "name": "A2_stdout.txt",
+          "sha256": "BCFE57A790CF8BE2D07552F608EEAD9F568CE31DDD0BD475BD9AFB0AA480B222",
+          "bytes": 1452
+        }
+      ]
+    },
+    {
+      "case": "SMALL_H1_LQ_L0",
+      "source_directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906\\SMALL_H1_LQ_L0",
+      "source_status": "Previously accepted; copied byte-identically, NOT rerun under 0.14.4",
+      "files": [
+        {
+          "name": "field_samples.csv",
+          "sha256": "13D9AB0E02F8FCE79CAB5D92C26EF43B8F6FA541CDC78CA7DCA5919F7E7C6046",
+          "bytes": 112000150
+        },
+        {
+          "name": "metrics.txt",
+          "sha256": "AC32B29B952F1D4769414D51CE6D9AECED9715F4BBDBB1C7042D73CC22D7E4CB",
+          "bytes": 2055
+        },
+        {
+          "name": "nodes.csv",
+          "sha256": "6C1C16F8CF8BE1221BBFDFA064D893B9DAB1DBC03BE012AD4613FC833690543F",
+          "bytes": 3113315
+        },
+        {
+          "name": "stdout.txt",
+          "sha256": "C111C62CE5B5FCD25F149E892AB0DB953D6EA98FC01EA914CD526C899AD2F3B4",
+          "bytes": 2467
+        }
+      ]
+    },
+    {
+      "case": "SMALL_H1_NT_L0_0142",
+      "source_directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906\\SMALL_H1_NT_L0_0142",
+      "source_status": "Previously accepted; copied byte-identically, NOT rerun under 0.14.4",
+      "files": [
+        {
+          "name": "field_samples.csv",
+          "sha256": "5D10694AF7084E058E27EBFA6A65DB3A6AE76686FB24693CF8B0AFF2A1F9A5CE",
+          "bytes": 112000150
+        },
+        {
+          "name": "metrics.txt",
+          "sha256": "833D424682377A25B69ACFF97900E641174D4777668643703C0826B1D57B450D",
+          "bytes": 3951
+        },
+        {
+          "name": "nodes.csv",
+          "sha256": "2259827C3A2B87B5682011B25D6272A616D8C752FD6DB3D0111F0D6968C00F83",
+          "bytes": 3103171
+        },
+        {
+          "name": "stdout.txt",
+          "sha256": "B3AB26C058EE2B7A75DCCC8AA27F938E0E3E146595E3260E66AA69A73B053A84",
+          "bytes": 3731
+        }
+      ]
+    },
+    {
+      "case": "MESH_H1_NT_L0",
+      "source_directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906\\MESH_H1_NT_L0",
+      "source_status": "Previously accepted; copied byte-identically, NOT rerun under 0.14.4",
+      "files": [
+        {
+          "name": "field_samples.csv",
+          "sha256": "E1FE201E1DE3924426DD1D6338883FC1FFED68D1E15EF59BE3943BB537F7FB8B",
+          "bytes": 112000150
+        },
+        {
+          "name": "metrics.txt",
+          "sha256": "22746D7ED0F6BDB83B8CDBE42BAC4B00CB6462A4D1C9F89A7141CF57130A1DF9",
+          "bytes": 3950
+        },
+        {
+          "name": "nodes.csv",
+          "sha256": "1EFA6EF39F0BB42B5AB15A9FD30886E91093E072A2E53CC986CA0AC050364C79",
+          "bytes": 3103171
+        },
+        {
+          "name": "stdout.txt",
+          "sha256": "49E3AE4CBA90565540BA13905522D67299D920F45557BCA9A17ED42B69EAF221",
+          "bytes": 4131
+        }
+      ]
+    }
+  ],
+  "note": "L0 uses 0.14.2; equations, Jacobian, mesh and tolerances identical to R0144. Historical executable identities retained."
+}

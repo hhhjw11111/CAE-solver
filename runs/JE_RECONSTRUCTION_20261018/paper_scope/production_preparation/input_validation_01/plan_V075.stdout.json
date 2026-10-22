@@ -1,0 +1,57 @@
+{
+  "status": "INPUT_ONLY_NOT_SOLVED",
+  "condition": {
+    "radius_um": 3,
+    "voltage_V": 7.5,
+    "model": "NT"
+  },
+  "model_contract": "JE_SIMPLIFIED_R0_V1",
+  "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\H1.mesh",
+  "mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+  "mesh_manifest": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\manifest.json",
+  "mesh_counts": {
+    "circumferential": 32,
+    "radial": 14,
+    "thickness": 14
+  },
+  "seed_nodes": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\nodes.csv",
+  "seed_source_run": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+  "seed_source_heat": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+  "seed_source_voltage_V": 6.0,
+  "restart_voltage_factor": 0.8,
+  "restart_joule_factor": 1.0,
+  "target_voltage": -7.5,
+  "target_voltage_factor": 1.0,
+  "target_joule_factor": 1.0,
+  "seed_validation": {
+    "nodes": 27840,
+    "coordinates_exactly_equal": true,
+    "maximum_coordinate_difference_m": 0.0,
+    "finite_fields": true,
+    "positive_temperature_and_density": true,
+    "electrode_voltage_error_V": 0.0
+  },
+  "transfer": null,
+  "seed_status": "INITIAL_GUESS_REQUIRES_JE_REEQUILIBRATION",
+  "seed_is_JE_acceptance_evidence": false,
+  "source_acceptance_label": "PASS_NOT_MESH_ACCEPTANCE",
+  "drift_seed_explicitly_enabled": false,
+  "unchanged_numerics": "All template text outside explicit identity/geometry/load/restart/JE keys retained; residual/update 1e-9, full heat 1, SUPG 1, potential field scale 8.",
+  "restart_semantics": "Native continuation unconditionally solves the start state under JE at seed voltage before progressing; seed at target voltage is also re-equilibrated.",
+  "requires_spatial_and_supg_acceptance_before_production": true,
+  "native_solver_started": false,
+  "production_acceptance": false,
+  "input_sha256": "e36d98f2015ac503b80a93ec5141b8124825e1123803fa9bead1ff332ba609d2",
+  "input_text": "&case_control\n schema_version=2,case_id='JE_PAPER_R03_NT_V075',model_level='M2_THERMO_TWO_CARRIER',\n mesh_file='C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/PAPER_~1/PRODUC~1/GEOMET~1/R3_A32~1/H11C0A~1.MES'\n/\n&problem_control\n problem_type='CENTER_HOLE_PLATE', material_profile='ZNO_F1_NT',\n target_voltage=-7.5,target_voltage_factor=1.0,target_joule_factor=1.0,hole_radius=3.0000000000000001e-06,\n restart_nodes_file='C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_SEN~1/A32_S1~1/nodes.csv',\n restart_voltage_factor=0.80000000000000004,restart_joule_factor=1.0\n/\n&solver_control\n transport_supg=.true.,supg_scale=1.0,supg_directional_tau=.true.,global_log_step_limit=.false.,\n field_scales=1e-10,1e-10,1e-10,8.0,0.1,0.1,35.0,\n max_newton=40,newton_stagnation_window=4,residual_tolerance=1e-9,update_tolerance=1e-9,maximum_log_density_update=1,\n continuation_full_joule_during_voltage=.true.,continuation_secant_predictor=.true.,\n continuation_initial_step=0.0625,continuation_maximum_step=0.125,continuation_minimum_step=0.00390625,\n continuation_growth_factor=1.5,continuation_cutback_factor=0.5,continuation_maximum_attempts=160,\n continuation_maximum_newton_per_attempt=40,\n arclength_enabled=.false.,heat_source_current_work=.true.\n/\n\n",
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\H1.mesh": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\manifest.json": "b85893608d17d76d37a1941dff2abc4ae6815a29bdb73e0b0f8541149d5f196a",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\nodes.csv": "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\metrics.txt": "f555c49b56b10e83f11c26775f91cb840c5dfa69867b90e0be81a7f49c840db2",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V060.nml": "3e9c15c38ea55c488c95594b36ba21f73603936d5453e035f996ce59f68e1f02",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\prepare_je_paper_input_20261018.py": "de78ba42dc050a9f55f0feaa6542934323b6178c224c9312f5b74b956c546e31",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90": "a07a9ab4cf08c3fb311542c24233307e65c4c883dae74b938f2129df9f2004aa",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\src\\nonlinear\\continuation_solver_m.f90": "acea50272239300a474c7ea002b8586161b4e11dfca7d67f1dd9704a34bce273"
+  }
+}

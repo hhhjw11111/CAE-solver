@@ -1,0 +1,68 @@
+{
+  "scope": "DIAGNOSTIC_NON_NESTED_ANISOTROPIC_MESH_COMPARISON",
+  "formal_mesh_acceptance": false,
+  "reason": "L2 and XY1_Z3 refine different directions; R13/R17 builds differ. This is not an ordered three-level mesh study.",
+  "runs": [
+    {
+      "run": "r17_scale1_V060",
+      "metrics": {
+        "theta_max_K": 21.097573488488308,
+        "joule_W": 0.00784794020231539,
+        "electron_right_A": 0.0009141648848135907,
+        "ring_theta_mean_K": 17.043431847762314,
+        "ring_E_mean_V_m": 377849.44923958526,
+        "ring_Q_mean_W_m3": 33692188475720.086,
+        "ring_abs_n_relative_mean": 0.032785978129176656,
+        "ring_abs_p_relative_mean": 0.09091720175618566,
+        "heat_balance_relative": 0.006746593210555803
+      },
+      "metrics_sha256": "337c6513186fd9a1d42352df493315b1a16d4d1cf8024969c7b6740a75633c1a",
+      "mesh_sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f",
+      "exe_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685"
+    },
+    {
+      "run": "r17_XY1_Z3_V060",
+      "metrics": {
+        "theta_max_K": 20.932762228111926,
+        "joule_W": 0.007820298730018367,
+        "electron_right_A": 0.0009274448269468466,
+        "ring_theta_mean_K": 16.919054940556684,
+        "ring_E_mean_V_m": 376317.85085125227,
+        "ring_Q_mean_W_m3": 33461314188109.594,
+        "ring_abs_n_relative_mean": 0.032558690998000135,
+        "ring_abs_p_relative_mean": 0.07685820394503108,
+        "heat_balance_relative": 0.001987847692119282
+      },
+      "metrics_sha256": "0bc821d2e3f493dcb5d141364881084391335650f86494392cb0fc2c4e0fd777",
+      "mesh_sha256": "8297c0fadd0ca7a9b2485fbcbf0a34afaa991b7cad337e61ee26da5daab8f0e7",
+      "exe_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685"
+    },
+    {
+      "run": "r13_L2_V060",
+      "metrics": {
+        "theta_max_K": 20.886939240809795,
+        "joule_W": 0.007811197890938667,
+        "electron_right_A": 0.0009324947635949219,
+        "ring_theta_mean_K": 16.880778686669455,
+        "ring_E_mean_V_m": 375935.70717541216,
+        "ring_Q_mean_W_m3": 33416226335559.266,
+        "ring_abs_n_relative_mean": 0.03248567442085209,
+        "ring_abs_p_relative_mean": 0.06978862918278979,
+        "heat_balance_relative": 0.006605806795691119
+      },
+      "metrics_sha256": "2a0ddb23b88e855ae1ef457119eb53a426c84f9d509f280d1724e58342796742",
+      "mesh_sha256": "48a0ebdb3cbf3c30ed4624af11c3d53e063577ff0724ff81860c12a283f055cf",
+      "exe_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b"
+    }
+  ],
+  "XY1_Z3_vs_L2": {
+    "theta_max_K": 0.0021890559307358106,
+    "joule_W": 0.0011637457076627785,
+    "electron_right_A": 0.00541551207065964,
+    "ring_theta_mean_K": 0.002262316306774155,
+    "ring_E_mean_V_m": 0.0010154811284547886,
+    "ring_Q_mean_W_m3": 0.00134746209598516,
+    "ring_abs_n_relative_mean": 0.002242614027466021,
+    "ring_abs_p_relative_mean": 0.09198204484842563
+  }
+}

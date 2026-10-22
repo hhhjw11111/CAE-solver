@@ -1,0 +1,7 @@
+{
+  "reason": "RuntimeError('NATIVE_BATCH_STOP: A40_R20_Z16_S1_V060 FAILED_NO_COMPLETE_STATE')",
+  "events": [],
+  "fully_validated": false,
+  "no_failed_run_is_skipped": true,
+  "next_action": "Review preserved evidence; no automatic retry or next native job"
+}

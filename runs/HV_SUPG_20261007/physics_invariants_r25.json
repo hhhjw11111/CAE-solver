@@ -1,0 +1,48 @@
+{
+  "scope": "PHYSICAL_MATERIAL_HEAT_AND_TRANSPORT_LAWS_UNCHANGED_FROM_FROZEN_R21",
+  "files": [
+    {
+      "path": "src/physics/equilibrium_m.f90",
+      "current_sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+      "r21_sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+      "byte_identical": true
+    },
+    {
+      "path": "src/physics/material_point_m.f90",
+      "current_sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+      "r21_sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+      "byte_identical": true
+    },
+    {
+      "path": "src/physics/recombination_m.f90",
+      "current_sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+      "r21_sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+      "byte_identical": true
+    },
+    {
+      "path": "src/physics/reference_material_m.f90",
+      "current_sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+      "r21_sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+      "byte_identical": true
+    },
+    {
+      "path": "src/physics/thermo_piezo_m.f90",
+      "current_sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+      "r21_sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+      "byte_identical": true
+    },
+    {
+      "path": "src/physics/transport_m.f90",
+      "current_sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+      "r21_sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+      "byte_identical": true
+    },
+    {
+      "path": "src/physics/zno_candidate_m.f90",
+      "current_sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+      "r21_sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+      "byte_identical": true
+    }
+  ],
+  "passed": true
+}

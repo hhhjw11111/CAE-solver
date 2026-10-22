@@ -1,0 +1,23 @@
+&case_control
+ schema_version=2, case_id='F2_H1_NT_L0_V070_RESTART_V060_LOG5', model_level='M2_THERMO_TWO_CARRIER',
+ mesh_file='H1_L0.mesh'
+/
+&problem_control
+ problem_type='CENTER_HOLE_PLATE',
+ material_profile='ZNO_F1_NT', target_voltage=-7.0,
+ target_voltage_factor=1.0, target_joule_factor=1.0, hole_radius=3.0e-6,
+ restart_nodes_file='..\..\runs\F2_NEWTON_FALLBACK_0146_20260909\V060_REGRESSION\nodes.csv',
+ restart_voltage_factor=0.8571428571428571, restart_joule_factor=1.0
+/
+&solver_control
+ field_scales=1e-10,1e-10,1e-10,7.0,0.1,0.1,25.0,
+ max_newton=40, residual_tolerance=1e-9, update_tolerance=1e-9,
+ armijo_c1=1.0e-4, backtrack_factor=0.5, minimum_step=1.0e-6,
+ maximum_log_density_update=5.0,
+ continuation_full_joule_during_voltage=.true.,
+ continuation_initial_step=0.0714285714285714,
+ continuation_minimum_step=0.0089285714285714,
+ continuation_maximum_step=0.1428571428571429,
+ continuation_maximum_attempts=50,
+ continuation_maximum_newton_per_attempt=30
+/

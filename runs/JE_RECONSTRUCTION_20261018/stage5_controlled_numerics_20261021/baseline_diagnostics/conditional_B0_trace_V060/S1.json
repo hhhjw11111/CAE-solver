@@ -1,0 +1,29 @@
+{
+  "scale": 1.0,
+  "ring_abs_p_relative_mean": 0.03867464853512713,
+  "history": [
+    {
+      "iteration": 0,
+      "scaled_residual": 0.015421922561721304,
+      "update": 0.032639174027499225,
+      "step": 1.0
+    },
+    {
+      "iteration": 1,
+      "scaled_residual": 0.0001672323445628162,
+      "update": 0.0004492924827444492,
+      "step": 1.0
+    },
+    {
+      "iteration": 2,
+      "scaled_residual": 2.885034442384534e-08,
+      "update": 8.780236447740195e-08,
+      "step": 1.0
+    },
+    {
+      "iteration": 3,
+      "scaled_residual": 8.902541591966247e-16,
+      "update": 0.0
+    }
+  ]
+}

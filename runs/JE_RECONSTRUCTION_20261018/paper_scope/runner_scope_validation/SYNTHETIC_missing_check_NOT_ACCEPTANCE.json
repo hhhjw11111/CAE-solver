@@ -1,0 +1,21 @@
+{
+  "scope": "JE_PAPER_MINIMAL_20261018",
+  "all_required_passed": true,
+  "core_sources_unchanged": true,
+  "build_manifests_verified": true,
+  "required_ids": [
+    "A1",
+    "A1JJE",
+    "A2",
+    "F1MJE",
+    "G02JE",
+    "G04JE",
+    "SUPG",
+    "SUPGJ",
+    "SUPGJT"
+  ],
+  "targeted_passed": 10,
+  "targeted_total": 10,
+  "legacy_passed": 16,
+  "legacy_total": 16
+}

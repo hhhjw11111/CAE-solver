@@ -1,0 +1,10 @@
+{
+  "completed_diagnostic": true,
+  "accepted_algebraic_samples": 6,
+  "highest_sampled_voltage_V": 6.446124518421723,
+  "stop_reason": "SAMPLED_TURNING_BRANCH_NOT_A_DYNAMICAL_STABILITY_PROOF",
+  "fixed_voltage_replay_passed": false,
+  "mesh_validated": false,
+  "dynamical_stability_verified": false,
+  "complete_quantitative_0_8V": false
+}

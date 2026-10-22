@@ -20,8 +20,10 @@ module continuation_solver_check_m
 
 contains
 
-  subroutine verify_continuation_solver_g08(status)
+  subroutine verify_continuation_solver_g08(status,predictor,checkpoint_spacing)
     type(SolverStatusType), intent(out) :: status
+    logical, intent(in), optional :: predictor
+    real(dp), intent(in), optional :: checkpoint_spacing
     type(CaseConfigType) :: config
     type(MeshType) :: mesh
     type(MaterialType), allocatable :: materials(:)
@@ -34,9 +36,12 @@ contains
     type(SolverStatusType) :: local_status
     real(dp) :: restart_difference,cutback_difference,maximum_residual,maximum_update
     logical :: passed
+    integer :: checkpoint_index
 
     call clear_status(status)
     call define_g08_config(config)
+    if(present(predictor)) config%continuation_options%secant_predictor=predictor
+    if(present(checkpoint_spacing)) config%continuation_options%voltage_checkpoint_spacing=checkpoint_spacing
     call build_two_element_mesh(mesh)
     mesh%coordinates=1.0e-6_dp*mesh%coordinates
     call initialize_reference_bar_problem(config,mesh,materials,full_state,full_load, &
@@ -69,7 +74,14 @@ contains
     cutback_load%voltage_factor=0.0_dp
     cutback_load%joule_factor=0.0_dp
     cutback_options=config%continuation_options
+    ! Deliberately stress a different load path, then compare the same endpoint.
+    if(present(checkpoint_spacing)) cutback_options%voltage_checkpoint_spacing=0.0_dp
     cutback_options%maximum_newton_per_attempt=7
+    if(present(predictor)) then
+      ! The smooth voltage guess converges the full step in six iterations.
+      ! A stricter work limit is needed to exercise rejection and rollback.
+      if(predictor) cutback_options%maximum_newton_per_attempt=5
+    end if
     call solve_load_continuation(mesh,materials,context,boundary_conditions, &
       config%field_scales,config%nonlinear_options,cutback_options,target_load, &
       cutback_state,cutback_load,cutback_report,local_status)
@@ -130,6 +142,13 @@ contains
       report_is_physically_admissible(restart_report) .and. &
       restart_difference < 1.0e-12_dp .and. cutback_difference < 1.0e-12_dp
 
+    if(present(checkpoint_spacing)) then
+      do checkpoint_index=1,nint(1.0_dp/checkpoint_spacing)
+        passed=passed .and.minval(abs(full_report%voltage_factor(1:full_report%accepted_points)- &
+          real(checkpoint_index,dp)*checkpoint_spacing))<1.0e-13_dp
+      end do
+      write(*,'(a,es24.16e3)') 'g08_verified_voltage_checkpoint_spacing=',checkpoint_spacing
+    end if
     write(*,'(a)') 'verification_id=G08_continuation_production'
     call print_report('full',full_report)
     call print_report('cutback',cutback_report)

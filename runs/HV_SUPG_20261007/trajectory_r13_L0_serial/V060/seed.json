@@ -1,0 +1,13 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\trajectory\\accepted_00012_nodes.csv",
+  "sha256": "ea5e40b53a1a5d8b42b7e18f2605bd62b1046d8de4e1e5714ee794f75e4a5977",
+  "status": "REPLAY_OF_ALGEBRAIC_CHECKPOINT_REQUIRES_INDEPENDENT_AUDIT",
+  "original_load": {
+    "status": "ALGEBRAIC_CHECKPOINT_NOT_FLUX_OR_MESH_ACCEPTANCE",
+    "applied_voltage_V": -6.0,
+    "voltage_factor": 0.75,
+    "joule_factor": 1.0,
+    "residual": 5.910001770104726e-16,
+    "update": 7.598664029267086e-11
+  }
+}

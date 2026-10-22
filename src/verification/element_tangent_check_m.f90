@@ -17,8 +17,10 @@ module element_tangent_check_m
 
 contains
 
-  subroutine verify_element_g03(status)
+  subroutine verify_element_g03(status,supg,directional)
     type(SolverStatusType), intent(out) :: status
+    logical, intent(in), optional :: supg
+    logical, intent(in), optional :: directional
     type(MaterialType) :: material
     type(LoadStateType) :: load
     type(ElementRequestType) :: request
@@ -39,6 +41,8 @@ contains
 
     call clear_status(status)
     call define_test_material(material)
+    if(present(supg)) material%transport_supg=supg
+    if(present(directional)) material%supg_directional_tau=directional
     material%reference_p = 2.0e20_dp
     call hex20_natural_coordinates(natural_nodes)
     coordinates = 0.5_dp * (natural_nodes + 1.0_dp)

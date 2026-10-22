@@ -1,0 +1,322 @@
+{
+  "6": {
+    "mesh_holes": {
+      "all": {
+        "node_count": 42213,
+        "maximum_percent": 1.9803568605119524,
+        "rms_percent": 0.24586383168117432,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "top_bottom_surface": {
+        "node_count": 3354,
+        "maximum_percent": 1.9803568605119524,
+        "rms_percent": 0.3175044169545656,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "off_surface": {
+        "node_count": 38859,
+        "maximum_percent": 1.895036379859825,
+        "rms_percent": 0.2386743946455837,
+        "maximum_node": 40028,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.4986388888888889
+        ]
+      },
+      "hole_annulus_r_le_3p5um": {
+        "node_count": 18085,
+        "maximum_percent": 1.9803568605119524,
+        "rms_percent": 0.3242450510597309,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "outside_annulus": {
+        "node_count": 24128,
+        "maximum_percent": 1.3677711839926352,
+        "rms_percent": 0.16417985267904478,
+        "maximum_node": 40726,
+        "xyz_um": [
+          5.545810384203952,
+          9.605625354584319,
+          0.5
+        ]
+      },
+      "annulus_surface": {
+        "node_count": 1430,
+        "maximum_percent": 1.9803568605119524,
+        "rms_percent": 0.3981042497906143,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "annulus_off_surface": {
+        "node_count": 16655,
+        "maximum_percent": 1.895036379859825,
+        "rms_percent": 0.31710255896494877,
+        "maximum_node": 40028,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.4986388888888889
+        ]
+      }
+    },
+    "supg_holes": {
+      "all": {
+        "node_count": 42213,
+        "maximum_percent": 8.134891800188807,
+        "rms_percent": 1.050234605646588,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "top_bottom_surface": {
+        "node_count": 3354,
+        "maximum_percent": 8.134891800188807,
+        "rms_percent": 1.2971076371283379,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "off_surface": {
+        "node_count": 38859,
+        "maximum_percent": 7.802046772851778,
+        "rms_percent": 1.0261458385592754,
+        "maximum_node": 42165,
+        "xyz_um": [
+          -4.538461538461538,
+          5.558012396130295e-16,
+          0.4986388888888889
+        ]
+      },
+      "hole_annulus_r_le_3p5um": {
+        "node_count": 18085,
+        "maximum_percent": 8.134891800188807,
+        "rms_percent": 1.094659968584951,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "outside_annulus": {
+        "node_count": 24128,
+        "maximum_percent": 8.125983620637934,
+        "rms_percent": 1.01566253194775,
+        "maximum_node": 42162,
+        "xyz_um": [
+          -4.538461538461538,
+          5.558012396130295e-16,
+          0.5
+        ]
+      },
+      "annulus_surface": {
+        "node_count": 1430,
+        "maximum_percent": 8.134891800188807,
+        "rms_percent": 1.3574975852011206,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "annulus_off_surface": {
+        "node_count": 16655,
+        "maximum_percent": 7.783835079908115,
+        "rms_percent": 1.0690846357925028,
+        "maximum_node": 40028,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.4986388888888889
+        ]
+      }
+    }
+  },
+  "8": {
+    "mesh_holes": {
+      "all": {
+        "node_count": 42213,
+        "maximum_percent": 1.435975728598043,
+        "rms_percent": 0.11491484288577078,
+        "maximum_node": 40726,
+        "xyz_um": [
+          5.545810384203952,
+          9.605625354584319,
+          0.5
+        ]
+      },
+      "top_bottom_surface": {
+        "node_count": 3354,
+        "maximum_percent": 1.435975728598043,
+        "rms_percent": 0.20737656770324644,
+        "maximum_node": 40726,
+        "xyz_um": [
+          5.545810384203952,
+          9.605625354584319,
+          0.5
+        ]
+      },
+      "off_surface": {
+        "node_count": 38859,
+        "maximum_percent": 1.234869239612925,
+        "rms_percent": 0.10311815946213863,
+        "maximum_node": 40729,
+        "xyz_um": [
+          5.545810384203952,
+          9.605625354584319,
+          0.4986388888888889
+        ]
+      },
+      "hole_annulus_r_le_3p5um": {
+        "node_count": 18085,
+        "maximum_percent": 1.1531934226520117,
+        "rms_percent": 0.12890408969913242,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "outside_annulus": {
+        "node_count": 24128,
+        "maximum_percent": 1.435975728598043,
+        "rms_percent": 0.10319323478768207,
+        "maximum_node": 40726,
+        "xyz_um": [
+          5.545810384203952,
+          9.605625354584319,
+          0.5
+        ]
+      },
+      "annulus_surface": {
+        "node_count": 1430,
+        "maximum_percent": 1.1531934226520117,
+        "rms_percent": 0.20459117486367906,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "annulus_off_surface": {
+        "node_count": 16655,
+        "maximum_percent": 1.0708539611879697,
+        "rms_percent": 0.120204180785676,
+        "maximum_node": 40028,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.4986388888888889
+        ]
+      }
+    },
+    "supg_holes": {
+      "all": {
+        "node_count": 42213,
+        "maximum_percent": 5.321653144495909,
+        "rms_percent": 0.5163997445751705,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "top_bottom_surface": {
+        "node_count": 3354,
+        "maximum_percent": 5.321653144495909,
+        "rms_percent": 0.8780668648015185,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "off_surface": {
+        "node_count": 38859,
+        "maximum_percent": 4.94018596067869,
+        "rms_percent": 0.47237559671106916,
+        "maximum_node": 40028,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.4986388888888889
+        ]
+      },
+      "hole_annulus_r_le_3p5um": {
+        "node_count": 18085,
+        "maximum_percent": 5.321653144495909,
+        "rms_percent": 0.48517272029315894,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "outside_annulus": {
+        "node_count": 24128,
+        "maximum_percent": 4.905989752686522,
+        "rms_percent": 0.5386200266543174,
+        "maximum_node": 42163,
+        "xyz_um": [
+          -4.532450053708387,
+          0.2970724715571604,
+          0.5
+        ]
+      },
+      "annulus_surface": {
+        "node_count": 1430,
+        "maximum_percent": 5.321653144495909,
+        "rms_percent": 0.7961824813880275,
+        "maximum_node": 40023,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "annulus_off_surface": {
+        "node_count": 16655,
+        "maximum_percent": 4.94018596067869,
+        "rms_percent": 0.44852660783187437,
+        "maximum_node": 40028,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.4986388888888889
+        ]
+      }
+    }
+  }
+}

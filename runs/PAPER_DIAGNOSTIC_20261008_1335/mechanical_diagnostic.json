@@ -1,0 +1,45 @@
+{
+  "scope": "ARCHIVED_MECHANICAL_DIAGNOSTICS_NOT_MESH_CERTIFICATE",
+  "script_sha256": "bbfa41152abd65b3f5b90ded5611974a825f4a2b5e10daff45fdb1f47ebc0cd7",
+  "elapsed_seconds": 26.45300000000134,
+  "runs": [
+    {
+      "run": "r17_scale1_V060",
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale1_V060\\field_samples.csv",
+      "sha256": "72f07447a4a9045f7184bce014b3e03d9731fb9f3740153cae5e5e0e262ecf96",
+      "sample_count": 392000,
+      "volume_mean_displacement_m": 8.27546529815597e-10,
+      "volume_mean_von_mises_Pa": 1264354.9170214047,
+      "ring_mean_displacement_m": 7.621311563840059e-10,
+      "ring_mean_von_mises_Pa": 1937197.2866197783,
+      "raw_sample_von_mises_max_Pa": 5897698.739186705
+    },
+    {
+      "run": "r17_XY1_Z3_V060",
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY1_Z3_V060\\field_samples.csv",
+      "sha256": "f9797d358e940727c729ff679d1bd0172c53b4c6b2c62171b94862a18b3e4a6b",
+      "sample_count": 768000,
+      "volume_mean_displacement_m": 8.240462484667529e-10,
+      "volume_mean_von_mises_Pa": 1220620.853105631,
+      "ring_mean_displacement_m": 7.59281322777954e-10,
+      "ring_mean_von_mises_Pa": 1904484.8864256304,
+      "raw_sample_von_mises_max_Pa": 5467033.794063962
+    },
+    {
+      "run": "r17_XY2_Z3_V060_OOC",
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY2_Z3_V060_OOC\\field_samples.csv",
+      "sha256": "e260b495fac1a7bce2b84fe55d9bb04382dccf4ff91acdf4d59ee53a999e67f7",
+      "sample_count": 1152000,
+      "volume_mean_displacement_m": 8.235424987239478e-10,
+      "volume_mean_von_mises_Pa": 1208642.7216916883,
+      "ring_mean_displacement_m": 7.589978830466678e-10,
+      "ring_mean_von_mises_Pa": 1896880.2254767641,
+      "raw_sample_von_mises_max_Pa": 5352675.641763888
+    }
+  ],
+  "limitations": [
+    "R17 runs share full-domain rigid-body anchors; do not compare raw displacement directly to R21 half-domain gauge.",
+    "Stress raw maxima are diagnostic, not a converged stress-concentration certificate.",
+    "Mechanical integral stability never overrides the failed carrier mesh/SUPG gate."
+  ]
+}

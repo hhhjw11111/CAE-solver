@@ -1,0 +1,1713 @@
+{
+  "scope": "JE_PAPER_THICKNESS_DIRECTION_ONLY_20261018",
+  "method": "REUSED_FROZEN_FEM_STATES_WITH_EXACT_GATE_REPLAY",
+  "native_solver_started": false,
+  "fully_validated": false,
+  "thickness_direction_passed": true,
+  "voltage_points": [
+    6,
+    8
+  ],
+  "fixed_angular_radial": [
+    32,
+    14
+  ],
+  "supg_scale": 1,
+  "runs": [
+    {
+      "run": "A32_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "supg_scale": 1,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "node_count": 27840,
+      "gap_percent": 0.7431404725480883,
+      "electrode_gap_percent": 0.7541275419185399,
+      "JE_mW": 5.789757268226869,
+      "all_exterior_mW": 5.74673123870438,
+      "contact_only_mW": 5.746095114056939,
+      "theta_max_K": 14.096960640474379,
+      "ring_n": 0.022760719068228547,
+      "ring_p": 0.0499673679475122,
+      "original_seconds": 1040.078000000096,
+      "original_maximum_residual": 4.113621799544047e-16,
+      "original_maximum_update": 6.562093079873363e-10
+    },
+    {
+      "run": "A32_R14_Z16_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 16,
+      "supg_scale": 1,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "node_count": 31616,
+      "gap_percent": 0.7345348577299569,
+      "electrode_gap_percent": 0.7459028498038142,
+      "JE_mW": 5.789748718482887,
+      "all_exterior_mW": 5.747220995970657,
+      "contact_only_mW": 5.746562817795243,
+      "theta_max_K": 14.097317193745425,
+      "ring_n": 0.02275859845673441,
+      "ring_p": 0.0499207389243839,
+      "original_seconds": 1426.3129999999655,
+      "original_maximum_residual": 3.7716300785854364e-16,
+      "original_maximum_update": 4.144897029729069e-12
+    },
+    {
+      "run": "A32_R14_Z18_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 18,
+      "supg_scale": 1,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "node_count": 35392,
+      "gap_percent": 0.7258914385044395,
+      "electrode_gap_percent": 0.7372465993035396,
+      "JE_mW": 5.789745569949155,
+      "all_exterior_mW": 5.747718302545705,
+      "contact_only_mW": 5.747060867626378,
+      "theta_max_K": 14.097256769160651,
+      "ring_n": 0.02275690700936176,
+      "ring_p": 0.04984662730059564,
+      "original_seconds": 1828.313000000082,
+      "original_maximum_residual": 3.820005940869993e-16,
+      "original_maximum_update": 5.1210480513722254e-11
+    },
+    {
+      "run": "A32_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "supg_scale": 1,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "node_count": 27840,
+      "gap_percent": 0.9216482094756874,
+      "electrode_gap_percent": 0.9330175413136718,
+      "JE_mW": 9.857511968552338,
+      "all_exterior_mW": 9.766660385995324,
+      "contact_only_mW": 9.76553965274865,
+      "theta_max_K": 24.23465436107807,
+      "ring_n": 0.03906951977193403,
+      "ring_p": 0.09116900467999908,
+      "original_seconds": 1398.7189999999246,
+      "original_maximum_residual": 6.527234873510851e-16,
+      "original_maximum_update": 3.306104597908205e-12
+    },
+    {
+      "run": "A32_R14_Z16_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 16,
+      "supg_scale": 1,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "node_count": 31616,
+      "gap_percent": 0.9063922711059589,
+      "electrode_gap_percent": 0.9186186522561434,
+      "JE_mW": 9.857479927006347,
+      "all_exterior_mW": 9.76813249082214,
+      "contact_only_mW": 9.766927277754462,
+      "theta_max_K": 24.23528149817895,
+      "ring_n": 0.03906501328919415,
+      "ring_p": 0.09120262425079569,
+      "original_seconds": 1429.8129999999655,
+      "original_maximum_residual": 6.342570182027662e-16,
+      "original_maximum_update": 2.0372105140457194e-11
+    },
+    {
+      "run": "A32_R14_Z18_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 18,
+      "supg_scale": 1,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "node_count": 35392,
+      "gap_percent": 0.8967718619962798,
+      "electrode_gap_percent": 0.9091511651325968,
+      "JE_mW": 9.857482009627093,
+      "all_exterior_mW": 9.769082884663412,
+      "contact_only_mW": 9.767862597083832,
+      "theta_max_K": 24.235282887595815,
+      "ring_n": 0.039062215680562846,
+      "ring_p": 0.091123146744848,
+      "original_seconds": 2273.765000000014,
+      "original_maximum_residual": 6.62679162875921e-16,
+      "original_maximum_update": 3.6525065625023626e-12
+    }
+  ],
+  "run_rechecks": {
+    "A32_S1_V060": {
+      "input_only_declared_changes": true,
+      "original_model_heat_and_thresholds_retained": true,
+      "fresh_node_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 27840,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.9455611954684188e+22,
+        "minimum_p_m3": 6.024319594917258e-31
+      },
+      "power_replay": {
+        "method": "FROZEN_INTEGRALS_HASH_CHECK_AND_EXACT_ARITHMETIC_REPLAY",
+        "quadrature_rerun": false,
+        "native_relative_agreement": {
+          "JE_W": 1.6479065832745266e-14,
+          "all_exterior_power_W": 1.2960472544694733e-12
+        },
+        "original_native_relative_agreement_limit": 1e-08,
+        "saved_affine_self_check": {
+          "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+        },
+        "JE_W": 0.005789757268226869,
+        "all_exterior_power_W": 0.005746731238704381,
+        "contact_only_power_W": 0.00574609511405694,
+        "gap_W": 4.302602952248845e-05,
+        "gap_relative": 0.007431404725480884,
+        "electrode_gap_relative": 0.007541275419185399,
+        "parts": {
+          "quadrature_W": 2.0207527916607515e-09,
+          "SUPG_weighted_W": 4.29582937197728e-05,
+          "reaction_minus_physical_boundary_W": 6.571504912022269e-08,
+          "free_residual_correction_W": 7.970102980797034e-16
+        },
+        "decomposition_remainder_W": 6.7559347873002995e-18,
+        "SUPG_fraction_of_gap": 0.9984257017561835,
+        "free_residual_max_A": 7.860806481142243e-16
+      },
+      "metrics": {
+        "case_id": "JE_SENS_V6_S1",
+        "model": "NT",
+        "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+        "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+        "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+        "supg_scale": 1.0,
+        "supg_directional_tau": "T",
+        "zero_source_heat_reference_W": 0.007094438135351999,
+        "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_SEN~1/TRANSF~3/nodes.csv",
+        "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+        "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+        "balance_detail_point": "1, 2.9081624907490066E-014, 3.1792911682676860E-014, 1.9175212615507157E-014, 9.4429532998002785E-017,-9.1057041312028808E-019, 9.6428562570519856E-003",
+        "voltage_V": 6.0,
+        "hole_radius_m": 3e-06,
+        "ring_width_m": 5e-07,
+        "minimum_jacobian": 3.6040244152945735e-24,
+        "total_volume_m3": 3.7172575357026593e-16,
+        "maximum_stage_balance": 3.179291168267686e-14,
+        "maximum_accepted_residual": 4.113621799544047e-16,
+        "maximum_accepted_update": 6.562093079873363e-10,
+        "final_voltage_factor": 1.0,
+        "final_joule_factor": 1.0,
+        "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+        "joule_W": 0.005789757268226774,
+        "total_current_work_W": 0.005789757268226774,
+        "diffusion_work_W": -0.0010501410340905046,
+        "absolute_diffusion_work_W": 0.0010503314779018054,
+        "terminal_power_W": 0.005746731238711829,
+        "heat_out_W": 0.005789499379567618,
+        "heat_balance_relative": 4.454222296521754e-05,
+        "electron_balance_relative": 2.3815478376745963e-06,
+        "hole_balance_diagnostic": 5.6921175766041915e-06,
+        "joule_quadrature_4_5_relative": 4.5880889251390285e-09,
+        "electron_right_A": 0.0009576825190095023,
+        "hole_right_A": 5.462966898027978e-57,
+        "ring_volume_m3": 1.0210144544084097e-17,
+        "ring_Q_mean_W_m3": 25628696035988.555,
+        "ring_Q_p95_W_m3": 53906367727805.4,
+        "ring_E_mean_V_m": 359584.51185802015,
+        "ring_abs_n_relative_mean": 0.022760719068228547,
+        "ring_abs_p_relative_mean": 0.0499673679475122,
+        "ring_theta_mean_K": 11.844666314040293,
+        "ring_displacement_mean_m": 5.284109703453338e-10,
+        "E_p95_V_m": 433114.40487075277,
+        "E_above_1e6_volume_fraction": 0.004256121239094931,
+        "theta_max_K": 14.096960640474379,
+        "maximum_abs_n_relative": 1.254278177312231,
+        "maximum_abs_p_relative": 1.9558061981228283,
+        "displacement_max_m": 1.054532847775379e-09,
+        "minimum_mu_n_ratio": 0.912252456507341,
+        "stress_von_mises_max_Pa": 3640564.108869955,
+        "total_newton_iterations": 4.0,
+        "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+      }
+    },
+    "A32_R14_Z16_S1_V060": {
+      "input_only_declared_changes": true,
+      "original_model_heat_and_thresholds_retained": true,
+      "fresh_node_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 31616,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.945139349050077e+22,
+        "minimum_p_m3": 6.022498289933866e-31
+      },
+      "power_replay": {
+        "method": "FROZEN_INTEGRALS_HASH_CHECK_AND_EXACT_ARITHMETIC_REPLAY",
+        "quadrature_rerun": false,
+        "native_relative_agreement": {
+          "JE_W": 8.419316976457181e-14,
+          "all_exterior_power_W": 1.885122475155998e-12
+        },
+        "original_native_relative_agreement_limit": 1e-08,
+        "saved_affine_self_check": {
+          "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+        },
+        "JE_W": 0.005789748718482887,
+        "all_exterior_power_W": 0.005747220995970657,
+        "contact_only_power_W": 0.005746562817795243,
+        "gap_W": 4.252772251223027e-05,
+        "gap_relative": 0.007345348577299568,
+        "electrode_gap_relative": 0.0074590284980381415,
+        "parts": {
+          "quadrature_W": 2.019824730213615e-09,
+          "SUPG_weighted_W": 4.2471708293315865e-05,
+          "reaction_minus_physical_boundary_W": 5.3994393443314304e-08,
+          "free_residual_correction_W": 7.532992510221026e-16
+        },
+        "decomposition_remainder_W": -1.242089113853706e-17,
+        "SUPG_fraction_of_gap": 0.998682877530103,
+        "free_residual_max_A": 9.599090505982583e-16
+      },
+      "metrics": {
+        "case_id": "JE_SENS_V6_S1",
+        "model": "NT",
+        "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+        "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+        "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+        "supg_scale": 1.0,
+        "supg_directional_tau": "T",
+        "zero_source_heat_reference_W": 0.007094438135351999,
+        "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/TRANSF~3/nodes.csv",
+        "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+        "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+        "balance_detail_point": "1, 2.6138772330795530E-014, 3.4841515698630337E-014, 2.9256638138440891E-014, 1.7659251142463196E-016,-1.7028536555280759E-018, 9.6428418271566289E-003",
+        "voltage_V": 6.0,
+        "hole_radius_m": 3e-06,
+        "ring_width_m": 5e-07,
+        "minimum_jacobian": 3.1535213633825882e-24,
+        "total_volume_m3": 3.7172575357032766e-16,
+        "maximum_stage_balance": 3.484151569863034e-14,
+        "maximum_accepted_residual": 3.7716300785854364e-16,
+        "maximum_accepted_update": 4.144897029729069e-12,
+        "final_voltage_factor": 1.0,
+        "final_joule_factor": 1.0,
+        "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+        "joule_W": 0.005789748718483374,
+        "total_current_work_W": 0.005789748718483374,
+        "diffusion_work_W": -0.001050386633666207,
+        "absolute_diffusion_work_W": 0.0010505772270862125,
+        "terminal_power_W": 0.005747220995981491,
+        "heat_out_W": 0.005789543842242813,
+        "heat_balance_relative": 3.538603323269202e-05,
+        "electron_balance_relative": 3.2545251652318575e-06,
+        "hole_balance_diagnostic": 4.037497431616636e-06,
+        "joule_quadrature_4_5_relative": 4.5815867593906364e-09,
+        "electron_right_A": 0.0009577604696325375,
+        "hole_right_A": 5.463370835401661e-57,
+        "ring_volume_m3": 1.0210144544087166e-17,
+        "ring_Q_mean_W_m3": 25628931255759.824,
+        "ring_Q_p95_W_m3": 53914003000046.08,
+        "ring_E_mean_V_m": 359580.64967584243,
+        "ring_abs_n_relative_mean": 0.02275859845673441,
+        "ring_abs_p_relative_mean": 0.0499207389243839,
+        "ring_theta_mean_K": 11.8447894599813,
+        "ring_displacement_mean_m": 5.284101151104644e-10,
+        "E_p95_V_m": 433291.8594875874,
+        "E_above_1e6_volume_fraction": 0.004231258390813016,
+        "theta_max_K": 14.097317193745425,
+        "maximum_abs_n_relative": 1.2571582862236403,
+        "maximum_abs_p_relative": 1.9594588128378825,
+        "displacement_max_m": 1.0545426414619867e-09,
+        "minimum_mu_n_ratio": 0.9122503853886463,
+        "stress_von_mises_max_Pa": 3644135.4367909404,
+        "total_newton_iterations": 4.0,
+        "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+      }
+    },
+    "A32_R14_Z18_S1_V060": {
+      "input_only_declared_changes": true,
+      "original_model_heat_and_thresholds_retained": true,
+      "fresh_node_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 35392,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.9449719277933444e+22,
+        "minimum_p_m3": 6.023999785445878e-31
+      },
+      "power_replay": {
+        "method": "FROZEN_INTEGRALS_HASH_CHECK_AND_EXACT_ARITHMETIC_REPLAY",
+        "quadrature_rerun": false,
+        "native_relative_agreement": {
+          "JE_W": 8.988599524894443e-15,
+          "all_exterior_power_W": 1.8086012366277678e-12
+        },
+        "original_native_relative_agreement_limit": 1e-08,
+        "saved_affine_self_check": {
+          "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+        },
+        "JE_W": 0.005789745569949155,
+        "all_exterior_power_W": 0.005747718302545704,
+        "contact_only_power_W": 0.005747060867626378,
+        "gap_W": 4.202726740345098e-05,
+        "gap_relative": 0.007258914385044395,
+        "electrode_gap_relative": 0.007372465993035397,
+        "parts": {
+          "quadrature_W": 2.0183797124970204e-09,
+          "SUPG_weighted_W": 4.1978820900915986e-05,
+          "reaction_minus_physical_boundary_W": 4.6428122581730624e-08,
+          "free_residual_correction_W": 2.6106243944731606e-16
+        },
+        "decomposition_remainder_W": -2.0294909416213036e-17,
+        "SUPG_fraction_of_gap": 0.9988472602306041,
+        "free_residual_max_A": 1.5318410316534263e-15
+      },
+      "metrics": {
+        "case_id": "JE_SENS_V6_S1",
+        "model": "NT",
+        "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+        "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+        "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+        "supg_scale": 1.0,
+        "supg_directional_tau": "T",
+        "zero_source_heat_reference_W": 0.007094438135351999,
+        "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/TREEA7~1/nodes.csv",
+        "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+        "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+        "balance_detail_point": "1, 2.6155057869306620E-014, 2.2976126975203672E-014, 3.8130586252542086E-014, 8.6317132095511092E-016, 8.3234175729229737E-018, 9.6428337814942668E-003",
+        "voltage_V": 6.0,
+        "hole_radius_m": 3e-06,
+        "ring_width_m": 5e-07,
+        "minimum_jacobian": 2.8031301007842746e-24,
+        "total_volume_m3": 3.717257535702332e-16,
+        "maximum_stage_balance": 3.8130586252542086e-14,
+        "maximum_accepted_residual": 3.820005940869993e-16,
+        "maximum_accepted_update": 5.1210480513722254e-11,
+        "final_voltage_factor": 1.0,
+        "final_joule_factor": 1.0,
+        "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+        "joule_W": 0.005789745569949103,
+        "total_current_work_W": 0.005789745569949103,
+        "diffusion_work_W": -0.0010505717183257317,
+        "absolute_diffusion_work_W": 0.0010507636140355218,
+        "terminal_power_W": 0.0057477183025561,
+        "heat_out_W": 0.005789578346293059,
+        "heat_balance_relative": 2.8882729650826056e-05,
+        "electron_balance_relative": 3.8433972221092814e-06,
+        "hole_balance_diagnostic": 2.9415207833328037e-06,
+        "joule_quadrature_4_5_relative": 4.577846398071242e-09,
+        "electron_right_A": 0.0009578434779377331,
+        "hole_right_A": 5.463831635467563e-57,
+        "ring_volume_m3": 1.021014454408579e-17,
+        "ring_Q_mean_W_m3": 25630787394852.035,
+        "ring_Q_p95_W_m3": 53921043254495.91,
+        "ring_E_mean_V_m": 359591.8640169438,
+        "ring_abs_n_relative_mean": 0.02275690700936176,
+        "ring_abs_p_relative_mean": 0.04984662730059564,
+        "ring_theta_mean_K": 11.844672218078776,
+        "ring_displacement_mean_m": 5.283989862933924e-10,
+        "E_p95_V_m": 432974.922483141,
+        "E_above_1e6_volume_fraction": 0.004245291050393017,
+        "theta_max_K": 14.097256769160651,
+        "maximum_abs_n_relative": 1.2593493353646825,
+        "maximum_abs_p_relative": 1.9630733109385612,
+        "displacement_max_m": 1.0545288438079562e-09,
+        "minimum_mu_n_ratio": 0.912250736377742,
+        "stress_von_mises_max_Pa": 3646784.3828178924,
+        "total_newton_iterations": 4.0,
+        "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+      }
+    },
+    "A32_S1_V080": {
+      "input_only_declared_changes": true,
+      "original_model_heat_and_thresholds_retained": true,
+      "fresh_node_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 27840,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 6.854179581914365e+21,
+        "minimum_p_m3": 3.726002781830782e-31
+      },
+      "power_replay": {
+        "method": "FROZEN_INTEGRALS_HASH_CHECK_AND_EXACT_ARITHMETIC_REPLAY",
+        "quadrature_rerun": false,
+        "native_relative_agreement": {
+          "JE_W": 1.4782307386176445e-14,
+          "all_exterior_power_W": 9.230747817924034e-13
+        },
+        "original_native_relative_agreement_limit": 1e-08,
+        "saved_affine_self_check": {
+          "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+        },
+        "JE_W": 0.009857511968552338,
+        "all_exterior_power_W": 0.009766660385995324,
+        "contact_only_power_W": 0.00976553965274865,
+        "gap_W": 9.085158255701421e-05,
+        "gap_relative": 0.009216482094756874,
+        "electrode_gap_relative": 0.009330175413136717,
+        "parts": {
+          "quadrature_W": 3.5649633280121495e-09,
+          "SUPG_weighted_W": 9.056683123007751e-05,
+          "reaction_minus_physical_boundary_W": 2.811863641302703e-07,
+          "free_residual_correction_W": -5.096981241867419e-16
+        },
+        "decomposition_remainder_W": -1.1885566315872342e-17,
+        "SUPG_fraction_of_gap": 0.9968657527043295,
+        "free_residual_max_A": 1.8913497978137906e-15
+      },
+      "metrics": {
+        "case_id": "JE_SENS_V8_S1",
+        "model": "NT",
+        "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+        "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+        "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+        "supg_scale": 1.0,
+        "supg_directional_tau": "T",
+        "zero_source_heat_reference_W": 0.012612334462847999,
+        "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_SEN~1/TRANSF~4/nodes.csv",
+        "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+        "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+        "balance_detail_point": "1, 1.5404393962592497E-014, 3.0675427060361685E-014, 1.6782607417996257E-015, 2.4949572414635955E-016, 4.0962746888981946E-018, 1.6418215995137583E-002",
+        "voltage_V": 8.0,
+        "hole_radius_m": 3e-06,
+        "ring_width_m": 5e-07,
+        "minimum_jacobian": 3.6040244152945735e-24,
+        "total_volume_m3": 3.7172575357026593e-16,
+        "maximum_stage_balance": 3.0675427060361685e-14,
+        "maximum_accepted_residual": 6.527234873510851e-16,
+        "maximum_accepted_update": 3.306104597908205e-12,
+        "final_voltage_factor": 1.0,
+        "final_joule_factor": 1.0,
+        "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+        "joule_W": 0.009857511968552193,
+        "total_current_work_W": 0.009857511968552193,
+        "diffusion_work_W": -0.003102495467730274,
+        "absolute_diffusion_work_W": 0.0031028680119774147,
+        "terminal_power_W": 0.00976666038600434,
+        "heat_out_W": 0.009856283514934302,
+        "heat_balance_relative": 0.00012462106278029634,
+        "electron_balance_relative": 3.7961333514732326e-06,
+        "hole_balance_diagnostic": 4.147824440676696e-05,
+        "joule_quadrature_4_5_relative": 4.685113301967255e-09,
+        "electron_right_A": 0.0012206924565936578,
+        "hole_right_A": 6.964084383512601e-57,
+        "ring_volume_m3": 1.0210144544084097e-17,
+        "ring_Q_mean_W_m3": 44230215046959.07,
+        "ring_Q_p95_W_m3": 93640947539874.6,
+        "ring_E_mean_V_m": 497961.8547504562,
+        "ring_abs_n_relative_mean": 0.03906951977193403,
+        "ring_abs_p_relative_mean": 0.09116900467999908,
+        "ring_theta_mean_K": 20.33386417407321,
+        "ring_displacement_mean_m": 9.058908541951534e-10,
+        "E_p95_V_m": 616638.0952840671,
+        "E_above_1e6_volume_fraction": 0.0168240388470267,
+        "theta_max_K": 24.23465436107807,
+        "maximum_abs_n_relative": 2.518542891114701,
+        "maximum_abs_p_relative": 6.741421238422458,
+        "displacement_max_m": 1.8092826372276224e-09,
+        "minimum_mu_n_ratio": 0.8560983267749269,
+        "stress_von_mises_max_Pa": 6280150.242034431,
+        "total_newton_iterations": 5.0,
+        "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+      }
+    },
+    "A32_R14_Z16_S1_V080": {
+      "input_only_declared_changes": true,
+      "original_model_heat_and_thresholds_retained": true,
+      "fresh_node_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 31616,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 6.850688090657735e+21,
+        "minimum_p_m3": 3.725156988525118e-31
+      },
+      "power_replay": {
+        "method": "FROZEN_INTEGRALS_HASH_CHECK_AND_EXACT_ARITHMETIC_REPLAY",
+        "quadrature_rerun": false,
+        "native_relative_agreement": {
+          "JE_W": 4.575490968216926e-15,
+          "all_exterior_power_W": 6.526435611106296e-13
+        },
+        "original_native_relative_agreement_limit": 1e-08,
+        "saved_affine_self_check": {
+          "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+        },
+        "JE_W": 0.009857479927006347,
+        "all_exterior_power_W": 0.00976813249082214,
+        "contact_only_power_W": 0.009766927277754462,
+        "gap_W": 8.934743618420685e-05,
+        "gap_relative": 0.009063922711059588,
+        "electrode_gap_relative": 0.009186186522561434,
+        "parts": {
+          "quadrature_W": 3.5430014633935913e-09,
+          "SUPG_weighted_W": 8.911145652791701e-05,
+          "reaction_minus_physical_boundary_W": 2.3243665347831566e-07,
+          "free_residual_correction_W": 1.393590317888339e-15
+        },
+        "decomposition_remainder_W": -4.546872860861084e-17,
+        "SUPG_fraction_of_gap": 0.9973588536351137,
+        "free_residual_max_A": 1.5881753114819207e-15
+      },
+      "metrics": {
+        "case_id": "JE_SENS_V8_S1",
+        "model": "NT",
+        "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+        "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+        "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+        "supg_scale": 1.0,
+        "supg_directional_tau": "T",
+        "zero_source_heat_reference_W": 0.012612334462847999,
+        "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/TRANSF~4/nodes.csv",
+        "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+        "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+        "balance_detail_point": "1, 9.6882651578314190E-015, 1.9725438053094024E-014, 2.0917108826685405E-017, 1.0461035359916072E-015,-1.7175092865670863E-017, 1.6418157739415823E-002",
+        "voltage_V": 8.0,
+        "hole_radius_m": 3e-06,
+        "ring_width_m": 5e-07,
+        "minimum_jacobian": 3.1535213633825882e-24,
+        "total_volume_m3": 3.7172575357032766e-16,
+        "maximum_stage_balance": 1.9725438053094024e-14,
+        "maximum_accepted_residual": 6.342570182027662e-16,
+        "maximum_accepted_update": 2.0372105140457194e-11,
+        "final_voltage_factor": 1.0,
+        "final_joule_factor": 1.0,
+        "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+        "joule_W": 0.009857479927006302,
+        "total_current_work_W": 0.009857479927006302,
+        "diffusion_work_W": -0.0031032843627718373,
+        "absolute_diffusion_work_W": 0.0031036586657294737,
+        "terminal_power_W": 0.009768132490828516,
+        "heat_out_W": 0.009856508550249747,
+        "heat_balance_relative": 9.854209836067409e-05,
+        "electron_balance_relative": 1.1008012106864273e-06,
+        "hole_balance_diagnostic": 3.22029788310299e-05,
+        "joule_quadrature_4_5_relative": 4.6604898639334925e-09,
+        "electron_right_A": 0.0012208659097193116,
+        "hole_right_A": 6.965027442049546e-57,
+        "ring_volume_m3": 1.0210144544087166e-17,
+        "ring_Q_mean_W_m3": 44231107100504.7,
+        "ring_Q_p95_W_m3": 93666723562977.75,
+        "ring_E_mean_V_m": 497954.2116576343,
+        "ring_abs_n_relative_mean": 0.03906501328919415,
+        "ring_abs_p_relative_mean": 0.09120262425079569,
+        "ring_theta_mean_K": 20.33407357594716,
+        "ring_displacement_mean_m": 9.058836830669464e-10,
+        "E_p95_V_m": 615540.3891497208,
+        "E_above_1e6_volume_fraction": 0.016992480679370238,
+        "theta_max_K": 24.23528149817895,
+        "maximum_abs_n_relative": 2.5259333358674327,
+        "maximum_abs_p_relative": 6.7554196766673265,
+        "displacement_max_m": 1.8092977407116409e-09,
+        "minimum_mu_n_ratio": 0.8560950150409232,
+        "stress_von_mises_max_Pa": 6287960.018251555,
+        "total_newton_iterations": 4.0,
+        "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+      }
+    },
+    "A32_R14_Z18_S1_V080": {
+      "input_only_declared_changes": true,
+      "original_model_heat_and_thresholds_retained": true,
+      "fresh_node_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 35392,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 6.849574758417584e+21,
+        "minimum_p_m3": 3.725843517673721e-31
+      },
+      "power_replay": {
+        "method": "FROZEN_INTEGRALS_HASH_CHECK_AND_EXACT_ARITHMETIC_REPLAY",
+        "quadrature_rerun": false,
+        "native_relative_agreement": {
+          "JE_W": 1.7246077698107938e-14,
+          "all_exterior_power_W": 4.463292520215394e-12
+        },
+        "original_native_relative_agreement_limit": 1e-08,
+        "saved_affine_self_check": {
+          "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+        },
+        "JE_W": 0.009857482009627093,
+        "all_exterior_power_W": 0.009769082884663412,
+        "contact_only_power_W": 0.009767862597083832,
+        "gap_W": 8.839912496368119e-05,
+        "gap_relative": 0.008967718619962798,
+        "electrode_gap_relative": 0.009091511651325967,
+        "parts": {
+          "quadrature_W": 3.5271976069062294e-09,
+          "SUPG_weighted_W": 8.819582203362043e-05,
+          "reaction_minus_physical_boundary_W": 1.9977573112103797e-07,
+          "free_residual_correction_W": 1.4001470570882081e-15
+        },
+        "decomposition_remainder_W": -6.73425074385059e-17,
+        "SUPG_fraction_of_gap": 0.9977001703337642,
+        "free_residual_max_A": 1.8299700037262973e-15
+      },
+      "metrics": {
+        "case_id": "JE_SENS_V8_S1",
+        "model": "NT",
+        "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+        "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+        "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+        "supg_scale": 1.0,
+        "supg_directional_tau": "T",
+        "zero_source_heat_reference_W": 0.012612334462847999,
+        "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/TRA4FF~1/nodes.csv",
+        "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+        "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+        "balance_detail_point": "1, 1.4120078937894378E-014, 1.5323569183362973E-014, 1.9623972553754705E-014, 3.7828861308384950E-016,-6.2108004627099240E-018, 1.6418153356715683E-002",
+        "voltage_V": 8.0,
+        "hole_radius_m": 3e-06,
+        "ring_width_m": 5e-07,
+        "minimum_jacobian": 2.8031301007842746e-24,
+        "total_volume_m3": 3.717257535702332e-16,
+        "maximum_stage_balance": 1.9623972553754705e-14,
+        "maximum_accepted_residual": 6.62679162875921e-16,
+        "maximum_accepted_update": 3.6525065625023626e-12,
+        "final_voltage_factor": 1.0,
+        "final_joule_factor": 1.0,
+        "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+        "joule_W": 0.009857482009626923,
+        "total_current_work_W": 0.009857482009626923,
+        "diffusion_work_W": -0.003103894961198875,
+        "absolute_diffusion_work_W": 0.003104272596898623,
+        "terminal_power_W": 0.009769082884707014,
+        "heat_out_W": 0.009856693794475966,
+        "heat_balance_relative": 7.996110469061619e-05,
+        "electron_balance_relative": 9.058410138292902e-07,
+        "hole_balance_diagnostic": 2.6183688775519303e-05,
+        "joule_quadrature_4_5_relative": 4.648792167049647e-09,
+        "electron_right_A": 0.0012209828246355287,
+        "hole_right_A": 6.965694207913182e-57,
+        "ring_volume_m3": 1.021014454408579e-17,
+        "ring_Q_mean_W_m3": 44234262369271.85,
+        "ring_Q_p95_W_m3": 93665423510288.84,
+        "ring_E_mean_V_m": 497968.21844517475,
+        "ring_abs_n_relative_mean": 0.039062215680562846,
+        "ring_abs_p_relative_mean": 0.091123146744848,
+        "ring_theta_mean_K": 20.33385051894497,
+        "ring_displacement_mean_m": 9.058594521113175e-10,
+        "E_p95_V_m": 616577.8416526143,
+        "E_above_1e6_volume_fraction": 0.017003279577688026,
+        "theta_max_K": 24.235282887595815,
+        "maximum_abs_n_relative": 2.5315672466207433,
+        "maximum_abs_p_relative": 6.772436268602135,
+        "displacement_max_m": 1.8092709593796605e-09,
+        "minimum_mu_n_ratio": 0.856095007703826,
+        "stress_von_mises_max_Pa": 6293723.824123921,
+        "total_newton_iterations": 5.0,
+        "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+      }
+    }
+  },
+  "mesh": {
+    "6": {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": true,
+          "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 1.476701527071955e-06,
+              "L1_L2": 5.438119034293547e-07,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 2.529227839215892e-05,
+              "L1_L2": 4.286247088258998e-06,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 1.039663401559074e-05,
+              "L1_L2": 9.898183747399573e-06,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 8.138843218814175e-05,
+              "L1_L2": 8.666165934996051e-05,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 1.074068000805502e-05,
+              "L1_L2": 3.1186303761379435e-05,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 9.177900120851436e-06,
+              "L1_L2": 7.241834063138242e-05,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 9.316979344022588e-05,
+              "L1_L2": 7.432124503901266e-05,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.0009331895003410701,
+              "L1_L2": 0.001484585873228308,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.00014161946462541768,
+              "L1_L2": 0.0001305659910287643,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.00040954985178927864,
+              "L1_L2": 0.0007314630946937525,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": true,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    "8": {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": true,
+          "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 3.2504698947073224e-06,
+              "L1_L2": 2.1127308363969053e-07,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 2.5877029772690708e-05,
+              "L1_L2": 5.733033414334945e-08,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 1.0298077911787989e-05,
+              "L1_L2": 1.0969617148026525e-05,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.00014207385452645176,
+              "L1_L2": 9.575475908270683e-05,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 1.5348751614129638e-05,
+              "L1_L2": 2.812787447396387e-05,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 2.016801305935735e-05,
+              "L1_L2": 7.133087787941285e-05,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.00011534522989234358,
+              "L1_L2": 7.161417329090624e-05,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.0003686250376321791,
+              "L1_L2": 0.0008714388056326965,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.00027518869159361045,
+              "L1_L2": 1.3879557642818014e-05,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.0017801464793391216,
+              "L1_L2": 0.0016825977724285901,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": true,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    }
+  },
+  "fields": {
+    "V6_Z14_Z16": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 4.3127980595950924e-05,
+          "rms_relative": 1.0525494449080983e-05,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 2.8396247929176145e-05,
+          "rms_relative": 1.580413219737595e-05,
+          "normalization": 14.098236761352858,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 1.163371439170116e-05,
+          "rms_relative": 4.84424642195276e-06,
+          "normalization": 1.0238265322130971e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 1.708071763553148e-05,
+          "rms_relative": 5.873883807637986e-06,
+          "normalization": 1.0238265322130971e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 2.118783815513996e-05,
+          "rms_relative": 7.631490688200682e-06,
+          "normalization": 1.0238265322130971e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.0029958566253765044,
+          "rms_relative": 0.0005060173466512515,
+          "normalization": 1.2778837653354058,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.002855748837809713,
+          "rms_relative": 0.000360525378330691,
+          "normalization": 1.9797692545060097,
+          "limit": 0.02,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z16_S1_V060\\nodes.csv": "c7c2bd5fdaab7579d95dcecdaa7dcf95b9528abfe0d9ec7a46ca68b649c95d11",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z16_S1_V060\\transfer_report.json": "3723116f7d7d5bd2600f0128672c1e43e2fea0c70a3f01580c8d3d6da9986d97",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\nodes.csv": "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\manifest.json": "d224f8b1ceb3689a8d4f077bac9f77c11fa39eb5f16c6b6606d6a526c160310d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\execution.json": "091e04541a11c8d0f61981dfcf205fbf8652f7eb2a123a9098a50f50461e5cf2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\input.nml": "4310df08a4c00558d5ae51c2c966b0bac717bcdf94ced1047d9b371df2d202f4",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\metrics.txt": "f555c49b56b10e83f11c26775f91cb840c5dfa69867b90e0be81a7f49c840db2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\field_audit.json": "2322078c58bcee0fb08c05e06347985b713eeb30b31323fbf9f20891f6cbd478",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\nodes.csv": "71e83d562f59e78e78d4be2362f8aa68a46eaf1553216dca911a51cc01e9a631",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\manifest.json": "8a08080d7e375fd7ae0681f1af82950339933b35a7181047add5069251ad7d81",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\execution.json": "302c9b3d8103467ec876cacf6bd46670f10b8690b165be1632e2c5ecac971a20",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\input.nml": "0eb02e9a295432ccc90c8ba8c4249a0808eb2f48f8f32637b855132a58f0fb89",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\metrics.txt": "35ac63e4802c8dd616e86a97598504cdd1e4ca3fd3540d7efb4f6dd128998703",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\field_audit.json": "e1235e2ac81655a458a46177c345225acb4268cf5b34396d26bd68bb84980544"
+      }
+    },
+    "V6_Z16_Z18": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 2.7077827877327213e-05,
+          "rms_relative": 8.139992793959479e-06,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 3.514507850148279e-05,
+          "rms_relative": 1.4497771537832695e-05,
+          "normalization": 14.098236761352858,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 1.4453689043211906e-05,
+          "rms_relative": 9.432583485151592e-06,
+          "normalization": 1.0238265322130971e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 1.8829478028689084e-05,
+          "rms_relative": 6.402521267493101e-06,
+          "normalization": 1.0238265322130971e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 3.1578327167997488e-06,
+          "rms_relative": 1.119577343623738e-06,
+          "normalization": 1.0238265322130971e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.0022053959670730494,
+          "rms_relative": 0.0004294728712893221,
+          "normalization": 1.2780202013499475,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.0016345633955457584,
+          "rms_relative": 0.000313498426390047,
+          "normalization": 1.980499311235083,
+          "limit": 0.02,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z18_S1_V060\\nodes.csv": "54557f2b4a433d4afc09e4b2f70148d6ae0042c1e69e8f9b5c20456e3920f578",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z18_S1_V060\\transfer_report.json": "8386aff6a9b82a0928ba33a771e5a3a39bfba6a4c3f0d1c0460f0aabbda1e14a",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\nodes.csv": "71e83d562f59e78e78d4be2362f8aa68a46eaf1553216dca911a51cc01e9a631",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\manifest.json": "8a08080d7e375fd7ae0681f1af82950339933b35a7181047add5069251ad7d81",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\execution.json": "302c9b3d8103467ec876cacf6bd46670f10b8690b165be1632e2c5ecac971a20",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\input.nml": "0eb02e9a295432ccc90c8ba8c4249a0808eb2f48f8f32637b855132a58f0fb89",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\metrics.txt": "35ac63e4802c8dd616e86a97598504cdd1e4ca3fd3540d7efb4f6dd128998703",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V060\\field_audit.json": "e1235e2ac81655a458a46177c345225acb4268cf5b34396d26bd68bb84980544",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060\\nodes.csv": "4aa43297219b1472a4747de7b946e2fad51b09575b010e9be800804344487d44",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060\\manifest.json": "37aff69588b429d1264356b48271b6dd791f9fa1bf1d10ffb5b4dffd63bb03cc",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060\\execution.json": "61e0bfaa674a3a5d6f1840e791d299cfeb851f210e47a45bb148fe2fe354e31b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060\\input.nml": "c42560adc8e16c4f53b5a50a2b86375c64f89305061e0f87837eb59429b44d0d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060\\metrics.txt": "b75e7a597f099c1f9e800af0376614fa34053783c5ba0cc475841b0da3a0fac9",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V060\\field_audit.json": "524472ce4832437c895a3d2604223af57a73be87b3fa0f15c50db7a0f6600a16"
+      }
+    },
+    "V8_Z14_Z16": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 6.512682589060455e-05,
+          "rms_relative": 1.6139865181046776e-05,
+          "normalization": 8.000000000000005,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 4.1584104243769955e-05,
+          "rms_relative": 2.2194786241841267e-05,
+          "normalization": 24.235908762559777,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 1.5530221610045167e-05,
+          "rms_relative": 6.22672461516254e-06,
+          "normalization": 1.7578177064355416e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 2.321348928967742e-05,
+          "rms_relative": 9.111350172301339e-06,
+          "normalization": 1.7578177064355416e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 3.050002396591552e-05,
+          "rms_relative": 1.1178976357854522e-05,
+          "normalization": 1.7578177064355416e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.002390799351822445,
+          "rms_relative": 0.0004404590571528877,
+          "normalization": 2.5791542904443734,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.0018325140013030622,
+          "rms_relative": 0.00021040682417128214,
+          "normalization": 6.842872500065212,
+          "limit": 0.02,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z16_S1_V080\\nodes.csv": "567d8dd303bf912904511efe1e09665bb45e2719e24c299fdbc201e5d7e40ea9",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z16_S1_V080\\transfer_report.json": "4f9fa1df82a1fc7bab9f598466479e35b70ed31ddc859b2624aef85d5e05cfc2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\nodes.csv": "6075cf6f50838008c7692165ada50e6b3b252310c7b12f84ec558ac67c8f1574",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\manifest.json": "458e424678a2684d5c1c5622adac2e16d6d25e10e0dc379079a6e3bbd2504fad",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\execution.json": "6a1239612136c00f7afa5f3ffbdc1fbabea25bb1023df6933b942e6391005422",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\input.nml": "c21e39858b7188edcf096437b9ffc416e20b0153171b594f4aceb3a8f268edec",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\metrics.txt": "bb442d56ac76433ee3f66c86712b63b51bbbe5350be706e069e41687c7f5123f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\field_audit.json": "92ff5553cdc2b0fa20b94069400e4f094716e1285567fed7e46648959cd8c284",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\nodes.csv": "ee92ea605d191b8c8c6054c99ca0d606db73d749e43b6c1505b4a073eec26223",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\manifest.json": "26550ee4b9048478164a5eccb80ccddd00aeea88917100122d5ba3551552598e",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\execution.json": "68bbee9ba44026d0d7a492085a9c6921009aa091528fe4dbdd58c5fcc7db9107",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\input.nml": "fa165ba2fb12d83f7454557082ad381836d1202bd7c53366bf6da2053f24eeda",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\metrics.txt": "042b914d9b36129f90714aa1710e012e55b145b5e07c26ad4c7b7775361834f1",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\field_audit.json": "11a42e3d62ff7d67f371e7261d0627115aabadc34a7cdfde682bd004e359e6d9"
+      }
+    },
+    "V8_Z16_Z18": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 3.664448290791042e-05,
+          "rms_relative": 1.0029048661381274e-05,
+          "normalization": 8.000000000000005,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 4.3985759779020216e-05,
+          "rms_relative": 1.8805427982250287e-05,
+          "normalization": 24.23591976053685,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 1.9848664653929852e-05,
+          "rms_relative": 1.2320148708701326e-05,
+          "normalization": 1.7578177064355416e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 2.23671161048501e-05,
+          "rms_relative": 6.643470288238962e-06,
+          "normalization": 1.7578177064355416e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 6.148734729720546e-06,
+          "rms_relative": 2.076234399691876e-06,
+          "normalization": 1.7578177064355416e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.002118511185445141,
+          "rms_relative": 0.00038860971544876826,
+          "normalization": 2.5794783804631822,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.0009264208061989837,
+          "rms_relative": 0.00018129367208987514,
+          "normalization": 6.846600006504844,
+          "limit": 0.02,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z18_S1_V080\\nodes.csv": "7fa02c5b8d8a9590a7bd8faba472eed92f27723db2ea1e1a6be969ae3920963b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z18_S1_V080\\transfer_report.json": "5ab34542006e9cf26753cba6a49180bceb20a8a8256312c0b03914a3166aebc7",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\nodes.csv": "ee92ea605d191b8c8c6054c99ca0d606db73d749e43b6c1505b4a073eec26223",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\manifest.json": "26550ee4b9048478164a5eccb80ccddd00aeea88917100122d5ba3551552598e",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\execution.json": "68bbee9ba44026d0d7a492085a9c6921009aa091528fe4dbdd58c5fcc7db9107",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\input.nml": "fa165ba2fb12d83f7454557082ad381836d1202bd7c53366bf6da2053f24eeda",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\metrics.txt": "042b914d9b36129f90714aa1710e012e55b145b5e07c26ad4c7b7775361834f1",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\field_audit.json": "11a42e3d62ff7d67f371e7261d0627115aabadc34a7cdfde682bd004e359e6d9",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080\\nodes.csv": "0406ac0a7e5b88bd4261fe66974919af99907b9d0d4f6daf815adb741696ac7d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080\\manifest.json": "cdb838af1dc25f527c462c027e415ebd1099bd2020a27fb0db51841c896e2e13",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080\\execution.json": "c2fff894258548d2735a591f8c423fe9a4d03cc31384ff339a7fd757c7863923",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080\\input.nml": "4035ef4e26c2c1e2b93d05d1caf023beb7841becaaeb3c61ffcf78518dd635ea",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080\\metrics.txt": "8cd8a70a34df0b3949bdc654580bcb58e8df8dffc6983452f2c485df2727458c",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z18_S1_V080\\field_audit.json": "24cd6a5f2a1c96e28d05b3a76e5241498dbed1425543d36377ce548c7546a4c0"
+      }
+    }
+  },
+  "geometry": {
+    "baseline_byte_identical": true,
+    "baseline_mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+    "checks": [
+      {
+        "direction": "radial",
+        "level": 1,
+        "counts": {
+          "circumferential": 32,
+          "radial": 16,
+          "thickness": 14
+        },
+        "other_direction_coordinates_identical": true,
+        "volume_relative_change": -2.220446049250313e-16,
+        "maximum_radial_axis_um": 1.3500000000000005,
+        "maximum_z_nm": 279.5
+      },
+      {
+        "direction": "radial",
+        "level": 2,
+        "counts": {
+          "circumferential": 32,
+          "radial": 18,
+          "thickness": 14
+        },
+        "other_direction_coordinates_identical": true,
+        "volume_relative_change": 0.0,
+        "maximum_radial_axis_um": 1.2272727272727275,
+        "maximum_z_nm": 279.5
+      },
+      {
+        "direction": "thickness",
+        "level": 1,
+        "counts": {
+          "circumferential": 32,
+          "radial": 14,
+          "thickness": 16
+        },
+        "other_direction_coordinates_identical": true,
+        "volume_relative_change": -1.1102230246251565e-16,
+        "maximum_radial_axis_um": 1.5000000000000009,
+        "maximum_z_nm": 244.56249999999997
+      },
+      {
+        "direction": "thickness",
+        "level": 2,
+        "counts": {
+          "circumferential": 32,
+          "radial": 14,
+          "thickness": 18
+        },
+        "other_direction_coordinates_identical": true,
+        "volume_relative_change": -1.1102230246251565e-16,
+        "maximum_radial_axis_um": 1.5000000000000009,
+        "maximum_z_nm": 217.38888888888886
+      }
+    ]
+  },
+  "mesh_profiles": {
+    "14": {
+      "xy_level": 0,
+      "z_level": 2,
+      "first_xy_m": 1.4e-08,
+      "first_z_m": 3.5e-09,
+      "base_first_z_m": 3.5e-09,
+      "z_subdivisions": 1,
+      "z_refine_depth_m": 1e-07,
+      "counts": {
+        "circumferential": 32,
+        "radial": 14,
+        "thickness": 14
+      },
+      "z_corners_m": [
+        -5e-07,
+        -4.964999999999999e-07,
+        -4.894999999999999e-07,
+        -4.755e-07,
+        -4.4749999999999995e-07,
+        -3.915e-07,
+        -2.795e-07,
+        0.0,
+        2.795e-07,
+        3.915e-07,
+        4.4749999999999995e-07,
+        4.755e-07,
+        4.894999999999999e-07,
+        4.964999999999999e-07,
+        5e-07
+      ],
+      "nodes": 27840,
+      "elements": 6272,
+      "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+      "geometry_audit": {
+        "minimum_jacobian_3x3x3": 3.604024415294573e-24,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          381,
+          381
+        ]
+      },
+      "mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133"
+    },
+    "16": {
+      "direction": "thickness",
+      "level": 1,
+      "counts": {
+        "circumferential": 32,
+        "radial": 14,
+        "thickness": 16
+      },
+      "nodes": 31616,
+      "elements": 7168,
+      "annulus_outer_radius_m": 3.5e-06,
+      "annulus_corner_index": 5,
+      "annulus_intervals": 5,
+      "remaining_radial_intervals": 9,
+      "profiles": {
+        "radial_axis_corners_m": [
+          3e-06,
+          3.0140000000000003e-06,
+          3.0420000000000003e-06,
+          3.0980000000000002e-06,
+          3.21e-06,
+          3.5e-06,
+          4.9999999999999996e-06,
+          6.5000000000000004e-06,
+          8e-06,
+          9.5e-06,
+          9.790000000000001e-06,
+          9.902000000000001e-06,
+          9.958e-06,
+          9.986e-06,
+          1e-05
+        ],
+        "radial_diagonal_corners_m": [
+          3e-06,
+          3.0140000000000003e-06,
+          3.0420000000000003e-06,
+          3.0980000000000002e-06,
+          3.21e-06,
+          3.5e-06,
+          6.035533905932737e-06,
+          8.571067811865476e-06,
+          1.1106601717798212e-05,
+          1.364213562373095e-05,
+          1.3932135623730951e-05,
+          1.4044135623730951e-05,
+          1.410013562373095e-05,
+          1.4128135623730951e-05,
+          1.4142135623730951e-05
+        ],
+        "z_corners_m": [
+          -5e-07,
+          -4.969374999999999e-07,
+          -4.9125e-07,
+          -4.8075e-07,
+          -4.6149999999999994e-07,
+          -4.2649999999999996e-07,
+          -3.635e-07,
+          -2.445625e-07,
+          0.0,
+          2.445625e-07,
+          3.635e-07,
+          4.2649999999999996e-07,
+          4.6149999999999994e-07,
+          4.8075e-07,
+          4.9125e-07,
+          4.969374999999999e-07,
+          5e-07
+        ]
+      },
+      "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+      "scope": "Full-direction logical-coordinate refinement; other directions fixed; nonnested meshes",
+      "maximum_radial_axis_step_m": 1.5000000000000009e-06,
+      "maximum_radial_diagonal_step_m": 2.5355339059327385e-06,
+      "maximum_z_step_m": 2.445625e-07,
+      "geometry_audit": {
+        "minimum_jacobian_3x3x3": 3.153521363382605e-24,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          433,
+          433
+        ]
+      },
+      "volume_3x3x3_m3": 3.7172575357022294e-16,
+      "mesh_sha256": "0f507d89e5c67781a037dc4facf52161e0cd48609ab06ac1e2407ceb868d9cde",
+      "generator_sha256": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc"
+    },
+    "18": {
+      "direction": "thickness",
+      "level": 2,
+      "counts": {
+        "circumferential": 32,
+        "radial": 14,
+        "thickness": 18
+      },
+      "nodes": 35392,
+      "elements": 8064,
+      "annulus_outer_radius_m": 3.5e-06,
+      "annulus_corner_index": 5,
+      "annulus_intervals": 5,
+      "remaining_radial_intervals": 9,
+      "profiles": {
+        "radial_axis_corners_m": [
+          3e-06,
+          3.0140000000000003e-06,
+          3.0420000000000003e-06,
+          3.0980000000000002e-06,
+          3.21e-06,
+          3.5e-06,
+          4.9999999999999996e-06,
+          6.5000000000000004e-06,
+          8e-06,
+          9.5e-06,
+          9.790000000000001e-06,
+          9.902000000000001e-06,
+          9.958e-06,
+          9.986e-06,
+          1e-05
+        ],
+        "radial_diagonal_corners_m": [
+          3e-06,
+          3.0140000000000003e-06,
+          3.0420000000000003e-06,
+          3.0980000000000002e-06,
+          3.21e-06,
+          3.5e-06,
+          6.035533905932737e-06,
+          8.571067811865476e-06,
+          1.1106601717798212e-05,
+          1.364213562373095e-05,
+          1.3932135623730951e-05,
+          1.4044135623730951e-05,
+          1.410013562373095e-05,
+          1.4128135623730951e-05,
+          1.4142135623730951e-05
+        ],
+        "z_corners_m": [
+          -5e-07,
+          -4.972777777777777e-07,
+          -4.92611111111111e-07,
+          -4.848333333333333e-07,
+          -4.7238888888888887e-07,
+          -4.5061111111111107e-07,
+          -4.101666666666666e-07,
+          -3.417222222222222e-07,
+          -2.1738888888888885e-07,
+          0.0,
+          2.1738888888888885e-07,
+          3.417222222222222e-07,
+          4.1016666666666665e-07,
+          4.5061111111111107e-07,
+          4.7238888888888887e-07,
+          4.848333333333333e-07,
+          4.92611111111111e-07,
+          4.972777777777777e-07,
+          5e-07
+        ]
+      },
+      "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+      "scope": "Full-direction logical-coordinate refinement; other directions fixed; nonnested meshes",
+      "maximum_radial_axis_step_m": 1.5000000000000009e-06,
+      "maximum_radial_diagonal_step_m": 2.5355339059327385e-06,
+      "maximum_z_step_m": 2.1738888888888885e-07,
+      "geometry_audit": {
+        "minimum_jacobian_3x3x3": 2.803130100784268e-24,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          485,
+          485
+        ]
+      },
+      "volume_3x3x3_m3": 3.7172575357022294e-16,
+      "mesh_sha256": "47951d709bd90eabcb279a58098f781f6b1380715b00d71c9fef1de19b6f0207",
+      "generator_sha256": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc"
+    }
+  },
+  "outstanding_index": {
+    "method": "HISTORICAL_REPORT_REFERENCE_WITH_FILE_HASH_AND_FAILURE_STATUS_RECHECK",
+    "recomputed_angular_radial_or_SUPG_fields": false,
+    "records": [
+      {
+        "scope": "angular",
+        "voltage_V": 6,
+        "levels": [
+          16,
+          24,
+          32
+        ],
+        "last_pair": [
+          24,
+          32
+        ],
+        "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\analysis\\summary.json",
+        "source_pointer": "angular_mesh.6",
+        "scalar_ring_pass": false,
+        "local_field_pass": false,
+        "local_electron": {
+          "maximum_relative": 0.03022215110165265,
+          "rms_relative": 0.002536071040887064,
+          "normalization": 1.2847298956359778,
+          "limit": 0.02,
+          "passed": false
+        },
+        "local_hole": {
+          "maximum_relative": 0.039671280005024415,
+          "rms_relative": 0.005334257190704087,
+          "normalization": 1.9796376430369644,
+          "limit": 0.02,
+          "passed": false
+        },
+        "ring_hole": {
+          "L0_L1": 0.19368776613112917,
+          "L1_L2": 0.12755990851846083,
+          "limit": 0.02
+        },
+        "whole_study_certificate": false
+      },
+      {
+        "scope": "radial",
+        "voltage_V": 6,
+        "levels": [
+          14,
+          16,
+          18
+        ],
+        "last_pair": [
+          16,
+          18
+        ],
+        "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+        "source_pointer": "mesh.radial_V6",
+        "scalar_ring_pass": false,
+        "local_field_pass": false,
+        "local_electron": {
+          "maximum_relative": 0.004124756606165868,
+          "rms_relative": 0.0002871926708251092,
+          "normalization": 1.2783561646622852,
+          "limit": 0.02,
+          "passed": true
+        },
+        "local_hole": {
+          "maximum_relative": 0.024134878008232042,
+          "rms_relative": 0.002407553446181067,
+          "normalization": 1.9803988400100092,
+          "limit": 0.02,
+          "passed": false
+        },
+        "ring_hole": {
+          "L0_L1": 0.06369139578098036,
+          "L1_L2": 0.05299512710431687,
+          "limit": 0.02
+        },
+        "whole_study_certificate": false
+      },
+      {
+        "scope": "SUPG",
+        "voltage_V": 6,
+        "grid": [
+          32,
+          14,
+          14
+        ],
+        "required_scales": [
+          0.5,
+          1,
+          2
+        ],
+        "compared_completed_scales": [
+          0.5,
+          1
+        ],
+        "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+        "source_pointer": "SUPG_pairs.V6_S0.5",
+        "scalar_ring_pass": false,
+        "local_field_pass": false,
+        "local_electron": {
+          "maximum_relative": 0.0013854029487266435,
+          "rms_relative": 0.000229285467688174,
+          "normalization": 1.2785564204421256,
+          "limit": 0.02,
+          "passed": true
+        },
+        "local_hole": {
+          "maximum_relative": 0.06399945745210003,
+          "rms_relative": 0.007402229394010221,
+          "normalization": 2.0010730977181246,
+          "limit": 0.02,
+          "passed": false
+        },
+        "ring_hole": {
+          "values": [
+            0.0499673679475122,
+            0.040766247268867316
+          ],
+          "relative_span": 0.18414259258782897,
+          "limit": 0.01,
+          "passed": false
+        },
+        "scale2": {
+          "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V060",
+          "state": "FAILED_NO_COMPLETE_STATE",
+          "seconds": 1670.530999999959,
+          "timed_out": false,
+          "has_accepted_final_state": false
+        },
+        "whole_study_certificate": false
+      },
+      {
+        "scope": "angular",
+        "voltage_V": 8,
+        "levels": [
+          16,
+          24,
+          32
+        ],
+        "last_pair": [
+          24,
+          32
+        ],
+        "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\analysis\\summary.json",
+        "source_pointer": "angular_mesh.8",
+        "scalar_ring_pass": false,
+        "local_field_pass": false,
+        "local_electron": {
+          "maximum_relative": 0.030243822145826726,
+          "rms_relative": 0.002233429456446986,
+          "normalization": 2.5935281003946753,
+          "limit": 0.02,
+          "passed": false
+        },
+        "local_hole": {
+          "maximum_relative": 0.03970516034536698,
+          "rms_relative": 0.0025861412269009816,
+          "normalization": 6.852431999128843,
+          "limit": 0.02,
+          "passed": false
+        },
+        "ring_hole": {
+          "L0_L1": 0.12167377548081448,
+          "L1_L2": 0.06936815345512388,
+          "limit": 0.02
+        },
+        "whole_study_certificate": false
+      },
+      {
+        "scope": "radial",
+        "voltage_V": 8,
+        "levels": [
+          14,
+          16,
+          18
+        ],
+        "last_pair": [
+          16,
+          18
+        ],
+        "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+        "source_pointer": "mesh.radial_V8",
+        "scalar_ring_pass": true,
+        "local_field_pass": true,
+        "local_electron": {
+          "maximum_relative": 0.00447989813889243,
+          "rms_relative": 0.00026311194117187336,
+          "normalization": 2.5803048955480983,
+          "limit": 0.02,
+          "passed": true
+        },
+        "local_hole": {
+          "maximum_relative": 0.012631966316232509,
+          "rms_relative": 0.0009686625774738437,
+          "normalization": 6.865652483033139,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ring_hole": {
+          "L0_L1": 0.019395243460125115,
+          "L1_L2": 0.015751940260506157,
+          "limit": 0.02
+        },
+        "whole_study_certificate": false
+      },
+      {
+        "scope": "SUPG",
+        "voltage_V": 8,
+        "grid": [
+          32,
+          14,
+          14
+        ],
+        "required_scales": [
+          0.5,
+          1,
+          2
+        ],
+        "compared_completed_scales": [
+          0.5,
+          1
+        ],
+        "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+        "source_pointer": "SUPG_pairs.V8_S0.5",
+        "scalar_ring_pass": false,
+        "local_field_pass": false,
+        "local_electron": {
+          "maximum_relative": 0.0017726131466433903,
+          "rms_relative": 0.0002781470108361058,
+          "normalization": 2.5823825577918775,
+          "limit": 0.02,
+          "passed": true
+        },
+        "local_hole": {
+          "maximum_relative": 0.0362602779120292,
+          "rms_relative": 0.003239653158551614,
+          "normalization": 6.927751322510417,
+          "limit": 0.02,
+          "passed": false
+        },
+        "ring_hole": {
+          "values": [
+            0.09116900467999908,
+            0.08433066405832623
+          ],
+          "relative_span": 0.07500729711457588,
+          "limit": 0.01,
+          "passed": false
+        },
+        "scale2": {
+          "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V080",
+          "state": "FAILED_NO_COMPLETE_STATE",
+          "seconds": 3662.686999999918,
+          "timed_out": false,
+          "has_accepted_final_state": false
+        },
+        "whole_study_certificate": false
+      }
+    ],
+    "limitations": [
+      "The 8 V radial last-pair pass covers the radial direction only.",
+      "SUPG=0.5 cannot be selected merely to reduce the power discrepancy.",
+      "No data point or boundary node was excluded.",
+      "Initial OOC -9 attempts and the retired RESOURCE_RETRY remain historical failures, not accepted evidence."
+    ]
+  },
+  "verification_gate": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\verification_reuse\\acceptance.json",
+  "verification_gate_sha256": "112721dd832210f1363e9fee2662b35edf37533814f103ce5e6418a3eda8b13c",
+  "evidence_count": 357,
+  "historically_matched_count": 207,
+  "frozen_runner_unchanged": true,
+  "created_utc": "2026-10-18T15:59:20.731566+00:00"
+}

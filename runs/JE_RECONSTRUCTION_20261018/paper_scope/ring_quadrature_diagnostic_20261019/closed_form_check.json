@@ -1,0 +1,57 @@
+{
+  "status": "CONSTANT_FIELD_BOX_CHECK_PASSED",
+  "rules": [
+    {
+      "orders": [
+        5,
+        5,
+        3
+      ],
+      "ring_volume_m3": 8.000000000000013e-18,
+      "ring_abs_n_relative_mean": 0.13882838332462177,
+      "ring_abs_p_relative_mean": 0.15633518340361616,
+      "annulus_sample_count": 75,
+      "all_domain_sample_count": 75,
+      "minimum_jacobian_m3": 1.0000000000000014e-18
+    },
+    {
+      "orders": [
+        5,
+        5,
+        5
+      ],
+      "ring_volume_m3": 8.000000000000008e-18,
+      "ring_abs_n_relative_mean": 0.13882838332462172,
+      "ring_abs_p_relative_mean": 0.1563351834036164,
+      "annulus_sample_count": 125,
+      "all_domain_sample_count": 125,
+      "minimum_jacobian_m3": 1.0000000000000014e-18
+    },
+    {
+      "orders": [
+        7,
+        7,
+        7
+      ],
+      "ring_volume_m3": 8.00000000000001e-18,
+      "ring_abs_n_relative_mean": 0.13882838332462233,
+      "ring_abs_p_relative_mean": 0.15633518340361677,
+      "annulus_sample_count": 343,
+      "all_domain_sample_count": 343,
+      "minimum_jacobian_m3": 9.999999999999943e-19
+    },
+    {
+      "orders": [
+        9,
+        9,
+        9
+      ],
+      "ring_volume_m3": 8.000000000000011e-18,
+      "ring_abs_n_relative_mean": 0.13882838332462144,
+      "ring_abs_p_relative_mean": 0.15633518340361632,
+      "annulus_sample_count": 729,
+      "all_domain_sample_count": 729,
+      "minimum_jacobian_m3": 1.0000000000000014e-18
+    }
+  ]
+}

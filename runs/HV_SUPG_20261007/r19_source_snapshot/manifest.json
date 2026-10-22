@@ -1,0 +1,362 @@
+{
+  "created": "2026-10-08T11:53:06.562739",
+  "build_source_match": true,
+  "files": [
+    {
+      "path": "build/HV_SUPG_20261008_R19/build_manifest.json",
+      "sha256": "3ea9ce41039d1f71cfc1d79f6ec406dfacb116875bfbd549b3f2e0c400ab9ef1"
+    },
+    {
+      "path": "build/HV_SUPG_20261008_R19/compiler_options.json",
+      "sha256": "0ed2bb8ac7ed186df08d7ae2d3a0958145e23a951190425c15eade86acd1f6ea"
+    },
+    {
+      "path": "scripts/audit_hv_mesh.py",
+      "sha256": "94d4537d31441585986b15ff9f3c0932b4fa39ca91430240011523b103e37080"
+    },
+    {
+      "path": "scripts/audit_hv_stabilization.py",
+      "sha256": "421129a6e38b003499cbcb32805a8974e3f01e2e236c0119e42a551be23d90a7"
+    },
+    {
+      "path": "scripts/build_debug.ps1",
+      "sha256": "aa40f840572ceb04291dde710e3311756e02ed16d6c060756ebac1589ae029e7"
+    },
+    {
+      "path": "scripts/build_manifest.ps1",
+      "sha256": "aebe81775c8496d30efaacae5f9a319c7d8646b19b19fa3e6b281d7395cb5f26"
+    },
+    {
+      "path": "scripts/check_hv_production_regression.py",
+      "sha256": "c6314c922f1bb4c7b424bd4839276ee673c1c62c965d2b1e1e151842ab328e66"
+    },
+    {
+      "path": "scripts/diagnose_hv_drift_diffusion_cancellation.py",
+      "sha256": "78928ae019845571910a19b61013aaeb5e1581b963b746c59f2f68632958e965"
+    },
+    {
+      "path": "scripts/diagnose_hv_heat_components.py",
+      "sha256": "4b55207ec530aa8080c021c50e30592b4857f2d9835b6ef6f42bea7b2ac36ca7"
+    },
+    {
+      "path": "scripts/diagnose_hv_heat_flux.py",
+      "sha256": "e565806158569adb1d03ee71a250415372cab4d95d128fb8b425ab4cd55ed646"
+    },
+    {
+      "path": "scripts/diagnose_hv_stabilization_spatial.py",
+      "sha256": "7a1712c77b848a1d7a5d5844895fc3873ebacdf140a7f65829c2b4cb2da8362a"
+    },
+    {
+      "path": "scripts/generate_hv_surface_mesh.py",
+      "sha256": "50445f435747bb2447a8023eb909cb365ed7a9220261fe71b60d3a46e260ca9d"
+    },
+    {
+      "path": "scripts/hv_runtime.py",
+      "sha256": "d18e94f6becd4113856e6f271439373022af2a607198034f26749424d69583ca"
+    },
+    {
+      "path": "scripts/run_hv_point.py",
+      "sha256": "2207d8f114442670fb3431c4c3e2cd9967338448369d1a4b269b9cc419d2572b"
+    },
+    {
+      "path": "scripts/run_hv_regression.py",
+      "sha256": "d8f966bd70415e968da1160a96f423e79a636efe067be0d4801ccefe2e7ac8bf"
+    },
+    {
+      "path": "scripts/run_hv_scale_path.py",
+      "sha256": "98ac86efe31663c29f00bd6a363af68e400b226e3dde4b05ece31908ac0a400e"
+    },
+    {
+      "path": "scripts/run_hv_sweep.py",
+      "sha256": "2b8d62125c613264d27cfd2bfbbc3410c858fd7a810bd23f8a4fc89d0d2f505f"
+    },
+    {
+      "path": "scripts/run_hv_temperature_trace.py",
+      "sha256": "5b1aa73e9dec3e7557acd95e01dfa7bae4832bcf68fcbda8c2499284c2c3c49b"
+    },
+    {
+      "path": "scripts/run_hv_trajectory.py",
+      "sha256": "4030b145f6a7d7f8de145e2ef66ef58bf407e1c5f2a42c3e81c7443f65666803"
+    },
+    {
+      "path": "scripts/transfer_hv_initial_guess.py",
+      "sha256": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25"
+    },
+    {
+      "path": "src/app/f1_case_runner_m.f90",
+      "sha256": "287dc913e9254359770d9d1188aff2b251f051c364dd5cc87049373aeb04e3ad"
+    },
+    {
+      "path": "src/app/main.f90",
+      "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8"
+    },
+    {
+      "path": "src/app/production_runner_m.f90",
+      "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c"
+    },
+    {
+      "path": "src/core/build_info_m.f90",
+      "sha256": "06eca1327f58a62bc2a2d4a59932e9da8244c980d420278d55107a282da1209f"
+    },
+    {
+      "path": "src/core/constants_m.f90",
+      "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+    },
+    {
+      "path": "src/core/field_layout_m.f90",
+      "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+    },
+    {
+      "path": "src/core/kinds_m.f90",
+      "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc"
+    },
+    {
+      "path": "src/core/model_types_m.f90",
+      "sha256": "efd88eab03aa8c651c4cde718cd34053e997813df4488d0da6a7d16531c486f9"
+    },
+    {
+      "path": "src/core/status_m.f90",
+      "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af"
+    },
+    {
+      "path": "src/fem/dirichlet_m.f90",
+      "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06"
+    },
+    {
+      "path": "src/fem/element_kernel_m.f90",
+      "sha256": "85f7e378dc4c0276625e1763822e5708b419521fe00231306a01920085ce5876"
+    },
+    {
+      "path": "src/fem/global_assembly_m.f90",
+      "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675"
+    },
+    {
+      "path": "src/fem/sparse_pattern_m.f90",
+      "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393"
+    },
+    {
+      "path": "src/fem/transport_supg_m.f90",
+      "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f"
+    },
+    {
+      "path": "src/io/input_schema_m.f90",
+      "sha256": "c4c6ea580840abdc113f72ce01da28b198dbc374bd8b57290ea6ce9137629af4"
+    },
+    {
+      "path": "src/io/native_input_m.f90",
+      "sha256": "ed8c5094ebd7daef2d54558c39a89b9455c34d58053ae452487fd99723fa953e"
+    },
+    {
+      "path": "src/linear/pardiso_solver_m.f90",
+      "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e"
+    },
+    {
+      "path": "src/mesh/boundary_topology_m.f90",
+      "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4"
+    },
+    {
+      "path": "src/mesh/dof_map_m.f90",
+      "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea"
+    },
+    {
+      "path": "src/mesh/hex20_quadrature_m.f90",
+      "sha256": "9276ba0307663c1bb28154c080c1240c8388c1ca3a074cd3185f661a36c7e80e"
+    },
+    {
+      "path": "src/mesh/hex20_shape_m.f90",
+      "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d"
+    },
+    {
+      "path": "src/mesh/mesh_checks_m.f90",
+      "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba"
+    },
+    {
+      "path": "src/mesh/mesh_types_m.f90",
+      "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74"
+    },
+    {
+      "path": "src/nonlinear/continuation_solver_m.f90",
+      "sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f"
+    },
+    {
+      "path": "src/nonlinear/newton_solver_m.f90",
+      "sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165"
+    },
+    {
+      "path": "src/nonlinear/scaling_m.f90",
+      "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319"
+    },
+    {
+      "path": "src/nonlinear/temperature_control_m.f90",
+      "sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae"
+    },
+    {
+      "path": "src/physics/equilibrium_m.f90",
+      "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421"
+    },
+    {
+      "path": "src/physics/material_point_m.f90",
+      "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa"
+    },
+    {
+      "path": "src/physics/recombination_m.f90",
+      "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800"
+    },
+    {
+      "path": "src/physics/reference_material_m.f90",
+      "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af"
+    },
+    {
+      "path": "src/physics/thermo_piezo_m.f90",
+      "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+    },
+    {
+      "path": "src/physics/transport_m.f90",
+      "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+    },
+    {
+      "path": "src/physics/zno_candidate_m.f90",
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "src/post/balance_audit_m.f90",
+      "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a"
+    },
+    {
+      "path": "src/post/field_metrics_m.f90",
+      "sha256": "5ad98c59e20016bb61d39244c7bf640f8a2383aafdfd2e13eb27ac54f4ba8b27"
+    },
+    {
+      "path": "src/post/independent_flux_audit_m.f90",
+      "sha256": "951d3972139818c04ab515da8b02abafbe33e4b11d4f359fb37ce178fc5a81d4"
+    },
+    {
+      "path": "src/post/result_writer_m.f90",
+      "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96"
+    },
+    {
+      "path": "src/problems/reference_bar_problem_m.f90",
+      "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39"
+    },
+    {
+      "path": "src/verification/a1_joint_check_m.f90",
+      "sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f"
+    },
+    {
+      "path": "src/verification/a2_hole_check_m.f90",
+      "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793"
+    },
+    {
+      "path": "src/verification/analytic_benchmarks_m.f90",
+      "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41"
+    },
+    {
+      "path": "src/verification/center_hole_check_m.f90",
+      "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f"
+    },
+    {
+      "path": "src/verification/continuation_solver_check_m.f90",
+      "sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855"
+    },
+    {
+      "path": "src/verification/element_tangent_check_m.f90",
+      "sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3"
+    },
+    {
+      "path": "src/verification/global_assembly_check_m.f90",
+      "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79"
+    },
+    {
+      "path": "src/verification/global_block_jacobian_check_m.f90",
+      "sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337"
+    },
+    {
+      "path": "src/verification/linear_solver_check_m.f90",
+      "sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9"
+    },
+    {
+      "path": "src/verification/m0_benchmark_m.f90",
+      "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46"
+    },
+    {
+      "path": "src/verification/matched_control_check_m.f90",
+      "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768"
+    },
+    {
+      "path": "src/verification/material_tangent_check_m.f90",
+      "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41"
+    },
+    {
+      "path": "src/verification/mesh_convergence_check_m.f90",
+      "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85"
+    },
+    {
+      "path": "src/verification/newton_solver_check_m.f90",
+      "sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617"
+    },
+    {
+      "path": "src/verification/production_joule_check_m.f90",
+      "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed"
+    },
+    {
+      "path": "src/verification/radius_matrix_check_m.f90",
+      "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205"
+    },
+    {
+      "path": "src/verification/supg_check_m.f90",
+      "sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496"
+    },
+    {
+      "path": "src/verification/temperature_control_check_m.f90",
+      "sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5"
+    },
+    {
+      "path": "src/verification/verification_driver_m.f90",
+      "sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9"
+    },
+    {
+      "path": "tests/test_hv_current_diagnostic.py",
+      "sha256": "048928b392452fe17b072d496d2e338870a5da5c7be033e450d635432c3c34ab"
+    },
+    {
+      "path": "tests/test_hv_mesh.py",
+      "sha256": "01e2db2b2109d7fd5457280ca31f0e7b4ed69028b252fff7a633b2f5b8ef34ea"
+    },
+    {
+      "path": "tests/test_hv_runtime.py",
+      "sha256": "441b513e0080844ae686df8d94fa5446091bc67ff6e9bdf09d4b5eb4c0327e09"
+    },
+    {
+      "path": "tests/test_hv_scale_path.py",
+      "sha256": "51b640f87f17cfacd9fbbcca16231ee1117eee088a7cadf365a3a6978f53588e"
+    },
+    {
+      "path": "tests/test_hv_stabilization.py",
+      "sha256": "4524b56b0c1a0d27bedf40ad286c3260ca62190b39bb03a639ce3847e5ef9a33"
+    },
+    {
+      "path": "tests/test_hv_status.py",
+      "sha256": "be62fccc6d565dc78cc3aba23b97411c7e2971e34df1b4c03a4dff47ce9c4a6a"
+    },
+    {
+      "path": "tests/test_hv_surface_mesh.py",
+      "sha256": "671d0f4bf45f68636e14a19bbdd4ec9975ea9adc64ad8b69e5ef305900b30bd7"
+    },
+    {
+      "path": "tests/test_hv_transfer.py",
+      "sha256": "c054f1a13cd3499137f1940f3b9b9107b11db79ae6ec2cf657193c17a634e4c3"
+    },
+    {
+      "path": "TPSolverV2.sln",
+      "sha256": "a0b6bf411292c9520a1fe9a612e80349c58a7510577d35ec9aac4b9f42a9c345"
+    },
+    {
+      "path": "TPSolverV2.vfproj",
+      "sha256": "9b0483500d2cd5106619d7c33fc76b49ce344b629a7f06ddbdb23de5bb075a27"
+    },
+    {
+      "path": "VERSION",
+      "sha256": "37567f177cb169a381ae43854e59d08a6a1c8716447ad7be9fe8b4bf43bb5c27"
+    }
+  ]
+}

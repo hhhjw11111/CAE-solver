@@ -1,0 +1,72 @@
+{
+  "batch": "joint",
+  "joint_level": 1,
+  "jobs": [
+    {
+      "name": "A40_R20_Z16_S1_V060",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "voltage": 6,
+      "supg_scale": 1.0,
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V060",
+      "kind": "joint"
+    },
+    {
+      "name": "A40_R20_Z16_S1_V080",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "voltage": 8,
+      "supg_scale": 1.0,
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080",
+      "kind": "joint"
+    }
+  ],
+  "ooc_core_mb": 8000,
+  "threads": 8,
+  "timeout_seconds": 7200,
+  "completed_points_reused_by_reference": true,
+  "fully_validated": false
+}
+REUSED A40_R20_Z16_S1_V060 from C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\runs\JE_RECONSTRUCTION_20261018\stage4_paper_mesh_ooc8000_20261020\A40_R20_Z16_S1_V060
+ORDER=3 ELEMENT=0/12800
+ORDER=3 ELEMENT=800/12800
+ORDER=3 ELEMENT=1600/12800
+ORDER=3 ELEMENT=2400/12800
+ORDER=3 ELEMENT=3200/12800
+ORDER=3 ELEMENT=4000/12800
+ORDER=3 ELEMENT=4800/12800
+ORDER=3 ELEMENT=5600/12800
+ORDER=3 ELEMENT=6400/12800
+ORDER=3 ELEMENT=7200/12800
+ORDER=3 ELEMENT=8000/12800
+ORDER=3 ELEMENT=8800/12800
+ORDER=3 ELEMENT=9600/12800
+ORDER=3 ELEMENT=10400/12800
+ORDER=3 ELEMENT=11200/12800
+ORDER=3 ELEMENT=12000/12800
+ORDER=5 ELEMENT=0/12800
+ORDER=5 ELEMENT=800/12800
+ORDER=5 ELEMENT=1600/12800
+ORDER=5 ELEMENT=2400/12800
+ORDER=5 ELEMENT=3200/12800
+ORDER=5 ELEMENT=4000/12800
+ORDER=5 ELEMENT=4800/12800
+ORDER=5 ELEMENT=5600/12800
+ORDER=5 ELEMENT=6400/12800
+ORDER=5 ELEMENT=7200/12800
+ORDER=5 ELEMENT=8000/12800
+ORDER=5 ELEMENT=8800/12800
+ORDER=5 ELEMENT=9600/12800
+ORDER=5 ELEMENT=10400/12800
+ORDER=5 ELEMENT=11200/12800
+ORDER=5 ELEMENT=12000/12800
+{"run": "A40_R20_Z16_S1_V080", "gap_W": 5.0346712806591254e-05, "gap_relative": 0.005108156581672105, "electrode_gap_relative": 0.005147363002478266, "parts": {"quadrature_W": 7.824808127832039e-10, "SUPG_weighted_W": 5.0193400510710844e-05, "reaction_minus_physical_boundary_W": 1.5252981463292903e-07, "free_residual_correction_W": 3.9453993555781135e-16}, "decomposition_remainder_W": 4.015613796343187e-17, "SUPG_fraction_of_gap": 0.9969548697951868, "free_residual_max_A": 8.257089435107599e-16}
+COMPLETED A40_R20_Z16_S1_V080; local comparison passed=False

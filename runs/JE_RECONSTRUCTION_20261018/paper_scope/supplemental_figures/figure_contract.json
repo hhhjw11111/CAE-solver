@@ -1,0 +1,24 @@
+{
+  "scope": "JE_PAPER_MINIMAL_20261018_SUPPLEMENTAL_S1_S2",
+  "backend": "Python matplotlib",
+  "archetype": "quantitative grid",
+  "evidence_mode": "Reuse of previously accepted native verification logs; no new solver run",
+  "S1_claim": "The current-work branch recovers the exactly representable constant-density Joule solution and independently integrated energy balance over all 13 recorded verification cases.",
+  "S1_panels": {"a": "Actual numerical and analytical peak temperature rise, all cases", "b": "Actual heat-source integral, outward heat and source-factor-weighted terminal power", "c": "Maximum recorded field error and independent flux error", "d": "Independent order-4/order-5 integration comparison"},
+  "S2_claim": "The signed diffusion contribution is resolved for negative, zero and positive carrier gradients in the synthetic frozen-transport LQ benchmark, with analytical field and independent power checks.",
+  "S2_panels": {"a": "Actual signed diffusion-work integral versus analytic value", "b": "Actual numerical and analytical peak temperature rise", "c": "Actual JE volume integral versus terminal power", "d": "Maximum recorded field/current/flux/diffusion-work error and quadrature error"},
+  "data_integrity": {
+    "S1_cases": 13,
+    "S2_cases": 10,
+    "excluded_solved_cases": 0,
+    "all_logged_metrics_in_source_tables": true,
+    "no_nodal_fields_in_sources": true,
+    "no_synthetic_FEM_spatial_curves": true,
+    "zero_log_errors": "Keep exact zero in tables; omit from logarithmic plot and enumerate omissions in figure statistics",
+    "statistics": "Deterministic numerical benchmarks; no replicates, confidence intervals or inferred convergence order",
+    "S1_joule_off": "Thermal graph uses lambda times actual terminal power; raw terminal power and lambda remain explicit in table",
+    "S2_boundary_heat": "Individual boundary heat integrals were not logged; do not backfill them from the analytic formula"
+  },
+  "export": {"width_mm": 183, "height_mm": 154, "formats": ["pdf", "svg", "png"], "raster_dpi": 600, "editable_text": true, "font": "Arial or DejaVu Sans", "font_floor_pt": 5, "alignment_tolerance_pt": 1.5, "required_QA": ["source preflight", "rendered panel alignment", "PDF text size", "PDF collision audit", "visual inspection"]},
+  "claim_limits": ["Synthetic polynomial verification is not a high-Pe mesh/SUPG certificate", "S1 has constant mobility but Einstein diffusion remains temperature dependent and drops out at zero concentration gradient", "S2 is LQ with frozen transport and is not full nonlinear ZnO validation", "Local NT checks are material-point checks only", "Signed JE is a simplified electrical-work model, not complete thermoelectric closure", "Original A1/A2 and all historical failures remain unchanged"]
+}

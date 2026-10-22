@@ -1,0 +1,135 @@
+{
+  "status": "ORPHANED_PROCESS_ABSENT_NO_EXIT_STATUS",
+  "owned_pid": 9656,
+  "exit_code": null,
+  "original_controller_absent": true,
+  "scratch_directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc",
+  "scope": "Only factors from this interrupted new run; all scientific files and run_ooc.cfg preserved",
+  "files": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.ind",
+      "bytes": 101895072,
+      "last_write_ticks": 639280362870426066
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.jal",
+      "bytes": 641647800,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.jau",
+      "bytes": 559126600,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.lnz",
+      "bytes": 2147478192,
+      "last_write_ticks": 639280363292601353
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.lpr",
+      "bytes": 320823900,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.lup",
+      "bytes": 320823900,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.sin",
+      "bytes": 2850568,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.sle",
+      "bytes": 2850568,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.unz",
+      "bytes": 2147479368,
+      "last_write_ticks": 639280363304734497
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.upr",
+      "bytes": 279563300,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors.uup",
+      "bytes": 279563300,
+      "last_write_ticks": 639280362862355852
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors2.jau",
+      "bytes": 0,
+      "last_write_ticks": 639280362598012874
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors2.lnz",
+      "bytes": 2147480744,
+      "last_write_ticks": 639280363676386156
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors2.unz",
+      "bytes": 2147479776,
+      "last_write_ticks": 639280363638131727
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors3.jau",
+      "bytes": 0,
+      "last_write_ticks": 639280362598012874
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors3.lnz",
+      "bytes": 2147244192,
+      "last_write_ticks": 639280365034948144
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors3.unz",
+      "bytes": 2147463744,
+      "last_write_ticks": 639280365261159198
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors4.lnz",
+      "bytes": 2147293376,
+      "last_write_ticks": 639280366836152224
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors4.unz",
+      "bytes": 2147461136,
+      "last_write_ticks": 639280367110408262
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors5.lnz",
+      "bytes": 2146927104,
+      "last_write_ticks": 639280368396009791
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors5.unz",
+      "bytes": 2142024832,
+      "last_write_ticks": 639280368527243268
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors6.lnz",
+      "bytes": 895684608,
+      "last_write_ticks": 639280369142153089
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors6.unz",
+      "bytes": 729907200,
+      "last_write_ticks": 639280369142185413
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors7.lnz",
+      "bytes": 0,
+      "last_write_ticks": 639280362870506084
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V080\\pardiso_ooc\\factors7.unz",
+      "bytes": 0,
+      "last_write_ticks": 639280362870536089
+    }
+  ]
+}

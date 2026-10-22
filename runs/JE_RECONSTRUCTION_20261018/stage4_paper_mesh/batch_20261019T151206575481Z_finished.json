@@ -1,0 +1,26 @@
+{
+  "all_requested_attempts_completed": true,
+  "events": [
+    {
+      "name": "A32_R20_Z14_S1_V060",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": true
+    },
+    {
+      "name": "A32_R20_Z14_S1_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": true
+    },
+    {
+      "name": "A32_R22_Z14_S1_V060",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": true
+    },
+    {
+      "name": "A32_R22_Z14_S1_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "local_comparison_passed": true
+    }
+  ],
+  "fully_validated": false
+}

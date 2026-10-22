@@ -1,0 +1,36 @@
+{
+  "executable_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685",
+  "records": [
+    {
+      "storage": "IC",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 1.125,
+      "stdout_sha256": "d289ff60e40d0e65f7e68577917d0c126fb4e6589c8c8f453c87b5676c047c17",
+      "runtime_env": {
+        "OMP_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "TPS_PARDISO_STORAGE": "IC"
+      }
+    },
+    {
+      "storage": "OOC",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 1.1089999999999236,
+      "stdout_sha256": "c873a5ce59cea21055ef3459a20b0720bfbfae5dee9dca244fd35efa288490e1",
+      "runtime_env": {
+        "OMP_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4",
+        "TPS_PARDISO_STORAGE": "OOC",
+        "MKL_PARDISO_OOC_CFG_FILE_NAME": "run_ooc.cfg",
+        "MKL_PARDISO_OOC_CFG_PATH": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\ooc_preflight_r17\\OOC\\pardiso_ooc",
+        "MKL_PARDISO_OOC_FILE_NAME": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\ooc_preflight_r17\\OOC\\pardiso_ooc\\factors",
+        "MKL_PARDISO_OOC_KEEP_FILE": "1",
+        "MKL_PARDISO_OOC_MAX_CORE_SIZE": "2000",
+        "MKL_PARDISO_OOC_MAX_SWAP_SIZE": "0"
+      }
+    }
+  ],
+  "byte_identical": false
+}

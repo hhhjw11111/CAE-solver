@@ -1,0 +1,240 @@
+{
+  "path": "solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge1_L1.bin",
+  "sha256": "adfd884db84ca86b967b6c8539d4c8f389915d6f88bedb1a269bf8633f31c3ec",
+  "n": 4368,
+  "nnz": 1056048,
+  "nodes": 624,
+  "anchor": 33,
+  "gauge_dof": 228,
+  "level": 1,
+  "gauge": 1,
+  "pivots": 0,
+  "refinements": 2,
+  "native_error": 0,
+  "scaling_reconstruction_max_error": 0.0,
+  "explicit_zero_entries": 861313,
+  "scales": {
+    "u1": {
+      "unknowns": 624,
+      "fixed": 624,
+      "column_variable_scale": [
+        1e-12,
+        1e-12
+      ],
+      "row_equilibration_scale": [
+        1e-12,
+        1e-12
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        1.0,
+        1.0
+      ]
+    },
+    "u2": {
+      "unknowns": 624,
+      "fixed": 624,
+      "column_variable_scale": [
+        1e-12,
+        1e-12
+      ],
+      "row_equilibration_scale": [
+        1e-12,
+        1e-12
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        1.0,
+        1.0
+      ]
+    },
+    "u3": {
+      "unknowns": 624,
+      "fixed": 120,
+      "column_variable_scale": [
+        1.0000000000000001e-11,
+        1.0000000000000001e-11
+      ],
+      "row_equilibration_scale": [
+        1.0000000000000001e-11,
+        2.5407102805444637e-05
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.7707815551522353,
+        1.0
+      ]
+    },
+    "phi": {
+      "unknowns": 624,
+      "fixed": 1,
+      "column_variable_scale": [
+        0.1,
+        0.1
+      ],
+      "row_equilibration_scale": [
+        8.764666203762883e-18,
+        0.1
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.6479949489944828,
+        1.0
+      ]
+    },
+    "eta_n": {
+      "unknowns": 624,
+      "fixed": 120,
+      "column_variable_scale": [
+        0.1,
+        0.1
+      ],
+      "row_equilibration_scale": [
+        2.808508679295674e-07,
+        0.1
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.05706680781183781,
+        1.0
+      ]
+    },
+    "eta_p": {
+      "unknowns": 624,
+      "fixed": 120,
+      "column_variable_scale": [
+        0.1,
+        0.1
+      ],
+      "row_equilibration_scale": [
+        7.021271698239185e-08,
+        0.1
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.05706680781183781,
+        1.0
+      ]
+    },
+    "theta": {
+      "unknowns": 624,
+      "fixed": 624,
+      "column_variable_scale": [
+        1.0,
+        1.0
+      ],
+      "row_equilibration_scale": [
+        1.0,
+        1.0
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "fixed_rows_identity_error": 0.0,
+  "electrical_free_dimension": 1631,
+  "mechanical_free_dimension": 504,
+  "mechanical_electrical_coupling_max": 0.0,
+  "native_backward_error": {
+    "normwise": 1.2103628050989779e-15,
+    "componentwise": 1.965233714440963e-16,
+    "maximum_absolute": 7.632783294297951e-16
+  },
+  "superlu_full_stored_zeros": {
+    "success": true,
+    "seconds": 0.625,
+    "U_diagonal_min": 0.0033545510732922723,
+    "U_diagonal_max": 2.240353546679702,
+    "residual": {
+      "normwise": 1.4807598712624853e-15,
+      "componentwise": 2.963922324375743e-16,
+      "maximum_absolute": 5.898059818321144e-16
+    },
+    "native_difference_max": 4.3298697960381105e-15
+  },
+  "superlu_full_exact_zeros_removed": {
+    "success": true,
+    "seconds": 0.1410000000614673,
+    "U_diagonal_min": 0.006195124165035754,
+    "U_diagonal_max": 3.7421271984688618,
+    "residual": {
+      "normwise": 2.5041565470399086e-15,
+      "componentwise": 5.631699735678881e-16,
+      "maximum_absolute": 1.3600232051658168e-15
+    },
+    "native_difference_max": 3.47499806707674e-14
+  },
+  "superlu_strict_fixed_DOF_elimination": {
+    "success": true,
+    "seconds": 0.0470000000204891,
+    "U_diagonal_min": 0.0034257564184746467,
+    "U_diagonal_max": 2.501907331074971,
+    "residual": {
+      "normwise": 1.378302752182705e-15,
+      "componentwise": 1.832940518388215e-16,
+      "maximum_absolute": 6.38378239159465e-16
+    },
+    "native_difference_max": 6.439293542825908e-15
+  },
+  "eliminated_solution_full_residual": {
+    "normwise": 1.378302752182705e-15,
+    "componentwise": 1.832940518388215e-16,
+    "maximum_absolute": 6.38378239159465e-16
+  },
+  "electrical_svd": {
+    "seconds": 1.9690000000409782,
+    "sigma_max": 8.750601984853294,
+    "smallest_singular_values": [
+      0.0006613266233277861,
+      0.0006613266233276927,
+      0.0004117824029634365,
+      0.00037092848131092793,
+      0.0001819958321725495,
+      0.0001819958321725399,
+      0.0001768235027456391,
+      0.00010933552355756901
+    ],
+    "rank_threshold": 3.1690720797107822e-12,
+    "numerical_rank": 1631,
+    "dimension": 1631,
+    "condition2": 80034.39047187434,
+    "smallest_triplet_right_residual": 1.8593559038358048e-16,
+    "smallest_triplet_left_residual": 2.270768276646691e-16
+  },
+  "smallest_right_mode_constant_phi_alignment": 1.4671646179522072e-13,
+  "expected_constant_phi_residual": 0.019134757949038173,
+  "right_mode_norm_by_field": {
+    "phi": 1.4756791948600986e-13,
+    "eta_n": 0.7071067811865469,
+    "eta_p": 0.7071067811865483
+  },
+  "left_mode_norm_by_field": {
+    "phi": 2.6844157288924656e-14,
+    "eta_n": 0.7071067811865536,
+    "eta_p": 0.7071067811865426
+  }
+}

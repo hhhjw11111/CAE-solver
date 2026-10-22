@@ -1,0 +1,14 @@
+{
+  "status": "PASS_RENDERED_FIGURES",
+  "figures": 9,
+  "panels": 27,
+  "alignment": "All pass",
+  "pdf_text": "All pass",
+  "collisions": "All pass; zero warnings",
+  "visual_review": "All nine figures inspected; no clipping, missing glyphs or across-hole field fill. Element-gradient seams and small midplane carrier ripples are retained and explained in README.",
+  "static_warnings_reviewed": [
+    "Screen review width 274.3 mm follows user horizontal example, no target journal requested.",
+    "330 dpi PNG plus PDF/SVG; no TIFF requested."
+  ],
+  "physical_certification": false
+}

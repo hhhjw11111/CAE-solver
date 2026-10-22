@@ -1,0 +1,9 @@
+{
+  "controller_pid": 29996,
+  "started": "2026-10-22T10:24:35.7378515+08:00",
+  "command": "py run_je_production_reduced_20261022.py execute --confirm-matrix e1e8326de9763a219881d6d419a4d10fea8543cb1bba3d61a162610257d9a45b",
+  "environment": "PYTHONUTF8=1 (Python UTF-8 mode; fixes GBK decode crash in audit_je_sensitivity_power_20261015.py)",
+  "previous_batch": "batch_20261022T003858 (19 accepted, NT V005 post-processing crashed, 14 NT skipped)",
+  "recovery": "H_r3_A48_R22_Z18_NT_V005/postprocess_recovery.json",
+  "authorization": "same approved matrix e1e8326d...; user chat 2026-10-22: 你先开始算 每完成一个归档到md; continued after usage-limit reset"
+}

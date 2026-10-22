@@ -1,0 +1,25 @@
+{
+  "revision": "A2P_MECHANICAL_MIDPLANE_GAUGE_V1",
+  "preregistered_before_candidate_build_and_run": true,
+  "date": "2026-10-18",
+  "reason": "DIAG has exactly one perturbed PARDISO pivot at mechanical L2 for each e15 sign/zero; L0/L1 and all electric cases have zero. Every other frozen predicate passes. This is a controlled gauge-placement test, not an established condition-number diagnosis.",
+  "previous_protocol_retained": "a2p_protocol.json",
+  "previous_failure_retained": "a2p_diagnostic/A2P_diagnostic.txt",
+  "source_before_sha256": "4a648457838df262700d636933c1fddced58ae7202e9d323aced74a4ec52ac6c",
+  "change": "Only mode=mechanical: select the single phi gauge at z=0, same x,y as the previous first outer node. Electric displacement anchor unchanged.",
+  "old_gauge_nodes_L0_L1_L2": [21,33,45],
+  "new_gauge_nodes_L0_L1_L2": [31,43,55],
+  "old_coordinate_m": [0.00001,0,-0.0000005],
+  "new_coordinate_m": [0.00001,0,0],
+  "basis": "The equations use grad(phi), eta contacts prescribe densities independently of phi. A single electric gauge fixes an additive constant. Exact fields are z-independent; the midplane anchor preserves z-reflection symmetry of the discrete gauge row. Potential improvement in elimination behavior is a hypothesis to test, not a guarantee.",
+  "unchanged": ["physical equations","material constants","heat source","mesh","zero initial unknown state","PARDISO settings","all original 18-case gates","zero perturbed-pivot requirement","original result files","first-run protocol"],
+  "additional_equivalence_limit": 1e-9,
+  "equivalence": {
+    "nodes": "Same coordinates/order; compare w, exp(eta_n), exp(eta_p); compare phi after removing one additive constant. Normalize w by max(abs(A)*half_width, frozen zero_w); phi by max(abs(B)*half_width, frozen zero_phi); concentrations by Nref.",
+    "wall": "Same sampling coordinates/order; compare already normalized tz,Dn,Jn,Jp channels and material Q normalized by sigma*B^2 or frozen sigma*E0^2 for B=0.",
+    "coverage": "All 18 cases and levels; maximum normalized changes must each be below 1e-9. Candidate must also pass every original A2P gate."
+  },
+  "build": "build/JE_VERIFY_20261018_GAUGE",
+  "output": "a2p_gauge_revision",
+  "failure_policy": "If this predeclared gauge choice still has a pivot or fails equivalence, retain failure and investigate rank/scaling; do not search further anchors blindly."
+}

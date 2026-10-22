@@ -1,0 +1,237 @@
+{
+  "valid_cases": [
+    {
+      "radius_um": 2,
+      "model": "NT",
+      "voltage_V": 6.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 2,
+      "model": "NT",
+      "voltage_V": 8.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 0.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 0.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 1.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 1.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 2.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 2.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 3.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 3.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 4.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 4.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 5.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 5.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 6.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 6.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 7.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 7.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "LQ",
+      "voltage_V": 8.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 0.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 0.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 1.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 1.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 2.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 2.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 3.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 3.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 4.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 4.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 5.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 5.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 6.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 6.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 7.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 7.5,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 3,
+      "model": "NT",
+      "voltage_V": 8.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 4,
+      "model": "NT",
+      "voltage_V": 6.0,
+      "input_logic_passed": true
+    },
+    {
+      "radius_um": 4,
+      "model": "NT",
+      "voltage_V": 8.0,
+      "input_logic_passed": true
+    }
+  ],
+  "valid_case_count": 38,
+  "rejected_invalid_scope_cases": 5,
+  "zero_voltage_seed_rejected": true,
+  "candidate_input_count": 18,
+  "native_runs": 0
+}

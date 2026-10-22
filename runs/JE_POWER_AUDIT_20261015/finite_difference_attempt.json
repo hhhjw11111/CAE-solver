@@ -1,0 +1,116 @@
+{
+  "status": "FAIL_STEP_SENSITIVITY",
+  "definition": "Error divided by Frobenius norm of independently differentiated physical current gradient; no floor on div J itself.",
+  "reports": [
+    {
+      "natural_coordinate_step": 0.001,
+      "points": 36,
+      "max_gradient_normalized_error": 2.489490680150243e-06,
+      "elements": [
+        {
+          "element": 1,
+          "max_gradient_normalized_error": 2.7721359255103417e-08
+        },
+        {
+          "element": 18,
+          "max_gradient_normalized_error": 9.012610079102834e-09
+        },
+        {
+          "element": 224,
+          "max_gradient_normalized_error": 4.6684917376320193e-07
+        },
+        {
+          "element": 225,
+          "max_gradient_normalized_error": 3.2205886514026302e-09
+        },
+        {
+          "element": 468,
+          "max_gradient_normalized_error": 1.2978087442093977e-09
+        },
+        {
+          "element": 896,
+          "max_gradient_normalized_error": 6.698963290787356e-08
+        },
+        {
+          "element": 1201,
+          "max_gradient_normalized_error": 9.095347249312821e-08
+        },
+        {
+          "element": 1568,
+          "max_gradient_normalized_error": 2.489490680150243e-06
+        },
+        {
+          "element": 2001,
+          "max_gradient_normalized_error": 7.001600535644948e-07
+        },
+        {
+          "element": 2688,
+          "max_gradient_normalized_error": 4.995845898630751e-08
+        },
+        {
+          "element": 3001,
+          "max_gradient_normalized_error": 2.684569027339626e-09
+        },
+        {
+          "element": 3136,
+          "max_gradient_normalized_error": 3.816633908947123e-07
+        }
+      ]
+    },
+    {
+      "natural_coordinate_step": 0.0001,
+      "points": 36,
+      "max_gradient_normalized_error": 5.364757044988571e-05,
+      "elements": [
+        {
+          "element": 1,
+          "max_gradient_normalized_error": 3.4469362118209774e-07
+        },
+        {
+          "element": 18,
+          "max_gradient_normalized_error": 1.4631551381197344e-07
+        },
+        {
+          "element": 224,
+          "max_gradient_normalized_error": 1.7698224073531478e-06
+        },
+        {
+          "element": 225,
+          "max_gradient_normalized_error": 8.3445697035264e-08
+        },
+        {
+          "element": 468,
+          "max_gradient_normalized_error": 1.889070605128501e-08
+        },
+        {
+          "element": 896,
+          "max_gradient_normalized_error": 1.1203000257582134e-06
+        },
+        {
+          "element": 1201,
+          "max_gradient_normalized_error": 1.580172612933846e-07
+        },
+        {
+          "element": 1568,
+          "max_gradient_normalized_error": 5.364757044988571e-05
+        },
+        {
+          "element": 2001,
+          "max_gradient_normalized_error": 1.3012388438382982e-06
+        },
+        {
+          "element": 2688,
+          "max_gradient_normalized_error": 3.3600491433504825e-07
+        },
+        {
+          "element": 3001,
+          "max_gradient_normalized_error": 5.694067180362849e-08
+        },
+        {
+          "element": 3136,
+          "max_gradient_normalized_error": 9.582151948379983e-07
+        }
+      ]
+    }
+  ]
+}

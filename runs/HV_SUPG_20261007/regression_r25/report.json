@@ -1,0 +1,114 @@
+[
+  {
+    "check": "V01",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "V02",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "V03",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "V04",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "V05",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "V06",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G02",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G03",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G04",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G05",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G06",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G07",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "G08",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "L01",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "F1M",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  },
+  {
+    "check": "A1J",
+    "baseline_exit": 0,
+    "candidate_exit": 0,
+    "byte_identical": true,
+    "passed": true
+  }
+]

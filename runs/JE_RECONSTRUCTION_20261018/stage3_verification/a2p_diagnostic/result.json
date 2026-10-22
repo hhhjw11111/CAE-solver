@@ -1,0 +1,17 @@
+{
+  "check": "A2P",
+  "label": "diagnostic",
+  "command": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_DIAG\\TPSolverV2.exe",
+    "verify",
+    "A2P",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_diagnostic\\A2P_fields"
+  ],
+  "exit_code": 1,
+  "timed_out": false,
+  "seconds": 26.04700000002049,
+  "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_diagnostic\\A2P_diagnostic.txt",
+  "sha256": "465084f7d2474882d1193a89e809e6b8fdad8f3d9f353f30a9ff12434ea3533f",
+  "exports_complete": true,
+  "passed": false
+}

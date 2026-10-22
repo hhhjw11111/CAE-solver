@@ -1,0 +1,18 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+  "executable_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh",
+  "mesh_sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f",
+  "seed_nodes": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r13_XY0_Z2_V060\\nodes.csv",
+  "seed_nodes_sha256": "e858c7d6d50222f3d434c4b7a02b1d1962a163bd1b82a1f4ffe4554ad6afeb2e",
+  "seed_voltage": 6.0,
+  "step_K": 5.4,
+  "maximum_increments": 3,
+  "supg_scale": 2.0,
+  "runtime_env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "TPS_PARDISO_STORAGE": "IC"
+  },
+  "scope": "DIAGNOSTIC_ALGEBRAIC_BRANCH_NOT_DYNAMICAL_STABILITY_OR_VOLTAGE_ACCEPTANCE"
+}

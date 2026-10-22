@@ -1,0 +1,5 @@
+{
+  "reason": "Serialize around L2 factorization: 32 GB host reached 0.3 GB free RAM; preserve outputs and retry later",
+  "numerical_failure": false,
+  "time": "2026-10-08T00:59:45.533845"
+}

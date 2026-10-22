@@ -1,0 +1,79 @@
+{
+  "order": 3,
+  "JE_W": 0.002894574887433836,
+  "all_exterior_power_W": 0.0028949039898638618,
+  "contact_only_power_W": 0.0028946917966836167,
+  "gap_W": -3.2910243002570033e-07,
+  "gap_relative": -0.0001136962914500594,
+  "phi_divJ_volume_W": 1.470321904428949e-05,
+  "internal_phi_flux_jump_W": 1.5031964513195756e-05,
+  "integration_by_parts_remainder_W": -3.569611194342647e-10,
+  "volume_divJ_A": -7.512114179076923e-06,
+  "reaction_terminal_power_W": 0.0028944974868751368,
+  "phi_weighted_SUPG_W": 7.740055826665336e-08,
+  "phi_weighted_free_residual_W": -4.256550228244719e-16,
+  "algebraic_identity_remainder_W": 6.985080905570746e-18,
+  "reaction_minus_exterior_W": -4.065029887249938e-07,
+  "free_residual_max_A": 4.65147352600699e-16,
+  "free_Galerkin_max_A": 6.423440049448726e-08,
+  "free_SUPG_max_A": 6.423440049395649e-08,
+  "reaction_left_A": -0.0004824162478125933,
+  "reaction_right_A": 0.0004824162478125227,
+  "exterior_area_normal_m2": [
+    -1.153770277279613e-26,
+    -1.1024123712923866e-27,
+    -1.5847900041528039e-25
+  ],
+  "boundary_sets": {
+    "x-": {
+      "power_W": 0.0,
+      "current_A": -0.0004824562710123268,
+      "absolute_current_A": 0.0004824562710123268,
+      "area_m2": 1.0000000000000001e-11,
+      "faces": 56
+    },
+    "x+": {
+      "power_W": 0.0028946917966836167,
+      "current_A": 0.00048244863278060316,
+      "absolute_current_A": 0.00048244863278060316,
+      "area_m2": 1.0000000000000004e-11,
+      "faces": 56
+    },
+    "y-": {
+      "power_W": 4.2701054489291765e-07,
+      "current_A": -3.4808252026379526e-09,
+      "absolute_current_A": 2.578593791386603e-07,
+      "area_m2": 1.3999999999999999e-11,
+      "faces": 504
+    },
+    "y+": {
+      "power_W": -2.0162623358255962e-07,
+      "current_A": 7.034757452167232e-09,
+      "absolute_current_A": 3.2251343493604675e-07,
+      "area_m2": 2.0000000000000002e-11,
+      "faces": 112
+    },
+    "z-": {
+      "power_W": -1.0398067975539932e-07,
+      "current_A": -1.0734106450113708e-09,
+      "absolute_current_A": 1.3606891937493629e-06,
+      "area_m2": 1.8586287678511173e-10,
+      "faces": 288
+    },
+    "z+": {
+      "power_W": 9.312290117640313e-08,
+      "current_A": 3.174174806458716e-10,
+      "absolute_current_A": 4.7207297986498144e-07,
+      "area_m2": 1.8586287678511173e-10,
+      "faces": 288
+    },
+    "hole": {
+      "power_W": -2.333352486071798e-09,
+      "current_A": -1.0060315038165156e-13,
+      "absolute_current_A": 1.3627778956476231e-08,
+      "area_m2": 9.42476340085119e-12,
+      "faces": 224
+    }
+  },
+  "element_ibp_max_abs_W": 3.706053486911914e-10
+}

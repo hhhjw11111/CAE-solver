@@ -1,0 +1,8 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R8\\TPSolverV2.exe",
+  "executable_sha256": "3724af6b842bbca4e27446b1b2d829a3fe06fad28affef914c25383a2fe92d7f",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_20260906\\H1_L1.mesh",
+  "mesh_sha256": "44dd715220df77a2bf93be1cb8d38effab7741f6fa8361cfdf25e3f674ad867f",
+  "seed_status": "TRANSFERRED_INITIAL_GUESS_REQUIRES_FULL_SOLVE",
+  "input_sha256": "31908cfac62fad80948586f3217d74aeb259fd5a55351781d0585086f9dfbdec"
+}

@@ -1,0 +1,7 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080\\accepted_00003_nodes.csv",
+  "sha256": "6e9aff3935a65c8b65460031b0b193d4f7822cfc3bbd0ec878adcabc3cd7b007",
+  "voltage": 6.375,
+  "initial_load_joule_factor": 1.0,
+  "status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION"
+}

@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-08T22:08:43.312076+08:00",
+  "head": "a63ad1db24a5d5813afa4fbbe7eaa6e7235950bc",
+  "branch": "codex/paper-sprint-20261008-2110",
+  "tag_object": "d01d73dd263f81c27423469c27b09ab4d28fa040",
+  "tag_commit": "a63ad1db24a5d5813afa4fbbe7eaa6e7235950bc",
+  "main_ref": "a63ad1db24a5d5813afa4fbbe7eaa6e7235950bc",
+  "source_files_checked": 58,
+  "source_changed_since_start": [
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\build_info_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\model_types_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\io\\input_schema_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\io\\native_input_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\nonlinear\\newton_solver_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\nonlinear\\temperature_control_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\newton_solver_check_m.f90",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\verification_driver_m.f90"
+  ],
+  "tracked_worktree_diff_unchanged": false,
+  "history_write_scope": "No task writes to original runs/cases/source; hash identities of reused originals in postprocess registry.",
+  "new_branch_only": true,
+  "committed": false,
+  "pushed": false,
+  "baseline_refs_unchanged": true,
+  "status": "BASELINE_PASS_CONCURRENT_CHANGES_RECORDED",
+  "task_source_writes": false,
+  "concurrent_change_detail": "audit/concurrent_source_changes.json",
+  "validated_source_version": "0.15.9-log-inverse-checked / R25_CLEAN",
+  "current_version_at_freeze": "0.16.0-trust-region",
+  "frozen_original_source_manifest": "audit/frozen_r25_source/frozen_source_manifest.json"
+}

@@ -1,0 +1,16 @@
+{
+  "pdf": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\manuscript\\manuscript_working_draft.pdf",
+  "pdf_sha256": "cae0444cf43bbdd95d19cb34a55f436b28ad88a3110643739daf2f815dc47714",
+  "output_dir": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\render_qa\\manuscript_working_draft\\cae0444cf43b",
+  "pages": 15,
+  "raster_pages": 15,
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+    "-r",
+    "105",
+    "-png",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\manuscript\\manuscript_working_draft.pdf",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\render_qa\\manuscript_working_draft\\cae0444cf43b\\page"
+  ],
+  "exit_code": 0
+}

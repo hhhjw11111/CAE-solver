@@ -1,0 +1,95 @@
+{
+  "scope": "Two completed coefficients; does not replace the three-coefficient audit",
+  "comparisons": {
+    "joule_W": {
+      "relative_span": 0.00015769539089340948,
+      "limit": 0.01,
+      "values": [
+        0.009856846352375593,
+        0.009858400976771209
+      ],
+      "passed": true
+    },
+    "theta_max_K": {
+      "relative_span": 0.0031996020137562697,
+      "limit": 0.01,
+      "values": [
+        24.295374947085804,
+        24.373359998820035
+      ],
+      "passed": true
+    },
+    "electron_right_A": {
+      "relative_span": 0.02297992825572225,
+      "limit": 0.01,
+      "values": [
+        0.0012230879982462642,
+        0.00119498152379613
+      ],
+      "passed": false
+    },
+    "ring_theta_mean_K": {
+      "relative_span": 0.004577357087791642,
+      "limit": 0.01,
+      "values": [
+        20.37013022104034,
+        20.46380034258161
+      ],
+      "passed": true
+    },
+    "ring_E_mean_V_m": {
+      "relative_span": 0.0009397729758877764,
+      "limit": 0.01,
+      "values": [
+        499894.5566449106,
+        500364.7859488312
+      ],
+      "passed": true
+    },
+    "ring_Q_mean_W_m3": {
+      "relative_span": 0.002186609732720842,
+      "limit": 0.01,
+      "values": [
+        44570107188580.34,
+        44472649758413.38
+      ],
+      "passed": true
+    },
+    "ring_abs_n_relative_mean": {
+      "relative_span": 0.0050701133978250865,
+      "limit": 0.01,
+      "values": [
+        0.03910547676894665,
+        0.03930475634066772
+      ],
+      "passed": true
+    },
+    "ring_abs_p_relative_mean": {
+      "relative_span": 0.18569567462352007,
+      "limit": 0.01,
+      "values": [
+        0.09082391013966708,
+        0.11153558603250224
+      ],
+      "passed": false
+    },
+    "ring_Q_p95_W_m3": {
+      "relative_span": 0.006387004135092419,
+      "limit": 0.01,
+      "values": [
+        94200100332433.73,
+        93598443902084.36
+      ],
+      "passed": true
+    },
+    "E_p95_V_m": {
+      "relative_span": 0.0012364723060027502,
+      "limit": 0.01,
+      "values": [
+        619101.591225166,
+        618336.0892530138
+      ],
+      "passed": true
+    }
+  }
+}

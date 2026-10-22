@@ -1,0 +1,22 @@
+{
+  "completed_native_points": 10,
+  "mesh_pass_voltages": [
+    6,
+    8
+  ],
+  "final_pair_and_SUPG_local_comparisons_passed": 6,
+  "remaining_FAIL_metric": "ring_abs_p_relative_mean SUPG span",
+  "production_started": false,
+  "original_models_sources_thresholds_and_baseline_hashes_unchanged": true,
+  "no_native_process_active": true,
+  "report_cross_checks_passed": true,
+  "files": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\final_review\\report.json": "1a057fd01b4a45eb2d733411a594face5429fe3ac43127cf95e253e802ab241b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\final_review\\结论.txt": "92b41a4132a7272de3d3f8881da7e5a4ff79407d414dc6888ce563331daf89bb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\final_review\\验收结果.md": "04c049735f052a4dab41c145873ea0d74dd4f8a22ffbd99f3d79b579256eda6b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\final_review\\artifact_hashes.json": "5e4f7642c9f9eec2eb91f104881e471fbc87c18d1b927b4f636ad833c8beb36d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\final_audit_v2.json": "415d11d918d4522300fba6d5ef82e36b9a51df9df52fd781dd50af8f5e94edf7",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\docs\\je_controlled_supg_metric_20261021.md": "ec560fd568bb34d65c97809fdae03ade2f0d70877f0d560749bbbd5a1326cffe",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\docs\\current_execution_plan.md": "507ebb98e7256fa49b3382248c32c481a8308b7e6ba5477072ddb1fc268f200d"
+  }
+}

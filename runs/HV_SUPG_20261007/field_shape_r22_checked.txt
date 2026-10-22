@@ -1,0 +1,62 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0001107929231454196,
+      "rms_relative": 2.512145534179189e-05,
+      "normalization": 0.5000000000000003,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.002263287575050067,
+      "rms_relative": 0.0004486842936370682,
+      "normalization": 0.10279189812997538,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.0029724441591975222,
+      "rms_relative": 0.0007430359445732721,
+      "normalization": 6.0664303124646374e-12,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0014426904752132994,
+      "rms_relative": 0.00026319537465539604,
+      "normalization": 6.0664303124646374e-12,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.0012851051817783126,
+      "rms_relative": 0.0002483011536352076,
+      "normalization": 6.0664303124646374e-12,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.030070499493426776,
+      "rms_relative": 0.0033345217253276348,
+      "normalization": 0.007138257706908362,
+      "limit": 0.02,
+      "passed": false
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.030138710757482184,
+      "rms_relative": 0.0033247268376482768,
+      "normalization": 0.007154267657835098,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_r22_L1_L2_V005\\nodes.csv": "2ef945f8e1205473e1d85ebac55e7989ffeb9b00f69a7d482c8584f3ff0ac643",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_r22_L1_L2_V005\\transfer_report.json": "fb67aade11df45105737e0c048da352bf4b6581d90ba4699d494c34abe34eec4",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\nodes.csv": "ab00bdfe9663caf6123e9482212e566774a30076870741a0c6a345a6faee38fc",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\nodes.csv": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8"
+  }
+}

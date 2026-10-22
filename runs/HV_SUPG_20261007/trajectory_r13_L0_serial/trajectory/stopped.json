@@ -1,0 +1,6 @@
+{
+  "not_evidence_of_no_8V_solution": true,
+  "reason": "All requested half-volt algebraic checkpoints through 6 V are saved. The independent low-to-high path also stagnates at 6.5 V. Stop this coarse voltage-controlled trajectory and complete its independent audits; diagnose the branch using temperature control without changing PDEs.",
+  "pid": 3348,
+  "time": "2026-10-08T02:08:24.7546752+08:00"
+}

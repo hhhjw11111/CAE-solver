@@ -1,0 +1,272 @@
+{
+  "status": "INPUT_PREPARER_CHECKED_NOT_PRODUCTION_ACCEPTANCE",
+  "all_software_checks_passed": true,
+  "checks": 28,
+  "sources_unchanged": true,
+  "records": [
+    {
+      "name": "pure_r2_V6",
+      "passed": true,
+      "result": {
+        "radius_um": 2,
+        "voltage_V": 6.0,
+        "seed_voltage_V": 3.0,
+        "restart_voltage_factor": 0.5,
+        "in_memory_input_sha256": "26fc88d49a67ab050bec8e533113d432e0b7e087a54056b92ca6c9bb0c06d947"
+      }
+    },
+    {
+      "name": "pure_r2_V8",
+      "passed": true,
+      "result": {
+        "radius_um": 2,
+        "voltage_V": 8.0,
+        "seed_voltage_V": 3.0,
+        "restart_voltage_factor": 0.375,
+        "in_memory_input_sha256": "e5466e05e0eb3a1ccaf158f9a4d9996af80fd416a6d045a1d481354e645a22d5"
+      }
+    },
+    {
+      "name": "pure_r3_V6",
+      "passed": true,
+      "result": {
+        "radius_um": 3,
+        "voltage_V": 6.0,
+        "seed_voltage_V": 6.0,
+        "restart_voltage_factor": 1.0,
+        "in_memory_input_sha256": "59d117b8d1d36c089a0577ca42e152c1d25c573ca4967957028ef4f0ee148af0"
+      }
+    },
+    {
+      "name": "pure_r3_V6.5",
+      "passed": true,
+      "result": {
+        "radius_um": 3,
+        "voltage_V": 6.5,
+        "seed_voltage_V": 6.0,
+        "restart_voltage_factor": 0.9230769230769231,
+        "in_memory_input_sha256": "003681d0bdb324640301fbd3fb6b268bc52b69820819871b2659b71d061c1b57"
+      }
+    },
+    {
+      "name": "pure_r3_V7",
+      "passed": true,
+      "result": {
+        "radius_um": 3,
+        "voltage_V": 7.0,
+        "seed_voltage_V": 6.0,
+        "restart_voltage_factor": 0.8571428571428571,
+        "in_memory_input_sha256": "a51be4d79cba38518d9562e728e753b9ab83307ccd2d3110b6d0b2916b9cda7f"
+      }
+    },
+    {
+      "name": "pure_r3_V7.5",
+      "passed": true,
+      "result": {
+        "radius_um": 3,
+        "voltage_V": 7.5,
+        "seed_voltage_V": 6.0,
+        "restart_voltage_factor": 0.8,
+        "in_memory_input_sha256": "b3caa1fbbcc6deec49ee5cb938a48f63a5abf9d9977417938d86f58f3c81cf9b"
+      }
+    },
+    {
+      "name": "pure_r3_V8",
+      "passed": true,
+      "result": {
+        "radius_um": 3,
+        "voltage_V": 8.0,
+        "seed_voltage_V": 6.0,
+        "restart_voltage_factor": 0.75,
+        "in_memory_input_sha256": "43426130684a417f68f4ddd9ac6cede9690595dd7eb4e6f38d5f290cc1f9510c"
+      }
+    },
+    {
+      "name": "pure_r4_V6",
+      "passed": true,
+      "result": {
+        "radius_um": 4,
+        "voltage_V": 6.0,
+        "seed_voltage_V": 3.0,
+        "restart_voltage_factor": 0.5,
+        "in_memory_input_sha256": "7ff878f98c6163bd9fbbc4cd05121e9bd48abaab4520d68a4a2dc2f5bd3e2110"
+      }
+    },
+    {
+      "name": "pure_r4_V8",
+      "passed": true,
+      "result": {
+        "radius_um": 4,
+        "voltage_V": 8.0,
+        "seed_voltage_V": 3.0,
+        "restart_voltage_factor": 0.375,
+        "in_memory_input_sha256": "0765b4239c5a6be62a78e6a61a949f70324424740af9f68444da3e7643b1a2c1"
+      }
+    },
+    {
+      "name": "reject_changed_tolerance",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Frozen V060 template changed"
+      }
+    },
+    {
+      "name": "reject_out_of_scope_radius_voltage",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Condition is outside the approved nine NT/JE cases"
+      }
+    },
+    {
+      "name": "reject_seed_above_target",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Require 0 < seed_voltage <= target_voltage"
+      }
+    },
+    {
+      "name": "r2_mesh_identity",
+      "passed": true,
+      "result": {
+        "nodes": 27840,
+        "radius_um": 2,
+        "mesh_sha256": "4bb4ba1bdc9aab7bc99fae3613859be698c41e0acee3f0d0a1180dcc2dc3c39e"
+      }
+    },
+    {
+      "name": "r3_mesh_identity",
+      "passed": true,
+      "result": {
+        "nodes": 27840,
+        "radius_um": 3,
+        "mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133"
+      }
+    },
+    {
+      "name": "r4_mesh_identity",
+      "passed": true,
+      "result": {
+        "nodes": 27840,
+        "radius_um": 4,
+        "mesh_sha256": "41fb33fb11de657e2483451e7534c88732f66377ea44f658f08f36d237d10edb"
+      }
+    },
+    {
+      "name": "reject_wrong_mesh_radius",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Mesh manifest geometry mismatch: hole_radius_m"
+      }
+    },
+    {
+      "name": "actual_seed_exact_coordinates",
+      "passed": true,
+      "result": {
+        "nodes": 27840,
+        "coordinates_exactly_equal": true,
+        "maximum_coordinate_difference_m": 0.0,
+        "finite_fields": true,
+        "positive_temperature_and_density": true,
+        "electrode_voltage_error_V": 0.0
+      }
+    },
+    {
+      "name": "reject_changed_coordinate",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Seed coordinates must exactly match the target mesh"
+      }
+    },
+    {
+      "name": "reject_wrong_seed_electrode_voltage",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Actual seed electrode voltage differs from its declared load"
+      }
+    },
+    {
+      "name": "old_r2_drift_requires_explicit_optin",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Old drift seed requires explicit --allow-drift-seed and its actual 3 V source"
+      }
+    },
+    {
+      "name": "old_r2_drift_3V_initial_guess_only",
+      "passed": true,
+      "result": {
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F3_RADIUS_L0_20260908\\F3_R02_NT_L0\\metrics.txt",
+        "role": "INITIAL_GUESS_ONLY",
+        "JE_acceptance_evidence": false
+      }
+    },
+    {
+      "name": "old_r4_drift_requires_explicit_optin",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Old drift seed requires explicit --allow-drift-seed and its actual 3 V source"
+      }
+    },
+    {
+      "name": "old_r4_drift_3V_initial_guess_only",
+      "passed": true,
+      "result": {
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F3_RADIUS_L0_20260908\\F3_R04_NT_L0\\metrics.txt",
+        "role": "INITIAL_GUESS_ONLY",
+        "JE_acceptance_evidence": false
+      }
+    },
+    {
+      "name": "reject_LQ_seed",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "reason": "Seed source must be NT at the same physical hole radius"
+      }
+    },
+    {
+      "name": "default_CLI_V6.5_read_only",
+      "passed": true,
+      "result": {
+        "output_directory_created": false,
+        "restart_voltage_factor": 0.9230769230769231
+      }
+    },
+    {
+      "name": "default_CLI_V7.5_read_only",
+      "passed": true,
+      "result": {
+        "output_directory_created": false,
+        "restart_voltage_factor": 0.8
+      }
+    },
+    {
+      "name": "prepare_CLI_writes_input_only",
+      "passed": true,
+      "result": {
+        "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\input_validation_01\\prepared_r3_V065_input_only",
+        "input_sha256": "3a0821a25c0baa27c9f933aa858a9555dbcacab2347bee5bd5505503c92f9246",
+        "status": "INPUT_ONLY_NOT_SOLVED"
+      }
+    },
+    {
+      "name": "prepare_rejects_existing_output",
+      "passed": true,
+      "result": {
+        "rejected": true,
+        "existing_files_unchanged": true
+      }
+    }
+  ],
+  "native_solver_started": false,
+  "production_acceptance": false,
+  "limitation": "Three-radius text/geometry identity, actual r3 direct seed and CLI behavior checked. Old drift source eligibility checked separately; no new cross-mesh transfer or re-equilibration has been run."
+}

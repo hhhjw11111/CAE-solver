@@ -1,0 +1,12 @@
+{
+  "audit_je_paper_transport_indicators_20261019.py": "96d5b56c5e477f6881315020a79dfb96d93b5f29d940266cb6d697ae9bf8db5f",
+  "closed_form_check.json": "ef5b4b95d9104f29c9cec0785c9274713123df7b666a376610f4c57e4582a4f8",
+  "protocol.json": "7065076a328bd337b29bd1d4bbe6ce107b4573c632dcc71ad1287ad4d0d12873",
+  "summary.json": "d1e84fdc5fc0c555fff0e35c1e071183809e966c7b73763c634e0735935f60d3",
+  "A32_S1_V060\\all_gauss_samples.npz": "80b5cc6b4fc1b0fb8dd8813f0f13e3bfbd56829ac3b5bda4ddf7ec6799fb8930",
+  "A32_S1_V060\\provenance.json": "0dca879c55d1ae8fe6e2e84d1c00cbed4c5cee9668ddc77344c8d4a8a126444f",
+  "A32_S1_V060\\report.json": "32a6b879883907043d12672b10cce50ec8dc5655a4d0def3d60af81abfb9832e",
+  "A32_S1_V080\\all_gauss_samples.npz": "a03e37c0df36a634a48535f5df97b0f02ef3de78a3eaf7ffe2f40dd0d5311576",
+  "A32_S1_V080\\provenance.json": "73970eca4e35ee9c20be9fd188bb87aa6eeed8ab27f58738061daa0eef3eb4df",
+  "A32_S1_V080\\report.json": "770b87127f25d42c83e92fe013256509dba850eb67b9b5de4cb820a68a0516f3"
+}

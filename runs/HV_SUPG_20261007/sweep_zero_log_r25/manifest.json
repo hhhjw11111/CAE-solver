@@ -1,0 +1,24 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+  "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L0_V030\\H1_Y_HALF.mesh",
+  "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+  "voltages": [
+    0.0
+  ],
+  "supg_scale": 1.0,
+  "model": "FROZEN_DRIFT_HEAT_ZNO_NT",
+  "acceptance": "NO_POINT_IS_MESH_VALIDATED_BY_THIS_SCRIPT",
+  "seed_sweep": null,
+  "domain_symmetry": "Y_HALF",
+  "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+  "log_weighted_quadrature_order": 3,
+  "start_seed_run": null,
+  "ooc_core_mb": 1000,
+  "runtime_env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "TPS_PARDISO_STORAGE": "OOC",
+    "TPS_PARDISO_SPLIT_HOLES": "1"
+  }
+}

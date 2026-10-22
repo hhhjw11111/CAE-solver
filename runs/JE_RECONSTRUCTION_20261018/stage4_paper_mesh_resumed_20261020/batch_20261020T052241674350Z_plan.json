@@ -1,0 +1,37 @@
+{
+  "batch": "joint",
+  "joint_level": 1,
+  "jobs": [
+    {
+      "name": "A40_R20_Z16_S1_V060",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "voltage": 6,
+      "supg_scale": 1.0,
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V060",
+      "kind": "joint"
+    },
+    {
+      "name": "A40_R20_Z16_S1_V080",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "voltage": 8,
+      "supg_scale": 1.0,
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080",
+      "kind": "joint"
+    }
+  ],
+  "ooc_core_mb": 8000,
+  "threads": 8,
+  "timeout_seconds": 7200,
+  "completed_points_reused_by_reference": true,
+  "fully_validated": false
+}

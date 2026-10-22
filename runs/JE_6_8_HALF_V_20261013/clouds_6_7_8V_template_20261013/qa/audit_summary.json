@@ -1,0 +1,92 @@
+[
+  {
+    "figure": "01_joule_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "01_joule_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "02_potential_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "02_potential_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "03_electrons_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "03_electrons_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "04_holes_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "04_holes_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "05_total_stress_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "05_total_stress_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "06_temperature_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "06_temperature_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "07_electrons_bottom.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "07_electrons_bottom.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "08_holes_top.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "08_holes_top.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  },
+  {
+    "figure": "09_thermal_term_mid.pdf",
+    "audit": "audit_pdf_text",
+    "exit_code": 0
+  },
+  {
+    "figure": "09_thermal_term_mid.pdf",
+    "audit": "audit_figure_collisions",
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "scope": "DISCRETIZATION_INDICATOR_NOT_SUPG_ERROR_ESTIMATE",
+  "records": [
+    {
+      "run": "r17_scale1_V060",
+      "mesh_sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f",
+      "node_count": 13920,
+      "element_count": 3136,
+      "nodes_sha256": "e858c7d6d50222f3d434c4b7a02b1d1962a163bd1b82a1f4ffe4554ad6afeb2e",
+      "median": 10.303744607513995,
+      "p95": 31.092638565927686,
+      "maximum": 34.36857949834727,
+      "fraction_over_1": 0.8571428571428571
+    },
+    {
+      "run": "r17_XY1_Z3_V060",
+      "mesh_sha256": "8297c0fadd0ca7a9b2485fbcbf0a34afaa991b7cad337e61ee26da5daab8f0e7",
+      "node_count": 26928,
+      "element_count": 6144,
+      "nodes_sha256": "e1eff499227cf1b5b997ff1bfd23b4f99272332e21e0c5cba2b4ce7a1c49cea1",
+      "median": 7.631397953022345,
+      "p95": 21.957867271146004,
+      "maximum": 26.96473117016138,
+      "fraction_over_1": 0.84375
+    }
+  ]
+}

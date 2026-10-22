@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "SMALL_H1_LQ_L0",
+    "SMALL_H1_NT_L0"
+  ],
+  "sampling": "matched physical nodal fields, same mesh; physical densities divided by n0/p0",
+  "phi_relative_L2_nodes": 3.4520795940308056e-05,
+  "u_relative_L2_nodes": 0.001250605504147634,
+  "n_reference_scaled_difference_RMS": 7.847373427268495e-05,
+  "p_reference_scaled_difference_RMS": 7.847359392650024e-05,
+  "maximum_density_shift": 0.00029030777457483836,
+  "Q_over_V2_relative_difference": 3.554749834940861e-05,
+  "theta_over_V2_relative_difference": 5.166372894044277e-05,
+  "density_degeneracy_note": "For this c||z, x-driven, traction-free extruded geometry, the isothermal first-order LQ density change is zero to roundoff. Do not divide by its near-zero perturbation norm or claim a finite first-order carrier response.",
+  "passed": false
+}

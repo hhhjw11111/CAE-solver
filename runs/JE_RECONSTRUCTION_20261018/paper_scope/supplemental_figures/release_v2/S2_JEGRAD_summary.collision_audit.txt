@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\Administrator\Desktop\gemini�޸�\Console3\solver_v2\runs\JE_RECONSTRUCTION_20261018\paper_scope\supplemental_figures\release_v2\S2_JEGRAD_summary.pdf
+pages: 1
+visible text boxes: 86
+stroke paths: 163
+
+
+summary: 0 fail, 0 warn, 10 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

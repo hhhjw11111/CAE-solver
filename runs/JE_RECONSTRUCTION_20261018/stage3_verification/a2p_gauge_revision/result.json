@@ -1,0 +1,333 @@
+{
+  "native": {
+    "check": "A2P",
+    "label": "gauge",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_GAUGE\\TPSolverV2.exe",
+      "verify",
+      "A2P",
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_gauge_revision\\A2P_fields"
+    ],
+    "exit_code": 1,
+    "timed_out": false,
+    "seconds": 30.280999999959022,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_gauge_revision\\A2P_gauge.txt",
+    "sha256": "7ac741f4ebafa436f4590a51a93279f5bc1a8b38a6cc502b66b561155bfd1669",
+    "exports_complete": true,
+    "passed": false
+  },
+  "comparisons": [
+    {
+      "case": "electric_eneg_L0",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 0.0,
+        "phi_mod_constant": 4.005934284325451e-31,
+        "n": 4.733165431326071e-30,
+        "p": 3.747089299799806e-30,
+        "tz_scaled": 3.944304526105059e-31,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_eneg_L1",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 1.1479437019748901e-29,
+        "phi_mod_constant": 1.4791141972893971e-30,
+        "n": 1.1832913578315177e-29,
+        "p": 1.1438483125704671e-29,
+        "tz_scaled": 2.0091301179847644e-30,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_eneg_L2",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 0.0,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 0.0,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_epos_L0",
+      "geometry_identical": true,
+      "phi_constant_offset_V": -6.938893903907228e-18,
+      "maximum_normalized_changes": {
+        "w": 1.0097419586828951e-15,
+        "phi_mod_constant": 3.469446951953614e-16,
+        "n": 4.844580256443337e-16,
+        "p": 4.4030868267517326e-16,
+        "tz_scaled": 1.1365922646568786e-15,
+        "Dn_scaled": 4.912736883966318e-15,
+        "Jn_scaled": 5.384581669432009e-15,
+        "Jp_scaled": 5.384581669432009e-15,
+        "Q": 1.6666627319803367e-14
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_epos_L1",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 0.0,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 0.0,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_epos_L2",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 5.395335399281984e-27,
+        "phi_mod_constant": 3.06299898355346e-29,
+        "n": 1.8853775634782182e-28,
+        "p": 2.3113624522975646e-28,
+        "tz_scaled": 5.167038929197627e-29,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_ezero_L0",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 6.938893903907228e-18,
+      "maximum_normalized_changes": {
+        "w": 0.0,
+        "phi_mod_constant": 4.163336342344337e-16,
+        "n": 4.1013565056379395e-16,
+        "p": 4.3056350083580903e-16,
+        "tz_scaled": 0.0,
+        "Dn_scaled": 6.7307270867900115e-15,
+        "Jn_scaled": 6.2450045135165055e-15,
+        "Jp_scaled": 7.0915495697931874e-15,
+        "Q": 1.2499970489852525e-14
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_ezero_L1",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 0.0,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 0.0,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "electric_ezero_L2",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 0.0,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 0.0,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_eneg_L0",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 1.700029006457271e-15,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 2.2143745170843943e-14,
+        "n": 5.687359760053621e-16,
+        "p": 5.379844965665294e-16,
+        "tz_scaled": 5.093148125467906e-15,
+        "Dn_scaled": 1.6049918299677315e-14,
+        "Jn_scaled": 1.7444379274422772e-14,
+        "Jp_scaled": 1.7416623698807143e-14,
+        "Q": 7.023792941917133e-14
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_eneg_L1",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 4.440892098500626e-16,
+      "maximum_normalized_changes": {
+        "w": 4.846761401677897e-16,
+        "phi_mod_constant": 6.925627857887149e-15,
+        "n": 5.482696131256078e-16,
+        "p": 3.9110398401364975e-16,
+        "tz_scaled": 1.2045919817182948e-14,
+        "Dn_scaled": 3.00778801870985e-14,
+        "Jn_scaled": 2.9733160378242474e-14,
+        "Jp_scaled": 2.9802549317281546e-14,
+        "Q": 1.1726162792861655e-13
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_eneg_L2",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 3.0531133177191805e-16,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 3.0531133177191805e-15,
+        "n": 4.2178967061083995e-16,
+        "p": 3.877196127347874e-16,
+        "tz_scaled": 1.8405416080113923e-14,
+        "Dn_scaled": 5.988389310328542e-14,
+        "Jn_scaled": 7.210725072592794e-14,
+        "Jp_scaled": 7.211418961983185e-14,
+        "Q": 1.57737722848139e-13
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_epos_L0",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 1.5265566588595902e-16,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 7.632783294297951e-15,
+        "n": 4.652975552564921e-16,
+        "p": 7.024216120697933e-16,
+        "tz_scaled": 6.356026815979021e-15,
+        "Dn_scaled": 1.8349561377432045e-14,
+        "Jn_scaled": 2.015054789694659e-14,
+        "Jp_scaled": 2.017830347256222e-14,
+        "Q": 4.99998819594101e-14
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_epos_L1",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 1.7069679003611782e-15,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 1.681715971756222e-14,
+        "n": 7.319393017224336e-16,
+        "p": 7.046265295200093e-16,
+        "tz_scaled": 1.3496148643099559e-14,
+        "Dn_scaled": 3.619469709708935e-14,
+        "Jn_scaled": 3.918393387536412e-14,
+        "Jp_scaled": 3.919781166317193e-14,
+        "Q": 1.291663617284761e-13
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_epos_L2",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 4.3021142204224816e-16,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 8.18789480661053e-15,
+        "n": 3.361713238578349e-16,
+        "p": 4.18699167182984e-16,
+        "tz_scaled": 1.7090495685323503e-14,
+        "Dn_scaled": 5.0790788670847037e-14,
+        "Jn_scaled": 5.742281650178427e-14,
+        "Jp_scaled": 5.732220254017761e-14,
+        "Q": 1.57737722848139e-13
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_ezero_L0",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 5.745404152435185e-15,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_ezero_L1",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 3.231174267785264e-16,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 1.1862039128729407e-14,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    },
+    {
+      "case": "mechanical_ezero_L2",
+      "geometry_identical": true,
+      "phi_constant_offset_V": 0.0,
+      "maximum_normalized_changes": {
+        "w": 4.03896783473158e-16,
+        "phi_mod_constant": 0.0,
+        "n": 0.0,
+        "p": 0.0,
+        "tz_scaled": 2.4702462297909733e-14,
+        "Dn_scaled": 0.0,
+        "Jn_scaled": 0.0,
+        "Jp_scaled": 0.0,
+        "Q": 0.0
+      },
+      "passed": true
+    }
+  ],
+  "comparison_count": 18,
+  "equivalence_passed": true,
+  "maximum_equivalence_change": 1.57737722848139e-13,
+  "source_still_same": true,
+  "core_sources_unchanged": true,
+  "all_passed": false
+}

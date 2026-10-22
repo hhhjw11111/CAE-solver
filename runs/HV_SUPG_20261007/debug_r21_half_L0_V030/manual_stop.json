@@ -1,0 +1,7 @@
+{
+  "status": "STOPPED_BY_OPERATOR_FOR_PERFORMANCE_WARNING_OVERHEAD",
+  "pid": 20660,
+  "reason": "Repeated argument-temporary warnings during per-node I/O; restarting a separate Debug build with only /check:noarg_temp_created. No numerical or correctness gate relaxed.",
+  "timestamp": "2026-10-08T12:49:57.2133269+08:00",
+  "command": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_DEBUG_20261008_R21\\TPSolverV2.exe run-f1 C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\debug_r21_half_L0_V030\\input.nml C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\debug_r21_half_L0_V030"
+}

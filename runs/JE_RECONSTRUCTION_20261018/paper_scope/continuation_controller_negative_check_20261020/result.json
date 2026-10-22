@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "scenario": "Missing prior completion must stop without any child/native launch",
+  "observed_exit_code": 1,
+  "child_started": false,
+  "synthetic_fixture_only": true
+}

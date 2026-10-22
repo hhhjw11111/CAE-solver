@@ -1,0 +1,6 @@
+{"state": "WAITING_FOR_EXISTING_JOINT1", "utc": "2026-10-20T06:35:20.470003+00:00", "pid": 21588, "process_handle_opened": true}
+{"state": "PRIOR_JOINT1_COMPLETED", "utc": "2026-10-20T07:07:37.867689+00:00", "finished_sha256": "f83014994d9c5206bc6c91fd367bd222979afa6eca541a88bd2637f2bc3d52e6"}
+{"state": "STARTING", "utc": "2026-10-20T07:07:40.631241+00:00", "step": "joint2", "arguments": ["C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_paper_resumed_20261020.py", "--batch", "joint", "--joint-level", "2", "--execute"]}
+{"state": "CHILD_STARTED", "utc": "2026-10-20T07:07:40.656646+00:00", "step": "joint2", "pid": 35588}
+{"state": "CHILD_EXITED", "utc": "2026-10-20T07:12:38.792610+00:00", "step": "joint2", "exit_code": 1}
+{"state": "STOPPED_REVIEW_REQUIRED", "utc": "2026-10-20T07:12:38.794612+00:00", "reason": "RuntimeError('joint2 failed with exit 1; no retry or next step')", "retries": 0, "production_acceptance": false}

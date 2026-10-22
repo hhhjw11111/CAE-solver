@@ -1,0 +1,13 @@
+{
+  "sampling": "element centers of exploratory old 6V field",
+  "tau_directional_over_trace": {
+    "median": 13.781713411730253,
+    "p95": 2536.5715867288304,
+    "max": 32591.000428507366
+  },
+  "trace_supg_streamline_added_diffusion_over_physical_D": {
+    "median": 0.014416268071592651,
+    "p95": 0.37396182635150715,
+    "max": 1.1944087144706668
+  }
+}

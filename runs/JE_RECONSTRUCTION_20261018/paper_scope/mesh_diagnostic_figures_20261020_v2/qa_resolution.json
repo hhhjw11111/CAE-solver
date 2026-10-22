@@ -1,0 +1,31 @@
+{
+  "static_audit_exit_code": 1,
+  "static_scan_scope": "Single file AST; imported configure/export helpers are not followed",
+  "finding_resolution": "The five FAILs and export-DPI warning concern style/export/alignment implemented in the imported unchanged helper. Actual generated PDF/SVG/PNG and render-time alignment are independently inspected below; no source-rule result has been relabeled.",
+  "runtime_and_artifact_checks": {
+    "font_family": [
+      "Arial",
+      "DejaVu Sans"
+    ],
+    "pdf_fonttype": 42,
+    "svg_fonttype": "none",
+    "pdf_fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "svg_text_elements": 53,
+    "png_size_px": [
+      4322,
+      3543
+    ],
+    "png_dpi": [
+      599.9988,
+      599.9988
+    ],
+    "alignment_verdict": "PASS"
+  },
+  "helper_sha256": "4153bbba48bc5bf53ec8c0fcafb1080acaef020174a459ab14f9c79b77238680",
+  "figure_script_sha256": "cf3b6f00ca9d712c3f1b06cbf6f08cd01c2dbc33ce9ce60e70fb50498982109e",
+  "helper_file": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\plot_je_paper_supplements_20261018.py",
+  "production_acceptance": false
+}

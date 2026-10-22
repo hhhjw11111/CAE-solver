@@ -1,0 +1,16 @@
+{
+  "pdf": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\reports\\study_report_final.pdf",
+  "pdf_sha256": "8f4a518a5f598bf13c00b22bcc476cca929fad3127a478f5659a21dc895b412a",
+  "output_dir": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\render_qa\\study_report_final\\8f4a518a5f59",
+  "pages": 11,
+  "raster_pages": 11,
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+    "-r",
+    "105",
+    "-png",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\reports\\study_report_final.pdf",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\render_qa\\study_report_final\\8f4a518a5f59\\page"
+  ],
+  "exit_code": 0
+}

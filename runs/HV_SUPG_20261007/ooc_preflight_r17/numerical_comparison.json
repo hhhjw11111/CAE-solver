@@ -1,0 +1,38 @@
+{
+  "native_G07_passed_both": true,
+  "strict_stdout_bytes_identical": false,
+  "physical_extrema_comparison": {
+    "g07_minimum_temperature": {
+      "IC": 300.35297844639865,
+      "OOC": 300.35297844639865,
+      "relative_difference": 0.0
+    },
+    "g07_maximum_temperature": {
+      "IC": 301.795984917465,
+      "OOC": 301.795984917465,
+      "relative_difference": 0.0
+    },
+    "g07_minimum_electron_concentration": {
+      "IC": 5.0492720242519894e+20,
+      "OOC": 5.049272024252008e+20,
+      "relative_difference": 3.634203091428483e-15
+    },
+    "g07_maximum_electron_concentration": {
+      "IC": 1.1210273846175194e+21,
+      "OOC": 1.1210273846175252e+21,
+      "relative_difference": 5.1445380185495255e-15
+    },
+    "g07_minimum_hole_concentration": {
+      "IC": 88110498579.13785,
+      "OOC": 88110498579.13744,
+      "relative_difference": 4.675802671999036e-15
+    },
+    "g07_maximum_hole_concentration": {
+      "IC": 196475951923.28232,
+      "OOC": 196475951923.27264,
+      "relative_difference": 4.923794576856114e-14
+    }
+  },
+  "maximum_relative_extrema_difference": 4.923794576856114e-14,
+  "scope": "STORAGE_PREFLIGHT_NOT_HIGH_VOLTAGE_OR_SPATIAL_ACCEPTANCE"
+}

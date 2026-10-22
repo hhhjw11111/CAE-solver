@@ -1,0 +1,16 @@
+{
+  "recovered_at": "2026-10-22T10:23:56+0800",
+  "reason": "batch 20261022T003858: power audit raised UnicodeDecodeError (audit_je_sensitivity_power_20261015.py reads manifest.json with the GBK locale codec); solve and classification had completed",
+  "python_utf8_mode": true,
+  "native_solve_repeated": false,
+  "solved_file_hashes_unchanged": {
+    "metrics.txt": "19ade39850aae669d59c90e689a3bcade2a98c2cca3b99dc8d33bf9cc1eff73c",
+    "nodes.csv": "7a6424a894d2d0286c9ad55c704b250cabfb2d7bac7e16bfd328750638680187",
+    "summary.json": "794d56d3506d0f1652d0a2c715153e3cd9f0f15be86c13fa88deaf26e19ba750",
+    "input.nml": "62acee1e6a5fdd3bf29b281706e9f7ce9bea75418804468ad7979bcd4b5f410d",
+    "manifest.json": "200fb1e97db6af9b375d800e21fd25fe815d4ff6dc67916695627e30e35c48e7"
+  },
+  "script": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\finish_je_postprocess_20261022.py",
+  "script_sha256": "6612ebe2dd874c6cfa8fbb49d45b1af746b8a63f9466ceb22f8b09655a53ca3a",
+  "note": "Only the post-processing tail of run_native was executed; solve, metrics and classification are untouched."
+}

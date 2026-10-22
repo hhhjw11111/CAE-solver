@@ -1,0 +1,27 @@
+{
+  "artifact_kind": "PAPER_VERIFICATION_CASES_NOT_PRODUCTION_ACCEPTANCE",
+  "existing_S1_S2_delivery_files_rehashed": 31,
+  "new_SUPG_log_cases": 38,
+  "new_native_verification_runs": 0,
+  "original_A1_A2_unchanged": true,
+  "production_acceptance": false,
+  "files_sha256": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\论文验证算例说明.txt": "ddddd054718abf7aaa35ab1e72db7e01508bbd9a8ae88e1c42142ffccd08abfe",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\all_38_cases.csv": "1878807ec190fca9cc67afa861c047c3c2cae70bc558ad1251ad66154e48e8cc",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\collision_audit.json": "fb79a11fb5aab3d2ae86bd4614255ab9b2acc707e080f320731eeed5818ea88a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\figure_contract.json": "52ccabfcee509682e776a5746e838ad48892f60122772658230a8d796f1ef8ef",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\finest_grid_cases.csv": "bf97f05f6a3a04e1666864524133e4586bdb13d6631ad94a3065f26083058ddf",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\provenance.json": "9cc5eaa8689391abab310942ea76989ec94409ba53ba9b310416b69ca2514377",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\S3_SUPG_analytical_verification.alignment.json": "5e68b0ac64b92c4f82d155e28683210db843063707cab6e901ba0b771e96f70c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\S3_SUPG_analytical_verification.alignment.svg": "de60ecc352557a83180b1be0add71beaf36c91167ab67179d445aac5c0248124",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\S3_SUPG_analytical_verification.pdf": "a0c54abd33c48e06b601cefcf70f62d8f5882d7a1968e0d945ca5d907f7c2d99",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\S3_SUPG_analytical_verification.png": "cce7fd761b669349ba7996ac4bdd88d737b0dc59d7c2b105b7213beffa15fbbb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\S3_SUPG_analytical_verification.svg": "d74ef867d2ec1fb3c38ef3fb708cd214122d7f3aaa9af21aaa8228060d5ff072",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\paper_validation_cases_20261020\\S3_SUPG\\visual_and_source_qa.json": "e2d14b8ee035340872bff65cd9e4c5ee94a82886757e7d01a40494f408243284",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\verification_reuse\\acceptance.json": "112721dd832210f1363e9fee2662b35edf37533814f103ce5e6418a3eda8b13c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\supplemental_figures\\final_delivery.json": "f94f82eee0e9e842831f6b247ed261b78e0e307fdac6ad654189b7f980443ca7",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\checkpoint_joint1_6V_20261020\\REPORT.txt": "da045606b69751c2b38bd795f6ee60b032a981c856a01471a6e81c016040757d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\checkpoint_radial_complete_20261020\\REPORT.txt": "e281c538f164221416ebf06da81c9a1c8c15a1c4a95f117d3974eb7ac368f084",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\checkpoint_angular_complete_20261019\\REPORT.txt": "f4a0baacb7776cad3bb5ec2ffa35b5ebda59d4dd6bd69e9595a79ad74b3cf3fe"
+  }
+}

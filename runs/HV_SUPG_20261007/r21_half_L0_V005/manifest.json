@@ -1,0 +1,20 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\TPSolverV2.exe",
+  "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L0_V005\\H1_Y_HALF.mesh",
+  "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+  "voltages": [
+    0.5
+  ],
+  "supg_scale": 1.0,
+  "model": "FROZEN_DRIFT_HEAT_ZNO_NT",
+  "runtime_env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "TPS_PARDISO_STORAGE": "IC",
+    "TPS_PARDISO_SPLIT_HOLES": "1"
+  },
+  "log_step_limit": 1.0,
+  "global_log_limit": false,
+  "domain_symmetry": "Y_HALF"
+}

@@ -1,0 +1,7 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=31616, elements=7168
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.4676E-06,
+status_code=80
+status_message=Continuation start state is not converged: PARDISO phase 13 failed with error -9                              .
+1

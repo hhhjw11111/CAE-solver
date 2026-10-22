@@ -14,9 +14,82 @@ module linear_solver_check_m
   implicit none
   private
 
-  public :: verify_linear_solver_l01
+  public :: verify_linear_solver_l01,verify_hole_split_linear_solver
 
 contains
+
+  subroutine verify_hole_split_linear_solver(status)
+    type(SolverStatusType), intent(out) :: status
+    integer, parameter :: n=14,nnz=n*n
+    integer :: ia(n+1),ja(nnz),row,col,k,example
+    real(dp) :: a(n,n),exact(n),rhs(n),values(nnz),solution(n),full(n),error,full_error
+    type(PardisoDiagnosticsType) :: diagnostics,full_diagnostics
+    type(SolverStatusType) :: local_status
+    logical :: passed,row_hole,col_hole
+    call clear_status(status);passed=.true.
+    write(*,'(a)') 'verification_id=BLK_checked_hole_block_linear_solve'
+    do example=1,3
+      a=0
+      do row=1,n
+        exact(row)=sin(.3_dp*row)+.1_dp
+        row_hole=mod(row-1,NDOF_NODE)+1==F_ETA_P
+        if(example==3.and.row_hole) exact(row)=1.0e14_dp
+        do col=1,n
+          col_hole=mod(col-1,NDOF_NODE)+1==F_ETA_P
+          if(row==col) then
+            a(row,col)=4.0_dp+.1_dp*row
+          else if(row_hole.and..not.col_hole) then
+            a(row,col)=.03_dp*sin(real(row+col,dp))
+          else if(.not.row_hole.and.col_hole) then
+            if(example==2) a(row,col)=.1_dp
+            if(example==3) a(row,col)=1.0e-14_dp
+          else if(abs(row-col)==1) then
+            a(row,col)=-.2_dp
+          end if
+        end do
+      end do
+      ! Include a zero incremental Dirichlet row in the manufactured systems.
+      a(1,:)=0;a(1,1)=1;exact(1)=0
+      rhs=matmul(a,exact);k=0
+      do row=1,n
+        ia(row)=k+1
+        do col=1,n
+          k=k+1;ja(k)=col;values(k)=a(row,col)
+        end do
+      end do
+      ia(n+1)=k+1
+      call solve_csr_pardiso(n,ia,ja,values,rhs,full,full_diagnostics,local_status,try_hole_split=.false.)
+      if(.not.local_status%is_ok()) then
+        status=local_status;return
+      end if
+      call solve_csr_pardiso(n,ia,ja,values,rhs,solution,diagnostics,local_status,try_hole_split=.true.)
+      if(.not.local_status%is_ok()) then
+        status=local_status;return
+      end if
+      error=maxval(abs(solution-exact)/max(1.0_dp,abs(exact)))
+      full_error=maxval(abs(solution-full)/max(1.0_dp,abs(full)))
+      passed=passed.and.error<1.0e-12_dp.and.full_error<1.0e-12_dp.and.diagnostics%split_attempted
+      if(example==1) then
+        passed=passed.and.diagnostics%split_accepted
+        ! Dense input contains many explicit zeros; only the two hole diagonals
+        ! and the nonzero primary band/diagonals should reach factorization.
+        passed=passed.and.diagnostics%split_hole_entries==2.and. &
+          diagnostics%split_primary_entries<12*12
+      end if
+      if(example>=2) passed=passed.and..not.diagnostics%split_accepted
+      if(example==3) passed=passed.and.diagnostics%split_backward_error>1.0e-11_dp &
+        .and.diagnostics%split_backward_error<1.0_dp
+      write(*,'(a,i0,a,l1,a,es12.4,a,es12.4)') 'block_case=',example, &
+        ',split_accepted=',diagnostics%split_accepted,',solution_error=',error, &
+        ',full_matrix_difference=',full_error
+    end do
+    if(passed) then
+      write(*,'(a)') 'verification_result=PASS'
+    else
+      write(*,'(a)') 'verification_result=FAIL'
+      call set_status(status,STATUS_VERIFICATION_FAILED,'Checked hole-block solve or full-matrix fallback failed.')
+    end if
+  end subroutine verify_hole_split_linear_solver
 
   subroutine verify_linear_solver_l01(status)
     type(SolverStatusType), intent(out) :: status

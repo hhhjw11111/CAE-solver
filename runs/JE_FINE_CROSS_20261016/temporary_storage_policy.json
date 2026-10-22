@@ -1,0 +1,11 @@
+{
+  "reason": "Each solve generates about 10 GiB of disposable PARDISO factors; keeping all factors would exhaust disk space",
+  "scope": "Only factor files under completed new-study run-owned pardiso_ooc directories",
+  "preexisting_runs_untouched": true,
+  "scientific_evidence_retained": true,
+  "configuration_retained": true,
+  "cleanup_evidence": "Per-run temporary_factor_cleanup.json records exact names and sizes after native exit",
+  "script": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\collect_je_fine_cross_20261016.ps1",
+  "sha256": "dc45e916bb38c5f8b7636c968cd6536bfee9dcd2ca27aebb8a23891fbfaefece",
+  "numerical_settings_unchanged": true
+}

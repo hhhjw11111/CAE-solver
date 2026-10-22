@@ -1,0 +1,14 @@
+{
+  "reason": "Larger angular meshes need more compute time; run A32 cases alone and use all 8 physical CPU cores",
+  "A16_threads": {"OMP_NUM_THREADS": 4, "MKL_NUM_THREADS": 4},
+  "A24_threads": {"OMP_NUM_THREADS": 4, "MKL_NUM_THREADS": 4},
+  "A32_threads": {"OMP_NUM_THREADS": 8, "MKL_NUM_THREADS": 8},
+  "storage": "OOC",
+  "OOC_core_MB": 4000,
+  "A16_wall_time_limit_seconds": 1800,
+  "A24_V060_wall_time_limit_seconds": 1800,
+  "A24_V080_wall_time_limit_seconds": 7200,
+  "A32_wall_time_limit_seconds": 7200,
+  "unchanged": ["executable", "source", "physics", "J.E heat source", "load targets", "residual and update tolerances", "flux gates", "sensitivity gates"],
+  "interpretation": "A time-limited failed attempt is not evidence that a solution does not exist"
+}

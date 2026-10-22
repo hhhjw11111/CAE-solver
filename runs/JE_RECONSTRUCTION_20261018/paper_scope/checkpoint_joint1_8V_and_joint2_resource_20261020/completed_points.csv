@@ -1,0 +1,2 @@
+﻿run,voltage_V,supg_scale,ooc_core_mb,theta_max_K,joule_mW,total_VM_sample_max_MPa,total_VM_peak_change_vs_source_percent,power_gap_all_boundary_percent,power_gap_electrode_percent,SUPG_fraction_of_gap_percent,n_local_change_percent,p_local_change_percent,local_field_passed,native_seconds,status
+A40_R20_Z16_S1_V080,8.0,1.0,8000,24.258294681417908,9.856141252058787,6.240901715666213,0.7545686319310008,0.5108156581672105,0.5147363002478266,99.69548697951868,1.8937710404898962,2.213539786498028,False,6221.937999999995,SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING

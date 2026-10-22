@@ -1,0 +1,49 @@
+{
+  "mesh_sha256": "fc6827087d6a85f7751bed8acac74b3cecab521374ba7e1c8c79e1f5ddf672b2",
+  "nodes_sha256": "6332cdb467e3cbc7f96706aa353322fe40502b466fd27e163c94ef4e1a13755c",
+  "scope": "DIRECTIONAL_EDGE_VOLTAGE_DROP_DIAGNOSTIC_NOT_ERROR_ESTIMATOR",
+  "directions": {
+    "radial": {
+      "all": {
+        "p50": 0.059501743342945626,
+        "p95": 7.634614667460841,
+        "maximum": 9.130844504819601,
+        "fraction_over_one": 0.24305555555555555
+      },
+      "touches_annulus": {
+        "p50": 0.0043345553290167465,
+        "p95": 3.2491203247322207,
+        "maximum": 5.664919776472484,
+        "fraction_over_one": 0.07346938775510205
+      }
+    },
+    "angular": {
+      "all": {
+        "p50": 4.348663450278908,
+        "p95": 16.55882500968837,
+        "maximum": 17.37831214232894,
+        "fraction_over_one": 0.7083333333333334
+      },
+      "touches_annulus": {
+        "p50": 4.713402459071066,
+        "p95": 6.9051226429986645,
+        "maximum": 7.256649626926109,
+        "fraction_over_one": 0.8775510204081632
+      }
+    },
+    "thickness": {
+      "all": {
+        "p50": 0.03555323752465006,
+        "p95": 0.16711624061409658,
+        "maximum": 0.26003084350356115,
+        "fraction_over_one": 0.0
+      },
+      "touches_annulus": {
+        "p50": 0.05790625326174774,
+        "p95": 0.16416423586324277,
+        "maximum": 0.21639795083527755,
+        "fraction_over_one": 0.0
+      }
+    }
+  }
+}

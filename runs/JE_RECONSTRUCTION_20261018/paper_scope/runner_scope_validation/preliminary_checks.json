@@ -1,0 +1,44 @@
+{
+  "scope": "RUNNER_GATE_TESTS_ONLY_NO_NATIVE_SOLVE",
+  "checks": [
+    {
+      "check": "paper_missing_gate",
+      "passed": true,
+      "error_type": "RuntimeError",
+      "message": "STAGE3_GATE_MISSING: C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\runner_scope_validation\\DOES_NOT_EXIST.json"
+    },
+    {
+      "check": "paper_missing_required_check",
+      "passed": true,
+      "error_type": "RuntimeError",
+      "message": "PAPER_REQUIRED_CHECKS_INCOMPLETE: require ten targeted checks and sixteen legacy CLI comparisons"
+    },
+    {
+      "check": "original_actual_full_suite_FAIL",
+      "passed": true,
+      "error_type": "RuntimeError",
+      "message": "STAGE3_GATE_NOT_PASSED: no mesh solver may start"
+    },
+    {
+      "check": "original_readonly_plan_scope_and_root",
+      "passed": true,
+      "scope": "JE_RECONSTRUCTION_ORIGINAL_20261018"
+    },
+    {
+      "check": "paper_readonly_plan_scope_and_root",
+      "passed": true,
+      "scope": "JE_PAPER_MINIMAL_20261018"
+    },
+    {
+      "check": "paper_rejects_other_scope_root",
+      "passed": true
+    },
+    {
+      "check": "original_rejects_other_scope_root",
+      "passed": true
+    }
+  ],
+  "source_FAIL_sha256": "fd2e95cc3c544d597cc4b922fd6b1b07d14dbb3806ee324cb87d50e217924f93",
+  "runner_sha256": "087a9ff302a63f5e87c9d937657265702190eddf52117ae3e7e2fcb66fad0c9a",
+  "identity_mutation_test": "WAITING_FOR_PAPER_ACCEPTANCE"
+}

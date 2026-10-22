@@ -1,0 +1,211 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=36213, elements=8064
+newton_iteration=0, voltage_factor=  8.3333E-02, joule_factor=  1.0000E+00, residual=  4.9926E-18,
+newton_iteration=0, voltage_factor=  1.2500E-01, joule_factor=  1.0000E+00, residual=  1.1425E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3420E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  1.2500E-01, joule_factor=  1.0000E+00, residual=  6.2048E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.3333E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  1.2500E-01, joule_factor=  1.0000E+00, residual=  4.4116E-13,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3017E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  1.2500E-01, joule_factor=  1.0000E+00, residual=  1.5074E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1979E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  1.2500E-01, joule_factor=  1.0000E+00, residual=  7.9464E-18,
+newton_iteration=0, voltage_factor=  1.6667E-01, joule_factor=  1.0000E+00, residual=  7.9841E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5642E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  1.6667E-01, joule_factor=  1.0000E+00, residual=  1.9228E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5452E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  1.6667E-01, joule_factor=  1.0000E+00, residual=  3.4416E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.8871E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  1.6667E-01, joule_factor=  1.0000E+00, residual=  1.7614E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.4625E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  1.6667E-01, joule_factor=  1.0000E+00, residual=  1.0560E-17,
+newton_iteration=0, voltage_factor=  2.5000E-01, joule_factor=  1.0000E+00, residual=  2.3873E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.4698E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  2.5000E-01, joule_factor=  1.0000E+00, residual=  1.7961E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.1368E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  2.5000E-01, joule_factor=  1.0000E+00, residual=  3.8533E-14,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1055E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  2.5000E-01, joule_factor=  1.0000E+00, residual=  2.6881E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3351E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  2.5000E-01, joule_factor=  1.0000E+00, residual=  1.9772E-17,
+newton_iteration=0, voltage_factor=  3.3333E-01, joule_factor=  1.0000E+00, residual=  3.1735E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0928E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  3.3333E-01, joule_factor=  1.0000E+00, residual=  3.4377E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3461E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  3.3333E-01, joule_factor=  1.0000E+00, residual=  2.7507E-13,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.2445E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  3.3333E-01, joule_factor=  1.0000E+00, residual=  4.0284E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1212E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  3.3333E-01, joule_factor=  1.0000E+00, residual=  3.3639E-17,
+newton_iteration=0, voltage_factor=  4.1667E-01, joule_factor=  1.0000E+00, residual=  3.1990E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5282E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  4.1667E-01, joule_factor=  1.0000E+00, residual=  3.9274E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5207E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  4.1667E-01, joule_factor=  1.0000E+00, residual=  8.4610E-13,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5206E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  4.1667E-01, joule_factor=  1.0000E+00, residual=  6.1037E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0333E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  4.1667E-01, joule_factor=  1.0000E+00, residual=  5.1216E-17,
+newton_iteration=0, voltage_factor=  5.0000E-01, joule_factor=  1.0000E+00, residual=  3.3249E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1492E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  5.0000E-01, joule_factor=  1.0000E+00, residual=  4.7579E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7362E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  5.0000E-01, joule_factor=  1.0000E+00, residual=  2.2341E-12,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3793E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  5.0000E-01, joule_factor=  1.0000E+00, residual=  8.4610E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.7740E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  5.0000E-01, joule_factor=  1.0000E+00, residual=  6.8801E-17,
+newton_iteration=0, voltage_factor=  5.8333E-01, joule_factor=  1.0000E+00, residual=  3.6514E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.3741E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  5.8333E-01, joule_factor=  1.0000E+00, residual=  6.1927E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.6210E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  5.8333E-01, joule_factor=  1.0000E+00, residual=  5.5657E-12,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1107E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  5.8333E-01, joule_factor=  1.0000E+00, residual=  1.1774E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.6314E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  5.8333E-01, joule_factor=  1.0000E+00, residual=  9.8805E-17,
+newton_iteration=0, voltage_factor=  6.6667E-01, joule_factor=  1.0000E+00, residual=  4.3190E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0190E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  6.6667E-01, joule_factor=  1.0000E+00, residual=  8.7859E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.6160E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  6.6667E-01, joule_factor=  1.0000E+00, residual=  1.4199E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.8137E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  6.6667E-01, joule_factor=  1.0000E+00, residual=  1.5251E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5718E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  6.6667E-01, joule_factor=  1.0000E+00, residual=  1.3344E-16,
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  5.5181E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.6502E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  1.3848E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.6787E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  4.0019E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.6936E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  2.0057E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1751E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  1.7640E-16,
+newton_iteration=0, voltage_factor=  8.3333E-01, joule_factor=  1.0000E+00, residual=  7.5528E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.0465E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  8.3333E-01, joule_factor=  1.0000E+00, residual=  2.5046E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.8070E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  8.3333E-01, joule_factor=  1.0000E+00, residual=  1.3730E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3219E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  8.3333E-01, joule_factor=  1.0000E+00, residual=  3.1508E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1085E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  8.3333E-01, joule_factor=  1.0000E+00, residual=  2.3432E-16,
+newton_iteration=0, voltage_factor=  9.1667E-01, joule_factor=  1.0000E+00, residual=  1.1064E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5146E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  9.1667E-01, joule_factor=  1.0000E+00, residual=  5.5615E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.2163E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  9.1667E-01, joule_factor=  1.0000E+00, residual=  6.7294E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0193E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  9.1667E-01, joule_factor=  1.0000E+00, residual=  4.7553E-15,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3026E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  9.1667E-01, joule_factor=  1.0000E+00, residual=  3.1532E-16,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.7807E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1971E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.8064E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.2315E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.6227E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.9275E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.1983E-13,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0772E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.1839E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3680E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.4755E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 6.0000000000000000E+000
+hole_radius_m= 3.0000000000000001E-006
+ring_width_m= 4.9999999999999998E-007
+minimum_jacobian= 4.5086853266269152E-025
+total_volume_m3= 1.8586283579408098E-016
+maximum_stage_balance= 1.9679591487121477E-013
+maximum_accepted_residual= 3.4754784107055233E-016
+maximum_accepted_update= 1.3899845551584010E-010
+final_voltage_factor= 1.0000000000000000E+000
+final_joule_factor= 1.0000000000000000E+000
+joule_W= 3.9067471781865891E-003
+terminal_power_W= 2.8194328595455534E-003
+heat_out_W= 3.8810419201033841E-003
+heat_balance_relative= 6.5797086196749226E-003
+electron_balance_relative= 4.6397921115182189E-006
+hole_balance_diagnostic= 9.0812538827145731E-006
+physical_exterior_heat_out_W= 3.8808902983397237E-003
+physical_exterior_terminal_power_W= 2.8193824033230660E-003
+physical_exterior_heat_balance_relative= 6.6185188514982125E-003
+physical_exterior_electron_balance_relative= 4.7049412144858270E-006
+physical_exterior_hole_balance_diagnostic= 9.8344156968925402E-006
+symmetry_heat_out_W= 1.5162176366039026E-007
+symmetry_electron_out_A= 6.1228967023193016E-011
+symmetry_hole_out_A= 4.0337629606884389E-063
+symmetry_heat_flux_relative= 3.8810231823286082E-005
+symmetry_electron_flux_relative= 6.5149102967608335E-008
+symmetry_hole_flux_diagnostic= 7.5316181417796683E-007
+joule_quadrature_4_5_relative= 3.9638134802655237E-009
+electron_right_A= 4.6991376285509509E-004
+hole_right_A= 2.6778638281222459E-057
+ring_volume_m3= 5.1050870743559382E-018
+ring_Q_mean_W_m3= 3.3602614070356535E+013
+ring_Q_p95_W_m3= 5.8410952612525148E+013
+ring_E_mean_V_m= 3.7709805817447888E+005
+ring_abs_n_relative_mean= 3.2496765472035422E-002
+ring_abs_p_relative_mean= 5.5301612855940756E-002
+ring_theta_mean_K= 1.6891961174949568E+001
+ring_displacement_mean_m= 4.6552524339758459E-010
+E_p95_V_m= 4.6919024226103188E+005
+E_above_1e6_volume_fraction= 1.1424330742913810E-002
+theta_max_K= 2.0912578617218287E+001
+maximum_abs_n_relative= 2.0596675119735504E+000
+maximum_abs_p_relative= 4.5556074059800205E+000
+displacement_max_m= 1.2076223916343403E-009
+minimum_mu_n_ratio= 8.7391466861904632E-001
+stress_von_mises_max_Pa= 5.2481836423713295E+006
+case_acceptance=PASS_NOT_MESH_ACCEPTANCE

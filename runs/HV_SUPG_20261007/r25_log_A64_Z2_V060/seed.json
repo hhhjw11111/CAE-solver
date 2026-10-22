@@ -1,0 +1,6 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_log_A48_A64_Z2_V060\\nodes.csv",
+  "sha256": "0018ad1e8930beca6e879f9084a3c7d2c003a68e30ee8ccf820382475427e220",
+  "voltage": 6.0,
+  "status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION"
+}

@@ -64,6 +64,8 @@ module material_point_m
     real(dp) :: joule_E(3) = 0.0_dp
     real(dp) :: joule_eta_n = 0.0_dp
     real(dp) :: joule_eta_p = 0.0_dp
+    real(dp) :: joule_grad_eta_n(3) = 0.0_dp
+    real(dp) :: joule_grad_eta_p(3) = 0.0_dp
     real(dp) :: joule_T = 0.0_dp
     real(dp) :: recombination_eta_n = 0.0_dp
     real(dp) :: recombination_eta_p = 0.0_dp
@@ -86,6 +88,7 @@ contains
     real(dp) :: drift_diffusion_n(3), drift_diffusion_p(3)
     real(dp) :: mobility_field_n(3), mobility_field_p(3)
     real(dp) :: g_n, g_p, rate_n, rate_p, rate_T
+    real(dp) :: work_n, work_p
 
     call clear_status(status)
     response = MaterialPointResponseType()
@@ -179,6 +182,25 @@ contains
     tangent%joule_T = load%joule_factor * ELEMENTARY_CHARGE * ( &
       response%n*dot_product(state%electric_field,matmul(mobility_n_T,state%electric_field)) &
       + response%p*dot_product(state%electric_field,matmul(mobility_p_T,state%electric_field)))
+    if (material%heat_source_current_work) then
+      ! Diagnostic electrical work of the complete drift-diffusion current.
+      ! This branch is deliberately not advertised as a thermoelectric closure.
+      work_n=dot_product(state%electric_field,response%current_n)
+      work_p=dot_product(state%electric_field,response%current_p)
+      response%joule_heat_n=load%joule_factor*work_n
+      response%joule_heat_p=load%joule_factor*work_p
+      response%joule_heat=response%joule_heat_n+response%joule_heat_p
+      tangent%joule_E=load%joule_factor*(response%current_n+response%current_p + &
+        matmul(transpose(tangent%current_n_E)+transpose(tangent%current_p_E),state%electric_field))
+      tangent%joule_eta_n=load%joule_factor*dot_product(state%electric_field,tangent%current_n_eta_n)
+      tangent%joule_eta_p=load%joule_factor*dot_product(state%electric_field,tangent%current_p_eta_p)
+      tangent%joule_grad_eta_n=load%joule_factor*matmul(transpose(tangent%current_n_grad_eta_n), &
+        state%electric_field)
+      tangent%joule_grad_eta_p=load%joule_factor*matmul(transpose(tangent%current_p_grad_eta_p), &
+        state%electric_field)
+      tangent%joule_T=load%joule_factor*dot_product(state%electric_field, &
+        tangent%current_n_T+tangent%current_p_T)
+    end if
     tangent%recombination_eta_n = rate_n * response%n
     tangent%recombination_eta_p = rate_p * response%p
     tangent%recombination_T = rate_T
@@ -202,6 +224,18 @@ contains
       tangent%joule_E=load%joule_factor*2.0_dp*ELEMENTARY_CHARGE*( &
         material%reference_n*mobility_field_n+material%reference_p*mobility_field_p)
       tangent%joule_eta_n=0.0_dp;tangent%joule_eta_p=0.0_dp;tangent%joule_T=0.0_dp
+      tangent%joule_grad_eta_n=0.0_dp;tangent%joule_grad_eta_p=0.0_dp
+      if (material%heat_source_current_work) then
+        response%joule_heat_n=load%joule_factor*dot_product(state%electric_field,response%current_n)
+        response%joule_heat_p=load%joule_factor*dot_product(state%electric_field,response%current_p)
+        response%joule_heat=response%joule_heat_n+response%joule_heat_p
+        tangent%joule_E=load%joule_factor*(response%current_n+response%current_p + &
+          matmul(transpose(tangent%current_n_E)+transpose(tangent%current_p_E),state%electric_field))
+        tangent%joule_grad_eta_n=load%joule_factor*matmul(transpose(tangent%current_n_grad_eta_n), &
+          state%electric_field)
+        tangent%joule_grad_eta_p=load%joule_factor*matmul(transpose(tangent%current_p_grad_eta_p), &
+          state%electric_field)
+      end if
     end if
 
     if (.not. response_is_finite(response)) then
@@ -259,7 +293,9 @@ contains
     matrix(20,7:9) = tangent%joule_E
     matrix(20,10) = tangent%joule_T
     matrix(20,14) = tangent%joule_eta_n
+    matrix(20,15:17) = tangent%joule_grad_eta_n
     matrix(20,18) = tangent%joule_eta_p
+    matrix(20,19:21) = tangent%joule_grad_eta_p
     matrix(21,10) = tangent%recombination_T
     matrix(21,14) = tangent%recombination_eta_n
     matrix(21,18) = tangent%recombination_eta_p

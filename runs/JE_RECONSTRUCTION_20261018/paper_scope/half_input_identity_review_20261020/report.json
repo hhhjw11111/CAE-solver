@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "voltage": 6,
+      "passed": true,
+      "source_input": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\input.nml",
+      "half_input": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\input.nml",
+      "source_sha256": "822c269c821ae8ed4a400e19cb2afbd4ce4391113050db09db003a8692cef65a",
+      "half_sha256": "3098347c608dd842c800e4c2d6117a96dda4869b676315b3ec7b83ceae485c39",
+      "differences": {
+        "restart_nodes_file": [
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/TR5321~1/nodes.csv'",
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/STF8B0~1/seeds/A32_R1~1/nodes.csv'"
+        ],
+        "half_y_symmetry": [
+          null,
+          ".true."
+        ],
+        "mesh_file": [
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/MESH_R~2/H11C0A~1.MES'",
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/STF8B0~1/seeds/A32_R1~1/H1_Y_H~1.MES'"
+        ],
+        "case_id": [
+          "'JE_SENS_V6_S1'",
+          "'JE_RECON_A32_R18_Z14_V060_unperturbed'"
+        ]
+      }
+    },
+    {
+      "voltage": 8,
+      "passed": true,
+      "source_input": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\input.nml",
+      "half_input": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_unperturbed\\input.nml",
+      "source_sha256": "c2a6dfa51793a5ced822026c5d1b5f4b8e2a494cdd7bc80215d4292005f34542",
+      "half_sha256": "ab1cf8fe13a17fe525bd7e5afc92eab0dd862c8a7ca9811702a2db9857e7fead",
+      "differences": {
+        "restart_nodes_file": [
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/TR6733~1/nodes.csv'",
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/STF8B0~1/seeds/A32_R1~2/nodes.csv'"
+        ],
+        "half_y_symmetry": [
+          null,
+          ".true."
+        ],
+        "mesh_file": [
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/GLOBAL~1/MESH_R~2/H11C0A~1.MES'",
+          "'C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/STF8B0~1/seeds/A32_R1~2/H1_Y_H~1.MES'"
+        ],
+        "case_id": [
+          "'JE_SENS_V8_S1'",
+          "'JE_RECON_A32_R18_Z14_V080_unperturbed'"
+        ]
+      }
+    }
+  ],
+  "note": "Full source versus actual half input: only case identity, geometry/seed paths and explicit symmetry switch differ; physical parameters, loads, tolerances and SUPG identical"
+}

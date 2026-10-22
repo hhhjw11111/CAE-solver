@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 402, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 298, in run_native
+    completion['physical_power'] = physical_power(directory, job)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 308, in physical_power
+    power_audit(directory)
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\audit_je_sensitivity_power_20261015.py", line 14, in run
+    manifest=json.loads((directory/'manifest.json').read_text())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 63: illegal multibyte sequence

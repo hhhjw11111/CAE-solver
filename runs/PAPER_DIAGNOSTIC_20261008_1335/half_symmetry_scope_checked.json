@@ -1,0 +1,120 @@
+{
+  "checked_at": "2026-10-08T14:01:56.500639+08:00",
+  "scope": "CODE_AND_EXISTING_PAIRED_EVIDENCE_ONLY",
+  "reflection": "y -> -y; plane y=0; retained y>=0 domain",
+  "field_parity": {
+    "u1": "even",
+    "u2": "odd, explicitly zero on symmetry plane",
+    "u3": "even",
+    "phi": "even, natural zero normal electric flux",
+    "eta_n": "even, natural zero normal electron flux",
+    "eta_p": "even, natural zero normal hole flux",
+    "theta": "even, natural zero normal heat flux"
+  },
+  "tensor_check": "Source defines c||+z, diagonal mobility/permittivity/thermal conductivity, normal elastic blocks and diagonal engineering shear blocks. Reflection strain signs are [+,+,+,-,+,-]. Nonzero piezo e15 couples even/even; e24 odd/odd; e31/e32/e33 even/even. Thermal stress normal components and pyroelectric +z are even. These actual candidate tensors are invariant under this y reflection.",
+  "load_check": "Centered circular hole and rectangular plate invariant; left/right x contacts each prescribe uniform phi, zero carrier perturbations and theta. Remaining artificial-plane natural tangential traction and scalar flux conditions match reflection; rigid x/z anchors fix gauge and must be gauge-normalized in displacement comparison.",
+  "existing_pairs": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\half_equivalence_r21_L0_V030.json",
+      "sha256": "90d9563d206bd71880249f45e6bfa915f0c29c62daad8db905c4382f48cb32bf",
+      "passed": true,
+      "scope": "SAMPLED_SYMMETRIC_BRANCH_EQUIVALENCE",
+      "errors": [],
+      "runs": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay",
+          "execution": {
+            "exit_code": 0,
+            "seconds": 44.57800000000043,
+            "timed_out": false,
+            "input_sha256": "d7714a2d2dab03ee587823dcfe78302c391fb867525f26bd5eb20e61e1e94a0d",
+            "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e"
+          },
+          "stdout_sha256": "37181901e6bc8a1614ed4032561330c11cfdd9e8ac26e483c879ada13850c642",
+          "newton_lines": [
+            "newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.2313E-16,"
+          ]
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V030_perturbed",
+          "execution": {
+            "exit_code": 0,
+            "seconds": 85.96799999999985,
+            "timed_out": false,
+            "input_sha256": "9398112e4de231d5d03c3415b0cdacdbf4bb198c40174768e65f07afcaab9511",
+            "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e"
+          },
+          "stdout_sha256": "eeb2aa8602d3c86763b5a95721c04576e912d8671c4d47a072907a7948cd62f1",
+          "newton_lines": [
+            "newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0323E-07,",
+            "newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.6640E-10,",
+            "newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.9374E-15,",
+            "newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0081E-16,"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\half_equivalence_r21_XY2Z3_V060.json",
+      "sha256": "46008a0065c4ac072522919f3570f2923c0f986e954e53496ad57a5b35fbcdba",
+      "passed": true,
+      "scope": "SAMPLED_SYMMETRIC_BRANCH_EQUIVALENCE",
+      "errors": [],
+      "runs": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_XY2_Z3_V060_replay",
+          "execution": {
+            "exit_code": 0,
+            "seconds": 147.60899999999947,
+            "timed_out": false,
+            "input_sha256": "6ee000a5ba73cb5d49747684e76e2ffad1c64e0071b9ff7b7290a8c8fbd86fae",
+            "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e"
+          },
+          "stdout_sha256": "2eb92e3dec6321bbba3847c9d7e65ffa779b94b7414caaae8b55c2908a503e29",
+          "newton_lines": [
+            "newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.6018E-16,"
+          ]
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_XY2_Z3_V060",
+          "execution": {
+            "exit_code": 0,
+            "seconds": 85.76499999999942,
+            "timed_out": false,
+            "input_sha256": "548e74679b74ce9f48d654da6b3f1aa4d9cbb81ce2c360595ecd598843aed836",
+            "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e"
+          },
+          "stdout_sha256": "63c66c6e73e03500aef0bfc29d752ffb650bf56282881c411cc1fb9d910ca9ed",
+          "newton_lines": [
+            "newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.9163E-16,"
+          ]
+        }
+      ]
+    }
+  ],
+  "shared_half_definition": "A32/A48/A64 archived R21 inputs and A96 use half_y_symmetry=true, candidate ZNO_F1_NT, y>=0, SUPG scale=1 and directional tau=true. Planned A128 uses same. Only angular mesh count changes; radial18 and thickness16 retained.",
+  "limitations": [
+    "6V pair is previously converged state residual/flux recheck, not two independent disturbed Newton recoveries.",
+    "3V pair includes disturbed recovery; neither proves asymmetric branch absence, dynamical stability, or mesh convergence.",
+    "Extensive integrals refer to actual half domain; doubling requires explicitly stated symmetric full-domain reconstruction.",
+    "No new large full-domain paired run performed."
+  ],
+  "source_evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90",
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+      "sha256": "5faeed33dc4300a7603d80e1134b2fe8ceedf2ae423bd472889ea7ee04655a25"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_hv_half_y.py",
+      "sha256": "dd135a698840db61a7c1ce6dff894c3549f45089e46acbc3c576005d936485ca"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\generate_hv_half_y.py",
+      "sha256": "45e114b4643b0f4193379f7573f02ea0710306062ad63e2f0b2d7e38249559d1"
+    }
+  ]
+}

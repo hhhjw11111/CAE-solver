@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "full_mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\meshes\\A48_R22_Z18\\H1.mesh",
+  "full_mesh_sha256": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+  "preserved_full_manifest_sha256": "c85dd007925537f67af1f053b127003121446846b6fcd33267877960e5a21776",
+  "half_manifest_sha256": "0e4191d9062425517c3934ce7792b732b300da833e1e3a914185e7c841a232d0",
+  "half_mesh_sha256": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+  "half_nodes": 42213,
+  "half_elements": 9504,
+  "source_geometry_unchanged": true
+}

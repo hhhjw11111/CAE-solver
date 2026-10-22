@@ -1,0 +1,23 @@
+{
+  "source_preflight": {
+    "pass": 20,
+    "warn": 1,
+    "fail": 0,
+    "warning": "PNG provided; TIFF not requested. Vector PDF/SVG are supplied."
+  },
+  "pdf_minimum_text_pt": 5.25,
+  "required_minimum_pt": 5,
+  "collision_fail": 0,
+  "collision_warn": 0,
+  "alignment": "PASS",
+  "manual_visual_review": {
+    "all_four_panels_inspected": true,
+    "no_clipping_or_label_overlap": true,
+    "all_38_cases_present": true,
+    "same_column_limits": true,
+    "shared_legend_with_color_and_marker": true,
+    "no_smoothing_no_fitted_orders_no_statistical_intervals": true,
+    "reference_lines_are_finest_grid_limits_only": true
+  },
+  "scientific_scope": "Analytical bar verification only; production acceptance remains false"
+}

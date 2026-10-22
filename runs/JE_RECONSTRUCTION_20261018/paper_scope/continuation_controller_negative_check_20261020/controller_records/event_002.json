@@ -1,0 +1,7 @@
+{
+  "state": "STOPPED_REVIEW_REQUIRED",
+  "utc": "2026-10-20T06:35:00.282642+00:00",
+  "reason": "RuntimeError('Prior batch has no true completion record; no new solve started')",
+  "retries": 0,
+  "production_acceptance": false
+}

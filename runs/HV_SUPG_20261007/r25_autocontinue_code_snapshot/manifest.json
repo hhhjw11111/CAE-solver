@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-08T21:20:53.088835+08:00",
+  "source_hashes": {
+    "scripts/summarize_hv_preliminary.py": "df32d96ae30e3743e1ce23bf02ca4026b57b68037586de8c94e2c17182cb5f66",
+    "scripts/prepare_hv_zero_heat_guess.py": "58f57b605f922e9a057d7025058d25de5551a0a7b11c2b64af977e341f618f82",
+    "tests/test_hv_preliminary.py": "2f61c81142ddc8f365b6f50375415038a043241e95943559c3a3375288478b6e",
+    "tests/test_hv_zero_heat_guess.py": "06ba87a3e604792e3e4afaba283d5dd959e28dd58894377f3b4d582f440f6d24"
+  },
+  "hv_tests_passed": 70,
+  "native_source_changed": false
+}

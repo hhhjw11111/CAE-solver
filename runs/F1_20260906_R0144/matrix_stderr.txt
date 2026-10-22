@@ -1,0 +1,5 @@
+Exception: C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\scripts\run_f1_case.ps1:66
+Line |
+  66 |  бн accepted) { throw "F1 case failed: $CaseName; see preserved stdout, s бн
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | F1 case failed: MESH_H1_NT_L2; see preserved stdout, stderr and metrics.

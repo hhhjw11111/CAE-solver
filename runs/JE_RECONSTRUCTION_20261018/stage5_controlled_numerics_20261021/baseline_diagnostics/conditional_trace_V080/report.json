@@ -1,0 +1,57 @@
+{
+  "scope": "CONDITIONAL_HOLE_SUBPROBLEM_DIAGNOSTIC_ONLY",
+  "six_other_fields_held_fixed": true,
+  "production_acceptance": false,
+  "native_gates_changed": false,
+  "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080",
+  "voltage_V": 8.0,
+  "native_model_unchanged": true,
+  "source_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\manifest.json": "38008481e1e68de3508d757aff1aa17b6a06bafa5b7ef0a069f969f0ad99ddd9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\execution.json": "fc8af79e38b37cb2bae93eb7e3fd305eed9d2fae3cda253d515d065b2cbfcba1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\nodes.csv": "0643982754ba44d56ff247409e29e2a0bc7c1e5d5d2cb4b6a517a61cd184bce3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\input.nml": "4306a77361312062483cc54230868ca03ad91b7cb21feae248f63b2f324ae800",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\metrics.txt": "8198e7df14d7c5f4644890e967db52c508fa99aed973640fde05a96fbe7efea3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\meshes\\A48_R22_Z18\\H1_Y_HALF.mesh": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_hole_subproblem_20261021.py": "866117e6d2971323c9edb4abffaf71831e26e30a6cdd6b425788119a18baa2c0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": "d9f398ef998fcfeb7a702d1475bb933a46e15b7dd527b26ae5052bb997379ded"
+  },
+  "results": [
+    {
+      "order": 3,
+      "metric": "trace",
+      "scale": 1.0,
+      "iterations": [
+        {
+          "iteration": 0,
+          "scaled_residual": 0.014785967131725856,
+          "update": 0.024483300707487977,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 8.212065534498384e-05,
+          "update": 0.00022742475214806873,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 8.397035276232975e-09,
+          "update": 2.152746074867081e-08,
+          "step": 1.0
+        },
+        {
+          "iteration": 3,
+          "scaled_residual": 6.348809685967603e-16,
+          "update": 0.0
+        }
+      ],
+      "ring_abs_p_relative_mean": 0.08089371525074887,
+      "native_ring_abs_p_relative_mean": 0.08137112790750514,
+      "maximum_eta_change": 0.02425585442787916,
+      "local_density_perturbation_change": 0.00597013003967692,
+      "seconds": 159.32900000000154
+    }
+  ],
+  "limitation": "Not a seven-field solve or a mesh/SUPG certificate. Native coupled replay required."
+}

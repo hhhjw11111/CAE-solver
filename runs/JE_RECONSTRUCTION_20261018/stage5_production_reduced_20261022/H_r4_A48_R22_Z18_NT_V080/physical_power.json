@@ -1,0 +1,13 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "voltage_V": 8.0,
+  "raw_JE_W": 0.004409740255924864,
+  "raw_symmetry_cut_power_W": 1.878585047020017e-07,
+  "raw_physical_exterior_power_W": 0.004409642850656295,
+  "physical_exterior_gap_relative": 2.2088663485069622e-05,
+  "reconstructed_full_JE_W": 0.008819480511849729,
+  "independent_vs_native_relative": 2.9142567652811443e-12,
+  "comparison_limit": 1e-08,
+  "power_gap_acceptance_threshold": null,
+  "note": "Gap is diagnostic; never heat compensation."
+}

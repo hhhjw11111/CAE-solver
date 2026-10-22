@@ -1,0 +1,83 @@
+{
+  "status": "MINIMUM_STEP_FAILED",
+  "target_reached": false,
+  "last_accepted_scale": 1.5,
+  "last_accepted_directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+  "attempts": [
+    {
+      "attempt": 0,
+      "scale": 1.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_000_scale_1",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale1_V060",
+      "exit_code": 0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true
+    },
+    {
+      "attempt": 1,
+      "scale": 1.25,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_001_scale_1.25",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_000_scale_1",
+      "exit_code": 0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true
+    },
+    {
+      "attempt": 2,
+      "scale": 1.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_001_scale_1.25",
+      "exit_code": 0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true
+    },
+    {
+      "attempt": 3,
+      "scale": 1.75,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_003_scale_1.75",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+      "exit_code": 1,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "accepted": false
+    },
+    {
+      "attempt": 4,
+      "scale": 1.625,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_004_scale_1.625",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+      "exit_code": 1,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "accepted": false
+    },
+    {
+      "attempt": 5,
+      "scale": 1.5625,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_005_scale_1.5625",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+      "exit_code": 1,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "accepted": false
+    },
+    {
+      "attempt": 6,
+      "scale": 1.53125,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_006_scale_1.53125",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+      "exit_code": 1,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "accepted": false
+    },
+    {
+      "attempt": 7,
+      "scale": 1.515625,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_007_scale_1.515625",
+      "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r18_coarse_scale_path_V060\\attempt_002_scale_1.5",
+      "exit_code": 1,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "accepted": false
+    }
+  ],
+  "mesh_validated": false,
+  "stabilization_sensitivity_validated": false,
+  "complete_quantitative_0_8V": false
+}

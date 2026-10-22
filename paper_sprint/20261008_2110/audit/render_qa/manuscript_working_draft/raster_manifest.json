@@ -1,0 +1,14 @@
+{
+  "pdf": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\manuscript\\manuscript_working_draft.pdf",
+  "pages": 15,
+  "raster_pages": 15,
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+    "-r",
+    "105",
+    "-png",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\manuscript\\manuscript_working_draft.pdf",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\render_qa\\manuscript_working_draft\\page"
+  ],
+  "exit_code": 0
+}

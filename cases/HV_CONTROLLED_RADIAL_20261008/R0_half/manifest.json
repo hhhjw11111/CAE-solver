@@ -1,0 +1,17 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_RADIAL_20261008\\R0_full\\H1_XY0_Z2.mesh",
+  "source_mesh_sha256": "b7577d2d30ed12c56118036d31b9f552e7eb62b2f5b4526e0298b271d158103d",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_RADIAL_20261008\\R0_half\\H1_Y_HALF.mesh",
+  "mesh_sha256": "23cb9d420452e21eda9b425c3f04960c6ae813f10e65bd30ac368c47906d4911",
+  "node_map_sha256": "d20d757e4113f376e03a81e81406b2408363ead502dd84c4bebf65c574d35be0",
+  "nodes": 28485,
+  "elements": 6272,
+  "minimum_sampled_jacobian": 1.8041854280092397e-24,
+  "reflection_audit": {
+    "matched_nodes": 55680,
+    "matched_elements": 12544,
+    "maximum_coordinate_error_m": 1.2705494208814505e-20
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_hv_field_shape.py": "96532490c24c0f03bc51493820d19604d669f2bcca517574936ce99343c38bac",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_hv_mesh.py": "41a0eaa2e1db16d4ed70a8630a7d836157d51137c9a9460eebe39aa85d75923b",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_hv_stabilization.py": "de8ecb61923fa63265cb8f11d6daf996d16a09fc6bc18fb701df9829cf0e14ef",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_sensitivity_power_20261015.py": "e54eae6130557bfa22717c0a3b120404bdc1dd7971ed2d65f2aaee80b9c0fda4",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": "d9f398ef998fcfeb7a702d1475bb933a46e15b7dd527b26ae5052bb997379ded",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\generate_f1_main_cases.py": "7e098f7b4732fc43365061be353e7b68e8801f4b8b46c1e77505a8c1ec693d4d",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\generate_hv_surface_mesh.py": "ca3013df748d45b0cdffa2f1256493dbb58aefbd2e40cefaf33c486aac60a89c",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\hv_runtime.py": "d18e94f6becd4113856e6f271439373022af2a607198034f26749424d69583ca",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_hv_regression.py": "d8f966bd70415e968da1160a96f423e79a636efe067be0d4801ccefe2e7ac8bf",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_hv_sweep.py": "8c99775ace5b78d76e8d46cfa45eeeb21e6d4d8e1562e03e46f3755140fb96b5",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_fine_cross_20261016.py": "baf570800b8bf2e63029e4fa1881d69ecfa6ffc86fd4401ae0314cd1b0f5456b",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_sensitivity_20261015.py": "b3af5473a966b83ad1f759096a4a983059df7afee5c30046f3997516f12ad68a",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\summarize_je_sensitivity_20261015.py": "a5b667e335ebd42a4fe6ef299e0946ccc25c299e8cf270ab56a301bcb9946502",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\transfer_hv_initial_guess.py": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_hex20_boundary_geometry.py": "2c356f26a8cf721064faeec6a5936b44dc4e139d351cc1cfbae68979ef462fb4",
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\summarize_je_fine_cross_20261016.py": "fd020c9a1c4c993d99d24a4e2e7bf387ce0e73a69b354b711b37f417741c9fc3"
+}

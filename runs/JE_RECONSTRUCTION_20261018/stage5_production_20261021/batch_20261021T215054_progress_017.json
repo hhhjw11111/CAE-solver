@@ -1,0 +1,72 @@
+{
+  "events": [
+    {
+      "name": "F_r3_A32_R18_Z14_LQ_V080",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A32_R18_Z14_LQ_V080",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A40_R20_Z16_LQ_V080",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V000",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V005",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V010",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V015",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V020",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V025",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V030",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V035",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V040",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V045",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V050",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V055",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V060",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V065",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    }
+  ]
+}

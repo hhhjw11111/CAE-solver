@@ -1,0 +1,13 @@
+{
+  "source_run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed",
+  "not_a_new_solve": true,
+  "hashes": {
+    "input.nml": "3098347c608dd842c800e4c2d6117a96dda4869b676315b3ec7b83ceae485c39",
+    "execution.json": "171258d522dd0fab51cc7237d9d01c617ebf3de8cf3ee934d755f510bfbb1832",
+    "manifest.json": "bb6b4b05905ecf4bb853cb45baaabcafa02939a7dcaad1bfaefd84c8b69ea0f4",
+    "summary.json": "0004ca4cead5353f6a2259fc1d0c0b99b864040ab4e6dae0f59483fabf5b85e9",
+    "field_audit.json": "40f784def79d300777e6db98af805fa70d4c335a939801867aaf7efb98daa618",
+    "metrics.txt": "ce1a50f6e40981cd8bf28e2792a16550b116288333e277681022dca9064ad32b",
+    "nodes.csv": "d13928b983ea237cfabdb55acac8dfd2dde6065d6d6737c9f01a4e655c5b48b9"
+  }
+}

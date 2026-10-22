@@ -1,0 +1,66 @@
+{
+  "completed": [
+    {
+      "run": "A40_R20_Z16_S1_V060",
+      "voltage_V": 6.0,
+      "supg_scale": 1.0,
+      "ooc_core_mb": 8000,
+      "theta_max_K": 14.106379396166403,
+      "joule_mW": 5.789207778629319,
+      "total_VM_sample_max_MPa": 3.6146441488732997,
+      "total_VM_peak_change_vs_source_percent": 0.8010340506769562,
+      "power_gap_all_boundary_percent": 0.39481116386665116,
+      "power_gap_electrode_percent": 0.39847053000169835,
+      "SUPG_fraction_of_gap_percent": 99.83490923895339,
+      "n_local_change_percent": 1.790631320304832,
+      "p_local_change_percent": 2.984925706812308,
+      "local_field_passed": false,
+      "native_seconds": 4349.547000000006,
+      "status": "SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060",
+      "carrier_worst_locations": {
+        "eta_n": {
+          "node": 1063,
+          "xyz_um": [
+            4.663303464075385,
+            9.15224836895291,
+            -0.5
+          ],
+          "source_mapped_perturbation": 0.8721504137892511,
+          "target_solved_perturbation": 0.8950188269548891,
+          "maximum_relative": 0.01790631320304832,
+          "normalization": 1.277114552075688,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        },
+        "eta_p": {
+          "node": 52335,
+          "xyz_um": [
+            3.5,
+            0.0,
+            0.5
+          ],
+          "source_mapped_perturbation": 0.6135635640237198,
+          "target_solved_perturbation": 0.6728596019003836,
+          "maximum_relative": 0.029849257068123077,
+          "normalization": 1.9865163726298518,
+          "passed": false,
+          "scope": "Location only; no nodes removed from original audit"
+        }
+      },
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\completion.json": "e67b8076689641ed5fac8c4bab4b3af3221912022b844c9b6450ecdd7231ac86",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\execution.json": "e229022fbf39360e6cc26f4323c92a66cf7169ab78fd501aa639e57ef2d3b8d2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\manifest.json": "c900c9fe7ecef48f602e780629509db447c9c461e78635d79a6d00bc88e88301",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\metrics.txt": "b8670b10fef47fd6c9170fb5c534adcc99876c8fc0d18389f8f0634503bac4fe",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\mapped_field_comparison.json": "48072d39b746c68d9fd9a809dfbab18c1c398ba24fceaa664cd080152f6cc20b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\power_audit\\decomposition.json": "62884826992be74c012caad23b00fb1f4f179303fde3cf31de1db7d3c3e626e7"
+      }
+    }
+  ],
+  "incomplete": [],
+  "production_acceptance": false,
+  "thresholds_changed": false,
+  "limitation": "Completed single-point audits only. Peak stress changes are diagnostics; no stress-field convergence certificate. Incomplete points and old FAIL records are not promoted.",
+  "script_sha256": "3858d01e10d2072881b903c077008583703003b4a367c1294be5f9b17bed0a9a"
+}

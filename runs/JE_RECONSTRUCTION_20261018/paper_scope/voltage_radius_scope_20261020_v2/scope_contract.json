@@ -1,0 +1,75 @@
+{
+  "scope": "JE_PAPER_VOLTAGE_RADIUS_20261020",
+  "case_count": 38,
+  "voltage_values_V": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0
+  ],
+  "voltage_step_assumption_V": 0.5,
+  "main_radius_um": 3,
+  "voltage_models": [
+    "LQ",
+    "NT"
+  ],
+  "radius_comparison": {
+    "radii_um": [
+      2,
+      3,
+      4
+    ],
+    "voltages_V": [
+      6,
+      8
+    ],
+    "model": "NT",
+    "r3_endpoints_reused": true
+  },
+  "previous_nine_case_scope_preserved": true,
+  "thresholds_changed": false,
+  "physics_changed": false,
+  "LQ_definition": "Linearized carrier transport with frozen mobility/diffusion and three-stage one-way coupling; retains quadratic JE",
+  "NT_definition": "Exponential carriers, temperature-dependent mobility/diffusion and fully coupled feedback",
+  "comparison_interpretation": "Combined model-approximation difference, not isolated temperature-dependence attribution",
+  "NT_acceptance": "Original joint mesh, SUPG, local fields and independent flux gates; all FAIL retained",
+  "LQ_acceptance": "Own spatial and independent-flux validation; nonlinear SUPG gate is not applicable",
+  "radius_acceptance": "Radius-specific mesh/local-field/SUPG evidence required; no inherited r3 certificate",
+  "zero_voltage": "Native equilibrium verification; absolute/reference-scaled errors instead of division by zero power",
+  "main_figure_metrics": [
+    "theta_max_K",
+    "joule_W",
+    "ring_E_mean_V_m",
+    "ring_Q_mean_W_m3"
+  ],
+  "cloud_metrics": [
+    "signed_JE",
+    "phi",
+    "n",
+    "p",
+    "coupled_total_von_Mises"
+  ],
+  "geometry_comparison": "Keep outer dimensions, thickness, materials, boundary loads and 0.5 um annulus width fixed",
+  "plotting_rules": [
+    "Only actual states; no old drift/JE splicing",
+    "No invented unsolved points",
+    "No prescribed direction of trends",
+    "Common data-driven color scales",
+    "Original field-map style retained"
+  ],
+  "all_results_available": false,
+  "production_acceptance": false
+}

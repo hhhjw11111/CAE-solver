@@ -1,0 +1,15 @@
+{
+  "scope": "PREPARATION_ONLY_NO_NATIVE_SOLVE",
+  "initial_checks_file": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_preparation_checks.json",
+  "initial_checks_sha256": "878564d6c0124d3eddd952a14eae0838f3a25374587248bf387dcb0b69a7a2f7",
+  "generator_baseline_checks_still_current": true,
+  "py_compile_after_final_edit": true,
+  "angular_and_joint_plan_review": true,
+  "cleanup_fixture": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_preparation_cleanup_fixture",
+  "cleanup_removes_only_new_selected_factor": true,
+  "cleanup_rejects_live_process": true,
+  "current_files": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_reconstruction_mesh_20261018.py": "d415e657a44996b5d00ed0e88b30605c687b876f124fad335032e40e78a996bc",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0"
+  }
+}

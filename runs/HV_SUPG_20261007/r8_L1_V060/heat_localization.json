@@ -1,0 +1,53 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "groups": {
+    "x_min_contact": {
+      "faces": 72,
+      "heat_out_W": 0.003911585279692409,
+      "absolute_heat_out_W": 0.003911585279692409,
+      "area_m2": 1.9999999999999992e-11
+    },
+    "x_max_contact": {
+      "faces": 72,
+      "heat_out_W": 0.003894195620198421,
+      "absolute_heat_out_W": 0.003894195620198421,
+      "area_m2": 2e-11
+    },
+    "y_min": {
+      "faces": 72,
+      "heat_out_W": 3.5872449980589362e-06,
+      "absolute_heat_out_W": 8.652653849704288e-06,
+      "area_m2": 1.9999999999999992e-11
+    },
+    "y_max": {
+      "faces": 72,
+      "heat_out_W": 3.5872449974311675e-06,
+      "absolute_heat_out_W": 8.652653849985986e-06,
+      "area_m2": 2.0000000000000002e-11
+    },
+    "z_min": {
+      "faces": 384,
+      "heat_out_W": -0.00014452913689387347,
+      "absolute_heat_out_W": 0.0001463815416546989,
+      "area_m2": 3.717259422643157e-10
+    },
+    "z_max": {
+      "faces": 384,
+      "heat_out_W": -5.086394686722532e-06,
+      "absolute_heat_out_W": 5.142140888560456e-06,
+      "area_m2": 3.717259422643157e-10
+    },
+    "hole": {
+      "faces": 288,
+      "heat_out_W": -2.005052741152501e-09,
+      "absolute_heat_out_W": 2.1471010475907943e-07,
+      "area_m2": 1.88494641800719e-11
+    }
+  },
+  "total_heat_out_W": 0.007663337853252983,
+  "mesh_sha256": "44dd715220df77a2bf93be1cb8d38effab7741f6fa8361cfdf25e3f674ad867f",
+  "nodes_sha256": "1c3a8986ac80c0eabaa27a7e56586f50642366a3faded1c4a74af8e6100f7ca5",
+  "difference_from_fortran_W": 1.2836953722228372e-16,
+  "joule_W": 0.00781296411819533,
+  "heat_balance_relative": 0.019151024205254993
+}

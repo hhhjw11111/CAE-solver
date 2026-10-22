@@ -1,0 +1,4 @@
+temperature_control_test=1,load_error= 2.2204460492503131E-016,field_error= 2.7120666823421402E-013,balance= 1.8597289353719894E-016,
+temperature_control_test=2,load_error= 1.1102230246251565E-016,field_error= 1.3603701498610121E-013,balance= 1.6418526452351704E-016,
+verification_id=TCTRL_original_PDE_and_voltage_replay
+verification_result=PASS

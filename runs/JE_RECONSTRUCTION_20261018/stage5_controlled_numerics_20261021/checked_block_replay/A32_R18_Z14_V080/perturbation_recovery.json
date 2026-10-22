@@ -1,0 +1,6 @@
+{
+  "perturbation": 0.001,
+  "maximum_actual_eta_p_change": 0.001000000001171203,
+  "passed": true,
+  "note": "Nonzero perturbation must actually be removed; full/half audit separately tests every final field"
+}

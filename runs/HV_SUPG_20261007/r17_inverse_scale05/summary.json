@@ -1,0 +1,10 @@
+{
+  "completed_diagnostic": true,
+  "accepted_algebraic_samples": 4,
+  "highest_sampled_voltage_V": 6.459621883573423,
+  "stop_reason": "REQUESTED_STEPS_OR_FAILURE",
+  "fixed_voltage_replay_passed": false,
+  "mesh_validated": false,
+  "dynamical_stability_verified": false,
+  "complete_quantitative_0_8V": false
+}

@@ -1,0 +1,8 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_inverse_L2_from6\\accepted_00001_nodes.csv",
+  "sha256": "4a3fbfdeed313cee28c6a4ef1d018da6da2c4510281cd8a516fc8b2a676cd60e",
+  "voltage": 6.0,
+  "status": "INITIAL_GUESS_ONLY_REQUIRES_NEW_SOLVE",
+  "checkpoint_load": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_inverse_L2_from6\\accepted_00001_load.txt",
+  "checkpoint_load_sha256": "ff6fba3e12d62c061de0b8ff509ceaf218c7bfa425432674ac54bf713358cf00"
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "FULL_DOMAIN_Y_REFLECTION_DIAGNOSTIC_NOT_HALF_DOMAIN_VALIDATION",
+  "nodes": 40192,
+  "mesh_coordinate_pair_error_m": 1.1858461261560205e-20,
+  "scaled_scalar_field_defects": {
+    "phi_V": 4.990082421348537e-13,
+    "eta_n": 3.7626867767370786e-11,
+    "eta_p": 5.627744104064192e-10,
+    "theta_K": 1.423115593622372e-13
+  },
+  "maximum_displacement_defect_after_rigid_gauge_m": 6.291742534231467e-23,
+  "nodes_sha256": "6332cdb467e3cbc7f96706aa353322fe40502b466fd27e163c94ef4e1a13755c",
+  "conclusion": "A separate half-domain boundary implementation and full/half regression are still required."
+}

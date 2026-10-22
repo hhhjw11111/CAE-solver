@@ -1,0 +1,30 @@
+{
+  "all_four_equivalence_passed": true,
+  "events": [
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed",
+      "equivalence_passed": true,
+      "perturbation_recovery_passed": true
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_unperturbed",
+      "equivalence_passed": true,
+      "perturbation_recovery_passed": true
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_hole_perturbed",
+      "equivalence_passed": true,
+      "perturbation_recovery_passed": true
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed",
+      "equivalence_passed": true,
+      "perturbation_recovery_passed": true
+    }
+  ],
+  "threshold": 1e-08,
+  "symmetric_mesh_study_permitted": true,
+  "production_acceptance": false,
+  "mesh_validated": false,
+  "limitations": "Symmetric branch only; excludes asymmetric equilibria and dynamical stability"
+}

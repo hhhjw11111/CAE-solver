@@ -1,0 +1,13 @@
+{
+  "run": "ARC_FOLD_XY0_Z2_20261011",
+  "model": "original_drift_conductivity_heat",
+  "heat_source_current_work": false,
+  "mesh": "XY0_Z2",
+  "restart_voltage_V": 6.446124518421723,
+  "status": "NOT_LOCATED",
+  "reason": "bordered_corrector_stagnated_above_original_residual_tolerance",
+  "last_observed_residual_rms": 9.5379E-07,
+  "required_residual_rms": 1E-09,
+  "fold_result_authorized": false,
+  "note": "Fields and logs retained; no fold voltage was promoted."
+}

@@ -1,0 +1,2 @@
+MANIFEST_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_LOG_QUAD_20261008_R23\build_manifest.json
+BUILD_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_LOG_QUAD_20261008_R23\TPSolverV2.exe

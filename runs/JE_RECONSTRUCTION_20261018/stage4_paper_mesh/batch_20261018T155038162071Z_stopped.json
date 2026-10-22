@@ -1,0 +1,7 @@
+{
+  "reason": "CalledProcessError(1, ['C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe', 'C:\\\\Users\\\\Administrator\\\\Desktop\\\\gemini修改\\\\Console3\\\\solver_v2\\\\scripts\\\\audit_je_sensitivity_power_20261015.py', '--runs', 'C:\\\\Users\\\\Administrator\\\\Desktop\\\\gemini修改\\\\Console3\\\\solver_v2\\\\runs\\\\JE_RECONSTRUCTION_20261018\\\\stage4_paper_mesh\\\\A40_R14_Z14_S1_V060'])",
+  "events": [],
+  "fully_validated": false,
+  "no_failed_run_is_skipped": true,
+  "next_action": "Review preserved evidence; no automatic retry or next native job"
+}

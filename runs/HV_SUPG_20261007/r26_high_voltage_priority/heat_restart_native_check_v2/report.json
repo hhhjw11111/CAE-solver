@@ -1,0 +1,58 @@
+{
+  "scope": "ONE_ELEMENT_SCHEDULING_REGRESSION_NOT_HIGH_VOLTAGE_EVIDENCE",
+  "nodes": 20,
+  "elements": 1,
+  "exit_codes": [
+    1,
+    1
+  ],
+  "source_heat_factor": 0.5,
+  "scaled_field_difference": {
+    "ux_m": 2.762653998956401e-15,
+    "uy_m": 1.3974828708171268e-15,
+    "uz_m": 9.855081516745056e-16,
+    "phi_V": 5.551115123125783e-17,
+    "eta_n": 2.2616457318047622e-15,
+    "eta_p": 1.589331964646501e-14,
+    "theta_K": 3.9650822308041304e-19
+  },
+  "native_complete": false,
+  "native_metrics": [
+    {
+      "case_id": "HV_NT_V005",
+      "model": "NT",
+      "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+      "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+      "heat_source": "DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK",
+      "log_weighted_quadrature_order": 3.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "supg_parameters_applicable": "F",
+      "supg_scale": 1.0,
+      "supg_directional_tau": "T",
+      "algebraic_carrier_balance": "WEIGHTED_FREE_ROWS_NOT_PHYSICAL_CURRENT",
+      "zero_source_heat_reference_W": 4.9266931495499996e-05,
+      "continuation_path": "VOLTAGE_THEN_JOULE",
+      "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+      "balance_detail_point": "5, 6.3776758473080473E-013, 9.1915532214537333E-017, 3.8855356597021665E-017, 1.1670844748218551E-017,-9.5787514933640605E-022, 8.2074191714581507E-005"
+    },
+    {
+      "case_id": "HV_NT_V005",
+      "model": "NT",
+      "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+      "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+      "heat_source": "DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK",
+      "log_weighted_quadrature_order": 3.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "supg_parameters_applicable": "F",
+      "supg_scale": 1.0,
+      "supg_directional_tau": "T",
+      "algebraic_carrier_balance": "WEIGHTED_FREE_ROWS_NOT_PHYSICAL_CURRENT",
+      "zero_source_heat_reference_W": 4.9266931495499996e-05,
+      "restart_nodes_file": "C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/runs/HV_SUPG_20261007/r26_high_voltage_priority/heat_restart_native_check_v2/continuous/accepted_00004_nodes.csv",
+      "continuation_path": "VOLTAGE_THEN_JOULE",
+      "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+      "balance_detail_point": "4, 1.1316039615579368E-013, 9.5140638608029775E-017, 1.3259575112481704E-017, 2.3825455081855519E-017, 1.9554549680753574E-021, 8.2074191714581399E-005"
+    }
+  ],
+  "passed": false
+}

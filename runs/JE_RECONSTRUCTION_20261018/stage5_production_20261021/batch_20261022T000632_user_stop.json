@@ -1,0 +1,107 @@
+{
+  "stopped_at": "2026-10-22T00:33:33.1433444+08:00",
+  "reason": "User asked (2026-10-22 chat) to reduce the production matrix; the 49-case batch was stopped so the reduced 30-case matrix can run in a new output directory.",
+  "authorization": "user chat 2026-10-22: 算例减少 把所有要求打包md 我让codex执行 确保任务完整",
+  "stopped_processes": [
+    {
+      "pid": 2160,
+      "role": "python controller"
+    },
+    {
+      "pid": 7472,
+      "role": "TPSolverV2 for F_r3_A32_R18_Z14_LQ_V080"
+    },
+    {
+      "pid": 31748,
+      "role": "py launcher"
+    }
+  ],
+  "still_alive": [],
+  "interrupted_case": "F_r3_A32_R18_Z14_LQ_V080",
+  "interrupted_case_state": "INCOMPLETE_USER_STOP_NOT_A_RESULT (LQ stage 2 in progress)",
+  "last_solver_output": "lq_stage=2 | newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.3610E-04,",
+  "completed_cases": 0,
+  "pardiso_scratch_files": [
+    {
+      "Name": "factors.ind",
+      "Length": 56482696
+    },
+    {
+      "Name": "factors.jal",
+      "Length": 404274688
+    },
+    {
+      "Name": "factors.jau",
+      "Length": 354386432
+    },
+    {
+      "Name": "factors.lnz",
+      "Length": 2147480760
+    },
+    {
+      "Name": "factors.lpr",
+      "Length": 202137344
+    },
+    {
+      "Name": "factors.lup",
+      "Length": 202137344
+    },
+    {
+      "Name": "factors.sin",
+      "Length": 1632368
+    },
+    {
+      "Name": "factors.sle",
+      "Length": 1632368
+    },
+    {
+      "Name": "factors.unz",
+      "Length": 2147482952
+    },
+    {
+      "Name": "factors.upr",
+      "Length": 177193216
+    },
+    {
+      "Name": "factors.uup",
+      "Length": 177193216
+    },
+    {
+      "Name": "factors2.lnz",
+      "Length": 1237532552
+    },
+    {
+      "Name": "factors2.unz",
+      "Length": 1179743648
+    },
+    {
+      "Name": "factors3.lnz",
+      "Length": 0
+    },
+    {
+      "Name": "factors3.unz",
+      "Length": 0
+    },
+    {
+      "Name": "factors4.lnz",
+      "Length": 0
+    },
+    {
+      "Name": "factors4.unz",
+      "Length": 0
+    },
+    {
+      "Name": "factors5.lnz",
+      "Length": 0
+    },
+    {
+      "Name": "factors5.unz",
+      "Length": 0
+    },
+    {
+      "Name": "run_ooc.cfg",
+      "Length": 225
+    }
+  ],
+  "note": "Directory kept as is; it is not a result and must not be reused."
+}

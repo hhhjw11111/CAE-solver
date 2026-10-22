@@ -1,0 +1,106 @@
+{
+  "runs": [
+    "A32_S1_V060",
+    "A32_R14_Z14_S0.5_V060"
+  ],
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0012801660520084246,
+      "rms_relative": 0.0005454659930716516,
+      "normalization": 6.0,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.0015479338228804173,
+      "rms_relative": 0.0006308250893677233,
+      "normalization": 14.10819345194614,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.00041756914829807875,
+      "rms_relative": 0.00019762952263297642,
+      "normalization": 1.023851427470114e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.00078317446375061,
+      "rms_relative": 0.00038556812368773543,
+      "normalization": 1.023851427470114e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 8.895189263959966e-05,
+      "rms_relative": 2.697796381260673e-05,
+      "normalization": 1.023851427470114e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.0013854029487266435,
+      "rms_relative": 0.000229285467688174,
+      "normalization": 1.2785564204421256,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.06399945745210003,
+      "rms_relative": 0.007402229394010221,
+      "normalization": 2.0010730977181246,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "nodes_hashes": [
+    "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+    "d4d3998453781fd81c541bc7de9fb990b196b864526b0b2e848475649fc01493"
+  ],
+  "scope": "same-node field shape; 2% existing tolerance",
+  "locations": {
+    "eta_n": {
+      "maximum_difference_node": 1659,
+      "xyz_um": [
+        -5.0,
+        6.123233995736765e-16,
+        -0.5
+      ],
+      "source_perturbation_at_node": 0.5874304199098246,
+      "target_perturbation_at_node": 0.5856591040748307,
+      "maximum_absolute_perturbation_difference": 0.0017713158349939029,
+      "target_density_min_m3": 1.9440069881213628e+22,
+      "target_density_max_m3": 1.3671338522652753e+23
+    },
+    "eta_p": {
+      "maximum_difference_node": 25986,
+      "xyz_um": [
+        3.5,
+        0.0,
+        0.5
+      ],
+      "source_perturbation_at_node": 0.5076632164843702,
+      "target_perturbation_at_node": 0.6357308090603233,
+      "maximum_absolute_perturbation_difference": 0.12806759257595313,
+      "target_density_min_m3": 6.05564231396348e-31,
+      "target_density_max_m3": 4.2065041253015716e-30
+    }
+  },
+  "power": {
+    "gap_W": 1.061277438119991e-05,
+    "gap_relative": 0.00183315933212425,
+    "electrode_gap_relative": 0.0018840324348771598,
+    "parts": {
+      "quadrature_W": 1.9779184817769746e-09,
+      "SUPG_weighted_W": 1.0562229307874714e-05,
+      "reaction_minus_physical_boundary_W": 4.85671551100908e-08,
+      "free_residual_correction_W": -2.5014056449331903e-16
+    },
+    "decomposition_remainder_W": -1.6530694998614925e-17,
+    "SUPG_fraction_of_gap": 0.9952373364862317,
+    "free_residual_max_A": 8.701143422372871e-16
+  },
+  "ring_p_span_percent": 18.4142592587829
+}

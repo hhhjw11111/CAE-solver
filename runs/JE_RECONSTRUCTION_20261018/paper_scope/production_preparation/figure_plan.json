@@ -1,0 +1,31 @@
+{
+  "status": "FIGURE_PLAN_ONLY_NO_PRODUCTION_DATA_ACCEPTED",
+  "model": "JE_SIMPLIFIED_R0_V1",
+  "branch": "NT",
+  "required_gate": "Actual per-case solve/flux/field and applicable radius-specific mesh/SUPG evidence",
+  "main_question": "How do voltage and hole radius change the accepted current-work branch fields?",
+  "trend_figure": {
+    "radius_um": 3,
+    "voltages_V": [6, 6.5, 7, 7.5, 8],
+    "panels": ["maximum_temperature_rise_K", "JE_volume_power_mW", "ring_mean_electric_field", "ring_mean_JE_density"],
+    "uncomputed_comparators": "No LQ or old-heat curves will be invented or spliced into these nine NT cases."
+  },
+  "cloud_figures": {
+    "voltages_V": [6, 8],
+    "columns_radius_um": [2, 3, 4],
+    "main_variables": ["signed_JE_density", "electric_potential", "signed_electron_relative_perturbation", "signed_hole_relative_perturbation", "coupled_total_von_Mises_stress"],
+    "supporting_variable": "temperature_rise",
+    "slice": "midplane_z_0",
+    "surface_checks": "Review top/bottom carrier extrema before treating the midplane as representative.",
+    "stress_definition": "Total sigma=C:epsilon-e^T E-beta theta; a separate -beta theta panel, if used, is only the constitutive thermal-expansion term.",
+    "rows": ["2D field maps", "enlarged scalar-height surfaces of the identical field"],
+    "style": "scripts/styles/joule_map_height_larger_surfaces.json",
+    "style_policy": "Reuse complete layout, fonts, view, palette and export settings. Replace old numerical limits with common actual-data limits across six endpoint/radius states for each quantity.",
+    "mesh_evaluation": "Element-local HEX20 evaluation; retain derivative jumps and the actual hole radius; no global smoothing or hole interpolation."
+  },
+  "source_tables": ["nine_case_native_and_integral_metrics", "six_endpoint_radius_acceptance_evidence", "sampled_field_extrema_and_locations", "source_input_mesh_build_state_and_style_hashes"],
+  "carrier_policy": "Report n0 and p0, relative perturbations and absolute ranges; a large relative hole change does not imply large absolute hole density.",
+  "power_policy": "Report all-physical-exterior and electrode-only power separately; never add SUPG work to physical heat or terminal power.",
+  "quality": ["native sample reconstruction check", "finite values and actual bounds", "shared color limits", "rendered alignment", "PDF text and collisions", "panel-by-panel visual review"],
+  "preserve": "All old figures and data remain unchanged; new figures require a new output directory and provenance."
+}

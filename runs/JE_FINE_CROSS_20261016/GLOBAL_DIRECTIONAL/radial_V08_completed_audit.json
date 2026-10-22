@@ -1,0 +1,168 @@
+{
+  "local": {
+    "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+    "comparisons": {
+      "phi_V": {
+        "maximum_relative": 0.0005757397477111891,
+        "rms_relative": 0.00015859391183059823,
+        "normalization": 8.000035716814045,
+        "limit": 0.02,
+        "passed": true
+      },
+      "theta_K": {
+        "maximum_relative": 0.000469585455608869,
+        "rms_relative": 0.00018599921380412456,
+        "normalization": 24.259193661939378,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ux_m": {
+        "maximum_relative": 0.0004176475082711195,
+        "rms_relative": 0.00011901712498519186,
+        "normalization": 1.75881330730141e-09,
+        "limit": 0.02,
+        "passed": true
+      },
+      "uy_m": {
+        "maximum_relative": 0.0003215853735126708,
+        "rms_relative": 7.032652767613763e-05,
+        "normalization": 1.75881330730141e-09,
+        "limit": 0.02,
+        "passed": true
+      },
+      "uz_m": {
+        "maximum_relative": 0.00011973021262652673,
+        "rms_relative": 2.6283685239249903e-05,
+        "normalization": 1.75881330730141e-09,
+        "limit": 0.02,
+        "passed": true
+      },
+      "eta_n_density_perturbation": {
+        "maximum_relative": 0.00447989813889243,
+        "rms_relative": 0.00026311194117187336,
+        "normalization": 2.5803048955480983,
+        "limit": 0.02,
+        "passed": true
+      },
+      "eta_p_density_perturbation": {
+        "maximum_relative": 0.012631966316232509,
+        "rms_relative": 0.0009686625774738437,
+        "normalization": 6.865652483033139,
+        "limit": 0.02,
+        "passed": true
+      }
+    },
+    "passed": true,
+    "fully_validated": false,
+    "hashes": {
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R18_Z14_S1_V080\\nodes.csv": "6af7c964eccffb120a81f6390e1c8e1c79a26c3ba905cc5d0a6aaa7cbc8c2cf7",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R18_Z14_S1_V080\\transfer_report.json": "effa1bc34cbaa940abbde78b4a4a977713476299e428e6684a28b1dbc2878ec2",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V080\\nodes.csv": "2e32d36e5bdafa9609cc71dfcf2ac1e59cdfa5bd9519984a02b2e62796480b64",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V080\\manifest.json": "152d94e9496847c0785ed70ece3d700c78f638f0102afdcfb4f2e41a34fabf8d",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V080\\execution.json": "727becc53ecafc3ee3a92e78b1cc798239a29c82436d982030076c296b013b09",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V080\\input.nml": "eefd897ee43343032234cf62df4cbc11ab07a3af7caec7f7f92e5d4d28ee42fd",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V080\\metrics.txt": "df541991fec29e71962d2affe0c255f6031651408e50aadd4f590e3964020931",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V080\\field_audit.json": "013382d3f120407d2a63e8faec72dfa6acf423cf29166fbcc3a283f192ed8850",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\nodes.csv": "2dd917af3ad201884a44803dc4d7a23d4f9aa762c2e08b3835be9a4ea66ed848",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\manifest.json": "5b380b7b30f6f5909d3664405bbaf032c9a997b4815f2dd18ebfd76a542b015d",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\execution.json": "44df1fc566abde3371fcecdb73a599af9d82ebead6eaaaeb8f955dbd778f7283",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\input.nml": "c2a6dfa51793a5ced822026c5d1b5f4b8e2a494cdd7bc80215d4292005f34542",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\metrics.txt": "9d4db81b6e0d2f9edeaf0f1eddca930340dcc75df8eaecec2c08beb663f31ad4",
+      "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\field_audit.json": "3f15b476d4ded0ae8783b4330569e110f53ad275aa1690f3a5c5b66d8a88e113"
+    },
+    "carrier_locations": {
+      "eta_n": {
+        "maximum_difference_node": 831,
+        "xyz_um": [
+          3.960882834401668,
+          9.562417057783291,
+          -0.5
+        ],
+        "source_perturbation_at_node": 1.9797772672648324,
+        "target_perturbation_at_node": 1.9913367703641733,
+        "maximum_absolute_perturbation_difference": 0.011559503099340951,
+        "target_density_min_m3": 6.839953690124092e+21,
+        "target_density_max_m3": 2.148182937328859e+23
+      },
+      "eta_p": {
+        "maximum_difference_node": 33040,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ],
+        "source_perturbation_at_node": 1.4013901775165856,
+        "target_perturbation_at_node": 1.4881168684212183,
+        "maximum_absolute_perturbation_difference": 0.0867266909046327,
+        "target_density_min_m3": 3.7202423388371746e-31,
+        "target_density_max_m3": 1.1000841041557147e-29
+      }
+    }
+  },
+  "three_level": {
+    "voltages": [
+      {
+        "voltage_V": 8,
+        "complete_solve_flux_all_levels": true,
+        "mesh_pass": true,
+        "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+        "changes": {
+          "joule_W": {
+            "L0_L1": 8.080042599288917e-05,
+            "L1_L2": 3.734920668875061e-05,
+            "limit": 0.01
+          },
+          "theta_max_K": {
+            "L0_L1": 0.0006806987298832847,
+            "L1_L2": 0.0003025566177820574,
+            "limit": 0.01
+          },
+          "ring_theta_mean_K": {
+            "L0_L1": 0.0004925517743871957,
+            "L1_L2": 0.00015460343357953183,
+            "limit": 0.01
+          },
+          "electron_right_A": {
+            "L0_L1": 0.0006421363340633585,
+            "L1_L2": 0.00038853483438686917,
+            "limit": 0.01
+          },
+          "ring_E_mean_V_m": {
+            "L0_L1": 0.001167765652691215,
+            "L1_L2": 0.0007382445204668122,
+            "limit": 0.02
+          },
+          "ring_Q_mean_W_m3": {
+            "L0_L1": 0.0022895641160526727,
+            "L1_L2": 0.0014999796805802187,
+            "limit": 0.02
+          },
+          "ring_abs_n_relative_mean": {
+            "L0_L1": 0.0003937909229981904,
+            "L1_L2": 9.401956755307868e-05,
+            "limit": 0.02
+          },
+          "ring_abs_p_relative_mean": {
+            "L0_L1": 0.019395243460125115,
+            "L1_L2": 0.015751940260506157,
+            "limit": 0.02
+          },
+          "ring_Q_p95_W_m3": {
+            "L0_L1": 0.0030971187794616656,
+            "L1_L2": 0.0007515410668153844,
+            "limit": 0.05
+          },
+          "E_p95_V_m": {
+            "L0_L1": 7.162523936348446e-05,
+            "L1_L2": 0.0010652645047629714,
+            "limit": 0.05
+          }
+        }
+      }
+    ],
+    "all_mesh_pass": true,
+    "provenance_errors": [],
+    "fully_validated": false,
+    "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+  }
+}

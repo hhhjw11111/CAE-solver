@@ -1,0 +1,274 @@
+{
+  "schema": "hex20-boundary-geometry-v1",
+  "mesh_path": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\cases\\validation\\G10_mesh_convergence\\L2\\mesh.dat",
+  "mesh_sha256": "97807a7b7df7a5926873ad5eb4fb788bcce52faacd981532b31018611115cd8d",
+  "node_count": 1056,
+  "element_count": 128,
+  "sampling_not_global_positivity_proof": true,
+  "original": {
+    "volume_3": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 1.306501638017783e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.1084605840836003,
+      "worst_location": {
+        "element": 1,
+        "natural_point": [
+          -0.7745966692414834,
+          0.0,
+          0.0
+        ]
+      },
+      "points_per_element": 27
+    },
+    "volume_5": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 5.355317895842311e-26,
+      "minimum_det_over_max_jacobian_cubed": 0.0535531789584231,
+      "worst_location": {
+        "element": 93,
+        "natural_point": [
+          -0.906179845938664,
+          0.0,
+          0.906179845938664
+        ]
+      },
+      "points_per_element": 125
+    },
+    "all_faces_5": {
+      "status": "FAIL",
+      "invalid_points": 800,
+      "invalid_elements": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125
+      ],
+      "minimum_det_m3": -8.230607597939308e-27,
+      "minimum_det_over_max_jacobian_cubed": -0.008230607597939307,
+      "worst_location": {
+        "element": 49,
+        "natural_point": [
+          -1.0,
+          0.0,
+          0.5384693101056831
+        ]
+      },
+      "points_per_element": 150
+    },
+    "near_faces_0_999": {
+      "status": "FAIL",
+      "invalid_points": 600,
+      "invalid_elements": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125
+      ],
+      "minimum_det_m3": -7.400614173571545e-27,
+      "minimum_det_over_max_jacobian_cubed": -0.007400614173571544,
+      "worst_location": {
+        "element": 13,
+        "natural_point": [
+          -0.999,
+          0.0,
+          0.5384693101056831
+        ]
+      },
+      "points_per_element": 150
+    },
+    "closed_grid_9": {
+      "status": "FAIL",
+      "invalid_points": 2592,
+      "invalid_elements": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125
+      ],
+      "minimum_det_m3": -8.230607597943168e-27,
+      "minimum_det_over_max_jacobian_cubed": -0.008230607597943166,
+      "worst_location": {
+        "element": 113,
+        "natural_point": [
+          -1.0,
+          0.0,
+          -0.25
+        ]
+      },
+      "points_per_element": 729
+    }
+  },
+  "candidate": {
+    "volume_3": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 5.902852333495269e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.10146028962860477,
+      "worst_location": {
+        "element": 1,
+        "natural_point": [
+          -0.7745966692414834,
+          -0.7745966692414834,
+          0.0
+        ]
+      },
+      "points_per_element": 27
+    },
+    "volume_5": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 5.845513052768822e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.09848123548644913,
+      "worst_location": {
+        "element": 1,
+        "natural_point": [
+          -0.906179845938664,
+          -0.5384693101056831,
+          0.906179845938664
+        ]
+      },
+      "points_per_element": 125
+    },
+    "all_faces_5": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 5.805701805371471e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.09649192377349046,
+      "worst_location": {
+        "element": 33,
+        "natural_point": [
+          -1.0,
+          -0.5384693101056831,
+          -0.5384693101056831
+        ]
+      },
+      "points_per_element": 150
+    },
+    "near_faces_0_999": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 5.8061261411423125e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.09651312723166917,
+      "worst_location": {
+        "element": 33,
+        "natural_point": [
+          -0.999,
+          -0.5384693101056831,
+          0.906179845938664
+        ]
+      },
+      "points_per_element": 150
+    },
+    "closed_grid_9": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 5.806060583214006e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.09636578167876261,
+      "worst_location": {
+        "element": 29,
+        "natural_point": [
+          -1.0,
+          0.5,
+          0.5
+        ]
+      },
+      "points_per_element": 729
+    }
+  },
+  "maximum_node_change_m": 5.222876073623985e-09,
+  "changed_nodes": 256,
+  "candidate_mesh_sha256": "a3e89f86d46d3e992c9222e37d5e8c62a0859e1ca256bb535e31dac2436b9029"
+}

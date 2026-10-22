@@ -1,0 +1,170 @@
+{
+  "domain_symmetry": "FULL",
+  "hole_radius_m": 2e-06,
+  "radius_um": 2,
+  "ring_width_m": 5e-07,
+  "annulus_inner_radius_m": 2e-06,
+  "annulus_outer_radius_m": 2.4999999999999998e-06,
+  "annulus_corner_index": 8,
+  "counts": {
+    "circumferential": 40,
+    "radial": 20,
+    "thickness": 16
+  },
+  "nodes": 55600,
+  "elements": 12800,
+  "profiles": {
+    "radial_axis_corners_m": [
+      2e-06,
+      2.00875e-06,
+      2.0210000000000002e-06,
+      2.0385e-06,
+      2.07e-06,
+      2.1120000000000003e-06,
+      2.182e-06,
+      2.31875e-06,
+      2.4999999999999998e-06,
+      3.8125e-06,
+      5.125e-06,
+      6.437500000000001e-06,
+      7.75e-06,
+      9.0625e-06,
+      9.645e-06,
+      9.818000000000002e-06,
+      9.902000000000001e-06,
+      9.944e-06,
+      9.972e-06,
+      9.9895e-06,
+      1e-05
+    ],
+    "radial_diagonal_corners_m": [
+      2e-06,
+      2.00875e-06,
+      2.0210000000000002e-06,
+      2.0385e-06,
+      2.07e-06,
+      2.1120000000000003e-06,
+      2.182e-06,
+      2.31875e-06,
+      2.4999999999999998e-06,
+      4.589150429449553e-06,
+      6.6783008588991064e-06,
+      8.76745128834866e-06,
+      1.0856601717798213e-05,
+      1.2945752147247766e-05,
+      1.378713562373095e-05,
+      1.3960135623730952e-05,
+      1.4044135623730951e-05,
+      1.408613562373095e-05,
+      1.411413562373095e-05,
+      1.413163562373095e-05,
+      1.4142135623730951e-05
+    ],
+    "z_corners_m": [
+      -5e-07,
+      -4.969374999999999e-07,
+      -4.9125e-07,
+      -4.8075e-07,
+      -4.6149999999999994e-07,
+      -4.2649999999999996e-07,
+      -3.635e-07,
+      -2.445625e-07,
+      0.0,
+      2.445625e-07,
+      3.635e-07,
+      4.2649999999999996e-07,
+      4.6149999999999994e-07,
+      4.8075e-07,
+      4.9125e-07,
+      4.969374999999999e-07,
+      5e-07
+    ]
+  },
+  "maximum_radial_axis_step_m": 1.3125000000000006e-06,
+  "maximum_z_step_m": 2.445625e-07,
+  "volume_3x3x3_m3": 3.874336453124659e-16,
+  "geometry_audit": {
+    "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+    "geometry_coordinate_tolerance_m": 1e-18,
+    "numerical_geometry_relative_tolerance": 1e-10,
+    "bounds_m": [
+      [
+        -1e-05,
+        -1e-05,
+        -5e-07
+      ],
+      [
+        1e-05,
+        1e-05,
+        5e-07
+      ]
+    ],
+    "bound_coordinate_error_m": 0.0,
+    "anchor_counts": [
+      1,
+      1,
+      1
+    ],
+    "contact_counts": [
+      533,
+      533
+    ],
+    "exterior_face_counts": {
+      "x-": 160,
+      "x+": 160,
+      "y-": 160,
+      "y+": 160,
+      "z-": 800,
+      "z+": 800,
+      "hole": 640
+    },
+    "annulus_interface_faces": 640,
+    "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+    "hole_node_radius_error_m": 4.235164736271502e-22,
+    "quadrature": {
+      "3": {
+        "volume_m3": 3.874336453124659e-16,
+        "annulus_volume_m3": 7.068574511737926e-18,
+        "minimum_jacobian": 1.0517476198169623e-24,
+        "quadratic_boundary_volume_relative_error": 1.2725742116833871e-16,
+        "quadratic_boundary_annulus_relative_error": 2.1797095764517473e-16
+      },
+      "5": {
+        "volume_m3": 3.8743364531246573e-16,
+        "annulus_volume_m3": 7.068574511737922e-18,
+        "minimum_jacobian": 1.0514450358713521e-24,
+        "quadratic_boundary_volume_relative_error": 5.090296846733549e-16,
+        "quadratic_boundary_annulus_relative_error": 2.1797095764517473e-16
+      }
+    },
+    "expected_quadratic_boundary_volume_m3": 3.8743364531246593e-16,
+    "expected_quadratic_annulus_volume_m3": 7.068574511737924e-18,
+    "ideal_circle_volume_m3": 3.8743362938564085e-16,
+    "ideal_circle_annulus_volume_m3": 7.06858347057703e-18,
+    "ideal_circle_volume_relative_geometry_error": 4.110852510999815e-08,
+    "ideal_circle_annulus_relative_geometry_error": -1.2674164693487627e-06,
+    "quadratic_arc_relative_max_inward_sag": 1.1878546196664175e-06,
+    "exterior_area_vector_m2": [
+      -1.2356264418496707e-26,
+      1.6155871338926328e-26,
+      6.3007898221812655e-25
+    ],
+    "exterior_area_vector_relative_closure": 7.267497383342949e-16,
+    "divergence_volume_m3": 3.8743364531246603e-16,
+    "divergence_volume_relative_error": 2.5451484233667743e-16,
+    "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+  },
+  "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+  "scope": "Radius-parametric full-domain geometry; 0.5 um ring retained. Separate radius-specific field/SUPG evidence required.",
+  "mesh_sha256": "a84ba6084ee71b0844742c2da0d726fb73b061284ba8969bca120cb34ddbea78",
+  "generator_sha256": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+  "dependencies": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_paper_radius_mesh_20261018.py": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_global_direction_mesh_20261016.py": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_f1_main_cases.py": "7e098f7b4732fc43365061be353e7b68e8801f4b8b46c1e77505a8c1ec693d4d",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\audit_hex20_boundary_geometry.py": "2c356f26a8cf721064faeec6a5936b44dc4e139d351cc1cfbae68979ef462fb4",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\transfer_hv_initial_guess.py": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\run_hv_sweep.py": "8c99775ace5b78d76e8d46cfa45eeeb21e6d4d8e1562e03e46f3755140fb96b5"
+  }
+}

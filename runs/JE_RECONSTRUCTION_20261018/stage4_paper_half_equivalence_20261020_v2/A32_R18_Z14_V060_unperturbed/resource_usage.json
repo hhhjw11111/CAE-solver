@@ -1,0 +1,10 @@
+{
+  "peak_rss_bytes": 988180480,
+  "peak_private_bytes": 631934976,
+  "peak_pagefile_bytes": 1015984128,
+  "peak_scratch_bytes": 225,
+  "minimum_disk_free_bytes": 56866750464,
+  "minimum_available_physical_bytes": 21295677440,
+  "sampling_seconds": 1,
+  "scope": "Native process only; private peak sampled; RSS/pagefile peaks include Windows counters"
+}

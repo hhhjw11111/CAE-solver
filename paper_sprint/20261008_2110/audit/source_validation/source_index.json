@@ -1,0 +1,156 @@
+[
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\field_layout_m.f90",
+    "start": 5,
+    "end": 15,
+    "description": "七场排序",
+    "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\constants_m.f90",
+    "start": 6,
+    "end": 7,
+    "description": "q与kB",
+    "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90",
+    "start": 8,
+    "end": 45,
+    "description": "全部ZnO候选常数与模型开关",
+    "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\transport_m.f90",
+    "start": 40,
+    "end": 58,
+    "description": "N0冻结及NT温导数",
+    "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\thermo_piezo_m.f90",
+    "start": 11,
+    "end": 24,
+    "description": "热压电本构",
+    "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\material_point_m.f90",
+    "start": 107,
+    "end": 149,
+    "description": "密度、载流子电流、热源",
+    "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\material_point_m.f90",
+    "start": 151,
+    "end": 204,
+    "description": "一致材料导数及LQ替换",
+    "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\recombination_m.f90",
+    "start": 10,
+    "end": 18,
+    "description": "R=0",
+    "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90",
+    "start": 63,
+    "end": 140,
+    "description": "积分、生产残差/切线和格式入口",
+    "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90",
+    "start": 143,
+    "end": 176,
+    "description": "log-weighted测试及其状态导数",
+    "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90",
+    "start": 178,
+    "end": 236,
+    "description": "普通弱式状态和测试算子",
+    "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+    "start": 157,
+    "end": 178,
+    "description": "LQ三阶段",
+    "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+    "start": 315,
+    "end": 329,
+    "description": "原验收门槛",
+    "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+    "start": 543,
+    "end": 595,
+    "description": "全域电极与A/B/C",
+    "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+    "start": 598,
+    "end": 657,
+    "description": "半域对称与刚体约束",
+    "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+    "start": 659,
+    "end": 680,
+    "description": "LQ固定字段",
+    "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\io\\native_input_m.f90",
+    "start": 59,
+    "end": 62,
+    "description": "新格式默认关闭",
+    "sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\verification_driver_m.f90",
+    "start": 41,
+    "end": 76,
+    "description": "真实verify入口",
+    "sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\main.f90",
+    "start": 29,
+    "end": 90,
+    "description": "version/verify/run-f1命令分发",
+    "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\tests\\hv_log_weighted_production_bar.f90",
+    "start": 89,
+    "end": 113,
+    "description": "生产核条带采样误差定义",
+    "sha256": "fbb1472fd7ce1b416bb208bf24ae34f660c8d564acc1861cb16c9c9234a3d189"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\tests\\hv_log_weighted_production_bar.f90",
+    "start": 123,
+    "end": 153,
+    "description": "自定义缩约装配调用生产单元",
+    "sha256": "fbb1472fd7ce1b416bb208bf24ae34f660c8d564acc1861cb16c9c9234a3d189"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\tests\\hv_log_weighted_production_bar.f90",
+    "start": 187,
+    "end": 213,
+    "description": "实际Pe/网格及容差",
+    "sha256": "fbb1472fd7ce1b416bb208bf24ae34f660c8d564acc1861cb16c9c9234a3d189"
+  }
+]

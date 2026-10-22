@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\src\app\f1_case_runner_m.f90(150): warning #5268: Extension to standard: The text exceeds right hand column allowed on the line.
+        call set_status(status,STATUS_INPUT_ERROR,'Inverse diagnostics require a nonzero subtarget full-heat SUPG or log-weighted restart.')
+-------------------------------------------------------------------------------------------------------------------------------------^
+MANIFEST_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_LOG_INVERSE_20261008_R25\build_manifest.json
+BUILD_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_LOG_INVERSE_20261008_R25\TPSolverV2.exe

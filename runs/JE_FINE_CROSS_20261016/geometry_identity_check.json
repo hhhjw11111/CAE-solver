@@ -1,0 +1,37 @@
+{
+  "scope": "Same physical domain under radial/thickness layer refinement, not a spatial-accuracy certificate",
+  "checks": [
+    {
+      "mesh": "baseline",
+      "volume_m3": 3.71725753570223e-16,
+      "minimum_jacobian": 3.604024415294573e-24,
+      "volume_relative_change": 0.0
+    },
+    {
+      "mesh": "radial16",
+      "volume_m3": 3.7172575357022304e-16,
+      "minimum_jacobian": 1.801538580601221e-24,
+      "volume_relative_change": 1.3263489576058986e-16,
+      "hole_and_outer_wall_nodes_identical": true
+    },
+    {
+      "mesh": "radial18",
+      "volume_m3": 3.71725753570223e-16,
+      "minimum_jacobian": 9.006508835387765e-25,
+      "volume_relative_change": 0.0,
+      "hole_and_outer_wall_nodes_identical": true
+    },
+    {
+      "mesh": "thickness16",
+      "volume_m3": 3.7172575357022294e-16,
+      "minimum_jacobian": 1.8020122076472955e-24,
+      "volume_relative_change": 1.3263489576058986e-16
+    },
+    {
+      "mesh": "thickness18",
+      "volume_m3": 3.7172575357022304e-16,
+      "minimum_jacobian": 9.010061038233133e-25,
+      "volume_relative_change": 1.3263489576058986e-16
+    }
+  ]
+}

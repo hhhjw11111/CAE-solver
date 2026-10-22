@@ -1,0 +1,12 @@
+{
+  "all_plotted_NT_full_load_and_accepted": true,
+  "no_NT_extrapolation": true,
+  "LQ_scaling_explicitly_labelled": true,
+  "same_mesh_6V_samples_equal": true,
+  "sampled_power_and_peak_match_metrics": true,
+  "editable_svg_text": true,
+  "label_bounds_check": "PASS",
+  "visual_inspection": "PASS",
+  "visual_scope": "Combined reference and same-mesh panels, Chinese glyphs, units, legends, data markers and longest-label standalone panel inspected.",
+  "physical_certification": "NOT_GRANTED_BY_FIGURE_QA"
+}

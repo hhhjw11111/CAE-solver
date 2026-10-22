@@ -1,0 +1,21 @@
+{
+  "scope": "SAME_MESH_LOW_VOLTAGE_LOAD_PATH_CHECK_NOT_HIGH_VOLTAGE_PROOF",
+  "comparisons": {
+    "phi_V": 1.5543122344752192e-15,
+    "theta_K": 1.0801034189812277e-15,
+    "ux_m": 1.7372845832698019e-15,
+    "uy_m": 3.065079779286817e-15,
+    "uz_m": 4.5933056538956055e-14,
+    "eta_n_density_perturbation": 9.337261528338087e-14,
+    "eta_p_density_perturbation": 1.0691118246815663e-13
+  },
+  "relative_limit": 1e-08,
+  "full_heat": true,
+  "full_voltage": true,
+  "case_state": "SOLVE_FLUX_PASS_MESH_PENDING",
+  "node_hashes": [
+    "ac5de74583a0e280b038ca0db4eb7962915d4c0f4d8779828f403a4d3f46ddc1",
+    "64ae80be861cc4a6c20ed2f7d7eb3e991f14245010d10aa82da6d32b06d6a519"
+  ],
+  "passed": true
+}

@@ -1,0 +1,42 @@
+{
+  "version": "0.15.3-sparse-block-experimental",
+  "native_checks": 3,
+  "debug_checks": 3,
+  "old_cli_byte_identical_pass": 16,
+  "python_checks_pass": 27,
+  "build_file_matches": 64,
+  "production_3V_state": "SOLVE_FLUX_PASS_MESH_PENDING",
+  "production_maximum_scaled_field_difference": 3.607468490596233e-11,
+  "default_behavior_protected": true,
+  "fully_validated_0_8V": false,
+  "evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\regression_r19\\report.json",
+      "sha256": "c2254133d2fd50e5c1b0b52a49bfdc0a5edb0767c5da801c15e0e778a7af4b94"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\checks_r19\\report.json",
+      "sha256": "88d97f0806563433e6d9ed7b48ea5481baf97403b7cc1e783393bd2283b69cab"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\debug_r19\\report.json",
+      "sha256": "4b63bb4feed76c5b3c09e6188079a11b40328ec4cc2b1a03ae2a534059c97cae"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\source_build_audit_r19.json",
+      "sha256": "0e505d5b72c7804ff8c8e465b845069b438b71e4752ea1b697a9b21fba6b15ee"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\python_verification_r19.txt",
+      "sha256": "28c972fc2cd9cde5a7aa9c7e7897b842245486bfd0f358e4a6d34049f91b2cc3"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r19_split_V030_perturbed\\reference_comparison.json",
+      "sha256": "d06c2a1e6581a1b67d33a7e3ef573e1d5b92296b76aa41decb60f6ef512fb0d2"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r19_split_V030_perturbed\\metrics.txt",
+      "sha256": "50655dcef4c404b6c59a5735fa3b4f2c791b46d8ca7595aa1da3fe1660cd41c0"
+    }
+  ]
+}

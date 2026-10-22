@@ -1,0 +1,145 @@
+[
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "version"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.254176+00:00",
+    "ended_utc": "2026-10-08T13:16:53.276411+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\version.txt",
+      "bytes": 229,
+      "sha256": "ff493643dc48e825171a6de471362daaaf4aea06fcc41e1a914caafb0e595b0b"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "verify",
+      "V01"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.282014+00:00",
+    "ended_utc": "2026-10-08T13:16:53.303529+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\V01.txt",
+      "bytes": 533,
+      "sha256": "7728bb6596ca6abc753da218004d12391424be379355c0c33ce0e47a47ec3952"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "verify",
+      "V02"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.310530+00:00",
+    "ended_utc": "2026-10-08T13:16:53.551724+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\V02.txt",
+      "bytes": 749,
+      "sha256": "968f586b8044e40be4404b15e311ebf5a5edd3b5656e64e955f86f266b9d5416"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "verify",
+      "G02"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.558728+00:00",
+    "ended_utc": "2026-10-08T13:16:53.578807+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\G02.txt",
+      "bytes": 818,
+      "sha256": "47e11849695ee252265d75b4664b3d674641e95627f18c8bf2c6bfe0aae1a044"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "verify",
+      "F1M"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.585894+00:00",
+    "ended_utc": "2026-10-08T13:16:53.605928+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\F1M.txt",
+      "bytes": 2532,
+      "sha256": "47c90b78fed53d7b8cb1289c6729cde3c98479e94bd86a44bff6ffdf66ae3eba"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "verify",
+      "G03"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.615456+00:00",
+    "ended_utc": "2026-10-08T13:16:53.649397+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\G03.txt",
+      "bytes": 606,
+      "sha256": "bdd5f822a88c58ff9c4f479ddef6d7215c6617a3d094e8d5a715dd1445327001"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_production_bar_r22\\log_weighted_probe.exe"
+    ],
+    "cwd": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry",
+    "started_utc": "2026-10-08T13:16:53.655152+00:00",
+    "ended_utc": "2026-10-08T13:17:09.566289+00:00",
+    "exit_code": 0,
+    "stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\production_bar_replay.txt",
+      "bytes": 1520,
+      "sha256": "1a57e8a169d9757afc18a2b7bc10affb585f965a9376d01fbe18d48f98807e82"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "prior_stdout": {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_production_bar_r22\\stdout.txt",
+      "bytes": 1520,
+      "sha256": "1a57e8a169d9757afc18a2b7bc10affb585f965a9376d01fbe18d48f98807e82"
+    },
+    "byte_identical_to_prior_stdout": true
+  }
+]

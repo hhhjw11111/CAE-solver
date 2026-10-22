@@ -1,0 +1,24 @@
+{
+  "scope": "FINITE_JOINT2_THEN_SUPG2",
+  "prior_controller_pid": 21588,
+  "prior_launch": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\background_resume_20261020_joint1_attempt02\\launch.json",
+  "prior_launch_sha256": "950c8961ca9a327e38601af4aeecfc0d32ca2f6278c960525538b7e4fc77d827",
+  "prior_finished": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\batch_20261020T052241674350Z_finished.json",
+  "script_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\continue_je_joint_supg_20261020.py": "23a6c878c0d602865f6ac9396f78b046560e384e75fe69f5f207894b8d615e05",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_paper_resumed_20261020.py": "e7995ba4f402271df41d08abb254b8010b4c445c4028df71341022cb56e51f03",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_reconstruction_mesh_20261018.py": "087a9ff302a63f5e87c9d937657265702190eddf52117ae3e7e2fcb66fad0c9a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_paper_ooc8000_20261020.py": "9ce6f3606138f3e874282ae2a441b842ba4f9bc50cf78fa762417705683675b0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_paper_observables_20261020.py": "2614c65048a5ff5e87495ef3ab90d3020f5943fe0e66e0beb5a1d1118fe46cd4"
+  },
+  "threads": 8,
+  "ooc_core_mb": 8000,
+  "per_native_timeout_seconds": 7200,
+  "original_resource_guards_unchanged": true,
+  "thresholds_changed": false,
+  "physics_changed": false,
+  "retries": 0,
+  "max_native_processes": 1,
+  "local_hole_failures_retained": true,
+  "production_solves_authorized_by_this_controller": false
+}

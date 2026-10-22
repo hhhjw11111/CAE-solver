@@ -1,0 +1,2 @@
+MANIFEST_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\F1_MAIN_0144_RELEASE\build_manifest.json
+BUILD_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\F1_MAIN_0144_RELEASE\TPSolverV2.exe

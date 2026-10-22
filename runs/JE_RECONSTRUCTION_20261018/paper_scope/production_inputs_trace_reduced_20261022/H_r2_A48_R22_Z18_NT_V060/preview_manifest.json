@@ -1,0 +1,49 @@
+{
+  "job": {
+    "name": "H_r2_A48_R22_Z18_NT_V060",
+    "model": "NT",
+    "radius": 2,
+    "counts": [
+      48,
+      22,
+      18
+    ],
+    "voltage": 6,
+    "domain": "Y_HALF",
+    "seed": [
+      "radial",
+      "H_r3_A48_R22_Z18_NT_V060"
+    ],
+    "restart": 1.0,
+    "step": null,
+    "group": "radius"
+  },
+  "changed_input_keys": [
+    "case_id",
+    "hole_radius",
+    "mesh_file",
+    "restart_joule_factor",
+    "restart_nodes_file",
+    "restart_voltage_factor",
+    "supg_directional_tau",
+    "target_voltage"
+  ],
+  "seed_nodes_expected": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\seeds\\H_r2_A48_R22_Z18_NT_V060\\nodes.csv",
+  "input_sha256": "0d654d49850e551d8badf68b10c2775a28fe817853aaf9b9dec6e4658cfd4b2a",
+  "checks": {
+    "differing_keys": [
+      "case_id",
+      "hole_radius",
+      "mesh_file",
+      "restart_nodes_file"
+    ],
+    "unexpected_differences": [],
+    "mesh_sha256": "2e5abf7a2505508ec640c55aa1c04fbf3a1a19b1633c417b1ecf4f83bbce86b7",
+    "material_profile": "'ZNO_F1_NT'",
+    "transport_supg": ".true.",
+    "supg_directional_tau": ".false.",
+    "half_y_symmetry": ".true."
+  },
+  "native_runs": 0,
+  "note": "Preview; the runner rebuilds the identical text at run time, with the seed short path if seeded."
+}

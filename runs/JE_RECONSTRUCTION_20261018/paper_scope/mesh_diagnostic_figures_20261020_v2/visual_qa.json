@@ -1,0 +1,15 @@
+{
+  "figure": "mesh_power_and_hole_diagnostics",
+  "reviewed_export": "PNG, plus PDF text/collision audits",
+  "alignment": "PASS",
+  "minimum_pdf_font_pt": 7.5,
+  "text_run_count": 25,
+  "pdf_collision_failures": 0,
+  "pdf_collision_warnings": 0,
+  "visible_data_and_thresholds": true,
+  "source_rows": 12,
+  "original_gate_replay_studies": 4,
+  "v1_issue": "Bottom-left legend overlapped the 6V line; retained as superseded layout",
+  "v2_resolution": "Bottom-row legends replaced by threshold labels; both voltages remain identified in the top-row legends",
+  "production_acceptance": false
+}

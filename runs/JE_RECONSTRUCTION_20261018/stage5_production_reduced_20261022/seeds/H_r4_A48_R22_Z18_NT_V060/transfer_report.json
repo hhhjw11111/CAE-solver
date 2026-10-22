@@ -1,0 +1,15 @@
+{
+  "target_nodes": 42213,
+  "boundary_extension_nodes": 0,
+  "maximum_boundary_extension_m": 1.0600102097571028e-19,
+  "maximum_inverse_mapping_residual_m": 1.0508671853758896e-19,
+  "status": "INITIAL_GUESS_ONLY_NOT_A_SOLVED_FIELD",
+  "mapping": "RADIAL_STRETCH_HOLE_TO_SQUARE_BOUNDARY",
+  "source_radius_m": 3e-06,
+  "target_radius_m": 4e-06,
+  "maximum_point_shift_m": 1.0000000000000002e-06,
+  "source_mesh_sha256": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+  "source_nodes_sha256": "1e5721f274869b6d8f3fdf9ed01a300474e2eaf82a4e6ef23460cedeb791e13f",
+  "target_mesh_sha256": "43aff0a0b35db98665fb1ef363df4f8c8675c3d90e55a658d7e1bcf9678aac18",
+  "script_sha256": "e66b3dfa8fd874f7373d6810006dbb7273be5b7040b25229e048f138ca772512"
+}

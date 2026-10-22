@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-08T03:39:18.1206601+08:00",
+  "pid": 2176,
+  "reason": "Stopped the slow component-clipped alpha=2 initial equilibration after a recorded non-descent Newton direction. Preserve it as an incomplete numerical attempt; next run uses the already-verified global direction limiter, with unchanged equations and tolerances.",
+  "physical_nonexistence_proven": false,
+  "complete_quantitative_0_8V": false,
+  "command_line": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe trace-f1-temperature C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_inverse_scale2\\input.nml C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_inverse_scale2 5.4 3"
+}

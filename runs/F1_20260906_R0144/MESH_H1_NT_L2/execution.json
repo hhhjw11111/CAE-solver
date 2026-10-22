@@ -1,0 +1,16 @@
+{
+  "case": "MESH_H1_NT_L2",
+  "input_name": "MESH_H1_NT_L2",
+  "started_utc": "2026-09-06T16:28:49.3233307Z",
+  "executable_sha256": "028FE2E514744488EFDC5EA69D97FD18353334DC07E69624B985D3A2D4EAD892",
+  "solver_version": "0.14.4-f1-stack-safe",
+  "input_sha256": "B97944CF25BC68E4B31902A7FC729D22405FCBA8FF8AE6A65C8B0DC5D74D7846",
+  "storage": "OOC",
+  "ooc_max_core_mb": 8192,
+  "ooc_max_swap_mb": 0,
+  "scratch": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F1_20260906_R0144\\ooc_scratch\\MESH_H1_NT_L2",
+  "status": "FAILED",
+  "pid": 251100,
+  "exit_code": -1073741819,
+  "finished_utc": "2026-09-06T16:28:53.0730814Z"
+}

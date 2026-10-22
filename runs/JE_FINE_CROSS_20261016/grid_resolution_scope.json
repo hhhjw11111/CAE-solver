@@ -1,0 +1,51 @@
+{
+  "profiles": [
+    {
+      "mesh": "baseline",
+      "first_radial_nm": 14.0,
+      "first_thickness_nm": 3.5,
+      "largest_thickness_interval_nm": 279.5,
+      "radial_bulk_intervals": 4,
+      "radial_bulk_interval_on_x_axis_um": 1.5000000000000002,
+      "radial_bulk_interval_on_diagonal_um": 2.535533905932738
+    },
+    {
+      "mesh": "radial16",
+      "first_radial_nm": 7.0,
+      "first_thickness_nm": 3.5,
+      "largest_thickness_interval_nm": 279.5,
+      "radial_bulk_intervals": 4,
+      "radial_bulk_interval_on_x_axis_um": 1.5000000000000002,
+      "radial_bulk_interval_on_diagonal_um": 2.535533905932738
+    },
+    {
+      "mesh": "radial18",
+      "first_radial_nm": 3.5,
+      "first_thickness_nm": 3.5,
+      "largest_thickness_interval_nm": 279.5,
+      "radial_bulk_intervals": 4,
+      "radial_bulk_interval_on_x_axis_um": 1.5000000000000002,
+      "radial_bulk_interval_on_diagonal_um": 2.535533905932738
+    },
+    {
+      "mesh": "thickness16",
+      "first_radial_nm": 14.0,
+      "first_thickness_nm": 1.75,
+      "largest_thickness_interval_nm": 277.75,
+      "radial_bulk_intervals": 4,
+      "radial_bulk_interval_on_x_axis_um": 1.5000000000000002,
+      "radial_bulk_interval_on_diagonal_um": 2.535533905932738
+    },
+    {
+      "mesh": "thickness18",
+      "first_radial_nm": 14.0,
+      "first_thickness_nm": 0.875,
+      "largest_thickness_interval_nm": 276.875,
+      "radial_bulk_intervals": 4,
+      "radial_bulk_interval_on_x_axis_um": 1.5000000000000002,
+      "radial_bulk_interval_on_diagonal_um": 2.535533905932738
+    }
+  ],
+  "scope": "Boundary-layer graded refinements; radial bulk remains 4 intervals, largest thickness interval changes by less than 1 percent",
+  "acceptance_limitation": "Passing this family cannot certify global radial/thickness h-convergence; no thresholds altered"
+}

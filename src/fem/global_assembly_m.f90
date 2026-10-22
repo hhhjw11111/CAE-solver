@@ -45,6 +45,12 @@ contains
     integer :: element, material_id, local_row_node, local_column_node
     integer :: row_field, column_field, local_row, local_column, global_row
     integer :: csr_position, offset
+    integer, parameter :: batch_size=32
+    integer :: slot
+    logical :: batch_transport
+    real(dp), allocatable :: batch_residual(:,:),batch_jacobian(:,:,:)
+    type(ElementDiagnosticsType), allocatable :: batch_diagnostics(:)
+    type(SolverStatusType), allocatable :: batch_status(:)
 
     call clear_status(status)
     diagnostics = DiagnosticsType()
@@ -64,6 +70,11 @@ contains
     system%residual = 0.0_dp
     system%jacobian_values = 0.0_dp
     element_request%need_jacobian = request%need_jacobian
+    batch_transport=any(materials%transport_supg)
+    if(batch_transport) then
+      allocate(batch_residual(HEX20_NDOF,batch_size),batch_jacobian(HEX20_NDOF,HEX20_NDOF,batch_size), &
+        batch_diagnostics(batch_size),batch_status(batch_size))
+    end if
 
     do element = 1, mesh%number_of_elements()
       material_id = mesh%material_id(element)
@@ -71,10 +82,19 @@ contains
         call set_status(status, STATUS_INPUT_ERROR, 'Element material identifier is invalid.')
         return
       end if
-      coordinates_e = mesh%coordinates(:,mesh%connectivity(:,element))
-      state_e = state%x(context%element_dof(:,element))
-      call evaluate_hex20_element(materials(material_id),coordinates_e,state_e,load, &
-        element_request,residual_e,jacobian_e,element_diagnostics,local_status)
+      if(batch_transport) then
+        slot=mod(element-1,batch_size)+1
+        if(slot==1) call evaluate_transport_batch(mesh,materials,state,load,context,element_request, &
+          element,min(batch_size,mesh%number_of_elements()-element+1), &
+          batch_residual,batch_jacobian,batch_diagnostics,batch_status)
+        residual_e=batch_residual(:,slot);jacobian_e=batch_jacobian(:,:,slot)
+        element_diagnostics=batch_diagnostics(slot);local_status=batch_status(slot)
+      else
+        coordinates_e = mesh%coordinates(:,mesh%connectivity(:,element))
+        state_e = state%x(context%element_dof(:,element))
+        call evaluate_hex20_element(materials(material_id),coordinates_e,state_e,load, &
+          element_request,residual_e,jacobian_e,element_diagnostics,local_status)
+      end if
       if (.not. local_status%is_ok()) then
         call set_status(status,local_status%code,'Element '//integer_to_string(element)// &
           ' assembly failed: '//trim(local_status%message))
@@ -121,6 +141,35 @@ contains
     end if
     call compute_field_residual_norms(system%residual,diagnostics%residual_by_field)
   end subroutine assemble_global_system
+
+  subroutine evaluate_transport_batch(mesh,materials,state,load,context,request,first,count,r,k,d,s)
+    type(MeshType), intent(in) :: mesh
+    type(MaterialType), intent(in) :: materials(:)
+    type(StateType), intent(in) :: state
+    type(LoadStateType), intent(in) :: load
+    type(SparseAssemblyContextType), intent(in) :: context
+    type(ElementRequestType), intent(in) :: request
+    integer, intent(in) :: first,count
+    real(dp), intent(out) :: r(:,:),k(:,:,:)
+    type(ElementDiagnosticsType), intent(out) :: d(:)
+    type(SolverStatusType), intent(out) :: s(:)
+    real(dp) :: coords(3,HEX20_NNODE),x(HEX20_NDOF)
+    integer :: i,e,mat
+    ! Independent element kernels only. The caller scatters in original element
+    ! order, so shared-node sums have identical ordering at every thread count.
+    !$omp parallel do default(shared) private(i,e,mat,coords,x) schedule(static)
+    do i=1,count
+      e=first+i-1;mat=mesh%material_id(e)
+      if(mat<1 .or.mat>size(materials)) then
+        r(:,i)=0.0_dp;k(:,:,i)=0.0_dp;d(i)=ElementDiagnosticsType()
+        call set_status(s(i),STATUS_INPUT_ERROR,'Element material identifier is invalid.')
+      else
+        coords=mesh%coordinates(:,mesh%connectivity(:,e));x=state%x(context%element_dof(:,e))
+        call evaluate_hex20_element(materials(mat),coords,x,load,request,r(:,i),k(:,:,i),d(i),s(i))
+      end if
+    end do
+    !$omp end parallel do
+  end subroutine evaluate_transport_batch
 
   subroutine ensure_system_storage(context,system)
     type(SparseAssemblyContextType), intent(in) :: context

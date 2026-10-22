@@ -1,0 +1,47 @@
+{
+  "conclusion": "Saved stabilized FE solutions have a physical-current electrical-power consistency defect dominated by potential-weighted SUPG. No solver physics or acceptance criteria changed.",
+  "cases": [
+    {
+      "voltage_V": 6,
+      "volume_JE_mW": 5.7907274597944465,
+      "exterior_power_mW": 5.644550611465813,
+      "electrode_power_mW": 5.640867380341482,
+      "gap_mW": 0.1461768483286335,
+      "gap_percent": 2.5243261635701697,
+      "SUPG_work_mW": 0.14583602615893984,
+      "SUPG_fraction_of_gap_percent": 99.76684257897843,
+      "reaction_vs_exterior_mW": 0.00033714989594764433,
+      "volume_quadrature_correction_mW": 3.6722747178211113e-06,
+      "nonlinear_free_residual_correction_mW": -9.675021057417963e-13,
+      "insulating_boundary_power_mW": 0.0036832311243305965,
+      "decomposition_remainder_mW": -4.3021142204224816e-15
+    },
+    {
+      "voltage_V": 8,
+      "volume_JE_mW": 9.85840097677128,
+      "exterior_power_mW": 9.565488868986979,
+      "electrode_power_mW": 9.559852190369742,
+      "gap_mW": 0.29291210778430166,
+      "gap_percent": 2.9711928787890827,
+      "SUPG_work_mW": 0.291508798264934,
+      "SUPG_fraction_of_gap_percent": 99.52091105759237,
+      "reaction_vs_exterior_mW": 0.0013942194389028606,
+      "volume_quadrature_correction_mW": 9.090077173617983e-06,
+      "nonlinear_free_residual_correction_mW": 3.3154216973549686e-12,
+      "insulating_boundary_power_mW": 0.005636678617235158,
+      "decomposition_remainder_mW": -2.4202861936828413e-14
+    }
+  ],
+  "limits": [
+    "Algebraic attribution at saved states, not a demonstration that removing SUPG yields convergent or accurate solutions.",
+    "No mesh refinement or stabilization-coefficient re-solve performed.",
+    "Not a certification of the lattice heat-source model."
+  ],
+  "validation": [
+    "Original five-point JE and exterior power reproduced independently.",
+    "3/5/7-point 8 V power integration comparison.",
+    "Element integration-by-parts including internal one-sided flux jumps.",
+    "Production 3-point Galerkin+SUPG residual reconstruction.",
+    "Curved-cell complex-step current-divergence verification; prior failed small-step central-difference attempt retained."
+  ]
+}

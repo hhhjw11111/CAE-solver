@@ -1,0 +1,170 @@
+[
+  {
+    "check": "A1",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "A1",
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A1_fields"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.4839999999385327,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A1_targeted.txt",
+    "sha256": "d8f88ee63ae96eb22859fe9bf0c14b1626216d727fd1c4b859c94d147a9d2761",
+    "passed": true
+  },
+  {
+    "check": "A2",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "A2",
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A2_fields"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 4.48499999998603,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A2_targeted.txt",
+    "sha256": "d877daf37b48c0f78e31a8f1da400aa27e59ebaa3054857a2dad83b48587b86f",
+    "passed": true
+  },
+  {
+    "check": "A1JJE",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "A1JJE"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 2.297000000020489,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A1JJE_targeted.txt",
+    "sha256": "2779ed6760223f75799adc82f182c8934c0de9184bd473ff571aafabf716a945",
+    "passed": true
+  },
+  {
+    "check": "JEGRAD",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "JEGRAD"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 1.062000000034459,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\JEGRAD_targeted.txt",
+    "sha256": "a4b4cb08d0d7b983b42e98b20432516c95f9771114e1b68c17cbcdc1f6808c60",
+    "passed": true
+  },
+  {
+    "check": "A2P",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "A2P",
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A2P_fields"
+    ],
+    "exit_code": 1,
+    "timed_out": false,
+    "seconds": 25.858999999938533,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A2P_targeted.txt",
+    "sha256": "a5f62acf1b4e28b336f70e2f1949b7f4cb7778e41ba28313d6fc150156ea37b6",
+    "passed": false
+  },
+  {
+    "check": "G02JE",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "G02JE"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.03200000000651926,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\G02JE_targeted.txt",
+    "sha256": "fbd4ab397b95e5fd32d91d5a21482ba13afb37a69b4bdcbf6a0845f1de233ade",
+    "passed": true
+  },
+  {
+    "check": "F1MJE",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "F1MJE"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.03100000007543713,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\F1MJE_targeted.txt",
+    "sha256": "37d13624306a126190b7ce9053699f08608daf877045c269d9bcc66d2787fe22",
+    "passed": true
+  },
+  {
+    "check": "G04JE",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "G04JE"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.062000000034458935,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\G04JE_targeted.txt",
+    "sha256": "0b789503ab8050af1202b983be2e56b40fbdc3648d504131d5b37d1c4d866391",
+    "passed": true
+  },
+  {
+    "check": "SUPG",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "SUPG"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 43.54700000002049,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\SUPG_targeted.txt",
+    "sha256": "a99ff025c1e78f34b40a233d4f54296cd650ec668e17892302e588aff33932aa",
+    "passed": true
+  },
+  {
+    "check": "SUPGJ",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "SUPGJ"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.09399999992456287,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\SUPGJ_targeted.txt",
+    "sha256": "794c71720b58dad12d41841b375ac19f58bb84f5016ef7bcbfd12c3dde9080bf",
+    "passed": true
+  },
+  {
+    "check": "SUPGJT",
+    "label": "targeted",
+    "command": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+      "verify",
+      "SUPGJT"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.10900000005494803,
+    "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\SUPGJT_targeted.txt",
+    "sha256": "0170a01169c336980a9226f5c7f42948d55609eebe561789a1e1a00480baf971",
+    "passed": true
+  }
+]

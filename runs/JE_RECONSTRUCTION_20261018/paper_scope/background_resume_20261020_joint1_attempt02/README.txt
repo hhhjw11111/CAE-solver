@@ -1,0 +1,25 @@
+2026-10-20运行中断后的恢复
+
+原控制器和8V原生PID 9656已不存在；日志最后资源记录1753.657秒、Newton迭代1残差1.5297e-8。
+原8V目录没有execution.json、completion.json或退出码。因此原因未确认，不能判定数值收敛失败，
+也不能声称已得到8V完整状态。原目录为stage4_paper_mesh_ooc8000_20261020/A40_R20_Z16_S1_V080。
+
+已完成的6V保持原目录，通过显式引用复用，不复制或再次原生求解。
+8V在stage4_paper_mesh_resumed_20261020/A40_R20_Z16_S1_V080重启，
+使用原已核验的同一映射初值、网格和可执行文件。
+新旧8V原生输入SHA256均为2bc1e3012a8066cc33f3aa0c632ed9267b17f60e7e8c70ceb5078fed68ea60c9。
+8000MB、8线程、7200秒以及原资源/数值门限保持不变，未调整热源。
+
+启动器为隐藏的独立后台Python进程，launch.json记录控制器身份；
+stdout.txt/stderr.txt为控制器日志，原生实时日志仍在实际结果目录。
+启动后确认唯一原生进程和控制器存活。任务完成以结果目录completion.json和批次finished记录为准，
+不能仅凭launch.json的STARTED状态判断完成。
+
+此前启动器第一次因PATH解析到两个Python路径而未启动，记录保留在同级background_resume_20261020_joint1：
+该目录launch_failure.json明确纠正其launch.json中的状态字段。没有原生求解由该次失败启动。
+第二次使用首个确定的Python312解释器并启用PowerShell停止型错误处理，成功启动。
+
+原中断8V的25个临时因子文件，在确认所记PID和控制器均不存在、目标无重解析点、
+文件路径位于该次自身scratch内且清理前大小/修改时间一致后逐一删除。未递归删除目录。
+回收25603069280 bytes；run_ooc.cfg、输入、网格引用、日志、资源记录等全部保留。
+旧目录orphan_factor_cleanup_plan.json/cleanup.json记录科学文件删除数0、未知退出码null。

@@ -1,0 +1,162 @@
+{
+  "name": "joule_map_height_larger_surfaces_20260909",
+  "user_confirmed_date": "2026-09-09",
+  "comparison_title": "焦耳热密度",
+  "footer": null,
+  "palette_stops": [
+    [
+      0,
+      "#0000b5"
+    ],
+    [
+      0.09,
+      "#003dff"
+    ],
+    [
+      0.16,
+      "#00cee9"
+    ],
+    [
+      0.24,
+      "#00db35"
+    ],
+    [
+      0.32,
+      "#42eb12"
+    ],
+    [
+      0.4,
+      "#d4f300"
+    ],
+    [
+      0.46,
+      "#fff000"
+    ],
+    [
+      0.63,
+      "#ffdf00"
+    ],
+    [
+      0.76,
+      "#ff9800"
+    ],
+    [
+      0.83,
+      "#ff4500"
+    ],
+    [
+      0.89,
+      "#ff0800"
+    ],
+    [
+      0.96,
+      "#d80000"
+    ],
+    [
+      1,
+      "#bb0000"
+    ]
+  ],
+  "colormap_levels": 256,
+  "normalization": "linear_shared_across_radii",
+  "Q_scale": 1e-12,
+  "Q_limits": [
+    0,
+    17
+  ],
+  "Q_ticks": [
+    0,
+    4,
+    8,
+    12,
+    16
+  ],
+  "xy_limits_um": [
+    -10,
+    10
+  ],
+  "xy_ticks_um": [
+    -10,
+    -5,
+    0,
+    5,
+    10
+  ],
+  "comparison_figsize_inches": [
+    14,
+    9.3
+  ],
+  "comparison_layout": {
+    "rows": 2,
+    "columns": 3,
+    "left": 0.055,
+    "right": 0.89,
+    "bottom": 0.1,
+    "top": 0.91,
+    "wspace": 0.28,
+    "hspace": 0.24,
+    "height_ratios": [
+      1,
+      1.28
+    ]
+  },
+  "colorbar_axes": [
+    0.94,
+    0.59,
+    0.012,
+    0.3
+  ],
+  "surface_view": {
+    "elev": 29,
+    "azim": -60,
+    "box_aspect": [
+      1,
+      1,
+      0.65
+    ]
+  },
+  "fonts": [
+    "Microsoft YaHei",
+    "Arial",
+    "DejaVu Sans"
+  ],
+  "export": {
+    "formats": [
+      "png",
+      "svg",
+      "pdf"
+    ],
+    "dpi": 320,
+    "svg_fonttype": "none",
+    "pdf_fonttype": 42
+  },
+  "data_integrity": "Preserve source values and original element triangulation; no per-radius normalization. Height denotes scalar field, not deformation.",
+  "scope": "Cloud maps and scalar-height comparisons. Fixed numerical limits apply to this F3 Joule dataset; new datasets require compatible shared limits.",
+  "lower_row_enlargement": {
+    "axes_width_factor": 1.2,
+    "axes_height_factor": 1.25,
+    "projection_zoom": 1.08,
+    "tick_fontsize": 8,
+    "vertical_offset": -0.025,
+    "axes_positions": [
+      [
+        0.0225,
+        0.045,
+        0.285,
+        0.43
+      ],
+      [
+        0.34750000000000003,
+        0.045,
+        0.285,
+        0.43
+      ],
+      [
+        0.6725,
+        0.045,
+        0.285,
+        0.43
+      ]
+    ]
+  }
+}

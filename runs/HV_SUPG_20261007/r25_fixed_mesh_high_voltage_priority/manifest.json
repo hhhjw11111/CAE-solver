@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-08T20:52:37.731129+08:00",
+  "scope": "FIXED_EXISTING_MESH_HIGH_VOLTAGE_FIRST",
+  "source_hashes": {
+    "scripts/run_hv_point.py": "ed3f8c898e6f5b643ecaa9b4a51e73301356f9ff3fac4fca9116199f07cf245f",
+    "tests/test_hv_load_path.py": "53fb10c94171e2a8ef01eabdaed0d0b309ad8b5c4906dece236e23fd7d88ae4d"
+  },
+  "native_source_changed": false,
+  "mesh_refinement_deferred": true,
+  "original_physical_model_preserved": true,
+  "unit_tests_passed": 62
+}

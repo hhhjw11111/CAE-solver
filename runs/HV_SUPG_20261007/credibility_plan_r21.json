@@ -1,0 +1,130 @@
+{
+  "points": [
+    {
+      "voltage_V": 0,
+      "directory": "r21_half_L0_V000"
+    },
+    {
+      "voltage_V": 0.5,
+      "directory": "r21_half_L2_V005"
+    },
+    {
+      "voltage_V": 1.0,
+      "directory": "trajectory_r13_L0_serial/V010",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 1.5,
+      "directory": "trajectory_r13_L0_serial/V015",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 2.0,
+      "directory": "trajectory_r13_L0_serial/V020",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 2.5,
+      "directory": "trajectory_r13_L0_serial/V025",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 3,
+      "directory": "r21_full_L0_V030_replay"
+    },
+    {
+      "voltage_V": 3.5,
+      "directory": "trajectory_r13_L0_serial/V035",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 4.0,
+      "directory": "trajectory_r13_L0_serial/V040",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 4.5,
+      "directory": "trajectory_r13_L0_serial/V045",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 5.0,
+      "directory": "trajectory_r13_L0_serial/V050",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 5.5,
+      "directory": "trajectory_r13_L0_serial/V055",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 6,
+      "directory": "r21_half_A64_V060"
+    },
+    {
+      "voltage_V": 6.5,
+      "directory": "trajectory_r13_L0_serial/V065",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 7.0,
+      "directory": "trajectory_r13_L0_serial/V070",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 7.5,
+      "directory": "trajectory_r13_L0_serial/V075",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    },
+    {
+      "voltage_V": 8.0,
+      "directory": "trajectory_r13_L0_serial/V080",
+      "manifest": "trajectory_r13_L0_serial/manifest.json"
+    }
+  ],
+  "studies": [
+    {
+      "name": "0.5 V three spatial levels",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Y_HALF / L0-L1-L2 / SUPG scale 1 / R21",
+      "runs": [
+        "r21_half_L0_V005",
+        "r21_half_L1_V005",
+        "r21_half_L2_V005"
+      ]
+    },
+    {
+      "name": "6 V angular refinement",
+      "kind": "mesh",
+      "voltage_V": 6.0,
+      "scope": "Y_HALF / angular 32-48-64 / fixed radial 18 and thickness 16 / SUPG scale 1 / R21",
+      "runs": [
+        "r21_half_XY2_Z3_V060",
+        "r21_half_A48_V060",
+        "r21_half_A64_V060"
+      ]
+    },
+    {
+      "name": "0.5 V stabilization sensitivity",
+      "kind": "stabilization",
+      "voltage_V": 0.5,
+      "scope": "Y_HALF / L0 only / SUPG scale 0.5-1-2 / R21",
+      "runs": [
+        "r21_half_L0_scale05_V005",
+        "r21_half_L0_V005",
+        "r21_half_L0_scale2_V005"
+      ]
+    }
+  ],
+  "off_grid_points": [
+    {
+      "voltage_V": 6.459300885488345,
+      "directory": "r17_fine_replay_branch_03"
+    },
+    {
+      "voltage_V": 6.372938703023685,
+      "directory": "r17_fine_replay_branch_04"
+    }
+  ]
+}

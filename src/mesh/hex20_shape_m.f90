@@ -20,6 +20,7 @@ module hex20_shape_m
      0.0_dp,  0.0_dp,  0.0_dp,  0.0_dp ]
 
   public :: hex20_shape, hex20_geometry, hex20_natural_coordinates
+  public :: inverse_3x3
 
 contains
 

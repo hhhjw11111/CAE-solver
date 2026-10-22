@@ -1,0 +1,10 @@
+{
+  "spatial_failure": {
+    "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\field_shape_r23_L1_L2_V030.json",
+    "sha256": "5a827b640f25f12cff6e34837f9c00f41c0f2eafd0bd63f9c622c362649ccda5"
+  },
+  "geometry_contract": {
+    "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+    "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+  }
+}

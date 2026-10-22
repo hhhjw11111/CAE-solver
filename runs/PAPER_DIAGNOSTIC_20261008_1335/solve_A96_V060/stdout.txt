@@ -1,0 +1,13 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=61221, elements=13824
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.6849E-05,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0173E-16,
+pardiso_primary_entries=88884775,hole_entries=3280635
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.4898E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1232E-16,
+pardiso_primary_entries=88884775,hole_entries=3280635
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0832E-13,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1919E-16,
+pardiso_primary_entries=88884775,hole_entries=3280635
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.2719E-16,

@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "files": {
+    "metrics.txt": {
+      "exists": true,
+      "sha256": [
+        "6158dc23732a42a956f15495078e8a8cd83453197b3096502413f23fbeea317b",
+        "89362fb1e2df9c7e2b8bb6f76ffcf607bb2f1de7fed66462b085cc252729f6d9"
+      ],
+      "byte_identical": false
+    },
+    "nodes.csv": {
+      "exists": true,
+      "sha256": [
+        "94dfdca7df0954ef18bcf4b16532ffe61ae6d7d7557dba0606071b3dc092159a",
+        "3b73da6fe972fa35fcd66b8b906a3670f208e470bc113bf0808bc2aa46058928"
+      ],
+      "byte_identical": false
+    },
+    "field_samples.csv": {
+      "exists": true,
+      "sha256": [
+        "f10be65ec5ac3c859a028aa00d7b83e57cdac9449c1170bf4071c7af7a31e282",
+        "4a088d9b6e77cfd5e5fd77dcf7158452a95ceda4ff10be9e9230bfb1155ba6e5"
+      ],
+      "byte_identical": false
+    }
+  },
+  "case": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_FAST_HOLE_L0\\FAST_H1_LQ_L0.nml"
+}

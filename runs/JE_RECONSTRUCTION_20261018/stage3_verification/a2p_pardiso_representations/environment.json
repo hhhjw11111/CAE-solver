@@ -1,0 +1,14 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "OMP_STACKSIZE": "32M",
+    "TPS_PARDISO_STORAGE": "IC",
+    "TPS_PARDISO_SPLIT_HOLES": "0"
+  },
+  "executable": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_pardiso_representations\\build_retry01\\pardiso_representation_driver.exe",
+  "executable_sha256": "12341aadfb64b896ac54511c0441f16ba8fea1ec32c8f2d62cab22910d6e0767"
+}

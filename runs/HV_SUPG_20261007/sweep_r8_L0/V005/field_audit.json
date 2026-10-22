@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "errors": [],
+  "node_count": 10144,
+  "boundary_error": 0.0,
+  "minimum_T_K": 300.0,
+  "minimum_n_m3": 5.956489531592702e+22,
+  "minimum_p_m3": 1.3787353789160931e-30
+}

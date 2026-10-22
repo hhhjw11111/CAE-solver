@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "seconds": 987.1099999999988,
+  "timed_out": false,
+  "input_sha256": "f4b650e94a1f59bcd42298af06bb1e6b1b2efa640fa34a395fc5a5cf17c70d5d",
+  "executable_sha256": "96aa3c5fadbd6e03f2356cb0820c042ae0ef7c0c256f68c0b16ae8faee126d76",
+  "fully_validated": false,
+  "requires_fixed_voltage_flux_replay": true
+}

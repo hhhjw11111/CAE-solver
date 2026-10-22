@@ -1,0 +1,194 @@
+{
+  "checked_at": "2026-10-08T14:23:47.579169+08:00",
+  "cause": "UNKNOWN",
+  "confirmed": [
+    "Solver and wrapper both absent; execution/summary missing.",
+    "No matching Application1000/1001 or System2004/41/42/1/107/1074/6005/6006/6008 event found between14:10 and14:18. Queries completed with no matching event, not access denial.",
+    "Observed uptime3.94h at14:20 excludes a machine reboot in this interval.",
+    "Configured7200s solver timeout not reached by latestfactor14:14:26 (start13:41:08).",
+    "C drive127.32GiB free atcheck; no explicit disk/RAM/fatal error appears in preserved solver stdout."
+  ],
+  "not_confirmed": [
+    "Executor/session cleanup, user stop, OS process termination, sleep, crash, memory exhaustion, disk error cannot be assigned as cause.",
+    "No user-stop instruction captured in relevant project logs/docs; do not infer absence of one in another conversation."
+  ],
+  "wrapper_interpretation": "Source normally records execution.json after either child exit or controlled timeout; missing record plus absent wrapper points to unfinished wrapper/execution-chain cleanup, but cannot identify its cause.",
+  "r22_relation": "Same broad carrier-discretization credibility problem, distinct weak form: transport_supg=false and transport_log_weighted=true. 0.5V L0/L1/L2 mesh refinement, not R21 6V angular sequence. R23 additionally examines3x3x3 vs5x5x5 quadrature.",
+  "r22_existing_runs": [
+    {
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L0_V005",
+      "input_sha256": "9fca0b7c0617ef3c91c658cf5905bf37f4479c79fde9128ce19b3fb897735bfb",
+      "input_text": "&case_control\n schema_version=2,case_id='HV_NT_V005',model_level='M2_THERMO_TWO_CARRIER',\n mesh_file='C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/cases/HV_HALF_Y_20261008/L0_V005/H1_Y_HALF.mesh'\n/\n&problem_control\n half_y_symmetry=.true.,\n problem_type='CENTER_HOLE_PLATE', material_profile='ZNO_F1_NT',\n target_voltage=-0.5,target_voltage_factor=1.0,target_joule_factor=1.0,hole_radius=3e-6,\n restart_nodes_file='C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/runs/HV_SUPG_20261007/r21_half_L0_V005/nodes.csv',\n restart_voltage_factor=1, restart_joule_factor=1.0,\n/\n&solver_control\n transport_supg=.false.,transport_log_weighted=.true.,supg_scale=1,supg_directional_tau=.true.,\n global_log_step_limit=.false.,\n field_scales=1e-10,1e-10,1e-10,1,0.1,0.1,35.0,\n max_newton=40,newton_stagnation_window=4,residual_tolerance=1e-9,update_tolerance=1e-9,maximum_log_density_update=1,\n continuation_full_joule_during_voltage=.true.,\n continuation_secant_predictor=.true.,\n continuation_initial_step=0.5,continuation_maximum_step=1,\n continuation_minimum_step=0.01,continuation_growth_factor=1.5,\n continuation_maximum_attempts=200,continuation_maximum_newton_per_attempt=40\n/\n",
+      "execution": {
+        "exit_code": 0,
+        "seconds": 74.0,
+        "timed_out": false,
+        "input_sha256": "9fca0b7c0617ef3c91c658cf5905bf37f4479c79fde9128ce19b3fb897735bfb",
+        "executable_sha256": "e96418b8dab5ee5ddb1b3285d3a7b59a32fbf603c6695e1e74ecaee7d4b6e11e"
+      },
+      "summary": {
+        "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+        "mesh_validated": false,
+        "complete_quantitative_0_8V": false
+      },
+      "field_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 5541,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.956515029951515e+22,
+        "minimum_p_m3": 1.3915318931263298e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "metrics_sha256": "83d6f0e4f3212abebd38a18e7aa1f38a90a7aa3bf176d00972488c3e87af8079"
+    },
+    {
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005",
+      "input_sha256": "d0a4e8ed6572a839781d19e32f63934dc7c760aeaaab40e690e6cc519907b640",
+      "input_text": "&case_control\n schema_version=2,case_id='HV_NT_V005',model_level='M2_THERMO_TWO_CARRIER',\n mesh_file='C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/cases/HV_HALF_Y_20261008/L1/H1_Y_HALF.mesh'\n/\n&problem_control\n half_y_symmetry=.true.,\n problem_type='CENTER_HOLE_PLATE', material_profile='ZNO_F1_NT',\n target_voltage=-0.5,target_voltage_factor=1.0,target_joule_factor=1.0,hole_radius=3e-6,\n restart_nodes_file='C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/runs/HV_SUPG_20261007/r21_half_L1_V005/nodes.csv',\n restart_voltage_factor=1, restart_joule_factor=1.0,\n/\n&solver_control\n transport_supg=.false.,transport_log_weighted=.true.,supg_scale=1,supg_directional_tau=.true.,\n global_log_step_limit=.false.,\n field_scales=1e-10,1e-10,1e-10,1,0.1,0.1,35.0,\n max_newton=40,newton_stagnation_window=4,residual_tolerance=1e-9,update_tolerance=1e-9,maximum_log_density_update=1,\n continuation_full_joule_during_voltage=.true.,\n continuation_secant_predictor=.true.,\n continuation_initial_step=0.5,continuation_maximum_step=1,\n continuation_minimum_step=0.01,continuation_growth_factor=1.5,\n continuation_maximum_attempts=200,continuation_maximum_newton_per_attempt=40\n/\n",
+      "execution": {
+        "exit_code": 0,
+        "seconds": 234.01599999999962,
+        "timed_out": false,
+        "input_sha256": "d0a4e8ed6572a839781d19e32f63934dc7c760aeaaab40e690e6cc519907b640",
+        "executable_sha256": "e96418b8dab5ee5ddb1b3285d3a7b59a32fbf603c6695e1e74ecaee7d4b6e11e"
+      },
+      "summary": {
+        "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+        "mesh_validated": false,
+        "complete_quantitative_0_8V": false
+      },
+      "field_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10881,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.957372193894316e+22,
+        "minimum_p_m3": 1.3917310364996004e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "metrics_sha256": "528b376ff4d0415f926205147e4e0f7c19f981c30ff8e9080e4264b2c7c3a22d"
+    },
+    {
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005",
+      "input_sha256": "8f7617878fe31d3aadc4939aa193f53427b052929151e3a86c7965a98113f33f",
+      "input_text": "&case_control\n schema_version=2,case_id='HV_NT_V005',model_level='M2_THERMO_TWO_CARRIER',\n mesh_file='C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/cases/HV_HALF_Y_20261008/L2/H1_Y_HALF.mesh'\n/\n&problem_control\n half_y_symmetry=.true.,\n problem_type='CENTER_HOLE_PLATE', material_profile='ZNO_F1_NT',\n target_voltage=-0.5,target_voltage_factor=1.0,target_joule_factor=1.0,hole_radius=3e-6,\n restart_nodes_file='C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/runs/HV_SUPG_20261007/r21_half_L2_V005/nodes.csv',\n restart_voltage_factor=1, restart_joule_factor=1.0,\n/\n&solver_control\n transport_supg=.false.,transport_log_weighted=.true.,supg_scale=1,supg_directional_tau=.true.,\n global_log_step_limit=.false.,\n field_scales=1e-10,1e-10,1e-10,1,0.1,0.1,35.0,\n max_newton=40,newton_stagnation_window=4,residual_tolerance=1e-9,update_tolerance=1e-9,maximum_log_density_update=1,\n continuation_full_joule_during_voltage=.true.,\n continuation_secant_predictor=.true.,\n continuation_initial_step=0.5,continuation_maximum_step=1,\n continuation_minimum_step=0.01,continuation_growth_factor=1.5,\n continuation_maximum_attempts=200,continuation_maximum_newton_per_attempt=40\n/\n",
+      "execution": {
+        "exit_code": 0,
+        "seconds": 288.9840000000004,
+        "timed_out": false,
+        "input_sha256": "8f7617878fe31d3aadc4939aa193f53427b052929151e3a86c7965a98113f33f",
+        "executable_sha256": "e96418b8dab5ee5ddb1b3285d3a7b59a32fbf603c6695e1e74ecaee7d4b6e11e"
+      },
+      "summary": {
+        "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+        "mesh_validated": false,
+        "complete_quantitative_0_8V": false
+      },
+      "field_audit": {
+        "passed": true,
+        "errors": [],
+        "node_count": 18517,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.9575124149544015e+22,
+        "minimum_p_m3": 1.3917636590499618e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "metrics_sha256": "886613284d77b744290d86839147b6b53bceaa83b0c5141c7395ee9332fb537c"
+    }
+  ],
+  "offline_mesh_recheck": {
+    "voltages": [
+      {
+        "voltage_V": 0.5,
+        "complete_solve_flux_all_levels": true,
+        "mesh_pass": true,
+        "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+        "changes": {
+          "joule_W": {
+            "L0_L1": 1.7550086230983383e-05,
+            "L1_L2": 3.110303542258313e-06,
+            "limit": 0.01
+          },
+          "theta_max_K": {
+            "L0_L1": 7.648753448593328e-05,
+            "L1_L2": 1.048097874976602e-05,
+            "limit": 0.01
+          },
+          "ring_theta_mean_K": {
+            "L0_L1": 4.9760266600158485e-05,
+            "L1_L2": 1.684258720690932e-06,
+            "limit": 0.01
+          },
+          "electron_right_A": {
+            "L0_L1": 0.00017553729644642293,
+            "L1_L2": 6.850227668756654e-05,
+            "limit": 0.01
+          },
+          "ring_E_mean_V_m": {
+            "L0_L1": 0.00012824021936436495,
+            "L1_L2": 2.1906012451593284e-05,
+            "limit": 0.02
+          },
+          "ring_Q_mean_W_m3": {
+            "L0_L1": 0.00022060352321124447,
+            "L1_L2": 4.151150545953767e-05,
+            "limit": 0.02
+          },
+          "ring_abs_n_relative_mean": {
+            "L0_L1": 0.00046165789052914546,
+            "L1_L2": 5.5240716073808837e-05,
+            "limit": 0.02
+          },
+          "ring_abs_p_relative_mean": {
+            "L0_L1": 0.00043962356758799753,
+            "L1_L2": 6.334276491151308e-05,
+            "limit": 0.02
+          },
+          "ring_Q_p95_W_m3": {
+            "L0_L1": 0.00011459884738635011,
+            "L1_L2": 0.00547220493847558,
+            "limit": 0.05
+          },
+          "E_p95_V_m": {
+            "L0_L1": 0.006272494320688022,
+            "L1_L2": 0.0016686740618985542,
+            "limit": 0.05
+          }
+        }
+      }
+    ],
+    "all_mesh_pass": true,
+    "provenance_errors": [],
+    "fully_validated": false,
+    "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+  },
+  "checker_label_note": "Generic frozen checker says STABILIZATION_SENSITIVITY_PENDING. R22 runs have SUPG disabled; do not mechanically prescribe SUPG scale scans. Appropriate pending evidence includes quadrature sensitivity, weighted/original balance equivalence, physical scope and mechanics.",
+  "recovery_options": [
+    "Fastest: wait for existing R23 quadrature run, coordinate current owner and decide whether R22/R23 evidence suffices for narrow0.5V paper scope; no new solve.",
+    "If fixedR21 6V tail stillneeded: preserve incomplete folder; rerun in freshdatedfolder only after resource coordination and launcher persistencecheck. A128 remainsconditional.",
+    "Proposed launcher: existing local independent hidden PowerShell helper with start/PID/exit logs, using frozenR21 scripts and explicitOOC. Test a harmless10-30s process across delegation first. Start-Process alone is not proof of independence from executor jobs. No new credentials/services/systemsettings. Not executed.",
+    "Alternative: user-owned persistent terminal invoking existing frozen wrapper, with exit record; requires deciding direction and availability, not newsolverpermission absent existing authorization."
+  ],
+  "user_decision": "Main dialogue should verify whether user/current owner intendsR22/R23 to replace or complementR21 before resumingR21. No proved userstop or automatic cancellation inferred.",
+  "source_evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+      "sha256": "649669f7855028692da7af3e4dd107e8cd7cd65bb82479ce38609f7348d6ece5"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\docs\\current_execution_plan.md",
+      "sha256": "2d334f29cbdda3f63e5f9bd23add41b493bfa363c44527b421601b5896b28e20"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\docs\\hv_log_weighted_probe_20261008.md",
+      "sha256": "41d1976f1de963cf19266065bbd4721ebb5f3cbe8e5050c36c1d5ee55d6c44f6"
+    }
+  ]
+}

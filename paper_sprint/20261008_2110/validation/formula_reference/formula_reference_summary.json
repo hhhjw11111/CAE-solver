@@ -1,0 +1,87 @@
+{
+  "classification": "PURE_MATHEMATICAL_REFERENCE_NOT_PRODUCTION_VALIDATION",
+  "cases": [
+    {
+      "A": 0,
+      "endpoint_error": 0,
+      "maximum_constant_current_scaled_error": 0,
+      "P_drift_normalized": 0.0,
+      "P_diffusion_normalized": 0,
+      "P_work_normalized": 0.0,
+      "P_terminal_normalized": -0.0,
+      "power_identity_scaled_error": 0.0,
+      "passed": true
+    },
+    {
+      "A": 1,
+      "endpoint_error": 0.0,
+      "maximum_constant_current_scaled_error": 1.7199582345904482e-16,
+      "P_drift_normalized": 1.5819767068693265,
+      "P_diffusion_normalized": 1,
+      "P_work_normalized": 2.5819767068693267,
+      "P_terminal_normalized": 2.5819767068693267,
+      "power_identity_scaled_error": 0.0,
+      "passed": true
+    },
+    {
+      "A": 10,
+      "endpoint_error": 0.0,
+      "maximum_constant_current_scaled_error": 3.5526330304940457e-16,
+      "P_drift_normalized": 190.00454019909898,
+      "P_diffusion_normalized": 10,
+      "P_work_normalized": 200.00454019910094,
+      "P_terminal_normalized": 200.00454019910094,
+      "power_identity_scaled_error": 9.805267164163567e-15,
+      "passed": true
+    },
+    {
+      "A": 40,
+      "endpoint_error": 0.0,
+      "maximum_constant_current_scaled_error": 1.7763568394002506e-16,
+      "P_drift_normalized": 3159.999999997979,
+      "P_diffusion_normalized": 40,
+      "P_work_normalized": 3200.0,
+      "P_terminal_normalized": 3200.0,
+      "power_identity_scaled_error": 6.31530383543577e-13,
+      "passed": true
+    },
+    {
+      "A": -40,
+      "endpoint_error": 0.0,
+      "maximum_constant_current_scaled_error": 1.7763568394002506e-16,
+      "P_drift_normalized": 1640.0000000020211,
+      "P_diffusion_normalized": -40,
+      "P_work_normalized": 1600.0,
+      "P_terminal_normalized": 1600.0,
+      "power_identity_scaled_error": 1.2323930493978043e-12,
+      "passed": true
+    }
+  ],
+  "zero_limit": [
+    {
+      "A": -1e-08,
+      "max_density_zero_limit_error": 1.2500001034254637e-09,
+      "current_zero_limit_error": 1.5000000352927145e-08,
+      "passed": true
+    },
+    {
+      "A": 1e-08,
+      "max_density_zero_limit_error": 1.2500001034254637e-09,
+      "current_zero_limit_error": 1.4999999908837935e-08,
+      "passed": true
+    }
+  ],
+  "thermal_reference": {
+    "sigma_S_per_m": 197.06772598199998,
+    "k_W_per_mK": 60.0,
+    "L_m": 2e-05,
+    "V_V": 3.0,
+    "theta_max_K": 3.6950198621625003,
+    "pde_scaled_residual": 0.0,
+    "scope": "homogeneous isotropic constant-ohmic model, end temperatures fixed, remaining boundaries insulating; not ZnO coupled solution"
+  },
+  "counterexample": "At A=1 and n=exp(-x), drift and diffusion currents cancel exactly, while Q_drift=exp(-x)>0; current work is zero.",
+  "formula_check_passed": true,
+  "production_solver_validation": false,
+  "created_utc": "2026-10-08T13:24:53.000996+00:00"
+}

@@ -1,0 +1,120 @@
+pardiso_hole_split=ACCEPTED,full_backward_error=  8.7395E-12,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.7616E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.7300E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.7404E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.7045E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  1.7567E-12,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.7141E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.0518E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.1381E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  7.9802E-09,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  7.8916E-07,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.3444E-03,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  9.8157E-04,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.0779E-10,
+verification_id=G07_true_residual_newton
+g07_warm_converged=T
+g07_warm_iterations=5
+g07_warm_linear_solves=5
+g07_warm_backtracks=0
+g07_warm_log_limited_steps=0
+g07_warm_maximum_perturbed_pivots=0
+g07_warm_initial_residual_rms= 3.7594727185343492E-002
+g07_warm_final_residual_rms= 1.7209904513787743E-016
+g07_warm_final_update_rms= 6.9925853872771857E-014
+g07_warm_minimum_accepted_step= 1.0000000000000000E+000
+g07_warm_maximum_armijo_violation= 0.0000000000000000E+000
+g07_warm_final_update_u1= 2.0018931983856885E-015
+g07_warm_final_update_u2= 1.7733480448896228E-015
+g07_warm_final_update_u3= 3.7107073886258654E-015
+g07_warm_final_update_phi= 7.3331491153643688E-017
+g07_warm_final_update_eta_n= 1.1141613427048971E-013
+g07_warm_final_update_eta_p= 9.1358722214615293E-014
+g07_warm_final_update_theta= 9.0842387353250463E-017
+g07_warm_minimum_temperature= 3.0035297844639865E+002
+g07_warm_maximum_temperature= 3.0179598491746498E+002
+g07_warm_minimum_n= 5.0492720242519749E+020
+g07_warm_maximum_n= 1.1210273846175180E+021
+g07_warm_minimum_p= 8.8110498579137634E+010
+g07_warm_maximum_p= 1.9647595192327264E+011
+g07_warm_residual_1= 3.7594727185343492E-002
+g07_warm_residual_2= 3.9403616536525513E-004
+g07_warm_residual_3= 5.3145148816249364E-006
+g07_warm_residual_4= 6.5875718752841711E-010
+g07_warm_residual_5= 5.8300180990539051E-016
+g07_warm_residual_6= 1.7209904513787743E-016
+g07_warm_update_1= 1.4230241268572219E+000
+g07_warm_step_1= 1.0000000000000000E+000
+g07_warm_update_2= 1.4192591064470375E-001
+g07_warm_step_2= 1.0000000000000000E+000
+g07_warm_update_3= 1.6906176593680287E-003
+g07_warm_step_3= 1.0000000000000000E+000
+g07_warm_update_4= 2.2939794435605798E-007
+g07_warm_step_4= 1.0000000000000000E+000
+g07_warm_update_5= 6.9925853872771857E-014
+g07_warm_step_5= 1.0000000000000000E+000
+g07_cold_converged=T
+g07_cold_iterations=9
+g07_cold_linear_solves=9
+g07_cold_backtracks=0
+g07_cold_log_limited_steps=4
+g07_cold_maximum_perturbed_pivots=0
+g07_cold_initial_residual_rms= 2.5374967785794494E-001
+g07_cold_final_residual_rms= 1.2162982094825991E-016
+g07_cold_final_update_rms= 2.9056741856274640E-013
+g07_cold_minimum_accepted_step= 1.0000000000000000E+000
+g07_cold_maximum_armijo_violation= 0.0000000000000000E+000
+g07_cold_final_update_u1= 5.5608590818455168E-016
+g07_cold_final_update_u2= 6.8557619109444795E-016
+g07_cold_final_update_u3= 7.8787074345384859E-016
+g07_cold_final_update_phi= 3.4314397624485986E-017
+g07_cold_final_update_eta_n= 5.9258030512824571E-014
+g07_cold_final_update_eta_p= 5.9608064705967584E-013
+g07_cold_final_update_theta= 4.4272449286689603E-017
+g07_cold_minimum_temperature= 3.0035297844639865E+002
+g07_cold_maximum_temperature= 3.0179598491746498E+002
+g07_cold_minimum_n= 5.0492720242520031E+020
+g07_cold_maximum_n= 1.1210273846175223E+021
+g07_cold_minimum_p= 8.8110498579137695E+010
+g07_cold_maximum_p= 1.9647595192327307E+011
+g07_cold_residual_1= 2.5374967785794494E-001
+g07_cold_residual_2= 5.8555861945884406E-002
+g07_cold_residual_3= 1.1676749012022421E-002
+g07_cold_residual_4= 4.8558069632365078E-003
+g07_cold_residual_5= 5.7622243150999455E-004
+g07_cold_residual_6= 5.9158399769770630E-005
+g07_cold_residual_7= 1.1587744177047027E-006
+g07_cold_residual_8= 5.3616785652036498E-010
+g07_cold_residual_9= 2.8521930608927393E-016
+g07_cold_residual_10= 1.2162982094825991E-016
+g07_cold_update_1= 2.7871305458045552E+000
+g07_cold_step_1= 1.0000000000000000E+000
+g07_cold_update_2= 3.9451552761638045E+000
+g07_cold_step_2= 1.0000000000000000E+000
+g07_cold_update_3= 2.3643845258726333E+000
+g07_cold_step_3= 1.0000000000000000E+000
+g07_cold_update_4= 2.2074133642136307E+000
+g07_cold_step_4= 1.0000000000000000E+000
+g07_cold_update_5= 6.9069773402806101E-001
+g07_cold_step_5= 1.0000000000000000E+000
+g07_cold_update_6= 7.9945393989300978E-002
+g07_cold_step_6= 1.0000000000000000E+000
+g07_cold_update_7= 1.5736976021843180E-003
+g07_cold_step_7= 1.0000000000000000E+000
+g07_cold_update_8= 8.2912222786273141E-007
+g07_cold_step_8= 1.0000000000000000E+000
+g07_cold_update_9= 2.9056741856274640E-013
+g07_cold_step_9= 1.0000000000000000E+000
+g07_scaled_solution_difference= 3.2526334642768768E-014
+g07_charge_balance_defect= 1.7490758709074247E-016
+g07_electron_current_balance_defect= 1.4399378432315974E-016
+g07_hole_current_balance_defect= 1.5462077347019934E-016
+g07_heat_balance_defect= 2.0769282157787532E-017
+g07_boundary_max_error= 0.0000000000000000E+000
+g07_minimum_temperature= 3.0035297844639865E+002
+g07_maximum_temperature= 3.0179598491746498E+002
+g07_minimum_electron_concentration= 5.0492720242519749E+020
+g07_maximum_electron_concentration= 1.1210273846175223E+021
+g07_minimum_hole_concentration= 8.8110498579137634E+010
+g07_maximum_hole_concentration= 1.9647595192327307E+011
+verification_result=PASS

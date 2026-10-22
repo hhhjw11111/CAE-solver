@@ -1,0 +1,405 @@
+{
+  "status": "GEOMETRY_PREPARATION_COMPLETE_NOT_PRODUCTION_ACCEPTANCE",
+  "geometry_checks_passed": true,
+  "dependencies_unchanged": true,
+  "original_generators_modified": false,
+  "native_solver_started": false,
+  "production_inputs_generated": false,
+  "records": [
+    {
+      "case": "r3_A32_R14_Z14",
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\H1.mesh",
+      "mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+      "geometry_status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+      "geometry_audit": {
+        "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+        "geometry_coordinate_tolerance_m": 1e-18,
+        "numerical_geometry_relative_tolerance": 1e-10,
+        "bounds_m": [
+          [
+            -1e-05,
+            -1e-05,
+            -5e-07
+          ],
+          [
+            1e-05,
+            1e-05,
+            5e-07
+          ]
+        ],
+        "bound_coordinate_error_m": 0.0,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          381,
+          381
+        ],
+        "exterior_face_counts": {
+          "x-": 112,
+          "x+": 112,
+          "y-": 112,
+          "y+": 112,
+          "z-": 448,
+          "z+": 448,
+          "hole": 448
+        },
+        "annulus_interface_faces": 448,
+        "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+        "hole_node_radius_error_m": 4.235164736271502e-22,
+        "quadrature": {
+          "3": {
+            "volume_m3": 3.7172575357022314e-16,
+            "annulus_volume_m3": 1.0210144544086177e-17,
+            "minimum_jacobian": 3.604024415294573e-24,
+            "quadratic_boundary_volume_relative_error": 5.305395830423594e-16,
+            "quadratic_boundary_annulus_relative_error": 3.018064923286917e-16
+          },
+          "5": {
+            "volume_m3": 3.717257535702227e-16,
+            "annulus_volume_m3": 1.0210144544086173e-17,
+            "minimum_jacobian": 3.602918462670865e-24,
+            "quadratic_boundary_volume_relative_error": 6.631744788029494e-16,
+            "quadratic_boundary_annulus_relative_error": 1.5090324616434586e-16
+          }
+        },
+        "expected_quadratic_boundary_volume_m3": 3.7172575357022294e-16,
+        "expected_quadratic_annulus_volume_m3": 1.0210144544086174e-17,
+        "ideal_circle_volume_m3": 3.7172566611769187e-16,
+        "ideal_circle_annulus_volume_m3": 1.0210176124166823e-17,
+        "ideal_circle_volume_relative_geometry_error": 2.3526094386080762e-07,
+        "ideal_circle_annulus_relative_geometry_error": -3.0930005775171265e-06,
+        "quadratic_arc_relative_max_inward_sag": 2.898361352920986e-06,
+        "exterior_area_vector_m2": [
+          2.192412843554001e-26,
+          2.2618219874496865e-26,
+          5.040631857745012e-25
+        ],
+        "exterior_area_vector_relative_closure": 5.996033000354548e-16,
+        "divergence_volume_m3": 3.7172575357022294e-16,
+        "divergence_volume_relative_error": 0.0,
+        "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+      },
+      "legacy_reference": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14_legacy_reference\\H1.mesh",
+      "legacy_reference_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+      "byte_identical": true
+    },
+    {
+      "case": "r3_A40_R20_Z16",
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A40_R20_Z16\\H1.mesh",
+      "mesh_sha256": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+      "geometry_status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+      "geometry_audit": {
+        "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+        "geometry_coordinate_tolerance_m": 1e-18,
+        "numerical_geometry_relative_tolerance": 1e-10,
+        "bounds_m": [
+          [
+            -1e-05,
+            -1e-05,
+            -5e-07
+          ],
+          [
+            1e-05,
+            1e-05,
+            5e-07
+          ]
+        ],
+        "bound_coordinate_error_m": 0.0,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          533,
+          533
+        ],
+        "exterior_face_counts": {
+          "x-": 160,
+          "x+": 160,
+          "y-": 160,
+          "y+": 160,
+          "z-": 800,
+          "z+": 800,
+          "hole": 640
+        },
+        "annulus_interface_faces": 640,
+        "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+        "hole_node_radius_error_m": 4.235164736271502e-22,
+        "quadrature": {
+          "3": {
+            "volume_m3": 3.717257019530483e-16,
+            "annulus_volume_m3": 1.0210163183621451e-17,
+            "minimum_jacobian": 1.5773622650249768e-24,
+            "quadratic_boundary_volume_relative_error": 1.326349141780373e-16,
+            "quadratic_boundary_annulus_relative_error": 4.52708912032286e-16
+          },
+          "5": {
+            "volume_m3": 3.717257019530482e-16,
+            "annulus_volume_m3": 1.0210163183621448e-17,
+            "minimum_jacobian": 1.577059681079415e-24,
+            "quadratic_boundary_volume_relative_error": 3.9790474253411187e-16,
+            "quadratic_boundary_annulus_relative_error": 1.5090297067742864e-16
+          }
+        },
+        "expected_quadratic_boundary_volume_m3": 3.7172570195304833e-16,
+        "expected_quadratic_annulus_volume_m3": 1.0210163183621447e-17,
+        "ideal_circle_volume_m3": 3.7172566611769187e-16,
+        "ideal_circle_annulus_volume_m3": 1.0210176124166823e-17,
+        "ideal_circle_volume_relative_geometry_error": 9.640269619675681e-08,
+        "ideal_circle_annulus_relative_geometry_error": -1.2674164694828984e-06,
+        "quadratic_arc_relative_max_inward_sag": 1.1878546196664175e-06,
+        "exterior_area_vector_m2": [
+          -1.2356264418496715e-26,
+          1.6155871338926322e-26,
+          6.23616633682556e-25
+        ],
+        "exterior_area_vector_relative_closure": 7.407663885363338e-16,
+        "divergence_volume_m3": 3.7172570195304833e-16,
+        "divergence_volume_relative_error": 0.0,
+        "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+      },
+      "legacy_reference": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A40_R20_Z16_legacy_reference\\H1.mesh",
+      "legacy_reference_sha256": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+      "byte_identical": true
+    },
+    {
+      "case": "r3_A48_R22_Z18",
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A48_R22_Z18\\H1.mesh",
+      "mesh_sha256": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+      "geometry_status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+      "geometry_audit": {
+        "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+        "geometry_coordinate_tolerance_m": 1e-18,
+        "numerical_geometry_relative_tolerance": 1e-10,
+        "bounds_m": [
+          [
+            -1e-05,
+            -1e-05,
+            -5e-07
+          ],
+          [
+            1e-05,
+            1e-05,
+            5e-07
+          ]
+        ],
+        "bound_coordinate_error_m": 0.0,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          709,
+          709
+        ],
+        "exterior_face_counts": {
+          "x-": 216,
+          "x+": 216,
+          "y-": 216,
+          "y+": 216,
+          "z-": 1056,
+          "z+": 1056,
+          "hole": 864
+        },
+        "annulus_interface_faces": 864,
+        "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+        "hole_node_radius_error_m": 4.235164736271502e-22,
+        "quadrature": {
+          "3": {
+            "volume_m3": 3.7172568340328135e-16,
+            "annulus_volume_m3": 1.021016988214841e-17,
+            "minimum_jacobian": 1.0388809302272358e-24,
+            "quadratic_boundary_volume_relative_error": 1.3263492079675333e-16,
+            "quadratic_boundary_annulus_relative_error": 1.5090287167539151e-16
+          },
+          "5": {
+            "volume_m3": 3.7172568340328115e-16,
+            "annulus_volume_m3": 1.0210169882148401e-17,
+            "minimum_jacobian": 1.0387037792535398e-24,
+            "quadratic_boundary_volume_relative_error": 6.631746039837667e-16,
+            "quadratic_boundary_annulus_relative_error": 7.5451435837695755e-16
+          }
+        },
+        "expected_quadratic_boundary_volume_m3": 3.717256834032814e-16,
+        "expected_quadratic_annulus_volume_m3": 1.0210169882148409e-17,
+        "ideal_circle_volume_m3": 3.7172566611769187e-16,
+        "ideal_circle_annulus_volume_m3": 1.0210176124166823e-17,
+        "ideal_circle_volume_relative_geometry_error": 4.650093093164539e-08,
+        "ideal_circle_annulus_relative_geometry_error": -6.113526679382235e-07,
+        "quadratic_arc_relative_max_inward_sag": 5.730263764602839e-07,
+        "exterior_area_vector_m2": [
+          -2.711923055248322e-28,
+          5.977672395402736e-26,
+          7.431700815906108e-25
+        ],
+        "exterior_area_vector_relative_closure": 8.851590968171804e-16,
+        "divergence_volume_m3": 3.717256834032814e-16,
+        "divergence_volume_relative_error": 0.0,
+        "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+      },
+      "legacy_reference": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A48_R22_Z18_legacy_reference\\H1.mesh",
+      "legacy_reference_sha256": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+      "byte_identical": true
+    },
+    {
+      "case": "r2_A32_R14_Z14",
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r2_A32_R14_Z14\\H1.mesh",
+      "mesh_sha256": "4bb4ba1bdc9aab7bc99fae3613859be698c41e0acee3f0d0a1180dcc2dc3c39e",
+      "geometry_status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+      "geometry_audit": {
+        "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+        "geometry_coordinate_tolerance_m": 1e-18,
+        "numerical_geometry_relative_tolerance": 1e-10,
+        "bounds_m": [
+          [
+            -1e-05,
+            -1e-05,
+            -5e-07
+          ],
+          [
+            1e-05,
+            1e-05,
+            5e-07
+          ]
+        ],
+        "bound_coordinate_error_m": 0.0,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          381,
+          381
+        ],
+        "exterior_face_counts": {
+          "x-": 112,
+          "x+": 112,
+          "y-": 112,
+          "y+": 112,
+          "z-": 448,
+          "z+": 448,
+          "hole": 448
+        },
+        "annulus_interface_faces": 448,
+        "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+        "hole_node_radius_error_m": 4.235164736271502e-22,
+        "quadrature": {
+          "3": {
+            "volume_m3": 3.874336682534325e-16,
+            "annulus_volume_m3": 7.068561607444278e-18,
+            "minimum_jacobian": 2.403314446258004e-24,
+            "quadratic_boundary_volume_relative_error": 1.272574136330921e-16,
+            "quadratic_boundary_annulus_relative_error": 4.3594271114144356e-16
+          },
+          "5": {
+            "volume_m3": 3.8743366825343217e-16,
+            "annulus_volume_m3": 7.068561607444269e-18,
+            "minimum_jacobian": 2.4022084936340183e-24,
+            "quadratic_boundary_volume_relative_error": 7.635444817985525e-16,
+            "quadratic_boundary_annulus_relative_error": 8.718854222828871e-16
+          }
+        },
+        "expected_quadratic_boundary_volume_m3": 3.8743366825343247e-16,
+        "expected_quadratic_annulus_volume_m3": 7.068561607444275e-18,
+        "ideal_circle_volume_m3": 3.8743362938564085e-16,
+        "ideal_circle_annulus_volume_m3": 7.06858347057703e-18,
+        "ideal_circle_volume_relative_geometry_error": 1.0032116127952155e-07,
+        "ideal_circle_annulus_relative_geometry_error": -3.093000577232089e-06,
+        "quadratic_arc_relative_max_inward_sag": 2.898361352920986e-06,
+        "exterior_area_vector_m2": [
+          2.1924128435539998e-26,
+          2.261821987449685e-26,
+          5.686866711302065e-25
+        ],
+        "exterior_area_vector_relative_closure": 6.566016711308279e-16,
+        "divergence_volume_m3": 3.874336682534325e-16,
+        "divergence_volume_relative_error": 1.272574136330921e-16,
+        "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+      }
+    },
+    {
+      "case": "r4_A32_R14_Z14",
+      "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r4_A32_R14_Z14\\H1.mesh",
+      "mesh_sha256": "41fb33fb11de657e2483451e7534c88732f66377ea44f658f08f36d237d10edb",
+      "geometry_status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+      "geometry_audit": {
+        "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+        "geometry_coordinate_tolerance_m": 1e-18,
+        "numerical_geometry_relative_tolerance": 1e-10,
+        "bounds_m": [
+          [
+            -1e-05,
+            -1e-05,
+            -5e-07
+          ],
+          [
+            1e-05,
+            1e-05,
+            5e-07
+          ]
+        ],
+        "bound_coordinate_error_m": 0.0,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          381,
+          381
+        ],
+        "exterior_face_counts": {
+          "x-": 112,
+          "x+": 112,
+          "y-": 112,
+          "y+": 112,
+          "z-": 448,
+          "z+": 448,
+          "hole": 448
+        },
+        "annulus_interface_faces": 448,
+        "annulus_interface_node_radius_error_m": 8.470329472543003e-22,
+        "hole_node_radius_error_m": 8.470329472543003e-22,
+        "quadrature": {
+          "3": {
+            "volume_m3": 3.497346730137298e-16,
+            "annulus_volume_m3": 1.3351727480728095e-17,
+            "minimum_jacobian": 4.8047343843310435e-24,
+            "quadratic_boundary_volume_relative_error": 5.638995544988782e-16,
+            "quadratic_boundary_annulus_relative_error": 6.923796000481744e-16
+          },
+          "5": {
+            "volume_m3": 3.497346730137295e-16,
+            "annulus_volume_m3": 1.3351727480728078e-17,
+            "minimum_jacobian": 4.8036284317076706e-24,
+            "quadratic_boundary_volume_relative_error": 2.819497772494391e-16,
+            "quadratic_boundary_annulus_relative_error": 5.769830000401453e-16
+          }
+        },
+        "expected_quadratic_boundary_volume_m3": 3.497346730137296e-16,
+        "expected_quadratic_annulus_volume_m3": 1.3351727480728086e-17,
+        "ideal_circle_volume_m3": 3.4973451754256338e-16,
+        "ideal_circle_annulus_volume_m3": 1.3351768777756624e-17,
+        "ideal_circle_volume_relative_geometry_error": 4.4454052554131677e-07,
+        "ideal_circle_annulus_relative_geometry_error": -3.0930005773218384e-06,
+        "quadratic_arc_relative_max_inward_sag": 2.898361352920986e-06,
+        "exterior_area_vector_m2": [
+          2.5155302703325268e-26,
+          1.9387045606711592e-26,
+          5.234502313812128e-25
+        ],
+        "exterior_area_vector_relative_closure": 6.517666807227791e-16,
+        "divergence_volume_m3": 3.497346730137295e-16,
+        "divergence_volume_relative_error": 2.819497772494391e-16,
+        "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+      }
+    }
+  ],
+  "limitation": "Geometry tests do not certify carrier, thermal, electric, stress, power or SUPG convergence."
+}

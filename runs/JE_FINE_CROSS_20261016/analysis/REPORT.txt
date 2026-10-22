@@ -1,0 +1,87 @@
+J·E 新分支：细网格 SUPG 交叉与独立径向/厚度细化
+原模型、热源、源码、构建和验收阈值均保持不变；历史证据哈希已复核。
+基准为周向32、径向14、厚度14。径向14/16/18与厚度14/16/18为两项独立的渐变边界层研究，不是联合细网格。
+分辨率限制：径向中部固定4个粗层，厚度中部最大间距只从279.5变至276.875 nm；该序列通过不能证明全方向h收敛。详见主研究grid_resolution_scope.json。
+本轮只检查6 V与8 V；不认证整个电压区间、周向收敛、应力收敛或完整热电闭合。
+
+功率差额=(J·E体积分−全外边界电功率)/(J·E体积分)，另列仅电极差额。未新增或修改功率验收门限。
+算例 | 状态 | 全边界差额% | 电极差额% | 温升K | 电流mA
+A32_S1_V060 | SOLVE_FLUX_PASS_MESH_PENDING | 0.7431405 | 0.7541275 | 14.09696 | 0.9576825
+A32_S1_V080 | SOLVE_FLUX_PASS_MESH_PENDING | 0.9216482 | 0.9330175 | 24.23465 | 1.220692
+A32_R14_Z14_S0.5_V060 | SOLVE_FLUX_PASS_MESH_PENDING | 0.1833159 | 0.1884032 | 14.10774 | 0.9630714
+A32_R14_Z14_S0.5_V080 | SOLVE_FLUX_PASS_MESH_PENDING | 0.2283103 | 0.231535 | 24.26665 | 1.229175
+A32_R16_Z14_S1_V060 | FAILED_NO_COMPLETE_STATE | — | — | — | —
+A32_R16_Z14_S1_V080 | FAILED_NO_COMPLETE_STATE | — | — | — | —
+A32_R18_Z14_S1_V060 | PENDING_OR_DEPENDENCY_BLOCKED | — | — | — | —
+A32_R18_Z14_S1_V080 | PENDING_OR_DEPENDENCY_BLOCKED | — | — | — | —
+A32_R14_Z16_S1_V060 | FAILED_NO_COMPLETE_STATE | — | — | — | —
+A32_R14_Z16_S1_V080 | FAILED_NO_COMPLETE_STATE | — | — | — | —
+A32_R14_Z18_S1_V060 | PENDING_OR_DEPENDENCY_BLOCKED | — | — | — | —
+A32_R14_Z18_S1_V080 | PENDING_OR_DEPENDENCY_BLOCKED | — | — | — | —
+A32_R14_Z14_S2_V060 | FAILED_NO_COMPLETE_STATE | — | — | — | —
+A32_R14_Z14_S2_V080 | FAILED_NO_COMPLETE_STATE | — | — | — | —
+
+三系数 SUPG 原有指标验收：
+6 V: passed=False; errors=['A32_R14_Z14_S2_V060:INCOMPLETE_EVIDENCE:FileNotFoundError', 'A32_R14_Z14_S2_V060:SOLVE_OR_FLUX_FAIL']
+8 V: passed=False; errors=['A32_R14_Z14_S2_V080:INCOMPLETE_EVIDENCE:FileNotFoundError', 'A32_R14_Z14_S2_V080:SOLVE_OR_FLUX_FAIL']
+
+已完成的单系数与1的对照（不替代三系数验收）：
+V6_S0.5
+  joule_W: span=0.007285%, limit=1%, passed=True
+  theta_max_K: span=0.076410%, limit=1%, passed=True
+  electron_right_A: span=0.559548%, limit=1%, passed=True
+  ring_theta_mean_K: span=0.014928%, limit=1%, passed=True
+  ring_E_mean_V_m: span=0.238111%, limit=1%, passed=True
+  ring_Q_mean_W_m3: span=0.524900%, limit=1%, passed=True
+  ring_abs_n_relative_mean: span=0.023438%, limit=1%, passed=True
+  ring_abs_p_relative_mean: span=18.414259%, limit=1%, passed=False
+  ring_Q_p95_W_m3: span=0.564758%, limit=1%, passed=True
+  E_p95_V_m: span=0.286415%, limit=1%, passed=True
+V8_S0.5
+  joule_W: span=0.013127%, limit=1%, passed=True
+  theta_max_K: span=0.131847%, limit=1%, passed=True
+  electron_right_A: span=0.690075%, limit=1%, passed=True
+  ring_theta_mean_K: span=0.040408%, limit=1%, passed=True
+  ring_E_mean_V_m: span=0.293092%, limit=1%, passed=True
+  ring_Q_mean_W_m3: span=0.657325%, limit=1%, passed=True
+  ring_abs_n_relative_mean: span=0.007003%, limit=1%, passed=True
+  ring_abs_p_relative_mean: span=7.500730%, limit=1%, passed=False
+  ring_Q_p95_W_m3: span=0.717845%, limit=1%, passed=True
+  E_p95_V_m: span=0.338297%, limit=1%, passed=True
+
+独立方向网格指标验收（末两层比较）：
+radial_V6: passed=False; provenance_errors=['MISSING_MANIFEST']
+  status=SOLVE_OR_FLUX_FAIL
+thickness_V6: passed=False; provenance_errors=['MISSING_MANIFEST']
+  status=SOLVE_OR_FLUX_FAIL
+radial_V8: passed=False; provenance_errors=['MISSING_MANIFEST']
+  status=SOLVE_OR_FLUX_FAIL
+thickness_V8: passed=False; provenance_errors=['MISSING_MANIFEST']
+  status=SOLVE_OR_FLUX_FAIL
+
+局部场比较：最大差/两场最大幅值；载流子采用exp(eta)-1，门限2%。映射是比较或初值，必须原生重新求解。
+A32_R14_Z14_S0.5_V060: passed=False
+  phi_V: max=0.128017%, RMS=0.054547%, passed=True
+  theta_K: max=0.154793%, RMS=0.063083%, passed=True
+  ux_m: max=0.041757%, RMS=0.019763%, passed=True
+  uy_m: max=0.078317%, RMS=0.038557%, passed=True
+  uz_m: max=0.008895%, RMS=0.002698%, passed=True
+  eta_n_density_perturbation: max=0.138540%, RMS=0.022929%, passed=True
+  eta_p_density_perturbation: max=6.399946%, RMS=0.740223%, passed=False
+  eta_n 最大差位置[μm]=[-5.0, 6.123233995736765e-16, -0.5]; 目标浓度范围[m^-3]=1.94401e+22..1.36713e+23
+  eta_p 最大差位置[μm]=[3.5, 0.0, 0.5]; 目标浓度范围[m^-3]=6.05564e-31..4.2065e-30
+A32_R14_Z14_S0.5_V080: passed=False
+  phi_V: max=0.153839%, RMS=0.066269%, passed=True
+  theta_K: max=0.169335%, RMS=0.081900%, passed=True
+  ux_m: max=0.043970%, RMS=0.023301%, passed=True
+  uy_m: max=0.086500%, RMS=0.044142%, passed=True
+  uz_m: max=0.008721%, RMS=0.002699%, passed=True
+  eta_n_density_perturbation: max=0.177261%, RMS=0.027815%, passed=True
+  eta_p_density_perturbation: max=3.626028%, RMS=0.323965%, passed=False
+  eta_n 最大差位置[μm]=[0.3036571007409793, 3.083082283230466, -0.5]; 目标浓度范围[m^-3]=6.83288e+21..2.14943e+23
+  eta_p 最大差位置[μm]=[3.5, 0.0, 0.5]; 目标浓度范围[m^-3]=3.74316e-31..1.11121e-29
+
+保全检查：301个旧文件/源码/构建的SHA256均一致。
+超时是资源限制内未获得完整接受状态，不表示稳态不存在。新结果及失败记录保存在独立目录。
+主执行脚本：scripts/run_je_fine_cross_20261016.py；汇总脚本：scripts/summarize_je_fine_cross_20261016.py --output <全新目录>。
+输入来源、初值、网格、运行环境、退出码、场审计和独立功率分解均可逐例检查。

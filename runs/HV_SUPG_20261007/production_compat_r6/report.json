@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "seconds": 357.3119999999999,
+  "files": {
+    "nodes.csv": {
+      "byte_identical": false
+    },
+    "metrics.txt": {
+      "byte_identical": false
+    },
+    "field_samples.csv": {
+      "byte_identical": false
+    }
+  },
+  "passed": false
+}

@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "seconds": 637.4530000000004,
+  "files": {
+    "nodes.csv": {
+      "byte_identical": false
+    },
+    "metrics.txt": {
+      "byte_identical": false
+    },
+    "field_samples.csv": {
+      "byte_identical": false
+    }
+  },
+  "executable_sha256": "fc73dda49a90682ab565babc33455b567eb86052578ba83ce4645a8bcbfdc0dd",
+  "input_sha256": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+  "passed": false
+}

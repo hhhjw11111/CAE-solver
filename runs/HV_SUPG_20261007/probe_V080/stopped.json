@@ -1,0 +1,5 @@
+{
+  "status": "STOPPED_FOR_VALIDATED_PARALLEL_REPLACEMENT",
+  "not_physical_failure": true,
+  "reason": "R5 passed SUPG/SUPGJ/G08P and parallel determinism; preserve all logs, focus CPU on complete-heat 6-to-8 V probe"
+}

@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_20260906\\A1\\A1_export_stdout.txt": "b88729ccaadd18de5976e07fa2dde65e3da94850e44280e807f1a7dcd8978f5e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_20260906\\A2\\A2_export_stdout.txt": "bcfe57a790cf8be2d07552f608eead9f568ce31ddd0bd475bd9afb0aa480b222",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_20260906\\A1\\A1_stdout.txt": "b88729ccaadd18de5976e07fa2dde65e3da94850e44280e807f1a7dcd8978f5e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_20260906\\A2\\A2_stdout.txt": "bcfe57a790cf8be2d07552f608eead9f568ce31ddd0bd475bd9afb0aa480b222"
+  },
+  "evidence": "Saved historical analytical logs; no new solve. Synthetic A1/A2, not full ZnO device validation."
+}

@@ -22,8 +22,9 @@ module global_assembly_check_m
 
 contains
 
-  subroutine verify_global_g04(status)
+  subroutine verify_global_g04(status,current_work)
     type(SolverStatusType), intent(out) :: status
+    logical, intent(in), optional :: current_work
     type(MeshType) :: mesh
     type(MaterialType) :: materials(1)
     type(StateType) :: base_state, plus_state, minus_state
@@ -46,6 +47,7 @@ contains
     call clear_status(status)
     call build_two_element_mesh(mesh)
     call define_test_material(materials(1))
+    if (present(current_work)) materials(1)%heat_source_current_work=current_work
     materials(1)%reference_p = 2.0e20_dp
     node_count = mesh%number_of_nodes()
     allocate(base_state%x(NDOF_NODE*node_count))
@@ -159,6 +161,7 @@ contains
       electron_balance < 5.0e-12_dp .and. hole_balance < 5.0e-12_dp
 
     write(*,'(a)') 'verification_id=G04_global_assembly'
+    if(present(current_work)) write(*,'(a,l1)') 'global_current_work=',materials(1)%heat_source_current_work
     write(*,'(a,i0)') 'global_node_count=',node_count
     write(*,'(a,i0)') 'global_equation_count=',context%number_of_equations
     write(*,'(a,i0)') 'global_csr_nnz=',context%number_of_nonzeros

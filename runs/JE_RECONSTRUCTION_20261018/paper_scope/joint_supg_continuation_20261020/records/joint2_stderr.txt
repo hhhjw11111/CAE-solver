@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_resumed_20261020.py", line 159, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_resumed_20261020.py", line 140, in main
+    r.run_native(job,mesh,mapped/'nodes.csv',dest,initial['gate'])
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_reconstruction_mesh_20261018.py", line 339, in run_native
+    if state != PASS: raise RuntimeError('NATIVE_BATCH_STOP: '+job['name']+' '+state)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: NATIVE_BATCH_STOP: A48_R22_Z18_S1_V060 FAILED_NO_COMPLETE_STATE

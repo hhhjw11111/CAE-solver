@@ -1,0 +1,88 @@
+{
+  "direction": "baseline",
+  "level": 0,
+  "counts": {
+    "circumferential": 32,
+    "radial": 14,
+    "thickness": 14
+  },
+  "nodes": 27840,
+  "elements": 6272,
+  "annulus_outer_radius_m": 3.5e-06,
+  "annulus_corner_index": 5,
+  "annulus_intervals": 5,
+  "remaining_radial_intervals": 9,
+  "profiles": {
+    "radial_axis_corners_m": [
+      3e-06,
+      3.0140000000000003e-06,
+      3.0420000000000003e-06,
+      3.0980000000000002e-06,
+      3.21e-06,
+      3.5e-06,
+      4.9999999999999996e-06,
+      6.5000000000000004e-06,
+      8e-06,
+      9.5e-06,
+      9.790000000000001e-06,
+      9.902000000000001e-06,
+      9.958e-06,
+      9.986e-06,
+      1e-05
+    ],
+    "radial_diagonal_corners_m": [
+      3e-06,
+      3.0140000000000003e-06,
+      3.0420000000000003e-06,
+      3.0980000000000002e-06,
+      3.21e-06,
+      3.5e-06,
+      6.035533905932737e-06,
+      8.571067811865476e-06,
+      1.1106601717798212e-05,
+      1.364213562373095e-05,
+      1.3932135623730951e-05,
+      1.4044135623730951e-05,
+      1.410013562373095e-05,
+      1.4128135623730951e-05,
+      1.4142135623730951e-05
+    ],
+    "z_corners_m": [
+      -5e-07,
+      -4.964999999999999e-07,
+      -4.894999999999999e-07,
+      -4.755e-07,
+      -4.4749999999999995e-07,
+      -3.915e-07,
+      -2.795e-07,
+      0.0,
+      2.795e-07,
+      3.915e-07,
+      4.4749999999999995e-07,
+      4.755e-07,
+      4.894999999999999e-07,
+      4.964999999999999e-07,
+      5e-07
+    ]
+  },
+  "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+  "scope": "Full-direction logical-coordinate refinement; other directions fixed; nonnested meshes",
+  "maximum_radial_axis_step_m": 1.5000000000000009e-06,
+  "maximum_radial_diagonal_step_m": 2.5355339059327385e-06,
+  "maximum_z_step_m": 2.795e-07,
+  "geometry_audit": {
+    "minimum_jacobian_3x3x3": 3.604024415294573e-24,
+    "anchor_counts": [
+      1,
+      1,
+      1
+    ],
+    "contact_counts": [
+      381,
+      381
+    ]
+  },
+  "volume_3x3x3_m3": 3.71725753570223e-16,
+  "mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+  "generator_sha256": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc"
+}

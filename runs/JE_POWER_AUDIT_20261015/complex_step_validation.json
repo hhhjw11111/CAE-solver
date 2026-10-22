@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "imaginary_step": 1e-15,
+      "points": 36,
+      "max_gradient_normalized_error": 2.406767156307798e-08,
+      "current_evaluator_peak_relative_difference": 4.3275059306522415e-12
+    },
+    {
+      "imaginary_step": 1e-20,
+      "points": 36,
+      "max_gradient_normalized_error": 1.056889834156406e-08,
+      "current_evaluator_peak_relative_difference": 4.3275059306522415e-12
+    }
+  ],
+  "method": "Complex-step derivative of the complete current, including geometry inverse, exp(eta), and T-dependent mobility/diffusion; no analytic current divergence or shape Hessian used on reference side.",
+  "prior_attempt": "finite_difference_attempt.json retains failed small-step subtractive test."
+}

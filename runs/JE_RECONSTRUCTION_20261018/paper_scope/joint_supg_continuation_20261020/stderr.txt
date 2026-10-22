@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\scripts\continue_je_joint_supg_20261020.py", line 118, in <module>
+    main()
+  File "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\scripts\continue_je_joint_supg_20261020.py", line 102, in main
+    child("joint2", [runner, "--batch", "joint", "--joint-level", "2", "--execute"])
+  File "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\scripts\continue_je_joint_supg_20261020.py", line 70, in child
+    raise RuntimeError(f"{label} failed with exit {code}; no retry or next step")
+RuntimeError: joint2 failed with exit 1; no retry or next step

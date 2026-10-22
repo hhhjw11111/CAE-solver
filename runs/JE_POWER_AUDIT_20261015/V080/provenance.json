@@ -1,0 +1,123 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh",
+      "sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\nodes.csv",
+      "sha256": "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\metrics.txt",
+      "sha256": "f44e2a3d5a6791460bc1387f11eecf5289e3f1cccded14b6040c6afde70872a1"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V080.nml",
+      "sha256": "4fcc63d5c8912ae88df68d90c28ad78ae65aab4d50f1b6e86fe0af3e23a642f3"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py",
+      "sha256": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py",
+      "sha256": "d9f398ef998fcfeb7a702d1475bb933a46e15b7dd527b26ae5052bb997379ded"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\material_point_m.f90",
+      "sha256": "f0775431009fe6f970dc145a570d29c4993159f8c43f0250eba0d8764452f90a"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\transport_m.f90",
+      "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90",
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\transport_supg_m.f90",
+      "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90",
+      "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\post\\independent_flux_audit_m.f90",
+      "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10"
+    }
+  ],
+  "source_matches_build": {
+    "src/physics/material_point_m.f90": true,
+    "src/physics/transport_m.f90": true,
+    "src/physics/zno_candidate_m.f90": true,
+    "src/fem/transport_supg_m.f90": true,
+    "src/fem/element_kernel_m.f90": true,
+    "src/post/independent_flux_audit_m.f90": true
+  },
+  "native_metrics": {
+    "case_id": "JE_GRID_V080",
+    "model": "NT",
+    "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+    "source": "ZNO_300K_CANDIDATE_V2; plan=F1_20260906",
+    "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+    "transport_discretization": "HEX20_CONSISTENT_SUPG_EXPERIMENTAL",
+    "supg_scale": 1.0,
+    "supg_directional_tau": "T",
+    "zero_source_heat_reference_W": 0.012612334462847999,
+    "restart_nodes_file": "C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/solver_v2/runs/JE_6_8_HALF_V_20261013/V075/nodes.csv",
+    "continuation_path": "FULL_JOULE_DURING_VOLTAGE",
+    "continuation_columns": "phase,voltage,joule,iterations,residual,update,max_balance",
+    "balance_detail_point": "2, 2.1354075299380978E-014, 7.0473456678384480E-014, 2.6968626458286886E-014, 3.7338115980564866E-017, 6.1145836072451449E-019, 1.6376251041771608E-002",
+    "voltage_V": 8.0,
+    "hole_radius_m": 3e-06,
+    "ring_width_m": 5e-07,
+    "minimum_jacobian": 7.173340105309729e-24,
+    "total_volume_m3": 3.7172706054966015e-16,
+    "maximum_stage_balance": 7.047345667838448e-14,
+    "maximum_accepted_residual": 7.154452864253276e-16,
+    "maximum_accepted_update": 2.6931266025219344e-10,
+    "final_voltage_factor": 1.0,
+    "final_joule_factor": 1.0,
+    "spatial_acceptance": "REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES",
+    "joule_W": 0.009858400976771209,
+    "total_current_work_W": 0.009858400976771209,
+    "diffusion_work_W": -0.003134698297183024,
+    "absolute_diffusion_work_W": 0.0031351134492323476,
+    "terminal_power_W": 0.009565488869031054,
+    "heat_out_W": 0.009857167638661575,
+    "heat_balance_relative": 0.0001251052896448293,
+    "electron_balance_relative": 8.609986686844556e-05,
+    "hole_balance_diagnostic": 3.800543844336676e-05,
+    "joule_quadrature_4_5_relative": 1.612417639131645e-08,
+    "electron_right_A": 0.00119498152379613,
+    "hole_right_A": 6.826032524490993e-57,
+    "ring_volume_m3": 1.020967257928814e-17,
+    "ring_Q_mean_W_m3": 44472649758413.38,
+    "ring_Q_p95_W_m3": 93598443902084.36,
+    "ring_E_mean_V_m": 500364.7859488312,
+    "ring_abs_n_relative_mean": 0.03930475634066772,
+    "ring_abs_p_relative_mean": 0.11153558603250224,
+    "ring_theta_mean_K": 20.46380034258161,
+    "ring_displacement_mean_m": 9.061863751494874e-10,
+    "E_p95_V_m": 618336.0892530138,
+    "E_above_1e6_volume_fraction": 0.016972348116437896,
+    "theta_max_K": 24.373359998820035,
+    "maximum_abs_n_relative": 2.594399865990757,
+    "maximum_abs_p_relative": 6.919610728082053,
+    "displacement_max_m": 1.8020814693798205e-09,
+    "minimum_mu_n_ratio": 0.8553663290800139,
+    "stress_von_mises_max_Pa": 6903082.623558476,
+    "total_newton_iterations": 4.0,
+    "case_acceptance": "PASS_NOT_MESH_ACCEPTANCE"
+  },
+  "nodes": 13920,
+  "elements": 3136,
+  "exterior_faces": 896,
+  "internal_faces": 8960,
+  "verification": {
+    "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+  }
+}

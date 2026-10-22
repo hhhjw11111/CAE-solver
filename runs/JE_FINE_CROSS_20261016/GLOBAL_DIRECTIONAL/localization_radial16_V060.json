@@ -1,0 +1,173 @@
+{
+  "scope": "LOCATION_DIAGNOSTIC_ONLY_NOT_AN_ADDITIONAL_ACCEPTANCE_TEST",
+  "normalization": "maximum absolute exp(eta)-1 over both complete fields, same denominator for every region",
+  "regions_overlap": true,
+  "rms_is_node_weighted_not_volume_weighted": true,
+  "reference": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R16_Z14_S1_V060\\nodes.csv",
+  "target": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V060\\nodes.csv",
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R16_Z14_S1_V060\\nodes.csv": "4a3b35dae0d8be09431fd50376e32ad0b3f7cfeef76fa002f03ebe48a3c03f24",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R16_Z14_S1_V060\\nodes.csv": "ab7f3eeea447346bcb762ece24cc5342effe25926696ed747a2f1aaf380f0dda"
+  },
+  "carriers": {
+    "eta_n": {
+      "all": {
+        "node_count": 31616,
+        "maximum_percent": 0.44392844071957294,
+        "rms_percent": 0.03634078384253004,
+        "maximum_node": 3077,
+        "xyz_um": [
+          3.6896537181213493,
+          -8.907612046748872,
+          -0.5
+        ]
+      },
+      "top_bottom_surface": {
+        "node_count": 3200,
+        "maximum_percent": 0.44392844071957294,
+        "rms_percent": 0.07649673183897361,
+        "maximum_node": 3077,
+        "xyz_um": [
+          3.6896537181213493,
+          -8.907612046748872,
+          -0.5
+        ]
+      },
+      "off_surface": {
+        "node_count": 28416,
+        "maximum_percent": 0.35928929107417035,
+        "rms_percent": 0.028467417388122664,
+        "maximum_node": 3083,
+        "xyz_um": [
+          3.6896537181213493,
+          -8.907612046748872,
+          -0.49824999999999997
+        ]
+      },
+      "hole_annulus_r_le_3p5um": {
+        "node_count": 12736,
+        "maximum_percent": 0.13919809149511933,
+        "rms_percent": 0.01984810266155299,
+        "maximum_node": 3037,
+        "xyz_um": [
+          0.9101392247518234,
+          -3.0003269326323863,
+          -0.5
+        ]
+      },
+      "outside_annulus": {
+        "node_count": 18880,
+        "maximum_percent": 0.44392844071957294,
+        "rms_percent": 0.04411106479621805,
+        "maximum_node": 3077,
+        "xyz_um": [
+          3.6896537181213493,
+          -8.907612046748872,
+          -0.5
+        ]
+      },
+      "annulus_surface": {
+        "node_count": 1280,
+        "maximum_percent": 0.13919809149511933,
+        "rms_percent": 0.04485630018186049,
+        "maximum_node": 3037,
+        "xyz_um": [
+          0.9101392247518234,
+          -3.0003269326323863,
+          -0.5
+        ]
+      },
+      "annulus_off_surface": {
+        "node_count": 11456,
+        "maximum_percent": 0.09221688992159024,
+        "rms_percent": 0.01459963559531123,
+        "maximum_node": 2917,
+        "xyz_um": [
+          0.5989272885895139,
+          -3.011010810837918,
+          -0.49824999999999997
+        ]
+      }
+    },
+    "eta_p": {
+      "all": {
+        "node_count": 31616,
+        "maximum_percent": 2.9339374450334983,
+        "rms_percent": 0.3006695079388752,
+        "maximum_node": 29513,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "top_bottom_surface": {
+        "node_count": 3200,
+        "maximum_percent": 2.9339374450334983,
+        "rms_percent": 0.36001827951435195,
+        "maximum_node": 29513,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "off_surface": {
+        "node_count": 28416,
+        "maximum_percent": 2.7740649770549597,
+        "rms_percent": 0.2932345458584403,
+        "maximum_node": 29518,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.49824999999999997
+        ]
+      },
+      "hole_annulus_r_le_3p5um": {
+        "node_count": 12736,
+        "maximum_percent": 2.9339374450334983,
+        "rms_percent": 0.3519390602121776,
+        "maximum_node": 29513,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "outside_annulus": {
+        "node_count": 18880,
+        "maximum_percent": 2.040092252689486,
+        "rms_percent": 0.2604448883800617,
+        "maximum_node": 31493,
+        "xyz_um": [
+          4.652086784529346,
+          -1.926957439488701,
+          0.5
+        ]
+      },
+      "annulus_surface": {
+        "node_count": 1280,
+        "maximum_percent": 2.9339374450334983,
+        "rms_percent": 0.43772369568543046,
+        "maximum_node": 29513,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.5
+        ]
+      },
+      "annulus_off_surface": {
+        "node_count": 11456,
+        "maximum_percent": 2.7740649770549597,
+        "rms_percent": 0.3410165434740331,
+        "maximum_node": 29518,
+        "xyz_um": [
+          3.5,
+          0.0,
+          0.49824999999999997
+        ]
+      }
+    }
+  },
+  "script_sha256": "f5d4dac0b4fc2a5809b2f727599cdbf0c601889febaa440e0958b4eeedf3e94d"
+}

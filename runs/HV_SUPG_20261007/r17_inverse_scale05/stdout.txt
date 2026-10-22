@@ -1,0 +1,25 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  2.1322E-06,
+newton_iteration=1, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  6.0406E-08,
+newton_iteration=2, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  3.1257E-11,
+newton_iteration=3, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  6.1555E-16,
+newton_iteration=4, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  6.0128E-16,
+temperature_newton_iteration=0,voltage_factor=  8.41107318E-01,theta_control=  2.63538366E+01,residual=  1.01965871E-03,
+temperature_newton_iteration=1,voltage_factor=  8.06603245E-01,theta_control=  2.63538366E+01,residual=  1.79728500E-06,
+temperature_newton_iteration=2,voltage_factor=  7.91530657E-01,theta_control=  2.63538366E+01,residual=  2.21193088E-08,
+temperature_newton_iteration=3,voltage_factor=  7.91359719E-01,theta_control=  2.63538366E+01,residual=  2.03434895E-12,
+temperature_newton_iteration=4,voltage_factor=  7.91359700E-01,theta_control=  2.63538366E+01,residual=  7.47827462E-16,
+temperature_newton_iteration=5,voltage_factor=  7.91359700E-01,theta_control=  2.63538366E+01,residual=  6.76157062E-16,
+temperature_newton_iteration=0,voltage_factor=  8.32719399E-01,theta_control=  3.17538366E+01,residual=  3.59940038E-06,
+temperature_newton_iteration=1,voltage_factor=  8.07924002E-01,theta_control=  3.17538366E+01,residual=  6.18925937E-08,
+temperature_newton_iteration=2,voltage_factor=  8.07452881E-01,theta_control=  3.17538366E+01,residual=  1.93569484E-11,
+temperature_newton_iteration=3,voltage_factor=  8.07452735E-01,theta_control=  3.17538366E+01,residual=  8.85485001E-16,
+temperature_newton_iteration=4,voltage_factor=  8.07452735E-01,theta_control=  3.17538366E+01,residual=  8.35424067E-16,
+temperature_newton_iteration=0,voltage_factor=  8.23545771E-01,theta_control=  3.71538366E+01,residual=  3.83599377E-06,
+temperature_newton_iteration=1,voltage_factor=  7.98738121E-01,theta_control=  3.71538366E+01,residual=  6.41460041E-08,
+temperature_newton_iteration=2,voltage_factor=  7.98257005E-01,theta_control=  3.71538366E+01,residual=  2.71450856E-11,
+temperature_newton_iteration=3,voltage_factor=  7.98256853E-01,theta_control=  3.71538366E+01,residual=  1.02871787E-15,
+temperature_newton_iteration=4,voltage_factor=  7.98256853E-01,theta_control=  3.71538366E+01,residual=  9.97812274E-16,
+inverse_maximum_sampled_voltage_V= 6.4596218835734227E+000

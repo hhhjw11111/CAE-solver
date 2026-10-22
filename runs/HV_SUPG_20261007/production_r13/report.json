@@ -1,0 +1,12 @@
+{
+  "exit_code": 4294967295,
+  "seconds": 103.95299999999952,
+  "files": {
+    "metrics.txt": {
+      "byte_identical": false
+    }
+  },
+  "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+  "input_sha256": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+  "strict_byte_pass": false
+}

@@ -1,0 +1,11 @@
+{
+  "error": "CONTROLLED_STOP_MAPPING_NAMESPACE_REPAIR",
+  "reason": "Comparison mapping namespace omitted voltage; native process absence verified before stopping only owned controller.",
+  "completed_native_points": [
+    "A32_R18_Z14_S1_V060",
+    "A32_R18_Z14_S1_V080",
+    "A40_R20_Z16_S1_V060"
+  ],
+  "existing_data_retained": true,
+  "production_started": false
+}

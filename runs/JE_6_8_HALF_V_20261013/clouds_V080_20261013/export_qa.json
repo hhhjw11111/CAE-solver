@@ -1,0 +1,139 @@
+{
+  "backend": "Python matplotlib",
+  "exports": [
+    {
+      "figure": "JE_V080_clouds_midplane",
+      "canvas_inches": [
+        11.2,
+        7.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": 600
+    },
+    {
+      "figure": "JE_V080_clouds_top",
+      "canvas_inches": [
+        11.2,
+        7.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "JE_V080_clouds_bottom",
+      "canvas_inches": [
+        11.2,
+        7.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "joule_density_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "potential_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "electron_density_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "hole_density_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "coupled_stress_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "thermal_constitutive_stress_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "temperature_three_planes",
+      "canvas_inches": [
+        11.8,
+        4.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    },
+    {
+      "figure": "carriers_three_planes",
+      "canvas_inches": [
+        11.3,
+        7.3
+      ],
+      "label_overflows": [],
+      "editable_svg_text": true,
+      "png_dpi": 330,
+      "tiff_dpi": null
+    }
+  ],
+  "visual_review": "PASS_LAYOUT_UNITS_AND_FIELD_LABELS",
+  "physics_acceptance": "NOT_ESTABLISHED",
+  "visually_reviewed_sheets": [
+    "JE_V080_clouds_midplane",
+    "JE_V080_clouds_top",
+    "JE_V080_clouds_bottom",
+    "carriers_three_planes",
+    "joule_density_three_planes"
+  ],
+  "normalization": "Overview: linear local ranges, clearly stated colorbars. Three-plane comparisons: common linear range for each quantity, signed fields centered at zero.",
+  "heat_palette": "Midplane positive heat palette follows the supplied visual reference; signed surface current work uses blue-white-red.",
+  "negative_surface_current_work_retained": true,
+  "plotting_script_sha256": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be"
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-13",
+  "conclusion": "On the fixed XY0_Z2 mesh, the diagnostic current-work branch has solved 6.0, 6.5, 7.0, 7.5 and 8.0 V fields; its 6 V heat power and sampled peak temperature are lower than the original drift-heat control.",
+  "archetype": "quantitative_grid",
+  "backend": "python_matplotlib",
+  "panels": [
+    {"metric": "theta_max_K", "definition": "Maximum temperature rise over the 5x5x5 element sampling points", "unit": "K"},
+    {"metric": "joule_W", "definition": "Solid-domain volume integral of the selected heat source", "display_unit": "mW", "scale": 1000},
+    {"metric": "ring_E_mean_V_m", "definition": "Volume-weighted mean of electric-field magnitude in the hole annulus", "display_unit": "kV/cm", "scale": 0.00001},
+    {"metric": "ring_Q_mean_W_m3", "definition": "Volume-weighted mean of selected heat-source density in the hole annulus", "display_unit": "10^12 W/m^3", "scale": 1e-12}
+  ],
+  "annulus_um": {"radial_range": [3, 3.5], "z_range": [-0.5, 0.5]},
+  "same_mesh_figure": {
+    "voltage_axis_V": [6, 8],
+    "mesh": "XY0_Z2; 13920 nodes; 3136 HEX20 elements",
+    "original_control_V": [6],
+    "current_work_V": [6, 6.5, 7, 7.5, 8],
+    "curve_semantics": "Both series are NT. The heat-source definitions differ; these are not linear-versus-nonlinear labels."
+  },
+  "reference_layout_figure": {
+    "voltage_axis_V": [0, 8],
+    "LQ": "Original drift-heat three-stage no-return-feedback LQ reference, L0 mesh; 3 V metrics scaled by V for E and V^2 for temperature/heat. Not independently solved half-volt cases and not a current-work LQ model.",
+    "comparison_limit": "LQ and NT current-work branches have different heat-source definitions and different meshes. The figure is a reference overview, not a controlled nonlinearity comparison.",
+    "missing_current_work_V": [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5],
+    "original_NT": "Only the accepted same-mesh 6 V control is shown. Failed fold states and uncomputed original-model high-voltage points are omitted."
+  },
+  "integrity": {
+    "no_extrapolated_NT": true,
+    "no_interpolated_results": true,
+    "lines": "Straight connections between actual NT points guide the eye only",
+    "acceptance": "PASS_NOT_MESH_ACCEPTANCE; physical model uncalibrated; electrical-work gap 2.52-2.97% is not an accepted closure certificate",
+    "replicates": "Deterministic numerical cases, one archived state per plotted voltage; no statistical error bars",
+    "temperature_comparison": "Peak/source ratio is descriptive of each solved source distribution, not a material constant or an isolated causal experiment."
+  },
+  "exports": {"combined_width_mm": 183, "single_width_mm": 105, "formats": ["png", "svg", "pdf", "tiff"], "raster_dpi": 600, "editable_text": true}
+}

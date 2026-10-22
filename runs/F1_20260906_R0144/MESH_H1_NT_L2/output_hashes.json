@@ -1,0 +1,27 @@
+[
+  {
+    "name": "execution.json",
+    "bytes": 679,
+    "sha256": "C510EF5E3C12BE8910C71758D8C0B067EDE458593293F357C5AEEA4BA73293AB"
+  },
+  {
+    "name": "input.nml",
+    "bytes": 664,
+    "sha256": "B97944CF25BC68E4B31902A7FC729D22405FCBA8FF8AE6A65C8B0DC5D74D7846"
+  },
+  {
+    "name": "metrics.txt",
+    "bytes": 260,
+    "sha256": "EE958A38625DC4B9826FFB1C53E088D95D5D647ADBFE7AA80268B1F70AD53B43"
+  },
+  {
+    "name": "stderr.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "name": "stdout.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  }
+]

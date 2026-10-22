@@ -1,0 +1,4 @@
+f1_nodes=10144, elements=2240
+newton_iteration=0, voltage_factor=  5.0000E-01, joule_factor=  1.0000E+00, residual=  3.4132E-17,
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  1.8221E-02,
+newton_iteration=1, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  2.3950E-03,

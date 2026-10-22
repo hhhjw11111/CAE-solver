@@ -1,0 +1,38 @@
+{
+  "status": "TRANSFER_INPUT_IDENTITY_CHECKED_NOT_SOLVED",
+  "checks": 2,
+  "passed": true,
+  "actual_same_radius_transfer_checked": true,
+  "restart_voltage_factor": 0.8,
+  "seed_validation": {
+    "nodes": 27840,
+    "coordinates_exactly_equal": true,
+    "maximum_coordinate_difference_m": 0.0,
+    "finite_fields": true,
+    "positive_temperature_and_density": true,
+    "electrode_voltage_error_V": 3.552713678800501e-15
+  },
+  "transfer": {
+    "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\transfer_report.json",
+    "source_mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A24\\H1_XY0_Z2.mesh",
+    "boundary_extension_nodes": 0
+  },
+  "wrong_source_rejection": "Seed transfer source/target identity mismatch",
+  "native_solver_started": false,
+  "production_acceptance": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\H1.mesh": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A32_R14_Z14\\manifest.json": "b85893608d17d76d37a1941dff2abc4ae6815a29bdb73e0b0f8541149d5f196a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\nodes.csv": "338105f2db73e56dbc1ccb38b0cda4b0f5cb61d795510519561a9019af603446",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\nodes.csv": "812033536ab0bd4a3236bdd0e70ce897d102e393990378ece9897e60c0af47a6",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\metrics.txt": "6ca96af804d2142c74f615a168ec339a5b062278bf635cff208b39de190abba2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V060.nml": "3e9c15c38ea55c488c95594b36ba21f73603936d5453e035f996ce59f68e1f02",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\prepare_je_paper_input_20261018.py": "de78ba42dc050a9f55f0feaa6542934323b6178c224c9312f5b74b956c546e31",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90": "a07a9ab4cf08c3fb311542c24233307e65c4c883dae74b938f2129df9f2004aa",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\nonlinear\\continuation_solver_m.f90": "acea50272239300a474c7ea002b8586161b4e11dfca7d67f1dd9704a34bce273",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\transfer_report.json": "96e72bd3a61b0f6fc6976044296be8ec4b421c300d8645b4154e6057b3064ffb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A24\\H1_XY0_Z2.mesh": "21a48025eb5f965c970058f2e14263eebdad067d03cd940d95d6200b7ca110cc"
+  },
+  "input_text_sha256": "cb6591e42233891b6138c92ba2c18a7049414def9d2c733a4fde972bdade5b5b",
+  "limitation": "Uses an existing A24-to-A32 interpolation as a start guess only; does not rerun interpolation or native re-equilibration."
+}

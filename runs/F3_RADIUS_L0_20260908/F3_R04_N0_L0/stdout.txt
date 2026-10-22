@@ -1,0 +1,61 @@
+f1_nodes=10144, elements=2240
+newton_iteration=0, voltage_factor=  0.0000E+00, joule_factor=  0.0000E+00, residual=  0.0000E+00,
+newton_iteration=0, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  2.3630E-02,
+newton_iteration=1, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  5.0313E-14,
+newton_iteration=2, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  1.3493E-17,
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  4.7260E-02,
+newton_iteration=1, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  1.1711E-14,
+newton_iteration=2, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  4.0606E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  2.3630E-02,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  2.6466E-15,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  5.4832E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  8.6717E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  4.5211E-07,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  7.2535E-11,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  6.3478E-17,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  5.4194E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.7343E-05,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.8999E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  2.7956E-09,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  6.2807E-15,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  9.5494E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  8.6725E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.7647E-07,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.8957E-10,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.9589E-16,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1278E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 3.0000000000000000E+000
+hole_radius_m= 3.9999999999999998E-006
+ring_width_m= 4.9999999999999998E-007
+minimum_jacobian= 3.8252786200029507E-023
+total_volume_m3= 3.4973699653272996E-016
+maximum_stage_balance= 1.0523527206138495E-013
+maximum_accepted_residual= 1.1278304624260098E-016
+maximum_accepted_update= 8.9920839628177336E-010
+joule_W= 1.4478556099810046E-003
+terminal_power_W= 1.3776720270671401E-003
+heat_out_W= 1.4391208679709832E-003
+heat_balance_relative= 6.0328819737321673E-003
+electron_balance_relative= 1.4645581585261268E-008
+hole_balance_diagnostic= 1.2830793497573991E-006
+joule_quadrature_4_5_relative= 4.6222326778083304E-009
+electron_right_A= 4.5890439932215482E-004
+hole_right_A= 2.6147612289465382E-057
+ring_volume_m3= 1.3351110295990808E-017
+ring_Q_mean_W_m3= 6.5336118640644336E+012
+ring_Q_p95_W_m3= 1.3422241186687350E+013
+ring_E_mean_V_m= 1.6377024108836422E+005
+ring_abs_n_relative_mean= 5.6673593277094996E-003
+ring_abs_p_relative_mean= 6.3699363366341204E-003
+ring_theta_mean_K= 2.9212392459062113E+000
+ring_displacement_mean_m= 1.3956410363578035E-010
+E_p95_V_m= 2.0631452316263417E+005
+E_above_1e6_volume_fraction= 0.0000000000000000E+000
+theta_max_K= 3.9384560754221525E+000
+maximum_abs_n_relative= 2.8358742998164010E-001
+maximum_abs_p_relative= 3.1334876068301987E-001
+displacement_max_m= 2.7556348036307648E-010
+minimum_mu_n_ratio= 1.0000000000000000E+000
+stress_von_mises_max_Pa= 9.5869584205173724E+005
+case_acceptance=PASS_NOT_MESH_ACCEPTANCE

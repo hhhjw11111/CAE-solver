@@ -1,0 +1,25 @@
+{
+  "record_type": "RETROSPECTIVE_METADATA_CORRECTION_NOT_REBUILD",
+  "recorded_utc": "2026-09-06T17:27:42.562441+00:00",
+  "original_manifest_sha256": "c28d1ca68e87c8a070f8c8462ef61e9c0a9dc4f18ec01540e50ee61c99c01286",
+  "original_manifest_solver_version": "0.14.4-f1-stack-safe",
+  "actual_embedded_version": "0.14.4-f1-fast-threaded",
+  "actual_executable_sha256": "8b23ec17cc129d2c3cfdc91dedb67d5a4aa174d0107e7bb219233a80d0b5bf01",
+  "explanation": "VERSION metadata was corrected after the threaded build; original build manifest retained unmodified.",
+  "early_H0_environment": {
+    "record_type": "RETROSPECTIVE_FROM_EXECUTION_HISTORY",
+    "cases": [
+      "FAST_H0_LQ_L0",
+      "FAST_H0_N0_L0",
+      "FAST_H0_NT_L0"
+    ],
+    "MKL_NUM_THREADS": 8,
+    "OMP_NUM_THREADS": 8,
+    "TPS_PARDISO_STORAGE": "IC",
+    "MKL_DYNAMIC": "not explicitly set by the original launcher",
+    "warning": "No contemporaneous per-case provenance.json was written for these three runs."
+  },
+  "H1_N0_continuation_change": "Initial/maximum step changed to 1.0; minimum step/cutback/tolerances unchanged. Prior input retained in input_history.",
+  "plot_sample_check_change": "Near-zero electric components normalized by the electric-vector norm; threshold unchanged. No PDE acceptance changed.",
+  "controller_note": "The sequential controller stopped at already-existing FAST_H1_NT_L0 after five passes; the independently prioritized H1-NT passed and is included by case-level audit."
+}

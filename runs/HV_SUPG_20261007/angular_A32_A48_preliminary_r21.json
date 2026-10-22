@@ -1,0 +1,36 @@
+{
+  "scope": "TWO_LEVEL_PRELIMINARY_ONLY",
+  "three_level_mesh_pass": false,
+  "rows": {
+    "theta_max_K": {
+      "A32": 20.892013652220896,
+      "A48": 20.87788276314774,
+      "relative_change": 0.0006763775530874112
+    },
+    "joule_W": {
+      "A32": 0.003906313895536084,
+      "A48": 0.003904647248462637,
+      "relative_change": 0.0004266546719022979
+    },
+    "electron_right_A": {
+      "A32": 0.00046623391939945135,
+      "A48": 0.00046817052189693524,
+      "relative_change": 0.004136532325096319
+    },
+    "ring_abs_n_relative_mean": {
+      "A32": 0.03249183590927951,
+      "A48": 0.03245997479405563,
+      "relative_change": 0.0009805883334151873
+    },
+    "ring_abs_p_relative_mean": {
+      "A32": 0.06979677001818493,
+      "A48": 0.06343863585947186,
+      "relative_change": 0.0910949626616893
+    },
+    "physical_exterior_heat_balance_relative": {
+      "A32": 0.001978550984399366,
+      "A48": 0.001974802150205955,
+      "relative_change": 0.001894737220809621
+    }
+  }
+}

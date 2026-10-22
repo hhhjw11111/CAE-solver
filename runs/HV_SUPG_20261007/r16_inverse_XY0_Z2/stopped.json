@@ -1,0 +1,5 @@
+{
+  "pid": 4988,
+  "time": "2026-10-08T02:15:59.3403893+08:00",
+  "reason": "Initial temperature predictor changed the voltage factor without lifting the interior potential. This creates an artificial contact-layer field. Preserve this failed attempt and repair only the predictor; no physical nonexistence inference."
+}

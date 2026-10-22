@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\tests",
+    "-p",
+    "test_hv*.py"
+  ],
+  "exit_code": 0,
+  "seconds": 3.75,
+  "files": {
+    "tests/test_hv_runtime.py": "441b513e0080844ae686df8d94fa5446091bc67ff6e9bdf09d4b5eb4c0327e09",
+    "tests/test_hv_stabilization.py": "4524b56b0c1a0d27bedf40ad286c3260ca62190b39bb03a639ce3847e5ef9a33",
+    "tests/test_hv_status.py": "be62fccc6d565dc78cc3aba23b97411c7e2971e34df1b4c03a4dff47ce9c4a6a",
+    "tests/test_hv_surface_mesh.py": "671d0f4bf45f68636e14a19bbdd4ec9975ea9adc64ad8b69e5ef305900b30bd7",
+    "tests/test_hv_transfer.py": "c054f1a13cd3499137f1940f3b9b9107b11db79ae6ec2cf657193c17a634e4c3",
+    "scripts/hv_runtime.py": "d18e94f6becd4113856e6f271439373022af2a607198034f26749424d69583ca",
+    "scripts/run_hv_point.py": "2207d8f114442670fb3431c4c3e2cd9967338448369d1a4b269b9cc419d2572b",
+    "scripts/run_hv_sweep.py": "2b8d62125c613264d27cfd2bfbbc3410c858fd7a810bd23f8a4fc89d0d2f505f",
+    "scripts/run_hv_temperature_trace.py": "5b1aa73e9dec3e7557acd95e01dfa7bae4832bcf68fcbda8c2499284c2c3c49b",
+    "scripts/audit_hv_stabilization.py": "421129a6e38b003499cbcb32805a8974e3f01e2e236c0119e42a551be23d90a7",
+    "scripts/diagnose_hv_stabilization_spatial.py": "7a1712c77b848a1d7a5d5844895fc3873ebacdf140a7f65829c2b4cb2da8362a"
+  }
+}

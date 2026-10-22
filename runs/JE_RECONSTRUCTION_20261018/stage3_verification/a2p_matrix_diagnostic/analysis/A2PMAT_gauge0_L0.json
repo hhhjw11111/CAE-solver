@@ -1,0 +1,206 @@
+{
+  "path": "solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge0_L0.bin",
+  "sha256": "eae1b6637c41dc10d20cbc783905c53751e910858cf53f419b8211a14df1aed6",
+  "n": 2128,
+  "nnz": 483728,
+  "nodes": 304,
+  "anchor": 0,
+  "gauge_dof": 0,
+  "level": 0,
+  "gauge": 0,
+  "pivots": -1,
+  "refinements": 0,
+  "native_error": 0,
+  "scaling_reconstruction_max_error": 0.0,
+  "explicit_zero_entries": 399139,
+  "scales": {
+    "u1": {
+      "unknowns": 304,
+      "fixed": 304,
+      "column_variable_scale": [
+        1e-12,
+        1e-12
+      ],
+      "row_equilibration_scale": [
+        1e-12,
+        1e-12
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        1.0,
+        1.0
+      ]
+    },
+    "u2": {
+      "unknowns": 304,
+      "fixed": 304,
+      "column_variable_scale": [
+        1e-12,
+        1e-12
+      ],
+      "row_equilibration_scale": [
+        1e-12,
+        1e-12
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        1.0,
+        1.0
+      ]
+    },
+    "u3": {
+      "unknowns": 304,
+      "fixed": 80,
+      "column_variable_scale": [
+        1.0000000000000001e-11,
+        1.0000000000000001e-11
+      ],
+      "row_equilibration_scale": [
+        1.0000000000000001e-11,
+        3.351287277676636e-05
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.7281068948569861,
+        1.0
+      ]
+    },
+    "phi": {
+      "unknowns": 304,
+      "fixed": 0,
+      "column_variable_scale": [
+        0.1,
+        0.1
+      ],
+      "row_equilibration_scale": [
+        1.3823493040238148e-17,
+        3.9370030009347973e-16
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.6258254721636879,
+        1.0
+      ]
+    },
+    "eta_n": {
+      "unknowns": 304,
+      "fixed": 80,
+      "column_variable_scale": [
+        0.1,
+        0.1
+      ],
+      "row_equilibration_scale": [
+        4.4295355098662376e-07,
+        0.1
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.12944872182311298,
+        1.0
+      ]
+    },
+    "eta_p": {
+      "unknowns": 304,
+      "fixed": 80,
+      "column_variable_scale": [
+        0.1,
+        0.1
+      ],
+      "row_equilibration_scale": [
+        1.1073838774665594e-07,
+        0.1
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        0.12944872182311298,
+        1.0
+      ]
+    },
+    "theta": {
+      "unknowns": 304,
+      "fixed": 304,
+      "column_variable_scale": [
+        1.0,
+        1.0
+      ],
+      "row_equilibration_scale": [
+        1.0,
+        1.0
+      ],
+      "scaled_row_max": [
+        1.0,
+        1.0
+      ],
+      "scaled_column_max": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "fixed_rows_identity_error": 0.0,
+  "electrical_free_dimension": 752,
+  "mechanical_free_dimension": 224,
+  "mechanical_electrical_coupling_max": 0.0,
+  "electrical_svd": {
+    "seconds": 0.15600000007543713,
+    "sigma_max": 8.582316709151387,
+    "smallest_singular_values": [
+      0.0006968871566296277,
+      0.0006968871566295241,
+      0.00043610941051395725,
+      0.00038466959953505086,
+      0.00019428007140848757,
+      0.00019428007140843626,
+      0.00011775166334707392,
+      1.6822388688939185e-16
+    ],
+    "rank_threshold": 1.433054156514811e-12,
+    "numerical_rank": 751,
+    "dimension": 752,
+    "condition2": 5.101722988242632e+16,
+    "smallest_triplet_right_residual": 5.519941492073888e-16,
+    "smallest_triplet_left_residual": 8.195495199005914e-16
+  },
+  "smallest_right_mode_constant_phi_alignment": 1.0,
+  "expected_constant_phi_residual": 5.551115123125783e-17,
+  "right_mode_norm_by_field": {
+    "phi": 1.0,
+    "eta_n": 6.590336570216258e-13,
+    "eta_p": 6.672850142717811e-13
+  },
+  "left_mode_norm_by_field": {
+    "phi": 0.9008939295118003,
+    "eta_n": 0.3069121435924174,
+    "eta_p": 0.30691214359209484
+  },
+  "left_null_at_candidate_gauge_rows": [
+    {
+      "dof_1based": 144,
+      "left_scaled": 0.06356055723212947,
+      "left_raw": 581370040498377.6
+    },
+    {
+      "dof_1based": 214,
+      "left_scaled": 0.13020733363583858,
+      "left_raw": 581370040498387.0
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+ M PROJECT_STATE.md
+ M README.md
+ M TPSolverV2.vfproj
+ M VERSION
+ M docs/current_execution_plan.md
+ M scripts/build_debug.ps1
+ M scripts/build_manifest.ps1
+ M src/app/f1_case_runner_m.f90
+ M src/app/main.f90
+ M src/core/build_info_m.f90
+ M src/core/model_types_m.f90
+ M src/fem/element_kernel_m.f90
+ M src/fem/global_assembly_m.f90
+ M src/io/input_schema_m.f90
+ M src/io/native_input_m.f90
+ M src/linear/pardiso_solver_m.f90
+ M src/mesh/hex20_quadrature_m.f90
+ M src/mesh/hex20_shape_m.f90
+ M src/nonlinear/continuation_solver_m.f90
+ M src/nonlinear/newton_solver_m.f90
+ M src/post/field_metrics_m.f90
+ M src/post/independent_flux_audit_m.f90
+ M src/verification/continuation_solver_check_m.f90
+ M src/verification/element_tangent_check_m.f90
+ M src/verification/global_block_jacobian_check_m.f90
+ M src/verification/linear_solver_check_m.f90
+ M src/verification/newton_solver_check_m.f90
+ M src/verification/verification_driver_m.f90
+?? cases/F1_20260906/
+?? cases/F2_H1_VOLTAGE_SWEEP_20260908/
+?? cases/F3_RADIUS_SWEEP_20260908/
+?? cases/HV_ANGULAR_20261008/
+?? cases/HV_CONTROLLED_ANGLE_20261008/
+?? cases/HV_CONTROLLED_RADIAL_20261008/
+?? cases/HV_HALF_Y_20261008/
+?? cases/HV_NESTED_Z_20261008/
+?? cases/HV_SURFACE_20261008/
+?? docs/hv_0_8v_completion_plan_20261007.md
+?? docs/hv_block_solver_note_20261008.md
+?? docs/hv_half_y_refinement_20261008.md
+?? docs/hv_heat_cancellation_audit_20261008.md
+?? docs/hv_independent_thermal_model_proposal_20261008.md
+?? docs/hv_log_weighted_probe_20261008.md
+?? final_results/data/
+?? final_results/figures/
+?? final_results/final_validation_report.md
+?? final_results/interview_project_guide_zh.md
+?? final_results/qa/visual_qa.md
+?? final_results/resume_force_gate_assessment_zh.md
+?? material_audit/evidence_20260905_v2/reference_pages/
+?? material_audit/evidence_20260905_v2_repeat/
+?? material_audit/sources/
+?? paper_sprint/
+?? runs/20260831T131721Z_G00_G01/
+?? runs/20260901T131345Z_G00_G03/
+?? runs/20260901T132738Z_G00_G04/
+?? runs/20260901T135236Z_G00_G05/
+?? runs/20260901T135544Z_G00_G05/
+?? runs/20260901T135812Z_G00_G04_L01/
+?? runs/20260901T135944Z_G00_G04_L01/
+?? runs/20260901T140100Z_G00_G04_L01/
+?? runs/20260901T142548Z_G00_G05_L01/
+?? runs/20260901T144304Z_G00_G06_L01/
+?? runs/20260901T144433Z_G00_G06_L01/
+?? runs/20260902T025306Z_G00_G07_L01/
+?? runs/20260902T025427Z_G00_G07_L01/
+?? runs/20260902T032707Z_G00_G08_L01/
+?? runs/20260902T040825Z_G00_G09_L01/
+?? runs/20260902T075202Z_G00_G10_L01/
+?? runs/20260902T094327Z_G00_G11_L01/
+?? runs/20260902T103313Z_G00_G11_L01/
+?? runs/20260902T120024Z_G00_G12_L01/
+?? runs/20260902T132814Z_G13_ENDPOINTS/
+?? runs/20260905T140953Z_G00_G12_A1J_L01/
+?? runs/20260905T160401Z_G00_G12_A1J_L01/
+?? runs/20260905T173149Z_G13_ENDPOINTS/
+?? runs/20260905T173523Z_G12_REPAIRED_0132/
+?? runs/20260905T_A1J_flux_audit/
+?? runs/20260906_REPAIRED_CORE_0132/A1J_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/A1J_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G02_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G02_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G03_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G03_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G04_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G04_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G05_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G05_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G06_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G06_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G07_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G07_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G08_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G08_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G09_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G09_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G10_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G11_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G11_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/G12C_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/G12C_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/L01_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/L01_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/V01_run_1.txt
+?? runs/20260906_REPAIRED_CORE_0132/V01_run_2.txt
+?? runs/20260906_REPAIRED_CORE_0132/geometry_G09_center_hole_H00_plain.json
+?? runs/20260906_REPAIRED_CORE_0132/geometry_G09_center_hole_H02_r090.json
+?? runs/20260906_REPAIRED_CORE_0132/geometry_G10_mesh_convergence_L0.json
+?? runs/20260906_REPAIRED_CORE_0132/geometry_G10_mesh_convergence_L1.json
+?? runs/20260906_REPAIRED_CORE_0132/geometry_G11_matched_control_H00_L2.json
+?? runs/20260906_REPAIRED_CORE_0132/input_snapshot/
+?? runs/20260906_REPAIRED_CORE_0132/source_snapshot/
+?? runs/20260906_REPAIRED_CORE_0132/verification_spec/
+?? runs/20260906_REPAIRED_CORE_0132/version.txt
+?? runs/20260906_boundary_guard/
+?? runs/A1_100NM_010NM_NE20_20260907/
+?? runs/A1_100NM_010NM_NE20_DT10K_20260907/
+?? runs/F1_20260906/A1/A1_export_stdout.txt
+?? runs/F1_20260906/A1/A1_ne16_nodes.csv
+?? runs/F1_20260906/A1/A1_ne1_nodes.csv
+?? runs/F1_20260906/A1/A1_ne2_nodes.csv
+?? runs/F1_20260906/A1/A1_ne4_nodes.csv
+?? runs/F1_20260906/A1/A1_ne8_nodes.csv
+?? runs/F1_20260906/A1/G05_targeted_regression.txt
+?? runs/F1_20260906/A2/A2_L0_nodes.csv
+?? runs/F1_20260906/A2/A2_L0_wall.csv
+?? runs/F1_20260906/A2/A2_L1_nodes.csv
+?? runs/F1_20260906/A2/A2_L1_wall.csv
+?? runs/F1_20260906/A2/A2_L2_nodes.csv
+?? runs/F1_20260906/A2/A2_L2_wall.csv
+?? runs/F1_20260906/A2/A2_export_stdout.txt
+?? runs/F1_20260906/DIAG_MESH_H1_NT_L1_0143/
+?? runs/F1_20260906/DIAG_MESH_H1_NT_L1_0143_8192/
+?? runs/F1_20260906/DIAG_MESH_H1_NT_L1_0144/
+?? runs/F1_20260906/F1M_checked_build.txt
+?? runs/F1_20260906/F1M_production_build.txt
+?? runs/F1_20260906/L01_ooc_storage_check.txt
+?? runs/F1_20260906/MESH_H1_NT_L0/
+?? runs/F1_20260906/MESH_H1_NT_L1/
+?? runs/F1_20260906/SMALL_H1_LQ_L0/
+?? runs/F1_20260906/SMALL_H1_NT_L0/
+?? runs/F1_20260906/SMALL_H1_NT_L0_0142/
+?? runs/F1_20260906/evidence/inputs/
+?? runs/F1_20260906/evidence/main_0142_build_manifest.json
+?? runs/F1_20260906/evidence/main_0142_compiler_options.json
+?? runs/F1_20260906/evidence/main_build_manifest.json
+?? runs/F1_20260906/evidence/main_compiler_options.json
+?? runs/F1_20260906/evidence/ooc_build_manifest.json
+?? runs/F1_20260906/evidence/ooc_compiler_options.json
+?? runs/F1_20260906/evidence/src/
+?? runs/F1_20260906/evidence/src_0142/
+?? runs/F1_20260906/evidence/src_ooc/
+?? runs/F1_20260906/small_comparison.json
+?? runs/F1_20260906/small_comparison_0140_failed.json
+?? runs/F1_20260906_R0144/
+?? runs/F1_FAST_HOLE_L0_20260907/
+?? runs/F2_0_8V_CREDIBILITY_AUDIT_20260914/
+?? runs/F2_CAUCHY_RESTART_0149_20260909/
+?? runs/F2_COUPLED_CONTINUATION_0147_20260909/
+?? runs/F2_H1_HIGH_VOLTAGE_L0_20260909/
+?? runs/F2_H1_VOLTAGE_SWEEP_L0_20260908/
+?? runs/F2_HIGH_VOLTAGE_NUMERICS_AUDIT_20260909/
+?? runs/F2_HIGH_VOLTAGE_RESTART_0148_20260909/
+?? runs/F2_NEWTON_FALLBACK_0146_20260909/
+?? runs/F2_PROJECTED_NEWTON_0150_20260909/
+?? runs/F2_REFLECTED_NEWTON_0151_20260909/
+?? runs/F2_V080_MODEL_HOMOTOPY_20260909/
+?? runs/F3_RADIUS_L0_20260908/
+?? runs/HV_SUPG_20261007/
+?? runs/PAPER_DIAGNOSTIC_20261008_1335/
+?? runs/geometry_audit_20260906/
+?? scripts/audit_hv_field_shape.py
+?? scripts/audit_hv_half_y.py
+?? scripts/audit_hv_mesh.py
+?? scripts/audit_hv_quadrature.py
+?? scripts/audit_hv_stabilization.py
+?? scripts/check_hv_log_temperature.ps1
+?? scripts/check_hv_log_weighted_bar.ps1
+?? scripts/check_hv_log_weighted_global.ps1
+?? scripts/check_hv_log_weighted_global_q5.ps1
+?? scripts/check_hv_log_weighted_low_pe.ps1
+?? scripts/check_hv_log_weighted_probe.ps1
+?? scripts/check_hv_log_weighted_production.ps1
+?? scripts/check_hv_log_weighted_production_bar.ps1
+?? scripts/check_hv_log_weighted_q5.ps1
+?? scripts/check_hv_production_regression.py
+?? scripts/check_hv_transport_equilibrium.ps1
+?? scripts/compare_hv_production_fields.py
+?? scripts/diagnose_hv_drift_diffusion_cancellation.py
+?? scripts/diagnose_hv_heat_components.py
+?? scripts/diagnose_hv_heat_flux.py
+?? scripts/diagnose_hv_stabilization_spatial.py
+?? scripts/generate_hv_half_y.py
+?? scripts/generate_hv_surface_mesh.py
+?? scripts/hv_runtime.py
+?? scripts/perturb_hv_initial_guess.py
+?? scripts/plot_f2_four_panel_0_8V_estimated.py
+?? scripts/prepare_hv_zero_heat_guess.py
+?? scripts/run_hv_log_temperature_trace.py
+?? scripts/run_hv_point.py
+?? scripts/run_hv_regression.py
+?? scripts/run_hv_scale_path.py
+?? scripts/run_hv_sweep.py
+?? scripts/run_hv_temperature_trace.py
+?? scripts/run_hv_trajectory.py
+?? scripts/summarize_hv_credibility.py
+?? scripts/summarize_hv_preliminary.py
+?? scripts/transfer_hv_initial_guess.py
+?? src/fem/transport_supg_m.f90
+?? src/nonlinear/temperature_control_m.f90
+?? src/verification/supg_check_m.f90
+?? src/verification/temperature_control_check_m.f90
+?? tests/

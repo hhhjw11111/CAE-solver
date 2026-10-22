@@ -1,0 +1,5 @@
+verification_id=BLK_checked_hole_block_linear_solve
+block_case=1,split_accepted=T,solution_error=  2.0677E-16,full_matrix_difference=  2.1515E-16
+block_case=2,split_accepted=F,solution_error=  2.1515E-16,full_matrix_difference=  0.0000E+00
+block_case=3,split_accepted=F,solution_error=  2.2204E-16,full_matrix_difference=  0.0000E+00
+verification_result=PASS

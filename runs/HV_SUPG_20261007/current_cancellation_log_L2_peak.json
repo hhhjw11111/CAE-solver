@@ -1,0 +1,17 @@
+{
+  "scope": "CONSTITUTIVE_DIAGNOSTIC_NOT_NEW_HEAT_MODEL_OR_ACCEPTANCE",
+  "voltage_V": 6.46234857697748,
+  "original_case_acceptance": "FAIL",
+  "mesh_sha256": "5c1738fd520655a2219dd492e159eb7e64c211956c49838764c69d6e735c1b12",
+  "nodes_sha256": "90c1d34eb6b322f49ab8b17a4060fa9257c594db272b26e27615226c912c5ad9",
+  "script_sha256": "78928ae019845571910a19b61013aaeb5e1581b963b746c59f2f68632958e965",
+  "original_drift_heat_W": 0.005745202524328219,
+  "z_drift_heat_W": 0.0026208444976006133,
+  "transport_dissipation_indicator_W": 0.003124347021464765,
+  "total_current_electrical_work_W": 0.0031243458148585267,
+  "z_drift_heat_fraction_with_current_ratio_below_0_1": 0.9999860587280719,
+  "z_drift_heat_fraction_with_current_ratio_below_0_01": 0.9995047461476725,
+  "original_heat_reconstruction_relative": 4.3026872295611484e-14,
+  "current_ratio_definition": "abs(Jn_z)/(abs(Jn_drift_z)+abs(Jn_diffusion_z))",
+  "limitation": "Neither J.E nor the dissipation indicator is substituted into the frozen heat equation; thermoelectric terms and energy fluxes have not been derived or calibrated."
+}

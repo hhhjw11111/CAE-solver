@@ -1,0 +1,13 @@
+run_result=PASS
+case_id=G09_H02_R090_COARSE
+node_count=304
+element_count=32
+minimum_jacobian_determinant= 1.0537463220066693E-023
+integrated_volume= 6.6910870898939738E-021
+accepted_points=8
+rejected_attempts=0
+total_newton_iterations=38
+maximum_balance_defect= 4.0756964021631828E-016
+maximum_boundary_error= 0.0000000000000000E+000
+final_voltage_factor= 1.0000000000000000E+000
+final_joule_factor= 1.0000000000000000E+000

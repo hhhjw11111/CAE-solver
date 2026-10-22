@@ -1,0 +1,163 @@
+{
+  "plan": "F1_20260906",
+  "material_evidence": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+  "mesh_design_not_mesh_acceptance": true,
+  "meshes": [
+    {
+      "name": "H1_L0",
+      "first_layer_m": 1.4e-08,
+      "skin_corners_m": [
+        0.0,
+        1.4e-08,
+        4.2e-08,
+        9.8e-08,
+        2.1e-07,
+        5e-07
+      ],
+      "z_corners_m": [
+        -5e-07,
+        -4.86e-07,
+        -4.58e-07,
+        -4.0199999999999997e-07,
+        -2.9e-07,
+        0.0,
+        2.9e-07,
+        4.0199999999999997e-07,
+        4.58e-07,
+        4.86e-07,
+        5e-07
+      ],
+      "counts": {
+        "circumferential": 16,
+        "radial": 14,
+        "thickness": 10
+      },
+      "nodes": 10144,
+      "elements": 2240
+    },
+    {
+      "name": "H1_L1",
+      "first_layer_m": 7e-09,
+      "skin_corners_m": [
+        0.0,
+        7e-09,
+        2.1e-08,
+        4.9e-08,
+        1.05e-07,
+        2.17e-07,
+        5e-07
+      ],
+      "z_corners_m": [
+        -5e-07,
+        -4.93e-07,
+        -4.79e-07,
+        -4.51e-07,
+        -3.95e-07,
+        -2.83e-07,
+        0.0,
+        2.83e-07,
+        3.95e-07,
+        4.51e-07,
+        4.79e-07,
+        4.93e-07,
+        5e-07
+      ],
+      "counts": {
+        "circumferential": 24,
+        "radial": 16,
+        "thickness": 12
+      },
+      "nodes": 20496,
+      "elements": 4608
+    },
+    {
+      "name": "H1_L2",
+      "first_layer_m": 3.5e-09,
+      "skin_corners_m": [
+        0.0,
+        3.5e-09,
+        1.05e-08,
+        2.45e-08,
+        5.25e-08,
+        1.085e-07,
+        2.205e-07,
+        5e-07
+      ],
+      "z_corners_m": [
+        -5e-07,
+        -4.964999999999999e-07,
+        -4.894999999999999e-07,
+        -4.755e-07,
+        -4.4749999999999995e-07,
+        -3.915e-07,
+        -2.795e-07,
+        0.0,
+        2.795e-07,
+        3.915e-07,
+        4.4749999999999995e-07,
+        4.755e-07,
+        4.894999999999999e-07,
+        4.964999999999999e-07,
+        5e-07
+      ],
+      "counts": {
+        "circumferential": 32,
+        "radial": 18,
+        "thickness": 14
+      },
+      "nodes": 35392,
+      "elements": 8064
+    },
+    {
+      "name": "H0_L2",
+      "first_layer_m": 3.5e-09,
+      "skin_corners_m": [
+        0.0,
+        3.5e-09,
+        1.05e-08,
+        2.45e-08,
+        5.25e-08,
+        1.085e-07,
+        2.205e-07,
+        5e-07
+      ],
+      "z_corners_m": [
+        -5e-07,
+        -4.964999999999999e-07,
+        -4.894999999999999e-07,
+        -4.755e-07,
+        -4.4749999999999995e-07,
+        -3.915e-07,
+        -2.795e-07,
+        0.0,
+        2.795e-07,
+        3.915e-07,
+        4.4749999999999995e-07,
+        4.755e-07,
+        4.894999999999999e-07,
+        4.964999999999999e-07,
+        5e-07
+      ],
+      "counts": {
+        "x": 22,
+        "y": 22,
+        "thickness": 14
+      },
+      "nodes": 30521,
+      "elements": 6776
+    }
+  ],
+  "cases": [
+    "SMALL_H1_LQ_L0.nml",
+    "SMALL_H1_NT_L0.nml",
+    "MESH_H1_NT_L0.nml",
+    "MESH_H1_NT_L1.nml",
+    "MESH_H1_NT_L2.nml",
+    "MAIN_H0_LQ_L2.nml",
+    "MAIN_H0_N0_L2.nml",
+    "MAIN_H0_NT_L2.nml",
+    "MAIN_H1_LQ_L2.nml",
+    "MAIN_H1_N0_L2.nml"
+  ],
+  "reuse": "MESH_H1_NT_L2 is MAIN H1-NT; repeat only after all acceptance checks."
+}

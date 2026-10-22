@@ -1,0 +1,201 @@
+{
+  "results": [
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060",
+      "voltage_V": 6.0,
+      "geometry": {
+        "matched_nodes": 35392,
+        "matched_elements": 8064,
+        "maximum_coordinate_error_m": 1.1858461261560205e-20
+      },
+      "gauge": {
+        "translation_m": [
+          1.9378023277569868e-10,
+          1.0439860231271824e-10,
+          -1.707508660358267e-11
+        ],
+        "rotation_rad": [
+          2.02113409968095e-19,
+          1.551291430146991e-06,
+          -1.625819148043422e-19
+        ],
+        "maximum_symmetry_uy_m": 1.6203271768719214e-24
+      },
+      "fields": {
+        "ux_m": {
+          "maximum_scaled_difference": 1.4579058296247113e-13,
+          "scale": 1e-10,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 597,
+          "mirror_node": 3741
+        },
+        "uy_m": {
+          "maximum_scaled_difference": 1.3648480107124957e-13,
+          "scale": 1e-10,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": -1,
+          "worst_node": 16620,
+          "mirror_node": 18270
+        },
+        "uz_m": {
+          "maximum_scaled_difference": 8.344507546555445e-14,
+          "scale": 1e-10,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 33492,
+          "mirror_node": 35067
+        },
+        "phi_V": {
+          "maximum_scaled_difference": 1.8000415972589204e-13,
+          "scale": 6.0,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 14296,
+          "mirror_node": 15871
+        },
+        "eta_n": {
+          "maximum_scaled_difference": 8.326969756083935e-12,
+          "scale": 0.1,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 14221,
+          "mirror_node": 15946
+        },
+        "eta_p": {
+          "maximum_scaled_difference": 1.5553353743813503e-10,
+          "scale": 0.1,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 16698,
+          "mirror_node": 18198
+        },
+        "theta_K": {
+          "maximum_scaled_difference": 3.925748615074554e-14,
+          "scale": 35.0,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 742,
+          "mirror_node": 3624
+        }
+      },
+      "full_field_parity_passed": true,
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\nodes.csv": "ed0678c1bbb5ebbe4b760143675611001a9c9c14ebf81800c54508a17e1460ea",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\input.nml": "822c269c821ae8ed4a400e19cb2afbd4ce4391113050db09db003a8692cef65a",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\manifest.json": "5577f680edc89dfc12e142c627c8c4faebe7d4c62d73e8ceba6bcd3c96cef47b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\execution.json": "018e0197451024341ee9280674ef2d5486e3a159fe1160e0459b28e6d74b2b17",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\metrics.txt": "e3b2c60e6aee949deba709c453cdf46f4942898e147a7606d4f98ad8e4da1dc0",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\field_audit.json": "b4cc58abfd9b7c089eb6d3264b93d50f6ecf1f3880f8523c408f3e21e7f19994",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\mesh_radial_18\\H1.mesh": "8114c22ccde7c6dc775dd6e19c281de879fc5d21e97beed8f0f96ca4f866639f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_full_field_y_parity_20261019.py": "a4ee9ca79b9b34127338f027f2b78ddcfe17737802196ce9ce6785b5bbb64633"
+      }
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080",
+      "voltage_V": 8.0,
+      "geometry": {
+        "matched_nodes": 35392,
+        "matched_elements": 8064,
+        "maximum_coordinate_error_m": 1.1858461261560205e-20
+      },
+      "gauge": {
+        "translation_m": [
+          3.314960109067853e-10,
+          1.7854923321366518e-10,
+          -9.736644150796984e-12
+        ],
+        "rotation_rad": [
+          2.688634008404901e-20,
+          3.040413366253127e-07,
+          -1.876327516454856e-18
+        ],
+        "maximum_symmetry_uy_m": 7.951670656143212e-24
+      },
+      "fields": {
+        "ux_m": {
+          "maximum_scaled_difference": 6.782881022934827e-13,
+          "scale": 1e-10,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 7098,
+          "mirror_node": 8598
+        },
+        "uy_m": {
+          "maximum_scaled_difference": 5.810943803185019e-13,
+          "scale": 1e-10,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": -1,
+          "worst_node": 1266,
+          "mirror_node": 3100
+        },
+        "uz_m": {
+          "maximum_scaled_difference": 2.009467277135656e-13,
+          "scale": 1e-10,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 744,
+          "mirror_node": 3757
+        },
+        "phi_V": {
+          "maximum_scaled_difference": 2.1294077612310502e-13,
+          "scale": 8.0,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 18996,
+          "mirror_node": 20646
+        },
+        "eta_n": {
+          "maximum_scaled_difference": 1.2826050985181858e-11,
+          "scale": 0.1,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 21125,
+          "mirror_node": 23225
+        },
+        "eta_p": {
+          "maximum_scaled_difference": 1.970278454277441e-10,
+          "scale": 0.1,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 21420,
+          "mirror_node": 23070
+        },
+        "theta_K": {
+          "maximum_scaled_difference": 1.1688428003253648e-13,
+          "scale": 35.0,
+          "limit": 1e-08,
+          "passed": true,
+          "sign_under_y_reflection": 1,
+          "worst_node": 9420,
+          "mirror_node": 11070
+        }
+      },
+      "full_field_parity_passed": true,
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\nodes.csv": "2dd917af3ad201884a44803dc4d7a23d4f9aa762c2e08b3835be9a4ea66ed848",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\input.nml": "c2a6dfa51793a5ced822026c5d1b5f4b8e2a494cdd7bc80215d4292005f34542",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\manifest.json": "5b380b7b30f6f5909d3664405bbaf032c9a997b4815f2dd18ebfd76a542b015d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\execution.json": "44df1fc566abde3371fcecdb73a599af9d82ebead6eaaaeb8f955dbd778f7283",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\metrics.txt": "9d4db81b6e0d2f9edeaf0f1eddca930340dcc75df8eaecec2c08beb663f31ad4",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\field_audit.json": "3f15b476d4ded0ae8783b4330569e110f53ad275aa1690f3a5c5b66d8a88e113",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\mesh_radial_18\\H1.mesh": "8114c22ccde7c6dc775dd6e19c281de879fc5d21e97beed8f0f96ca4f866639f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_full_field_y_parity_20261019.py": "a4ee9ca79b9b34127338f027f2b78ddcfe17737802196ce9ce6785b5bbb64633"
+      }
+    }
+  ],
+  "passed": true
+}

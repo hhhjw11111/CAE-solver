@@ -1,0 +1,40 @@
+problem=1,supg=0,directional=0,coefficient=0.5,carrier_errors=  9.0387E-17   7.7692E-17
+problem=1,supg=0,directional=0,coefficient=1.0,carrier_errors=  9.0387E-17   7.7692E-17
+problem=1,supg=0,directional=0,coefficient=2.0,carrier_errors=  9.0387E-17   7.7692E-17
+problem=1,supg=0,directional=1,coefficient=0.5,carrier_errors=  9.0387E-17   7.7692E-17
+problem=1,supg=0,directional=1,coefficient=1.0,carrier_errors=  9.0387E-17   7.7692E-17
+problem=1,supg=0,directional=1,coefficient=2.0,carrier_errors=  9.0387E-17   7.7692E-17
+problem=1,supg=1,directional=0,coefficient=0.5,carrier_errors=  9.2485E-17   6.8389E-17
+problem=1,supg=1,directional=0,coefficient=1.0,carrier_errors=  9.4583E-17   5.9085E-17
+problem=1,supg=1,directional=0,coefficient=2.0,carrier_errors=  9.8780E-17   4.7664E-17
+problem=1,supg=1,directional=1,coefficient=0.5,carrier_errors=  9.6880E-17   5.2707E-17
+problem=1,supg=1,directional=1,coefficient=1.0,carrier_errors=  1.0337E-16   4.0819E-17
+problem=1,supg=1,directional=1,coefficient=2.0,carrier_errors=  1.1636E-16   7.4057E-17
+problem=2,supg=0,directional=0,coefficient=0.5,carrier_errors=  1.1009E-16   6.1639E-17
+problem=2,supg=0,directional=0,coefficient=1.0,carrier_errors=  1.1009E-16   6.1639E-17
+problem=2,supg=0,directional=0,coefficient=2.0,carrier_errors=  1.1009E-16   6.1639E-17
+problem=2,supg=0,directional=1,coefficient=0.5,carrier_errors=  1.1009E-16   6.1639E-17
+problem=2,supg=0,directional=1,coefficient=1.0,carrier_errors=  1.1009E-16   6.1639E-17
+problem=2,supg=0,directional=1,coefficient=2.0,carrier_errors=  1.1009E-16   6.1639E-17
+problem=2,supg=1,directional=0,coefficient=0.5,carrier_errors=  1.0887E-16   6.1834E-17
+problem=2,supg=1,directional=0,coefficient=1.0,carrier_errors=  1.0764E-16   6.2029E-17
+problem=2,supg=1,directional=0,coefficient=2.0,carrier_errors=  1.0520E-16   6.2419E-17
+problem=2,supg=1,directional=1,coefficient=0.5,carrier_errors=  1.0684E-16   6.2215E-17
+problem=2,supg=1,directional=1,coefficient=1.0,carrier_errors=  1.0358E-16   6.2791E-17
+problem=2,supg=1,directional=1,coefficient=2.0,carrier_errors=  1.1138E-16   6.3944E-17
+problem=3,supg=0,directional=0,coefficient=0.5,carrier_errors=  1.1304E-16   4.2503E-17
+problem=3,supg=0,directional=0,coefficient=1.0,carrier_errors=  1.1304E-16   4.2503E-17
+problem=3,supg=0,directional=0,coefficient=2.0,carrier_errors=  1.1304E-16   4.2503E-17
+problem=3,supg=0,directional=1,coefficient=0.5,carrier_errors=  1.1304E-16   4.2503E-17
+problem=3,supg=0,directional=1,coefficient=1.0,carrier_errors=  1.1304E-16   4.2503E-17
+problem=3,supg=0,directional=1,coefficient=2.0,carrier_errors=  1.1304E-16   4.2503E-17
+problem=3,supg=1,directional=0,coefficient=0.5,carrier_errors=  1.1629E-16   3.6963E-17
+problem=3,supg=1,directional=0,coefficient=1.0,carrier_errors=  1.1953E-16   3.1424E-17
+problem=3,supg=1,directional=0,coefficient=2.0,carrier_errors=  1.2603E-16   3.5147E-17
+problem=3,supg=1,directional=1,coefficient=0.5,carrier_errors=  1.2251E-16   2.7854E-17
+problem=3,supg=1,directional=1,coefficient=1.0,carrier_errors=  1.3199E-16   4.4418E-17
+problem=3,supg=1,directional=1,coefficient=2.0,carrier_errors=  1.5094E-16   8.2468E-17
+exact_cases=36
+maximum_normalized_carrier_residual= 1.5093561509028752E-016
+scope=LOCAL_CARRIER_RESIDUAL_CONSISTENCY_NOT_GLOBAL_MODEL_OR_MESH_CERTIFICATE
+verification_result=PASS

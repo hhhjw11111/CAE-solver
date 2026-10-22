@@ -1,7 +1,7 @@
 module continuation_solver_m
   use, intrinsic :: ieee_arithmetic, only : ieee_is_finite
   use kinds_m, only : dp
-  use field_layout_m, only : NDOF_NODE
+  use field_layout_m, only : NDOF_NODE,F_PHI,global_dof
   use mesh_types_m, only : MeshType
   use model_types_m, only : MaterialType, StateType, LoadStateType, &
     NonlinearOptionsType, ContinuationOptionsType, DiagnosticsType
@@ -20,6 +20,13 @@ module continuation_solver_m
 
   type, public :: ContinuationReportType
     logical :: converged=.false.
+    logical :: arclength_fold_detected=.false.
+    logical :: arclength_fold_located=.false.,arclength_target_crossed=.false.
+    real(dp) :: arclength_fold_bracket_width=huge(1.0_dp)
+    real(dp) :: arclength_fold_left_voltage_factor=0.0_dp,arclength_fold_right_voltage_factor=0.0_dp
+    real(dp) :: arclength_fold_left_tangent=0.0_dp,arclength_fold_right_tangent=0.0_dp
+    real(dp) :: arclength_fold_voltage_factor=0.0_dp
+    real(dp) :: arclength_fold_joule_factor=0.0_dp
     integer :: accepted_points=0
     integer :: rejected_attempts=0
     integer :: total_attempts=0
@@ -51,11 +58,22 @@ module continuation_solver_m
 
   public :: solve_load_continuation
 
+  abstract interface
+    subroutine accepted_checkpoint(state,load,point,residual,update,status)
+      import :: StateType,LoadStateType,SolverStatusType,dp
+      type(StateType), intent(in) :: state
+      type(LoadStateType), intent(in) :: load
+      integer, intent(in) :: point
+      real(dp), intent(in) :: residual,update
+      type(SolverStatusType), intent(out) :: status
+    end subroutine accepted_checkpoint
+  end interface
+
 contains
 
   subroutine solve_load_continuation(mesh,materials,context,boundary_conditions,field_scales, &
                                      nonlinear_options,continuation_options,target_load, &
-                                     state,current_load,report,status)
+                                     state,current_load,report,status,checkpoint)
     type(MeshType), intent(in) :: mesh
     type(MaterialType), intent(in) :: materials(:)
     type(SparseAssemblyContextType), intent(in) :: context
@@ -68,12 +86,16 @@ contains
     type(LoadStateType), intent(inout) :: current_load
     type(ContinuationReportType), intent(out) :: report
     type(SolverStatusType), intent(out) :: status
+    procedure(accepted_checkpoint), optional :: checkpoint
     type(StateType) :: trial_state,checkpoint_state
+    type(StateType) :: previous_state
     type(LoadStateType) :: trial_load
     type(NonlinearOptionsType) :: attempt_options
     type(NewtonReportType) :: newton_report
     type(SolverStatusType) :: local_status
     real(dp) :: step,accepted_step,next_value,remaining,checkpoint_change
+    real(dp) :: previous_parameter,previous_step,next_checkpoint
+    logical :: predictor_available
     integer :: phase
 
     call clear_status(status)
@@ -83,6 +105,8 @@ contains
     if (.not. status%is_ok()) return
     call allocate_report(report,continuation_options%maximum_attempts+3)
     allocate(trial_state%x(size(state%x)),checkpoint_state%x(size(state%x)))
+    if(continuation_options%secant_predictor) allocate(previous_state%x(size(state%x)))
+    predictor_available=.false.;previous_parameter=0.0_dp
     attempt_options=nonlinear_options
     attempt_options%max_newton=min(nonlinear_options%max_newton, &
       continuation_options%maximum_newton_per_attempt)
@@ -102,6 +126,12 @@ contains
       call copy_failure(local_status,status); return
     end if
 
+    if(present(checkpoint)) then
+      call checkpoint(state,current_load,report%accepted_points,newton_report%final_residual_rms, &
+        newton_report%final_update_rms,status)
+      if(.not.status%is_ok()) return
+    end if
+
     if (current_load%voltage_factor >= target_load%voltage_factor .and. &
         current_load%joule_factor == 0.0_dp) then
       call save_transition_checkpoint(state,current_load,report)
@@ -114,15 +144,30 @@ contains
       if (.not. status%is_ok()) return
       remaining=target_load%voltage_factor-current_load%voltage_factor
       accepted_step=min(step,remaining)
+      if(continuation_options%voltage_checkpoint_spacing>0.0_dp) then
+        next_checkpoint=continuation_options%voltage_checkpoint_spacing* &
+          real(1+floor((current_load%voltage_factor+8.0_dp*epsilon(1.0_dp))/ &
+          continuation_options%voltage_checkpoint_spacing),dp)
+        accepted_step=min(accepted_step,next_checkpoint-current_load%voltage_factor)
+      end if
       next_value=current_load%voltage_factor+accepted_step
       trial_load=current_load
       trial_load%voltage_factor=next_value
       checkpoint_state%x=state%x
       trial_state%x=checkpoint_state%x
+      if(continuation_options%secant_predictor .and.predictor_available) then
+        previous_step=current_load%voltage_factor-previous_parameter
+        trial_state%x=state%x+(accepted_step/previous_step)*(state%x-previous_state%x)
+      else if(continuation_options%secant_predictor) then
+        call lift_voltage_guess(mesh,boundary_conditions,accepted_step,trial_state)
+      end if
       call solve_single_load_newton(mesh,materials,trial_load,context,boundary_conditions, &
         field_scales,attempt_options,trial_state,newton_report,local_status)
       report%total_attempts=report%total_attempts+1
       if (local_status%is_ok()) then
+        if(continuation_options%secant_predictor) then
+          previous_state%x=state%x;previous_parameter=current_load%voltage_factor;predictor_available=.true.
+        end if
         state%x=trial_state%x
         current_load=trial_load
         report%minimum_accepted_step=min(report%minimum_accepted_step,accepted_step)
@@ -131,6 +176,11 @@ contains
           continuation_options%heat_balance_reference_power)
         if (.not. local_status%is_ok()) then
           call copy_failure(local_status,status); return
+        end if
+        if(present(checkpoint)) then
+          call checkpoint(state,current_load,report%accepted_points,newton_report%final_residual_rms, &
+            newton_report%final_update_rms,status)
+          if(.not.status%is_ok()) return
         end if
         step=adapt_step(step,newton_report%iterations,continuation_options)
       else
@@ -154,6 +204,7 @@ contains
 
     step=continuation_options%initial_step
     phase=CONTINUATION_PHASE_JOULE
+    predictor_available=.false.
     do while(current_load%joule_factor < target_load%joule_factor)
       call check_attempt_limit(report,continuation_options,status)
       if (.not. status%is_ok()) return
@@ -164,10 +215,17 @@ contains
       trial_load%joule_factor=next_value
       checkpoint_state%x=state%x
       trial_state%x=checkpoint_state%x
+      if(continuation_options%secant_predictor .and.predictor_available) then
+        previous_step=current_load%joule_factor-previous_parameter
+        trial_state%x=state%x+(accepted_step/previous_step)*(state%x-previous_state%x)
+      end if
       call solve_single_load_newton(mesh,materials,trial_load,context,boundary_conditions, &
         field_scales,attempt_options,trial_state,newton_report,local_status)
       report%total_attempts=report%total_attempts+1
       if (local_status%is_ok()) then
+        if(continuation_options%secant_predictor) then
+          previous_state%x=state%x;previous_parameter=current_load%joule_factor;predictor_available=.true.
+        end if
         state%x=trial_state%x
         current_load=trial_load
         report%minimum_accepted_step=min(report%minimum_accepted_step,accepted_step)
@@ -176,6 +234,11 @@ contains
           continuation_options%heat_balance_reference_power)
         if (.not. local_status%is_ok()) then
           call copy_failure(local_status,status); return
+        end if
+        if(present(checkpoint)) then
+          call checkpoint(state,current_load,report%accepted_points,newton_report%final_residual_rms, &
+            newton_report%final_update_rms,status)
+          if(.not.status%is_ok()) return
         end if
         step=adapt_step(step,newton_report%iterations,continuation_options)
       else
@@ -219,6 +282,10 @@ contains
                (options%full_joule_during_voltage .and. &
                 current_load%joule_factor /= target_load%joule_factor)))) then
       call set_status(status,STATUS_INVALID_ARGUMENT,'Continuation load path is invalid.')
+    else if (.not.ieee_is_finite(options%voltage_checkpoint_spacing) .or. &
+             options%voltage_checkpoint_spacing<0.0_dp .or.options%voltage_checkpoint_spacing>1.0_dp .or. &
+             (options%voltage_checkpoint_spacing>0.0_dp .and.options%voltage_checkpoint_spacing<1.0e-8_dp)) then
+      call set_status(status,STATUS_INVALID_ARGUMENT,'Continuation checkpoint spacing must be zero or in [1e-8,1].')
     else if (options%initial_step <= 0.0_dp .or. options%minimum_step <= 0.0_dp .or. &
              options%maximum_step < options%minimum_step .or. &
              options%initial_step > options%maximum_step .or. &
@@ -318,6 +385,37 @@ contains
     report%transition_state%x=state%x
     report%transition_load=load
   end subroutine save_transition_checkpoint
+
+  subroutine lift_voltage_guess(mesh,bc,step,state)
+    type(MeshType), intent(in) :: mesh
+    type(DirichletBCType), intent(in) :: bc(:)
+    real(dp), intent(in) :: step
+    type(StateType), intent(inout) :: state
+    real(dp) :: xmin,xmax,tolerance,left,right,weight
+    integer :: b,node,nleft,nright
+    ! Initial guess only: avoid injecting the entire voltage increment into the
+    ! first contact element. Apply only to the recognized two planar x contacts.
+    ! No equations, boundary values or acceptance thresholds are changed.
+    xmin=minval(mesh%coordinates(1,:));xmax=maxval(mesh%coordinates(1,:))
+    if(xmax<=xmin) return
+    tolerance=1.0e-10_dp*(xmax-xmin);nleft=0;nright=0;left=0.0_dp;right=0.0_dp
+    do b=1,size(bc)
+      if(bc(b)%field_id/=F_PHI) cycle
+      if(.not.allocated(bc(b)%node_ids)) return
+      if(all(abs(mesh%coordinates(1,bc(b)%node_ids)-xmin)<tolerance)) then
+        left=bc(b)%value_end-bc(b)%value_start;nleft=nleft+1
+      else if(all(abs(mesh%coordinates(1,bc(b)%node_ids)-xmax)<tolerance)) then
+        right=bc(b)%value_end-bc(b)%value_start;nright=nright+1
+      else
+        return
+      end if
+    end do
+    if(nleft/=1 .or.nright/=1) return
+    do node=1,mesh%number_of_nodes()
+      weight=(mesh%coordinates(1,node)-xmin)/(xmax-xmin)
+      state%x(global_dof(node,F_PHI))=state%x(global_dof(node,F_PHI))+step*((1.0_dp-weight)*left+weight*right)
+    end do
+  end subroutine lift_voltage_guess
 
   subroutine check_attempt_limit(report,options,status)
     type(ContinuationReportType), intent(in) :: report

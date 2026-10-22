@@ -1,0 +1,103 @@
+{
+  "study": "F3_ZnO_center_hole_radius_sweep",
+  "evidence_level": "L0_TREND_ONLY_NOT_MESH_ACCEPTANCE",
+  "geometry": {
+    "width_m": 2e-05,
+    "height_m": 2e-05,
+    "thickness_m": 1e-06
+  },
+  "sweep": {
+    "all_radii_um": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "newly_solved_radii_um": [
+      2,
+      4
+    ]
+  },
+  "excitation": {
+    "left_phi_V": 0.0,
+    "right_phi_V": -3.0,
+    "nominal_field_V_m": 150000.0
+  },
+  "contacts": "left/right eta_n=eta_p=theta=0; T=300 K",
+  "mechanics": "minimal rigid-body anchors; otherwise zero natural traction",
+  "other_surfaces": "zero natural electric-displacement, carrier-current and heat-flux terms",
+  "hole_wall": "ideal insulating natural boundary; exterior dielectric and surface charge omitted",
+  "models": {
+    "LQ": "sequential linearized reference; no return feedback",
+    "N0": "full-density nonlinear model with mu and D frozen at 300 K",
+    "NT": "full-density nonlinear model with mu(T) and D(T)"
+  },
+  "reuse": {
+    "R0": "runs/F1_FAST_HOLE_L0_20260907/FAST_H0_{model}_L0",
+    "R3": "runs/F1_FAST_HOLE_L0_20260907/FAST_H1_{model}_L0"
+  },
+  "meshes": [
+    {
+      "radius_m": 2e-06,
+      "radius_over_width": 0.09999999999999999,
+      "mesh": "F3_R02_L0.mesh",
+      "nodes": 10144,
+      "elements": 2240,
+      "first_layer_m": 1.4e-08,
+      "ring_width_m": 5e-07,
+      "circumferential_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 10
+    },
+    {
+      "radius_m": 4e-06,
+      "radius_over_width": 0.19999999999999998,
+      "mesh": "F3_R04_L0.mesh",
+      "nodes": 10144,
+      "elements": 2240,
+      "first_layer_m": 1.4e-08,
+      "ring_width_m": 5e-07,
+      "circumferential_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 10
+    }
+  ],
+  "new_cases": [
+    {
+      "case_id": "F3_R02_LQ_L0",
+      "radius_m": 2e-06,
+      "model": "LQ",
+      "input": "F3_R02_LQ_L0.nml"
+    },
+    {
+      "case_id": "F3_R02_N0_L0",
+      "radius_m": 2e-06,
+      "model": "N0",
+      "input": "F3_R02_N0_L0.nml"
+    },
+    {
+      "case_id": "F3_R02_NT_L0",
+      "radius_m": 2e-06,
+      "model": "NT",
+      "input": "F3_R02_NT_L0.nml"
+    },
+    {
+      "case_id": "F3_R04_LQ_L0",
+      "radius_m": 4e-06,
+      "model": "LQ",
+      "input": "F3_R04_LQ_L0.nml"
+    },
+    {
+      "case_id": "F3_R04_N0_L0",
+      "radius_m": 4e-06,
+      "model": "N0",
+      "input": "F3_R04_N0_L0.nml"
+    },
+    {
+      "case_id": "F3_R04_NT_L0",
+      "radius_m": 4e-06,
+      "model": "NT",
+      "input": "F3_R04_NT_L0.nml"
+    }
+  ]
+}

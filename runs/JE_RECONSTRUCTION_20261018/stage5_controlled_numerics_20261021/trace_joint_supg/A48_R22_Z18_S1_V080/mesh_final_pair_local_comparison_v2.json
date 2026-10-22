@@ -1,0 +1,72 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.00016162656621138594,
+      "rms_relative": 2.0619854844160228e-05,
+      "normalization": 8.000116132806466,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.0005908357007814926,
+      "rms_relative": 9.21691266439212e-05,
+      "normalization": 24.277653498502644,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.0008642911989500147,
+      "rms_relative": 0.00016632786535990002,
+      "normalization": 1.4285045493555686e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0004268458275953512,
+      "rms_relative": 5.812318174462114e-05,
+      "normalization": 1.4285045493555686e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.0003855036918868906,
+      "rms_relative": 7.152685487235925e-05,
+      "normalization": 1.4285045493555686e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.013571442195972384,
+      "rms_relative": 0.0009043720404051718,
+      "normalization": 2.5761146538133275,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.015790106849243635,
+      "rms_relative": 0.0008191893449886251,
+      "normalization": 6.954010364012136,
+      "limit": 0.02,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\transfers\\mesh_final_pair_A48_R22_Z18_S1_V080\\nodes.csv": "9e630c569bfbbc060c5e2cf9a24593ed609527abf687bc18362934294eb6d382",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\transfers\\mesh_final_pair_A48_R22_Z18_S1_V080\\transfer_report.json": "a4da7c5966ea4a128f9b553449e2d434cd2655ec1531ab7db1de0e0db6abf08f",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\nodes.csv": "26304fb813cbfc8178822f084ec19f3734749a485ce03e7f830f1545a2b21231",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\manifest.json": "9843144bda23dcfcdbb8e13784a4272433227107632851950a633e3dbf0e75b9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\execution.json": "3219001bfdd3c79d5b5464b6d1be7be739248155468727a0034b2464d0e6a747",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\input.nml": "9fa28a4d319521d561c122bf10671ddbfa6a95b103b43972e3748070da6e06e8",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\metrics.txt": "c62f9173056f2e70da1bd7d4a0a58d013d56e660ab3bd4b11fc1cf2df69a62a3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\field_audit.json": "c76f8ca4c58ee833cf3631ff4b9c64104a691ce3ed28d842da67ac5f6e446076",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080\\nodes.csv": "e40485340469c84cd62d584b375c7daa257dc7d81854e3d9bdcb5d2c1523ae9f",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080\\manifest.json": "3d965206bb65a2b14acef51317b575239de63591bcc62f7236b683d6eb87f149",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080\\execution.json": "e7d7e0569f2b99e4625be36695eed17c5b4e904d70a8c9e4a3c3d9b59b34d7e9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080\\input.nml": "8b853cbca197b2c8fd20c7b6668f22d5c882a63daa9a565daa74f7d201df24a9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080\\metrics.txt": "ed191af67030a53e596a2a53079772a2474289505e6ca9c75868c1fd81bfc5b3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080\\field_audit.json": "aada28af01ca4623bb1744599798634b2aee26af8b2b21839d31fe91675225ce"
+  }
+}

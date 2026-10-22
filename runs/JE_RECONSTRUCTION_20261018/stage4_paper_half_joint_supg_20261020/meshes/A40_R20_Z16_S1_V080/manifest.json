@@ -1,0 +1,35 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\meshes\\A40_R20_Z16\\H1.mesh",
+  "source_mesh_sha256": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\meshes\\A40_R20_Z16_S1_V080\\H1_Y_HALF.mesh",
+  "mesh_sha256": "5b5c0e96d38ee692e6c965bb916f9122975e33fac0e9f5f905f1228244f3c46f",
+  "node_map_sha256": "db0ab174271ae154621924927e44a1eb9444db9bad1c9eabb96dd30a76889732",
+  "nodes": 28833,
+  "elements": 6400,
+  "minimum_sampled_jacobian": 1.5773622650250889e-24,
+  "reflection_audit": {
+    "matched_nodes": 55600,
+    "matched_elements": 12800,
+    "maximum_coordinate_error_m": 1.1858461261560205e-20
+  },
+  "seed_nodes": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\nodes.csv",
+  "seed_sha256": "dcea6dcb63c73c6b99e924a62d94b77e9d017c23a4ddf38d7af9cb2f8753233a",
+  "seed_status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION",
+  "rigid_gauge": {
+    "translation_m": [
+      3.3234910743210713e-10,
+      1.7838483298867212e-10,
+      -9.422755482316784e-12
+    ],
+    "rotation_rad": [
+      -1.2524121538054237e-19,
+      3.1545536272656057e-07,
+      3.9640466111300315e-18
+    ],
+    "maximum_symmetry_uy_m": 1.8843910267588748e-23
+  },
+  "hole_perturbation": 0.0,
+  "output_seed_sha256": "dcc4c4c61ea6212aa6d576df0df2f7b533be6d0866e746a4c227f290795fcaf8"
+}

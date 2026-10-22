@@ -1,0 +1,32 @@
+{
+  "version": "0.15.5-y-symmetry-audited",
+  "registered_evidence_assessment_complete": true,
+  "complete_quantitative_0_8V": false,
+  "verified_exact_voltages_V": [
+    0.0
+  ],
+  "certified_nonzero_interval": null,
+  "legacy_cli_count": 16,
+  "legacy_cli_all_byte_identical": true,
+  "python_tests_passed": 40,
+  "local_equilibrium_cases_passed": 36,
+  "compiled_fortran_sources_matched": 58,
+  "production_original_acceptance": [
+    "PASS_NOT_MESH_ACCEPTANCE",
+    "PASS_NOT_MESH_ACCEPTANCE"
+  ],
+  "production_strict_byte_identical": false,
+  "production_maximum_scaled_node_difference": 6.35248861046583e-14,
+  "highest_registered_fixed_voltage_solve_flux_pass_V": 6.459300885488345,
+  "exact_fold_voltage_verified": false,
+  "dynamical_stability_verified": false,
+  "material_experimental_calibration_verified": false,
+  "missing_requested_voltages_V": [
+    6.5,
+    7.0,
+    7.5,
+    8.0
+  ],
+  "source_snapshot": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_delivery_source_snapshot",
+  "all_launched_solver_processes_finished": true
+}

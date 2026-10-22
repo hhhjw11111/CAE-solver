@@ -1,0 +1,23 @@
+{
+  "scope": "Input-only software verification; no native solve or production acceptance",
+  "sources": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V060.nml": "3e9c15c38ea55c488c95594b36ba21f73603936d5453e035f996ce59f68e1f02",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\prepare_je_paper_input_20261018.py": "de78ba42dc050a9f55f0feaa6542934323b6178c224c9312f5b74b956c546e31",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90": "a07a9ab4cf08c3fb311542c24233307e65c4c883dae74b938f2129df9f2004aa",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\nonlinear\\continuation_solver_m.f90": "acea50272239300a474c7ea002b8586161b4e11dfca7d67f1dd9704a34bce273",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_hv_point.py": "69b7ff983122b7924a0efb4b136394138a50507a756b2f46a9a312704f5164fc"
+  },
+  "runner_sha256": "4bbb30ea90658f3911b750a72b8e16ea30f3233e369a82af46daf8bfa174463c",
+  "checks": [
+    "all nine pure input conditions",
+    "6.5/7.5 target and restart factors",
+    "three radius manifests",
+    "exact coordinate and voltage identity",
+    "old 3V drift seed opt-in is initial-guess-only",
+    "changed template and wrong geometry rejection",
+    "read-only default CLI",
+    "fresh prepare CLI",
+    "existing-output overwrite rejected"
+  ]
+}

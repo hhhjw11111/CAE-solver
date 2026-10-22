@@ -1,0 +1,381 @@
+{
+  "mesh_results": [
+    {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": false,
+          "status": "MESH_FAIL",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 1.3808886011323175e-05,
+              "L1_L2": 6.14533586888679e-06,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 0.00012704384652994995,
+              "L1_L2": 7.067665699473472e-06,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 0.00036317910101336606,
+              "L1_L2": 0.00015119655435009543,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.0025266296866429147,
+              "L1_L2": 0.0013529125642880925,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 0.00014064871631751336,
+              "L1_L2": 0.0002245022593859143,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 0.0008336861925041536,
+              "L1_L2": 0.0007013573562429686,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.0004650398550504553,
+              "L1_L2": 0.00020233110062378885,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.10678985363295962,
+              "L1_L2": 0.06884009392763399,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.00032833238150813327,
+              "L1_L2": 0.001307705646581623,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.0025429914276475095,
+              "L1_L2": 0.0007773589035304537,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": false,
+          "status": "MESH_FAIL",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 2.090884358488771e-05,
+              "L1_L2": 1.0904217197787441e-05,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 8.53247734448346e-06,
+              "L1_L2": 7.439898064031388e-05,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 0.0003050253115096312,
+              "L1_L2": 0.0001101008239433716,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.0030386761008539816,
+              "L1_L2": 0.0016349637549528304,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 0.0002271064190631903,
+              "L1_L2": 0.0003013399259180906,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 0.001134107077660512,
+              "L1_L2": 0.0009265720986084623,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.00040894387963441695,
+              "L1_L2": 0.00015062828053431237,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.04678331852900671,
+              "L1_L2": 0.029863319084879936,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.0011343678474110075,
+              "L1_L2": 0.0017190893348677735,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.005176738729022624,
+              "L1_L2": 0.0034064280590562213,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    }
+  ],
+  "supg_results": [
+    {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060"
+      ],
+      "errors": [],
+      "comparisons": {
+        "joule_W": {
+          "values": [
+            0.002894552390171276,
+            0.0028945861010016842,
+            0.0028948763507324043
+          ],
+          "relative_span": 0.00011190825509576453,
+          "limit": 0.01,
+          "passed": true
+        },
+        "theta_max_K": {
+          "values": [
+            14.110461246763009,
+            14.106279696991521,
+            14.088409693190329
+          ],
+          "relative_span": 0.0015627804922209124,
+          "limit": 0.01,
+          "passed": true
+        },
+        "electron_right_A": {
+          "values": [
+            0.0004821001550505516,
+            0.00048116259522974726,
+            0.00047744611114220435
+          ],
+          "relative_span": 0.009653686810906042,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_theta_mean_K": {
+          "values": [
+            11.846439599715037,
+            11.845592290807094,
+            11.840672955728486
+          ],
+          "relative_span": 0.00048678288003843834,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_E_mean_V_m": {
+          "values": [
+            360632.8613923375,
+            360342.02358783653,
+            359120.1152633279
+          ],
+          "relative_span": 0.004194698517403948,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_Q_mean_W_m3": {
+          "values": [
+            25800189691455.062,
+            25756518061398.047,
+            25567488521552.797
+          ],
+          "relative_span": 0.00901935887623863,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_n_relative_mean": {
+          "values": [
+            0.022754322628754445,
+            0.02275482546368755,
+            0.022751299450289305
+          ],
+          "relative_span": 0.00015495673231470845,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_p_relative_mean": {
+          "values": [
+            0.034561267747182885,
+            0.036849840895458175,
+            0.04318973586685553
+          ],
+          "relative_span": 0.19978052531444784,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_Q_p95_W_m3": {
+          "values": [
+            54207074298748.664,
+            54111819508248.5,
+            53677112755542.59
+          ],
+          "relative_span": 0.009776612186913473,
+          "limit": 0.01,
+          "passed": true
+        },
+        "E_p95_V_m": {
+          "values": [
+            434319.36605759256,
+            434130.1445431398,
+            432921.9068410933
+          ],
+          "relative_span": 0.0032175843992043552,
+          "limit": 0.01,
+          "passed": true
+        }
+      },
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    },
+    {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080"
+      ],
+      "errors": [],
+      "comparisons": {
+        "joule_W": {
+          "values": [
+            0.00492785259027844,
+            0.00492801688927655,
+            0.004929127784619482
+          ],
+          "relative_span": 0.0002587058799777225,
+          "limit": 0.01,
+          "passed": true
+        },
+        "theta_max_K": {
+          "values": [
+            24.272983081387224,
+            24.260099608097107,
+            24.20422253307737
+          ],
+          "relative_span": 0.002832801723599436,
+          "limit": 0.01,
+          "passed": true
+        },
+        "electron_right_A": {
+          "values": [
+            0.0006154256449062228,
+            0.0006138416159951265,
+            0.000607702557029764
+          ],
+          "relative_span": 0.01254918110803719,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_theta_mean_K": {
+          "values": [
+            20.342888633396335,
+            20.33858441054041,
+            20.320734683111105
+          ],
+          "relative_span": 0.0010890267692298123,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_E_mean_V_m": {
+          "values": [
+            499731.44740516,
+            499176.11029641685,
+            496930.3317072265
+          ],
+          "relative_span": 0.0056052420004348005,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_Q_mean_W_m3": {
+          "values": [
+            44595008815532.09,
+            44489944668435.07,
+            44043855928326.56
+          ],
+          "relative_span": 0.012359071157164319,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_abs_n_relative_mean": {
+          "values": [
+            0.03907135012348218,
+            0.03906671567031139,
+            0.03904189154761388
+          ],
+          "relative_span": 0.0007539687206917301,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_p_relative_mean": {
+          "values": [
+            0.07913947216268108,
+            0.08137112790750514,
+            0.08647935300540863
+          ],
+          "relative_span": 0.08487437275656415,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_Q_p95_W_m3": {
+          "values": [
+            94503198302501.89,
+            94271327794333.42,
+            93213292641014.39
+          ],
+          "relative_span": 0.013649333405188582,
+          "limit": 0.01,
+          "passed": false
+        },
+        "E_p95_V_m": {
+          "values": [
+            615470.4175688756,
+            614931.0517474073,
+            612257.3366700085
+          ],
+          "relative_span": 0.00522052856993332,
+          "limit": 0.01,
+          "passed": true
+        }
+      },
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    }
+  ],
+  "final_pair_and_supg_local_pass": false,
+  "all_original_numerical_checks_passed": false,
+  "first_pair_local_failures_retained": true,
+  "production_started": false,
+  "limitation": "Only symmetric r=3um endpoints; production voltage range, other radii and LQ still require their own checks"
+}

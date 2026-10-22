@@ -1,0 +1,166 @@
+{
+  "scope": "SAMPLED_SYMMETRIC_BRANCH_EQUIVALENCE",
+  "full_run": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_XY2_Z3_V060_replay",
+  "half_run": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_XY2_Z3_V060",
+  "errors": [],
+  "passed": true,
+  "nodal": {
+    "ux_m": {
+      "maximum_scaled_difference": 2.4890139281533364e-16,
+      "scale": 1e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_scaled_difference": 7.077232530749336e-14,
+      "scale": 1e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_scaled_difference": 0.0,
+      "scale": 1e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "phi_V": {
+      "maximum_scaled_difference": 0.0,
+      "scale": 6.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "eta_n": {
+      "maximum_scaled_difference": 0.0,
+      "scale": 0.1,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "eta_p": {
+      "maximum_scaled_difference": 0.0,
+      "scale": 0.1,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_scaled_difference": 0.0,
+      "scale": 35.0,
+      "limit": 1e-08,
+      "passed": true
+    }
+  },
+  "physical": {
+    "joule_W": {
+      "full": 0.007812627791071803,
+      "half_reconstructed_full": 0.007812627791072169,
+      "relative_difference": 4.685064529112483e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "electron_right_A": {
+      "full": 0.0009324678387991895,
+      "half_reconstructed_full": 0.0009324678387989027,
+      "relative_difference": 3.075403383259991e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "hole_right_A": {
+      "full": 5.320187045777404e-57,
+      "half_reconstructed_full": 5.32018704577898e-57,
+      "relative_difference": 2.9617157181832433e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "total_volume_m3": {
+      "full": 3.7172575357016294e-16,
+      "half_reconstructed_full": 3.7172575357021993e-16,
+      "relative_difference": 1.5332593949924313e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_volume_m3": {
+      "full": 1.021014454408656e-17,
+      "half_reconstructed_full": 1.0210144544085826e-17,
+      "relative_difference": 7.182994517422591e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "theta_max_K": {
+      "full": 20.892013652220896,
+      "half_reconstructed_full": 20.892013652220896,
+      "relative_difference": 0.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_theta_mean_K": {
+      "full": 16.88442881042001,
+      "half_reconstructed_full": 16.884428810420935,
+      "relative_difference": 5.4707539524110315e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_E_mean_V_m": {
+      "full": 375948.5631516754,
+      "half_reconstructed_full": 375948.5631516924,
+      "relative_difference": 4.521000650792345e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_Q_mean_W_m3": {
+      "full": 33421485161409.63,
+      "half_reconstructed_full": 33421485161413.188,
+      "relative_difference": 1.064762302696404e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_abs_n_relative_mean": {
+      "full": 0.03249183590927639,
+      "half_reconstructed_full": 0.03249183590927951,
+      "relative_difference": 9.610113338860244e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_abs_p_relative_mean": {
+      "full": 0.06979677001820715,
+      "half_reconstructed_full": 0.06979677001818493,
+      "relative_difference": 3.1832903262593787e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "stress_von_mises_max_Pa": {
+      "full": 5352675.6417455375,
+      "half_reconstructed_full": 5352675.64174448,
+      "relative_difference": 1.9765487684551152e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "heat_out_W": {
+      "full": 0.00779717010865927,
+      "half_reconstructed_full": 0.007797170108665397,
+      "relative_difference": 7.858034686636866e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "terminal_power_W": {
+      "full": 0.005595456119242931,
+      "half_reconstructed_full": 0.005595456119182914,
+      "relative_difference": 1.072604166328945e-11,
+      "limit": 1e-08,
+      "passed": true
+    }
+  },
+  "gauge": {
+    "translation_m": [
+      2.850729013999605e-10,
+      1.4047646970784814e-10,
+      -1.153239546694053e-12
+    ],
+    "rotation_rad": [
+      -9.11492865664862e-19,
+      -5.518000694330922e-07,
+      2.7437980502011454e-19
+    ],
+    "maximum_symmetry_uy_m": 7.077232530749336e-24
+  },
+  "mesh_validated": false,
+  "complete_quantitative_0_8V": false
+}

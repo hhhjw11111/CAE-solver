@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-08T14:18:15.746216+08:00",
+  "status": "INTERRUPTED_NO_COMPLETE_STATE_CAUSE_UNCONFIRMED",
+  "process_pid": 17972,
+  "tool_session": 31118,
+  "process_observation": "Both solver PID17972 and Python wrapper PID2912 absent at 14:16:59; tool session reports Unknown process id.",
+  "latest_newton_iteration": 3,
+  "latest_logged_residual": 4.2719e-16,
+  "latest_stdout_write": "2026-10-08T14:12:13.5730283+08:00",
+  "latest_ooc_factor_write": "2026-10-08T14:14:26.1954891+08:00",
+  "missing_terminal_files": [
+    "execution.json",
+    "summary.json",
+    "field_audit.json",
+    "nodes.csv"
+  ],
+  "evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\solve_A96_V060\\stdout.txt",
+      "sha256": "87cf70418461fbb1ffbb31d3cd75d40618f3e784f36bd7e17508a6b60f889799"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\solve_A96_V060\\metrics.txt",
+      "sha256": "4acbca99635c2b564e0e1f718341bf9b4b65f4eaa4556c4ca3dec76597d30c43"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\solve_A96_V060\\manifest.json",
+      "sha256": "651e50be6611346b0eb6fb393c500ed831fe52a87e14e71bda1ea2f3efe18ae7"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\solve_A96_V060\\input.nml",
+      "sha256": "e16abffca19d9983c026b8a8f58177c76c97201293cb1c86d484e161161b8115"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\solve_A96_V060\\process.json",
+      "sha256": "c6571e4a845603f4bb7812b30a6f19666451515b9b8bbb265709137885706e7d"
+    }
+  ],
+  "executable_sha256_now": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+  "a128_started": false,
+  "resource_observation": "Other R22 TPSolverV2 PID31632 started14:16:13; do not contend or mix provenance.",
+  "limitations": [
+    "No captured exit code; cannot attribute to solver, resource limit, external termination or infrastructure.",
+    "Low residual alone does not establish final update, independent flux or field acceptance.",
+    "No restart, kill, duplicate run or deletion performed."
+  ]
+}

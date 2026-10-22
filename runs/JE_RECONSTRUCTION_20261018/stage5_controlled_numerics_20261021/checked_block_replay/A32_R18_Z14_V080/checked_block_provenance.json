@@ -1,0 +1,10 @@
+{
+  "source_adapter": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_half_native_20261020_v2.py",
+  "adapter_sha256": "524508346b784d59a643952bff96ffc63121031ef5a71807e068ffcdf8674151",
+  "wrapper_sha256": "db234dcaf82674d5f7a87455aa1d841c149ee29551f4f883c6d4c2b4bb385e93",
+  "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92",
+  "original_full_matrix_backward_error_limit": 1e-11,
+  "equations_unchanged": true,
+  "native_gates_unchanged": true,
+  "runtime_mode": "1"
+}

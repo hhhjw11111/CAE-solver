@@ -1,0 +1,233 @@
+{
+  "completed": [
+    {
+      "run": "A40_R14_Z14_S1_V060",
+      "voltage_V": 6.0,
+      "supg_scale": 1.0,
+      "theta_max_K": 14.093097176991591,
+      "joule_mW": 5.789711010746322,
+      "total_VM_sample_max_MPa": 3.6108045334408403,
+      "total_VM_peak_change_vs_source_percent": 0.8174440701815302,
+      "power_gap_all_boundary_percent": 0.5031344992961475,
+      "power_gap_electrode_percent": 0.5080429042015345,
+      "SUPG_fraction_of_gap_percent": 99.79135308432402,
+      "n_local_change_percent": 1.9023597572727635,
+      "p_local_change_percent": 2.3495958397970496,
+      "local_field_passed": false,
+      "native_seconds": 1912.469000000041,
+      "status": "SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "carrier_worst_locations": {
+        "eta_n": {
+          "node": 753,
+          "xyz_um": [
+            4.868259245074516,
+            9.554496737905817,
+            -0.5
+          ],
+          "source_mapped_perturbation": 0.8566938692351673,
+          "target_solved_perturbation": 0.8809989346098273,
+          "maximum_relative": 0.019023597572727636,
+          "normalization": 1.27762718285756,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        },
+        "eta_p": {
+          "node": 33453,
+          "xyz_um": [
+            -4.631600410885231,
+            2.8382483821397027,
+            0.5
+          ],
+          "source_mapped_perturbation": 0.6890366510231325,
+          "target_solved_perturbation": 0.7357747539601407,
+          "maximum_relative": 0.023495958397970498,
+          "normalization": 1.9891975524201335,
+          "passed": false,
+          "scope": "Location only; no nodes removed from original audit"
+        }
+      },
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\completion.json": "985882d5a29b999efdd655503ef75814c633d077d019983c8f5bda388be804e3",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\execution.json": "6d3b6e2aa985e1bcd31c3086cba8771a0a220f570543ce38bfeb935816a01d06",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\manifest.json": "93362463e926834a02be1cd4f69de6570045a8ff2fa8bbcfefb0e193ef12dd1b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\metrics.txt": "5092fbcd861a2959aa7c5fdd2105803da51648fe08e34ae81bb5a1131d231a05",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\mapped_field_comparison.json": "d0115f73f3bb96d7c20e78f8e34a19f942511e50068b03e565841cc579674579",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\power_audit\\decomposition.json": "f8d07cdfbc48155a32fe3e4548f980c33d1dcc08284fa070e0fea020f27e79dd"
+      }
+    },
+    {
+      "run": "A40_R14_Z14_S1_V080",
+      "voltage_V": 8.0,
+      "supg_scale": 1.0,
+      "theta_max_K": 24.231093305326112,
+      "joule_mW": 9.857424554409226,
+      "total_VM_sample_max_MPa": 6.2294873981946,
+      "total_VM_peak_change_vs_source_percent": 0.806713882428053,
+      "power_gap_all_boundary_percent": 0.6359075097460966,
+      "power_gap_electrode_percent": 0.6407969923716856,
+      "SUPG_fraction_of_gap_percent": 99.62704773016583,
+      "n_local_change_percent": 2.001398094233621,
+      "p_local_change_percent": 2.2705514294598914,
+      "local_field_passed": false,
+      "native_seconds": 1578.375,
+      "status": "SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "carrier_worst_locations": {
+        "eta_n": {
+          "node": 3431,
+          "xyz_um": [
+            4.868259245074513,
+            -9.554496737905817,
+            -0.5
+          ],
+          "source_mapped_perturbation": 1.6641241716250375,
+          "target_solved_perturbation": 1.7157307915364348,
+          "maximum_relative": 0.02001398094233621,
+          "normalization": 2.578528482668445,
+          "passed": false,
+          "scope": "Location only; no nodes removed from original audit"
+        },
+        "eta_p": {
+          "node": 34408,
+          "xyz_um": [
+            4.868259245074513,
+            -9.554496737905817,
+            0.5
+          ],
+          "source_mapped_perturbation": 3.361975398735085,
+          "target_solved_perturbation": 3.5177475826749367,
+          "maximum_relative": 0.022705514294598914,
+          "normalization": 6.860544179653574,
+          "passed": false,
+          "scope": "Location only; no nodes removed from original audit"
+        }
+      },
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080\\completion.json": "7d3df2e85c929451a827974d7abea2a7c3322e43023619b0c0d917815dc20f71",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080\\execution.json": "a0043b24dd8c7bec78bd9706bb8510e244b98e4483a45aee89e35d32a4b89aee",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080\\manifest.json": "f6936cb4201671768536ead30ccd2b8400fcac4ce6888591726b42cdd4441ae4",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080\\metrics.txt": "2b592560b42929062c1cc91cb569d3701eb05bbcf50c8498b6f1af423390e3e5",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080\\mapped_field_comparison.json": "fd88a62b9e2290b53eea30e44ec1ac446fb9a54f0185d3ade690649afed13e3f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080\\power_audit\\decomposition.json": "fad3779d1cef025e870e5e0d290d89a51a1330b0477a9dcb848aef203cdc51d2"
+      }
+    },
+    {
+      "run": "A48_R14_Z14_S1_V060",
+      "voltage_V": 6.0,
+      "supg_scale": 1.0,
+      "theta_max_K": 14.092514825585624,
+      "joule_mW": 5.789668480899543,
+      "total_VM_sample_max_MPa": 3.5961352057036557,
+      "total_VM_peak_change_vs_source_percent": 0.40626202834651587,
+      "power_gap_all_boundary_percent": 0.36482463929427805,
+      "power_gap_electrode_percent": 0.3668948173102022,
+      "SUPG_fraction_of_gap_percent": 99.72600622660002,
+      "n_local_change_percent": 1.412374294643038,
+      "p_local_change_percent": 1.5010841442438203,
+      "local_field_passed": true,
+      "native_seconds": 1963.5939999999973,
+      "status": "SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060",
+      "carrier_worst_locations": {
+        "eta_n": {
+          "node": 4152,
+          "xyz_um": [
+            5.523502691896259,
+            -9.566987298107781,
+            -0.5
+          ],
+          "source_mapped_perturbation": 0.7603297530987163,
+          "target_solved_perturbation": 0.7783372755108706,
+          "maximum_relative": 0.01412374294643038,
+          "normalization": 1.2749823103163678,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        },
+        "eta_p": {
+          "node": 40177,
+          "xyz_um": [
+            -4.7421818538317195,
+            2.338585290625766,
+            0.5
+          ],
+          "source_mapped_perturbation": 0.6812963960025953,
+          "target_solved_perturbation": 0.7112402302943737,
+          "maximum_relative": 0.015010841442438203,
+          "normalization": 1.9948138421555814,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        }
+      },
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060\\completion.json": "913c6de7ce15d284eef96d0f377ab03bdb74932bcbca3af321a8c46cd4f723e7",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060\\execution.json": "c5418756004b3a9d3b23557e726d43cab5108396ea0760a4cc14d09239e1d2a0",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060\\manifest.json": "f2973274303283a926176bea3da1607ce0cdbdddd66bf6f17adf5da04833679a",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060\\metrics.txt": "082a0a287e1ea5afe518aaff9cf5701cf02066886ae0a621db6737831c5c8dbf",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060\\mapped_field_comparison.json": "6a7d475f6c1d4b47577e948646b40740c5935ae054445eac1b10a42e55983b83",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V060\\power_audit\\decomposition.json": "12fa552ca5b650d0728a4edd5f141fee7103044259b1b6c7d34cdd417251384f"
+      }
+    },
+    {
+      "run": "A48_R14_Z14_S1_V080",
+      "voltage_V": 8.0,
+      "supg_scale": 1.0,
+      "theta_max_K": 24.232695049836252,
+      "joule_mW": 9.857307024904662,
+      "total_VM_sample_max_MPa": 6.204660644085863,
+      "total_VM_peak_change_vs_source_percent": 0.39853606760536125,
+      "power_gap_all_boundary_percent": 0.46854055742975004,
+      "power_gap_electrode_percent": 0.4703621872937053,
+      "SUPG_fraction_of_gap_percent": 99.53960801584093,
+      "n_local_change_percent": 1.4682535954622937,
+      "p_local_change_percent": 1.3512568444874316,
+      "local_field_passed": true,
+      "native_seconds": 1880.7339999999967,
+      "status": "SOLVE_FLUX_PASS_SPATIAL_SUPG_PENDING",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V080",
+      "carrier_worst_locations": {
+        "eta_n": {
+          "node": 4152,
+          "xyz_um": [
+            5.523502691896259,
+            -9.566987298107781,
+            -0.5
+          ],
+          "source_mapped_perturbation": 1.4615109805607593,
+          "target_solved_perturbation": 1.4992908013698458,
+          "maximum_relative": 0.014682535954622938,
+          "normalization": 2.5731127732870385,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        },
+        "eta_p": {
+          "node": 39421,
+          "xyz_um": [
+            5.523502691896259,
+            9.566987298107781,
+            0.5
+          ],
+          "source_mapped_perturbation": 2.7433004011378204,
+          "target_solved_perturbation": 2.8363655493066027,
+          "maximum_relative": 0.013512568444874315,
+          "normalization": 6.8873026285453856,
+          "passed": true,
+          "scope": "Location only; no nodes removed from original audit"
+        }
+      },
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\completion.json": "3b98d2a7361563f532151f95250bb45299256fe79931c7a2180b2402ec356e90",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\execution.json": "b334b28025da367ac6753f1762bb5992e7c584a95d2dcf5156b3e89778ea38b3",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\manifest.json": "80a6858a8daf770733c8507faa84a88f68c68d4d4920c1c4787fa85176ad550d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\metrics.txt": "5bd13ebcfb2109af4556aa75cff39e66da6e659543f0e889931f4f360ebb4ddd",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\mapped_field_comparison.json": "3a0ce71922320ef618abc271120c488faf177dff48a1eaad01d1bae76d7fb7ea",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\power_audit\\decomposition.json": "2bb50c79818011f81ea4f789758efc994a698f68e5d32be9a1e27e5065ccd17b"
+      }
+    }
+  ],
+  "incomplete": [],
+  "production_acceptance": false,
+  "thresholds_changed": false,
+  "limitation": "Completed single-point audits only. Peak stress changes are diagnostics; no stress-field convergence certificate. Incomplete points and old FAIL records are not promoted.",
+  "script_sha256": "db0011c4e16d3ee4f6fe21032350a22ba5a7e9765be6606f84b2c486b2c1cf0d"
+}

@@ -22,13 +22,16 @@ module independent_flux_audit_m
     real(dp) :: charge=0.0_dp,absolute_charge=0.0_dp,recombination_charge=0.0_dp
     real(dp) :: joule=0.0_dp,terminal_power=0.0_dp,total_current_work=0.0_dp
     real(dp) :: diffusion_work=0.0_dp,absolute_diffusion_work=0.0_dp
+    ! Measured one-sided FE flux on the artificial symmetry cut, not forced zero.
+    real(dp) :: symmetry_electron_out=0.0_dp,symmetry_hole_out=0.0_dp,symmetry_heat_out=0.0_dp
+    real(dp) :: symmetry_terminal_power=0.0_dp
   end type IndependentFluxReportType
 
   public :: integrate_independent_fluxes, independent_gauss_rule
 
 contains
 
-  subroutine integrate_independent_fluxes(mesh,materials,state,load,order,report,status)
+  subroutine integrate_independent_fluxes(mesh,materials,state,load,order,report,status,half_y)
     type(MeshType), intent(in) :: mesh
     type(MaterialType), intent(in) :: materials(:)
     type(StateType), intent(in) :: state
@@ -36,6 +39,7 @@ contains
     integer, intent(in) :: order
     type(IndependentFluxReportType), intent(out) :: report
     type(SolverStatusType), intent(out) :: status
+    logical, optional, intent(in) :: half_y
     type(BoundaryFaceType), allocatable :: faces(:)
     type(MaterialPointResponseType) :: response
     type(MaterialPointStateType) :: point_state
@@ -44,6 +48,7 @@ contains
     real(dp) :: dn(3,HEX20_NNODE),jacobian(3,3),rst(3),area_vector(3)
     real(dp) :: det,weight,phi,current_out,displacement_out,diffusion(3)
     integer :: element,i,j,k,face,axis,axis_a,axis_b,set_id,mat
+    logical :: symmetry_face
 
     call clear_status(status)
     report=IndependentFluxReportType()
@@ -109,6 +114,10 @@ contains
       axis_a=mod(axis,3)+1
       axis_b=mod(axis+1,3)+1
       set_id=faces(face)%boundary_set
+      symmetry_face=.false.
+      if(present(half_y)) then
+        if(half_y) symmetry_face=all(abs(mesh%coordinates(2,faces(face)%node_ids))<1.0e-15_dp)
+      end if
       rst=0.0_dp
       rst(axis)=real(2*mod(faces(face)%local_face+1,2)-1,dp)
       do j=1,order
@@ -144,6 +153,12 @@ contains
           report%absolute_displacement_out=report%absolute_displacement_out+abs(displacement_out)
           current_out=dot_product(response%current_n+response%current_p,area_vector)
           report%terminal_power=report%terminal_power-phi*current_out
+          if(symmetry_face) then
+            report%symmetry_electron_out=report%symmetry_electron_out+dot_product(response%current_n,area_vector)
+            report%symmetry_hole_out=report%symmetry_hole_out+dot_product(response%current_p,area_vector)
+            report%symmetry_heat_out=report%symmetry_heat_out+dot_product(response%heat_flux,area_vector)
+            report%symmetry_terminal_power=report%symmetry_terminal_power-phi*current_out
+          end if
         end do
       end do
     end do

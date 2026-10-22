@@ -1,0 +1,29 @@
+{
+  "protocol_id": "A2P_ORIGINAL_GAUSS_ROWS_20261018_V1",
+  "parent_protocol": "a2p_protocol.json",
+  "parent_protocol_modified": false,
+  "frozen_before_first_execution_of_supplement": true,
+  "reason": "Verify the original Gauss equation removed by a single potential gauge and the associated total-charge compatibility at every accepted A2P state",
+  "scope": "All 18 electric/mechanical e15 positive/negative/zero states; physical material, BC, nonlinear solver and previous gates unchanged",
+  "raw_system": "Reassemble the accepted seven-field state with the production residual/Jacobian and no Dirichlet row replacement. Do not use cached or already-replaced Newton rows.",
+  "row_normalization": "s_i=max_j abs(J_original_ij)*field_scale_j, exactly equilibrate_csr_system using the same per-case field scales as Newton. No zero-field relative denominator, numerical floor, or replacement unit scale.",
+  "row_gates": {
+    "tolerance": 1e-11,
+    "tolerance_source": "Frozen A2P Newton residual tolerance",
+    "electric": "Maximum absolute scaled residual on free potential rows <= tolerance. Original outer Dirichlet rows are contact reactions, reported without a zero gate.",
+    "mechanical": "Maximum absolute scaled residual on every original potential row, including the gauge row, <= tolerance. Gauge-row error is also reported explicitly.",
+    "relation_to_Newton": "Per-row maximum is an additional stricter audit; no relaxation of the existing free-DOF RMS residual test."
+  },
+  "total_charge": {
+    "charge_integral": "Independent order-five physical volume integral of material charge density",
+    "partition_identity": "Sum of all original Gauss residuals equals integral(rho), since the FE shape functions form a partition of unity",
+    "normalization": "S=sum_i s_i over all original potential rows, the algebraic absolute row-scale bound for the constant test function; not a target-charge or field-dependent zero denominator",
+    "all_cases_gate": "abs(sum_i R_phi_i-Qrho_5)/S <= 1e-11",
+    "mechanical_compatibility_gate": "abs(Qrho_5)/S <= 1e-11, alongside the individual all-row gate",
+    "electric_scope": "No extra zero-total-charge gate is imposed by Dirichlet contacts; integral and original reaction rows are reported.",
+    "exterior_flux": "Independently integrated D.n and D.n minus Qrho are reported in coulombs only. The algebraic 1e-11 gate does not replace the frozen spatial normal-flux criteria."
+  },
+  "outputs": ["Per-case original Gauss row CSV with coordinates, constraint/gauge flags, raw residual, original row scale and normalized residual", "Per-case Gauss summary CSV", "Stdout metrics and Boolean gates"],
+  "acceptance": "New Gauss compatibility gates are conjoined with every original A2P gate, including zero perturbed pivots. They cannot convert a pivot failure into PASS.",
+  "mutation_scope": "Only a2_piezo_check_m.f90 and this new protocol; no source-model, material, BC, solver, old result or original protocol mutation."
+}

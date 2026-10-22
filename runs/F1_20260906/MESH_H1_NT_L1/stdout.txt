@@ -1,0 +1,10 @@
+f1_nodes=20496, elements=4608
+newton_iteration=0, voltage_factor=  0.0000E+00, joule_factor=  0.0000E+00, residual=  0.0000E+00,
+newton_iteration=0, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  2.2580E-02,
+newton_iteration=0, voltage_factor=  1.2500E-01, joule_factor=  0.0000E+00, residual=  1.1290E-02,
+newton_iteration=0, voltage_factor=  6.2500E-02, joule_factor=  0.0000E+00, residual=  5.6450E-03,
+newton_iteration=0, voltage_factor=  3.1250E-02, joule_factor=  0.0000E+00, residual=  2.8225E-03,
+newton_iteration=0, voltage_factor=  1.5625E-02, joule_factor=  0.0000E+00, residual=  1.4112E-03,
+status_code=80
+status_message=Voltage continuation reached the minimum step after Newton failure.
+1

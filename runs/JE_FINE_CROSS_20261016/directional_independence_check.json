@@ -1,0 +1,18 @@
+{
+  "mesh_radial_16": {
+    "unchanged_other_direction_coordinates": true,
+    "positive_jacobians": true
+  },
+  "mesh_radial_18": {
+    "unchanged_other_direction_coordinates": true,
+    "positive_jacobians": true
+  },
+  "mesh_thickness_16": {
+    "unchanged_other_direction_coordinates": true,
+    "positive_jacobians": true
+  },
+  "mesh_thickness_18": {
+    "unchanged_other_direction_coordinates": true,
+    "positive_jacobians": true
+  }
+}

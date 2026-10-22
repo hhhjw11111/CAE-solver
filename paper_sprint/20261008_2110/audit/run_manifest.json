@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-10-08T21:10+08:00",
+  "start_time_precision": "minute",
+  "frozen_at": "2026-10-08T22:08:43.312076+08:00",
+  "timezone": "Asia/Shanghai",
+  "delivery_root": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110",
+  "physical_root": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110",
+  "branch": "codex/paper-sprint-20261008-2110",
+  "head": "a63ad1db24a5d5813afa4fbbe7eaa6e7235950bc",
+  "protected_baseline_commit": "a63ad1db24a5d5813afa4fbbe7eaa6e7235950bc",
+  "new_3d_solves": 0,
+  "processed_3V_cases": 10,
+  "figure_sets": 8,
+  "figure_formats": [
+    "PNG",
+    "SVG",
+    "PDF"
+  ],
+  "data_csv_count": 40,
+  "document_status": "WORKING_DRAFT",
+  "formats": {
+    "markdown": "DELIVERED",
+    "pdf": "DELIVERED_VISUAL_QA",
+    "docx": "PENDING_RENDER_ENV"
+  },
+  "source_modified_by_this_task": false,
+  "concurrent_changed_source_count": 8,
+  "validated_version": "0.15.9-log-inverse-checked / R25_CLEAN",
+  "current_version_not_validated_here": "0.16.0-trust-region",
+  "initial_source_files": 58,
+  "readme": "README_FIRST.md",
+  "open_items": "OPEN_ITEMS.md",
+  "protection_status": "BASELINE_PASS_CONCURRENT_CHANGES_RECORDED",
+  "raw_data_archived_in_place": true,
+  "no_external_upload": true,
+  "verification_scope": "five R25 small CLI checks + R22 archived production kernel replay + pure mathematical references"
+}

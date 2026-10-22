@@ -1,0 +1,3 @@
+[WARNING] Could not deduce format from file extension .2 -V colorlinks=true
+  Defaulting to markdown
+pandoc.exe: reports/study_report_final.md -o reports/study_report_final.pdf --resource-path=.:reports:manuscript --pdf-engine=C:\Program Files\MiKTeX\miktex\bin\x64\xelatex.exe --pdf-engine-opt=--disable-installer --pdf-engine-opt=-no-shell-escape -V mainfont=Cambria -V CJKmainfont=Microsoft YaHei -V sansfont=Microsoft YaHei -V monofont=Consolas -V mathfont=Cambria Math -V geometry:margin=22mm -V papersize=a4 -V fontsize=11pt -V linestretch=1.2 -V colorlinks=true: withBinaryFile: invalid argument (Invalid argument)

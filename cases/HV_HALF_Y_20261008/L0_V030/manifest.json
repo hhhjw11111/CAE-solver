@@ -1,0 +1,30 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_20260906\\H1_L0.mesh",
+  "source_mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L0_V030\\H1_Y_HALF.mesh",
+  "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+  "node_map_sha256": "2c84f6c638986741e87954de4631f19037d86dd5c73ff075beeefe1eaee03d0b",
+  "nodes": 5541,
+  "elements": 1120,
+  "minimum_sampled_jacobian": 2.869336042124175e-23,
+  "seed_nodes": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r19_split_V030_perturbed\\nodes.csv",
+  "seed_sha256": "c91043765902f1d7f7866185b5806b454e258d962c4976e43dfc9a70930055b4",
+  "seed_status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION",
+  "rigid_gauge": {
+    "translation_m": [
+      5.3421121272285455e-11,
+      2.896299141054026e-11,
+      -1.2247586309639392e-11
+    ],
+    "rotation_rad": [
+      2.7618639966165926e-19,
+      1.2134308363059698e-06,
+      -2.383034606894461e-19
+    ],
+    "maximum_symmetry_uy_m": 1.7315661132465215e-24
+  },
+  "hole_perturbation": 0.005,
+  "output_seed_sha256": "901b0ccf848e22e42ef06632ffc60c21249dec598b3bff8cc51a5f14a47584bf"
+}

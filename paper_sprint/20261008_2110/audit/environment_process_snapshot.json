@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-10-08T21:15:42.2669594+08:00",
+  "memory": {
+    "TotalVisibleMemorySize": 33388444,
+    "FreePhysicalMemory": 2472136
+  },
+  "processes": [
+    {
+      "ProcessId": 32700,
+      "Name": "python.exe",
+      "ExecutablePath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "CommandLine": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py --exe C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe --mesh C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_ANGLE_20261008\\A64_half\\H1_Y_HALF.mesh --output C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080 --voltage 8.0 --seed-nodes C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\nodes.csv --seed-voltage 6.0 --half-y --log-weighted --storage OOC --ooc-core-mb 5000 --split-holes --omp-threads 2 --mkl-threads 2 --checkpoint-volts 0.5 --max-seconds 14400"
+    },
+    {
+      "ProcessId": 2764,
+      "Name": "TPSolverV2.exe",
+      "ExecutablePath": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "CommandLine": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe run-f1 C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080\\input.nml C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080"
+    },
+    {
+      "ProcessId": 19736,
+      "Name": "python.exe",
+      "ExecutablePath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "CommandLine": "\"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" solver_v2/scripts/run_hv_point.py --exe solver_v2/build/HV_LOG_INVERSE_20261008_R25_CLEAN/TPSolverV2.exe --mesh solver_v2/cases/HV_CONTROLLED_ANGLE_20261008/A64_half/H1_Y_HALF.mesh --output solver_v2/runs/HV_SUPG_20261007/r25_log_A64_voltage_then_heat_V080 --voltage 8 --seed-nodes solver_v2/runs/HV_SUPG_20261007/r25_followthrough/V060/nodes.csv --seed-voltage 6 --half-y --log-weighted --voltage-then-heat --checkpoint-volts 0.5 --storage OOC --ooc-core-mb 5000 --split-holes --omp-threads 2 --mkl-threads 2 --max-seconds 14400"
+    },
+    {
+      "ProcessId": 22984,
+      "Name": "TPSolverV2.exe",
+      "ExecutablePath": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+      "CommandLine": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe run-f1 C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_voltage_then_heat_V080\\input.nml C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_voltage_then_heat_V080"
+    },
+    {
+      "ProcessId": 2644,
+      "Name": "python.exe",
+      "ExecutablePath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "CommandLine": "\"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" solver_v2/runs/HV_SUPG_20261007/r25_fixed_mesh_high_voltage_priority/collect_high_voltage.py"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=26928, elements=6144
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  5.8187E-16,
+temperature_newton_iteration=0,voltage_factor=  8.42620672E-01,theta_control=  2.64262982E+01,residual=  6.77900164E-04,
+temperature_newton_iteration=1,voltage_factor=  8.07660376E-01,theta_control=  2.64262982E+01,residual=  1.37684754E-06,
+temperature_newton_iteration=2,voltage_factor=  7.92014517E-01,theta_control=  2.64262982E+01,residual=  1.78537072E-08,
+temperature_newton_iteration=3,voltage_factor=  7.91831079E-01,theta_control=  2.64262982E+01,residual=  1.96009505E-12,
+temperature_newton_iteration=4,voltage_factor=  7.91831057E-01,theta_control=  2.64262982E+01,residual=  7.47055605E-16,
+temperature_newton_iteration=5,voltage_factor=  7.91831057E-01,theta_control=  2.64262982E+01,residual=  6.99743012E-16,
+temperature_newton_iteration=0,voltage_factor=  8.33662113E-01,theta_control=  3.19165515E+01,residual=  2.84823885E-06,
+temperature_newton_iteration=1,voltage_factor=  8.07921189E-01,theta_control=  3.19165515E+01,residual=  5.41636060E-08,
+temperature_newton_iteration=2,voltage_factor=  8.07412779E-01,theta_control=  3.19165515E+01,residual=  1.94620689E-11,
+temperature_newton_iteration=3,voltage_factor=  8.07412611E-01,theta_control=  3.19165515E+01,residual=  8.97717765E-16,
+temperature_newton_iteration=4,voltage_factor=  8.07412611E-01,theta_control=  3.19165515E+01,residual=  8.58173425E-16,
+temperature_newton_iteration=0,voltage_factor=  8.22994165E-01,theta_control=  3.74068049E+01,residual=  3.12467286E-06,
+temperature_newton_iteration=1,voltage_factor=  7.97141231E-01,theta_control=  3.74068049E+01,residual=  5.80556668E-08,
+temperature_newton_iteration=2,voltage_factor=  7.96617518E-01,theta_control=  3.74068049E+01,residual=  3.02698932E-11,
+temperature_newton_iteration=3,voltage_factor=  7.96617338E-01,theta_control=  3.74068049E+01,residual=  1.03645557E-15,
+temperature_newton_iteration=4,voltage_factor=  7.96617338E-01,theta_control=  3.74068049E+01,residual=  9.69468265E-16,
+inverse_maximum_sampled_voltage_V= 6.4593008854883447E+000

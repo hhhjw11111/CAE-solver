@@ -1,0 +1,17 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  8.0588E-01, joule_factor=  1.0000E+00, residual=  8.7585E-16,
+arc_accepted=1,voltage_factor= 8.0588171803657715E-001
+arc_iteration=0,lambda=  8.060067E-01,residual=  1.806464E-08,update=  1.797693+308,constraint=  5.967449E-16,
+arc_iteration=1,lambda=  8.058992E-01,residual=  1.279173E-12,update=  3.087065E-04,constraint= -7.077672E-16,
+arc_iteration=2,lambda=  8.058992E-01,residual=  9.149022E-16,update=  4.090892E-08,constraint= -9.436896E-16,
+arc_iteration=3,lambda=  8.058992E-01,residual=  8.836964E-16,update=  4.057213E-12,constraint=  4.996004E-16,
+arc_accepted=2,voltage_factor= 8.0589922433891803E-001
+arc_iteration=0,lambda=  8.059442E-01,residual=  4.526256E-09,update=  1.797693+308,constraint=  2.359224E-16,
+arc_iteration=1,lambda=  8.059174E-01,residual=  8.006033E-14,update=  7.702354E-05,constraint= -3.677614E-16,
+arc_iteration=2,lambda=  8.059174E-01,residual=  9.270296E-16,update=  2.542295E-09,constraint= -6.383782E-16,
+arc_iteration=3,lambda=  8.059174E-01,residual=  8.465221E-16,update=  2.419810E-12,constraint=  1.179612E-16,
+arc_accepted=3,voltage_factor= 8.0591735354854799E-001
+arc_iteration=0,lambda=  8.059217E-01,residual=  1.136265E-09,update=  1.797693+308,constraint=  3.469447E-16,
+arc_iteration=1,lambda=  8.059150E-01,residual=  5.113246E-15,update=  1.935521E-05,constraint= -3.747003E-16,

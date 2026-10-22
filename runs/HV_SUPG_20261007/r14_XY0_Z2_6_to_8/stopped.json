@@ -1,0 +1,6 @@
+{
+  "pid": 21536,
+  "reason": "The surface-refined mesh also rejected the first 6.5 V attempt and accepted 6.375 V after cutback. Preserve that state and switch to a temperature-parameter branch diagnostic; this stop does not establish nonexistence at 8 V.",
+  "last_accepted_voltage": 6.375,
+  "time": "2026-10-08T02:11:38.9039557+08:00"
+}

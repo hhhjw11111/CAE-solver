@@ -3,7 +3,7 @@ module build_info_m
   private
 
   character(len=*), parameter, public :: SOLVER_NAME = 'TPSolverV2'
-  character(len=*), parameter, public :: SOLVER_VERSION = '0.14.9-cauchy-restart'
+  character(len=*), parameter, public :: SOLVER_VERSION = '0.16.0-trust-region'
   character(len=*), parameter, public :: THEORY_VERSION = '2.1'
   character(len=*), parameter, public :: ARCHITECTURE_ID = 'TPS-V2-ARCH-001'
   character(len=*), parameter, public :: VERIFIED_SCOPE = 'See run-specific evidence; legacy graded-hole geometry INVALID'

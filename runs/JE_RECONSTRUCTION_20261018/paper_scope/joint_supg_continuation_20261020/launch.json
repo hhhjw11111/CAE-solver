@@ -1,0 +1,29 @@
+{
+  "status": "STARTED_NOT_COMPLETED",
+  "arguments": [
+    "-X",
+    "utf8",
+    "\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\continue_je_joint_supg_20261020.py\"",
+    "--prior-controller-pid",
+    "21588",
+    "--prior-launch",
+    "\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\background_resume_20261020_joint1_attempt02\\launch.json\"",
+    "--prior-finished",
+    "\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\batch_20261020T052241674350Z_finished.json\"",
+    "--output",
+    "\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\joint_supg_continuation_20261020\\records\""
+  ],
+  "runner": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\continue_je_joint_supg_20261020.py",
+  "finite_sequence": [
+    "wait_actual_joint1_completion",
+    "joint2_6V_8V",
+    "original_metric_report",
+    "SUPG_0.5_2_at_joint2_6V_8V",
+    "final_original_metric_report"
+  ],
+  "window_style": "Hidden",
+  "runner_sha256": "23a6c878c0d602865f6ac9396f78b046560e384e75fe69f5f207894b8d615e05",
+  "automatic_retries": 0,
+  "pid": 12748,
+  "production_acceptance": false
+}

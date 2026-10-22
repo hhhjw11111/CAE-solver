@@ -1,0 +1,139 @@
+{
+  "scope": "ACTUAL_ZNO_CANDIDATE_MATERIAL_POINT_ONLY_NOT_GLOBAL_BRIDGE",
+  "objects": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\kinds_m.obj",
+      "sha256": "d4bfc5767febca807c88fc51539661587537973ac2c45be30d0463539dc095d7",
+      "modified_ns": 1791433858653131700
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\constants_m.obj",
+      "sha256": "8b3f73c6f785fc58e051bebb3ede92887c54c0443c7b1b4132bd03295df93f22",
+      "modified_ns": 1791433858758826100
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\status_m.obj",
+      "sha256": "bd7011092f4bbf0a0c7e3fb58e246155400e66820cb8c4660986d256710259dc",
+      "modified_ns": 1791433858894670500
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\model_types_m.obj",
+      "sha256": "27bca63ced67014db7fb6f2c411c4b92f6059de45f7681fe44e4c05103778e81",
+      "modified_ns": 1791433860156045600
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\zno_candidate_m.obj",
+      "sha256": "c512674776aada1278485da8fec0682a07edf56491d8716a9e08bfeb2eb6e539",
+      "modified_ns": 1791433861186529900
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\transport_m.obj",
+      "sha256": "e2513037b1a7bdb7c013494f2329f5f4d9792ec5c6b95094dedd66973b9459c7",
+      "modified_ns": 1791433861451451100
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\recombination_m.obj",
+      "sha256": "cfe85d688369215412b009435baa2e4e3183df980ea712b9a51cc96d51e16a59",
+      "modified_ns": 1791433861610307700
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\thermo_piezo_m.obj",
+      "sha256": "9448be5fa75f96887ea6d5a77a25e6cc3e845c09ad8815f0982bf9116d5cf242",
+      "modified_ns": 1791433861788102900
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R21\\material_point_m.obj",
+      "sha256": "ad754f469b57469620db774f2e8bf07060296f51672308e932420552f86532e9",
+      "modified_ns": 1791433862663731200
+    }
+  ],
+  "driver_sha256": "fe950f6dafaa7812451ead1cb40cbe590e026a0281a0188b09e99101c40bb29f",
+  "script_sha256": "bf7c269f6c0d5228298011ea99c2c816e5b522d3628c79dfc704d41c8477879a",
+  "error_definition": "abs(FD-analytic)/max(abs(FD),abs(analytic),1e-280), separately for each of 21 response components; no common physical-unit absolute tolerance.",
+  "directions": "3 reproducible mixed directions, scaled as archived G02 state input scales",
+  "criterion": 2e-07,
+  "criterion_note": "Same numerical tolerance as existing G02; all 21 components must meet it at one shared scanned step for each direction. This supplements, not changes, production acceptance gates.",
+  "limitations": [
+    "Three mixed directional derivatives do not certify every Jacobian entry.",
+    "Tiny minority contributions to total charge/Joule can be hidden by electron sum; direct hole-current components are independently scaled.",
+    "No global mesh, assembly, boundary, heat-balance or Newton certification."
+  ],
+  "compile_exit_code": 0,
+  "run_exit_code": 0,
+  "checks": [
+    {
+      "model": "NT",
+      "direction": 1,
+      "best_shared_step": 0.0001,
+      "maximum_component_error": 8.00953593078793e-11,
+      "hole_current_best_shared_error": 2.8025189973570686e-11,
+      "passed": true
+    },
+    {
+      "model": "NT",
+      "direction": 2,
+      "best_shared_step": 0.0001,
+      "maximum_component_error": 2.59951213501642e-10,
+      "hole_current_best_shared_error": 5.892426652611907e-12,
+      "passed": true
+    },
+    {
+      "model": "NT",
+      "direction": 3,
+      "best_shared_step": 0.0001,
+      "maximum_component_error": 5.781182691875304e-11,
+      "hole_current_best_shared_error": 3.559579278494773e-12,
+      "passed": true
+    },
+    {
+      "model": "N0",
+      "direction": 1,
+      "best_shared_step": 0.0001,
+      "maximum_component_error": 7.780161212253302e-11,
+      "hole_current_best_shared_error": 1.2846182584982376e-11,
+      "passed": true
+    },
+    {
+      "model": "N0",
+      "direction": 2,
+      "best_shared_step": 0.0001,
+      "maximum_component_error": 2.0854017967785313e-10,
+      "hole_current_best_shared_error": 3.154895725350923e-13,
+      "passed": true
+    },
+    {
+      "model": "N0",
+      "direction": 3,
+      "best_shared_step": 0.0001,
+      "maximum_component_error": 5.781182691875304e-11,
+      "hole_current_best_shared_error": 2.9096630597088273e-12,
+      "passed": true
+    },
+    {
+      "model": "LQ",
+      "direction": 1,
+      "best_shared_step": 0.01,
+      "maximum_component_error": 9.130999778226805e-13,
+      "hole_current_best_shared_error": 3.281950672566596e-14,
+      "passed": true
+    },
+    {
+      "model": "LQ",
+      "direction": 2,
+      "best_shared_step": 0.01,
+      "maximum_component_error": 1.7994713336814838e-12,
+      "hole_current_best_shared_error": 2.6029902014100995e-14,
+      "passed": true
+    },
+    {
+      "model": "LQ",
+      "direction": 3,
+      "best_shared_step": 0.01,
+      "maximum_component_error": 8.50489703130894e-13,
+      "hole_current_best_shared_error": 3.6565205673377394e-14,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "seconds": 11.093999999999141
+}

@@ -1,0 +1,76 @@
+{
+  "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080",
+  "voltage_V": 8.0,
+  "native_rule_reproduced": true,
+  "rules": [
+    {
+      "orders": [
+        5,
+        5,
+        3
+      ],
+      "ring_volume_m3": 1.0210169882148408e-17,
+      "ring_abs_n_relative_mean": 0.03904226814660363,
+      "ring_abs_p_relative_mean": 0.08480271601243453,
+      "annulus_sample_count": 252000,
+      "all_domain_sample_count": 705600,
+      "minimum_jacobian_m3": 2.4040911724974204e-24,
+      "p_change_vs_native_fraction": 0.0
+    },
+    {
+      "orders": [
+        5,
+        5,
+        5
+      ],
+      "ring_volume_m3": 1.0210169882148403e-17,
+      "ring_abs_n_relative_mean": 0.039043283968015485,
+      "ring_abs_p_relative_mean": 0.08481143899246005,
+      "annulus_sample_count": 420000,
+      "all_domain_sample_count": 1176000,
+      "minimum_jacobian_m3": 2.404091172497318e-24,
+      "p_change_vs_native_fraction": 0.00010286203597821916
+    },
+    {
+      "orders": [
+        7,
+        7,
+        7
+      ],
+      "ring_volume_m3": 1.0210169882148403e-17,
+      "ring_abs_n_relative_mean": 0.039043076592728466,
+      "ring_abs_p_relative_mean": 0.08481096336175353,
+      "annulus_sample_count": 1152480,
+      "all_domain_sample_count": 3226944,
+      "minimum_jacobian_m3": 2.4038504182352596e-24,
+      "p_change_vs_native_fraction": 9.725336294415228e-05
+    },
+    {
+      "orders": [
+        9,
+        9,
+        9
+      ],
+      "ring_volume_m3": 1.0210169882148405e-17,
+      "ring_abs_n_relative_mean": 0.03904284186285692,
+      "ring_abs_p_relative_mean": 0.08481110059463702,
+      "annulus_sample_count": 2449440,
+      "all_domain_sample_count": 6858432,
+      "minimum_jacobian_m3": 2.403743566719045e-24,
+      "p_change_vs_native_fraction": 9.887162341905765e-05
+    }
+  ],
+  "source_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\nodes.csv": "14021d62a10e4ff809bd3683f16b05ec001056977daf200d31a14e964c78ab32",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\input.nml": "1b9ecf50aaddcb99d4b9902d9e40137cabb82b041c3dc61b99d3859cb587daf5",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\manifest.json": "80a6858a8daf770733c8507faa84a88f68c68d4d4920c1c4787fa85176ad550d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\execution.json": "b334b28025da367ac6753f1762bb5992e7c584a95d2dcf5156b3e89778ea38b3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A48_R14_Z14_S1_V080\\metrics.txt": "5bd13ebcfb2109af4556aa75cff39e66da6e659543f0e889931f4f360ebb4ddd",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\meshes\\A48_R14_Z14\\H1.mesh": "57a28c3b314940401ba250ebaa6f58e8c99cd8482855875045968dd2ada45dce",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_je_ring_quadrature_20261019.py": "e947b0b5c0ae6ec417400ffac1e3f29812f51ca2921760d14900bc8472857bf4",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\post\\field_metrics_m.f90": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2"
+  },
+  "production_acceptance": false,
+  "limitation": "Fixed-field postprocessing only. Native metrics, mesh thresholds and existing FAIL records are unchanged."
+}

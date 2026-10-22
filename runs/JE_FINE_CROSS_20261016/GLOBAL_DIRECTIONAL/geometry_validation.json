@@ -1,0 +1,58 @@
+{
+  "baseline_byte_identical": true,
+  "baseline_mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+  "checks": [
+    {
+      "direction": "radial",
+      "level": 1,
+      "counts": {
+        "circumferential": 32,
+        "radial": 16,
+        "thickness": 14
+      },
+      "other_direction_coordinates_identical": true,
+      "volume_relative_change": -2.220446049250313e-16,
+      "maximum_radial_axis_um": 1.3500000000000005,
+      "maximum_z_nm": 279.5
+    },
+    {
+      "direction": "radial",
+      "level": 2,
+      "counts": {
+        "circumferential": 32,
+        "radial": 18,
+        "thickness": 14
+      },
+      "other_direction_coordinates_identical": true,
+      "volume_relative_change": 0.0,
+      "maximum_radial_axis_um": 1.2272727272727275,
+      "maximum_z_nm": 279.5
+    },
+    {
+      "direction": "thickness",
+      "level": 1,
+      "counts": {
+        "circumferential": 32,
+        "radial": 14,
+        "thickness": 16
+      },
+      "other_direction_coordinates_identical": true,
+      "volume_relative_change": -1.1102230246251565e-16,
+      "maximum_radial_axis_um": 1.5000000000000009,
+      "maximum_z_nm": 244.56249999999997
+    },
+    {
+      "direction": "thickness",
+      "level": 2,
+      "counts": {
+        "circumferential": 32,
+        "radial": 14,
+        "thickness": 18
+      },
+      "other_direction_coordinates_identical": true,
+      "volume_relative_change": -1.1102230246251565e-16,
+      "maximum_radial_axis_um": 1.5000000000000009,
+      "maximum_z_nm": 217.38888888888886
+    }
+  ]
+}

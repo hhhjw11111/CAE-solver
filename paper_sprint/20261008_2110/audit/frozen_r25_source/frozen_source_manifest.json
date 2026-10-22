@@ -1,0 +1,1882 @@
+{
+  "schema": "TPSolverV2-startup-source-recovery-v1",
+  "created_utc": "2026-10-08T13:55:41.272096+00:00",
+  "criterion": "Exact SHA-256 equality to source_hashes_before.csv; no use of current changing src/ files",
+  "expected_manifest": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\source_hashes_before.csv",
+  "expected_manifest_sha256": "d6efe05158097a48096001f5d8368b23393a76dce17774c6cd0615c8d7390fd2",
+  "snapshot_search_roots": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_autocontinue_code_snapshot",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_mesh_execution_audit_snapshot",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot"
+  ],
+  "expected_count": 58,
+  "recovered_count": 58,
+  "missing_count": 0,
+  "status": "COMPLETE_EXACT_STARTUP_SOURCE_RECOVERY",
+  "compilation_performed": false,
+  "verification_performed": false,
+  "current_source_modified": false,
+  "git_refs_modified": false,
+  "limitation": "Preserves startup source bytes only; not a claim of rebuilt executable equivalence or new numerical validation.",
+  "files": [
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\f1_case_runner_m.f90",
+      "relative_path": "src/app/f1_case_runner_m.f90",
+      "expected_sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\app\\f1_case_runner_m.f90",
+          "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\app\\f1_case_runner_m.f90",
+          "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+          "sha256": "800ca2133ca8aa91b5d352a3f53264276b0ce44a705b9466e3cb286df6b0c1f3",
+          "matched": false
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+          "sha256": "5e9a83f7c49be4c6a7793f73cc9acceceb4420593dd1068e606b9bddadd6440b",
+          "matched": false
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\app\\f1_case_runner_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\app\\f1_case_runner_m.f90",
+      "copied_sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6",
+      "bytes": 41338
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\main.f90",
+      "relative_path": "src/app/main.f90",
+      "expected_sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\app\\main.f90",
+          "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\app\\main.f90",
+          "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\app\\main.f90",
+          "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\main.f90",
+          "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\app\\main.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\app\\main.f90",
+      "copied_sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8",
+      "bytes": 7939
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\app\\production_runner_m.f90",
+      "relative_path": "src/app/production_runner_m.f90",
+      "expected_sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\app\\production_runner_m.f90",
+          "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\app\\production_runner_m.f90",
+          "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\app\\production_runner_m.f90",
+          "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\production_runner_m.f90",
+          "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\app\\production_runner_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\app\\production_runner_m.f90",
+      "copied_sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c",
+      "bytes": 7558
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\build_info_m.f90",
+      "relative_path": "src/core/build_info_m.f90",
+      "expected_sha256": "ae99dd24a61b5a65bbbe81be632fc3db10e5a91fc673e25b6aebd94df3a700d5",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\build_info_m.f90",
+          "sha256": "ae99dd24a61b5a65bbbe81be632fc3db10e5a91fc673e25b6aebd94df3a700d5",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\core\\build_info_m.f90",
+          "sha256": "ae99dd24a61b5a65bbbe81be632fc3db10e5a91fc673e25b6aebd94df3a700d5",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\build_info_m.f90",
+          "sha256": "ae99dd24a61b5a65bbbe81be632fc3db10e5a91fc673e25b6aebd94df3a700d5",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\build_info_m.f90",
+          "sha256": "20198ac86f9e4968eac69fc66fe97b510b5c920214654e04cebd850f89013fa4",
+          "matched": false
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\build_info_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\core\\build_info_m.f90",
+      "copied_sha256": "ae99dd24a61b5a65bbbe81be632fc3db10e5a91fc673e25b6aebd94df3a700d5",
+      "bytes": 1022
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\constants_m.f90",
+      "relative_path": "src/core/constants_m.f90",
+      "expected_sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\constants_m.f90",
+          "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\core\\constants_m.f90",
+          "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\constants_m.f90",
+          "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\constants_m.f90",
+          "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\constants_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\core\\constants_m.f90",
+      "copied_sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15",
+      "bytes": 422
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\field_layout_m.f90",
+      "relative_path": "src/core/field_layout_m.f90",
+      "expected_sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\field_layout_m.f90",
+          "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\core\\field_layout_m.f90",
+          "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\field_layout_m.f90",
+          "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\field_layout_m.f90",
+          "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\field_layout_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\core\\field_layout_m.f90",
+      "copied_sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96",
+      "bytes": 1291
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\kinds_m.f90",
+      "relative_path": "src/core/kinds_m.f90",
+      "expected_sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\kinds_m.f90",
+          "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\core\\kinds_m.f90",
+          "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\kinds_m.f90",
+          "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\kinds_m.f90",
+          "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\kinds_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\core\\kinds_m.f90",
+      "copied_sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc",
+      "bytes": 256
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\model_types_m.f90",
+      "relative_path": "src/core/model_types_m.f90",
+      "expected_sha256": "5a8502476547bcb0d324d68f060a883803f5dc5e805c2233a25ed7de99955b82",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\model_types_m.f90",
+          "sha256": "5a8502476547bcb0d324d68f060a883803f5dc5e805c2233a25ed7de99955b82",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\core\\model_types_m.f90",
+          "sha256": "5a8502476547bcb0d324d68f060a883803f5dc5e805c2233a25ed7de99955b82",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\model_types_m.f90",
+          "sha256": "5a8502476547bcb0d324d68f060a883803f5dc5e805c2233a25ed7de99955b82",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\model_types_m.f90",
+          "sha256": "5a8502476547bcb0d324d68f060a883803f5dc5e805c2233a25ed7de99955b82",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\model_types_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\core\\model_types_m.f90",
+      "copied_sha256": "5a8502476547bcb0d324d68f060a883803f5dc5e805c2233a25ed7de99955b82",
+      "bytes": 3507
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\core\\status_m.f90",
+      "relative_path": "src/core/status_m.f90",
+      "expected_sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\status_m.f90",
+          "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\core\\status_m.f90",
+          "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\status_m.f90",
+          "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\status_m.f90",
+          "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\core\\status_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\core\\status_m.f90",
+      "copied_sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af",
+      "bytes": 1452
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\dirichlet_m.f90",
+      "relative_path": "src/fem/dirichlet_m.f90",
+      "expected_sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\dirichlet_m.f90",
+          "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\fem\\dirichlet_m.f90",
+          "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\dirichlet_m.f90",
+          "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\dirichlet_m.f90",
+          "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\dirichlet_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\fem\\dirichlet_m.f90",
+      "copied_sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06",
+      "bytes": 6068
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90",
+      "relative_path": "src/fem/element_kernel_m.f90",
+      "expected_sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\element_kernel_m.f90",
+          "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\fem\\element_kernel_m.f90",
+          "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\element_kernel_m.f90",
+          "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\element_kernel_m.f90",
+          "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\element_kernel_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\fem\\element_kernel_m.f90",
+      "copied_sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8",
+      "bytes": 12434
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\global_assembly_m.f90",
+      "relative_path": "src/fem/global_assembly_m.f90",
+      "expected_sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\global_assembly_m.f90",
+          "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\fem\\global_assembly_m.f90",
+          "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\global_assembly_m.f90",
+          "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\global_assembly_m.f90",
+          "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\global_assembly_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\fem\\global_assembly_m.f90",
+      "copied_sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675",
+      "bytes": 9656
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\sparse_pattern_m.f90",
+      "relative_path": "src/fem/sparse_pattern_m.f90",
+      "expected_sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\sparse_pattern_m.f90",
+          "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\fem\\sparse_pattern_m.f90",
+          "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\sparse_pattern_m.f90",
+          "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\sparse_pattern_m.f90",
+          "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\sparse_pattern_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\fem\\sparse_pattern_m.f90",
+      "copied_sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393",
+      "bytes": 9270
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\transport_supg_m.f90",
+      "relative_path": "src/fem/transport_supg_m.f90",
+      "expected_sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\transport_supg_m.f90",
+          "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\fem\\transport_supg_m.f90",
+          "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\transport_supg_m.f90",
+          "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\transport_supg_m.f90",
+          "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\fem\\transport_supg_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\fem\\transport_supg_m.f90",
+      "copied_sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+      "bytes": 7593
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\io\\input_schema_m.f90",
+      "relative_path": "src/io/input_schema_m.f90",
+      "expected_sha256": "e44c27affcba0fc664fc58c54377d6d191005dfc71067d9a9ea9ff82bc527a22",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\io\\input_schema_m.f90",
+          "sha256": "e44c27affcba0fc664fc58c54377d6d191005dfc71067d9a9ea9ff82bc527a22",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\io\\input_schema_m.f90",
+          "sha256": "e44c27affcba0fc664fc58c54377d6d191005dfc71067d9a9ea9ff82bc527a22",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\io\\input_schema_m.f90",
+          "sha256": "e44c27affcba0fc664fc58c54377d6d191005dfc71067d9a9ea9ff82bc527a22",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\input_schema_m.f90",
+          "sha256": "e44c27affcba0fc664fc58c54377d6d191005dfc71067d9a9ea9ff82bc527a22",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\io\\input_schema_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\io\\input_schema_m.f90",
+      "copied_sha256": "e44c27affcba0fc664fc58c54377d6d191005dfc71067d9a9ea9ff82bc527a22",
+      "bytes": 9400
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\io\\native_input_m.f90",
+      "relative_path": "src/io/native_input_m.f90",
+      "expected_sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\io\\native_input_m.f90",
+          "sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\io\\native_input_m.f90",
+          "sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\io\\native_input_m.f90",
+          "sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\native_input_m.f90",
+          "sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\io\\native_input_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\io\\native_input_m.f90",
+      "copied_sha256": "ed1b5979bf08fb8a9dd4261a8868e9dd40bbcbed87c3bd68b27ad3e2e72b8451",
+      "bytes": 11913
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\linear\\pardiso_solver_m.f90",
+      "relative_path": "src/linear/pardiso_solver_m.f90",
+      "expected_sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\linear\\pardiso_solver_m.f90",
+          "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\linear\\pardiso_solver_m.f90",
+          "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\linear\\pardiso_solver_m.f90",
+          "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\linear\\pardiso_solver_m.f90",
+          "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\linear\\pardiso_solver_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\linear\\pardiso_solver_m.f90",
+      "copied_sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+      "bytes": 12574
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\mesh\\boundary_topology_m.f90",
+      "relative_path": "src/mesh/boundary_topology_m.f90",
+      "expected_sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\boundary_topology_m.f90",
+          "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\mesh\\boundary_topology_m.f90",
+          "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\boundary_topology_m.f90",
+          "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\boundary_topology_m.f90",
+          "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\boundary_topology_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\mesh\\boundary_topology_m.f90",
+      "copied_sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4",
+      "bytes": 7321
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\mesh\\dof_map_m.f90",
+      "relative_path": "src/mesh/dof_map_m.f90",
+      "expected_sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\dof_map_m.f90",
+          "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\mesh\\dof_map_m.f90",
+          "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\dof_map_m.f90",
+          "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\dof_map_m.f90",
+          "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\dof_map_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\mesh\\dof_map_m.f90",
+      "copied_sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea",
+      "bytes": 1073
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\mesh\\hex20_quadrature_m.f90",
+      "relative_path": "src/mesh/hex20_quadrature_m.f90",
+      "expected_sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+          "sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+          "sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+          "sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+          "sha256": "f3665f19c278709647aa65f7c28a586811440c64abb5c8797242f5f34115809f",
+          "matched": false
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\mesh\\hex20_quadrature_m.f90",
+      "copied_sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce",
+      "bytes": 1830
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\mesh\\hex20_shape_m.f90",
+      "relative_path": "src/mesh/hex20_shape_m.f90",
+      "expected_sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\hex20_shape_m.f90",
+          "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\mesh\\hex20_shape_m.f90",
+          "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\hex20_shape_m.f90",
+          "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_shape_m.f90",
+          "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\hex20_shape_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\mesh\\hex20_shape_m.f90",
+      "copied_sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d",
+      "bytes": 5988
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\mesh\\mesh_checks_m.f90",
+      "relative_path": "src/mesh/mesh_checks_m.f90",
+      "expected_sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\mesh_checks_m.f90",
+          "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\mesh\\mesh_checks_m.f90",
+          "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\mesh_checks_m.f90",
+          "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_checks_m.f90",
+          "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\mesh_checks_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\mesh\\mesh_checks_m.f90",
+      "copied_sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba",
+      "bytes": 4980
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\mesh\\mesh_types_m.f90",
+      "relative_path": "src/mesh/mesh_types_m.f90",
+      "expected_sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\mesh_types_m.f90",
+          "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\mesh\\mesh_types_m.f90",
+          "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\mesh_types_m.f90",
+          "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_types_m.f90",
+          "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\mesh\\mesh_types_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\mesh\\mesh_types_m.f90",
+      "copied_sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74",
+      "bytes": 1316
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\nonlinear\\continuation_solver_m.f90",
+      "relative_path": "src/nonlinear/continuation_solver_m.f90",
+      "expected_sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+          "sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+          "sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+          "sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+          "sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\nonlinear\\continuation_solver_m.f90",
+      "copied_sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f",
+      "bytes": 22104
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\nonlinear\\newton_solver_m.f90",
+      "relative_path": "src/nonlinear/newton_solver_m.f90",
+      "expected_sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+          "sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+          "sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+          "sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+          "sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\nonlinear\\newton_solver_m.f90",
+      "copied_sha256": "c76ec69a9f65cb8bf9b40f37f4232c4f00dfb569424891f5f46a86337b63e165",
+      "bytes": 21446
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\nonlinear\\scaling_m.f90",
+      "relative_path": "src/nonlinear/scaling_m.f90",
+      "expected_sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\scaling_m.f90",
+          "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\nonlinear\\scaling_m.f90",
+          "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\scaling_m.f90",
+          "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\scaling_m.f90",
+          "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\scaling_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\nonlinear\\scaling_m.f90",
+      "copied_sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319",
+      "bytes": 3849
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\nonlinear\\temperature_control_m.f90",
+      "relative_path": "src/nonlinear/temperature_control_m.f90",
+      "expected_sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+          "sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+          "sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+          "sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+          "sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\nonlinear\\temperature_control_m.f90",
+      "copied_sha256": "3824c08a07d159ed5859373101bc6fe57884cb1d99b253ff63d6b7f7a2eaf6ae",
+      "bytes": 10827
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\equilibrium_m.f90",
+      "relative_path": "src/physics/equilibrium_m.f90",
+      "expected_sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\equilibrium_m.f90",
+          "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\equilibrium_m.f90",
+          "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\equilibrium_m.f90",
+          "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\equilibrium_m.f90",
+          "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\equilibrium_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\equilibrium_m.f90",
+      "copied_sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+      "bytes": 1200
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\material_point_m.f90",
+      "relative_path": "src/physics/material_point_m.f90",
+      "expected_sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\material_point_m.f90",
+          "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\material_point_m.f90",
+          "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\material_point_m.f90",
+          "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\material_point_m.f90",
+          "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\material_point_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\material_point_m.f90",
+      "copied_sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa",
+      "bytes": 12747
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\recombination_m.f90",
+      "relative_path": "src/physics/recombination_m.f90",
+      "expected_sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\recombination_m.f90",
+          "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\recombination_m.f90",
+          "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\recombination_m.f90",
+          "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\recombination_m.f90",
+          "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\recombination_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\recombination_m.f90",
+      "copied_sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800",
+      "bytes": 511
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\reference_material_m.f90",
+      "relative_path": "src/physics/reference_material_m.f90",
+      "expected_sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\reference_material_m.f90",
+          "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\reference_material_m.f90",
+          "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\reference_material_m.f90",
+          "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\reference_material_m.f90",
+          "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\reference_material_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\reference_material_m.f90",
+      "copied_sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+      "bytes": 2182
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\thermo_piezo_m.f90",
+      "relative_path": "src/physics/thermo_piezo_m.f90",
+      "expected_sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\thermo_piezo_m.f90",
+          "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\thermo_piezo_m.f90",
+          "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\thermo_piezo_m.f90",
+          "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\thermo_piezo_m.f90",
+          "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\thermo_piezo_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\thermo_piezo_m.f90",
+      "copied_sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+      "bytes": 1069
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\transport_m.f90",
+      "relative_path": "src/physics/transport_m.f90",
+      "expected_sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\transport_m.f90",
+          "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\transport_m.f90",
+          "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\transport_m.f90",
+          "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\transport_m.f90",
+          "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\transport_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\transport_m.f90",
+      "copied_sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1",
+      "bytes": 2625
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90",
+      "relative_path": "src/physics/zno_candidate_m.f90",
+      "expected_sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\zno_candidate_m.f90",
+          "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\physics\\zno_candidate_m.f90",
+          "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\zno_candidate_m.f90",
+          "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\zno_candidate_m.f90",
+          "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\physics\\zno_candidate_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\physics\\zno_candidate_m.f90",
+      "copied_sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026",
+      "bytes": 2103
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\post\\balance_audit_m.f90",
+      "relative_path": "src/post/balance_audit_m.f90",
+      "expected_sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\balance_audit_m.f90",
+          "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\post\\balance_audit_m.f90",
+          "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\balance_audit_m.f90",
+          "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\balance_audit_m.f90",
+          "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\balance_audit_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\post\\balance_audit_m.f90",
+      "copied_sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a",
+      "bytes": 3739
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\post\\field_metrics_m.f90",
+      "relative_path": "src/post/field_metrics_m.f90",
+      "expected_sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\field_metrics_m.f90",
+          "sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\post\\field_metrics_m.f90",
+          "sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\field_metrics_m.f90",
+          "sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\field_metrics_m.f90",
+          "sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\field_metrics_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\post\\field_metrics_m.f90",
+      "copied_sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2",
+      "bytes": 12053
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\post\\independent_flux_audit_m.f90",
+      "relative_path": "src/post/independent_flux_audit_m.f90",
+      "expected_sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\independent_flux_audit_m.f90",
+          "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\post\\independent_flux_audit_m.f90",
+          "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\independent_flux_audit_m.f90",
+          "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\independent_flux_audit_m.f90",
+          "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\independent_flux_audit_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\post\\independent_flux_audit_m.f90",
+      "copied_sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10",
+      "bytes": 15093
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\post\\result_writer_m.f90",
+      "relative_path": "src/post/result_writer_m.f90",
+      "expected_sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\result_writer_m.f90",
+          "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\post\\result_writer_m.f90",
+          "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\result_writer_m.f90",
+          "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\result_writer_m.f90",
+          "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\post\\result_writer_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\post\\result_writer_m.f90",
+      "copied_sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96",
+      "bytes": 9498
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\problems\\reference_bar_problem_m.f90",
+      "relative_path": "src/problems/reference_bar_problem_m.f90",
+      "expected_sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+          "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+          "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+          "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+          "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\problems\\reference_bar_problem_m.f90",
+      "copied_sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39",
+      "bytes": 6776
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\a1_joint_check_m.f90",
+      "relative_path": "src/verification/a1_joint_check_m.f90",
+      "expected_sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\a1_joint_check_m.f90",
+          "sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\a1_joint_check_m.f90",
+          "sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\a1_joint_check_m.f90",
+          "sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a1_joint_check_m.f90",
+          "sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\a1_joint_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\a1_joint_check_m.f90",
+      "copied_sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f",
+      "bytes": 7836
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\a2_hole_check_m.f90",
+      "relative_path": "src/verification/a2_hole_check_m.f90",
+      "expected_sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\a2_hole_check_m.f90",
+          "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\a2_hole_check_m.f90",
+          "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\a2_hole_check_m.f90",
+          "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a2_hole_check_m.f90",
+          "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\a2_hole_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\a2_hole_check_m.f90",
+      "copied_sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793",
+      "bytes": 11536
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\analytic_benchmarks_m.f90",
+      "relative_path": "src/verification/analytic_benchmarks_m.f90",
+      "expected_sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+          "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+          "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+          "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+          "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\analytic_benchmarks_m.f90",
+      "copied_sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41",
+      "bytes": 15330
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\center_hole_check_m.f90",
+      "relative_path": "src/verification/center_hole_check_m.f90",
+      "expected_sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\center_hole_check_m.f90",
+          "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\center_hole_check_m.f90",
+          "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\center_hole_check_m.f90",
+          "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\center_hole_check_m.f90",
+          "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\center_hole_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\center_hole_check_m.f90",
+      "copied_sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f",
+      "bytes": 15224
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\continuation_solver_check_m.f90",
+      "relative_path": "src/verification/continuation_solver_check_m.f90",
+      "expected_sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+          "sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+          "sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+          "sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+          "sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\continuation_solver_check_m.f90",
+      "copied_sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855",
+      "bytes": 14853
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\element_tangent_check_m.f90",
+      "relative_path": "src/verification/element_tangent_check_m.f90",
+      "expected_sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\element_tangent_check_m.f90",
+          "sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\element_tangent_check_m.f90",
+          "sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\element_tangent_check_m.f90",
+          "sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\element_tangent_check_m.f90",
+          "sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\element_tangent_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\element_tangent_check_m.f90",
+      "copied_sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3",
+      "bytes": 9075
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\global_assembly_check_m.f90",
+      "relative_path": "src/verification/global_assembly_check_m.f90",
+      "expected_sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\global_assembly_check_m.f90",
+          "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\global_assembly_check_m.f90",
+          "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\global_assembly_check_m.f90",
+          "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_assembly_check_m.f90",
+          "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\global_assembly_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\global_assembly_check_m.f90",
+      "copied_sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79",
+      "bytes": 18148
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\global_block_jacobian_check_m.f90",
+      "relative_path": "src/verification/global_block_jacobian_check_m.f90",
+      "expected_sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+          "sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+          "sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+          "sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+          "sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\global_block_jacobian_check_m.f90",
+      "copied_sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337",
+      "bytes": 17182
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\linear_solver_check_m.f90",
+      "relative_path": "src/verification/linear_solver_check_m.f90",
+      "expected_sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\linear_solver_check_m.f90",
+          "sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\linear_solver_check_m.f90",
+          "sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\linear_solver_check_m.f90",
+          "sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\linear_solver_check_m.f90",
+          "sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\linear_solver_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\linear_solver_check_m.f90",
+      "copied_sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9",
+      "bytes": 14621
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\m0_benchmark_m.f90",
+      "relative_path": "src/verification/m0_benchmark_m.f90",
+      "expected_sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\m0_benchmark_m.f90",
+          "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\m0_benchmark_m.f90",
+          "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\m0_benchmark_m.f90",
+          "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\m0_benchmark_m.f90",
+          "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\m0_benchmark_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\m0_benchmark_m.f90",
+      "copied_sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46",
+      "bytes": 36651
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\matched_control_check_m.f90",
+      "relative_path": "src/verification/matched_control_check_m.f90",
+      "expected_sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\matched_control_check_m.f90",
+          "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\matched_control_check_m.f90",
+          "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\matched_control_check_m.f90",
+          "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\matched_control_check_m.f90",
+          "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\matched_control_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\matched_control_check_m.f90",
+      "copied_sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768",
+      "bytes": 18134
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\material_tangent_check_m.f90",
+      "relative_path": "src/verification/material_tangent_check_m.f90",
+      "expected_sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\material_tangent_check_m.f90",
+          "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\material_tangent_check_m.f90",
+          "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\material_tangent_check_m.f90",
+          "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\material_tangent_check_m.f90",
+          "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\material_tangent_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\material_tangent_check_m.f90",
+      "copied_sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41",
+      "bytes": 10256
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\mesh_convergence_check_m.f90",
+      "relative_path": "src/verification/mesh_convergence_check_m.f90",
+      "expected_sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+          "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+          "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+          "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+          "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\mesh_convergence_check_m.f90",
+      "copied_sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85",
+      "bytes": 12869
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\newton_solver_check_m.f90",
+      "relative_path": "src/verification/newton_solver_check_m.f90",
+      "expected_sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\newton_solver_check_m.f90",
+          "sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\newton_solver_check_m.f90",
+          "sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\newton_solver_check_m.f90",
+          "sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\newton_solver_check_m.f90",
+          "sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\newton_solver_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\newton_solver_check_m.f90",
+      "copied_sha256": "71997c091e8b04e99fddef58def6302f9847e0fd356fb19699f7ab6fd53e0617",
+      "bytes": 19226
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\production_joule_check_m.f90",
+      "relative_path": "src/verification/production_joule_check_m.f90",
+      "expected_sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\production_joule_check_m.f90",
+          "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\production_joule_check_m.f90",
+          "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\production_joule_check_m.f90",
+          "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\production_joule_check_m.f90",
+          "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\production_joule_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\production_joule_check_m.f90",
+      "copied_sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed",
+      "bytes": 20927
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\radius_matrix_check_m.f90",
+      "relative_path": "src/verification/radius_matrix_check_m.f90",
+      "expected_sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+          "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+          "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+          "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+          "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\radius_matrix_check_m.f90",
+      "copied_sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205",
+      "bytes": 20055
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\supg_check_m.f90",
+      "relative_path": "src/verification/supg_check_m.f90",
+      "expected_sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\supg_check_m.f90",
+          "sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\supg_check_m.f90",
+          "sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\supg_check_m.f90",
+          "sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\supg_check_m.f90",
+          "sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\supg_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\supg_check_m.f90",
+      "copied_sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+      "bytes": 9636
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\temperature_control_check_m.f90",
+      "relative_path": "src/verification/temperature_control_check_m.f90",
+      "expected_sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\temperature_control_check_m.f90",
+          "sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\temperature_control_check_m.f90",
+          "sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\temperature_control_check_m.f90",
+          "sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\temperature_control_check_m.f90",
+          "sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\temperature_control_check_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\temperature_control_check_m.f90",
+      "copied_sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5",
+      "bytes": 5968
+    },
+    {
+      "original_startup_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\verification\\verification_driver_m.f90",
+      "relative_path": "src/verification/verification_driver_m.f90",
+      "expected_sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9",
+      "candidates_checked": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\verification_driver_m.f90",
+          "sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followup_code_snapshot\\src\\verification\\verification_driver_m.f90",
+          "sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\verification_driver_m.f90",
+          "sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\verification_driver_m.f90",
+          "sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9",
+          "matched": true
+        }
+      ],
+      "status": "RECOVERED_EXACT_HASH_MATCH",
+      "recovered_from": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_checkpoint_code_snapshot\\src\\verification\\verification_driver_m.f90",
+      "destination": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\audit\\frozen_r25_source\\src\\verification\\verification_driver_m.f90",
+      "copied_sha256": "ab204284f55a2924ca8e48f9520cf3e75bae2a7d1ef45c025048070b7b1c8de9",
+      "bytes": 11907
+    }
+  ]
+}

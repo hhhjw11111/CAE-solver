@@ -1,0 +1,285 @@
+{
+  "points": [
+    {
+      "voltage_V": 0,
+      "directory": "sweep_zero_log_r25/V000"
+    },
+    {
+      "voltage_V": 0.5,
+      "directory": "r25_log_A64_Q5_Z2_V005"
+    },
+    {
+      "voltage_V": 3,
+      "directory": "r23_log_half_L2_V030"
+    },
+    {
+      "voltage_V": 6,
+      "directory": "r25_log_A64_Q5_Z2_V060"
+    },
+    {
+      "voltage_V": 6.5,
+      "directory": "r23_log_half_L0_V065_replay"
+    },
+    {
+      "voltage_V": 1.0,
+      "directory": "r25_followthrough/V010"
+    }
+  ],
+  "studies": [
+    {
+      "name": "0.5V original three-level mesh",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Ten original scalar/ring gates only",
+      "runs": [
+        "r22_log_half_L0_V005",
+        "r22_log_half_L1_V005",
+        "r22_log_half_L2_V005"
+      ]
+    },
+    {
+      "name": "3V original three-level mesh",
+      "kind": "mesh",
+      "voltage_V": 3,
+      "scope": "Ten original scalar/ring gates only",
+      "runs": [
+        "r23_log_half_L0_V030",
+        "r23_log_half_L1_V030",
+        "r23_log_half_L2_V030"
+      ]
+    },
+    {
+      "name": "0.5V fixed-planar thickness subdivision",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Thickness-only refinement; angular error remains independent",
+      "runs": [
+        "r25_log_L2_V005_replay",
+        "r25_log_S2_V005",
+        "r25_log_S3_V005"
+      ]
+    },
+    {
+      "name": "0.5V L1 quadrature3/5",
+      "kind": "quadrature",
+      "voltage_V": 0.5,
+      "scope": "L1 only; not the eventual finest mesh",
+      "runs": [
+        "r23_log_q3_half_L1_V005",
+        "r23_log_q5_half_L1_V005"
+      ]
+    },
+    {
+      "name": "L1-L2 local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "r22_log_half_L1_V005",
+        "r22_log_half_L2_V005"
+      ],
+      "mapping": "shape_mapping_r22_L1_L2_V005"
+    },
+    {
+      "name": "L2-A48 mixed angular/thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "r22_log_half_L2_V005",
+        "r23_log_half_A48_V005"
+      ],
+      "mapping": "seed_log_A48_V005"
+    },
+    {
+      "name": "L2-S2 thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "r25_log_L2_V005_replay",
+        "r25_log_S2_V005"
+      ],
+      "mapping": "seed_log_S2_V005"
+    },
+    {
+      "name": "S2-S3 thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "r25_log_S2_V005",
+        "r25_log_S3_V005"
+      ],
+      "mapping": "shape_mapping_log_S2_S3_V005"
+    },
+    {
+      "name": "3V L1-L2 local field",
+      "kind": "field_shape",
+      "voltage_V": 3,
+      "scope": "Additional 2% maximum local perturbation criterion; no interval certificate",
+      "runs": [
+        "r23_log_half_L1_V030",
+        "r23_log_half_L2_V030"
+      ],
+      "mapping": "seed_r23_log_L2_V030"
+    },
+    {
+      "name": "0.5V controlled angular32/48/64",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Fixed radial and z2 layout; angular-only scalar/ring comparison",
+      "runs": [
+        "r25_log_L2_V005_replay",
+        "r25_log_A48_Z2_V005",
+        "r25_log_A64_Z2_V005"
+      ]
+    },
+    {
+      "name": "0.5V controlled angular local field A32-A48",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation check; not a joint angular/thickness study",
+      "runs": [
+        "r25_log_L2_V005_replay",
+        "r25_log_A48_Z2_V005"
+      ],
+      "mapping": "seed_log_A48_Z2_V005"
+    },
+    {
+      "name": "0.5V controlled angular local field A48-A64",
+      "kind": "field_shape",
+      "voltage_V": 0.5,
+      "scope": "Additional 2% maximum local perturbation check; not a joint angular/thickness study",
+      "runs": [
+        "r25_log_A48_Z2_V005",
+        "r25_log_A64_Z2_V005"
+      ],
+      "mapping": "shape_mapping_log_A48_A64_Z2_V005"
+    },
+    {
+      "name": "0.5V A64 quadrature3/5 with perturbed restart",
+      "kind": "quadrature",
+      "voltage_V": 0.5,
+      "include_local_fields": true,
+      "scope": "Same A64-z2 mesh, 10 scalar/ring and seven local field checks at 1%",
+      "runs": [
+        "r25_log_A64_Z2_V005",
+        "r25_log_A64_Q5_Z2_V005"
+      ]
+    },
+    {
+      "name": "6V controlled angular32/48/64",
+      "kind": "mesh",
+      "voltage_V": 6,
+      "scope": "Fixed radial and z2 layout; directional scalar/ring evidence only",
+      "runs": [
+        "r25_log_L2_V060_replay",
+        "r25_log_A48_Z2_V060",
+        "r25_log_A64_Z2_V060"
+      ]
+    },
+    {
+      "name": "6V fixed-planar thickness subdivision",
+      "kind": "mesh",
+      "voltage_V": 6,
+      "scope": "Thickness-only directional comparison; not a joint A64/S3 mesh",
+      "runs": [
+        "r25_log_L2_V060_replay",
+        "r25_log_S2_V060",
+        "r25_log_S3_V060"
+      ]
+    },
+    {
+      "name": "6V A64 quadrature3/5 with perturbed restart",
+      "kind": "quadrature",
+      "voltage_V": 6,
+      "include_local_fields": true,
+      "scope": "10 scalar/ring and seven local checks at 1%",
+      "runs": [
+        "r25_log_A64_Z2_V060",
+        "r25_log_A64_Q5_Z2_V060"
+      ]
+    },
+    {
+      "name": "6V A32-A48 angular local field",
+      "kind": "field_shape",
+      "voltage_V": 6,
+      "scope": "Additional 2% maximum local field gate; independent directional evidence only",
+      "runs": [
+        "r25_log_L2_V060_replay",
+        "r25_log_A48_Z2_V060"
+      ],
+      "mapping": "seed_log_A48_Z2_V060"
+    },
+    {
+      "name": "6V A48-A64 angular local field",
+      "kind": "field_shape",
+      "voltage_V": 6,
+      "scope": "Additional 2% maximum local field gate; independent directional evidence only",
+      "runs": [
+        "r25_log_A48_Z2_V060",
+        "r25_log_A64_Z2_V060"
+      ],
+      "mapping": "shape_mapping_log_A48_A64_Z2_V060"
+    },
+    {
+      "name": "6V L2-S2 thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 6,
+      "scope": "Additional 2% maximum local field gate; independent directional evidence only",
+      "runs": [
+        "r25_log_L2_V060_replay",
+        "r25_log_S2_V060"
+      ],
+      "mapping": "seed_log_S2_V060"
+    },
+    {
+      "name": "6V S2-S3 thickness local field",
+      "kind": "field_shape",
+      "voltage_V": 6,
+      "scope": "Additional 2% maximum local field gate; independent directional evidence only",
+      "runs": [
+        "r25_log_S2_V060",
+        "r25_log_S3_V060"
+      ],
+      "mapping": "seed_log_S3_fromS2_V060"
+    },
+    {
+      "name": "6V fixed A64/z2 radial14/16/18",
+      "kind": "mesh",
+      "voltage_V": 6,
+      "scope": "Radial-only scalar/ring study",
+      "runs": [
+        "r25_log_R0_A64_Z2_V060",
+        "r25_log_R1_A64_Z2_V060",
+        "r25_log_A64_Z2_V060"
+      ]
+    },
+    {
+      "name": "6V radial R1-R2 local field",
+      "kind": "field_shape",
+      "voltage_V": 6,
+      "scope": "2% maximum local field criterion; independent direction only",
+      "runs": [
+        "r25_log_R1_A64_Z2_V060",
+        "r25_log_A64_Z2_V060"
+      ],
+      "mapping": "r25_followthrough/radial_R1_R2_mapping"
+    }
+  ],
+  "off_grid_points": [
+    {
+      "voltage_V": 6.46234857697748,
+      "directory": "r25_log_L2_peak_replay"
+    },
+    {
+      "voltage_V": 6.39300354615631,
+      "directory": "r25_log_L2_descending_replay"
+    },
+    {
+      "voltage_V": 6.39300354615631,
+      "directory": "r25_log_S2_descending_replay"
+    }
+  ]
+}

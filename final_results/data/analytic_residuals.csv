@@ -1,0 +1,5 @@
+check,normalized_residual
+V03 electron zero-current,2.4158453015843403e-14
+V04 hole zero-current,1.545430450278218e-14
+V05 heat balance,1.6263032587282568e-15
+V06 coupled zero-current,5.578870698741411e-16

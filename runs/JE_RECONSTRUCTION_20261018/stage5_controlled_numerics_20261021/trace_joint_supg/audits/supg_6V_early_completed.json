@@ -1,0 +1,119 @@
+{
+  "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+  "scales": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "runs": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S2_V060"
+  ],
+  "errors": [],
+  "comparisons": {
+    "joule_W": {
+      "values": [
+        0.0028945440844230985,
+        0.002894543764840899,
+        0.0028945425866287113
+      ],
+      "relative_span": 5.174543359956669e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    "theta_max_K": {
+      "values": [
+        14.111776614852829,
+        14.111808721908858,
+        14.111932354224905
+      ],
+      "relative_span": 1.1036006137691528e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "electron_right_A": {
+      "values": [
+        0.00048243347831904143,
+        0.0004824300894897634,
+        0.00048241724191153053
+      ],
+      "relative_span": 3.365522551932244e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_theta_mean_K": {
+      "values": [
+        11.846677134130102,
+        11.84670357979224,
+        11.846807799477494
+      ],
+      "relative_span": 1.102958278748937e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_E_mean_V_m": {
+      "values": [
+        360728.83354971453,
+        360729.4677482219,
+        360731.91997257934
+      ],
+      "relative_span": 8.556001545546534e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_Q_mean_W_m3": {
+      "values": [
+        25814486906415.496,
+        25814544037161.855,
+        25814761018406.863
+      ],
+      "relative_span": 1.0618420645914006e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_abs_n_relative_mean": {
+      "values": [
+        0.022753849861319453,
+        0.02275394988412476,
+        0.02275428055071879
+      ],
+      "relative_span": 1.892784078034956e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_abs_p_relative_mean": {
+      "values": [
+        0.03226529582315074,
+        0.03244527406700888,
+        0.032826527289596195
+      ],
+      "relative_span": 0.017096888181142654,
+      "limit": 0.01,
+      "passed": false
+    },
+    "ring_Q_p95_W_m3": {
+      "values": [
+        54237484883024.695,
+        54237672287093.87,
+        54238370609443.055
+      ],
+      "relative_span": 1.6330254917450773e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "E_p95_V_m": {
+      "values": [
+        434437.99083003483,
+        434438.09671407164,
+        434432.6173742555
+      ],
+      "relative_span": 1.2612475419595023e-05,
+      "limit": 0.01,
+      "passed": true
+    }
+  },
+  "covered_metrics_passed": false,
+  "fully_validated": false,
+  "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+}

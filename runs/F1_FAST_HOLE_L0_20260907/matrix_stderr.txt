@@ -1,0 +1,6 @@
+Exception: C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\scripts\run_fast_hole_matrix.ps1:10
+Line |
+  10 |  бн h -LiteralPath $dest) { throw "Existing fast-case directory: $dest" }
+     |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Existing fast-case directory:
+     | C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\runs\F1_FAST_HOLE_L0_20260907\FAST_H1_NT_L0

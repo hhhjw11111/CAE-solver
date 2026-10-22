@@ -1,0 +1,8 @@
+{
+  "prior_contracts_preserved": true,
+  "time": "2026-10-16T20:40:03.4129752+08:00",
+  "runner_pid": 51212,
+  "collector_pid": 17448,
+  "reason": "Retired before any native solve: replace boundary-only family with full-direction logical-coordinate refinement",
+  "native_results_removed": false
+}

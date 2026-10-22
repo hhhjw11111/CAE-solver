@@ -1,0 +1,10 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R6\\TPSolverV2.exe",
+  "executable_sha256": "ee1e98c871f3444f84d707316479ba3017b5b841f8e78017e303d672cecf9c3d",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F2_H1_HIGH_VOLTAGE_20260909\\H1_L0.mesh",
+  "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+  "seed": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\F2_NEWTON_FALLBACK_0146_20260909\\V060_REGRESSION\\nodes.csv",
+  "seed_sha256": "005bcba28591936d176e016d2ff3909b45f394b5966311b7ae2f6325f2a16d33",
+  "seed_status": "EXPLORATORY_INITIAL_GUESS_REQUIRES_REEQUILIBRATION",
+  "input_sha256": "27432c4831ab513e876b0b72f06fef330f0a76709f98c06a93c5b54f624875fc"
+}

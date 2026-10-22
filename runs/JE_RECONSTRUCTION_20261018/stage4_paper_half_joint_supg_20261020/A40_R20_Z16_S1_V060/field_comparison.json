@@ -1,0 +1,72 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0004429007727237235,
+      "rms_relative": 0.00018442902645690772,
+      "normalization": 6.000000000000003,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.0015003100788675374,
+      "rms_relative": 0.0003736385387486135,
+      "normalization": 14.108570184839042,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.001717124919549735,
+      "rms_relative": 0.00039929813936398565,
+      "normalization": 8.315682140915685e-10,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0007016243938662302,
+      "rms_relative": 0.00015750942579380653,
+      "normalization": 8.315682140915685e-10,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.000639049836149219,
+      "rms_relative": 0.0001296732728224262,
+      "normalization": 8.315682140915685e-10,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.01790631320304832,
+      "rms_relative": 0.0015365856619208725,
+      "normalization": 1.277114552075688,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.029849257068120617,
+      "rms_relative": 0.003840310294053205,
+      "normalization": 1.9865163726298518,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\transfers\\A40_R20_Z16_S1_V060\\nodes.csv": "9791385c30f1de47f3848908a2a18ed05877b2df27b639f02240d8893d4389a4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\transfers\\A40_R20_Z16_S1_V060\\transfer_report.json": "3ef01f47a533e86d3d797330e8fdf61d26c41b227b13edaf794eb4716e789cf3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\nodes.csv": "d13928b983ea237cfabdb55acac8dfd2dde6065d6d6737c9f01a4e655c5b48b9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\manifest.json": "bb6b4b05905ecf4bb853cb45baaabcafa02939a7dcaad1bfaefd84c8b69ea0f4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\execution.json": "171258d522dd0fab51cc7237d9d01c617ebf3de8cf3ee934d755f510bfbb1832",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\input.nml": "3098347c608dd842c800e4c2d6117a96dda4869b676315b3ec7b83ceae485c39",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\metrics.txt": "ce1a50f6e40981cd8bf28e2792a16550b116288333e277681022dca9064ad32b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V060_unperturbed\\field_audit.json": "40f784def79d300777e6db98af805fa70d4c335a939801867aaf7efb98daa618",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\nodes.csv": "169293651f91e97dd3c27932b525c2e426cf76044ca4a802a4c1087eaa273b41",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\manifest.json": "64620b920b6494f943880cd7ecfa64d54b74131e120d882b6f8cbf5d31ad9c7a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\execution.json": "1753f94cf35f1b5f4bf7cd25fd9c06d0bed29f4cb492147ccfbe06d69a95517e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\input.nml": "19f9c16718fcf89c0a98a5cb267fce5e9cf569799bd229d5b7b996d0236e03a6",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\metrics.txt": "a235d1377e046fef5ddcb959b3f7225eb7dcc675a87565b7d538f5b3caeb90c1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\field_audit.json": "f15267f58f54954fb8727ef2fbea1452e4e7fc52afba1207056520e4e8ea3a08"
+  }
+}

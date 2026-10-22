@@ -1,0 +1,6 @@
+solver=TPSolverV2
+version=0.12.0-g12-radius-matrix
+theory_version=2.1
+architecture_id=TPS-V2-ARCH-001
+verified_scope=G00-G12 + L01 verified
+dof_order=u1,u2,u3,phi,eta_n,eta_p,theta

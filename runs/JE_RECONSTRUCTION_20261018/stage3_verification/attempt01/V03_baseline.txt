@@ -1,0 +1,7 @@
+verification_id=V03_M0_analytic
+v03_eta_n_l2_error= 1.0781129618873692E-014
+v03_eta_n_h1_error= 1.0301560822981769E-014
+v03_normalized_max_current= 2.4158453015843403E-014
+v03_right_face_min_eta_n= 3.8681726752282500E-002
+v03_perturbed_pivots=0
+verification_result=PASS

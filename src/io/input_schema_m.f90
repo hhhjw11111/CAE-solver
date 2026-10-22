@@ -35,6 +35,13 @@ module input_schema_m
       10.0_dp,1.0e-1_dp,1.0e-1_dp,10.0_dp]
     type(NonlinearOptionsType) :: nonlinear_options
     type(ContinuationOptionsType) :: continuation_options
+    logical :: transport_supg = .false.
+    logical :: transport_log_weighted = .false.
+    logical :: heat_source_current_work = .false.
+    integer :: log_weighted_quadrature_order = 3
+    logical :: half_y_symmetry = .false.
+    logical :: supg_directional_tau = .false.
+    real(dp) :: supg_scale = 1.0_dp
   end type CaseConfigType
 
   public :: validate_case_config
@@ -46,6 +53,56 @@ contains
     type(SolverStatusType), intent(out) :: status
 
     call clear_status(status)
+    if(config%continuation_options%arclength_enabled) then
+      if(trim(config%material_profile)/='ZNO_F1_NT'.and.trim(config%material_profile)/='ZNO_F1_N0') then
+        call set_status(status,STATUS_INPUT_ERROR,'Arclength requires nonlinear F1 NT/N0.');return
+      end if
+    end if
+    if(config%heat_source_current_work) then
+      if(trim(config%material_profile)/='ZNO_F1_NT'.and.trim(config%material_profile)/='ZNO_F1_N0'.and. &
+          trim(config%material_profile)/='ZNO_F1_LQ') then
+        call set_status(status,STATUS_INPUT_ERROR,'J.E diagnostic requires an explicit F1 NT/N0/LQ profile.');return
+      end if
+    end if
+    if(config%continuation_options%arclength_enabled) then
+      if(.not.all(ieee_is_finite([config%continuation_options%arclength_psi_state, &
+          config%continuation_options%arclength_psi_voltage,config%continuation_options%arclength_fold_tolerance])).or. &
+          config%continuation_options%arclength_psi_state<=0.or.config%continuation_options%arclength_psi_voltage<=0.or. &
+          config%continuation_options%arclength_fold_tolerance<=0.or. &
+          config%continuation_options%arclength_maximum_refinements<1.or.config%nonlinear_options%trust_region) then
+        call set_status(status,STATUS_INPUT_ERROR,'Invalid arclength weights/refinement or incompatible trust-region option.')
+        return
+      end if
+    end if
+    if((config%log_weighted_quadrature_order/=3.and.config%log_weighted_quadrature_order/=5).or. &
+        (config%log_weighted_quadrature_order/=3.and..not.config%transport_log_weighted)) then
+      call set_status(status,STATUS_INPUT_ERROR,'Quadrature order 5 is restricted to log-weighted transport; allowed 3 or 5.')
+      return
+    end if
+    if(config%transport_log_weighted) then
+      if(config%transport_supg.or.(trim(config%material_profile)/='ZNO_F1_NT'.and. &
+          trim(config%material_profile)/='ZNO_F1_N0')) then
+        call set_status(status,STATUS_INPUT_ERROR,'Log-weighted transport requires nonlinear F1 NT/N0 without SUPG.')
+        return
+      end if
+    end if
+    if(config%half_y_symmetry) then
+      if(trim(config%problem_type)/=PROBLEM_CENTER_HOLE_PLATE.or. &
+         (trim(config%material_profile)/='ZNO_F1_NT'.and. &
+          trim(config%material_profile)/='ZNO_F1_N0'.and.trim(config%material_profile)/='ZNO_F1_LQ')) then
+        call set_status(status,STATUS_INPUT_ERROR,'Y-half symmetry requires the explicitly symmetric F1 ZnO hole profile.')
+        return
+      end if
+    end if
+    if (.not.ieee_is_finite(config%supg_scale) .or. config%supg_scale <= 0.0_dp) then
+      call set_status(status,STATUS_INPUT_ERROR,'supg_scale must be finite and positive.');return
+    end if
+    if (config%transport_supg) then
+      if (trim(config%material_profile)/='ZNO_F1_NT' .and. &
+          trim(config%material_profile)/='ZNO_F1_N0') then
+        call set_status(status,STATUS_INPUT_ERROR,'SUPG requires run-f1 with nonlinear ZNO_F1_NT/N0.');return
+      end if
+    end if
     if (config%schema_version /= NATIVE_SCHEMA_VERSION) then
       call set_status(status, STATUS_INPUT_ERROR, 'Unsupported case schema_version; expected version 2.')
       return
@@ -127,6 +184,16 @@ contains
           config%nonlinear_options%maximum_log_density_update <= 0.0_dp) then
         call set_status(status,STATUS_INPUT_ERROR,'M2 Newton options are invalid.')
         return
+      end if
+      if(config%nonlinear_options%trust_region) then
+        if (.not.all(ieee_is_finite([config%nonlinear_options%trust_initial_radius, &
+            config%nonlinear_options%trust_maximum_radius,config%nonlinear_options%trust_minimum_radius])).or. &
+            config%nonlinear_options%trust_minimum_radius<=0.0_dp.or. &
+            config%nonlinear_options%trust_initial_radius<config%nonlinear_options%trust_minimum_radius.or. &
+            config%nonlinear_options%trust_maximum_radius<config%nonlinear_options%trust_initial_radius) then
+          call set_status(status,STATUS_INPUT_ERROR,'M2 Newton trust region radii are invalid.')
+          return
+        end if
       end if
       if (config%continuation_options%initial_step <= 0.0_dp .or. &
           config%continuation_options%minimum_step <= 0.0_dp .or. &

@@ -1,0 +1,247 @@
+{
+  "scope": "FULL_JOINT_FIRST_PAIR_ONLY",
+  "rows": [
+    {
+      "voltage_V": 6,
+      "theta_max_K": 14.106379396166403,
+      "JE_mW": 5.789207778629319,
+      "all_exterior_power_gap_percent": 0.39481116386665116,
+      "first_pair_changes": {
+        "joule_W": {
+          "relative_change": 1.3808886086383511e-05,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "theta_max_K": {
+          "relative_change": 0.0001270438464533968,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "ring_theta_mean_K": {
+          "relative_change": 0.0003631791010557911,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "electron_right_A": {
+          "relative_change": 0.002526629686707372,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "ring_E_mean_V_m": {
+          "relative_change": 0.00014064871632268983,
+          "original_limit": 0.02,
+          "within_pair_limit": true
+        },
+        "ring_Q_mean_W_m3": {
+          "relative_change": 0.0008336861924773461,
+          "original_limit": 0.02,
+          "within_pair_limit": true
+        },
+        "ring_abs_n_relative_mean": {
+          "relative_change": 0.000465039855086577,
+          "original_limit": 0.02,
+          "within_pair_limit": true
+        },
+        "ring_abs_p_relative_mean": {
+          "relative_change": 0.1067898536331529,
+          "original_limit": 0.02,
+          "within_pair_limit": false
+        },
+        "ring_Q_p95_W_m3": {
+          "relative_change": 0.00032833238185104387,
+          "original_limit": 0.05,
+          "within_pair_limit": true
+        },
+        "E_p95_V_m": {
+          "relative_change": 0.0025429914278587967,
+          "original_limit": 0.05,
+          "within_pair_limit": true
+        }
+      },
+      "local_field": {
+        "phi_V": {
+          "maximum_relative": 0.0004429007727237234,
+          "rms_relative": 0.00018546913549574452,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.0015003100788675344,
+          "rms_relative": 0.0003740747414836742,
+          "normalization": 14.10857018483907,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.0015496248506512423,
+          "rms_relative": 0.00041305952454917446,
+          "normalization": 1.0250624900221479e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0006567396198261022,
+          "rms_relative": 0.0001568433797714312,
+          "normalization": 1.0250624900221479e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0007482513150429231,
+          "rms_relative": 0.00024319645825419912,
+          "normalization": 1.0250624900221479e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.01790631320304832,
+          "rms_relative": 0.0015630090240916156,
+          "normalization": 1.277114552075688,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.029849257068123077,
+          "rms_relative": 0.0036650157627617836,
+          "normalization": 1.9865163726298518,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "mesh_certified": false,
+      "supg_certified": false,
+      "provenance": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\input.nml": "dc84b987f2a3035f5e357d1e159cca53a767c3948e7c6077b1ddf551aed9d7b8",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\execution.json": "e229022fbf39360e6cc26f4323c92a66cf7169ab78fd501aa639e57ef2d3b8d2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\manifest.json": "c900c9fe7ecef48f602e780629509db447c9c461e78635d79a6d00bc88e88301",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\metrics.txt": "b8670b10fef47fd6c9170fb5c534adcc99876c8fc0d18389f8f0634503bac4fe",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\mapped_field_comparison.json": "48072d39b746c68d9fd9a809dfbab18c1c398ba24fceaa664cd080152f6cc20b",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\power_audit\\decomposition.json": "62884826992be74c012caad23b00fb1f4f179303fde3cf31de1db7d3c3e626e7",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\metrics.txt": "e3b2c60e6aee949deba709c453cdf46f4942898e147a7606d4f98ad8e4da1dc0"
+      }
+    },
+    {
+      "voltage_V": 8,
+      "theta_max_K": 24.258294681417908,
+      "JE_mW": 9.856141252058787,
+      "all_exterior_power_gap_percent": 0.5108156581672105,
+      "first_pair_changes": {
+        "joule_W": {
+          "relative_change": 2.090884345236042e-05,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "theta_max_K": {
+          "relative_change": 8.53247726715664e-06,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "ring_theta_mean_K": {
+          "relative_change": 0.00030502531152500756,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "electron_right_A": {
+          "relative_change": 0.0030386761012142715,
+          "original_limit": 0.01,
+          "within_pair_limit": true
+        },
+        "ring_E_mean_V_m": {
+          "relative_change": 0.00022710641903824635,
+          "original_limit": 0.02,
+          "within_pair_limit": true
+        },
+        "ring_Q_mean_W_m3": {
+          "relative_change": 0.001134107077604521,
+          "original_limit": 0.02,
+          "within_pair_limit": true
+        },
+        "ring_abs_n_relative_mean": {
+          "relative_change": 0.00040894387963088044,
+          "original_limit": 0.02,
+          "within_pair_limit": true
+        },
+        "ring_abs_p_relative_mean": {
+          "relative_change": 0.04678331852883984,
+          "original_limit": 0.02,
+          "within_pair_limit": false
+        },
+        "ring_Q_p95_W_m3": {
+          "relative_change": 0.0011343678474110075,
+          "original_limit": 0.05,
+          "within_pair_limit": true
+        },
+        "E_p95_V_m": {
+          "relative_change": 0.005176738728751455,
+          "original_limit": 0.05,
+          "within_pair_limit": true
+        }
+      },
+      "local_field": {
+        "phi_V": {
+          "maximum_relative": 0.0005061618321891873,
+          "rms_relative": 0.00021289130627446067,
+          "normalization": 8.000080686425653,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.0014533809659285726,
+          "rms_relative": 0.00035657254637804956,
+          "normalization": 24.25919366193938,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.001530543541350172,
+          "rms_relative": 0.000425563187785775,
+          "normalization": 1.7600736986803353e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0006563860411220868,
+          "rms_relative": 0.00015818838148899317,
+          "normalization": 1.7600736986803353e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0007377713134361084,
+          "rms_relative": 0.00022077116380827383,
+          "normalization": 1.7600736986803353e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.01893771040489896,
+          "rms_relative": 0.0013859911681722624,
+          "normalization": 2.5774382573472505,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.02213539786498028,
+          "rms_relative": 0.0017337909364102233,
+          "normalization": 6.863195262996625,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "mesh_certified": false,
+      "supg_certified": false,
+      "provenance": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\input.nml": "2bc1e3012a8066cc33f3aa0c632ed9267b17f60e7e8c70ceb5078fed68ea60c9",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\execution.json": "e76ac467f5f495a2366cb134c85a94a0bfa198bcb863764d497bb9a0452b4a3d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\manifest.json": "0b9ae3459b6c878018ad182ced2f395c08ce337c567938ed9d435a9b4d921218",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\metrics.txt": "d154fc9bddbecdfb0b04bf89cde6bd16eb9a322b12c8e51b0a5d3222d16894bc",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\mapped_field_comparison.json": "cb9dfbf442444b2c5183798b5e0b61f41086cf4b42eba22e019fcd0332b57622",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080\\power_audit\\decomposition.json": "5d241f5682af0fa16096563a912157123272e5d1d5f1b48ec1dfe5593ccc81bd",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\metrics.txt": "9d4db81b6e0d2f9edeaf0f1eddca930340dcc75df8eaecec2c08beb663f31ad4"
+      }
+    }
+  ],
+  "limitations": "First pair is diagnostic only; final joint level failed resources. Half equivalence cannot replace three levels or SUPG.",
+  "production_acceptance": false
+}

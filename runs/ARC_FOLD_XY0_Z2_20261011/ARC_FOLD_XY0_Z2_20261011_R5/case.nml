@@ -1,0 +1,21 @@
+&case_control
+ schema_version=2,case_id='ARC_FOLD_XY0_Z2_20261011',model_level='M2_THERMO_TWO_CARRIER',
+ mesh_file='C:\Users\ADMINI~1\Desktop\GEMINI~1\Console3\solver_v2\cases\HV_SURFACE_20261008\XY0_Z2\H1_XY0_Z2.mesh'
+/
+&problem_control
+ problem_type='CENTER_HOLE_PLATE', material_profile='ZNO_F1_NT', target_voltage=-8.0,target_voltage_factor=1.0,target_joule_factor=1.0,hole_radius=3e-6,
+ restart_nodes_file='C:\Users\ADMINI~1\Desktop\GEMINI~1\Console3\solver_v2\runs\HV_SUPG_20261007\r17_inverse_XY0_Z2\accepted_00003_nodes.csv',restart_voltage_factor=0.80576556480271533,restart_joule_factor=1.0
+/
+&solver_control
+ transport_supg=.true.,supg_scale=1.0,supg_directional_tau=.true.,global_log_step_limit=.false.,
+ field_scales=1e-10,1e-10,1e-10,8.0,0.1,0.1,35.0,
+ max_newton=25,newton_stagnation_window=0,residual_tolerance=1e-9,update_tolerance=1e-9,maximum_log_density_update=1,
+ continuation_full_joule_during_voltage=.true.,continuation_secant_predictor=.false.,
+ continuation_initial_step=0.005,continuation_maximum_step=0.01,continuation_minimum_step=0.0005,continuation_growth_factor=1.5,
+ continuation_cutback_factor=0.5,continuation_maximum_attempts=80,continuation_maximum_newton_per_attempt=30,
+ arclength_enabled=.true.,arclength_psi_voltage=1.0,arclength_psi_state=1.0e-5,arclength_fold_tolerance=0.002,arclength_maximum_refinements=20,
+ heat_source_current_work=.false.
+/
+
+
+

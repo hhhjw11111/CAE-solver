@@ -1,0 +1,54 @@
+{
+  "cases": [
+    [
+      3,
+      32,
+      14,
+      14
+    ],
+    [
+      3,
+      40,
+      20,
+      16
+    ],
+    [
+      3,
+      48,
+      22,
+      18
+    ],
+    [
+      2,
+      32,
+      14,
+      14
+    ],
+    [
+      4,
+      32,
+      14,
+      14
+    ]
+  ],
+  "dependencies": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_paper_radius_mesh_20261018.py": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_global_direction_mesh_20261016.py": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_f1_main_cases.py": "7e098f7b4732fc43365061be353e7b68e8801f4b8b46c1e77505a8c1ec693d4d",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\audit_hex20_boundary_geometry.py": "2c356f26a8cf721064faeec6a5936b44dc4e139d351cc1cfbae68979ef462fb4",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\transfer_hv_initial_guess.py": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\run_hv_sweep.py": "8c99775ace5b78d76e8d46cfa45eeeb21e6d4d8e1562e03e46f3755140fb96b5"
+  },
+  "coordinate_tolerance_m": 1e-18,
+  "geometry_relative_tolerance": 1e-10,
+  "checks": [
+    "r3 exact mesh byte comparison at three A/R/Z settings",
+    "orders 3/5 sampled positive Jacobians",
+    "explicit quadratic boundary volume and ring volume",
+    "outer boundaries and anchors",
+    "manifold face ownership and shared ring interface",
+    "outward surface closure and divergence volume"
+  ],
+  "scope": "Geometry preparation only; no production inputs, native processes, solution states or production PASS"
+}

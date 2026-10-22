@@ -1,0 +1,12 @@
+TRANSP~1.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+MATERI~1.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+ELEMEN~1.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+TRANSP~1.obj : error LNK2019: 无法解析的外部符号 TRANSPORT_M_mp_EVALUATE_TRANSPORT，函数 TRANSPORT_SUPG_M_mp_ADD_TRANSPORT_SUPG 中引用了该符号
+MATERI~1.obj : error LNK2019: 无法解析的外部符号 MATERIAL_POINT_M_mp_EVALUATE_MATERIAL_POINT，函数 MATERIAL_TANGENT_CHECK_M_mp_VERIFY_MATERIAL_POINT_G02 中引用了该符号
+MATERI~1.obj : error LNK2019: 无法解析的外部符号 MATERIAL_POINT_M_mp_MATERIAL_TANGENT_MATRIX，函数 MATERIAL_TANGENT_CHECK_M_mp_VERIFY_MATERIAL_POINT_G02 中引用了该符号
+MATERI~1.obj : error LNK2019: 无法解析的外部符号 MATERIAL_POINT_M_mp_PACK_MATERIAL_RESPONSE，函数 MATERIAL_TANGENT_CHECK_M_mp_VERIFY_MATERIAL_POINT_G02 中引用了该符号
+ELEMEN~1.obj : error LNK2019: 无法解析的外部符号 ELEMENT_KERNEL_M_mp_EVALUATE_HEX20_ELEMENT，函数 ELEMENT_TANGENT_CHECK_M_mp_VERIFY_ELEMENT_G03 中引用了该符号
+TRACE_~1.obj : error LNK2001: 无法解析的外部符号 ELEMENT_KERNEL_M_mp_EVALUATE_HEX20_ELEMENT
+TRACE_~2.obj : error LNK2001: 无法解析的外部符号 ELEMENT_KERNEL_M_mp_EVALUATE_HEX20_ELEMENT
+trace_check.exe : fatal error LNK1120: 5 个无法解析的外部命令
+ifx: warning #10182: disabling optimization; runtime debug checks enabled

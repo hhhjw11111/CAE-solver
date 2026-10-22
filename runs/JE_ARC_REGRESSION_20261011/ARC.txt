@@ -1,0 +1,9 @@
+verification_id=ARC_saddle_node
+status_code=80
+arc_fold_detected=T
+arc_fold_located=F
+arc_fold_voltage_factor= 0.0000000000000000E+000
+arc_fold_bracket_width= 1.7976931348623157E+308
+arc_final_state=-1.7180104154032774E-002
+status_message=Bordered corrector failed; caller must roll back.
+1

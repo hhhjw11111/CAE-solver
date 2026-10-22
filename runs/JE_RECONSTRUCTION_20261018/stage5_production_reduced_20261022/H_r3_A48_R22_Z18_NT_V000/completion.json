@@ -1,0 +1,11 @@
+{
+  "state": "ZERO_VOLTAGE_EQUILIBRIUM_PASS",
+  "fully_validated": false,
+  "power_audit": "ZERO_VOLTAGE",
+  "field_samples": {
+    "file": "field_samples.csv.gz",
+    "uncompressed_sha256": "748e18a74ce797cac0f520cbcd29509711b61849d5ab1d06bdbccce25bebbde5",
+    "uncompressed_bytes": 475200150,
+    "note": "Lossless gzip; decompressed content verified byte-identical before removal of the CSV."
+  }
+}

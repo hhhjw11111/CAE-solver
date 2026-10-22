@@ -1,0 +1,97 @@
+{
+  "question": "How do saved J.E-branch spatial fields change from 6 to 8 V?",
+  "template_reuse": "Style only: three horizontal square panels, circular hole; voltage replaces radius.",
+  "data": "Actual saved 6, 7, 8 V states on one r=3 um mesh; no voltage interpolation.",
+  "geometry": "20 x 20 x 1 um; exact z=0, +/-0.5 um element faces.",
+  "scales": "Shared linear color scale across the three voltages for each figure; signed changes centered on zero.",
+  "mapping": [
+    [
+      "01_joule_mid",
+      "Q",
+      1e-12,
+      "midplane",
+      "焦耳热密度 · J·E",
+      "10¹² W/m³",
+      "heat"
+    ],
+    [
+      "02_potential_mid",
+      "phi",
+      1.0,
+      "midplane",
+      "电势",
+      "V",
+      "viridis"
+    ],
+    [
+      "03_electrons_mid",
+      "dn_percent",
+      1.0,
+      "midplane",
+      "电子浓度相对变化",
+      "(n/n0 − 1) × 100%",
+      "signed"
+    ],
+    [
+      "04_holes_mid",
+      "dp_percent",
+      1.0,
+      "midplane",
+      "空穴浓度相对变化",
+      "(p/p0 − 1) × 100%",
+      "signed"
+    ],
+    [
+      "05_total_stress_mid",
+      "vm",
+      1e-06,
+      "midplane",
+      "耦合总等效应力（含热效应）",
+      "MPa",
+      "magma"
+    ],
+    [
+      "06_temperature_mid",
+      "theta",
+      1.0,
+      "midplane",
+      "温升",
+      "K",
+      "magma"
+    ],
+    [
+      "07_electrons_bottom",
+      "dn_percent",
+      1.0,
+      "bottom",
+      "下表面电子浓度相对变化",
+      "(n/n0 − 1) × 100%",
+      "signed"
+    ],
+    [
+      "08_holes_top",
+      "dp_percent",
+      1.0,
+      "top",
+      "上表面空穴浓度相对变化",
+      "(p/p0 − 1) × 100%",
+      "signed"
+    ],
+    [
+      "09_thermal_term_mid",
+      "thermal_xx",
+      1e-06,
+      "midplane",
+      "热膨胀本构应力项 −βxxΔT（非独立热应力解）",
+      "MPa",
+      "Blues_r"
+    ]
+  ],
+  "interpolation": "HEX20 evaluation, 16 subdivisions/face; element-local triangulation. No cross-element averaging or cross-hole interpolation.",
+  "uncertainty": "Deterministic single-mesh solutions; no statistical intervals or mesh-convergence claim.",
+  "stress": "VM is full C:strain-e^T E-beta*dT. Direct -beta*dT is separately labeled, not an equilibrated thermal-only solution.",
+  "carriers": {
+    "n0_m3": 6e+22,
+    "p0_m3": 1.4016666666666668e-30
+  }
+}

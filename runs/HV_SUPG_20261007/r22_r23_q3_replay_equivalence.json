@@ -1,0 +1,5 @@
+{
+  "nodes.csv": true,
+  "field_samples.csv": true,
+  "scope": "R22_TO_R23_UNCHANGED_Q3_0.5V_L1_REPLAY"
+}

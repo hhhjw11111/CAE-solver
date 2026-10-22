@@ -1,0 +1,72 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0008530604602356989,
+      "rms_relative": 0.0003035468809361194,
+      "normalization": 6.0000000000000036,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.003124981096426655,
+      "rms_relative": 0.0010366365570683195,
+      "normalization": 14.112334738213828,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.0028925442026308903,
+      "rms_relative": 0.0007339782738475797,
+      "normalization": 1.0238146213076345e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0011738529648724855,
+      "rms_relative": 0.00038771223262219914,
+      "normalization": 1.0238146213076345e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.001398407541027592,
+      "rms_relative": 0.00037542390746446826,
+      "normalization": 1.0238146213076345e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.03022215110165265,
+      "rms_relative": 0.002536071040887064,
+      "normalization": 1.2847298956359778,
+      "limit": 0.02,
+      "passed": false
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.039671280005024415,
+      "rms_relative": 0.005334257190704087,
+      "normalization": 1.9796376430369644,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\nodes.csv": "338105f2db73e56dbc1ccb38b0cda4b0f5cb61d795510519561a9019af603446",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\transfer_report.json": "96e72bd3a61b0f6fc6976044296be8ec4b421c300d8645b4154e6057b3064ffb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\nodes.csv": "812033536ab0bd4a3236bdd0e70ce897d102e393990378ece9897e60c0af47a6",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\manifest.json": "ee416141e3441c889c3353f13e5ad17c25b7a856a4b8fc1214ec61a69cca4482",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\execution.json": "18d243c74fb745755f75f3ccf9b8e0abd667fde45fc3aabeaa95ff837ea9ad24",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\input.nml": "d7db0aaf8c2b55ed5941fa68dd45fc76e47240962a08be5104024904b5b876ab",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\metrics.txt": "6ca96af804d2142c74f615a168ec339a5b062278bf635cff208b39de190abba2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\field_audit.json": "ad51ea8e849bca05908ea2ea4b64b2ce7b3ca4dc394ad740deb4a79b369566b6",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\nodes.csv": "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\manifest.json": "d224f8b1ceb3689a8d4f077bac9f77c11fa39eb5f16c6b6606d6a526c160310d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\execution.json": "091e04541a11c8d0f61981dfcf205fbf8652f7eb2a123a9098a50f50461e5cf2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\input.nml": "4310df08a4c00558d5ae51c2c966b0bac717bcdf94ced1047d9b371df2d202f4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\metrics.txt": "f555c49b56b10e83f11c26775f91cb840c5dfa69867b90e0be81a7f49c840db2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\field_audit.json": "2322078c58bcee0fb08c05e06347985b713eeb30b31323fbf9f20891f6cbd478"
+  }
+}

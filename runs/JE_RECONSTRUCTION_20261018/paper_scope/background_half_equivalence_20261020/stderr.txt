@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_half_equivalence_20261020.py", line 130, in <module>
+    try:run()
+        ^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_half_equivalence_20261020.py", line 102, in run
+    native.run_native(job,seed/'H1_Y_HALF.mesh',seed/'nodes.csv',dest,gate)
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_half_native_20261020.py", line 36, in run_native
+    env = configure_storage(env,Path(short(directory)),'OOC',OOC_MB,False)
+                                ^^^^
+NameError: name 'Path' is not defined

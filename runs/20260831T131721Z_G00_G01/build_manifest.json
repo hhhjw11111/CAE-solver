@@ -1,0 +1,117 @@
+{
+  "schema": "TPSolverV2-build-manifest-v1",
+  "solver_version": "0.1.0-phase1",
+  "theory_version": "2.1",
+  "architecture_id": "TPS-V2-ARCH-001",
+  "generated_utc": "2026-08-31T13:17:21.2500668Z",
+  "files": [
+    {
+      "path": "build/Debug/TPSolverV2.exe",
+      "bytes": 1490944,
+      "modified_utc": "2026-08-31T13:17:20.9102521Z",
+      "sha256": "44ff68b2eafab237eccdef7cb4dcbf10169ed66b03846bad447d6d42d19721b2"
+    },
+    {
+      "path": "src/app/main.f90",
+      "bytes": 3320,
+      "modified_utc": "2026-08-31T13:07:29.3215535Z",
+      "sha256": "4f9257eef3022bb26f325988ddad45903f6e72c9cbf83db2bf074b176ad39f48"
+    },
+    {
+      "path": "src/core/build_info_m.f90",
+      "bytes": 938,
+      "modified_utc": "2026-08-31T12:59:44.0856625Z",
+      "sha256": "139c7a506be362d08d45e221257cc40ebd7928b1015d81ef717ffc4d4cb96fe5"
+    },
+    {
+      "path": "src/core/constants_m.f90",
+      "bytes": 422,
+      "modified_utc": "2026-08-31T12:59:44.0834777Z",
+      "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+    },
+    {
+      "path": "src/core/field_layout_m.f90",
+      "bytes": 1291,
+      "modified_utc": "2026-08-31T12:59:44.0846095Z",
+      "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+    },
+    {
+      "path": "src/core/kinds_m.f90",
+      "bytes": 256,
+      "modified_utc": "2026-08-31T12:59:44.0824092Z",
+      "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc"
+    },
+    {
+      "path": "src/core/model_types_m.f90",
+      "bytes": 2056,
+      "modified_utc": "2026-08-31T12:59:44.0851338Z",
+      "sha256": "a87cd8853974a9a05eb5c939b6960bb5fd308e9f10588003d30215334394c183"
+    },
+    {
+      "path": "src/core/status_m.f90",
+      "bytes": 1255,
+      "modified_utc": "2026-08-31T12:59:44.0840056Z",
+      "sha256": "21382d35c1d891db81cbfdaae9e041d175deb758c3479954b17d9baf8a77e77b"
+    },
+    {
+      "path": "src/io/input_schema_m.f90",
+      "bytes": 1720,
+      "modified_utc": "2026-08-31T13:05:06.3922779Z",
+      "sha256": "c0472ae1aaec08edfbd008cfe2289e8b649645202169fe7761b8e2dc5e269425"
+    },
+    {
+      "path": "src/io/native_input_m.f90",
+      "bytes": 5037,
+      "modified_utc": "2026-08-31T13:05:06.3932761Z",
+      "sha256": "1c8e6bbaca6172e0ffb7a5fe1c4f9bc0166a9f8911f0417c616d0f5561c0153c"
+    },
+    {
+      "path": "src/mesh/dof_map_m.f90",
+      "bytes": 1073,
+      "modified_utc": "2026-08-31T13:03:02.2262789Z",
+      "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea"
+    },
+    {
+      "path": "src/mesh/hex20_quadrature_m.f90",
+      "bytes": 951,
+      "modified_utc": "2026-08-31T13:12:55.7474243Z",
+      "sha256": "9276ba0307663c1bb28154c080c1240c8388c1ca3a074cd3185f661a36c7e80e"
+    },
+    {
+      "path": "src/mesh/hex20_shape_m.f90",
+      "bytes": 5750,
+      "modified_utc": "2026-08-31T13:03:02.2252700Z",
+      "sha256": "4419c35fea7f2fa674b94c4c983607b4da133e4aee8366f8d13c8cae3ca7a7f1"
+    },
+    {
+      "path": "src/mesh/mesh_checks_m.f90",
+      "bytes": 3550,
+      "modified_utc": "2026-08-31T13:03:02.2272759Z",
+      "sha256": "bdd1ce6a353f880357ed3eb97dfd1716b9222d9e89cbf9eab3238920c6f1d5b3"
+    },
+    {
+      "path": "src/mesh/mesh_types_m.f90",
+      "bytes": 1316,
+      "modified_utc": "2026-08-31T13:03:02.2246849Z",
+      "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74"
+    },
+    {
+      "path": "src/verification/verification_driver_m.f90",
+      "bytes": 7227,
+      "modified_utc": "2026-08-31T13:07:29.3207540Z",
+      "sha256": "b6a7f49e7f53f39794f278a008538216d5c09b5b8e5e05d00cc1d9003955efd7"
+    },
+    {
+      "path": "TPSolverV2.vfproj",
+      "bytes": 2973,
+      "modified_utc": "2026-08-31T13:16:32.7364044Z",
+      "sha256": "640f38e88c15ac98935e5cfed26b370c0dd5a52f3bd9f0d102d1a84dfdf1cf88"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 13,
+      "modified_utc": "2026-08-31T12:59:44.0808075Z",
+      "sha256": "e416fdf2da7dda146e88ddf8620180c0608f3d144f2e24e0ec49cfd23e9bcca6"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "target_nodes": 31077,
+  "boundary_extension_nodes": 0,
+  "maximum_boundary_extension_m": 1.420517436931957e-20,
+  "maximum_inverse_mapping_residual_m": 1.0178172373791135e-20,
+  "status": "INITIAL_GUESS_ONLY_NOT_A_SOLVED_FIELD",
+  "source_mesh_sha256": "5c1738fd520655a2219dd492e159eb7e64c211956c49838764c69d6e735c1b12",
+  "source_nodes_sha256": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8",
+  "target_mesh_sha256": "e6e2028990a9e5cfec5b0ef4fdcab93e18352b48d16768ba539a51158c4a3fd4"
+}

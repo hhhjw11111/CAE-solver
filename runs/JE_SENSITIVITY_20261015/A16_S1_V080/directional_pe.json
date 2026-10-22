@@ -1,0 +1,17 @@
+{
+  "definition": "h_parallel=2/sqrt(gdir); Pe=|mu_n E| h_parallel/(2 D_n); gdir matches native directional metric regularization",
+  "run": "A16_S1_V080",
+  "quadrature_order": 3,
+  "max": 44.9492158918202,
+  "volume_weighted_mean": 14.832744586913105,
+  "volume_weighted_p50": 10.746255269017576,
+  "volume_weighted_p95": 35.74243004688184,
+  "volume_fraction_over": {
+    "1": 0.8882165710331594,
+    "10": 0.5772997705799349,
+    "100": 0.0
+  },
+  "mesh_sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f",
+  "nodes_sha256": "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941",
+  "limitation": "Mesh-dependent diagnostic, not a separate convergence or positivity certificate"
+}

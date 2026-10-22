@@ -1,0 +1,92 @@
+{
+  "direction": "radial",
+  "level": 1,
+  "counts": {
+    "circumferential": 32,
+    "radial": 16,
+    "thickness": 14
+  },
+  "nodes": 31616,
+  "elements": 7168,
+  "annulus_outer_radius_m": 3.5e-06,
+  "annulus_corner_index": 6,
+  "annulus_intervals": 6,
+  "remaining_radial_intervals": 10,
+  "profiles": {
+    "radial_axis_corners_m": [
+      3e-06,
+      3.011666666666667e-06,
+      3.032666666666667e-06,
+      3.0700000000000003e-06,
+      3.1353333333333337e-06,
+      3.2583333333333336e-06,
+      3.5e-06,
+      4.849999999999999e-06,
+      6.2e-06,
+      7.5500000000000006e-06,
+      8.9e-06,
+      9.645e-06,
+      9.834800000000001e-06,
+      9.9188e-06,
+      9.9636e-06,
+      9.9874e-06,
+      1e-05
+    ],
+    "radial_diagonal_corners_m": [
+      3e-06,
+      3.011666666666667e-06,
+      3.032666666666667e-06,
+      3.0700000000000003e-06,
+      3.1353333333333337e-06,
+      3.2583333333333336e-06,
+      3.5e-06,
+      5.781980515339463e-06,
+      8.063961030678928e-06,
+      1.0345941546018393e-05,
+      1.2627922061357855e-05,
+      1.378713562373095e-05,
+      1.3976935623730951e-05,
+      1.4060935623730951e-05,
+      1.4105735623730951e-05,
+      1.412953562373095e-05,
+      1.4142135623730951e-05
+    ],
+    "z_corners_m": [
+      -5e-07,
+      -4.964999999999999e-07,
+      -4.894999999999999e-07,
+      -4.755e-07,
+      -4.4749999999999995e-07,
+      -3.915e-07,
+      -2.795e-07,
+      0.0,
+      2.795e-07,
+      3.915e-07,
+      4.4749999999999995e-07,
+      4.755e-07,
+      4.894999999999999e-07,
+      4.964999999999999e-07,
+      5e-07
+    ]
+  },
+  "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+  "scope": "Full-direction logical-coordinate refinement; other directions fixed; nonnested meshes",
+  "maximum_radial_axis_step_m": 1.3500000000000006e-06,
+  "maximum_radial_diagonal_step_m": 2.2819805153394646e-06,
+  "maximum_z_step_m": 2.795e-07,
+  "geometry_audit": {
+    "minimum_jacobian_3x3x3": 3.0030905532754573e-24,
+    "anchor_counts": [
+      1,
+      1,
+      1
+    ],
+    "contact_counts": [
+      381,
+      381
+    ]
+  },
+  "volume_3x3x3_m3": 3.717257535702229e-16,
+  "mesh_sha256": "df644d0b1afa4aca53e29e70d3a1488c436baa7317c03fbbc79b70c1ae9a5ccf",
+  "generator_sha256": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc"
+}

@@ -1,0 +1,13 @@
+{
+  "supg_scale": 1.0,
+  "mesh_sha256": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+  "nodes_sha256": "4b87b7f8bf309c3405fb9b979a9a5174131c8cc6f944260a63e7a371edeb6389",
+  "verification": {
+    "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+  },
+  "scripts": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_sensitivity_power_20261015.py": "e54eae6130557bfa22717c0a3b120404bdc1dd7971ed2d65f2aaee80b9c0fda4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": "d9f398ef998fcfeb7a702d1475bb933a46e15b7dd527b26ae5052bb997379ded",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be"
+  }
+}

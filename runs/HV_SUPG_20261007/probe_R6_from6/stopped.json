@@ -1,0 +1,8 @@
+{
+  "reason": "L0_HEAT_GATE_FAILED_AND_GLOBAL_LIMIT_STALLED; PRIORITIZE_L1_REFINEMENT",
+  "last_accepted_voltage": 6.0,
+  "trial_voltage": 6.25,
+  "retained_checkpoint": "accepted_00001_nodes.csv",
+  "interpretation": "Stopped exploratory trial, not evidence that no steady state exists",
+  "time": "2026-10-08T00:26:43.846998"
+}

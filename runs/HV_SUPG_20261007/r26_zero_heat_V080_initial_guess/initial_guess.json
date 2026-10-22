@@ -1,0 +1,18 @@
+{
+  "status": "INITIAL_GUESS_ONLY_NOT_A_SOLUTION",
+  "intended_initial_heat_factor": 0.0,
+  "final_heat_factor_must_be": 1.0,
+  "target_voltage": 8.0,
+  "scale_ratio": 1.3333333333333333,
+  "source_nodes": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_voltage_then_heat_cold_V080\\accepted_00001_nodes.csv",
+  "source_load": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_voltage_then_heat_cold_V080\\accepted_00001_load.txt",
+  "source_nodes_sha256": "a42b22828d564a609b2a400a91f8105274e6ae6b692afe57ba6f2bd433d15f00",
+  "source_load_sha256": "50e5891a37f6ca0b6da9ff0af71cda3735ef0c72e9045141133c4c2eef509268",
+  "output_sha256": "c10189148ba9fb6f8c8e954edf40b7a87e87984e28f119093f34153263fb3314",
+  "nodes": 36213,
+  "background_densities": [
+    5.999999999999999e+22,
+    1.4016666666666668e-30
+  ],
+  "required_action": "NATIVE_REEQUILIBRATION_AT_TARGET_VOLTAGE_THEN_FULL_HEAT"
+}

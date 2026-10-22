@@ -1,0 +1,23 @@
+{
+  "scale": 2.0,
+  "ring_abs_p_relative_mean": 0.036031913598476115,
+  "history": [
+    {
+      "iteration": 0,
+      "scaled_residual": 0.0009404095620593488,
+      "update": 0.002112211657000533,
+      "step": 1.0
+    },
+    {
+      "iteration": 1,
+      "scaled_residual": 1.9997871190577657e-07,
+      "update": 1.0376900163452316e-06,
+      "step": 1.0
+    },
+    {
+      "iteration": 2,
+      "scaled_residual": 6.886587774386555e-14,
+      "update": 0.0
+    }
+  ]
+}

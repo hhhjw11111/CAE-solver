@@ -1,0 +1,38 @@
+{
+  "scope": "SYMMETRIC_JOINT_MESH_AND_SUPG_DIAGNOSTIC",
+  "prerequisite": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\acceptance.json",
+  "full_equivalent_counts": [
+    [
+      32,
+      18,
+      14
+    ],
+    [
+      40,
+      20,
+      16
+    ],
+    [
+      48,
+      22,
+      18
+    ]
+  ],
+  "voltages": [
+    6,
+    8
+  ],
+  "supg_scales": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "resource_budget_mb": 8000,
+  "threads": 8,
+  "timeout_seconds": 7200,
+  "production_started": false,
+  "production_auto_release": false,
+  "order": "coarse power audit; joint1 6/8; joint2 6/8; same finest mesh SUPG0.5/2 6/8; original audits",
+  "no_threshold_changes": true,
+  "no_heat_source_changes": true
+}

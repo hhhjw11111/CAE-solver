@@ -1,0 +1,14 @@
+[
+  {
+    "check": "full_mesh",
+    "exit": 1,
+    "expected": "Y-half mesh must occupy",
+    "passed": true
+  },
+  {
+    "check": "wrong_problem",
+    "exit": 1,
+    "expected": "Y-half symmetry",
+    "passed": true
+  }
+]

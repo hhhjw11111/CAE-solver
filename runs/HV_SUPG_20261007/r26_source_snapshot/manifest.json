@@ -1,0 +1,831 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_TRUST_REGION_20261008_R26C\\TPSolverV2.exe",
+  "executable_sha256": "2f624b3d65849c14e92ef85d1a619ded9f38050742063328960f0503848c9730",
+  "native_source_matches_build": true,
+  "frozen_files": [
+    {
+      "path": "src/app/f1_case_runner_m.f90",
+      "sha256": "47fe98f1b659509ffcf0cfd1aec8141c7d5ea44aa61617a56b3bee0be010a6c6"
+    },
+    {
+      "path": "src/app/main.f90",
+      "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8"
+    },
+    {
+      "path": "src/app/production_runner_m.f90",
+      "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c"
+    },
+    {
+      "path": "src/core/build_info_m.f90",
+      "sha256": "c217a752d189f17ccbc923e8a38a5d84ad38ee4eae9c83308c4c30e932ee3638"
+    },
+    {
+      "path": "src/core/constants_m.f90",
+      "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+    },
+    {
+      "path": "src/core/field_layout_m.f90",
+      "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+    },
+    {
+      "path": "src/core/kinds_m.f90",
+      "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc"
+    },
+    {
+      "path": "src/core/model_types_m.f90",
+      "sha256": "de6adc03ba6b8cf960789fc421ed4c7bb8d34201219e6798b2bfb2d795f8e079"
+    },
+    {
+      "path": "src/core/status_m.f90",
+      "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af"
+    },
+    {
+      "path": "src/fem/dirichlet_m.f90",
+      "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06"
+    },
+    {
+      "path": "src/fem/element_kernel_m.f90",
+      "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8"
+    },
+    {
+      "path": "src/fem/global_assembly_m.f90",
+      "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675"
+    },
+    {
+      "path": "src/fem/sparse_pattern_m.f90",
+      "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393"
+    },
+    {
+      "path": "src/fem/transport_supg_m.f90",
+      "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f"
+    },
+    {
+      "path": "src/io/input_schema_m.f90",
+      "sha256": "03c402405744ec02f88d097179bf7fc5063b040dd1e4ddf371ea338822d0cbef"
+    },
+    {
+      "path": "src/io/native_input_m.f90",
+      "sha256": "255d0ec834e181fe089143d246afe558b16a37619f8e2282f1bb22fb7eca0805"
+    },
+    {
+      "path": "src/linear/pardiso_solver_m.f90",
+      "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e"
+    },
+    {
+      "path": "src/mesh/boundary_topology_m.f90",
+      "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4"
+    },
+    {
+      "path": "src/mesh/dof_map_m.f90",
+      "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea"
+    },
+    {
+      "path": "src/mesh/hex20_quadrature_m.f90",
+      "sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce"
+    },
+    {
+      "path": "src/mesh/hex20_shape_m.f90",
+      "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d"
+    },
+    {
+      "path": "src/mesh/mesh_checks_m.f90",
+      "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba"
+    },
+    {
+      "path": "src/mesh/mesh_types_m.f90",
+      "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74"
+    },
+    {
+      "path": "src/nonlinear/continuation_solver_m.f90",
+      "sha256": "7c25538bd9f944a95392d9cb23978a1d67f95d1921b667dd169bc0111554121f"
+    },
+    {
+      "path": "src/nonlinear/newton_solver_m.f90",
+      "sha256": "1e16b054660830a55c1faeec14b140b333f59d28aab861050524b607c528e712"
+    },
+    {
+      "path": "src/nonlinear/scaling_m.f90",
+      "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319"
+    },
+    {
+      "path": "src/nonlinear/temperature_control_m.f90",
+      "sha256": "f9ad961a79664bfea7181a91f0d6a2f8269a02f0b855bb6e5d35d6e07efc71d8"
+    },
+    {
+      "path": "src/physics/equilibrium_m.f90",
+      "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421"
+    },
+    {
+      "path": "src/physics/material_point_m.f90",
+      "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa"
+    },
+    {
+      "path": "src/physics/recombination_m.f90",
+      "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800"
+    },
+    {
+      "path": "src/physics/reference_material_m.f90",
+      "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af"
+    },
+    {
+      "path": "src/physics/thermo_piezo_m.f90",
+      "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+    },
+    {
+      "path": "src/physics/transport_m.f90",
+      "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+    },
+    {
+      "path": "src/physics/zno_candidate_m.f90",
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "src/post/balance_audit_m.f90",
+      "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a"
+    },
+    {
+      "path": "src/post/field_metrics_m.f90",
+      "sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2"
+    },
+    {
+      "path": "src/post/independent_flux_audit_m.f90",
+      "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10"
+    },
+    {
+      "path": "src/post/result_writer_m.f90",
+      "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96"
+    },
+    {
+      "path": "src/problems/reference_bar_problem_m.f90",
+      "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39"
+    },
+    {
+      "path": "src/verification/a1_joint_check_m.f90",
+      "sha256": "559d4ec102f69ba13e6d5277e911136ffa535299991c203eee32c9a48dc9938f"
+    },
+    {
+      "path": "src/verification/a2_hole_check_m.f90",
+      "sha256": "2315b72a40731d30ce408de914ceddf1ebc7e76348cb91e7bfb8e5b0d2927793"
+    },
+    {
+      "path": "src/verification/analytic_benchmarks_m.f90",
+      "sha256": "7585cc2d71829382d8cd5a19b67754d20bb5e2763cff727c7401c3d908dc4d41"
+    },
+    {
+      "path": "src/verification/center_hole_check_m.f90",
+      "sha256": "d15c941b69925915b713d03de3079622c851dbd2739c6193114a853dacef245f"
+    },
+    {
+      "path": "src/verification/continuation_solver_check_m.f90",
+      "sha256": "5a573574ee19ed70df6b7ac1e936470e7c599d5874eaf0e226278aa308465855"
+    },
+    {
+      "path": "src/verification/element_tangent_check_m.f90",
+      "sha256": "f7551296c95ce92b7f803b58e25af6bcadd6509f17a71744512cb92356dd2df3"
+    },
+    {
+      "path": "src/verification/global_assembly_check_m.f90",
+      "sha256": "795876861675a78fd0552c6132e84b1a022e8742fa7e7455e10f0c246bdb0c79"
+    },
+    {
+      "path": "src/verification/global_block_jacobian_check_m.f90",
+      "sha256": "ea82745f69d7b274f1c2c24a951a6e70ae8af2e51cdcc54c974f26343744e337"
+    },
+    {
+      "path": "src/verification/linear_solver_check_m.f90",
+      "sha256": "d8d3c86f52fbb101d8dd4939822b0617f2276c878dad01200d47c184e1a06bb9"
+    },
+    {
+      "path": "src/verification/m0_benchmark_m.f90",
+      "sha256": "5fd3430bb1cc3a6d477d5a977547b9ad806e5fc3d92aac9d8a9b3dcb9c9abe46"
+    },
+    {
+      "path": "src/verification/matched_control_check_m.f90",
+      "sha256": "9a4776329711bb7be1ca08a0d5d95add854ee732e91f1f0616c90ccf1f1b6768"
+    },
+    {
+      "path": "src/verification/material_tangent_check_m.f90",
+      "sha256": "a58cd577af65819182de45e92afc20ae2bec04ca0c281f31c060632270795a41"
+    },
+    {
+      "path": "src/verification/mesh_convergence_check_m.f90",
+      "sha256": "7cdcf77e1fc8da67f021a735bf645c1a72a4d0521fed015c545a1da49f4edd85"
+    },
+    {
+      "path": "src/verification/newton_solver_check_m.f90",
+      "sha256": "1aaf198d3af5749613e1d9a9a6f5bad2c7bee4fd43d2d492365f40f8a99332b3"
+    },
+    {
+      "path": "src/verification/production_joule_check_m.f90",
+      "sha256": "a2c64591c02e46377aac5cae35046fd5b9d6745c98c55b676d78d95fb5edd9ed"
+    },
+    {
+      "path": "src/verification/radius_matrix_check_m.f90",
+      "sha256": "981e7a627366a1b3ce54275c775edc969caf832051ca07911f34c56d16541205"
+    },
+    {
+      "path": "src/verification/supg_check_m.f90",
+      "sha256": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496"
+    },
+    {
+      "path": "src/verification/temperature_control_check_m.f90",
+      "sha256": "7f078b916c851cee45317320f626974ad624fd5e15c353e8a05224d112d0f3b5"
+    },
+    {
+      "path": "src/verification/verification_driver_m.f90",
+      "sha256": "a7d4e8719cd0df934f966474dc4ac4d1b749e0ebc2ec6d4f0b91ef02860f2bdb"
+    },
+    {
+      "path": "scripts/audit_drift_diffusion_peclet.py",
+      "sha256": "5143b80acd97427c6e0086d7d581ab3a534fe1f9bec47893fb6b122317b7203b"
+    },
+    {
+      "path": "scripts/audit_f1_release.py",
+      "sha256": "19b408e3c4ec4288c6cc6e33fac13ca04d6e4f6f5c7ecbf3c90f2bfb3b5260af"
+    },
+    {
+      "path": "scripts/audit_f1_results.py",
+      "sha256": "ed7a410a1a9a24f0efd27caf790b58e5e4f44c3bd3c2d50e89c1e56924dddd40"
+    },
+    {
+      "path": "scripts/audit_fast_f1_repeat.py",
+      "sha256": "601efd312a587dff9f7216e54c8b9167075d92e4be9d60d4a2b0084a6aa71715"
+    },
+    {
+      "path": "scripts/audit_g12_radius_output.py",
+      "sha256": "fff963a93a6e99e8636786916d19cb6c30b64f8d03cd4266a3fadcb4ad606915"
+    },
+    {
+      "path": "scripts/audit_hex20_boundary_geometry.py",
+      "sha256": "2c356f26a8cf721064faeec6a5936b44dc4e139d351cc1cfbae68979ef462fb4"
+    },
+    {
+      "path": "scripts/audit_hv_field_shape.py",
+      "sha256": "96532490c24c0f03bc51493820d19604d669f2bcca517574936ce99343c38bac"
+    },
+    {
+      "path": "scripts/audit_hv_half_y.py",
+      "sha256": "7d5ab2fce9463705dabdfb833eaecca2ba592cc5463b44d7f4e18ce22e5ef7ed"
+    },
+    {
+      "path": "scripts/audit_hv_mesh.py",
+      "sha256": "41a0eaa2e1db16d4ed70a8630a7d836157d51137c9a9460eebe39aa85d75923b"
+    },
+    {
+      "path": "scripts/audit_hv_quadrature.py",
+      "sha256": "373ff63a07add0e4af447a0584e3e5ee28814b12d07dca2c2b3ce7a8237d6ce1"
+    },
+    {
+      "path": "scripts/audit_hv_stabilization.py",
+      "sha256": "de8ecb61923fa63265cb8f11d6daf996d16a09fc6bc18fb701df9829cf0e14ef"
+    },
+    {
+      "path": "scripts/audit_zno_material.py",
+      "sha256": "e8144bb0f937ffdb31a1da3529427fb2bad13ad57e5a1faa5231493f32156c02"
+    },
+    {
+      "path": "scripts/check_hv_production_regression.py",
+      "sha256": "e30e765d7436c466eb065234975543ec800b9df29da09a4b0f633b78def70820"
+    },
+    {
+      "path": "scripts/compare_hv_production_fields.py",
+      "sha256": "69277587770ec08fdc04298759be06868b6fc91380888db05e533ab18c3dd6c6"
+    },
+    {
+      "path": "scripts/diagnose_hv_drift_diffusion_cancellation.py",
+      "sha256": "78928ae019845571910a19b61013aaeb5e1581b963b746c59f2f68632958e965"
+    },
+    {
+      "path": "scripts/diagnose_hv_heat_components.py",
+      "sha256": "4b55207ec530aa8080c021c50e30592b4857f2d9835b6ef6f42bea7b2ac36ca7"
+    },
+    {
+      "path": "scripts/diagnose_hv_heat_flux.py",
+      "sha256": "e565806158569adb1d03ee71a250415372cab4d95d128fb8b425ab4cd55ed646"
+    },
+    {
+      "path": "scripts/diagnose_hv_stabilization_spatial.py",
+      "sha256": "7a1712c77b848a1d7a5d5844895fc3873ebacdf140a7f65829c2b4cb2da8362a"
+    },
+    {
+      "path": "scripts/finalize_f3_radius_sweep.py",
+      "sha256": "ead56439ec994cec13f13b5c650cd91bad64fcd33f06721ce112129906699acb"
+    },
+    {
+      "path": "scripts/finalize_fast_f1.py",
+      "sha256": "13e4cf6ca192f10a25dfc92acc1a86dcc4cf467aacff5f2264512a2bbdf7ea1a"
+    },
+    {
+      "path": "scripts/finalize_repaired_verification.py",
+      "sha256": "cc9f0d97906d5979566381967bb239ec422bc26ad50aa13c28d8f6a4df690a18"
+    },
+    {
+      "path": "scripts/generate_f1_fast_cases.py",
+      "sha256": "8ea00446bf12e1de511db7157a2d526e774470d9b59f9670e75cf19226431b59"
+    },
+    {
+      "path": "scripts/generate_f1_main_cases.py",
+      "sha256": "7e098f7b4732fc43365061be353e7b68e8801f4b8b46c1e77505a8c1ec693d4d"
+    },
+    {
+      "path": "scripts/generate_f2_voltage_sweep.py",
+      "sha256": "2e42bebab8b409e746fcff017f5f0e4bbef7bf2d2d4a79af7f451e8db9bfd87b"
+    },
+    {
+      "path": "scripts/generate_f3_radius_sweep.py",
+      "sha256": "4fd958510e26de3482a7b01a2bd5d2257e1a23d74e1fa0ff43c308afd828464c"
+    },
+    {
+      "path": "scripts/generate_hv_half_y.py",
+      "sha256": "45e114b4643b0f4193379f7573f02ea0710306062ad63e2f0b2d7e38249559d1"
+    },
+    {
+      "path": "scripts/generate_hv_surface_mesh.py",
+      "sha256": "ca3013df748d45b0cdffa2f1256493dbb58aefbd2e40cefaf33c486aac60a89c"
+    },
+    {
+      "path": "scripts/hv_runtime.py",
+      "sha256": "d18e94f6becd4113856e6f271439373022af2a607198034f26749424d69583ca"
+    },
+    {
+      "path": "scripts/package_fast_f1.py",
+      "sha256": "941263712b82cac6153a78cedde816d2986d7df8cbfa63f14ca3e35d068a33f5"
+    },
+    {
+      "path": "scripts/perturb_hv_initial_guess.py",
+      "sha256": "93eb186adc96214f8132686bfa887ebd7367633b3d28f46c52f4b2a8d0c3439f"
+    },
+    {
+      "path": "scripts/plot_a1_editable_geometry.py",
+      "sha256": "6160f063e460109603d4c81ec55a6b2c9452f57eb6806363d00a578700988af1"
+    },
+    {
+      "path": "scripts/plot_a1_geometry_and_clouds.py",
+      "sha256": "98918f0fa0a7c10799975277c840a0235423dbbd311e05ca0511177c60c1f0cf"
+    },
+    {
+      "path": "scripts/plot_a1_geometry_model.py",
+      "sha256": "0c9eeedc5dbf909fe51c53925b72e198e5b526027f05cc4524dcd9623bedc039"
+    },
+    {
+      "path": "scripts/plot_a1_minimal_boundary_template.py",
+      "sha256": "6391ed9cc4d8125c013ea4e9093fe3792deaf543c6fb05e7b0f6e65b9c39fe6d"
+    },
+    {
+      "path": "scripts/plot_a1_reference_style.py",
+      "sha256": "019c41b7701c7b2f8ef355cc3261b784d01d458a891ff1ee6817363ac7d88c0c"
+    },
+    {
+      "path": "scripts/plot_a1_three_temperature_comparison.py",
+      "sha256": "9d4ca5487fc763ffb99c900e155418e94b4c0cbbe370931d32c568ebfc0bd214"
+    },
+    {
+      "path": "scripts/plot_a2_geometry_model.py",
+      "sha256": "dee40fc0f4e04b69fd6cdbc43caa670d60d86e0c46b280b9f62ec8c320a30c56"
+    },
+    {
+      "path": "scripts/plot_a2_interleaved_markers.py",
+      "sha256": "3d839db44507f80797ceee4b4a681d58b258a8ec5e2169d98cceedc17144dd9a"
+    },
+    {
+      "path": "scripts/plot_a2_reference_geometry_precise.py",
+      "sha256": "1f703b562f09c6cb63a326add1cd6b663dd108f4764d7b8a4b19371f421505d8"
+    },
+    {
+      "path": "scripts/plot_a2_requested_four_panel.py",
+      "sha256": "2001c3773c8f9a91a3f6c579e6e37513f597a410aef1f360384c913dae54620a"
+    },
+    {
+      "path": "scripts/plot_a2_skill_delivery.py",
+      "sha256": "a4ceb0a6ebdc145ed1fc46d157e16c2babc36dd426d54fd65a36114ce092e203"
+    },
+    {
+      "path": "scripts/plot_a2_uniform_blue.py",
+      "sha256": "86fd86d7a4e1aa982418fb60c1e0ae1cabd8b62f095870a983cdbfc2ebf4f885"
+    },
+    {
+      "path": "scripts/plot_a2_uniform_red.py",
+      "sha256": "f5ef4a48498b24fc20f0576f62fe02f00fd30295a085afd80c721b0ac2062dd2"
+    },
+    {
+      "path": "scripts/plot_f1_analytic_results.py",
+      "sha256": "dff38c32bde1566b3c5d78b249629395e532bb52ce95c0bf9b54c5f37fa82272"
+    },
+    {
+      "path": "scripts/plot_f1_comparisons.py",
+      "sha256": "27219495343a086c557b055a2d4b7ae9858be9efb00bb281ceb2915be891db1b"
+    },
+    {
+      "path": "scripts/plot_f1_main_results.py",
+      "sha256": "eae77a11b534a22c319d2567cc2409ecc845d1a17200aec9dd7e7c9766b18405"
+    },
+    {
+      "path": "scripts/plot_f1_quick_hole.py",
+      "sha256": "a35a12a9ddcacff890442cbcded00fdd31c6cca6cf053ca65e28d193f53b08b0"
+    },
+    {
+      "path": "scripts/plot_f2_credible_0_8V_20260914.py",
+      "sha256": "2280395cc0d0b741e147d7b9ee409efa9bb86f8acb749c98dae866e3277445dd"
+    },
+    {
+      "path": "scripts/plot_f2_four_panel_0_8V.py",
+      "sha256": "58fb31b7f8c8746903be361edbacfcb19345dbd61f8620391e290c16a69fe2a6"
+    },
+    {
+      "path": "scripts/plot_f2_four_panel_0_8V_dashed.py",
+      "sha256": "bd47c63e8b34d5aedd4e62cc2aa57678ab3fa41d413fe9aa0bd143145943f9f9"
+    },
+    {
+      "path": "scripts/plot_f2_four_panel_0_8V_estimated.py",
+      "sha256": "83e467cfd0d6572a8279224d99dc56f01a16039b1e0fc0eef3e6e154b240a455"
+    },
+    {
+      "path": "scripts/plot_f2_voltage_geometry_vertical.py",
+      "sha256": "46ea84588373f59a05393293ccc50cbe39da4dd6ed1d3b027d5ea2130fefd13a"
+    },
+    {
+      "path": "scripts/plot_f3_green_contrast_pairs.py",
+      "sha256": "ca056621d3708374e02ac2c9c78c0fbc71d5880f7240dee72060f088fb404e59"
+    },
+    {
+      "path": "scripts/plot_f3_joule_frozen_style.py",
+      "sha256": "7e1fab7aa2f9e5c9dc5bb9125ada26fee34d89858f7ddd5c126e502c9c2dee4f"
+    },
+    {
+      "path": "scripts/plot_f3_joule_larger_surfaces.py",
+      "sha256": "827e09d110edd3058dd6c092cf4ab2099acf49c7dde3da5d914dc12680e9bd0d"
+    },
+    {
+      "path": "scripts/plot_f3_joule_large_surfaces.py",
+      "sha256": "7a790a4beb59b5deb38fb8492ac5abf170d5c69c65296e72f5fac0c2d9727d5f"
+    },
+    {
+      "path": "scripts/plot_f3_joule_less_red.py",
+      "sha256": "b248e2681415ab8d726e734694358a0fca2898ab0a17972b51ba079266e06f97"
+    },
+    {
+      "path": "scripts/plot_f3_joule_radius_red_balance.py",
+      "sha256": "137438232b7ebab8fd947da0bd2277d3f91ae6a9fd92d97e8efc4638c60f52e6"
+    },
+    {
+      "path": "scripts/plot_f3_joule_warm_contrast.py",
+      "sha256": "f4595800898a6cf0fe3c6d15b41e105acbed2a7223ae88ee36b7b923619cb4eb"
+    },
+    {
+      "path": "scripts/plot_f3_reference_geometry.py",
+      "sha256": "1acacaf5a25b43201789b637143652d1faaa549ab990b38d6ca54d9336d5a2be"
+    },
+    {
+      "path": "scripts/plot_f3_reference_geometry_vertical.py",
+      "sha256": "b4963cfbd445833ff3fe9e8e2790f7208bd391c81f1fc162fceab97d36302c78"
+    },
+    {
+      "path": "scripts/plot_fast_f1_gallery.py",
+      "sha256": "2d1a844434de4bddc11f1f4c7fb8cc608b1a5abe348c0f6cc79530ee27e276a3"
+    },
+    {
+      "path": "scripts/plot_h1_l0_joule_contrast.py",
+      "sha256": "c2a96f3e912a7a1485b8ec60ee558367e3a9f656c6afa56ca9425c0ca373a7eb"
+    },
+    {
+      "path": "scripts/plot_h1_l0_joule_jet.py",
+      "sha256": "72da0bd0529c1accb2e3ee77479102ed5340811447ceb4f606fe310786febf6a"
+    },
+    {
+      "path": "scripts/postprocess_f2_high_voltage_extension.py",
+      "sha256": "a59c70e742dc8da5125561c3cb2c282d56bd9bae5437fa553e0e1bf636430c52"
+    },
+    {
+      "path": "scripts/postprocess_f2_voltage_sweep.py",
+      "sha256": "1dbb752f5c1ac53a301103e6dac6db30d4e3ba5e1fa0282e9239400afc48ee83"
+    },
+    {
+      "path": "scripts/postprocess_final_results.py",
+      "sha256": "7429cc18315396ac992b67af3042125418f657b8c7f871a07197a97cb3c27a98"
+    },
+    {
+      "path": "scripts/prepare_hv_zero_heat_guess.py",
+      "sha256": "58f57b605f922e9a057d7025058d25de5551a0a7b11c2b64af977e341f618f82"
+    },
+    {
+      "path": "scripts/prepare_hv_zero_heat_voltage_guess.py",
+      "sha256": "e38cfbeda7a0c701d1ffc8fecb6acccdea3eef654fd8ed9b46c149d08a4ed377"
+    },
+    {
+      "path": "scripts/qa_fast_f1_artifacts.py",
+      "sha256": "f529453bb379800b2326d263d59c13bcce4279bd8c7a5da1aec2f988806ef606"
+    },
+    {
+      "path": "scripts/run_hv_log_temperature_trace.py",
+      "sha256": "26ecfbfd2d443177ad3688cf94406df5da05891b2249f29c75fb0f53661ffa24"
+    },
+    {
+      "path": "scripts/run_hv_point.py",
+      "sha256": "b02479143d60844673ade6aa6cead41028eb9e9250f478636ac9bed440bd96af"
+    },
+    {
+      "path": "scripts/run_hv_regression.py",
+      "sha256": "d8f966bd70415e968da1160a96f423e79a636efe067be0d4801ccefe2e7ac8bf"
+    },
+    {
+      "path": "scripts/run_hv_scale_path.py",
+      "sha256": "31647d6206c3e13e13f2c509c0c475e0ed87050d52f66c0b32a2c0571f04df29"
+    },
+    {
+      "path": "scripts/run_hv_sweep.py",
+      "sha256": "8c99775ace5b78d76e8d46cfa45eeeb21e6d4d8e1562e03e46f3755140fb96b5"
+    },
+    {
+      "path": "scripts/run_hv_temperature_trace.py",
+      "sha256": "d13fb5fd264652a943bdc942ce1be94910c0ebeacdb0d955eaa9f84241f75af1"
+    },
+    {
+      "path": "scripts/run_hv_trajectory.py",
+      "sha256": "4030b145f6a7d7f8de145e2ef66ef58bf407e1c5f2a42c3e81c7443f65666803"
+    },
+    {
+      "path": "scripts/summarize_f1_release.py",
+      "sha256": "653a185dba7992400e23b2fb3dd02700d3212da2ff021115e3b31ffac7664b8f"
+    },
+    {
+      "path": "scripts/summarize_hv_credibility.py",
+      "sha256": "f9f9851f1cb160e6fa4cf9cfe69aabe9f4195221222f8a33f8f4768d2550e965"
+    },
+    {
+      "path": "scripts/summarize_hv_preliminary.py",
+      "sha256": "df32d96ae30e3743e1ce23bf02ca4026b57b68037586de8c94e2c17182cb5f66"
+    },
+    {
+      "path": "scripts/test_fast_f1_profiles.py",
+      "sha256": "c357485e247962f06cd4542ca6fe7192a3bf9126d82cdd546298b7fafacccbe1"
+    },
+    {
+      "path": "scripts/transfer_hv_initial_guess.py",
+      "sha256": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25"
+    },
+    {
+      "path": "scripts/verify_fast_f1_delivery.py",
+      "sha256": "d90fa2cdcb11ed4a468c814b7023761b132bd2f98276c2ab4ea97535b1d8dea2"
+    },
+    {
+      "path": "tests/test_hv_checkpoint_replay.py",
+      "sha256": "9f74a7b38bc13c12aa7d03a28c38cf240d80d61a75f7ec1fe77e4ba661e47f6c"
+    },
+    {
+      "path": "tests/test_hv_credibility.py",
+      "sha256": "ccf27c0b44eb2630e33cf0ed83ae6d27ff7d97fd6ce8f6b8c2c7b18d7cc89674"
+    },
+    {
+      "path": "tests/test_hv_current_diagnostic.py",
+      "sha256": "048928b392452fe17b072d496d2e338870a5da5c7be033e450d635432c3c34ab"
+    },
+    {
+      "path": "tests/test_hv_field_shape.py",
+      "sha256": "fdfe606374c52ebc64685f7f6a4b46be4a3f0be7a7f2bbd59997a98b6c44db06"
+    },
+    {
+      "path": "tests/test_hv_half_y.py",
+      "sha256": "120bcb4498cc5288aaad49467a15225b869865875a313a454ea0a5cb6c029085"
+    },
+    {
+      "path": "tests/test_hv_load_path.py",
+      "sha256": "53fb10c94171e2a8ef01eabdaed0d0b309ad8b5c4906dece236e23fd7d88ae4d"
+    },
+    {
+      "path": "tests/test_hv_mesh.py",
+      "sha256": "ff7167ff1eec7bae659ed4aa4613cfe2ae2bfae42b504c31e64643f3dbbf2682"
+    },
+    {
+      "path": "tests/test_hv_preliminary.py",
+      "sha256": "2f61c81142ddc8f365b6f50375415038a043241e95943559c3a3375288478b6e"
+    },
+    {
+      "path": "tests/test_hv_quadrature.py",
+      "sha256": "6a92737a7cbadbaee663b708f74a1741944519012dfd3e3333a54ddd44c8dfa5"
+    },
+    {
+      "path": "tests/test_hv_runtime.py",
+      "sha256": "441b513e0080844ae686df8d94fa5446091bc67ff6e9bdf09d4b5eb4c0327e09"
+    },
+    {
+      "path": "tests/test_hv_scale_path.py",
+      "sha256": "51b640f87f17cfacd9fbbcca16231ee1117eee088a7cadf365a3a6978f53588e"
+    },
+    {
+      "path": "tests/test_hv_stabilization.py",
+      "sha256": "d95761bc82d850ac006575e0ce78fed96d4c206cb8dc8a653ab080d2fa5e1d29"
+    },
+    {
+      "path": "tests/test_hv_status.py",
+      "sha256": "d2748f70596c508398a30451416ac104d89e8cd079076976f2177cf366e9b937"
+    },
+    {
+      "path": "tests/test_hv_surface_mesh.py",
+      "sha256": "bde08cfce0dbc1bc4f4f4a24c99d778fabff74467b21b3ae20850a7d7bb07238"
+    },
+    {
+      "path": "tests/test_hv_transfer.py",
+      "sha256": "c054f1a13cd3499137f1940f3b9b9107b11db79ae6ec2cf657193c17a634e4c3"
+    },
+    {
+      "path": "tests/test_hv_trust_region.py",
+      "sha256": "1fb7b17c599c65980df01f9ccb865dd28cc00ed701ec5668ec9c7fd5eebd77e7"
+    },
+    {
+      "path": "tests/test_hv_voltage_guess.py",
+      "sha256": "c9348cb7130ed2c05380286c01a08cdefd850732b5fbbbf1d464c4898b6ef86f"
+    },
+    {
+      "path": "tests/test_hv_zero_heat_guess.py",
+      "sha256": "06ba87a3e604792e3e4afaba283d5dd959e28dd58894377f3b4d582f440f6d24"
+    },
+    {
+      "path": "VERSION",
+      "sha256": "78c048913bab0e19d70dca77916f2050be6ed89aabd8050fad63146b025dd8da"
+    },
+    {
+      "path": "docs/hv_failure_and_trust_region_20261008.md",
+      "sha256": "16eec7ca4cad810fb4477149fcb09e8507bbd22d204b836b8dabd7a22bbbf33f"
+    },
+    {
+      "path": "runs/HV_SUPG_20261007/r26_high_voltage_priority/collect_high_voltage.py",
+      "sha256": "d82c2bee32bf9d850349e2746aa13fa5c8db88500e2d1902e7c79eb05c6bf30a"
+    },
+    {
+      "path": "runs/HV_SUPG_20261007/r26_high_voltage_priority/freeze_evidence.py",
+      "sha256": "716c5d7c77c490aa3d0432d0bc33c07d6c9e417be86e2ebb75160587406dfd26"
+    }
+  ],
+  "physics_modules": [
+    {
+      "path": "src/physics/equilibrium_m.f90",
+      "same_as_r25": true
+    },
+    {
+      "path": "src/physics/material_point_m.f90",
+      "same_as_r25": true
+    },
+    {
+      "path": "src/physics/recombination_m.f90",
+      "same_as_r25": true
+    },
+    {
+      "path": "src/physics/reference_material_m.f90",
+      "same_as_r25": true
+    },
+    {
+      "path": "src/physics/thermo_piezo_m.f90",
+      "same_as_r25": true
+    },
+    {
+      "path": "src/physics/transport_m.f90",
+      "same_as_r25": true
+    },
+    {
+      "path": "src/physics/zno_candidate_m.f90",
+      "same_as_r25": true
+    }
+  ],
+  "regression": [
+    {
+      "check": "V01",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "V02",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "V03",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "V04",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "V05",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "V06",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G02",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G03",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G04",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G05",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G06",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G07",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "G08",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "L01",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "F1M",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    },
+    {
+      "check": "A1J",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "byte_identical": true,
+      "passed": true
+    }
+  ],
+  "native_checks": {
+    "G07TR": {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_trust_verification\\G07TR_C.txt",
+      "sha256": "d6459840288766a2719182c3656994576aff9aa36e04520b9e2c890f9ccd3335",
+      "passed": true
+    },
+    "G07S": {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_trust_verification\\G07S_C.txt",
+      "sha256": "99c3f6bb82ec32a8be1cde4ade3bbeb8c55d25687278d7c08a6e7982e0eef40c",
+      "passed": true
+    },
+    "TCTRL": {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_trust_verification\\TCTRL_C.txt",
+      "sha256": "e8267bdd956231bda9afdc916724571579b622530526e868280380f65a52b74b",
+      "passed": true
+    }
+  },
+  "python_tests": {
+    "command": "python -m unittest discover -s solver_v2/tests -p 'test_hv*.py'",
+    "count": 76,
+    "passed": true,
+    "observed_console": "Ran 76 tests in 10.151s; OK"
+  },
+  "full_8V_solution_obtained": false,
+  "rejected_candidates": [
+    "R26 G07TR failed after 100 iterations",
+    "R26B G07TR failed after 100 iterations"
+  ]
+}

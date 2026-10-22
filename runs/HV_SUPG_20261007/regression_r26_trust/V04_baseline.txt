@@ -1,0 +1,7 @@
+verification_id=V04_M0_analytic
+v04_eta_p_l2_error= 8.8473802431875058E-015
+v04_eta_p_h1_error= 8.6614421560830628E-015
+v04_normalized_max_current= 1.5454304502782181E-014
+v04_right_face_max_eta_p=-3.8681726752281667E-002
+v04_perturbed_pivots=0
+verification_result=PASS

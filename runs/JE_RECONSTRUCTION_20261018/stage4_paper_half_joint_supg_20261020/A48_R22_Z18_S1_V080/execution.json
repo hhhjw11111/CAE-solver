@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "seconds": 1872.9219999999914,
+  "timed_out": false,
+  "stop_reason": null,
+  "input_sha256": "4306a77361312062483cc54230868ca03ad91b7cb21feae248f63b2f324ae800",
+  "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92"
+}

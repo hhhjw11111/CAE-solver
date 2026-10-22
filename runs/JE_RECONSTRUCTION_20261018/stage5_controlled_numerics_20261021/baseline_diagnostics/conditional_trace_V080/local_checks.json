@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL_TANGENT_AND_ZERO_CURRENT_CHECKS_PASSED",
+  "checks": [
+    {
+      "directional": false,
+      "tangent_relative_error": 5.989919427260409e-11,
+      "boltzmann_max_residual": 1.5157811082385992e-25
+    },
+    {
+      "directional": true,
+      "tangent_relative_error": 7.07263750122602e-11,
+      "boltzmann_max_residual": 1.9903226613773516e-25
+    }
+  ]
+}

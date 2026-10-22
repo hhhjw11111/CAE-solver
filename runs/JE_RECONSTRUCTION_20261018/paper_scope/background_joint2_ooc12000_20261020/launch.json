@@ -1,0 +1,15 @@
+{
+  "original_gates_unchanged": true,
+  "runner_sha256": "8e649df45ea3ccb81aa172823388f16d6552df0be91f0969e32651c8bf2b561a",
+  "status": "STARTED_NOT_COMPLETED",
+  "ooc_core_mb": 12000,
+  "runner": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_joint2_ooc12000_20261020.py",
+  "controller_pid": 35456,
+  "native_input_unchanged": true,
+  "arguments": [
+    "-X",
+    "utf8",
+    "\"C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_joint2_ooc12000_20261020.py\""
+  ],
+  "production_acceptance": false
+}

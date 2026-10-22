@@ -1,0 +1,12 @@
+verification_id=V01
+max_kronecker_error= 0.0000000000000000E+000
+max_partition_error= 4.4408920985006262E-016
+max_natural_derivative_sum= 6.6613381477509392E-016
+max_linear_mapping_error= 2.2204460492503131E-016
+max_linear_gradient_error= 5.5511151231257827E-016
+max_jacobian_determinant_error= 8.3266726846886741E-017
+quadrature_weight_error= 1.7763568394002505E-015
+unit_cube_volume_error= 4.4408920985006262E-016
+minimum_jacobian_determinant= 1.2499999999999992E-001
+hex20_local_dof_count=140
+verification_result=PASS

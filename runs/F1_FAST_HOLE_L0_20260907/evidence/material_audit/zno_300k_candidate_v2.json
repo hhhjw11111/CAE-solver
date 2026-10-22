@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "profile_id": "ZNO_300K_CANDIDATE_V2",
+  "audit_date": "2026-09-05",
+  "status": "NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED",
+  "production_enabled": false,
+  "replaces_for_future_planning": "ZNO_BULK_300K_V1 proposal only; no production material is replaced",
+  "conventions": {
+    "units": "SI except explicitly labelled dimensionless relative permittivity",
+    "crystal_c_axis": "+z",
+    "voltage_axis": "x",
+    "strain_voigt": ["eps_xx", "eps_yy", "eps_zz", "gamma_yz", "gamma_zx", "gamma_xy"],
+    "stress": "C * strain - transpose(e) * E - thermal_stress * theta",
+    "electric_displacement": "e * strain + eps_at_constant_strain * E + pyro_at_constant_strain * theta",
+    "elastic_source_constraint": "zero electric field, adiabatic, measured at 25 degC",
+    "elastic_use_assumption": "use at 300 K as an isothermal approximation; no entropy-to-temperature correction applied",
+    "dielectric_use_assumption": "interpret candidate values as constant-strain; experimental mechanical constraint remains unverified",
+    "reference_polarization": "300 K spontaneous surface polarization treated as compensated; incremental fields only",
+    "carrier_statistics": "nondegenerate; R=0; frozen effective ionized net doping",
+    "minority_density_floor_allowed": false
+  },
+  "constants_si": {
+    "q_C": 1.602176634e-19,
+    "kB_J_per_K": 1.380649e-23,
+    "eps0_F_per_m": 8.8541878128e-12
+  },
+  "parameters": {
+    "T0_K": 300.0,
+    "elastic_Pa": {
+      "C11": 209700000000.0,
+      "C12": 121100000000.0,
+      "C13": 105100000000.0,
+      "C33": 210900000000.0,
+      "C44": 42470000000.0
+    },
+    "piezo_C_per_m2": {"e31": -0.62, "e33": 0.96, "e15": -0.37},
+    "relative_permittivity": [8.54, 8.54, 10.2],
+    "alpha_per_K": [4.31e-6, 4.31e-6, 2.49e-6, 0.0, 0.0, 0.0],
+    "pyro_primary_C_per_m2K": [0.0, 0.0, -6.9e-6],
+    "thermal_conductivity_W_per_mK": [60.0, 60.0, 60.0],
+    "n_H_per_m3": 6.0e22,
+    "mu_H_m2_per_Vs": 0.0205,
+    "hall_factor": 1.0,
+    "beta_n": 2.0,
+    "intrinsic_concentration_per_m3": 2.9e-4,
+    "mu_p0_m2_per_Vs": 0.005,
+    "beta_p": 2.0
+  },
+  "independent_check_values": {
+    "thermal_stress_Pa_per_K": [1687447.0, 1687447.0, 1431103.0, 0.0, 0.0, 0.0],
+    "C66_Pa": 44300000000.0,
+    "n0_per_m3": 6.0e22,
+    "p0_per_m3": 1.4016666666666667e-30,
+    "sigma0_S_per_m": 197.067725982,
+    "Dn0_m2_per_s": 0.0005299659956215417
+  },
+  "diagnostics_not_calibration": {
+    "temperatures_K": [280.0, 300.0, 305.0, 310.0, 330.0],
+    "hall_factors": [1.0, 1.2],
+    "bar_length_m": 20e-6,
+    "bar_width_m": 20e-6,
+    "bar_thickness_m": 1e-6,
+    "voltages_V": [0.1, 1.0, 3.0, 5.0],
+    "candidate_main_voltage_V": 3.0,
+    "candidate_hole_radius_m": 3e-6,
+    "candidate_annulus_width_m": 0.5e-6,
+    "book_pyro_secondary_C_per_m2K": -2.5e-6,
+    "book_pyro_total_C_per_m2K": -9.4e-6,
+    "book_a_polynomial_A": [3.2468, 0.623e-5, 12.94e-9],
+    "book_c_polynomial_A": [5.2042, 0.522e-5, 12.13e-9]
+  },
+  "parameter_evidence": [
+    {"group": "elastic", "sources": ["BATEMAN1962", "WILEY2009"], "level": "PRIMARY_ABSTRACT_NUMBERS_AND_CONSTRAINT_CHECKED", "note": "C66 calculated from rounded C11/C12 = 44.3 GPa; Bateman reports 44.29 GPa. Adiabatic is not automatically isothermal."},
+    {"group": "piezoelectric", "sources": ["KOBIAKOV1980", "WILEY2009"], "level": "SECONDARY_TABLE_CHECKED_PRIMARY_METADATA_ONLY", "note": "Wiley Table 1.6 footnote r points to Kobiakov. Its Bateman elastic group and Kobiakov piezo group are not one specimen."},
+    {"group": "permittivity", "sources": ["RSC2021"], "level": "CANDIDATE_WITH_UNRESOLVED_MECHANICAL_CONSTRAINT", "note": "Do not mix free-stress permittivity with the constant-strain constitutive form without conversion."},
+    {"group": "alpha", "sources": ["IWANAGA2000", "WILEY2009"], "level": "SECONDARY_VALUE_WITH_INTERNAL_DISCREPANCY", "note": "Book p51 states alpha_c=2.49e-6; its printed c(T) polynomial gives about 2.40e-6 at 300 K. Retain 2.49e-6 as an explicit candidate; original full table needed."},
+    {"group": "pyroelectric", "sources": ["HEILAND1966", "WILEY2009"], "level": "SECONDARY_TABLE_CHECKED_PRIMARY_VALUE_NOT_VERIFIED", "note": "Wiley Table 1.11 gives primary -6.9, secondary -2.5 and total -9.4 micro-C/(m2 K); this does not prove these precise numbers are directly from Heiland1966."},
+    {"group": "thermal_conductivity", "sources": ["OZGUR2006", "FLORESCU2002"], "level": "EFFECTIVE_ASSUMPTION", "note": "60 W/(m K) retained from the earlier bulk baseline; not measured on Look's specimen. 46-147 W/(m K) treatment range belongs to Ozgur2006, not Florescu2002."},
+    {"group": "n_and_mu", "sources": ["LOOK1998"], "level": "HALL_DATA_PLUS_EXPLICIT_DRIFT_ASSUMPTION", "note": "n=rH*nH and mu=muH/rH preserve conductivity. rH=1 is uncalibrated; isotropy is an approximation."},
+    {"group": "beta_n", "sources": ["WAGNER1974", "MAKINO2005"], "level": "ASSUMPTION_NOT_SAME_SAMPLE_FIT", "note": "beta=2 and any sensitivity range are not an experimental confidence interval or a validated 280-330 K window."},
+    {"group": "minority_carrier", "sources": [], "level": "ILLUSTRATIVE_NUMERICAL_PLACEHOLDER", "note": "ni is a rough band estimate. p0=ni^2/n0; do not floor or claim experimentally validated holes."}
+  ],
+  "calibration_gaps": [
+    {"id": "P01", "issue": "Confirm the mechanical constraint of the dielectric data and full primary piezoelectric table.", "blocks": "quantitative experimental-material claim"},
+    {"id": "P02", "issue": "Fit n(T), mu_drift(T) and Hall factor consistently for the chosen specimen; assess donor ionization.", "blocks": "quantitative temperature-mobility mechanism attribution"},
+    {"id": "P03", "issue": "Resolve alpha_c polynomial discrepancy and quantify adiabatic/isothermal and thermal-data mixing.", "blocks": "precision thermo-electro-mechanical prediction"},
+    {"id": "P04", "issue": "Validate low-field, surface compensation, external dielectric field, and 1 um sample use of bulk parameters.", "blocks": "real-device validation"},
+    {"id": "P05", "issue": "Check energy-closure omissions where drift and diffusion cancel in screening layers.", "blocks": "physical local-heating attribution"}
+  ],
+  "sources": [
+    {"id": "BATEMAN1962", "doi": "10.1063/1.1931160", "title": "Elastic Moduli of Single-Crystal Zinc Oxide", "year": 1962},
+    {"id": "KOBIAKOV1980", "doi": "10.1016/0038-1098(80)90502-5", "title": "Elastic, piezoelectric and dielectric properties of ZnO and CdS single crystals in a wide range of temperatures", "year": 1980},
+    {"id": "IWANAGA2000", "doi": "10.1023/A:1004709500331", "title": "Anisotropic thermal expansion in wurtzite-type crystals", "year": 2000},
+    {"id": "WILEY2009", "doi": "10.1002/9783527623945.ch1", "title": "General Properties of ZnO", "year": 2009},
+    {"id": "LOOK1998", "doi": "10.1016/S0038-1098(97)10145-4", "title": "Electrical properties of bulk ZnO", "year": 1998},
+    {"id": "WAGNER1974", "doi": "10.1016/S0022-3697(74)80026-0", "title": "Halleffekt und Anisotropie der Beweglichkeit der Elektronen in ZnO", "year": 1974},
+    {"id": "MAKINO2005", "doi": "10.1063/1.1991994", "title": "Electron transport in ZnO thin films", "year": 2005},
+    {"id": "OZGUR2006", "doi": "10.1007/s11664-006-0098-9", "title": "Thermal conductivity of bulk ZnO after different thermal treatments", "year": 2006},
+    {"id": "FLORESCU2002", "doi": "10.1063/1.1426234", "title": "High spatial resolution thermal conductivity of bulk ZnO (0001)", "year": 2002},
+    {"id": "HEILAND1966", "doi": "10.1016/0038-1098(66)90187-6", "title": "Pyroelectricity of zinc oxide", "year": 1966},
+    {"id": "RSC2021", "doi": "10.1039/D0RA10371C", "title": "Piezoelectric property comparison of two-dimensional ZnO nanostructures for energy harvesting devices", "year": 2021},
+    {"id": "ARDARAVICIUS2019", "doi": "10.1063/1.5100078", "title": "Electron drift velocity in wurtzite ZnO at high electric fields: Experiment and simulation", "year": 2019}
+  ],
+  "public_source_snapshot": {
+    "file": "sources/wiley_zno_chapter1_2009.pdf",
+    "url": "https://application.wiley-vch.de/books/sample/3527408134_c01.pdf",
+    "sha256": "f0a3ec04689e4a7a7d9bbb81317acb28999412b3fee744a4f67bd25bc55d9e3f",
+    "pages_one_based": [32, 33, 51, 54, 62]
+  },
+  "protected_files_sha256": {
+    "Console3.f90": "8c06b65b839b5d7a17c7b65bb0f3f0736ffc6041fa174b7f7640f77522f7a8ae",
+    "solver_v2/src/physics/reference_material_m.f90": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af",
+    "solver_v2/src/physics/thermo_piezo_m.f90": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d",
+    "solver_v2/src/physics/transport_m.f90": "c85771a31f395520268ba3d3f7a850848f8ba515d144553c3fce8be83abc8ed1",
+    "solver_v2/src/physics/equilibrium_m.f90": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421",
+    "solver_v2/docs/material_selection_and_parameter_freeze_v1.md": "40e14a4f46b7462fb3845c8575708488805351a2828b2dec1aa684b6ef779fae"
+  }
+}

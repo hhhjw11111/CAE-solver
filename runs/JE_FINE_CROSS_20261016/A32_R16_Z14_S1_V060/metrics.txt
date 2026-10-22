@@ -1,0 +1,11 @@
+case_id=JE_SENS_V6_S1
+model=NT
+material_evidence=NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED
+source=ZNO_300K_CANDIDATE_V2; plan=F1_20260906
+heat_source=E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE
+transport_discretization=HEX20_CONSISTENT_SUPG_EXPERIMENTAL
+supg_scale= 1.0000000000000000E+000
+supg_directional_tau=T
+zero_source_heat_reference_W= 7.0944381353519994E-003
+restart_nodes_file=C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_FIN~1/TRANSF~1/nodes.csv
+continuation_path=FULL_JOULE_DURING_VOLTAGE

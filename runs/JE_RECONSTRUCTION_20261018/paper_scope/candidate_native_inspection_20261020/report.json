@@ -1,0 +1,173 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\ARC_JE_FINAL_20261012\\TPSolverV2.exe",
+  "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92",
+  "inspection_count": 18,
+  "all_inspect_exit_zero": false,
+  "results": [
+    {
+      "case_id": "R03_LQ_V000",
+      "exit_code": 1,
+      "seconds": 0.03200000000651926,
+      "input_sha256": "cb3cb82795e25ba1e4c018449a72ca0e07047a4e518ab6fe2250817eee1f7828",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V000\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V005",
+      "exit_code": 1,
+      "seconds": 0.015000000013969839,
+      "input_sha256": "aa94cee83c25f4dfaa1e54f89ddf3cf7683faa05bc45bb0203d79e99945c6fb8",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V005\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V010",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "debdc522afa06ea29328c6297e74291cb6b81d1ac2cc7cfa5736e8b8456c5e7a",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V010\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V015",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "3869b0b09318fe22366690ae7fafe4ad990b01d5eee2712f823838ee491f0c6b",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V015\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V020",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "88864ad71f4f1b059e9b7c00875b113f710af7d7d70e589535f096a06e8a2bfb",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V020\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V025",
+      "exit_code": 1,
+      "seconds": 0.031000000017229468,
+      "input_sha256": "21adaebee03b84a5123343209104ee063b6000afb7c992755102e0e67c0f079f",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V025\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V030",
+      "exit_code": 1,
+      "seconds": 0.01600000000325963,
+      "input_sha256": "540d3f662349f798d263971b3154b5b2b6d5cf133b00770b3db5884df05810d8",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V030\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V035",
+      "exit_code": 1,
+      "seconds": 0.03200000000651926,
+      "input_sha256": "162e0b919a60d819648b259722904b6353f2c17256bd28d813df7e5a4c37ad17",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V035\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V040",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "30e50dce1e59844f10b827374765ebad4d7c18be875674db097cdfb68a51e2d3",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V040\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V045",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "7420e2e21347199e7beb8423a77ae800d3aa7c472d85c28e97826c75ed1181f3",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V045\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V050",
+      "exit_code": 1,
+      "seconds": 0.015000000013969839,
+      "input_sha256": "1ddf556503ed91b1909003184d65b5f2487c7a077f944577b5387726f530f456",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V050\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V055",
+      "exit_code": 1,
+      "seconds": 0.03200000000651926,
+      "input_sha256": "71146f8cc03d100fa322a4bb2d7ee9e5ac09babddca75bb09db34842dedb2e64",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V055\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V060",
+      "exit_code": 1,
+      "seconds": 0.01600000000325963,
+      "input_sha256": "b7c7fb9862c51d542a32a1469560c9b9ee31ea4bf8a51d51e5b860c21888fbe1",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V060\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V065",
+      "exit_code": 1,
+      "seconds": 0.031000000017229468,
+      "input_sha256": "fcbda7ba9218eda6d827be0acd445e121b158561c55929658feab920f336b91a",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V065\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V070",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "7498b390314ed190f2455167f252052bcecdced40530aaf65b5b3567db8dd951",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V070\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V075",
+      "exit_code": 1,
+      "seconds": 0.046000000002095476,
+      "input_sha256": "82f2bf9024945ed0409b644ab753dc57c0ca35ee4a5be625fcbc4227dcc8e53d",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V075\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_LQ_V080",
+      "exit_code": 1,
+      "seconds": 0.014999999984866008,
+      "input_sha256": "71a7c3a8971f0241f6d5b9270b19bbc13b1eb3140d9ad552e39fa728a40f772f",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_LQ_V080\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    },
+    {
+      "case_id": "R03_NT_V000",
+      "exit_code": 1,
+      "seconds": 0.030999999988125637,
+      "input_sha256": "e20d85cac33fd4667e84cd1a748d7d677e12539e95802bb5a40e6706c92c1594",
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020\\candidate_inputs\\R03_NT_V000\\input.nml",
+      "log_sha256": "0039a5d8a9352a7bf1e1863c5d88f5a3fe3f65865a63e802a2e6f0bd30daf9d1",
+      "solved": false
+    }
+  ],
+  "production_acceptance": false,
+  "native_solves": 0,
+  "note": "Read-only native parser checks of frozen FULL candidate inputs; no mesh selection or numerical certificate. Final half inputs, if selected, need independent preparation."
+}

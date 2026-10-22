@@ -1,0 +1,55 @@
+﻿figure,voltage_V,field,plane,extreme,value,units,x_um,y_um
+01_joule_mid,6,Q,midplane,min,3.7124135382249355e-05,10¹² W/m³,-3.0,3.67394039744206e-16
+01_joule_mid,6,Q,midplane,max,60.434374813035085,10¹² W/m³,-5.510910596163089e-16,-3.0
+01_joule_mid,7,Q,midplane,min,8.657825303239209e-05,10¹² W/m³,-3.0,3.67394039744206e-16
+01_joule_mid,7,Q,midplane,max,81.37474618361792,10¹² W/m³,-5.510910596163089e-16,-3.0
+01_joule_mid,8,Q,midplane,min,0.00017222846576530324,10¹² W/m³,-3.0,3.67394039744206e-16
+01_joule_mid,8,Q,midplane,max,105.03598480252236,10¹² W/m³,-5.510910596163089e-16,-3.0
+02_potential_mid,6,phi,midplane,min,-6.0,V,10.0,0.0
+02_potential_mid,6,phi,midplane,max,0.0,V,-10.0,10.0
+02_potential_mid,7,phi,midplane,min,-7.0,V,10.0,0.0
+02_potential_mid,7,phi,midplane,max,0.0,V,-10.0,10.0
+02_potential_mid,8,phi,midplane,min,-8.0,V,10.0,0.0
+02_potential_mid,8,phi,midplane,max,0.0,V,-10.0,10.0
+03_electrons_mid,6,dn_percent,midplane,min,-0.12296178882741371,(n/n0 − 1) × 100%,-4.809698831278218,-1.9922424868454616
+03_electrons_mid,6,dn_percent,midplane,max,0.0508988682806466,(n/n0 − 1) × 100%,-3.6808528487531285,-2.33026802689202
+03_electrons_mid,7,dn_percent,midplane,min,-0.15115324491029591,(n/n0 − 1) × 100%,-4.809698831278217,1.992242486845463
+03_electrons_mid,7,dn_percent,midplane,max,0.059512784719051304,(n/n0 − 1) × 100%,-3.6808528487531285,-2.33026802689202
+03_electrons_mid,8,dn_percent,midplane,min,-0.18031530498491266,(n/n0 − 1) × 100%,-4.809698831278217,1.992242486845463
+03_electrons_mid,8,dn_percent,midplane,max,0.06702903977064967,(n/n0 − 1) × 100%,-3.720051013116376,-2.2285907387678066
+04_holes_mid,6,dp_percent,midplane,min,-26.168310404938456,(p/p0 − 1) × 100%,3.5,0.0
+04_holes_mid,6,dp_percent,midplane,max,1.8832323829794717,(p/p0 − 1) × 100%,-2.321078009244842,2.321078009244842
+04_holes_mid,7,dp_percent,midplane,min,-29.677924049238246,(p/p0 − 1) × 100%,3.5,0.0
+04_holes_mid,7,dp_percent,midplane,max,1.563198832892554,(p/p0 − 1) × 100%,-2.321078009244842,2.321078009244842
+04_holes_mid,8,dp_percent,midplane,min,-32.6270016755674,(p/p0 − 1) × 100%,3.5,0.0
+04_holes_mid,8,dp_percent,midplane,max,1.714180374205032,(p/p0 − 1) × 100%,-8.750000000000002,5.227147993988715
+05_total_stress_mid,6,vm,midplane,min,0.022682150005554052,MPa,7.313303764959915,-9.83129135711657
+05_total_stress_mid,6,vm,midplane,max,3.283320669663467,MPa,-4.14213562373095,10.0
+05_total_stress_mid,7,vm,midplane,min,0.030228796010412628,MPa,7.3133037649599215,9.83129135711657
+05_total_stress_mid,7,vm,midplane,max,4.387383956002464,MPa,-4.14213562373095,10.0
+05_total_stress_mid,8,vm,midplane,min,0.038597433886532966,MPa,7.3133037649599215,9.83129135711657
+05_total_stress_mid,8,vm,midplane,max,5.614122706336338,MPa,-4.14213562373095,10.0
+06_temperature_mid,6,theta,midplane,min,0.0,K,10.0,0.0
+06_temperature_mid,6,theta,midplane,max,14.170891400350788,K,3.980102097228898e-16,6.500000000000001
+06_temperature_mid,7,theta,midplane,min,0.0,K,10.0,0.0
+06_temperature_mid,7,theta,midplane,max,18.98505145930832,K,3.980102097228898e-16,6.500000000000001
+06_temperature_mid,8,theta,midplane,min,0.0,K,10.0,0.0
+06_temperature_mid,8,theta,midplane,max,24.364575261573695,K,3.0616169978683826e-16,5.0
+07_electrons_bottom,6,dn_percent,bottom,min,0.0,(n/n0 − 1) × 100%,10.0,0.0
+07_electrons_bottom,6,dn_percent,bottom,max,132.6281332994556,(n/n0 − 1) × 100%,5.817072295949927e-16,9.5
+07_electrons_bottom,7,dn_percent,bottom,min,0.0,(n/n0 − 1) × 100%,10.0,0.0
+07_electrons_bottom,7,dn_percent,bottom,max,192.63469844895025,(n/n0 − 1) × 100%,5.817072295949927e-16,9.5
+07_electrons_bottom,8,dn_percent,bottom,min,0.0,(n/n0 − 1) × 100%,10.0,0.0
+07_electrons_bottom,8,dn_percent,bottom,max,268.6421118874385,(n/n0 − 1) × 100%,5.817072295949927e-16,9.5
+08_holes_top,6,dp_percent,top,min,0.0,(p/p0 − 1) × 100%,10.0,0.0
+08_holes_top,6,dp_percent,top,max,197.94024743722628,(p/p0 − 1) × 100%,5.817072295949927e-16,9.5
+08_holes_top,7,dp_percent,top,min,0.0,(p/p0 − 1) × 100%,10.0,0.0
+08_holes_top,7,dp_percent,top,max,369.69354068861963,(p/p0 − 1) × 100%,5.817072295949927e-16,9.5
+08_holes_top,8,dp_percent,top,min,0.0,(p/p0 − 1) × 100%,10.0,0.0
+08_holes_top,8,dp_percent,top,max,714.034435484284,(p/p0 − 1) × 100%,5.817072295949927e-16,9.5
+09_thermal_term_mid,6,thermal_xx,midplane,min,-23.912628180847737,MPa,3.980102097228898e-16,6.500000000000001
+09_thermal_term_mid,6,thermal_xx,midplane,max,-0.0,MPa,10.0,0.0
+09_thermal_term_mid,7,thermal_xx,midplane,min,-32.03626812985544,MPa,3.980102097228898e-16,6.500000000000001
+09_thermal_term_mid,7,thermal_xx,midplane,max,-0.0,MPa,10.0,0.0
+09_thermal_term_mid,8,thermal_xx,midplane,min,-41.11392943141674,MPa,3.0616169978683826e-16,5.0
+09_thermal_term_mid,8,thermal_xx,midplane,max,-0.0,MPa,10.0,0.0

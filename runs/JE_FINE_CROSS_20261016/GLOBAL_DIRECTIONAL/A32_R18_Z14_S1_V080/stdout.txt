@@ -1,0 +1,48 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=35392, elements=8064
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  7.0378E-05,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.7317E-08,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.5737E-12,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  7.0740E-16,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.2984E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 8.0000000000000000E+000
+hole_radius_m= 3.0000000000000001E-006
+ring_width_m= 4.9999999999999998E-007
+minimum_jacobian= 2.5739165194581568E-024
+total_volume_m3= 3.7172575357024360E-016
+maximum_stage_balance= 2.6896789967637699E-014
+maximum_accepted_residual= 6.2983836938935598E-016
+maximum_accepted_update= 5.3972127365948513E-012
+final_voltage_factor= 1.0000000000000000E+000
+final_joule_factor= 1.0000000000000000E+000
+joule_W= 9.8563473368822666E-003
+total_current_work_W= 9.8563473368822666E-003
+diffusion_work_W=-3.1062020775052546E-003
+absolute_diffusion_work_W= 3.1065675643572590E-003
+terminal_power_W= 9.7765853581960639E-003
+heat_out_W= 9.8551256155898683E-003
+heat_balance_relative= 1.2395274340896870E-004
+electron_balance_relative= 5.3598999436805914E-006
+hole_balance_diagnostic= 3.9545243763601814E-005
+joule_quadrature_4_5_relative= 1.2578845206650771E-009
+electron_right_A= 1.2219515819909055E-003
+hole_right_A= 6.9704560765738207E-057
+ring_volume_m3= 1.0210144544087083E-017
+ring_Q_mean_W_m3= 4.4398311917359328E+013
+ring_Q_p95_W_m3= 9.4002512433555359E+013
+ring_E_mean_V_m= 4.9891235666713445E+005
+ring_abs_n_relative_mean= 3.9088586147099542E-002
+ring_abs_p_relative_mean= 8.7992524213148210E-002
+ring_theta_mean_K= 2.0347030311275471E+001
+ring_displacement_mean_m= 9.0612081708126560E-010
+E_p95_V_m= 6.1602533557099057E+005
+E_above_1e6_volume_fraction= 1.6846814212664596E-002
+theta_max_K= 2.4258501666531913E+001
+maximum_abs_n_relative= 2.5204269491656479E+000
+maximum_abs_p_relative= 6.7461258033495524E+000
+displacement_max_m= 1.8103374024662082E-009
+minimum_mu_n_ratio= 8.5597240941290187E-001
+stress_von_mises_max_Pa= 6.2883516446422013E+006
+case_acceptance=PASS_NOT_MESH_ACCEPTANCE

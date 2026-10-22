@@ -1,0 +1,5 @@
+{
+  "note": "F1早期H0三例缺少当时逐case provenance.json；metadata_correction.json中的环境是后补回溯，未补造实时记录。因此这些case的完整运行来源状态为PENDING，归档输入/网格/二进制及54个源码文件哈希匹配为已完成子项。F1 H1有当时provenance；R23/R25各58个归档源码文件匹配。没有缺少两份源码的情况。",
+  "metadata_path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\metadata_correction.json",
+  "metadata_sha256": "d2ca58ababc1586ad757a6a676c61d5750b6c7a1ad6d4773f93836a96572f954"
+}

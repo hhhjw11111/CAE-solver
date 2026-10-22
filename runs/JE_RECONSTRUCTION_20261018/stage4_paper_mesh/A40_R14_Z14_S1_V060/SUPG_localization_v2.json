@@ -1,0 +1,39 @@
+{
+  "run": "A40_R14_Z14_S1_V060",
+  "supg_scale": 1.0,
+  "weighted_SUPG_W": 2.9069254588169925e-05,
+  "positive_local_work_W": 3.287704056135138e-05,
+  "negative_local_work_W": -3.8077859731817348e-06,
+  "absolute_local_work_W": 3.6684826534533114e-05,
+  "signed_to_absolute_ratio": 0.7924053984773705,
+  "direction_x_y_z_W": [
+    2.8394903520235178e-05,
+    6.687087609719946e-07,
+    5.64230696261387e-09
+  ],
+  "direction_x_y_z_percent": [
+    97.68019139985384,
+    2.300398721761973,
+    0.019409878383706728
+  ],
+  "zones_W": {
+    "z_surface_0_10nm": 1.7596974731116682e-10,
+    "z_surface_10_50nm": 4.680731811638608e-08,
+    "z_surface_50_100nm": 1.667883409341204e-06,
+    "z_interior_over_100nm": 2.735438789096499e-05,
+    "hole_distance_under_0.5um": 7.631528876499933e-08,
+    "contact_distance_under_0.5um": 7.985677426580251e-08
+  },
+  "zones_percent_of_signed_total": {
+    "z_surface_0_10nm": 0.0006053466103763795,
+    "z_surface_10_50nm": 0.16102001506235689,
+    "z_surface_50_100nm": 5.7376201521863885,
+    "z_interior_over_100nm": 94.10075448614076,
+    "hole_distance_under_0.5um": 0.2625292249360145,
+    "contact_distance_under_0.5um": 0.27471214999197524
+  },
+  "note": "Signed contributions; hole and contact zones overlap the thickness partition. Direction is an algebraic work decomposition, not an independent mesh-error estimator.",
+  "mesh_sha256": "34362542219e0dd56e1b55de1316618fc6ff7f3b7c5fc2d5d20b04f7d97c813c",
+  "nodes_sha256": "654dae7792790b8678a415679098919aceebb939dc2f0cfca033d9fa61c5d7b0",
+  "script_sha256": "a64ca5e0046092f27f3abcc7dbd117aba5a8d0099bdc3c773d4e263aa97c5b48"
+}

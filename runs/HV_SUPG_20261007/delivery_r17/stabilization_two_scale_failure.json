@@ -1,0 +1,106 @@
+{
+  "scope": "TWO_COMPLETED_SCALES_DISPROVE_TOLERANCE_NOT_A_COMPLETE_THREE_SCALE_STUDY",
+  "scales": [
+    0.5,
+    1.0
+  ],
+  "comparisons": {
+    "joule_W": {
+      "values": [
+        0.007814940082283102,
+        0.007820298730018367
+      ],
+      "relative_span": 0.0006852228949638336,
+      "limit": 0.01,
+      "passed": true
+    },
+    "theta_max_K": {
+      "values": [
+        20.919409523898025,
+        20.932762228111926
+      ],
+      "relative_span": 0.0006378854385480283,
+      "limit": 0.01,
+      "passed": true
+    },
+    "electron_right_A": {
+      "values": [
+        0.000936736456067684,
+        0.0009274448269468466
+      ],
+      "relative_span": 0.009919149682550638,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_theta_mean_K": {
+      "values": [
+        16.898922992740786,
+        16.919054940556684
+      ],
+      "relative_span": 0.001189897892443128,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_E_mean_V_m": {
+      "values": [
+        376892.1930346718,
+        376317.85085125227
+      ],
+      "relative_span": 0.0015238898391475182,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_Q_mean_W_m3": {
+      "values": [
+        33567764296486.75,
+        33461314188109.594
+      ],
+      "relative_span": 0.003171200424220611,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_abs_n_relative_mean": {
+      "values": [
+        0.03251019238425573,
+        0.032558690998000135
+      ],
+      "relative_span": 0.0014895750491745032,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_abs_p_relative_mean": {
+      "values": [
+        0.06535741348391351,
+        0.07685820394503108
+      ],
+      "relative_span": 0.14963647172061068,
+      "limit": 0.01,
+      "passed": false
+    },
+    "ring_Q_p95_W_m3": {
+      "values": [
+        58283132113537.664,
+        57916676273345.76
+      ],
+      "relative_span": 0.00628751110146306,
+      "limit": 0.01,
+      "passed": true
+    },
+    "E_p95_V_m": {
+      "values": [
+        468130.7174208549,
+        466648.71419797913
+      ],
+      "relative_span": 0.003165789314234265,
+      "limit": 0.01,
+      "passed": true
+    }
+  },
+  "sensitivity_requirement_satisfied": false,
+  "scale2_complete": false,
+  "complete_quantitative_0_8V": false,
+  "source_runs": [
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale05_V060",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY1_Z3_V060"
+  ]
+}

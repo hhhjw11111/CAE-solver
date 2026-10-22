@@ -1,0 +1,981 @@
+{
+  "rows": [
+    {
+      "run": "A32_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "kind": "baseline",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "SUPG": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "seconds": 1040.078000000096,
+      "timed_out": false,
+      "JE_mW": 5.789757268226774,
+      "boundary_mW": 5.746731238711829,
+      "theta_K": 14.096960640474379,
+      "electrode_mA": 0.9576825190095023,
+      "VM_MPa": 3.6405641088699547,
+      "native_residual": 4.113621799544047e-16,
+      "native_update": 6.562093079873363e-10,
+      "ring_n": 0.022760719068228547,
+      "ring_p": 0.0499673679475122,
+      "gap_percent": 0.7431404725480883,
+      "electrode_gap_percent": 0.7541275419185399,
+      "SUPG_share_percent": 99.84257017561835,
+      "SUPG_mW": 0.0429582937197728,
+      "free_residual_A": 7.860806481142243e-16
+    },
+    {
+      "run": "A32_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "kind": "baseline",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "SUPG": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "seconds": 1398.7189999999246,
+      "timed_out": false,
+      "JE_mW": 9.857511968552192,
+      "boundary_mW": 9.76666038600434,
+      "theta_K": 24.23465436107807,
+      "electrode_mA": 1.2206924565936579,
+      "VM_MPa": 6.280150242034431,
+      "native_residual": 6.527234873510851e-16,
+      "native_update": 3.306104597908205e-12,
+      "ring_n": 0.03906951977193403,
+      "ring_p": 0.09116900467999908,
+      "gap_percent": 0.9216482094756874,
+      "electrode_gap_percent": 0.9330175413136718,
+      "SUPG_share_percent": 99.68657527043295,
+      "SUPG_mW": 0.09056683123007751,
+      "free_residual_A": 1.8913497978137906e-15
+    },
+    {
+      "run": "A32_R14_Z14_S0.5_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S0.5_V060",
+      "kind": "SUPG",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "SUPG": 0.5,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "seconds": 1235.5470000000205,
+      "timed_out": false,
+      "JE_mW": 5.7893354904955014,
+      "boundary_mW": 5.778722716125766,
+      "theta_K": 14.107740312600754,
+      "electrode_mA": 0.963071365775791,
+      "VM_MPa": 3.643049123248811,
+      "native_residual": 3.89617081507058e-16,
+      "native_update": 1.8434837017573338e-12,
+      "ring_n": 0.02275538435605332,
+      "ring_p": 0.040766247268867316,
+      "gap_percent": 0.183315933212425,
+      "electrode_gap_percent": 0.18840324348771598,
+      "SUPG_share_percent": 99.52373364862316,
+      "SUPG_mW": 0.010562229307874715,
+      "free_residual_A": 8.701143422372871e-16
+    },
+    {
+      "run": "A32_R14_Z14_S0.5_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S0.5_V080",
+      "kind": "SUPG",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "SUPG": 0.5,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "seconds": 1173.109000000055,
+      "timed_out": false,
+      "JE_mW": 9.856218022019092,
+      "boundary_mW": 9.833715262687264,
+      "theta_K": 24.266649107620424,
+      "electrode_mA": 1.2291746787471722,
+      "VM_MPa": 6.288021395672856,
+      "native_residual": 6.24893298266209e-16,
+      "native_update": 1.7577668988125383e-12,
+      "ring_n": 0.03907225613043391,
+      "ring_p": 0.08433066405832623,
+      "gap_percent": 0.22831028388842395,
+      "electrode_gap_percent": 0.23153497610467114,
+      "SUPG_share_percent": 99.15623269881857,
+      "SUPG_mW": 0.022312888421502405,
+      "free_residual_A": 1.1851465522150242e-15
+    },
+    {
+      "run": "A32_R16_Z14_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R16_Z14_S1_V060",
+      "kind": "radial",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 16,
+      "thickness": 14,
+      "SUPG": 1.0,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 23.39000000001397,
+      "timed_out": false
+    },
+    {
+      "run": "A32_R16_Z14_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R16_Z14_S1_V080",
+      "kind": "radial",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 16,
+      "thickness": 14,
+      "SUPG": 1.0,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 23.23499999998603,
+      "timed_out": false
+    },
+    {
+      "run": "A32_R18_Z14_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R18_Z14_S1_V060",
+      "kind": "radial",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 18,
+      "thickness": 14,
+      "SUPG": 1.0,
+      "state": "PENDING_OR_DEPENDENCY_BLOCKED"
+    },
+    {
+      "run": "A32_R18_Z14_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R18_Z14_S1_V080",
+      "kind": "radial",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 18,
+      "thickness": 14,
+      "SUPG": 1.0,
+      "state": "PENDING_OR_DEPENDENCY_BLOCKED"
+    },
+    {
+      "run": "A32_R14_Z16_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z16_S1_V060",
+      "kind": "thickness",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 16,
+      "SUPG": 1.0,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 23.43799999996554,
+      "timed_out": false
+    },
+    {
+      "run": "A32_R14_Z16_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z16_S1_V080",
+      "kind": "thickness",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 16,
+      "SUPG": 1.0,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 24.45299999997951,
+      "timed_out": false
+    },
+    {
+      "run": "A32_R14_Z18_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z18_S1_V060",
+      "kind": "thickness",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 18,
+      "SUPG": 1.0,
+      "state": "PENDING_OR_DEPENDENCY_BLOCKED"
+    },
+    {
+      "run": "A32_R14_Z18_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z18_S1_V080",
+      "kind": "thickness",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 18,
+      "SUPG": 1.0,
+      "state": "PENDING_OR_DEPENDENCY_BLOCKED"
+    },
+    {
+      "run": "A32_R14_Z14_S2_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V060",
+      "kind": "SUPG",
+      "voltage_V": 6,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "SUPG": 2.0,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 1670.530999999959,
+      "timed_out": false
+    },
+    {
+      "run": "A32_R14_Z14_S2_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V080",
+      "kind": "SUPG",
+      "voltage_V": 8,
+      "angular": 32,
+      "radial": 14,
+      "thickness": 14,
+      "SUPG": 2.0,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 3662.686999999918,
+      "timed_out": false
+    }
+  ],
+  "fields": {
+    "A32_R14_Z14_S0.5_V060": {
+      "runs": [
+        "A32_S1_V060",
+        "A32_R14_Z14_S0.5_V060"
+      ],
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0012801660520084246,
+          "rms_relative": 0.0005454659930716516,
+          "normalization": 6.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.0015479338228804173,
+          "rms_relative": 0.0006308250893677233,
+          "normalization": 14.10819345194614,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.00041756914829807875,
+          "rms_relative": 0.00019762952263297642,
+          "normalization": 1.023851427470114e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.00078317446375061,
+          "rms_relative": 0.00038556812368773543,
+          "normalization": 1.023851427470114e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 8.895189263959966e-05,
+          "rms_relative": 2.697796381260673e-05,
+          "normalization": 1.023851427470114e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.0013854029487266435,
+          "rms_relative": 0.000229285467688174,
+          "normalization": 1.2785564204421256,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.06399945745210003,
+          "rms_relative": 0.007402229394010221,
+          "normalization": 2.0010730977181246,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "nodes_hashes": [
+        "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+        "d4d3998453781fd81c541bc7de9fb990b196b864526b0b2e848475649fc01493"
+      ],
+      "scope": "same-node field shape; 2% existing tolerance",
+      "carrier_locations": {
+        "eta_n": {
+          "maximum_difference_node": 1659,
+          "xyz_um": [
+            -5.0,
+            6.123233995736765e-16,
+            -0.5
+          ],
+          "source_perturbation_at_node": 0.5874304199098246,
+          "target_perturbation_at_node": 0.5856591040748307,
+          "maximum_absolute_perturbation_difference": 0.0017713158349939029,
+          "target_density_min_m3": 1.9440069881213628e+22,
+          "target_density_max_m3": 1.3671338522652753e+23
+        },
+        "eta_p": {
+          "maximum_difference_node": 25986,
+          "xyz_um": [
+            3.5,
+            0.0,
+            0.5
+          ],
+          "source_perturbation_at_node": 0.5076632164843702,
+          "target_perturbation_at_node": 0.6357308090603233,
+          "maximum_absolute_perturbation_difference": 0.12806759257595313,
+          "target_density_min_m3": 6.05564231396348e-31,
+          "target_density_max_m3": 4.2065041253015716e-30
+        }
+      }
+    },
+    "A32_R14_Z14_S0.5_V080": {
+      "runs": [
+        "A32_S1_V080",
+        "A32_R14_Z14_S0.5_V080"
+      ],
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0015383864320979712,
+          "rms_relative": 0.0006626939407966748,
+          "normalization": 8.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.001693346284302933,
+          "rms_relative": 0.0008189996553541327,
+          "normalization": 24.26744937209601,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.00043969704516427484,
+          "rms_relative": 0.0002330061579018396,
+          "normalization": 1.7582255424612728e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0008649986942957294,
+          "rms_relative": 0.0004414238535247542,
+          "normalization": 1.7582255424612728e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 8.720634927406965e-05,
+          "rms_relative": 2.698991997707433e-05,
+          "normalization": 1.7582255424612728e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.0017726131466433903,
+          "rms_relative": 0.0002781470108361058,
+          "normalization": 2.5823825577918775,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.0362602779120292,
+          "rms_relative": 0.003239653158551614,
+          "normalization": 6.927751322510417,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "nodes_hashes": [
+        "6075cf6f50838008c7692165ada50e6b3b252310c7b12f84ec558ac67c8f1574",
+        "9ffe68a5a52480b8190deac14601d9480482e48aa75f63d253623dbec8fd4ef5"
+      ],
+      "scope": "same-node field shape; 2% existing tolerance",
+      "carrier_locations": {
+        "eta_n": {
+          "maximum_difference_node": 816,
+          "xyz_um": [
+            0.3036571007409793,
+            3.083082283230466,
+            -0.5
+          ],
+          "source_perturbation_at_node": 2.1175908233660556,
+          "target_perturbation_at_node": 2.12216838863766,
+          "maximum_absolute_perturbation_difference": 0.004577565271604467,
+          "target_density_min_m3": 6.832880554686752e+21,
+          "target_density_max_m3": 2.1494295346751265e+23
+        },
+        "eta_p": {
+          "maximum_difference_node": 25986,
+          "xyz_um": [
+            3.5,
+            0.0,
+            0.5
+          ],
+          "source_perturbation_at_node": 1.3005855673679045,
+          "target_perturbation_at_node": 1.55178775562756,
+          "maximum_absolute_perturbation_difference": 0.25120218825965557,
+          "target_density_min_m3": 3.743159057987065e-31,
+          "target_density_max_m3": 1.1112064770385436e-29
+        }
+      }
+    }
+  },
+  "mesh": {
+    "radial_V6": {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": false,
+          "mesh_pass": false,
+          "status": "SOLVE_OR_FLUX_FAIL",
+          "changes": {}
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [
+        "MISSING_MANIFEST"
+      ],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    "thickness_V6": {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": false,
+          "mesh_pass": false,
+          "status": "SOLVE_OR_FLUX_FAIL",
+          "changes": {}
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [
+        "MISSING_MANIFEST"
+      ],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    "radial_V8": {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": false,
+          "mesh_pass": false,
+          "status": "SOLVE_OR_FLUX_FAIL",
+          "changes": {}
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [
+        "MISSING_MANIFEST"
+      ],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    "thickness_V8": {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": false,
+          "mesh_pass": false,
+          "status": "SOLVE_OR_FLUX_FAIL",
+          "changes": {}
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [
+        "MISSING_MANIFEST"
+      ],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    }
+  },
+  "SUPG": {
+    "6": {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S0.5_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V060"
+      ],
+      "errors": [
+        "A32_R14_Z14_S2_V060:INCOMPLETE_EVIDENCE:FileNotFoundError",
+        "A32_R14_Z14_S2_V060:SOLVE_OR_FLUX_FAIL"
+      ],
+      "comparisons": {},
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    },
+    "8": {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S0.5_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V080"
+      ],
+      "errors": [
+        "A32_R14_Z14_S2_V080:INCOMPLETE_EVIDENCE:FileNotFoundError",
+        "A32_R14_Z14_S2_V080:SOLVE_OR_FLUX_FAIL"
+      ],
+      "comparisons": {},
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    }
+  },
+  "SUPG_pairs": {
+    "V6_S0.5": {
+      "joule_W": {
+        "values": [
+          0.005789757268226774,
+          0.0057893354904955015
+        ],
+        "relative_span": 7.284894888199197e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "values": [
+          14.096960640474379,
+          14.107740312600754
+        ],
+        "relative_span": 0.0007640962966086871,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "values": [
+          0.0009576825190095023,
+          0.000963071365775791
+        ],
+        "relative_span": 0.005595480208206299,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "values": [
+          11.844666314040293,
+          11.846434759439848
+        ],
+        "relative_span": 0.00014928081194609926,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "values": [
+          359584.51185802015,
+          360442.7670873446
+        ],
+        "relative_span": 0.002381113751455787,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "values": [
+          25628696035988.555,
+          25763930884329.523
+        ],
+        "relative_span": 0.005248999034662955,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "values": [
+          0.022760719068228547,
+          0.02275538435605332
+        ],
+        "relative_span": 0.0002343824094149285,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "values": [
+          0.0499673679475122,
+          0.040766247268867316
+        ],
+        "relative_span": 0.18414259258782897,
+        "limit": 0.01,
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "values": [
+          53906367727805.4,
+          54212537228867.82
+        ],
+        "relative_span": 0.005647577418667441,
+        "limit": 0.01,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "values": [
+          433114.40487075277,
+          434358.4743020047
+        ],
+        "relative_span": 0.00286415369989286,
+        "limit": 0.01,
+        "passed": true
+      }
+    },
+    "V8_S0.5": {
+      "joule_W": {
+        "values": [
+          0.009857511968552193,
+          0.009856218022019093
+        ],
+        "relative_span": 0.0001312650227793376,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "values": [
+          24.23465436107807,
+          24.266649107620424
+        ],
+        "relative_span": 0.001318465784066791,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "values": [
+          0.0012206924565936578,
+          0.0012291746787471722
+        ],
+        "relative_span": 0.006900745923402651,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "values": [
+          20.33386417407321,
+          20.342084009349183
+        ],
+        "relative_span": 0.0004040802934544677,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "values": [
+          497961.8547504562,
+          499425.6331898509
+        ],
+        "relative_span": 0.0029309237294159545,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "values": [
+          44230215046959.07,
+          44522874959909.74
+        ],
+        "relative_span": 0.006573248318177905,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "values": [
+          0.03906951977193403,
+          0.03907225613043391
+        ],
+        "relative_span": 7.003328629785347e-05,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "values": [
+          0.09116900467999908,
+          0.08433066405832623
+        ],
+        "relative_span": 0.07500729711457588,
+        "limit": 0.01,
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "values": [
+          93640947539874.6,
+          94318004382182.25
+        ],
+        "relative_span": 0.00717844749518004,
+        "limit": 0.01,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "values": [
+          616638.0952840671,
+          618731.2418026675
+        ],
+        "relative_span": 0.003382965619292221,
+        "limit": 0.01,
+        "passed": true
+      }
+    }
+  },
+  "input_checks": {
+    "A32_S1_V060": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_S1_V080": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R14_Z14_S0.5_V060": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R14_Z14_S0.5_V080": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R16_Z14_S1_V060": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R16_Z14_S1_V080": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R14_Z16_S1_V060": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R14_Z16_S1_V080": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R14_Z14_S2_V060": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    },
+    "A32_R14_Z14_S2_V080": {
+      "input_only_declared_changes": true,
+      "executable_matches": true,
+      "mesh_matches": true
+    }
+  },
+  "prior_files_unchanged": 301,
+  "fully_validated": false,
+  "contract": {
+    "jobs": [
+      {
+        "name": "A32_R14_Z14_S0.5_V060",
+        "v": 6,
+        "scale": 0.5,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+        "mapping": null,
+        "counts": [
+          32,
+          14,
+          14
+        ],
+        "kind": "SUPG"
+      },
+      {
+        "name": "A32_R14_Z14_S0.5_V080",
+        "v": 8,
+        "scale": 0.5,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+        "mapping": null,
+        "counts": [
+          32,
+          14,
+          14
+        ],
+        "kind": "SUPG"
+      },
+      {
+        "name": "A32_R16_Z14_S1_V060",
+        "v": 6,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_16\\H1_XY1_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R16_Z14_S1_V060",
+        "counts": [
+          32,
+          16,
+          14
+        ],
+        "kind": "radial",
+        "xy": 1,
+        "z": 2
+      },
+      {
+        "name": "A32_R16_Z14_S1_V080",
+        "v": 8,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_16\\H1_XY1_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R16_Z14_S1_V080",
+        "counts": [
+          32,
+          16,
+          14
+        ],
+        "kind": "radial",
+        "xy": 1,
+        "z": 2
+      },
+      {
+        "name": "A32_R18_Z14_S1_V060",
+        "v": 6,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_18\\H1_XY2_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R16_Z14_S1_V060",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R18_Z14_S1_V060",
+        "counts": [
+          32,
+          18,
+          14
+        ],
+        "kind": "radial",
+        "xy": 2,
+        "z": 2
+      },
+      {
+        "name": "A32_R18_Z14_S1_V080",
+        "v": 8,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_radial_18\\H1_XY2_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R16_Z14_S1_V080",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R18_Z14_S1_V080",
+        "counts": [
+          32,
+          18,
+          14
+        ],
+        "kind": "radial",
+        "xy": 2,
+        "z": 2
+      },
+      {
+        "name": "A32_R14_Z16_S1_V060",
+        "v": 6,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_16\\H1_XY0_Z3.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z16_S1_V060",
+        "counts": [
+          32,
+          14,
+          16
+        ],
+        "kind": "thickness",
+        "xy": 0,
+        "z": 3
+      },
+      {
+        "name": "A32_R14_Z16_S1_V080",
+        "v": 8,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_16\\H1_XY0_Z3.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z16_S1_V080",
+        "counts": [
+          32,
+          14,
+          16
+        ],
+        "kind": "thickness",
+        "xy": 0,
+        "z": 3
+      },
+      {
+        "name": "A32_R14_Z18_S1_V060",
+        "v": 6,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_18\\H1_XY0_Z4.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z16_S1_V060",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z18_S1_V060",
+        "counts": [
+          32,
+          14,
+          18
+        ],
+        "kind": "thickness",
+        "xy": 0,
+        "z": 4
+      },
+      {
+        "name": "A32_R14_Z18_S1_V080",
+        "v": 8,
+        "scale": 1.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_18\\H1_XY0_Z4.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z16_S1_V080",
+        "mapping": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z18_S1_V080",
+        "counts": [
+          32,
+          14,
+          18
+        ],
+        "kind": "thickness",
+        "xy": 0,
+        "z": 4
+      },
+      {
+        "name": "A32_R14_Z14_S2_V060",
+        "v": 6,
+        "scale": 2.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+        "mapping": null,
+        "counts": [
+          32,
+          14,
+          14
+        ],
+        "kind": "SUPG"
+      },
+      {
+        "name": "A32_R14_Z14_S2_V080",
+        "v": 8,
+        "scale": 2.0,
+        "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+        "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+        "mapping": null,
+        "counts": [
+          32,
+          14,
+          14
+        ],
+        "kind": "SUPG"
+      }
+    ],
+    "baseline": [
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080"
+    ],
+    "model": "JE_CURRENT_WORK_DIAGNOSTIC_ZNO_NT",
+    "heat_source_unchanged": true,
+    "source_and_executable_unchanged": true,
+    "threads": 8,
+    "ooc_core_mb": 4000,
+    "wall_time_limit_seconds": 7200,
+    "local_carrier_measure": "exp(eta)-1; maximum absolute difference / maximum absolute perturbation in either field",
+    "field_limit": 0.02,
+    "SUPG_metric_limit": 0.01,
+    "mesh_limits_source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_hv_mesh.py",
+    "power_gap": "(JE_volume - physical_all_exterior_power)/JE_volume; also report electrode-only",
+    "no_new_power_gap_acceptance_threshold": true,
+    "limitations": [
+      "Independent directions, not a jointly refined mesh",
+      "Fine SUPG uses A32/R14/Z14",
+      "JE is a current-work diagnostic, not complete thermodynamic closure"
+    ]
+  }
+}

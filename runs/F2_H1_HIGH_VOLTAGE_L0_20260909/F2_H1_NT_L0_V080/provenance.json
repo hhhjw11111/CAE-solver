@@ -1,0 +1,11 @@
+{
+  "MKL_DYNAMIC": "FALSE",
+  "input_name": "F2_H1_NT_L0_V080",
+  "threads": 8,
+  "storage": "IC",
+  "executable_sha256": "8B23EC17CC129D2C3CFDC91DEDB67D5A4AA174D0107E7BB219233A80D0B5BF01",
+  "KMP_AFFINITY": "granularity=fine,compact,1,0",
+  "started_utc": "2026-09-09T02:59:08.1864209Z",
+  "case": "F2_H1_NT_L0_V080",
+  "input_sha256": "FC2F4894703C08C244BFEA110DE2367E5ABF972DAD869B62D342F02CB92A205C"
+}

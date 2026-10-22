@@ -1,0 +1,38 @@
+[
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+    "sha256": "d47f843a2c2a7b501992cac828a936fe977cdf7fa05958c929ec6d812015985f"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_sweep.py",
+    "sha256": "71970f53df3e29898d68a089ab88988e75de33d0f871592416489a500b132fb3"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_regression.py",
+    "sha256": "d8f966bd70415e968da1160a96f423e79a636efe067be0d4801ccefe2e7ac8bf"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\hv_runtime.py",
+    "sha256": "d18e94f6becd4113856e6f271439373022af2a607198034f26749424d69583ca"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\generate_hv_surface_mesh.py",
+    "sha256": "29bfe2b03c05b2e9a479a5d02d5f5b260dea2c099b248690d73263eb44a6f792"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\generate_hv_half_y.py",
+    "sha256": "45e114b4643b0f4193379f7573f02ea0710306062ad63e2f0b2d7e38249559d1"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\transfer_hv_initial_guess.py",
+    "sha256": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_hv_mesh.py",
+    "sha256": "a02c84a1d1902f82ad7d7795c0c970ac21e209c12345c84e48660085795070f0"
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_hv_stabilization.py",
+    "sha256": "6f3a17c829049d02b7732b94391e30b7b1d1e46f8ac663999e5b40585ce91c58"
+  }
+]

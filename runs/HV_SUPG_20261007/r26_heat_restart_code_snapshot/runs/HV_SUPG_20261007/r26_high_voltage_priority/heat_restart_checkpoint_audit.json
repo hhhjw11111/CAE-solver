@@ -1,0 +1,42 @@
+{
+  "scope": "ONE_ELEMENT_HEAT_RESTART_ALGORITHM_CHECK_ONLY",
+  "native_checkpoint_gates_passed": true,
+  "field_agreement_passed": true,
+  "maximum_scaled_field_difference": 1.589331964646501e-14,
+  "checkpoints": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\heat_restart_native_check_v2\\continuous\\accepted_00005_load.txt",
+      "sha256": "51604c3fc3a44e6b2c687165ef5a3e8f667b584ad29879653df038df0c533e89",
+      "load": {
+        "status": "ALGEBRAIC_CHECKPOINT_NOT_FLUX_OR_MESH_ACCEPTANCE",
+        "applied_voltage_V": -0.5,
+        "voltage_factor": 1.0,
+        "joule_factor": 1.0,
+        "residual": 3.073134930034453e-16,
+        "update": 9.530605451097081e-12
+      }
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\heat_restart_native_check_v2\\resumed\\accepted_00004_load.txt",
+      "sha256": "0211af23d53c2c07d2460de8b4a0beef78a2ca82889572dff3afec09d48d7427",
+      "load": {
+        "status": "ALGEBRAIC_CHECKPOINT_NOT_FLUX_OR_MESH_ACCEPTANCE",
+        "applied_voltage_V": -0.5,
+        "voltage_factor": 1.0,
+        "joule_factor": 1.0,
+        "residual": 3.4508141309611016e-16,
+        "update": 1.8775253811779366e-13
+      }
+    }
+  ],
+  "original_report_sha256": "75742b0e5cb8923ac32b916faec8cc755fbfed0fdeafe6bd0231d149c6722f46",
+  "original_report_preserved": true,
+  "full_case_or_flux_check_passed": false,
+  "exit_codes": [
+    1,
+    1
+  ],
+  "postprocess_failure": "Both plain-plate fixtures return Hole field metric input is invalid after f1_solve=COMPLETE.",
+  "high_voltage_or_mesh_validation": false,
+  "heat_restart_algorithm_check_passed": true
+}

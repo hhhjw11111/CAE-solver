@@ -1,0 +1,20 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\Administrator\Desktop\gemini�޸�\Console3\solver_v2\runs\JE_RECONSTRUCTION_20261018\paper_scope\supplemental_figures\S2_JEGRAD_summary.pdf
+pages: 1
+visible text boxes: 86
+stroke paths: 189
+
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'Analytical diffusion work'
+  text bbox: (77.03031158447266, 65.59732055664062, 156.93032836914062, 73.09732055664062)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'JE volume integral'
+  text bbox: (77.03031158447266, 262.6192626953125, 138.71908569335938, 270.1192626953125)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) �� 'FEM peak'
+  text bbox: (339.27001953125, 54.42544937133789, 373.447509765625, 61.92544937133789)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� 'Order 4 versus order 5'
+  text bbox: (339.27001953125, 273.6973876953125, 414.71368408203125, 281.1973876953125)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) �� 'Integration limit: 1e-10'
+  text bbox: (339.27001953125, 295.9630126953125, 413.4686584472656, 303.4630126953125)
+
+summary: 5 fail, 0 warn, 10 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

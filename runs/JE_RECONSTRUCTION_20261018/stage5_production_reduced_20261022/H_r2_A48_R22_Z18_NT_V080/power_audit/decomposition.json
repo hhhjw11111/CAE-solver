@@ -1,0 +1,14 @@
+{
+  "gap_W": -1.1845507435180591e-08,
+  "gap_relative": -2.2217409651681997e-06,
+  "electrode_gap_relative": -7.013184350293408e-05,
+  "parts": {
+    "quadrature_W": 1.1002514342314806e-09,
+    "SUPG_weighted_W": 9.427635721038687e-07,
+    "reaction_minus_physical_boundary_W": -8.406741157027109e-08,
+    "free_residual_correction_W": -8.716419193951071e-07
+  },
+  "decomposition_remainder_W": -7.902605639645809e-18,
+  "SUPG_fraction_of_gap": -79.58828081133156,
+  "free_residual_max_A": 3.841136994015213e-07
+}

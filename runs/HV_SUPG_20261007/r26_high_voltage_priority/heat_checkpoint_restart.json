@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-08T22:23:05.0814432+08:00",
+  "reason": "Resume from accepted 8 V heat=0.03125 with independently controlled heat increments and resources concentrated on one native solve",
+  "stopped_native": 29376,
+  "stopped_collector": 30396,
+  "native_failure_claim": false,
+  "old_checkpoint": "r26_log_A64_trust_heat_V080/accepted_00002_load.txt",
+  "new_heat_initial_step": 0.125,
+  "new_heat_maximum_step": 0.25,
+  "native_convergence_tolerances_unchanged": true,
+  "original_physics_unchanged": true,
+  "automation_status": "PAUSED",
+  "checkpoint_sha256": "66EEFB7967E38479614E69769B60E268A62827E0EAA2CA0FB2CBEEB4ADCC9E45",
+  "nodes_sha256": "9ADBF0D585D1934960858B4C8E53661C14A22BBE87D56E6223D50C7F7803CCC2"
+}

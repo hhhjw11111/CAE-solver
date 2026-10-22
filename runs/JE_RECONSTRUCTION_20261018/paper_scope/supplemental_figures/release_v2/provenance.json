@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-18T15:57:04.260705+00:00",
+  "scope": "S1_S2_LOG_REUSE_NO_NEW_NATIVE",
+  "python": "3.12.10",
+  "matplotlib": "3.10.9",
+  "numpy": "2.4.6",
+  "executed_candidate_sha256": "ad50431beee4c732268fdf384d503cf4491321212aad568a52131457345fe609",
+  "source_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_paper_supplements_20261018.py": "4153bbba48bc5bf53ec8c0fcafb1080acaef020174a459ab14f9c79b77238680",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_paper_reuse_20261018.py": "df2a60b276309a2365b0c62cf947c5aa45c2b6c03991386e837b52870f7761a5",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\verification_reuse\\acceptance.json": "112721dd832210f1363e9fee2662b35edf37533814f103ce5e6418a3eda8b13c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\contract.json": "cd472680e9e60b8f111e901d93df29d804f55abe67c11fc3913898a4cb3ceb28",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\contract.json": "356f55f1fc87867503de5096ff21064405870f75b4625e4f6e61d735eeb31f43",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\docs\\je_paper_minimal_workflow_20261018.md": "5cdd9e4da9673bfbce53bbca71d849ba44316b4d9037dcd0894e2377a680a9d4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\supplemental_figures\\figure_contract.json": "e52491a3d274f81fb4dc85852662931fabe806e579065f119bc34eabcb3f9d6a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\jegrad_protocol.json": "c43e76b3dce196e690952bd299fc6762f318f7e61a01a117963403b538373acb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\docs\\a1j_production_joule_flux_audit_spec_v1.md": "d0805de21f9294ffa9ce6196ba3399e22fafbaa80541a611d96ffddf7eb0a9e2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\verification\\production_joule_check_m.f90": "5d7edf7974807eaf7ed518603c2c926c7734ebab6ea6d4d1d89696aaf2796b90",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\verification\\je_gradient_check_m.f90": "9c016ac78cdab026d038fc00f0b515fee1fec56c5792b3d1c17070ae0a8c96ea",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\A1JJE_targeted.txt": "2779ed6760223f75799adc82f182c8934c0de9184bd473ff571aafabf716a945",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\JEGRAD_targeted.txt": "a4b4cb08d0d7b983b42e98b20432516c95f9771114e1b68c17cbcdc1f6808c60",
+    "C:\\Users\\Administrator\\.codex\\skills\\nature-figure\\scripts\\audit_panel_alignment.py": "4ed2d6afe9db45aaf6ca26aeb264cfc251ae92b49ee9fbf117d926e1956acf56",
+    "C:\\Users\\Administrator\\.codex\\skills\\nature-figure\\scripts\\audit_pdf_text.py": "0b3d3e30ce9ec7191b8ba6dd053226487ab41594297005afcd127acda3b08281",
+    "C:\\Users\\Administrator\\.codex\\skills\\nature-figure\\scripts\\audit_figure_collisions.py": "4bd020238a9f207c8a67c61d7209cef5959f2995a1d9cd95911d6fa93de7aa36",
+    "C:\\Users\\Administrator\\.codex\\skills\\nature-figure\\scripts\\validate_figure.py": "09694ac0ac4036d4b759e7c9aeb3d4f7a9b525212db50085d2ea0d88b0e49d76"
+  },
+  "source_attempt": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01",
+  "acceptance_revalidated": true,
+  "validation_scope": "Original frozen candidate execution, not later changed A2P/driver source",
+  "qa": [
+    {
+      "check": "source_preflight",
+      "exit_code": 0
+    },
+    {
+      "check": "S1_A1JJE_summary.text_audit",
+      "exit_code": 0
+    },
+    {
+      "check": "S1_A1JJE_summary.collision_audit",
+      "exit_code": 0
+    },
+    {
+      "check": "S2_JEGRAD_summary.text_audit",
+      "exit_code": 0
+    },
+    {
+      "check": "S2_JEGRAD_summary.collision_audit",
+      "exit_code": 0
+    }
+  ]
+}

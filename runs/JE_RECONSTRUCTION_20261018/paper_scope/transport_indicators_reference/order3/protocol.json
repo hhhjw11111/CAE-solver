@@ -1,0 +1,23 @@
+{
+  "scope": "Read-only diagnostic; no new production acceptance threshold",
+  "order": 3,
+  "runs": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080"
+  ],
+  "script_sha256": "96d5b56c5e477f6881315020a79dfb96d93b5f29d940266cb6d697ae9bf8db5f",
+  "definition": {
+    "J": "dx/dxi stored as natural rows / physical columns; G=J^{-1} J^{-T}",
+    "epsilon_E": "1e-12*(kB*T/q)^2*trace(G)",
+    "gdir": "(E.G.E+epsilon_E*trace(G)/3)/(|E|^2+epsilon_E)",
+    "h": "2/sqrt(gdir), meters; matches native directional tau regularization",
+    "Pe": "q*|E|*h/(2*kB*T), common to n/p for scalar Einstein ZnO transport",
+    "zero_field": "E=0 gives Pe=0 and h=2*sqrt(3/trace(G)); retain zero-field points",
+    "carrier_perturbation": "expm1(eta); signed values and absolute amplitude retained",
+    "carrier_gradient": "grad(n/n0-1)=exp(eta_n)*grad(eta_n), similarly p; units 1/m",
+    "statistics": "all positive quadrature weights, volume weighted, no exclusions or clipping"
+  },
+  "completeness": "One row per element per tensor Gauss point; full vectors and scalar samples retained in NPZ",
+  "native_solver_started": false,
+  "production_acceptance": false
+}

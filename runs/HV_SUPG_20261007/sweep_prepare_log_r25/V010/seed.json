@@ -1,0 +1,6 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V005_replay\\nodes.csv",
+  "sha256": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8",
+  "voltage": 0.5,
+  "status": "INITIAL_GUESS_ONLY_REQUIRES_NEW_SOLVE"
+}

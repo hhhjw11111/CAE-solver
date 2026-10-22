@@ -1,0 +1,128 @@
+{
+  "scope": "ORCHESTRATION_ONLY_CHILD_RESULTS_ARE_AUTHORITATIVE",
+  "steps": [
+    {
+      "label": "replay_3",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+        "--exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+        "--mesh",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY1_Z3\\H1_XY1_Z3.mesh",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03",
+        "--voltage",
+        "6.459300885488345",
+        "--seed-nodes",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_inverse_XY1_Z3\\accepted_00003_nodes.csv",
+        "--seed-voltage",
+        "6.459300885488345",
+        "--supg-scale",
+        "1",
+        "--omp-threads",
+        "2",
+        "--mkl-threads",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 48.10900000000038
+    },
+    {
+      "label": "replay_4",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+        "--exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+        "--mesh",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY1_Z3\\H1_XY1_Z3.mesh",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04",
+        "--voltage",
+        "6.372938703023685",
+        "--seed-nodes",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_inverse_XY1_Z3\\accepted_00004_nodes.csv",
+        "--seed-voltage",
+        "6.372938703023685",
+        "--supg-scale",
+        "1",
+        "--omp-threads",
+        "2",
+        "--mkl-threads",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 47.79700000000048
+    },
+    {
+      "label": "scale05_V060",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+        "--exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+        "--mesh",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY1_Z3\\H1_XY1_Z3.mesh",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale05_V060",
+        "--voltage",
+        "6",
+        "--seed-nodes",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY1_Z3_V060\\nodes.csv",
+        "--seed-voltage",
+        "6",
+        "--supg-scale",
+        "0.5",
+        "--omp-threads",
+        "4",
+        "--mkl-threads",
+        "4"
+      ],
+      "exit_code": 0,
+      "seconds": 746.9369999999999
+    },
+    {
+      "label": "scale2_V060",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+        "--exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+        "--mesh",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY1_Z3\\H1_XY1_Z3.mesh",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale2_V060",
+        "--voltage",
+        "6",
+        "--seed-nodes",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY1_Z3_V060\\nodes.csv",
+        "--seed-voltage",
+        "6",
+        "--supg-scale",
+        "2",
+        "--omp-threads",
+        "4",
+        "--mkl-threads",
+        "4"
+      ],
+      "exit_code": 1,
+      "seconds": 881.4380000000001
+    },
+    {
+      "label": "sensitivity",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_hv_stabilization.py",
+        "--runs",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale05_V060",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY1_Z3_V060",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale2_V060",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\stabilization_fine_V060_r17.json"
+      ],
+      "exit_code": 1,
+      "seconds": 0.7190000000009604
+    }
+  ]
+}

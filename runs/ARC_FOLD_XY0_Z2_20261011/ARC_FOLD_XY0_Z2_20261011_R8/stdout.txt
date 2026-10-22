@@ -1,0 +1,11 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  8.0588E-01, joule_factor=  1.0000E+00, residual=  8.7585E-16,
+arc_accepted=1,voltage_factor= 8.0588171803657715E-001
+arc_iteration=0,lambda=  8.059067E-01,residual=  7.251781E-10,update=  1.797693+308,constraint= -6.938894E-18,
+arc_iteration=1,lambda=  8.059024E-01,residual=  2.255570E-15,update=  1.230905E-05,constraint=  5.204170E-17,
+arc_iteration=2,lambda=  8.059024E-01,residual=  8.925522E-16,update=  6.531039E-11,constraint= -6.938894E-17,
+arc_accepted=2,voltage_factor= 8.0590241799881157E-001
+arc_iteration=0,lambda=  8.059270E-01,residual=  1.632875E-09,update=  1.797693+308,constraint= -3.469447E-18,
+arc_iteration=1,lambda=  8.059174E-01,residual=  1.043879E-14,update=  2.777363E-05,constraint= -6.938894E-17,

@@ -1,0 +1,13 @@
+联合最细网格与SUPG最终复核（2026-10-21）
+原门限未改，旧数据未覆盖。
+
+网格三层审计：
+6 V: FAIL；L1→L2 ring_abs_p relative = 6.884009%（门限2%）
+8 V: FAIL；L1→L2 ring_abs_p relative = 2.986332%（门限2%）
+
+SUPG=0.5/1/2 同网格审计：
+6 V: FAIL；失败指标：ring_abs_p_relative_mean
+8 V: FAIL；失败指标：electron_right_A, ring_Q_mean_W_m3, ring_abs_p_relative_mean, ring_Q_p95_W_m3
+
+基准SUPG=1功率差额：6 V 0.260765%；8 V 0.348342%
+生产放行：否。生产对比需等待原验收全部通过；当前局部空穴和SUPG敏感性失败如实保留。

@@ -1,0 +1,232 @@
+{
+  "status": "RUNNING",
+  "scope": "FIXED_EXISTING_MESH_NO_SPATIAL_CERTIFICATE",
+  "script_sha256": "d82c2bee32bf9d850349e2746aa13fa5c8db88500e2d1902e7c79eb05c6bf30a",
+  "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2",
+  "executable_sha256": "2f624b3d65849c14e92ef85d1a619ded9f38050742063328960f0503848c9730",
+  "records": [
+    {
+      "voltage_V": 6.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\manifest.json": "717dd6e25e2e7b7661605baf8e049c5b6941eabdb58de38d55c765b02118f6f7",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\input.nml": "d04bd19ebab51d602a2f26f0a7496220908d44cfa01c808760c5a7af147eac85",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\execution.json": "c3c26d23abb5fd055bb8b42b748e9907ea81323bb112fa67a49453dc64160e52",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\metrics.txt": "89972903a44033f29b3f6e314ff986991e693ae1a975c70b5c90e291d82262bf",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\nodes.csv": "ff665b2851ae55dbddf30534f186e7eeb7635950c12411494c3c201f91775ea6"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 36213,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.0067795129347038e+22,
+        "minimum_p_m3": 4.379189765699888e-31,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2",
+      "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 20.912578617218287,
+        "joule_W": 0.003906747178186589,
+        "electron_right_A": 0.0004699137628550951,
+        "hole_right_A": 2.677863828122246e-57,
+        "heat_balance_relative": 0.006579708619674923,
+        "physical_exterior_heat_balance_relative": 0.0066185188514982125,
+        "electron_balance_relative": 4.639792111518219e-06,
+        "hole_balance_diagnostic": 9.081253882714573e-06,
+        "ring_abs_n_relative_mean": 0.03249676547203542,
+        "ring_abs_p_relative_mean": 0.055301612855940756,
+        "maximum_accepted_residual": 3.4754784107055233e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.007813494356373178,
+        "electron_right_A": 0.0009398275257101902,
+        "hole_right_A": 5.355727656244492e-57
+      },
+      "exact_zero_equilibrium_verified": false,
+      "route": "completed_full_heat_path"
+    },
+    {
+      "voltage_V": 6.25,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625\\manifest.json": "9708891d17b6b4ab526889ce3fc90e79b5c11ff3be320b181da90434c02f0a6c",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625\\input.nml": "9500d39ebf0de2f2988dba62cd6d1c2f8d75b1a8bc19e4d42ec42c787c906620",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625\\execution.json": "1710991ac1d492b000555a816c18120b9d0d952b125c6044c56c8911f0305a38",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625\\metrics.txt": "0bc78391ba91d98c5faeaf1c389a119582a17c5a5b40f30b03f39639e2dfa8da",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_fixed_V0625\\nodes.csv": "87f3564469994ec671d0f6ab2108932f5242dfc42e9397ccc85e69e02e814d54"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 36213,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 6.735777475353555e+21,
+        "minimum_p_m3": 3.6923819861185727e-31,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2",
+      "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 24.61625581287626,
+        "joule_W": 0.004507247951203758,
+        "electron_right_A": 0.0004824325961679968,
+        "hole_right_A": 2.749285098530361e-57,
+        "heat_balance_relative": 0.008970003179398755,
+        "physical_exterior_heat_balance_relative": 0.009008078390195674,
+        "electron_balance_relative": 7.590396230322306e-06,
+        "hole_balance_diagnostic": 1.759533566141157e-05,
+        "ring_abs_n_relative_mean": 0.037936166891427696,
+        "ring_abs_p_relative_mean": 0.0725673417681045,
+        "maximum_accepted_residual": 4.820871667467492e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.009014495902407516,
+        "electron_right_A": 0.0009648651923359936,
+        "hole_right_A": 5.498570197060721e-57
+      },
+      "exact_zero_equilibrium_verified": false,
+      "route": "full_heat_voltage"
+    },
+    {
+      "voltage_V": 6.375,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638\\manifest.json",
+      "state": "SOLVED_FLUX_GATE_FAILED",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638\\manifest.json": "70bc613be2d3e423565bf30aee9dce0d88159f3ed343b48fdd7ffbbbc417768a",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638\\input.nml": "052060e4593cc12dca22addcaa9b13aa2c9e56a988715b8f0aa6e69e7f349595",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638\\execution.json": "3859aa5d448208027b1f5f695b61ec30a5ff974694f9b432365b5abd7b3aefd7",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638\\metrics.txt": "e6daae11ab627a1c83f74e8f727d5108cb43ccf254cfd95d774fff9c07f982fd",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638\\nodes.csv": "6e9aff3935a65c8b65460031b0b193d4f7822cfc3bbd0ec878adcabc3cd7b007"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 36213,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 4.865478200665944e+21,
+        "minimum_p_m3": 3.25032426410703e-31,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2",
+      "executable_sha256": "2f624b3d65849c14e92ef85d1a619ded9f38050742063328960f0503848c9730",
+      "supg_scale": 1.0,
+      "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+      "log_weighted_quadrature_order": 3.0,
+      "metrics": {
+        "theta_max_K": 27.428687243700892,
+        "joule_W": 0.004943992372302772,
+        "electron_right_A": 0.00048679554541111264,
+        "hole_right_A": 2.7742075135608966e-57,
+        "heat_balance_relative": 0.01112139507233067,
+        "physical_exterior_heat_balance_relative": 0.011158874737774046,
+        "electron_balance_relative": 1.0648740183021067e-05,
+        "hole_balance_diagnostic": 2.8129561700462535e-05,
+        "ring_abs_n_relative_mean": 0.0419875079287905,
+        "ring_abs_p_relative_mean": 0.08810430198905414,
+        "maximum_accepted_residual": 4.520886673733045e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.009887984744605545,
+        "electron_right_A": 0.0009735910908222253,
+        "hole_right_A": 5.548415027121793e-57
+      },
+      "exact_zero_equilibrium_verified": false,
+      "route": "full_heat_voltage",
+      "checkpoint_provenance": {
+        "route": "full_heat_voltage",
+        "voltage_V": 6.375,
+        "command": [
+          "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+          "--exe",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_TRUST_REGION_20261008_R26C\\TPSolverV2.exe",
+          "--mesh",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_ANGLE_20261008\\A64_half\\H1_Y_HALF.mesh",
+          "--output",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_high_voltage_priority\\results\\full_heat_voltage_V0638",
+          "--voltage",
+          "6.375",
+          "--seed-nodes",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080\\accepted_00003_nodes.csv",
+          "--seed-voltage",
+          "6.375",
+          "--half-y",
+          "--log-weighted",
+          "--storage",
+          "OOC",
+          "--ooc-core-mb",
+          "5000",
+          "--split-holes",
+          "--omp-threads",
+          "2",
+          "--mkl-threads",
+          "2"
+        ],
+        "checkpoint_load_sha256": "91943b55919cdf157ff1f7dfa2cf43e5a59505b4e819e23ecedd6bc5ef0957cd",
+        "checkpoint_nodes_sha256": "6e9aff3935a65c8b65460031b0b193d4f7822cfc3bbd0ec878adcabc3cd7b007",
+        "exit_code": 1
+      }
+    }
+  ],
+  "attempts": {
+    "full_heat_voltage": {
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080",
+      "finished": true,
+      "accepted_full_heat_voltages": [
+        6.0,
+        6.25,
+        6.375
+      ],
+      "last_checkpoint_voltage_V": 6.375,
+      "last_checkpoint_heat_factor": 1.0,
+      "native_summary": {
+        "state": "FAILED_NO_COMPLETE_STATE",
+        "mesh_validated": false,
+        "complete_quantitative_0_8V": false
+      }
+    },
+    "trust_heat_8V": {
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r26_log_A64_trust_heat_V080",
+      "finished": false,
+      "accepted_full_heat_voltages": [],
+      "last_checkpoint_voltage_V": 8.0,
+      "last_checkpoint_heat_factor": 0.03125
+    }
+  },
+  "all_requested_solve_flux_pass": false,
+  "complete_quantitative_0_8V": false
+}

@@ -19,9 +19,10 @@ module material_tangent_check_m
 
 contains
 
-  subroutine verify_material_point_g02(status,transport_model)
+  subroutine verify_material_point_g02(status,transport_model,current_work)
     type(SolverStatusType), intent(out) :: status
     character(len=*), intent(in), optional :: transport_model
+    logical, intent(in), optional :: current_work
     type(MaterialType) :: material
     type(LoadStateType) :: load
     type(MaterialPointStateType) :: base_state, plus_state, minus_state
@@ -44,6 +45,7 @@ contains
       material%linear_carriers=transport_model=='LQ'
       write(*,'(a)') 'f1_constitutive_model='//trim(transport_model)
     end if
+    if (present(current_work)) material%heat_source_current_work=current_work
     call define_test_state(base_state)
     load%voltage_factor = 1.0_dp
     load%joule_factor = 0.73_dp
@@ -111,7 +113,7 @@ contains
              neutrality_error < 1.0e-14_dp .and. mass_action_error < 1.0e-14_dp .and. &
              einstein_error_n < 1.0e-15_dp .and. einstein_error_p < 1.0e-15_dp .and. &
              base_response%n > 0.0_dp .and. base_response%p > 0.0_dp .and. &
-             base_response%joule_heat >= 0.0_dp
+             (material%heat_source_current_work .or. base_response%joule_heat >= 0.0_dp)
 
     write(*,'(a)') 'verification_id=G02_material_point'
     call print_metric('stress_tangent_error', minimum_error(1))
@@ -129,6 +131,7 @@ contains
     call print_metric('material_point_n', base_response%n)
     call print_metric('material_point_p', base_response%p)
     call print_metric('material_point_joule_heat', base_response%joule_heat)
+    if(present(current_work)) write(*,'(a,l1)') 'material_point_current_work=',material%heat_source_current_work
     if (passed) then
       write(*,'(a)') 'verification_result=PASS'
     else

@@ -1,0 +1,22 @@
+[
+  {
+    "check": "G07S",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "check": "G08P",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "check": "G08G",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "check": "SUPGJ",
+    "exit_code": 0,
+    "passed": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "voltage_V": 8.0,
+  "raw_half_JE_W": 0.004927826369483125,
+  "raw_half_all_boundary_power_W": 0.004927989508520044,
+  "raw_half_symmetry_cut_power_W": 3.476476196673258e-07,
+  "raw_half_physical_exterior_power_W": 0.004927641860900376,
+  "physical_exterior_gap_W": 1.8450858274912663e-07,
+  "physical_exterior_gap_relative": 3.74421842238081e-05,
+  "reconstructed_full_JE_W": 0.00985565273896625,
+  "reconstructed_full_physical_exterior_power_W": 0.009855283721800752,
+  "independent_vs_native_relative": 9.777890907113311e-13,
+  "comparison_limit": 1e-08,
+  "power_gap_acceptance_threshold": null,
+  "note": "Gap is diagnostic; never heat compensation. Native physical/cut flux gates remain required.",
+  "evidence_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\power_audit\\order3.json": "6e796d063f7db031fe62389a73944df06b0adcaff836a500c4bc22ea902a5ad3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\power_audit\\order5.json": "753f6f1a0f03fa23c32edb88fe655eaec1d6e659353422a98654fc8ff5e7b830",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\power_audit\\decomposition.json": "28c9690d2ff5123696842f6c62bdf3e5464d82ed2956c199928e8885d9e18f64",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\power_audit\\provenance.json": "4b24847963dd55e8bccdac059a83edd3f7ea9b7ff8116b6883506d9a9b26f887",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\metrics.txt": "c62f9173056f2e70da1bd7d4a0a58d013d56e660ab3bd4b11fc1cf2df69a62a3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A40_R20_Z16_S1_V080\\nodes.csv": "26304fb813cbfc8178822f084ec19f3734749a485ce03e7f830f1545a2b21231"
+  }
+}

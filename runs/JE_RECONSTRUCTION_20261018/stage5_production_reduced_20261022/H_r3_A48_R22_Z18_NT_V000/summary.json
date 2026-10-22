@@ -1,0 +1,7 @@
+{
+  "state": "ZERO_VOLTAGE_EQUILIBRIUM_PASS",
+  "mesh_validated": false,
+  "power_gap_validated": false,
+  "elapsed_seconds": 62.57800000000134,
+  "stop_reason": null
+}

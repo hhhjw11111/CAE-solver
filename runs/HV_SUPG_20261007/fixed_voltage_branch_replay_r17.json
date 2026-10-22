@@ -1,0 +1,20 @@
+[
+  {
+    "point": 3,
+    "voltage_V": 6.459300885488345,
+    "source_sha256": "532f2f09b0fb98ab92035fc438267f7e70d517bf065ab3e149bf41f532e3a955",
+    "replay_sha256": "532f2f09b0fb98ab92035fc438267f7e70d517bf065ab3e149bf41f532e3a955",
+    "node_bytes_identical": true,
+    "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+    "heat_balance_relative": 0.004762124277731575
+  },
+  {
+    "point": 4,
+    "voltage_V": 6.372938703023685,
+    "source_sha256": "9537bc38abdac9bf789cc988933e9beee2695ec5c49b88029724e1f520080639",
+    "replay_sha256": "9537bc38abdac9bf789cc988933e9beee2695ec5c49b88029724e1f520080639",
+    "node_bytes_identical": true,
+    "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+    "heat_balance_relative": 0.006789689962065258
+  }
+]

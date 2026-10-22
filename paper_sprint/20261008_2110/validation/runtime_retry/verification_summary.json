@@ -1,0 +1,125 @@
+{
+  "source_build_match_count": 59,
+  "source_build_mismatches": [],
+  "current_executable_version": "0.15.9-log-inverse-checked",
+  "current_executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+  "ifx_version": "Intel(R) Fortran Compiler for applications running on Intel(R) 64, Version 2024.2.1 Build 20240711\r\nCopyright (C) 1985-2024 Intel Corporation. All rights reserved.",
+  "mkl_version": "2024.0.2; header build date 20240722",
+  "fresh_small_checks": [
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+        "version"
+      ],
+      "exit_code": 0,
+      "verification_result": "NOT_APPLICABLE_VERSION",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\version.txt",
+      "sha256": "ff493643dc48e825171a6de471362daaaf4aea06fcc41e1a914caafb0e595b0b"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+        "verify",
+        "V01"
+      ],
+      "exit_code": 0,
+      "verification_result": "PASS",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\V01.txt",
+      "sha256": "7728bb6596ca6abc753da218004d12391424be379355c0c33ce0e47a47ec3952"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+        "verify",
+        "V02"
+      ],
+      "exit_code": 0,
+      "verification_result": "PASS",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\V02.txt",
+      "sha256": "968f586b8044e40be4404b15e311ebf5a5edd3b5656e64e955f86f266b9d5416"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+        "verify",
+        "G02"
+      ],
+      "exit_code": 0,
+      "verification_result": "PASS",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\G02.txt",
+      "sha256": "47e11849695ee252265d75b4664b3d674641e95627f18c8bf2c6bfe0aae1a044"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+        "verify",
+        "F1M"
+      ],
+      "exit_code": 0,
+      "verification_result": "PASS",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\F1M.txt",
+      "sha256": "47c90b78fed53d7b8cb1289c6729cde3c98479e94bd86a44bff6ffdf66ae3eba"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+        "verify",
+        "G03"
+      ],
+      "exit_code": 0,
+      "verification_result": "PASS",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\G03.txt",
+      "sha256": "bdd5f822a88c58ff9c4f479ddef6d7215c6617a3d094e8d5a715dd1445327001"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_production_bar_r22\\log_weighted_probe.exe"
+      ],
+      "exit_code": 0,
+      "verification_result": "PASS",
+      "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\production_bar_replay.txt",
+      "sha256": "1a57e8a169d9757afc18a2b7bc10affb585f965a9376d01fbe18d48f98807e82"
+    }
+  ],
+  "spec_7_status": "PARTIAL_REUSED_EVIDENCE",
+  "gaps": [
+    "A=0 zero-field case",
+    "same-electron negative field case",
+    "relative L2 independent quadrature",
+    "quadrature refinement stability",
+    "saved full internal profile, free-row residual and separate endpoint-current metrics",
+    "global CSR assembly not exercised by custom-reduced bar driver"
+  ],
+  "runtime_first_attempt": {
+    "exit_code": 3221225781,
+    "hex": "0xC0000135",
+    "classification": "MISSING_RUNTIME_SEARCH_PATH",
+    "logs_preserved": "../command_manifest.json"
+  },
+  "runtime_recovery": "Added installed Intel compiler/latest/bin to child PATH; no installation or production modification.",
+  "production_bar_replay": [
+    {
+      "kind": "PRODUCTION_KERNEL_ARCHIVED_HARNESS_R22_FRESH_REPLAY",
+      "carrier": "1",
+      "domain_Pe": 1000,
+      "A": 2000,
+      "elements": 128,
+      "sample_max_density_error": 7.595833125517704e-05,
+      "sample_max_current_error": 0.0025183306517720895,
+      "metric_definition": "11 points per element, density normalized by 2; current by max(1,abs(exact)); not L2",
+      "source": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\production_bar_replay.txt"
+    },
+    {
+      "kind": "PRODUCTION_KERNEL_ARCHIVED_HARNESS_R22_FRESH_REPLAY",
+      "carrier": "2",
+      "domain_Pe": 1000,
+      "A": 2000,
+      "elements": 128,
+      "sample_max_density_error": 4.0479195906661936e-05,
+      "sample_max_current_error": 0.0016628813821955646,
+      "metric_definition": "11 points per element, density normalized by 2; current by max(1,abs(exact)); not L2",
+      "source": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\validation\\runtime_retry\\production_bar_replay.txt"
+    }
+  ],
+  "production_bar_byte_identical_to_prior_stdout": true
+}

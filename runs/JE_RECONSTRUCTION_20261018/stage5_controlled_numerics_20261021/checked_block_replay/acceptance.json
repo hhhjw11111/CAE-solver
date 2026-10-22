@@ -1,0 +1,16 @@
+{
+  "all_equivalent": true,
+  "events": [
+    {
+      "voltage": 6,
+      "passed": true,
+      "seconds": 350.42199999999866
+    },
+    {
+      "voltage": 8,
+      "passed": true,
+      "seconds": 318.2970000000023
+    }
+  ],
+  "original_limit": 1e-08
+}

@@ -1,0 +1,6 @@
+{
+  "maximum_delta_eta_p": 0.0010000000000000009,
+  "maximum_formula_error": 1.109138822452671e-16,
+  "initial_guess_only": true,
+  "seed_sha256": "6a4a3a18c42310950b9e7ce459da727757371247f9662839dc7b02614005aede"
+}

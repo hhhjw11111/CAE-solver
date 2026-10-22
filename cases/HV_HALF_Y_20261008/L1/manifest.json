@@ -1,0 +1,17 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_20260906\\H1_L1.mesh",
+  "source_mesh_sha256": "44dd715220df77a2bf93be1cb8d38effab7741f6fa8361cfdf25e3f674ad867f",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L1\\H1_Y_HALF.mesh",
+  "mesh_sha256": "5ba96400e94429772e8619c3eb3b701025b27081fda3c67c879d472fb33c51d3",
+  "node_map_sha256": "ce4a0e628f7820cc30ec91211107efca5560ff481b543ddd7d79cf9407597e3b",
+  "nodes": 10881,
+  "elements": 2304,
+  "minimum_sampled_jacobian": 4.79809899111004e-24,
+  "reflection_audit": {
+    "matched_nodes": 20496,
+    "matched_elements": 4608,
+    "maximum_coordinate_error_m": 1.6940658945086007e-20
+  }
+}

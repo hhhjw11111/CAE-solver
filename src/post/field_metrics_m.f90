@@ -34,7 +34,7 @@ module field_metrics_m
 contains
 
   subroutine evaluate_hole_field_metrics(mesh,materials,state,load,hole_radius, &
-                                         annulus_width,metrics,status,annulus_subdivisions)
+                                         annulus_width,metrics,status,annulus_subdivisions,hole_center)
     type(MeshType), intent(in) :: mesh
     type(MaterialType), intent(in) :: materials(:)
     type(StateType), intent(in) :: state
@@ -43,6 +43,7 @@ contains
     type(HoleFieldMetricsType), intent(out) :: metrics
     type(SolverStatusType), intent(out) :: status
     integer, intent(in), optional :: annulus_subdivisions
+    real(dp), intent(in), optional :: hole_center(2)
     real(dp) :: points(3,NQ),weights(NQ),coordinates_e(3,HEX20_NNODE)
     real(dp) :: state_e(HEX20_NDOF),shape(HEX20_NNODE)
     real(dp) :: derivative_global(3,HEX20_NNODE),determinant,integration_weight
@@ -77,6 +78,7 @@ contains
     end if
     center=0.5_dp*(minval(mesh%coordinates(1:2,:),dim=2)+ &
       maxval(mesh%coordinates(1:2,:),dim=2))
+    if(present(hole_center)) center=hole_center
     allocate(annulus_joule(NQ*mesh%number_of_elements()*subdivision_count**2), &
       annulus_weights(NQ*mesh%number_of_elements()*subdivision_count**2))
     annulus_joule=0.0_dp; annulus_weights=0.0_dp; sample_count=0

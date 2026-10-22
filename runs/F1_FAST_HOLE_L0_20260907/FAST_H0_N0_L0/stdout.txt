@@ -1,0 +1,62 @@
+f1_nodes=9345, elements=1960
+newton_iteration=0, voltage_factor=  0.0000E+00, joule_factor=  0.0000E+00, residual=  0.0000E+00,
+newton_iteration=0, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  3.9650E-02,
+newton_iteration=1, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  1.8125E-15,
+newton_iteration=2, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  1.4857E-17,
+newton_iteration=3, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  1.2683E-17,
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  7.9300E-02,
+newton_iteration=1, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  8.3113E-15,
+newton_iteration=2, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  4.5534E-17,
+newton_iteration=3, voltage_factor=  7.5000E-01, joule_factor=  0.0000E+00, residual=  3.7370E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  3.9650E-02,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  1.9377E-15,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  6.0639E-17,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  5.1040E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  5.2006E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  3.0903E-07,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  6.0881E-11,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  6.9243E-17,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  2.5000E-01, residual=  5.9777E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.0401E-05,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.3196E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  2.8646E-09,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.2303E-14,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  7.5000E-01, residual=  1.0995E-16,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.2010E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.2933E-07,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.9188E-10,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.2637E-16,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.5251E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 3.0000000000000000E+000
+minimum_jacobian= 3.4299999999963196E-025
+total_volume_m3= 4.0000000000007612E-016
+maximum_stage_balance= 3.4530218672511051E-014
+maximum_accepted_residual= 1.5251332154952329E-016
+maximum_accepted_update= 4.5360456419793389E-011
+joule_W= 1.8862683298399221E-003
+terminal_power_W= 1.7735971823827977E-003
+heat_out_W= 1.8722246723779125E-003
+heat_balance_relative= 7.4452066229630147E-003
+electron_balance_relative= 4.1502514357349928E-008
+hole_balance_diagnostic= 1.6700404080264659E-006
+joule_quadrature_4_5_relative= 3.3515589482502669E-011
+electron_right_A= 5.9120283388355746E-004
+hole_right_A= 3.3686000539091784E-057
+ring_volume_m3= 7.3020049382716103E-018
+ring_Q_mean_W_m3= 4.8453825370100439E+012
+ring_Q_p95_W_m3= 5.5102688334692227E+012
+ring_E_mean_V_m= 1.5489213616032703E+005
+ring_abs_n_relative_mean= 7.1461547090140463E-003
+ring_abs_p_relative_mean= 7.8263168030554085E-003
+ring_theta_mean_K= 3.7770090036627533E+000
+ring_displacement_mean_m= 1.6481588697637008E-010
+E_p95_V_m= 1.5952425109779791E+005
+E_above_1e6_volume_fraction= 0.0000000000000000E+000
+theta_max_K= 4.0251496581190054E+000
+maximum_abs_n_relative= 2.9970090371915181E-001
+maximum_abs_p_relative= 3.3339380741539237E-001
+displacement_max_m= 3.2455035413318225E-010
+minimum_mu_n_ratio= 1.0000000000000000E+000
+stress_von_mises_max_Pa= 1.2294873778725320E+006
+case_acceptance=PASS_NOT_MESH_ACCEPTANCE

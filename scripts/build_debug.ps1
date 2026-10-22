@@ -2,6 +2,8 @@ param(
   [switch]$Clean,
   [switch]$Optimize,
   [switch]$Threaded,
+  [switch]$ParallelAssembly,
+  [switch]$QuietArrayTemporaries,
   [string]$BuildSubdirectory = 'build\Debug'
 )
 
@@ -11,6 +13,15 @@ $buildDirectory = [System.IO.Path]::GetFullPath((Join-Path $solverRoot $BuildSub
 $moduleDirectory = Join-Path $buildDirectory 'mod'
 $executablePath = Join-Path $buildDirectory 'TPSolverV2.exe'
 $setvars = 'C:\Program Files (x86)\Intel\oneAPI\setvars.bat'
+$vcvars = 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat'
+$ifx = 'C:\Program Files (x86)\Intel\oneAPI\compiler\latest\bin\ifx.exe'
+$compilerBin = Split-Path -Parent $ifx
+$msvcToolRoot = 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC'
+$linkDirectory = Get-ChildItem -LiteralPath $msvcToolRoot -Directory -ErrorAction SilentlyContinue |
+  ForEach-Object { Join-Path $_.FullName 'bin\Hostx64\x64' } |
+  Where-Object { Test-Path -LiteralPath (Join-Path $_ 'link.exe') } |
+  Sort-Object -Descending |
+  Select-Object -First 1
 $mklLibraryDirectory = 'C:\Program Files (x86)\Intel\oneAPI\mkl\latest\lib'
 $compilerLibraryDirectory = 'C:\Program Files (x86)\Intel\oneAPI\compiler\latest\lib'
 
@@ -19,6 +30,15 @@ if (-not $buildDirectory.StartsWith($solverRoot + [System.IO.Path]::DirectorySep
 }
 if (-not (Test-Path -LiteralPath $setvars)) {
   throw "Intel oneAPI environment script not found: $setvars"
+}
+if (-not (Test-Path -LiteralPath $vcvars)) {
+  throw "Visual Studio x64 environment script not found: $vcvars"
+}
+if (-not (Test-Path -LiteralPath $ifx)) {
+  throw "Intel ifx compiler not found: $ifx"
+}
+if ([string]::IsNullOrWhiteSpace($linkDirectory)) {
+  throw "MSVC x64 linker directory not found under: $msvcToolRoot"
 }
 $mklLibraries = if ($Threaded) {
   @('mkl_intel_lp64.lib','mkl_intel_thread.lib','mkl_core.lib')
@@ -65,6 +85,7 @@ $relativeSources = @(
   'src\mesh\dof_map_m.f90',
   'src\mesh\mesh_checks_m.f90',
   'src\io\native_input_m.f90',
+  'src\fem\transport_supg_m.f90',
   'src\fem\element_kernel_m.f90',
   'src\fem\sparse_pattern_m.f90',
   'src\fem\dirichlet_m.f90',
@@ -72,25 +93,32 @@ $relativeSources = @(
   'src\linear\pardiso_solver_m.f90',
   'src\nonlinear\scaling_m.f90',
   'src\nonlinear\newton_solver_m.f90',
+  'src\nonlinear\temperature_control_m.f90',
   'src\post\balance_audit_m.f90',
   'src\post\independent_flux_audit_m.f90',
   'src\post\field_metrics_m.f90',
   'src\nonlinear\continuation_solver_m.f90',
+  'src\nonlinear\arclength_solver_m.f90',
   'src\problems\reference_bar_problem_m.f90',
   'src\post\result_writer_m.f90',
   'src\app\production_runner_m.f90',
   'src\app\f1_case_runner_m.f90',
   'src\verification\material_tangent_check_m.f90',
   'src\verification\element_tangent_check_m.f90',
+  'src\verification\supg_check_m.f90',
   'src\verification\global_assembly_check_m.f90',
   'src\verification\global_block_jacobian_check_m.f90',
   'src\verification\linear_solver_check_m.f90',
   'src\verification\m0_benchmark_m.f90',
   'src\verification\a1_joint_check_m.f90',
   'src\verification\a2_hole_check_m.f90',
+  'src\verification\a2_piezo_check_m.f90',
+  'src\verification\je_gradient_check_m.f90',
   'src\verification\analytic_benchmarks_m.f90',
   'src\verification\newton_solver_check_m.f90',
   'src\verification\continuation_solver_check_m.f90',
+  'src\verification\arclength_solver_check_m.f90',
+  'src\verification\temperature_control_check_m.f90',
   'src\verification\center_hole_check_m.f90',
   'src\verification\mesh_convergence_check_m.f90',
   'src\verification\matched_control_check_m.f90',
@@ -99,36 +127,51 @@ $relativeSources = @(
   'src\verification\verification_driver_m.f90',
   'src\app\main.f90'
 )
-$sourceArguments = ($relativeSources | ForEach-Object {
-  '"' + (Join-Path $solverRoot $_) + '"'
-}) -join ' '
-
 $optimization = if ($Optimize) { '/O2' } else { '/Od' }
 $runtimeChecks = if ($Optimize) { '/check:none' } else { '/check:all' }
-$compilerOptions = @(
+# Array-temporary diagnostics are performance warnings, emitted once per node
+# by formatted section I/O. Keep all correctness checks in the opt-in quiet run.
+if ($QuietArrayTemporaries -and -not $Optimize) { $runtimeChecks += ' /check:noarg_temp_created' }
+if($ParallelAssembly -and -not $Threaded) { throw 'ParallelAssembly requires Threaded for the OpenMP runtime.' }
+$parallelOption = if($ParallelAssembly) { '/Qopenmp' } else { '' }
+$compilerOptionList = @(
   '/nologo',
   $optimization,
   '/debug:full',
   '/traceback',
   $runtimeChecks,
+  $parallelOption,
   '/warn:all',
   '/warn:interfaces',
   '/stand:f18',
   '/standard-semantics',
-  ('/module:"' + $moduleDirectory + '"'),
-  ('/exe:"' + $executablePath + '"')
-) -join ' '
-
-$libraryArguments = ($mklLibraries | ForEach-Object {
-  '"' + (Join-Path $mklLibraryDirectory $_) + '"'
-}) -join ' '
-$libraryArguments = (($libraryArguments + ' ' + (($extraLibraries | ForEach-Object { '"' + $_ + '"' }) -join ' ')).Trim())
-$compilerCommand = "ifx $compilerOptions $sourceArguments $libraryArguments"
-$command = 'call "' + $setvars + '" intel64 vs2022 >nul && ' + $compilerCommand
+  '/module:"mod"',
+  '/exe:"TPSolverV2.exe"'
+) 
+$compilerOptions = $compilerOptionList -join ' '
+$responseFile = Join-Path $buildDirectory 'ifx.rsp'
+$responseArguments = @($compilerOptionList)
+$responseArguments += $relativeSources | ForEach-Object { '"' + (Join-Path '..\..' $_) + '"' }
+$responseArguments += $mklLibraries | ForEach-Object { '"' + (Join-Path $mklLibraryDirectory $_) + '"' }
+$responseArguments += $extraLibraries | ForEach-Object { '"' + $_ + '"' }
+$responseArguments | Set-Content -LiteralPath $responseFile -Encoding ascii
+# The oneAPI dispatcher can fail while calling component env\vars.bat files on
+# restricted Windows installations. Visual Studio supplies the link environment;
+# ifx and all libraries are still pinned to their absolute oneAPI paths.
+$environmentBatch = Join-Path $buildDirectory 'build_ifx_environment.cmd'
+@(
+  '@echo off',
+  ('call "' + $vcvars + '" >nul'),
+  'if errorlevel 1 exit /b %errorlevel%',
+  ('set "PATH=' + $compilerBin + ';' + $linkDirectory + ';%PATH%"'),
+  ('set "LIB=' + $compilerLibraryDirectory + ';' + $mklLibraryDirectory + ';%LIB%"'),
+  ('"' + $ifx + '" @ifx.rsp'),
+  'exit /b %errorlevel%'
+) | Set-Content -LiteralPath $environmentBatch -Encoding ascii
 
 Push-Location $buildDirectory
 try {
-  & $env:ComSpec /d /s /c $command
+  & $env:ComSpec /d /s /c ('call "' + $environmentBatch + '"')
   if ($LASTEXITCODE -ne 0) {
     throw "ifx build failed with exit code $LASTEXITCODE"
   }

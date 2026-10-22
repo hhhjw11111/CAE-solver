@@ -1,0 +1,17 @@
+{
+  "registration_id": "ZNO_F1_NUMERICAL_CANDIDATE",
+  "parameter_source": "zno_300k_candidate_v2.json",
+  "parameter_changes": [],
+  "entry": "run-f1",
+  "profiles": ["ZNO_F1_LQ", "ZNO_F1_N0", "ZNO_F1_NT"],
+  "candidate_numerical_execution_enabled": true,
+  "experimentally_calibrated": false,
+  "replaces_old_reference_material": false,
+  "original_production_enabled_false_preserved": true,
+  "scope": "Explicit F1 effective-material numerical investigation only; all calibration gaps P01-P05 remain open.",
+  "boundary_reference": "F1 20x20x1 um, a=3 um, c||+z, minimum rigid-body anchors, insulated noncontacts; no z mirror constraint",
+  "LQ": "linear relative densities; frozen mu and D; isothermal fields then quadratic heat then displacement only; no return feedback",
+  "N0": "log densities, full nonlinear drift diffusion, BOTH mu and D frozen at T0",
+  "NT": "log densities, mu(T), Einstein D(T), fully coupled",
+  "heat": "drift-conductivity heating; IV need not equal its integral when diffusion contributes"
+}

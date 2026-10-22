@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\continue_je_joint_supg_20261020.py", line 118, in <module>
+    main()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\continue_je_joint_supg_20261020.py", line 96, in main
+    raise RuntimeError("Prior batch has no true completion record; no new solve started")
+RuntimeError: Prior batch has no true completion record; no new solve started

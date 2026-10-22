@@ -1,11 +1,13 @@
 module element_kernel_m
+  use, intrinsic :: ieee_arithmetic, only : ieee_is_finite
   use kinds_m, only : dp
   use constants_m, only : ELEMENTARY_CHARGE
-  use status_m, only : SolverStatusType, clear_status, set_status, STATUS_GEOMETRY_ERROR
+  use status_m, only : SolverStatusType, clear_status, set_status, STATUS_GEOMETRY_ERROR, STATUS_INVALID_ARGUMENT
   use field_layout_m, only : F_U1, F_U2, F_U3, F_PHI, F_ETA_N, F_ETA_P, F_THETA, local_dof
   use mesh_types_m, only : HEX20_NNODE
-  use hex20_quadrature_m, only : HEX20_NGAUSS, gauss_rule_3x3x3
+  use hex20_quadrature_m, only : HEX20_NGAUSS, gauss_rule_3x3x3, gauss_rule_5x5x5
   use hex20_shape_m, only : hex20_geometry
+  use transport_supg_m, only : hex20_hessians,add_transport_supg
   use dof_map_m, only : HEX20_NDOF
   use model_types_m, only : MaterialType, LoadStateType
   use material_point_m, only : MATERIAL_INPUT_SIZE, MATERIAL_RESPONSE_SIZE, &
@@ -44,27 +46,41 @@ contains
     real(dp), intent(out) :: jacobian_e(HEX20_NDOF,HEX20_NDOF)
     type(ElementDiagnosticsType), intent(out) :: diagnostics
     type(SolverStatusType), intent(out) :: status
-    real(dp) :: points(3,HEX20_NGAUSS), weights(HEX20_NGAUSS)
+    real(dp) :: points(3,125), weights(125)
     real(dp) :: shape(HEX20_NNODE), derivative_global(3,HEX20_NNODE)
     real(dp) :: determinant, integration_weight
+    real(dp) :: hess(3,3,HEX20_NNODE),metric(3,3)
     real(dp) :: state_operator(MATERIAL_INPUT_SIZE,HEX20_NDOF)
     real(dp) :: test_operator(HEX20_NDOF,MATERIAL_RESPONSE_SIZE)
     real(dp) :: independent_state(MATERIAL_INPUT_SIZE)
     real(dp) :: response_vector(MATERIAL_RESPONSE_SIZE)
     real(dp) :: tangent_matrix(MATERIAL_RESPONSE_SIZE,MATERIAL_INPUT_SIZE)
+    real(dp) :: log_weights(2)
     type(MaterialPointStateType) :: point_state
     type(MaterialPointResponseType) :: point_response
     type(MaterialPointTangentType) :: point_tangent
     type(SolverStatusType) :: local_status
-    integer :: point
+    integer :: point,point_count
 
     call clear_status(status)
     residual_e = 0.0_dp
     jacobian_e = 0.0_dp
     diagnostics = ElementDiagnosticsType()
-    call gauss_rule_3x3x3(points, weights)
+    if(material%transport_log_weighted.and.(material%transport_supg.or.material%linear_carriers)) then
+      call set_status(status,STATUS_INVALID_ARGUMENT,'Log-weighted transport excludes SUPG and linear carriers.')
+      return
+    end if
+    point_count=HEX20_NGAUSS
+    if(material%log_weighted_quadrature_order==5.and.material%transport_log_weighted) then
+      point_count=125
+      call gauss_rule_5x5x5(points,weights)
+    else if(material%log_weighted_quadrature_order==3) then
+      call gauss_rule_3x3x3(points(:,1:HEX20_NGAUSS),weights(1:HEX20_NGAUSS))
+    else
+      call set_status(status,STATUS_INVALID_ARGUMENT,'Unsupported transport quadrature combination.');return
+    end if
 
-    do point = 1, HEX20_NGAUSS
+    do point = 1, point_count
       call hex20_geometry(coordinates, points(1,point), points(2,point), points(3,point), &
         shape, derivative_global, determinant, local_status)
       if (.not. local_status%is_ok()) then
@@ -75,6 +91,14 @@ contains
       integration_weight = weights(point) * determinant
       call build_operators(shape, derivative_global, state_operator, test_operator)
       independent_state = matmul(state_operator, state_e)
+      if(material%transport_log_weighted) then
+        if(any(.not.ieee_is_finite(independent_state([14,18]))).or. &
+            any(abs(independent_state([14,18]))>=log(huge(1.0_dp)))) then
+          call set_status(status,STATUS_INVALID_ARGUMENT,'Log-weighted transport exponent is out of range.')
+          return
+        end if
+        call log_transport_tests(shape,derivative_global,independent_state,test_operator,log_weights)
+      end if
       call unpack_point_state(material, independent_state, point_state)
       call evaluate_material_point(material, point_state, load, point_response, &
         point_tangent, local_status)
@@ -90,6 +114,21 @@ contains
         call material_tangent_matrix(point_tangent, tangent_matrix)
         jacobian_e = jacobian_e + integration_weight * &
           matmul(test_operator, matmul(tangent_matrix, state_operator))
+        if(material%transport_log_weighted) then
+          call add_log_test_derivative(shape,derivative_global,test_operator,response_vector, &
+            log_weights,integration_weight,jacobian_e)
+        end if
+      end if
+      if (material%transport_supg) then
+        call hex20_hessians(coordinates,points(:,point),hess,metric,local_status)
+        if (.not.local_status%is_ok()) then
+          status=local_status;return
+        end if
+        call add_transport_supg(material,shape,derivative_global,hess,metric,state_e, &
+          integration_weight,request%need_jacobian,residual_e,jacobian_e,local_status)
+        if (.not.local_status%is_ok()) then
+          status=local_status;return
+        end if
       end if
       diagnostics%volume = diagnostics%volume + integration_weight
       diagnostics%min_temperature = min(diagnostics%min_temperature, point_state%temperature)
@@ -101,6 +140,38 @@ contains
       diagnostics%max_joule_heat = max(diagnostics%max_joule_heat, point_response%joule_heat)
     end do
   end subroutine evaluate_hex20_element
+
+  subroutine log_transport_tests(shape,dn,q,test,weights)
+    real(dp), intent(in) :: shape(20),dn(3,20),q(21)
+    real(dp), intent(inout) :: test(140,21)
+    real(dp), intent(out) :: weights(2)
+    integer :: i,nrow,prow
+    weights=exp(-q([14,18]))
+    do i=1,20
+      nrow=local_dof(i,F_ETA_N);prow=local_dof(i,F_ETA_P)
+      test(nrow,11:13)=weights(1)*(dn(:,i)-shape(i)*q(15:17))
+      test(prow,14:16)=weights(2)*(dn(:,i)-shape(i)*q(19:21))
+      test(nrow,21)=weights(1)*ELEMENTARY_CHARGE*shape(i)
+      test(prow,21)=-weights(2)*ELEMENTARY_CHARGE*shape(i)
+    end do
+  end subroutine log_transport_tests
+
+  subroutine add_log_test_derivative(shape,dn,test,response,weights,integration_weight,k)
+    real(dp), intent(in) :: shape(20),dn(3,20),test(140,21),response(21),weights(2),integration_weight
+    real(dp), intent(inout) :: k(140,140)
+    real(dp) :: base_n,base_p
+    integer :: i,j,nrow,prow
+    do i=1,20
+      nrow=local_dof(i,F_ETA_N);prow=local_dof(i,F_ETA_P)
+      base_n=dot_product(test(nrow,:),response);base_p=dot_product(test(prow,:),response)
+      do j=1,20
+        k(nrow,local_dof(j,F_ETA_N))=k(nrow,local_dof(j,F_ETA_N))-integration_weight*( &
+          shape(j)*base_n+weights(1)*shape(i)*dot_product(dn(:,j),response(11:13)))
+        k(prow,local_dof(j,F_ETA_P))=k(prow,local_dof(j,F_ETA_P))-integration_weight*( &
+          shape(j)*base_p+weights(2)*shape(i)*dot_product(dn(:,j),response(14:16)))
+      end do
+    end do
+  end subroutine add_log_test_derivative
 
   subroutine build_operators(shape, derivative_global, state_operator, test_operator)
     real(dp), intent(in) :: shape(HEX20_NNODE), derivative_global(3,HEX20_NNODE)

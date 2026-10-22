@@ -1,0 +1,13 @@
+{
+  "state": "STARTING",
+  "utc": "2026-10-20T07:07:40.631241+00:00",
+  "step": "joint2",
+  "arguments": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_paper_resumed_20261020.py",
+    "--batch",
+    "joint",
+    "--joint-level",
+    "2",
+    "--execute"
+  ]
+}

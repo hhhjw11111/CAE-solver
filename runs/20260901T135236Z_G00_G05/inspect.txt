@@ -1,0 +1,8 @@
+inspect_result=PASS
+case_id=V01_patch_unit_cube
+schema_version=2
+model_level=M0_ANALYTIC
+node_count=20
+element_count=1
+minimum_jacobian_determinant= 1.2499999999999992E-001
+integrated_volume= 1.0000000000000004E+000

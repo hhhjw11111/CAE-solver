@@ -1,0 +1,22 @@
+&case_control
+ schema_version=2,case_id='JE_PROD_H_r2_A48_R22_Z18_NT_V060',model_level='M2_THERMO_TWO_CARRIER',
+ mesh_file='C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/STAGE5~3/meshes/half/R2_A48~1/H1_Y_H~1.MES'
+/
+&problem_control
+ half_y_symmetry=.true.,
+ problem_type='CENTER_HOLE_PLATE', material_profile='ZNO_F1_NT',
+ target_voltage=-6.0,target_voltage_factor=1.0,target_joule_factor=1.0,hole_radius=2e-06,
+ restart_nodes_file='C:/Users/ADMINI~1/Desktop/GEMINI~1/Console3/SOLVER~2/runs/JE_REC~1/STAGE5~3/seeds/H_R2_A~1/nodes.csv',
+ restart_voltage_factor=1.0,restart_joule_factor=1.0
+/
+&solver_control
+ transport_supg=.true.,supg_scale=1.0,supg_directional_tau=.false.,global_log_step_limit=.false.,
+ field_scales=1e-10,1e-10,1e-10,8.0,0.1,0.1,35.0,
+ max_newton=40,newton_stagnation_window=4,residual_tolerance=1e-9,update_tolerance=1e-9,maximum_log_density_update=1,
+ continuation_full_joule_during_voltage=.true.,continuation_secant_predictor=.true.,
+ continuation_initial_step=0.0625,continuation_maximum_step=0.125,continuation_minimum_step=0.00390625,
+ continuation_growth_factor=1.5,continuation_cutback_factor=0.5,continuation_maximum_attempts=160,
+ continuation_maximum_newton_per_attempt=40,
+ arclength_enabled=.false.,heat_source_current_work=.true.
+/
+

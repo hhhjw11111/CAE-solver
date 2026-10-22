@@ -1,0 +1,72 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 3.3693698787019227e-05,
+      "rms_relative": 5.808340704964646e-06,
+      "normalization": 6.000230019365247,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.0005397334423667203,
+      "rms_relative": 0.0003374521737277446,
+      "normalization": 20.924586013532263,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.0004950907187706004,
+      "rms_relative": 0.00023829118185918167,
+      "normalization": 1.193040318950737e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.00031606086284999513,
+      "rms_relative": 0.00011908171384536228,
+      "normalization": 1.193040318950737e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 5.2949810553451226e-05,
+      "rms_relative": 2.9102525329853295e-05,
+      "normalization": 1.193040318950737e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.003083496403722356,
+      "rms_relative": 0.0004996019754861748,
+      "normalization": 2.1131879994539813,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.002883722307706687,
+      "rms_relative": 0.00037589627993659736,
+      "normalization": 4.680217870834204,
+      "limit": 0.02,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_log_S2_V060\\nodes.csv": "a78cf5882abc3215f120fad52e3729477159d16845d5f4823879e806d3800ce6",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_log_S2_V060\\transfer_report.json": "9c1fa1c4c01bef6096cb0c8c5f1d9ddbf3c8d1472b3c48419394a1377c3500a9",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V060_replay\\nodes.csv": "4a3fbfdeed313cee28c6a4ef1d018da6da2c4510281cd8a516fc8b2a676cd60e",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V060_replay\\manifest.json": "3ce8993e8697e82cbd8862cc7535e6196b75d03e970cdeeac9a0a30e5f334755",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V060_replay\\execution.json": "9901a381a9ffbaebd6a9b6f840d19cb7d4b19a01156086b3fcfb1ed9111de642",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V060_replay\\input.nml": "aeb8fc733926833d5507e5775ef6ca4b8a512b6aa25d4b611f6952ae2d012075",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V060_replay\\metrics.txt": "0a29a115386017220c6c0d33ae0fa339e2f5692e3e9ca1fd173508f9ee3538e3",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_L2_V060_replay\\field_audit.json": "6fe555c53e1025863896131e55141ff098c41c8a72d5b08425cec556348301c7",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V060\\nodes.csv": "0d2ca9e1441898a7808db44454ae0d208a2d1300e934fdeb787cd918ab71e502",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V060\\manifest.json": "22a2bd9f2fcc850097735521adb17c0280e72199e09066398e918af8c827dfc9",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V060\\execution.json": "c1aab564c3ec59a5b354d0346eb0c94d4aec9dac3cba5ce7681e52718230ce66",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V060\\input.nml": "cce17f278b159b98618bafd6d779b13cf73b9157c7b042c5ca2cd3a8234accc7",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V060\\metrics.txt": "f2001b31aca043694428e9b863ef85321e40aacc0bb66eba4c018d901247afd5",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_S2_V060\\field_audit.json": "51703f913d95dd2ed172f18628c9be5994e7472b760b5cbeb8b6189f93e02d3f"
+  }
+}

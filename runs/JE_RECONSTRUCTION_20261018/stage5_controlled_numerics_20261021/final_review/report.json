@@ -1,0 +1,871 @@
+{
+  "scope": "CONTROLLED_TRACE_NUMERICAL_REVIEW",
+  "original_thresholds_unchanged": true,
+  "original_core_and_model_unchanged": true,
+  "old_data_hashes_rechecked": true,
+  "numerical_setting": "existing supg_directional_tau=false; original scales0.5/1/2",
+  "mesh": [
+    {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": true,
+          "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 7.051864369408634e-06,
+              "L1_L2": 3.821706413266486e-06,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 8.747935646003108e-06,
+              "L1_L2": 4.3828984320014715e-06,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 7.34039880641189e-06,
+              "L1_L2": 5.0186513378592276e-06,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 2.723261845514321e-05,
+              "L1_L2": 1.1191688877457265e-05,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 2.855391446009472e-06,
+              "L1_L2": 1.861755425604606e-06,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 5.566961986173429e-05,
+              "L1_L2": 3.558784237449835e-05,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 1.1719228462718823e-05,
+              "L1_L2": 2.152497987716668e-05,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.011672654102180645,
+              "L1_L2": 0.005515102475493763,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.0013826711349510846,
+              "L1_L2": 0.00033015684028972627,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.0024696392052010927,
+              "L1_L2": 0.0012649007117828102,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": true,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": true,
+          "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 8.58136891307372e-06,
+              "L1_L2": 4.392037799614731e-06,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 5.968210317847823e-06,
+              "L1_L2": 2.962947589557148e-06,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 9.622104601431827e-06,
+              "L1_L2": 6.249157908798194e-06,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 6.0287074751582834e-05,
+              "L1_L2": 2.9456401202547544e-05,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 4.689456195292989e-06,
+              "L1_L2": 1.0113756319243598e-06,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 5.1634954451298494e-05,
+              "L1_L2": 3.3793639528734996e-05,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 1.9321070457954592e-05,
+              "L1_L2": 1.8901601868228847e-05,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.00569309751998413,
+              "L1_L2": 0.0034073948051540496,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.0005773671325348869,
+              "L1_L2": 0.0003929386210997809,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.006371965669917506,
+              "L1_L2": 0.004280298421628726,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": true,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    }
+  ],
+  "supg": [
+    {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S2_V060"
+      ],
+      "errors": [],
+      "comparisons": {
+        "joule_W": {
+          "values": [
+            0.0028945440844230985,
+            0.002894543764840899,
+            0.0028945425866287113
+          ],
+          "relative_span": 5.174543359956669e-07,
+          "limit": 0.01,
+          "passed": true
+        },
+        "theta_max_K": {
+          "values": [
+            14.111776614852829,
+            14.111808721908858,
+            14.111932354224905
+          ],
+          "relative_span": 1.1036006137691528e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "electron_right_A": {
+          "values": [
+            0.00048243347831904143,
+            0.0004824300894897634,
+            0.00048241724191153053
+          ],
+          "relative_span": 3.365522551932244e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_theta_mean_K": {
+          "values": [
+            11.846677134130102,
+            11.84670357979224,
+            11.846807799477494
+          ],
+          "relative_span": 1.102958278748937e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_E_mean_V_m": {
+          "values": [
+            360728.83354971453,
+            360729.4677482219,
+            360731.91997257934
+          ],
+          "relative_span": 8.556001545546534e-06,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_Q_mean_W_m3": {
+          "values": [
+            25814486906415.496,
+            25814544037161.855,
+            25814761018406.863
+          ],
+          "relative_span": 1.0618420645914006e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_n_relative_mean": {
+          "values": [
+            0.022753849861319453,
+            0.02275394988412476,
+            0.02275428055071879
+          ],
+          "relative_span": 1.892784078034956e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_p_relative_mean": {
+          "values": [
+            0.03226529582315074,
+            0.03244527406700888,
+            0.032826527289596195
+          ],
+          "relative_span": 0.017096888181142654,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_Q_p95_W_m3": {
+          "values": [
+            54237484883024.695,
+            54237672287093.87,
+            54238370609443.055
+          ],
+          "relative_span": 1.6330254917450773e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "E_p95_V_m": {
+          "values": [
+            434437.99083003483,
+            434438.09671407164,
+            434432.6173742555
+          ],
+          "relative_span": 1.2612475419595023e-05,
+          "limit": 0.01,
+          "passed": true
+        }
+      },
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    },
+    {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S1_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S2_V080"
+      ],
+      "errors": [],
+      "comparisons": {
+        "joule_W": {
+          "values": [
+            0.004927806304296906,
+            0.004927804726283418,
+            0.0049277988541769685
+          ],
+          "relative_span": 1.5118532421087744e-06,
+          "limit": 0.01,
+          "passed": true
+        },
+        "theta_max_K": {
+          "values": [
+            24.277161870306315,
+            24.277256892703235,
+            24.27761642674227
+          ],
+          "relative_span": 1.8723272827306794e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "electron_right_A": {
+          "values": [
+            0.0006160108150277407,
+            0.0006160026183284997,
+            0.0006159720191951144
+          ],
+          "relative_span": 6.297914205380028e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_theta_mean_K": {
+          "values": [
+            20.344273625016193,
+            20.34435031870127,
+            20.34464840937857
+          ],
+          "relative_span": 1.842176649293716e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_E_mean_V_m": {
+          "values": [
+            499916.5309063577,
+            499918.0569494233,
+            499923.83679711475
+          ],
+          "relative_span": 1.4614007613386976e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_Q_mean_W_m3": {
+          "values": [
+            44629594463390.38,
+            44629765494555.98,
+            44630389058828.73
+          ],
+          "relative_span": 1.7803910185420267e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_n_relative_mean": {
+          "values": [
+            0.03907232226505648,
+            0.03907258349088908,
+            0.03907342458286782
+          ],
+          "relative_span": 2.821144609420677e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_p_relative_mean": {
+          "values": [
+            0.0764454378404903,
+            0.07670937736945746,
+            0.07722893430122728
+          ],
+          "relative_span": 0.010145115529899705,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_Q_p95_W_m3": {
+          "values": [
+            94575856489463.69,
+            94577062881987.98,
+            94580740077706.94
+          ],
+          "relative_span": 5.163406671630688e-05,
+          "limit": 0.01,
+          "passed": true
+        },
+        "E_p95_V_m": {
+          "values": [
+            615661.3829922295,
+            615693.9479380796,
+            615791.5848807887
+          ],
+          "relative_span": 0.00021143823942374777,
+          "limit": 0.01,
+          "passed": true
+        }
+      },
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    }
+  ],
+  "local": [
+    {
+      "voltage_V": 6,
+      "supg_scale": 1.0,
+      "passed": true,
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.00015415001046881197,
+          "rms_relative": 1.8275733882897148e-05,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.0006335059278643141,
+          "rms_relative": 9.833340604870996e-05,
+          "normalization": 14.112019054694672,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.0008715042266201341,
+          "rms_relative": 0.00016800330816117918,
+          "normalization": 8.317802785721153e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.00042831871720646106,
+          "rms_relative": 5.842082271822919e-05,
+          "normalization": 8.317802785721153e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.000389316844712145,
+          "rms_relative": 7.207687479494471e-05,
+          "normalization": 8.317802785721153e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.013112496454243974,
+          "rms_relative": 0.0010159088327356027,
+          "normalization": 1.2754575131053203,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.014037346884459805,
+          "rms_relative": 0.0009018172118594338,
+          "normalization": 2.01042844563798,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 1.0,
+      "passed": true,
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.00016162656621138594,
+          "rms_relative": 2.0619854844160228e-05,
+          "normalization": 8.000116132806466,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.0005908357007814926,
+          "rms_relative": 9.21691266439212e-05,
+          "normalization": 24.277653498502644,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.0008642911989500147,
+          "rms_relative": 0.00016632786535990002,
+          "normalization": 1.4285045493555686e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0004268458275953512,
+          "rms_relative": 5.812318174462114e-05,
+          "normalization": 1.4285045493555686e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0003855036918868906,
+          "rms_relative": 7.152685487235925e-05,
+          "normalization": 1.4285045493555686e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.013571442195972384,
+          "rms_relative": 0.0009043720404051718,
+          "normalization": 2.5761146538133275,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.015790106849243635,
+          "rms_relative": 0.0008191893449886251,
+          "normalization": 6.954010364012136,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    {
+      "voltage_V": 6,
+      "supg_scale": 0.5,
+      "passed": true,
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 9.576711644143638e-06,
+          "rms_relative": 2.9640188968224074e-06,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 7.653312885986459e-06,
+          "rms_relative": 2.9012131657956537e-06,
+          "normalization": 14.111991435991838,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 1.850334026073892e-06,
+          "rms_relative": 8.217292325124538e-07,
+          "normalization": 8.317802785721151e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 1.4567419595214814e-06,
+          "rms_relative": 5.316771798917793e-07,
+          "normalization": 8.317802785721151e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 7.065805462192286e-07,
+          "rms_relative": 2.2477020728917748e-07,
+          "normalization": 8.317802785721151e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 1.684722320199515e-05,
+          "rms_relative": 1.3064805217645858e-06,
+          "normalization": 1.2748274580015133,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.0013134087637577696,
+          "rms_relative": 0.00020874975111695663,
+          "normalization": 2.009360265103069,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 0.5,
+      "passed": true,
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 1.2907779192530715e-05,
+          "rms_relative": 3.958537649609641e-06,
+          "normalization": 8.000116132806466,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 1.0950491122027466e-05,
+          "rms_relative": 4.243055232102149e-06,
+          "normalization": 24.277570896546383,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 3.2191300260553728e-06,
+          "rms_relative": 1.369736375713207e-06,
+          "normalization": 1.4285045493555682e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 2.4446422585190377e-06,
+          "rms_relative": 8.496978213407983e-07,
+          "normalization": 1.4285045493555682e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 8.704137753271527e-07,
+          "rms_relative": 2.8103429902290684e-07,
+          "normalization": 1.4285045493555682e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 1.463113269085422e-05,
+          "rms_relative": 1.5190360907398494e-06,
+          "normalization": 2.574517819527946,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.0010747781916597308,
+          "rms_relative": 0.00010976951706323111,
+          "normalization": 6.940510316280038,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    {
+      "voltage_V": 6,
+      "supg_scale": 2.0,
+      "passed": true,
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 2.0326096031790055e-05,
+          "rms_relative": 6.00578206072628e-06,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 1.8974006731781397e-05,
+          "rms_relative": 7.779415634000498e-06,
+          "normalization": 14.112113234023566,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 7.306427760642873e-06,
+          "rms_relative": 3.2591286978324446e-06,
+          "normalization": 8.317863446328171e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 5.250414072444624e-06,
+          "rms_relative": 1.8587204984190612e-06,
+          "normalization": 8.317863446328171e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 1.6110472907049084e-06,
+          "rms_relative": 5.027015121606211e-07,
+          "normalization": 8.317863446328171e-10,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 3.408036746291453e-05,
+          "rms_relative": 3.1365347673427307e-06,
+          "normalization": 1.274841551130978,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.002510239186087082,
+          "rms_relative": 0.00040001718068314793,
+          "normalization": 2.009210091998901,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 2.0,
+      "passed": true,
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 2.7760723982567065e-05,
+          "rms_relative": 8.088920370568217e-06,
+          "normalization": 8.00011624282703,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 2.786146462607959e-05,
+          "rms_relative": 1.2071222468063926e-05,
+          "normalization": 24.27792617480687,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 1.2390002581365218e-05,
+          "rms_relative": 5.460009414160574e-06,
+          "normalization": 1.4285221948589309e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 8.730320380242361e-06,
+          "rms_relative": 3.034916616329891e-06,
+          "normalization": 1.4285221948589309e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 2.124877408510858e-06,
+          "rms_relative": 7.13862450404165e-07,
+          "normalization": 1.4285221948589309e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 3.034030196342972e-05,
+          "rms_relative": 4.0406367241003435e-06,
+          "normalization": 2.5745681737923314,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.001995232711878282,
+          "rms_relative": 0.00020536337998556457,
+          "normalization": 6.9398765710498855,
+          "limit": 0.02,
+          "passed": true
+        }
+      }
+    }
+  ],
+  "power": [
+    {
+      "voltage_V": 6,
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "supg_scale": 1.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A32_R18_Z14_S1_V060\\report.json",
+      "physical_exterior_gap_relative": 3.409368352689384e-05,
+      "reconstructed_full_JE_W": 0.0057891504782631754,
+      "assembled_order3_free_residual_max_A": 4.65147352600699e-16,
+      "independent_vs_native_relative": 2.969640509383158e-13
+    },
+    {
+      "voltage_V": 8,
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "supg_scale": 1.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A32_R18_Z14_S1_V080\\report.json",
+      "physical_exterior_gap_relative": 6.573921748790182e-05,
+      "reconstructed_full_JE_W": 0.009855737314684202,
+      "assembled_order3_free_residual_max_A": 6.976684349934813e-16,
+      "independent_vs_native_relative": 1.0591310463768059e-12
+    },
+    {
+      "voltage_V": 6,
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "supg_scale": 1.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A40_R20_Z16_S1_V060\\report.json",
+      "physical_exterior_gap_relative": 1.9502227236340036e-05,
+      "reconstructed_full_JE_W": 0.005789109653959143,
+      "assembled_order3_free_residual_max_A": 3.8588126644627987e-16,
+      "independent_vs_native_relative": 4.644710477980883e-13
+    },
+    {
+      "voltage_V": 8,
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "supg_scale": 1.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A40_R20_Z16_S1_V080\\report.json",
+      "physical_exterior_gap_relative": 3.74421842238081e-05,
+      "reconstructed_full_JE_W": 0.00985565273896625,
+      "assembled_order3_free_residual_max_A": 1.064805149180675e-15,
+      "independent_vs_native_relative": 9.777890907122871e-13
+    },
+    {
+      "voltage_V": 6,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 1.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S1_V060\\report.json",
+      "physical_exterior_gap_relative": 1.2547293710477997e-05,
+      "reconstructed_full_JE_W": 0.005789087529681811,
+      "assembled_order3_free_residual_max_A": 3.5657893823098116e-16,
+      "independent_vs_native_relative": 1.7300743174582636e-12
+    },
+    {
+      "voltage_V": 8,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 1.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S1_V080\\report.json",
+      "physical_exterior_gap_relative": 2.4112804000882403e-05,
+      "reconstructed_full_JE_W": 0.009855609452566867,
+      "assembled_order3_free_residual_max_A": 9.758831743105953e-16,
+      "independent_vs_native_relative": 1.0013667722445307e-12
+    },
+    {
+      "voltage_V": 6,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 0.5,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S0.5_V060\\report.json",
+      "physical_exterior_gap_relative": 5.830169610096194e-06,
+      "reconstructed_full_JE_W": 0.005789088168846123,
+      "assembled_order3_free_residual_max_A": 4.450696829573875e-16,
+      "independent_vs_native_relative": 3.4244659755836054e-12
+    },
+    {
+      "voltage_V": 8,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 0.5,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S0.5_V080\\report.json",
+      "physical_exterior_gap_relative": 1.1516760975886381e-05,
+      "reconstructed_full_JE_W": 0.00985561260859369,
+      "assembled_order3_free_residual_max_A": 7.302043716348479e-16,
+      "independent_vs_native_relative": 1.0191314331278137e-13
+    },
+    {
+      "voltage_V": 6,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 2.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S2_V060\\report.json",
+      "physical_exterior_gap_relative": 3.84618936560862e-05,
+      "reconstructed_full_JE_W": 0.005789085173257649,
+      "assembled_order3_free_residual_max_A": 5.948069469318246e-16,
+      "independent_vs_native_relative": 1.9087206084719975e-12
+    },
+    {
+      "voltage_V": 8,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 2.0,
+      "report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S2_V080\\report.json",
+      "physical_exterior_gap_relative": 7.209142289689873e-05,
+      "reconstructed_full_JE_W": 0.009855597708353644,
+      "assembled_order3_free_residual_max_A": 4.892900380907433e-16,
+      "independent_vs_native_relative": 7.688847153691562e-13
+    }
+  ],
+  "all_original_endpoint_numerical_checks_passed": false,
+  "production_allowed_by_endpoint_prerequisite": false,
+  "production_started": false,
+  "power_gap_threshold": null,
+  "conditional_diagnostics_used_for_release": false,
+  "power_audit_scope": "Physical JE/flux in run power_audit valid; directional S/reaction decomposition superseded by trace_power/",
+  "limitations": [
+    "Only r=3um symmetric NT endpoints; intermediate voltages, LQ and other radii need their own evidence",
+    "Current-work heat model is R=0 diagnostic, not thermodynamic closure or experimental calibration"
+  ]
+}

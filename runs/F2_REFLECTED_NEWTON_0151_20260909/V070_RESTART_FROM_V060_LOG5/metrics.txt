@@ -1,0 +1,8 @@
+case_id=F2_H1_NT_L0_V070_RESTART_V060_LOG5
+model=NT
+material_evidence=NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED
+source=ZNO_300K_CANDIDATE_V2; plan=F1_20260906
+heat_source=DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK
+zero_source_heat_reference_W= 9.6563185731179998E-003
+restart_nodes_file=C:\Users\Administrator\Desktop\geminiÐÞ¸Ä\Console3\solver_v2\cases\F2_H1_HIGH_VOLTAGE_20260909\..\..\runs\F2_NEWTON_FALLBACK_0146_20260909\V060_REGRESSION\nodes.csv
+continuation_path=FULL_JOULE_DURING_VOLTAGE

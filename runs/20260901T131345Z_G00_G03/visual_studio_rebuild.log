@@ -1,0 +1,35 @@
+重新生成开始于 21:14...
+1>------ 已启动全部重新生成: 项目: TPSolverV2, 配置: Debug x64 ------
+Deleting intermediate files and output files for project 'TPSolverV2', configuration 'Debug|x64'.
+Compiling with Intel® Fortran Compiler 2024.2.1 [Intel(R) 64]...
+status_m.f90
+build_info_m.f90
+field_layout_m.f90
+input_schema_m.f90
+kinds_m.f90
+constants_m.f90
+hex20_quadrature_m.f90
+equilibrium_m.f90
+model_types_m.f90
+thermo_piezo_m.f90
+mesh_types_m.f90
+hex20_shape_m.f90
+native_input_m.f90
+recombination_m.f90
+transport_m.f90
+mesh_checks_m.f90
+material_point_m.f90
+dof_map_m.f90
+element_kernel_m.f90
+material_tangent_check_m.f90
+element_tangent_check_m.f90
+verification_driver_m.f90
+main.f90
+Linking...
+Embedding manifest...
+
+Build log written to  "file://C:/Users/Administrator/Desktop/gemini修改/Console3/solver_v2/x64/Debug/BuildLog.htm"
+TPSolverV2 - 0 error(s), 0 warning(s)
+========== 全部重新生成: 1 成功，0 失败，0 已跳过 ==========
+========== 重新生成 于 21:14 完成，耗时 04.717 秒 ==========
+

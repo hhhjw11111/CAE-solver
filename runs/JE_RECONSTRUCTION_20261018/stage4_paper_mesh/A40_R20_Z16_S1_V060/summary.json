@@ -1,0 +1,7 @@
+{
+  "state": "FAILED_NO_COMPLETE_STATE",
+  "mesh_validated": false,
+  "power_gap_validated": false,
+  "elapsed_seconds": 42.0630000000092,
+  "stop_reason": null
+}

@@ -1,0 +1,63 @@
+{
+  "runs": [
+    "A16_S0.5_V080",
+    "A16_S1_V080"
+  ],
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0024669588431716193,
+      "rms_relative": 0.0008745255451992862,
+      "normalization": 8.000078894911326,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.005366478813984639,
+      "rms_relative": 0.0032437495659155963,
+      "normalization": 24.377737026467674,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.004787210141158297,
+      "rms_relative": 0.0026260649514272018,
+      "normalization": 1.7579599183870181e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0029302162529957453,
+      "rms_relative": 0.0011899689653816223,
+      "normalization": 1.7579599183870181e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.00034757816621327917,
+      "rms_relative": 0.00013975092632761773,
+      "normalization": 1.7579599183870181e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.005510462794660473,
+      "rms_relative": 0.0010150242086491494,
+      "normalization": 2.6864211188743847,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.05948530217076447,
+      "rms_relative": 0.0073807940004810045,
+      "normalization": 7.347870773541333,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "nodes_hashes": [
+    "cf2d1d4d5eb7bfd1b841c837c8c1fa6bcbf1f3680b6435f8ec1c64d21a2f08d3",
+    "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941"
+  ],
+  "scope": "same-node field shape; 2% existing tolerance"
+}

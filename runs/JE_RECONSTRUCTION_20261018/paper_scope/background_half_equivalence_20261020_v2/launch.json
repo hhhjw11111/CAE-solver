@@ -1,0 +1,6 @@
+{
+  "pid": 34240,
+  "script_sha256": "DFDBC9FC1E64F82AA568C5E10E22BD8475FA49E5060AA8213983E2C3496D172A",
+  "started_at": "2026-10-20T22:29:50.0624507+08:00",
+  "script": "scripts/run_je_half_equivalence_20261020_v2.py"
+}

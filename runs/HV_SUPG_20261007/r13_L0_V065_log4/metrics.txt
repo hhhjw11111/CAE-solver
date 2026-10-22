@@ -1,0 +1,11 @@
+case_id=HV_NT_V065
+model=NT
+material_evidence=NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED
+source=ZNO_300K_CANDIDATE_V2; plan=F1_20260906
+heat_source=DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK
+transport_discretization=HEX20_CONSISTENT_SUPG_EXPERIMENTAL
+supg_scale= 1.0000000000000000E+000
+supg_directional_tau=T
+zero_source_heat_reference_W= 8.3261114227394985E-003
+restart_nodes_file=C:/Users/Administrator/Desktop/codex-workspaces/Console3/solver_v2/runs/HV_SUPG_20261007/r13_probe_6_to_8/accepted_00002_nodes.csv
+continuation_path=FULL_JOULE_DURING_VOLTAGE

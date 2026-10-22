@@ -1,0 +1,36 @@
+{
+  "scope": "CONTINUATION_COORDINATE_PROVENANCE",
+  "controls": [
+    {
+      "run": "r17_inverse_XY0_Z2",
+      "control_node": 479,
+      "coordinate_m": [
+        6.123233995736766e-22,
+        1e-05,
+        -5e-07
+      ],
+      "metadata_sha256": "4f4e06110162ab1e53e553fc04f9f5738f4851880ec8cb3904d0084e69d94218"
+    },
+    {
+      "run": "r17_inverse_XY1_Z3",
+      "control_node": 2165,
+      "coordinate_m": [
+        -1.8228255281908777e-21,
+        -9.923e-06,
+        -5e-07
+      ],
+      "metadata_sha256": "8f80de0fd8289b8500ea47382b563ef2b1370bad036581a76c2bd3da71e69d92"
+    },
+    {
+      "run": "r17_inverse_scale05",
+      "control_node": 479,
+      "coordinate_m": [
+        6.123233995736766e-22,
+        1e-05,
+        -5e-07
+      ],
+      "metadata_sha256": "3aeacc3008047d614a548763cb6afdedba25d31e57c8cc53bf4244cb1abe6d92"
+    }
+  ],
+  "limitation": "Each run controls its initially hottest free node. Coordinates differ; equal control temperatures are not automatically matched spatial states, and sampled voltage maxima are not precise fold estimates."
+}

@@ -1,0 +1,11 @@
+{
+  "executable_sha256": "8B23EC17CC129D2C3CFDC91DEDB67D5A4AA174D0107E7BB219233A80D0B5BF01",
+  "started_utc": "2026-09-06T16:56:43.2526736Z",
+  "case": "FAST_H1_LQ_L0",
+  "threads": 4,
+  "MKL_DYNAMIC": "FALSE",
+  "storage": "IC",
+  "input_sha256": "0C54B12DBAD1BA38DF5B2F7F58DF5BF096EEEB49132E0E1617ED2BCB1D063842",
+  "KMP_AFFINITY": "granularity=fine,compact,1,0",
+  "input_name": "FAST_H1_LQ_L0"
+}

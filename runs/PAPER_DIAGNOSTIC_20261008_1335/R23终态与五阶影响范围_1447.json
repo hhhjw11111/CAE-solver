@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-10-08T14:47:30.012931+08:00",
+  "r23_6V_L0_summary": {
+    "state": "SOLVED_FLUX_GATE_FAILED",
+    "mesh_validated": false,
+    "complete_quantitative_0_8V": false
+  },
+  "r23_6V_L0_execution": {
+    "exit_code": 1,
+    "seconds": 980.375,
+    "timed_out": false,
+    "input_sha256": "950cb8b70e306c909ce7e052026cc9574b7118575b4a84a2b826c9a40b3515e5",
+    "executable_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9"
+  },
+  "heat_balance_relative": 0.041198378014967216,
+  "physical_exterior_heat_balance_relative": 0.04377610571947903,
+  "heat_gate": 0.01,
+  "q3_function_byte_identical_r23_r24": true,
+  "q5_debug_failure_scope": "GAUSS_RULE_5X5X5 at points(:,n) assignment; caller CHECK_MOMENTS. Not shared q3 Gauss routine. Source is mathematically same rule; error cause beyond reported bounds check unconfirmed. R24 explicit scalar component writes.",
+  "r24_q5_replay": {
+    "nodes.csv": true,
+    "field_samples.csv": true,
+    "scope": "R23_TO_R24_Q5_PRODUCTION_REPLAY"
+  },
+  "validity": [
+    "Preserve R23 q3 evidence; does not invoke failed q5 assignment path. Preserve R23 6V q3 flux FAIL.",
+    "Preserve R23 q5 optimized rawresults with Debug failureannotation. R24 replay confirms only0.5V halfL1 q5 nodes/sample byte equality and solve/flux PASS, not allprior q5 cases.",
+    "R24 Debug moment/tangent/equilibrium and q5 global syntheticfixture PASS are separate build evidence, not a blanket R23 endorsement."
+  ],
+  "active_other_runs": [
+    {
+      "pid": 13416,
+      "directory": "r23_log_half_A48_V005",
+      "voltage": 0.5,
+      "scope": "AngularA48, no terminal"
+    },
+    {
+      "pid": 29960,
+      "directory": "r23_log_half_L2_V030",
+      "voltage": 3,
+      "scope": "L2, no terminal"
+    },
+    {
+      "pid": 30140,
+      "directory": "r23_log_half_L0_V080",
+      "voltage": 8,
+      "scope": "L0, no terminal"
+    }
+  ],
+  "next_check_local": "2026-10-08 15:00 +08:00",
+  "evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\execution.json",
+      "sha256": "fefe4bdde2b544620b8ea1d7a2776e911b576958e5068d39109bed7e57dcd418"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\summary.json",
+      "sha256": "52de2483fd52c43498b7b1bdba2fef363f2b1ecc1e21b57f65ea93097c4a0382"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\field_audit.json",
+      "sha256": "bad833ddefb978cc6ffdef2d591e3fd9e93af64e18eb6818ebc1a8e0b6018872"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\metrics.txt",
+      "sha256": "4a597ef05e8652e54f342b5fb71bd8c84f7258723df05f4afdd9137d63270e88"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_q5_debug_r23\\stdout.txt",
+      "sha256": "302258343e60fa6b114b7b2b7d5c016e757ebc3e834fe46132234299bb1c35b9"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_q5_debug_r24\\stdout.txt",
+      "sha256": "0aab4626556c9faad421af013578d83670974c358a5da8ad5d4533fa5ae11203"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_r24_q5_replay_equivalence.json",
+      "sha256": "f23aa81fa6cc3bcdc31fdd17c3867249e44f263caff4025d4fac601db89a72f1"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r24_log_q5_half_L1_V005_replay\\summary.json",
+      "sha256": "a001cfa5282bfc2aa299b2072e73f044eeb1897175ab0c19c445c25a0e2aaa57"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r24_log_q5_half_L1_V005_replay\\execution.json",
+      "sha256": "228d3056129b2117e5b45f0fea9ac291e54654376f33c8fbe99400be3d0fb574"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_global_q5_r24\\stdout.txt",
+      "sha256": "37995b0519a5b90d9bb5eec16a5294a510581dd735d12e282267af784b41f07e"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_temperature_r24\\stdout.txt",
+      "sha256": "dbba34985eacc43833f253324e5f1481eff543d588cf6d93e67f53d181240718"
+    }
+  ]
+}

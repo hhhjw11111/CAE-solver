@@ -1,0 +1,55 @@
+{
+  "study": "F2_H1_NT_L0_voltage_sweep",
+  "geometry": "20um x 20um x 1um, centered insulated hole r=3um",
+  "model": "NT",
+  "mesh_source": "cases\\F1_FAST_HOLE_L0\\H1_L0.mesh",
+  "omitted_existing_voltage_V": 3.0,
+  "zero_voltage": "exact zero state; no solver launch",
+  "cases": [
+    {
+      "case_id": "F2_H1_NT_L0_V005",
+      "voltage_V": 0.5,
+      "input": "F2_H1_NT_L0_V005.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V010",
+      "voltage_V": 1.0,
+      "input": "F2_H1_NT_L0_V010.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V015",
+      "voltage_V": 1.5,
+      "input": "F2_H1_NT_L0_V015.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V020",
+      "voltage_V": 2.0,
+      "input": "F2_H1_NT_L0_V020.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V025",
+      "voltage_V": 2.5,
+      "input": "F2_H1_NT_L0_V025.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V035",
+      "voltage_V": 3.5,
+      "input": "F2_H1_NT_L0_V035.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V040",
+      "voltage_V": 4.0,
+      "input": "F2_H1_NT_L0_V040.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V045",
+      "voltage_V": 4.5,
+      "input": "F2_H1_NT_L0_V045.nml"
+    },
+    {
+      "case_id": "F2_H1_NT_L0_V050",
+      "voltage_V": 5.0,
+      "input": "F2_H1_NT_L0_V050.nml"
+    }
+  ]
+}

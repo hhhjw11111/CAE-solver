@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>6–8 V 新分支云图</title><style>body{font:16px/1.7 "Microsoft YaHei",sans-serif;max-width:1200px;margin:40px auto;padding:0 24px;color:#202830}img{width:100%;height:auto}figure{margin:30px 0;border-top:1px solid #ddd;padding-top:20px}a{color:#165f9b}pre{white-space:pre-wrap;font:14px/1.9 inherit;background:#f5f7f9;padding:24px}</style><h1>6、7、8 V · J·E 分支云图</h1><p>同一 r = 3 μm 网格；每幅三列共用色标。现有保存解的后处理，尚未通过独立网格与物理闭合验证。</p><p><a href="global_metrics.csv">全域指标 CSV</a> · <a href="plane_extrema.csv">面上极值 CSV</a> · <a href="README.txt">数据审查说明</a></p>
+<figure><figcaption><b>焦耳热密度 · J·E</b> · <a href="01_joule_mid.png">PNG</a> · <a href="01_joule_mid.pdf">PDF</a> · <a href="01_joule_mid.svg">SVG</a></figcaption><img loading="lazy" src="01_joule_mid.png" alt="焦耳热密度 · J·E"></figure>
+<figure><figcaption><b>电势</b> · <a href="02_potential_mid.png">PNG</a> · <a href="02_potential_mid.pdf">PDF</a> · <a href="02_potential_mid.svg">SVG</a></figcaption><img loading="lazy" src="02_potential_mid.png" alt="电势"></figure>
+<figure><figcaption><b>电子浓度相对变化</b> · <a href="03_electrons_mid.png">PNG</a> · <a href="03_electrons_mid.pdf">PDF</a> · <a href="03_electrons_mid.svg">SVG</a></figcaption><img loading="lazy" src="03_electrons_mid.png" alt="电子浓度相对变化"></figure>
+<figure><figcaption><b>空穴浓度相对变化</b> · <a href="04_holes_mid.png">PNG</a> · <a href="04_holes_mid.pdf">PDF</a> · <a href="04_holes_mid.svg">SVG</a></figcaption><img loading="lazy" src="04_holes_mid.png" alt="空穴浓度相对变化"></figure>
+<figure><figcaption><b>耦合总等效应力（含热效应）</b> · <a href="05_total_stress_mid.png">PNG</a> · <a href="05_total_stress_mid.pdf">PDF</a> · <a href="05_total_stress_mid.svg">SVG</a></figcaption><img loading="lazy" src="05_total_stress_mid.png" alt="耦合总等效应力（含热效应）"></figure>
+<figure><figcaption><b>温升</b> · <a href="06_temperature_mid.png">PNG</a> · <a href="06_temperature_mid.pdf">PDF</a> · <a href="06_temperature_mid.svg">SVG</a></figcaption><img loading="lazy" src="06_temperature_mid.png" alt="温升"></figure>
+<figure><figcaption><b>下表面电子浓度相对变化</b> · <a href="07_electrons_bottom.png">PNG</a> · <a href="07_electrons_bottom.pdf">PDF</a> · <a href="07_electrons_bottom.svg">SVG</a></figcaption><img loading="lazy" src="07_electrons_bottom.png" alt="下表面电子浓度相对变化"></figure>
+<figure><figcaption><b>上表面空穴浓度相对变化</b> · <a href="08_holes_top.png">PNG</a> · <a href="08_holes_top.pdf">PDF</a> · <a href="08_holes_top.svg">SVG</a></figcaption><img loading="lazy" src="08_holes_top.png" alt="上表面空穴浓度相对变化"></figure>
+<figure><figcaption><b>热膨胀本构应力项 −βxxΔT（非独立热应力解）</b> · <a href="09_thermal_term_mid.png">PNG</a> · <a href="09_thermal_term_mid.pdf">PDF</a> · <a href="09_thermal_term_mid.svg">SVG</a></figcaption><img loading="lazy" src="09_thermal_term_mid.png" alt="热膨胀本构应力项 −βxxΔT（非独立热应力解）"></figure>
+<h2>审查与复现说明</h2><pre>6、7、8 V 新 J·E 分支云图与数据审查（2026-10-13）
+
+本次仅后处理现有 solver_v2 求解结果；没有修改物理模型、重跑求解或改写历史输出。
+三列分别是实际 6、7、8 V 结果，不是插值。网格均为 XY0_Z2，孔半径 3 μm，区域 20×20×1 μm。
+借用用户示例的三列、正方形区域和白色圆孔布局。示例的孔径比较改成电压比较，因为现有这些电压数据来自同一孔径。
+每幅图的三列严格共用一个线性色标。载流子显示相对于各自参考浓度的变化百分比，以零为中心。没有按每个电压单独归一化。
+
+图件与用途
+01 焦耳热密度：中面 z=0；使用 E·(Jn+Jp)，用于定位局部热源集中及随电压变化。
+02 电势：中面 z=0；用于检查施加电压和孔周电势分布。右端电势为 -6/-7/-8 V，左端为 0 V。
+03、04 中面电子、空穴相对变化：与其它中面云图对应。电子变化很弱，8 V 中面范围约 -0.1803% 至 +0.0670%。小幅条纹不能据此认定为物理振荡，需做网格与稳定化敏感性检查。
+05 总等效应力：中面 z=0；来自 σ=Cε-eᵀE-βΔT 的 von Mises 值，包含热效应和压电、弹性贡献。它不是单独的纯热应力。
+06 温升：中面 z=0；比单独的 -βΔT 更直接展示热响应，建议和焦耳热配对阅读；热源峰值位置不必等于温度峰值位置。
+07 下表面电子相对变化：z=-0.5 μm；补充中面遗漏的厚度方向载流子重分布。采样最大值从 6 V 的 +132.63% 增至 8 V 的 +268.64%。n0=6×10²² m⁻³。
+08 上表面空穴相对变化：z=+0.5 μm；作为少数载流子诊断。当前模型 p0=1.4016667×10⁻³⁰ m⁻³，因此即使相对变化 +714%，绝对浓度仍极低，不能当作显著空穴电流或实际材料浓度证据。
+09 热膨胀本构项：中面 -βxxΔT；βxx=1,687,447 Pa/K，仅是应力公式的直接热项。独立热应力还应包含温度驱动位移的弹性响应，并满足力学平衡；本图不能替代这种分解求解。
+
+统一口径的全域指标（来自原始五点高斯积分输出，非中面极值）
+电压       热源体积分/mW   最大温升/K   最大总等效应力/MPa
+6 V        5.79072746      14.17139576  4.00117147
+7 V        7.72141428      18.98810476  5.36955239
+8 V        9.85840098      24.37336000  6.90308262
+6→8 V 的热源体积分增加约70.24%，最大温升增加约71.99%。不能把两者的同步变化单独作为热源物理正确性的证明。
+中面应力采样峰值分别为3.2833、（见 plane_extrema.csv）、5.6141 MPa，和全域高斯点最大值口径不同。
+中面焦耳热采样峰值6 V=6.04344×10¹³、8 V=1.05036×10¹⁴ W/m³，位于孔缘 y≈±3 μm。
+
+可信度与未解决问题
+1. 每个电压的后处理在全部392,000个原始积分点上核对21列场数据，并核对热源积分、扩散功积分、体积、最大温升和最大应力。按各列峰值归一的最大误差：6 V 3.35×10⁻¹⁰，7 V 2.80×10⁻¹⁰，8 V 3.40×10⁻¹⁰。证明重构与保存的求解场一致，不能证明物理模型正确。
+2. 这些运行标为 PASS_NOT_MESH_ACCEPTANCE。J·E 分支标为 DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE，仍不是已验证的热力学晶格热源闭合。
+3. 6/7/8 V 的热平衡误差为0.004318%、0.007685%、0.012511%；但 |∫J·E-Pterminal|/|∫J·E| 为2.5243%、2.7511%、2.9712%。必须检查边界电流通量、积分与离散一致性，不能把后者解释成已证实的物理损耗。
+4. 云图使用原 HEX20 插值，在各单元面16等分取点；三角片只在同一单元面内连接。没有跨孔插值、跨单元梯度平均、裁掉极值或对物理场进行平滑。Q和应力中的放射状/块状接缝保留了离散梯度跳变，尚需独立网格和SUPG敏感性验证，不应解读成材料界面。
+5. z=0 的导数取正z侧单元的单侧迹；上下表面亦为材料侧迹。面上极值与全域高斯采样极值并非同一个量；所有表格都保留其采样口径。
+
+文件与复现
+index.html：全部九幅图和说明；每图提供PNG、PDF、SVG。
+source_data/V{6,7,8}_{midplane,top,bottom}.npz：绘图点、原始重构场、三角片连接及单元编号，包含绝对 n、p 浓度。
+global_metrics.csv/json：全域指标；plane_extrema.csv：每幅每电压的面上极值和坐标；color_scales.json：实际色标上下限。
+provenance.json：网格、nodes.csv、field_samples.csv、metrics.txt、重构脚本的SHA256。
+两份Python脚本为绘制脚本和不改动的HEX20重构依赖。工作区内运行：python solver_v2/scripts/plot_je_voltage_clouds_20261013.py
+只重新绘图：在同一命令末尾增加 --render-only；此模式读取已缓存的面数据，不重新核对原始积分点。
+
+绘图质量检查
+九幅最终图全部通过面板对齐检查、PDF字体检查及文字/图形碰撞检查（零FAIL、零WARN）。逐图目视核对色标、圆孔、坐标、单位与标签。
+静态预检的宽度、330 dpi PNG、未输出TIFF为已审阅提醒：本次是按用户横排示例提供屏幕审阅图，并非期刊排版交付；同时提供PDF/SVG，场图层栅格化而文字和轴线可编辑。
+参考热图配色沿用项目已保存的用户模板；颜色不用于精确读数，精确范围与数据在色标和数据文件中。其它场使用顺序或零中心发散色标。
+</pre></html>

@@ -31,8 +31,10 @@ module global_block_jacobian_check_m
 
 contains
 
-  subroutine verify_global_block_jacobian_g06(status)
+  subroutine verify_global_block_jacobian_g06(status,supg,directional)
     type(SolverStatusType), intent(out) :: status
+    logical, intent(in), optional :: supg
+    logical, intent(in), optional :: directional
     type(MeshType) :: mesh
     type(MaterialType) :: materials(1)
     type(StateType) :: base_state,plus_state,minus_state
@@ -60,6 +62,8 @@ contains
     call build_two_element_mesh(mesh)
     mesh%coordinates=1.0e-6_dp*mesh%coordinates
     call define_test_material(materials(1))
+    if(present(supg)) materials(1)%transport_supg=supg
+    if(present(directional)) materials(1)%supg_directional_tau=directional
     materials(1)%reference_p=2.0e20_dp
     node_count=mesh%number_of_nodes()
     allocate(base_state%x(NDOF_NODE*node_count))

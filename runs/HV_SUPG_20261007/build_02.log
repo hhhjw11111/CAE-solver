@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\src\verification\supg_check_m.f90(100): remark #7712: This variable has not been used.   [PASS]
+    integer :: e,a,b,ia,ib,row,col,it,bt,fld,idx(20),pass,ns,ii
+-----------------------------------------------------^
+C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\src\verification\supg_check_m.f90(98): remark #7712: This variable has not been used.   [SHAPE]
+    real(dp) :: grid(ne+1),shape(20),dn(3,20),left,right,xx,q,cn,exact,thermal,flux,flux_exact
+---------------------------^
+C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\src\verification\supg_check_m.f90(98): remark #7712: This variable has not been used.   [DN]
+    real(dp) :: grid(ne+1),shape(20),dn(3,20),left,right,xx,q,cn,exact,thermal,flux,flux_exact
+-------------------------------------^
+MANIFEST_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261007_R2\build_manifest.json
+BUILD_OK=C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261007_R2\TPSolverV2.exe

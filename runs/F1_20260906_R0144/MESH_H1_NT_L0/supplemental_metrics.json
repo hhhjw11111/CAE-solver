@@ -1,0 +1,19 @@
+{
+  "case": "MESH_H1_NT_L0",
+  "saved_sample_relative_error": 1.1064050277242976e-09,
+  "ring_reconstruction_errors": {
+    "ring_volume_m3": 7.56060212230841e-14,
+    "ring_Q_mean_W_m3": 8.380274297023884e-14,
+    "ring_E_mean_V_m": 6.363754689871388e-14,
+    "ring_abs_n_relative_mean": 4.458239333260394e-16
+  },
+  "ring_E_p95_V_m": 271693.4855984143,
+  "right_mean_ux_m": 2.424621708665131e-10,
+  "right_contact_area_m2": 1.9999999999999992e-11,
+  "thermal_resistance_K_W": 2450.263291374065,
+  "nodes": 10144,
+  "elements": 2240,
+  "method": "Original HEX20 fields; 5x5x3 annulus quadrature and 5x5 face quadrature.",
+  "source_nodes_sha256": "1efa6ef39f0bb42b5ab15a9fd30886e91093e072a2e53cc986ca0ac050364c79",
+  "source_metrics_sha256": "22746d7ed0f6bdb83b8cdbe42bac4b00cb6462a4d1c9f89a7141cf57130a1df9"
+}

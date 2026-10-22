@@ -1,0 +1,2424 @@
+[
+  {
+    "case": "FAST_H0_LQ_L0",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 54,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "FAST_H0_N0_L0",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 54,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "FAST_H0_NT_L0",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 54,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "FAST_H1_LQ_L0",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 54,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "FAST_H1_N0_L0",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 54,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "FAST_H1_NT_L0",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 54,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "r23_log_half_L0_V030",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true,
+      "hole_balance_diagnostic": true,
+      "physical_exterior_heat_balance_relative": true,
+      "physical_exterior_electron_balance_relative": true,
+      "physical_exterior_hole_balance_diagnostic": true,
+      "symmetry_heat_flux_relative": true,
+      "symmetry_electron_flux_relative": true,
+      "symmetry_hole_flux_diagnostic": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 58,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\transport_supg_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\supg_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\temperature_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "r23_log_half_L1_V030",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true,
+      "hole_balance_diagnostic": true,
+      "physical_exterior_heat_balance_relative": true,
+      "physical_exterior_electron_balance_relative": true,
+      "physical_exterior_hole_balance_diagnostic": true,
+      "symmetry_heat_flux_relative": true,
+      "symmetry_electron_flux_relative": true,
+      "symmetry_hole_flux_diagnostic": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 58,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\transport_supg_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\supg_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\temperature_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "r23_log_half_L2_V030",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true,
+      "hole_balance_diagnostic": true,
+      "physical_exterior_heat_balance_relative": true,
+      "physical_exterior_electron_balance_relative": true,
+      "physical_exterior_hole_balance_diagnostic": true,
+      "symmetry_heat_flux_relative": true,
+      "symmetry_electron_flux_relative": true,
+      "symmetry_hole_flux_diagnostic": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 58,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\fem\\transport_supg_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\supg_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\temperature_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  },
+  {
+    "case": "r25_A64_V030",
+    "execution_exit_code": 0,
+    "metric_gate_checks": {
+      "maximum_stage_balance": true,
+      "maximum_accepted_residual": true,
+      "maximum_accepted_update": true,
+      "heat_balance_relative": true,
+      "electron_balance_relative": true,
+      "joule_quadrature_4_5_relative": true,
+      "hole_balance_diagnostic": true,
+      "physical_exterior_heat_balance_relative": true,
+      "physical_exterior_electron_balance_relative": true,
+      "physical_exterior_hole_balance_diagnostic": true,
+      "symmetry_heat_flux_relative": true,
+      "symmetry_electron_flux_relative": true,
+      "symmetry_hole_flux_diagnostic": true
+    },
+    "input_hash_matches_record_or_snapshot": true,
+    "source_files_checked": 58,
+    "source_hashes_match_archive": true,
+    "source_checks": [
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\app\\main.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\app\\production_runner_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\build_info_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\constants_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\field_layout_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\kinds_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\model_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\core\\status_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\dirichlet_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\element_kernel_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\global_assembly_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\sparse_pattern_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\fem\\transport_supg_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\io\\input_schema_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\io\\native_input_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\linear\\pardiso_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\boundary_topology_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\dof_map_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\hex20_quadrature_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\hex20_shape_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\mesh_checks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\mesh\\mesh_types_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\continuation_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\newton_solver_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\scaling_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\nonlinear\\temperature_control_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\equilibrium_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\material_point_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\recombination_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\reference_material_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\thermo_piezo_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\transport_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\physics\\zno_candidate_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\balance_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\field_metrics_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\independent_flux_audit_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\post\\result_writer_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\problems\\reference_bar_problem_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\a1_joint_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\a2_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\analytic_benchmarks_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\center_hole_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\continuation_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\element_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\global_assembly_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\global_block_jacobian_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\linear_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\m0_benchmark_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\matched_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\material_tangent_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\mesh_convergence_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\newton_solver_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\production_joule_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\radius_matrix_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\supg_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\temperature_control_check_m.f90",
+        "matches_archive_manifest": true
+      },
+      {
+        "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_source_snapshot\\src\\verification\\verification_driver_m.f90",
+        "matches_archive_manifest": true
+      }
+    ]
+  }
+]

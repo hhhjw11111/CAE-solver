@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01\\SUPG_targeted.txt": "a99ff025c1e78f34b40a233d4f54296cd650ec668e17892302e588aff33932aa",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\plot_je_supg_paper_benchmark_20261020.py": "ae93797638bb8ab0ff96146cc94314a3a105c6a7fe355dce9047f59c3ac4824e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\verification\\supg_check_m.f90": "00275ca7406fed4f8686f1323a5934d8177548c8ae786dab55081e8c2152c496",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\transport_supg_m.f90": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\verification_reuse\\acceptance.json": "112721dd832210f1363e9fee2662b35edf37533814f103ce5e6418a3eda8b13c",
+    "C:\\Users\\Administrator\\.codex\\skills\\nature-figure\\scripts\\audit_panel_alignment.py": "4ed2d6afe9db45aaf6ca26aeb264cfc251ae92b49ee9fbf117d926e1956acf56"
+  },
+  "new_native_runs": 0,
+  "missing_cases": 0,
+  "excluded_cases": 0,
+  "logged_precision": "ES12.4 for plotted errors",
+  "all_finest_pass": true,
+  "bar_Pe_not_element_Pe": true,
+  "largest_element_Pe_at_bar1000_finest": 23.255,
+  "normalization": "Density max(abs(c-c_exact))/2; current max(abs(j-j_exact))/max(1,abs(j_exact)); 11 samples per element.",
+  "limits_unchanged": true,
+  "production_acceptance": false
+}

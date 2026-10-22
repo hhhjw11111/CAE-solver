@@ -1,0 +1,541 @@
+{
+  "review_time": "2026-10-21T11:37:06.807370+08:00",
+  "source_root": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020",
+  "mesh": [
+    {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": false,
+          "status": "MESH_FAIL",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 1.3808886011323175e-05,
+              "L1_L2": 6.14533586888679e-06,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 0.00012704384652994995,
+              "L1_L2": 7.067665699473472e-06,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 0.00036317910101336606,
+              "L1_L2": 0.00015119655435009543,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.0025266296866429147,
+              "L1_L2": 0.0013529125642880925,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 0.00014064871631751336,
+              "L1_L2": 0.0002245022593859143,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 0.0008336861925041536,
+              "L1_L2": 0.0007013573562429686,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.0004650398550504553,
+              "L1_L2": 0.00020233110062378885,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.10678985363295962,
+              "L1_L2": 0.06884009392763399,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.00032833238150813327,
+              "L1_L2": 0.001307705646581623,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.0025429914276475095,
+              "L1_L2": 0.0007773589035304537,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": false,
+          "status": "MESH_FAIL",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 2.090884358488771e-05,
+              "L1_L2": 1.0904217197787441e-05,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 8.53247734448346e-06,
+              "L1_L2": 7.439898064031388e-05,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 0.0003050253115096312,
+              "L1_L2": 0.0001101008239433716,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.0030386761008539816,
+              "L1_L2": 0.0016349637549528304,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 0.0002271064190631903,
+              "L1_L2": 0.0003013399259180906,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 0.001134107077660512,
+              "L1_L2": 0.0009265720986084623,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.00040894387963441695,
+              "L1_L2": 0.00015062828053431237,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.04678331852900671,
+              "L1_L2": 0.029863319084879936,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.0011343678474110075,
+              "L1_L2": 0.0017190893348677735,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.005176738729022624,
+              "L1_L2": 0.0034064280590562213,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    }
+  ],
+  "supg": [
+    {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060"
+      ],
+      "errors": [],
+      "comparisons": {
+        "joule_W": {
+          "values": [
+            0.002894552390171276,
+            0.0028945861010016842,
+            0.0028948763507324043
+          ],
+          "relative_span": 0.00011190825509576453,
+          "limit": 0.01,
+          "passed": true
+        },
+        "theta_max_K": {
+          "values": [
+            14.110461246763009,
+            14.106279696991521,
+            14.088409693190329
+          ],
+          "relative_span": 0.0015627804922209124,
+          "limit": 0.01,
+          "passed": true
+        },
+        "electron_right_A": {
+          "values": [
+            0.0004821001550505516,
+            0.00048116259522974726,
+            0.00047744611114220435
+          ],
+          "relative_span": 0.009653686810906042,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_theta_mean_K": {
+          "values": [
+            11.846439599715037,
+            11.845592290807094,
+            11.840672955728486
+          ],
+          "relative_span": 0.00048678288003843834,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_E_mean_V_m": {
+          "values": [
+            360632.8613923375,
+            360342.02358783653,
+            359120.1152633279
+          ],
+          "relative_span": 0.004194698517403948,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_Q_mean_W_m3": {
+          "values": [
+            25800189691455.062,
+            25756518061398.047,
+            25567488521552.797
+          ],
+          "relative_span": 0.00901935887623863,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_n_relative_mean": {
+          "values": [
+            0.022754322628754445,
+            0.02275482546368755,
+            0.022751299450289305
+          ],
+          "relative_span": 0.00015495673231470845,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_p_relative_mean": {
+          "values": [
+            0.034561267747182885,
+            0.036849840895458175,
+            0.04318973586685553
+          ],
+          "relative_span": 0.19978052531444784,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_Q_p95_W_m3": {
+          "values": [
+            54207074298748.664,
+            54111819508248.5,
+            53677112755542.59
+          ],
+          "relative_span": 0.009776612186913473,
+          "limit": 0.01,
+          "passed": true
+        },
+        "E_p95_V_m": {
+          "values": [
+            434319.36605759256,
+            434130.1445431398,
+            432921.9068410933
+          ],
+          "relative_span": 0.0032175843992043552,
+          "limit": 0.01,
+          "passed": true
+        }
+      },
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    },
+    {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080"
+      ],
+      "errors": [],
+      "comparisons": {
+        "joule_W": {
+          "values": [
+            0.00492785259027844,
+            0.00492801688927655,
+            0.004929127784619482
+          ],
+          "relative_span": 0.0002587058799777225,
+          "limit": 0.01,
+          "passed": true
+        },
+        "theta_max_K": {
+          "values": [
+            24.272983081387224,
+            24.260099608097107,
+            24.20422253307737
+          ],
+          "relative_span": 0.002832801723599436,
+          "limit": 0.01,
+          "passed": true
+        },
+        "electron_right_A": {
+          "values": [
+            0.0006154256449062228,
+            0.0006138416159951265,
+            0.000607702557029764
+          ],
+          "relative_span": 0.01254918110803719,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_theta_mean_K": {
+          "values": [
+            20.342888633396335,
+            20.33858441054041,
+            20.320734683111105
+          ],
+          "relative_span": 0.0010890267692298123,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_E_mean_V_m": {
+          "values": [
+            499731.44740516,
+            499176.11029641685,
+            496930.3317072265
+          ],
+          "relative_span": 0.0056052420004348005,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_Q_mean_W_m3": {
+          "values": [
+            44595008815532.09,
+            44489944668435.07,
+            44043855928326.56
+          ],
+          "relative_span": 0.012359071157164319,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_abs_n_relative_mean": {
+          "values": [
+            0.03907135012348218,
+            0.03906671567031139,
+            0.03904189154761388
+          ],
+          "relative_span": 0.0007539687206917301,
+          "limit": 0.01,
+          "passed": true
+        },
+        "ring_abs_p_relative_mean": {
+          "values": [
+            0.07913947216268108,
+            0.08137112790750514,
+            0.08647935300540863
+          ],
+          "relative_span": 0.08487437275656415,
+          "limit": 0.01,
+          "passed": false
+        },
+        "ring_Q_p95_W_m3": {
+          "values": [
+            94503198302501.89,
+            94271327794333.42,
+            93213292641014.39
+          ],
+          "relative_span": 0.013649333405188582,
+          "limit": 0.01,
+          "passed": false
+        },
+        "E_p95_V_m": {
+          "values": [
+            615470.4175688756,
+            614931.0517474073,
+            612257.3366700085
+          ],
+          "relative_span": 0.00522052856993332,
+          "limit": 0.01,
+          "passed": true
+        }
+      },
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    }
+  ],
+  "power": [
+    {
+      "voltage_V": 6,
+      "supg_scale": 1.0,
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060",
+      "power_gap_percent": 0.26076521584421175,
+      "full_reconstructed_JE_mW": 5.789172202003241,
+      "power_gap_evidence_sha256": "bc2440cce0908df4b1bcf89205575ea4a3cfc84aa984f694e3f2859d94bb4343"
+    },
+    {
+      "voltage_V": 6,
+      "supg_scale": 0.5,
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060",
+      "power_gap_percent": 0.06657006425571446,
+      "full_reconstructed_JE_mW": 5.789104780342558,
+      "power_gap_evidence_sha256": "9a5cd8549504470745881b7188d56da050caec0eb8e3ab3f72d9bdf21045af4f"
+    },
+    {
+      "voltage_V": 6,
+      "supg_scale": 2.0,
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060",
+      "power_gap_percent": 1.0396715691161194,
+      "full_reconstructed_JE_mW": 5.789752701464973,
+      "power_gap_evidence_sha256": "cc1230794ba73c55933d878136d209f444f8e23f649d3a4144aafd5db4616dc8"
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 1.0,
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080",
+      "power_gap_percent": 0.34834213006449055,
+      "full_reconstructed_JE_mW": 9.856033778553295,
+      "power_gap_evidence_sha256": "d43f6e4acb24ebeb0fa2d286ee70da1fcf9b840ae4a535f18a622c25db65f1e9"
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 0.5,
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080",
+      "power_gap_percent": 0.09006857575843383,
+      "full_reconstructed_JE_mW": 9.855705180556772,
+      "power_gap_evidence_sha256": "0fbbc36f7b2a322b2662ed3d911d1e4f51d74dc3e260d637d7aa63c8401601e0"
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 2.0,
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080",
+      "power_gap_percent": 1.3655187931724921,
+      "full_reconstructed_JE_mW": 9.858255569238716,
+      "power_gap_evidence_sha256": "3e702706ff89c0e163b8a46a841835591b16fcfaf6232cd0d56a5df47b067ed7"
+    }
+  ],
+  "local_fields": [
+    {
+      "voltage_V": 6,
+      "supg_scale": 1.0,
+      "field_comparison_passed": true,
+      "hole_local_percent": 1.9803568605119524,
+      "hole_local_pass": true,
+      "electron_local_percent": 1.3074054335861867,
+      "field_evidence_sha256": "4881e7875423adf5821411723e3779e8761a335d9ba7072d7e212266fef7df21"
+    },
+    {
+      "voltage_V": 6,
+      "supg_scale": 0.5,
+      "field_comparison_passed": false,
+      "hole_local_percent": 2.3606232353325045,
+      "hole_local_pass": false,
+      "electron_local_percent": 0.040404904901057706,
+      "field_evidence_sha256": "9a8d25faf782ef4eff3c9bb965e2cb04b55b29b215504a37fd0f47e2fa773815"
+    },
+    {
+      "voltage_V": 6,
+      "supg_scale": 2.0,
+      "field_comparison_passed": false,
+      "hole_local_percent": 6.127481550646233,
+      "hole_local_pass": false,
+      "electron_local_percent": 0.18848892655500343,
+      "field_evidence_sha256": "105fdbf929998c7cb629a5ee237c53edbb270649362117ee7f1168f0a5bf599f"
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 1.0,
+      "field_comparison_passed": true,
+      "hole_local_percent": 1.435975728598043,
+      "hole_local_pass": true,
+      "electron_local_percent": 1.3526894906800888,
+      "field_evidence_sha256": "afc61b0a166097b5319a1118cd4b9cda5cf3f1d6e36970d376722aa07ddb2bff"
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 0.5,
+      "field_comparison_passed": true,
+      "hole_local_percent": 1.6242066857959276,
+      "hole_local_pass": true,
+      "electron_local_percent": 0.06879724908838299,
+      "field_evidence_sha256": "cbf944c927e4bbd57d905249548b1083985bb603273e0438df35b910f7025774"
+    },
+    {
+      "voltage_V": 8,
+      "supg_scale": 2.0,
+      "field_comparison_passed": false,
+      "hole_local_percent": 3.7106466874336315,
+      "hole_local_pass": false,
+      "electron_local_percent": 0.30945779252357275,
+      "field_evidence_sha256": "5ce2fcbb0921b7e732c839006a9219576f760692c28d6c0c249abd0bed7b25d4"
+    }
+  ],
+  "production_release": false,
+  "original_thresholds_unchanged": true,
+  "old_results_untouched": true,
+  "conclusion": {
+    "mesh_6V_pass": false,
+    "mesh_8V_pass": false,
+    "supg_6V_pass": false,
+    "supg_8V_pass": false,
+    "all_required_preproduction_checks_pass": false,
+    "why_production_not_started": "At least one local-hole mesh/SUPG check fails original threshold; no production run is released."
+  },
+  "evidence_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\final_audit.json": "3f660c3edc4452c288a173725e6d64aeeafef5d824dd3ed32941971a2581d6ba",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\joint_mesh_audit.json": "b4c47b90a83f3eb16ab6a83ca123d6caba6fefc6e633e206f2bec63a0b158468",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\completion.json": "1e0b51f4f8c938c05af8017108cbaa4418b1d5e9c27b28eaf7b4fec2041b33d1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\execution.json": "2e6dc6092059fa346cf72c1ec10ddcdb7051f1507a95822fda7f1cae42a06587",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\manifest.json": "13f43802889cbfdc7f6f79445e21b08562139792b95f9ae5f23afed318ba9773",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\metrics.txt": "699bb56258656e99f34b9363dc929f883b2e4528e3d569dbb2f4f0d6d7d5e03c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\physical_power.json": "9a5cd8549504470745881b7188d56da050caec0eb8e3ab3f72d9bdf21045af4f",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\field_comparison.json": "9a8d25faf782ef4eff3c9bb965e2cb04b55b29b215504a37fd0f47e2fa773815",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060\\summary.json": "7f6eadac97742ecf618689e83770090f3de036a9e781b3b46c84fc8190acee98",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\completion.json": "5324001a9d30efcb3948db63a57734b4de43abedce8efe859be913860b90b141",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\execution.json": "befb35060d46df5769ca7b7673d93d36ee2f35dde71613fbeb5209f0275cf6ea",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\manifest.json": "6e76fbd9e78d25cecb0996ae87b72bb6ad4d012500300b8f52b058e26be467d8",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\metrics.txt": "7a4ed02bf4608c03fdf0893778655b6ef565a159a9e3492dc830c475b0574b0c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\physical_power.json": "0fbbc36f7b2a322b2662ed3d911d1e4f51d74dc3e260d637d7aa63c8401601e0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\field_comparison.json": "cbf944c927e4bbd57d905249548b1083985bb603273e0438df35b910f7025774",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080\\summary.json": "526961d7a5899c0e8dea9d30ec6058f3719a3e8b83ac45c12f3ea55b7f8beb7b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\completion.json": "5324001a9d30efcb3948db63a57734b4de43abedce8efe859be913860b90b141",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\execution.json": "9c43503ed9238448465524939fdd808d84781f71ced897532e5ae6b4b4709951",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\manifest.json": "15729033b1e144530d584abe8a2cc150bee5b17a79630daed5821eeb19a8d243",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\metrics.txt": "2d88fb1d60c63cb6e95d2b0edc299e758ea0d0f78cb6cba24d5d9444a547035b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\physical_power.json": "bc2440cce0908df4b1bcf89205575ea4a3cfc84aa984f694e3f2859d94bb4343",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\field_comparison.json": "4881e7875423adf5821411723e3779e8761a335d9ba7072d7e212266fef7df21",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\summary.json": "d849d4f66bef0d24038425ed238a1d577ccecc984a209cbf0168bc37ad08a7c1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\completion.json": "5324001a9d30efcb3948db63a57734b4de43abedce8efe859be913860b90b141",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\execution.json": "fc8af79e38b37cb2bae93eb7e3fd305eed9d2fae3cda253d515d065b2cbfcba1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\manifest.json": "38008481e1e68de3508d757aff1aa17b6a06bafa5b7ef0a069f969f0ad99ddd9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\metrics.txt": "8198e7df14d7c5f4644890e967db52c508fa99aed973640fde05a96fbe7efea3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\physical_power.json": "d43f6e4acb24ebeb0fa2d286ee70da1fcf9b840ae4a535f18a622c25db65f1e9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\field_comparison.json": "afc61b0a166097b5319a1118cd4b9cda5cf3f1d6e36970d376722aa07ddb2bff",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080\\summary.json": "7cb0a23c9366a5591d17de3fad7a1416c8b4efa5b94ade89192e32cd6651ebb7",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\completion.json": "1e0b51f4f8c938c05af8017108cbaa4418b1d5e9c27b28eaf7b4fec2041b33d1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\execution.json": "ac19e5d52125a7b92d32ecde3ea5eee700c15a7e1326e3c757ea3365f67a832d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\manifest.json": "d401cfe43e9701d1cd7f4c983ab32e4321daadef811e3e8fa716cd2d9d100b64",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\metrics.txt": "3cb4b60d6b377480baefc4725e177d8e34b2ce8ccf30025e647656f01bf5044e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\physical_power.json": "cc1230794ba73c55933d878136d209f444f8e23f649d3a4144aafd5db4616dc8",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\field_comparison.json": "105fdbf929998c7cb629a5ee237c53edbb270649362117ee7f1168f0a5bf599f",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\summary.json": "8cb1b83771902472a01421bbbd88292719b527edb58d478749aecf72823a2874",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\completion.json": "1e0b51f4f8c938c05af8017108cbaa4418b1d5e9c27b28eaf7b4fec2041b33d1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\execution.json": "efacbfb11394ef9086d888823ee3cbf927c512c67b72e30af008f7a32ae4877c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\manifest.json": "6089689c1da9f3ba630e085a112a89d6b035caf366a541d14eaec5724b41a1ab",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\metrics.txt": "bc18971b1c3db36be692d5ae720366c8a81baf3712602867363ecf72adee3c32",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\physical_power.json": "3e702706ff89c0e163b8a46a841835591b16fcfaf6232cd0d56a5df47b067ed7",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\field_comparison.json": "5ce2fcbb0921b7e732c839006a9219576f760692c28d6c0c249abd0bed7b25d4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080\\summary.json": "9637ff54d55b34d993b323e6ee88f50de6b127e5bc396f6fa1f6cd6f50f8b2d3"
+  }
+}

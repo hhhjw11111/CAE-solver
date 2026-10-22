@@ -1,0 +1,25 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=20, elements=1
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  5.0000E-01, residual=  2.0773E-16,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  6.2500E-01, residual=  1.6249E-06,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  4.0932E-03, predicted=  1.3202E-12, rho=  9.9999E-01,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  6.2500E-01, residual=  4.1499E-09,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  2.7105E-09, predicted=  8.6109E-18, rho=  1.0000E+00,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  6.2500E-01, residual=  4.2888E-16,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  4.4843E-14, predicted=  9.1967E-32, rho=  9.5300E-01,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  6.2500E-01, residual=  9.2981E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  8.1250E-01, residual=  1.5568E-08,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  1.0458E-06, predicted=  1.2118E-16, rho=  1.0000E+00,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  8.1250E-01, residual=  5.7136E-16,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  1.3249E-13, predicted=  1.6322E-31, rho=  9.2618E-01,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  8.1250E-01, residual=  1.5523E-16,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.8675E-08,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  1.2532E-06, predicted=  1.7438E-16, rho=  1.0000E+00,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  7.0258E-16,
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  1.8775E-13, predicted=  2.4681E-31, rho=  7.5876E-01,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.4508E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+status_code=10
+status_message=Hole field metric input is invalid.
+1

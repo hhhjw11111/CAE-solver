@@ -15,7 +15,8 @@ program TPSolverV2
   character(len=512) :: command, argument, result_argument, verification_case_1, &
     verification_case_2,verification_case_3,verification_case_4
   type(SolverStatusType) :: status
-  integer :: argument_count
+  integer :: argument_count,inverse_count,parse_status
+  real(dp) :: inverse_step
 
   argument_count = command_argument_count()
   if (argument_count < 1) then
@@ -88,6 +89,20 @@ program TPSolverV2
     call get_command_argument(3,result_argument)
     call run_f1_case(trim(argument),trim(result_argument),status)
     call finish_with_status(status)
+  case ('trace-f1-temperature')
+    if(argument_count/=5) then
+      call print_usage(error_unit);stop 2
+    end if
+    call get_command_argument(2,argument)
+    call get_command_argument(3,result_argument)
+    call get_command_argument(4,verification_case_1)
+    call get_command_argument(5,verification_case_2)
+    read(verification_case_1,*,iostat=parse_status) inverse_step
+    if(parse_status/=0) stop 2
+    read(verification_case_2,*,iostat=parse_status) inverse_count
+    if(parse_status/=0) stop 2
+    call run_f1_case(trim(argument),trim(result_argument),status,inverse_step,inverse_count)
+    call finish_with_status(status)
   case ('run')
     if (argument_count /= 3) then
       call print_usage(error_unit)
@@ -145,6 +160,7 @@ contains
     write(unit_id,'(a)') 'Usage:'
     write(unit_id,'(a)') '  TPSolverV2.exe version'
     write(unit_id,'(a)') '  TPSolverV2.exe run-f1 <candidate-case.nml> <new-output-directory>'
+    write(unit_id,'(a)') '  TPSolverV2.exe trace-f1-temperature <restart-case.nml> <new-directory> <step-K> <max-points>'
     write(unit_id,'(a)') '  TPSolverV2.exe inspect <case.nml>'
     write(unit_id,'(a)') '  TPSolverV2.exe verify V01'
     write(unit_id,'(a)') '  TPSolverV2.exe verify G02'

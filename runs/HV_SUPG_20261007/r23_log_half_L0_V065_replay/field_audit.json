@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "errors": [],
+  "node_count": 5541,
+  "boundary_error": 0.0,
+  "minimum_T_K": 300.0,
+  "minimum_n_m3": 2.7403939461447203e+21,
+  "minimum_p_m3": 2.615960442692531e-31,
+  "domain_symmetry": "Y_HALF",
+  "symmetry_uy_m": 0.0
+}

@@ -1,0 +1,23 @@
+{
+  "reference": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V030",
+  "reference_node_sha256": "5c907f14cb94b677e9612067a52f8ee944f1fd4cf51ee353d54caa95bfc847cc",
+  "candidate_node_sha256": "f93c2c4f0b221c5a564c297aee167a571ee3ce6740c9e175a095b7ffbef3ab18",
+  "scaled_field_differences": {
+    "ux_m": 3.774011544773189e-14,
+    "uy_m": 3.2570236619275465e-14,
+    "uz_m": 1.209751645858803e-13,
+    "phi_V": 5.521509175802445e-14,
+    "eta_n": 1.6288001763314908e-12,
+    "eta_p": 3.2496852431229684e-11,
+    "theta_K": 4.529709940470638e-15
+  },
+  "maximum_scaled_difference": 3.2496852431229684e-11,
+  "metric_relative_differences": {
+    "theta_max_K": 0.0,
+    "joule_W": 4.7565103583536406e-15,
+    "electron_right_A": 3.045527001076383e-13,
+    "ring_abs_n_relative_mean": 3.296903444867906e-15,
+    "ring_abs_p_relative_mean": 5.73664702397683e-13
+  },
+  "scope": "ACTUAL_3V_NT_PERTURBATION_RECOVERY_WITH_CHECKED_BLOCK_SOLVER_NOT_MESH_ACCEPTANCE"
+}

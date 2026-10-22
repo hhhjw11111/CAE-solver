@@ -1,0 +1,80 @@
+{
+  "scope": "CONDITIONAL_HOLE_SUBPROBLEM_DIAGNOSTIC_ONLY",
+  "six_other_fields_held_fixed": true,
+  "production_acceptance": false,
+  "native_gates_changed": false,
+  "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060",
+  "voltage_V": 6.0,
+  "native_model_unchanged": true,
+  "source_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\manifest.json": "15729033b1e144530d584abe8a2cc150bee5b17a79630daed5821eeb19a8d243",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\execution.json": "9c43503ed9238448465524939fdd808d84781f71ced897532e5ae6b4b4709951",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\nodes.csv": "2ab69d15b39c87c50803e5a8dd931504b3a16e7ecdeeda67b4a2d9a45f91fd9d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\input.nml": "fc67fd052ad13c6168270459b0901070ea5b9564dc0d5c28ee26eb76a1a6a6f3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060\\metrics.txt": "2d88fb1d60c63cb6e95d2b0edc299e758ea0d0f78cb6cba24d5d9444a547035b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\meshes\\A48_R22_Z18\\H1_Y_HALF.mesh": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_hole_subproblem_20261021.py": "866117e6d2971323c9edb4abffaf71831e26e30a6cdd6b425788119a18baa2c0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": "d9f398ef998fcfeb7a702d1475bb933a46e15b7dd527b26ae5052bb997379ded"
+  },
+  "results": [
+    {
+      "order": 3,
+      "metric": "directional",
+      "scale": 1.0,
+      "iterations": [
+        {
+          "iteration": 0,
+          "scaled_residual": 7.903419146274497e-05,
+          "update": 0.0009995001717413054,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 3.108188969524912e-08,
+          "update": 4.999682299926727e-07,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 9.430938642202677e-15,
+          "update": 0.0
+        }
+      ],
+      "ring_abs_p_relative_mean": 0.03684984089538816,
+      "native_ring_abs_p_relative_mean": 0.036849840895458175,
+      "maximum_eta_change": 9.351470986462829e-12,
+      "local_density_perturbation_change": 4.632075304548043e-12,
+      "seconds": 103.7029999999977
+    },
+    {
+      "order": 5,
+      "metric": "directional",
+      "scale": 1.0,
+      "iterations": [
+        {
+          "iteration": 0,
+          "scaled_residual": 7.856092737246961e-05,
+          "update": 0.0010113918901069358,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 3.110600911970948e-08,
+          "update": 5.117583053471085e-07,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 1.138521793821163e-14,
+          "update": 0.0
+        }
+      ],
+      "ring_abs_p_relative_mean": 0.03684822407824056,
+      "native_ring_abs_p_relative_mean": 0.036849840895458175,
+      "maximum_eta_change": 0.00010718591813575762,
+      "local_density_perturbation_change": 5.8059966652433386e-05,
+      "seconds": 179.10900000000038
+    }
+  ],
+  "limitation": "Not a seven-field solve or a mesh/SUPG certificate. Native coupled replay required."
+}

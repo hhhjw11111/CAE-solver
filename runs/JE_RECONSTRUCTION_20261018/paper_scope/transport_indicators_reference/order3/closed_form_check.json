@@ -1,0 +1,108 @@
+{
+  "status": "CLOSED_FORM_IMPLEMENTATION_CHECKS_PASSED",
+  "cases": [
+    {
+      "order": 3,
+      "E_V_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "temperature_K": 350.0,
+      "h_exact_m": 1.5118578920369088e-06,
+      "Pe_exact": 0.0,
+      "Pe_max_absolute_error": 0.0,
+      "native_n_p_Pe_relative_errors": [
+        0.0,
+        0.0
+      ],
+      "zero_field": true
+    },
+    {
+      "order": 3,
+      "E_V_m": [
+        100000.0,
+        0.0,
+        0.0
+      ],
+      "temperature_K": 350.0,
+      "h_exact_m": 1.999999999999642e-06,
+      "Pe_exact": 3.315576606156572,
+      "Pe_max_absolute_error": 1.7763568394002505e-15,
+      "native_n_p_Pe_relative_errors": [
+        1.33940265179049e-16,
+        1.33940265179049e-16
+      ],
+      "zero_field": false
+    },
+    {
+      "order": 3,
+      "E_V_m": [
+        100000.0,
+        -200000.0,
+        30000.0
+      ],
+      "temperature_K": 350.0,
+      "h_exact_m": 2.9371957108891384e-06,
+      "Pe_exact": 10.985525779159097,
+      "Pe_max_absolute_error": 5.5067062021407764e-14,
+      "native_n_p_Pe_relative_errors": [
+        1.6169975612548463e-16,
+        0.0
+      ],
+      "zero_field": false
+    },
+    {
+      "order": 5,
+      "E_V_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "temperature_K": 350.0,
+      "h_exact_m": 1.5118578920369088e-06,
+      "Pe_exact": 0.0,
+      "Pe_max_absolute_error": 0.0,
+      "native_n_p_Pe_relative_errors": [
+        0.0,
+        0.0
+      ],
+      "zero_field": true
+    },
+    {
+      "order": 5,
+      "E_V_m": [
+        100000.0,
+        0.0,
+        0.0
+      ],
+      "temperature_K": 350.0,
+      "h_exact_m": 1.999999999999642e-06,
+      "Pe_exact": 3.315576606156572,
+      "Pe_max_absolute_error": 3.9968028886505635e-15,
+      "native_n_p_Pe_relative_errors": [
+        1.33940265179049e-16,
+        1.33940265179049e-16
+      ],
+      "zero_field": false
+    },
+    {
+      "order": 5,
+      "E_V_m": [
+        100000.0,
+        -200000.0,
+        30000.0
+      ],
+      "temperature_K": 350.0,
+      "h_exact_m": 2.9371957108891384e-06,
+      "Pe_exact": 10.985525779159097,
+      "Pe_max_absolute_error": 4.618527782440651e-14,
+      "native_n_p_Pe_relative_errors": [
+        1.6169975612548463e-16,
+        0.0
+      ],
+      "zero_field": false
+    }
+  ],
+  "scope": "Affine rectangular HEX20, uniform E/T and affine eta with exact exp(eta) gradients; numerical arithmetic checks only, no production threshold."
+}

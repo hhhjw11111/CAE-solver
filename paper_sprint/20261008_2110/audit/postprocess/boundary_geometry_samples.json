@@ -1,0 +1,104 @@
+{
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\inputs\\H0_L0.mesh": {
+    "status": "PASS_SAMPLED",
+    "invalid_points": 0,
+    "invalid_elements": [],
+    "minimum_det_m3": 3.429999999995421e-25,
+    "minimum_det_over_max_jacobian_cubed": 8.686980609406074e-06,
+    "worst_location": {
+      "element": 1,
+      "natural_point": [
+        0.0,
+        1.0,
+        -0.5384693101056831
+      ]
+    },
+    "points_per_element": 150,
+    "mesh_sha256": "d101bc0b7a280919a1e1aab3430f1fc5cd53057e1f1dcf7046803a9d849c8544"
+  },
+  "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F1_FAST_HOLE_L0_20260907\\evidence\\inputs\\H1_L0.mesh": {
+    "status": "PASS_SAMPLED",
+    "invalid_points": 0,
+    "invalid_elements": [],
+    "minimum_det_m3": 2.867827733636584e-23,
+    "minimum_det_over_max_jacobian_cubed": 2.5207559340229013e-06,
+    "worst_location": {
+      "element": 71,
+      "natural_point": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "points_per_element": 150,
+    "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff"
+  },
+  "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L0_V030\\H1_Y_HALF.mesh": {
+    "status": "PASS_SAMPLED",
+    "invalid_points": 0,
+    "invalid_elements": [],
+    "minimum_det_m3": 2.867827733636584e-23,
+    "minimum_det_over_max_jacobian_cubed": 2.5207559340229013e-06,
+    "worst_location": {
+      "element": 71,
+      "natural_point": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "points_per_element": 150,
+    "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559"
+  },
+  "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L1\\H1_Y_HALF.mesh": {
+    "status": "PASS_SAMPLED",
+    "invalid_points": 0,
+    "invalid_elements": [],
+    "minimum_det_m3": 4.796837564085916e-24,
+    "minimum_det_over_max_jacobian_cubed": 1.3424142086919373e-06,
+    "worst_location": {
+      "element": 81,
+      "natural_point": [
+        -1.0,
+        0.0,
+        -0.5384693101056831
+      ]
+    },
+    "points_per_element": 150,
+    "mesh_sha256": "5ba96400e94429772e8619c3eb3b701025b27081fda3c67c879d472fb33c51d3"
+  },
+  "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\L2\\H1_Y_HALF.mesh": {
+    "status": "PASS_SAMPLED",
+    "invalid_points": 0,
+    "invalid_elements": [],
+    "minimum_det_m3": 9.00532476776888e-25,
+    "minimum_det_over_max_jacobian_cubed": 5.829847648916902e-07,
+    "worst_location": {
+      "element": 3889,
+      "natural_point": [
+        -1.0,
+        0.0,
+        0.906179845938664
+      ]
+    },
+    "points_per_element": 150,
+    "mesh_sha256": "5c1738fd520655a2219dd492e159eb7e64c211956c49838764c69d6e735c1b12"
+  },
+  "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_ANGLE_20261008\\A64_half\\H1_Y_HALF.mesh": {
+    "status": "PASS_SAMPLED",
+    "invalid_points": 0,
+    "invalid_elements": [],
+    "minimum_det_m3": 4.508092578828319e-25,
+    "minimum_det_over_max_jacobian_cubed": 2.271240410051779e-06,
+    "worst_location": {
+      "element": 505,
+      "natural_point": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "points_per_element": 150,
+    "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2"
+  }
+}

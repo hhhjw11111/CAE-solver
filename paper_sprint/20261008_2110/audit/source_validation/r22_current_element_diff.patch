@@ -1,0 +1,52 @@
+warning: in the working copy of 'C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\runs\HV_SUPG_20261007\r22_source_snapshot\src\fem\element_kernel_m.f90', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_source_snapshot\\src\\fem\\element_kernel_m.f90" "b/C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90"
+index c153028..521604c 100644
+--- "a/C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_source_snapshot\\src\\fem\\element_kernel_m.f90"
++++ "b/C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90"
+@@ -5,7 +5,7 @@ module element_kernel_m
+   use status_m, only : SolverStatusType, clear_status, set_status, STATUS_GEOMETRY_ERROR, STATUS_INVALID_ARGUMENT
+   use field_layout_m, only : F_U1, F_U2, F_U3, F_PHI, F_ETA_N, F_ETA_P, F_THETA, local_dof
+   use mesh_types_m, only : HEX20_NNODE
+-  use hex20_quadrature_m, only : HEX20_NGAUSS, gauss_rule_3x3x3
++  use hex20_quadrature_m, only : HEX20_NGAUSS, gauss_rule_3x3x3, gauss_rule_5x5x5
+   use hex20_shape_m, only : hex20_geometry
+   use transport_supg_m, only : hex20_hessians,add_transport_supg
+   use dof_map_m, only : HEX20_NDOF
+@@ -46,7 +46,7 @@ contains
+     real(dp), intent(out) :: jacobian_e(HEX20_NDOF,HEX20_NDOF)
+     type(ElementDiagnosticsType), intent(out) :: diagnostics
+     type(SolverStatusType), intent(out) :: status
+-    real(dp) :: points(3,HEX20_NGAUSS), weights(HEX20_NGAUSS)
++    real(dp) :: points(3,125), weights(125)
+     real(dp) :: shape(HEX20_NNODE), derivative_global(3,HEX20_NNODE)
+     real(dp) :: determinant, integration_weight
+     real(dp) :: hess(3,3,HEX20_NNODE),metric(3,3)
+@@ -60,7 +60,7 @@ contains
+     type(MaterialPointResponseType) :: point_response
+     type(MaterialPointTangentType) :: point_tangent
+     type(SolverStatusType) :: local_status
+-    integer :: point
++    integer :: point,point_count
+ 
+     call clear_status(status)
+     residual_e = 0.0_dp
+@@ -70,9 +70,17 @@ contains
+       call set_status(status,STATUS_INVALID_ARGUMENT,'Log-weighted transport excludes SUPG and linear carriers.')
+       return
+     end if
+-    call gauss_rule_3x3x3(points, weights)
++    point_count=HEX20_NGAUSS
++    if(material%log_weighted_quadrature_order==5.and.material%transport_log_weighted) then
++      point_count=125
++      call gauss_rule_5x5x5(points,weights)
++    else if(material%log_weighted_quadrature_order==3) then
++      call gauss_rule_3x3x3(points(:,1:HEX20_NGAUSS),weights(1:HEX20_NGAUSS))
++    else
++      call set_status(status,STATUS_INVALID_ARGUMENT,'Unsupported transport quadrature combination.');return
++    end if
+ 
+-    do point = 1, HEX20_NGAUSS
++    do point = 1, point_count
+       call hex20_geometry(coordinates, points(1,point), points(2,point), points(3,point), &
+         shape, derivative_global, determinant, local_status)
+       if (.not. local_status%is_ok()) then

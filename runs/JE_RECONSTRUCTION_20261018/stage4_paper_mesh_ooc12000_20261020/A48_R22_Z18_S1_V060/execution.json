@@ -1,0 +1,8 @@
+{
+  "exit_code": 1,
+  "seconds": 295.89100000000326,
+  "timed_out": false,
+  "stop_reason": "RESOURCE_STOP_AVAILABLE_RAM_BELOW_512_MIB",
+  "input_sha256": "bc3c32a4b29f8f2055f16bfbb39f3686cc18e55a55f2d46fa01e18839191d36c",
+  "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92"
+}

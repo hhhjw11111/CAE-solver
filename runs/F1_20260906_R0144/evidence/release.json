@@ -1,0 +1,13 @@
+{
+  "schema": "F1-release-v1",
+  "solver_version": "0.14.4-f1-stack-safe",
+  "executable_sha256": "028FE2E514744488EFDC5EA69D97FD18353334DC07E69624B985D3A2D4EAD892",
+  "created_utc": "2026-09-06T15:31:19.5271174Z",
+  "storage": "OOC",
+  "ooc_max_core_mb": 8192,
+  "ooc_max_swap_mb": 0,
+  "linear_threads": 1,
+  "source_change": "Diagnostic stack-temporary fix formally versioned; PDE, Jacobian and tolerances unchanged",
+  "previous_run_root": "../F1_20260906",
+  "status": "FROZEN_FOR_EXECUTION"
+}

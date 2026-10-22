@@ -1,0 +1,37 @@
+{
+  "authorization": "user chat 2026-10-22: 算例减少 把所有要求打包md 我让codex执行 确保任务完整",
+  "previous_matrix": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_inputs_trace_20261022\\case_matrix.csv",
+  "previous_batch_stop": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_20261021\\batch_20261022T000632_user_stop.json",
+  "lq_voltages": [
+    0.0,
+    2.0,
+    4.0,
+    6.0,
+    8.0
+  ],
+  "nt_voltages": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0
+  ],
+  "case_count": 30,
+  "unchanged": [
+    "physics",
+    "tolerances",
+    "gates",
+    "SUPG trace variant",
+    "meshes",
+    "radius groups",
+    "lq_check",
+    "observable classification",
+    "hole exclusion"
+  ],
+  "note": "Only solved states are plotted; dropped voltages are never interpolated or scaled."
+}

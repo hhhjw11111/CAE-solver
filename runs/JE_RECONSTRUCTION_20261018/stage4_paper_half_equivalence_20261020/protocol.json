@@ -1,0 +1,30 @@
+{
+  "scope": "JE_Y_HALF_EQUIVALENCE_BEFORE_MESH_STUDY",
+  "voltages": [
+    6,
+    8
+  ],
+  "full_counts": [
+    32,
+    18,
+    14
+  ],
+  "initial_hole_log_perturbations": [
+    0.0,
+    0.001
+  ],
+  "equivalence_limit": 1e-08,
+  "perturbation_shape": "delta_eta_p=0.001*max(0,1-(x/1e-5)^2); zero at contacts",
+  "expected_nonzero_density_change": "exp(0.001)-1 approximately 0.10005 percent",
+  "required": "All four native solves and original full/half comparisons must pass",
+  "integral_convention": "Keep actual half integrals; multiply by two only in explicit full reconstruction",
+  "full_sources": {
+    "6": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060",
+    "8": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080"
+  },
+  "resource_budget_mb": 6000,
+  "timeout_seconds": 7200,
+  "production_acceptance": false,
+  "mesh_validated": false,
+  "limitations": "Symmetric branch only; excludes asymmetric equilibria and dynamical stability"
+}

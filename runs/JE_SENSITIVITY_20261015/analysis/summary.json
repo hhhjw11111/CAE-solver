@@ -1,0 +1,1281 @@
+{
+  "rows": [
+    {
+      "run": "A16_S0.5_V060",
+      "voltage_V": 6.0,
+      "angular_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 0.5,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "domain_volume_m3": 3.7172706054966015e-16,
+      "directional_Pe_p95": 27.521302043346108,
+      "JE_mW": 5.789696646476383,
+      "boundary_power_mW": 5.755428677813865,
+      "gap_mW": 0.034267968670434815,
+      "gap_percent": 0.5918784828094583,
+      "electrode_gap_percent": 0.6365618926509417,
+      "SUPG_work_mW": 0.03408438374953932,
+      "SUPG_share_percent": 99.46426669563905,
+      "SUPG_absolute_local_work_mW": 0.055620555172118204,
+      "SUPG_signed_to_absolute_ratio": 0.6128019334590424,
+      "theta_max_K": 14.12366836116945,
+      "electrode_current_mA": 0.958806940654111,
+      "stress_vm_max_MPa": 3.9871974451866627,
+      "heat_balance_percent": 0.004250114061871014,
+      "electron_balance_percent": 0.0016202659955979373,
+      "native_residual": 3.911123190621612e-16,
+      "native_update": 2.7670168768564844e-12,
+      "reconstructed_free_residual_A": 1.3716620069872017e-15,
+      "seconds": 362.094000000041,
+      "timed_out": false
+    },
+    {
+      "run": "A16_S0.5_V080",
+      "voltage_V": 8.0,
+      "angular_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 0.5,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "domain_volume_m3": 3.7172706054966015e-16,
+      "directional_Pe_p95": 35.59564409894351,
+      "JE_mW": 9.856846352375593,
+      "boundary_power_mW": 9.787672546877296,
+      "gap_mW": 0.06917380554384046,
+      "gap_percent": 0.7017843544570391,
+      "electrode_gap_percent": 0.7319010951934736,
+      "SUPG_work_mW": 0.0682765170473752,
+      "SUPG_share_percent": 98.702849309199,
+      "SUPG_absolute_local_work_mW": 0.10982270521591608,
+      "SUPG_signed_to_absolute_ratio": 0.6216976436078547,
+      "theta_max_K": 24.295374947085804,
+      "electrode_current_mA": 1.2230879982462641,
+      "stress_vm_max_MPa": 6.882255276168169,
+      "heat_balance_percent": 0.012335887859416268,
+      "electron_balance_percent": 0.0060501923207246545,
+      "native_residual": 6.933449997595591e-16,
+      "native_update": 5.6023382626318084e-12,
+      "reconstructed_free_residual_A": 3.0896893584344787e-15,
+      "seconds": 538.3129999999655,
+      "timed_out": false
+    },
+    {
+      "run": "A16_S1_V060",
+      "voltage_V": 6.0,
+      "angular_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "domain_volume_m3": 3.7172706054966015e-16,
+      "directional_Pe_p95": 27.467030880605346,
+      "JE_mW": 5.790727459794426,
+      "boundary_power_mW": 5.644550611484388,
+      "gap_mW": 0.1461768483286335,
+      "gap_percent": 2.5243261635701697,
+      "electrode_gap_percent": 2.5879318357400933,
+      "SUPG_work_mW": 0.14583602615893984,
+      "SUPG_share_percent": 99.76684257897843,
+      "SUPG_absolute_local_work_mW": 0.16044071326078224,
+      "SUPG_signed_to_absolute_ratio": 0.908971439948012,
+      "theta_max_K": 14.171395756992865,
+      "electrode_current_mA": 0.9401445633901772,
+      "stress_vm_max_MPa": 4.001171474208003,
+      "heat_balance_percent": 0.0043184408369648965,
+      "electron_balance_percent": 0.0027342355091460237,
+      "native_residual": 4.2020015119811827e-16,
+      "native_update": 0.0,
+      "reconstructed_free_residual_A": 1.4808210484913501e-15,
+      "seconds": 15.48499999998603,
+      "timed_out": false
+    },
+    {
+      "run": "A16_S1_V080",
+      "voltage_V": 8.0,
+      "angular_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "domain_volume_m3": 3.7172706054966015e-16,
+      "directional_Pe_p95": 35.74243004688184,
+      "JE_mW": 9.85840097677121,
+      "boundary_power_mW": 9.565488869031054,
+      "gap_mW": 0.29291210778430166,
+      "gap_percent": 2.9711928787890827,
+      "electrode_gap_percent": 3.028369277177792,
+      "SUPG_work_mW": 0.291508798264934,
+      "SUPG_share_percent": 99.52091105759237,
+      "SUPG_absolute_local_work_mW": 0.31968553564154156,
+      "SUPG_signed_to_absolute_ratio": 0.9118610814841432,
+      "theta_max_K": 24.373359998820035,
+      "electrode_current_mA": 1.19498152379613,
+      "stress_vm_max_MPa": 6.9030826235584755,
+      "heat_balance_percent": 0.012510528964482931,
+      "electron_balance_percent": 0.008609986686844555,
+      "native_residual": 7.154452864253276e-16,
+      "native_update": 0.0,
+      "reconstructed_free_residual_A": 1.4892298764649644e-15,
+      "seconds": 16.125,
+      "timed_out": false
+    },
+    {
+      "run": "A16_S2_V060",
+      "voltage_V": 6,
+      "angular_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 2.0,
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 1800.6879999999655,
+      "timed_out": true
+    },
+    {
+      "run": "A16_S2_V080",
+      "voltage_V": 8,
+      "angular_elements": 16,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 2.0,
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "state": "FAILED_NO_COMPLETE_STATE",
+      "seconds": 1800.188000000082,
+      "timed_out": true
+    },
+    {
+      "run": "A24_S1_V060",
+      "voltage_V": 6.0,
+      "angular_elements": 24,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "domain_volume_m3": 3.717259422642951e-16,
+      "directional_Pe_p95": 18.91123654866683,
+      "JE_mW": 5.7898591773611585,
+      "boundary_power_mW": 5.718771359030856,
+      "gap_mW": 0.07108781834573324,
+      "gap_percent": 1.2277987454978394,
+      "electrode_gap_percent": 1.2528652778457685,
+      "SUPG_work_mW": 0.07098492503602384,
+      "SUPG_share_percent": 99.85525887261163,
+      "SUPG_absolute_local_work_mW": 0.08157269971569349,
+      "SUPG_signed_to_absolute_ratio": 0.8702044346138884,
+      "theta_max_K": 14.110777765516445,
+      "electrode_current_mA": 0.9528866736820119,
+      "stress_vm_max_MPa": 3.711716757531503,
+      "heat_balance_percent": 0.004453911048524396,
+      "electron_balance_percent": 4.592962202153584e-05,
+      "native_residual": 3.958256529028276e-16,
+      "native_update": 3.6096745346005883e-12,
+      "reconstructed_free_residual_A": 7.545275770829743e-16,
+      "seconds": 1481.3120000000345,
+      "timed_out": false
+    },
+    {
+      "run": "A24_S1_V080",
+      "voltage_V": 8.0,
+      "angular_elements": 24,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 4,
+      "MKL_threads": 4,
+      "domain_volume_m3": 3.717259422642951e-16,
+      "directional_Pe_p95": 24.27482742127809,
+      "JE_mW": 9.857558504003942,
+      "boundary_power_mW": 9.710750811586985,
+      "gap_mW": 0.14680769238275237,
+      "gap_percent": 1.4892906019590746,
+      "electrode_gap_percent": 1.5146770359346522,
+      "SUPG_work_mW": 0.1463466157941153,
+      "SUPG_share_percent": 99.68593158767528,
+      "SUPG_absolute_local_work_mW": 0.16529459975056066,
+      "SUPG_signed_to_absolute_ratio": 0.8853684029300445,
+      "theta_max_K": 24.25701606580185,
+      "electrode_current_mA": 1.2135310411300837,
+      "stress_vm_max_MPa": 6.401798732426063,
+      "heat_balance_percent": 0.01248971775148306,
+      "electron_balance_percent": 0.001471601199446628,
+      "native_residual": 6.863997461354029e-16,
+      "native_update": 3.557230536039532e-12,
+      "reconstructed_free_residual_A": 1.1951287147817454e-15,
+      "seconds": 1584.4220000000205,
+      "timed_out": false
+    },
+    {
+      "run": "A32_S1_V060",
+      "voltage_V": 6.0,
+      "angular_elements": 32,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 8,
+      "MKL_threads": 8,
+      "domain_volume_m3": 3.7172575357026593e-16,
+      "directional_Pe_p95": 13.97083656310388,
+      "JE_mW": 5.789757268226774,
+      "boundary_power_mW": 5.746731238711829,
+      "gap_mW": 0.04302602952248845,
+      "gap_percent": 0.7431404725480883,
+      "electrode_gap_percent": 0.7541275419185399,
+      "SUPG_work_mW": 0.0429582937197728,
+      "SUPG_share_percent": 99.84257017561835,
+      "SUPG_absolute_local_work_mW": 0.051773344397985664,
+      "SUPG_signed_to_absolute_ratio": 0.8297376617115807,
+      "theta_max_K": 14.096960640474379,
+      "electrode_current_mA": 0.9576825190095023,
+      "stress_vm_max_MPa": 3.6405641088699547,
+      "heat_balance_percent": 0.004454222296521754,
+      "electron_balance_percent": 0.00023815478376745962,
+      "native_residual": 4.113621799544047e-16,
+      "native_update": 6.562093079873363e-10,
+      "reconstructed_free_residual_A": 7.860806481142243e-16,
+      "seconds": 1040.078000000096,
+      "timed_out": false
+    },
+    {
+      "run": "A32_S1_V080",
+      "voltage_V": 8.0,
+      "angular_elements": 32,
+      "radial_elements": 14,
+      "thickness_elements": 14,
+      "supg_scale": 1.0,
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "OMP_threads": 8,
+      "MKL_threads": 8,
+      "domain_volume_m3": 3.7172575357026593e-16,
+      "directional_Pe_p95": 18.1610071344037,
+      "JE_mW": 9.857511968552192,
+      "boundary_power_mW": 9.76666038600434,
+      "gap_mW": 0.09085158255701421,
+      "gap_percent": 0.9216482094756874,
+      "electrode_gap_percent": 0.9330175413136718,
+      "SUPG_work_mW": 0.09056683123007751,
+      "SUPG_share_percent": 99.68657527043295,
+      "SUPG_absolute_local_work_mW": 0.10600726182589988,
+      "SUPG_signed_to_absolute_ratio": 0.8543455388822206,
+      "theta_max_K": 24.23465436107807,
+      "electrode_current_mA": 1.2206924565936579,
+      "stress_vm_max_MPa": 6.280150242034431,
+      "heat_balance_percent": 0.012462106278029635,
+      "electron_balance_percent": 0.00037961333514732325,
+      "native_residual": 6.527234873510851e-16,
+      "native_update": 3.306104597908205e-12,
+      "reconstructed_free_residual_A": 1.8913497978137906e-15,
+      "seconds": 1398.7189999999246,
+      "timed_out": false
+    }
+  ],
+  "SUPG": {
+    "6": {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S0.5_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S2_V060"
+      ],
+      "errors": [
+        "A16_S2_V060:INCOMPLETE_EVIDENCE:FileNotFoundError",
+        "A16_S2_V060:SOLVE_OR_FLUX_FAIL"
+      ],
+      "comparisons": {},
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    },
+    "8": {
+      "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+      "scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S0.5_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S2_V080"
+      ],
+      "errors": [
+        "A16_S2_V080:INCOMPLETE_EVIDENCE:FileNotFoundError",
+        "A16_S2_V080:SOLVE_OR_FLUX_FAIL"
+      ],
+      "comparisons": {},
+      "covered_metrics_passed": false,
+      "fully_validated": false,
+      "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+    }
+  },
+  "SUPG_pair_S0.5_1": {
+    "6": {
+      "joule_W": {
+        "relative_span": 0.00017801102282918887,
+        "limit": 0.01,
+        "values": [
+          0.005789696646476383,
+          0.005790727459794426
+        ],
+        "passed": true
+      },
+      "theta_max_K": {
+        "relative_span": 0.0033678683907944606,
+        "limit": 0.01,
+        "values": [
+          14.12366836116945,
+          14.171395756992865
+        ],
+        "passed": true
+      },
+      "electron_right_A": {
+        "relative_span": 0.019464165800888077,
+        "limit": 0.01,
+        "values": [
+          0.000958806940654111,
+          0.0009401445633901771
+        ],
+        "passed": false
+      },
+      "ring_theta_mean_K": {
+        "relative_span": 0.004467439071082739,
+        "limit": 0.01,
+        "values": [
+          11.862143867534138,
+          11.915375079711849
+        ],
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "relative_span": 0.0011654721598090693,
+        "limit": 0.01,
+        "values": [
+          360766.54913441476,
+          361187.5031137648
+        ],
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "relative_span": 0.0010415175372429422,
+        "limit": 0.01,
+        "values": [
+          25791041203915.01,
+          25764179382197.38
+        ],
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "relative_span": 0.005103396468339815,
+        "limit": 0.01,
+        "values": [
+          0.022774857387545484,
+          0.02289168272029459
+        ],
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "relative_span": 0.28462477337892395,
+        "limit": 0.01,
+        "values": [
+          0.05081378035996951,
+          0.07103094777265027
+        ],
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "relative_span": 0.006434775707424319,
+        "limit": 0.01,
+        "values": [
+          54178697612695.74,
+          53830069845437.68
+        ],
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "relative_span": 0.0010900275141046817,
+        "limit": 0.01,
+        "values": [
+          435662.82214779727,
+          436138.224812796
+        ],
+        "passed": true
+      }
+    },
+    "8": {
+      "joule_W": {
+        "relative_span": 0.00015769539089340948,
+        "limit": 0.01,
+        "values": [
+          0.009856846352375593,
+          0.009858400976771209
+        ],
+        "passed": true
+      },
+      "theta_max_K": {
+        "relative_span": 0.0031996020137562697,
+        "limit": 0.01,
+        "values": [
+          24.295374947085804,
+          24.373359998820035
+        ],
+        "passed": true
+      },
+      "electron_right_A": {
+        "relative_span": 0.02297992825572225,
+        "limit": 0.01,
+        "values": [
+          0.0012230879982462642,
+          0.00119498152379613
+        ],
+        "passed": false
+      },
+      "ring_theta_mean_K": {
+        "relative_span": 0.004577357087791642,
+        "limit": 0.01,
+        "values": [
+          20.37013022104034,
+          20.46380034258161
+        ],
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "relative_span": 0.0009397729758877764,
+        "limit": 0.01,
+        "values": [
+          499894.5566449106,
+          500364.7859488312
+        ],
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "relative_span": 0.002186609732720842,
+        "limit": 0.01,
+        "values": [
+          44570107188580.34,
+          44472649758413.38
+        ],
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "relative_span": 0.0050701133978250865,
+        "limit": 0.01,
+        "values": [
+          0.03910547676894665,
+          0.03930475634066772
+        ],
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "relative_span": 0.18569567462352007,
+        "limit": 0.01,
+        "values": [
+          0.09082391013966708,
+          0.11153558603250224
+        ],
+        "passed": false
+      },
+      "ring_Q_p95_W_m3": {
+        "relative_span": 0.006387004135092419,
+        "limit": 0.01,
+        "values": [
+          94200100332433.73,
+          93598443902084.36
+        ],
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "relative_span": 0.0012364723060027502,
+        "limit": 0.01,
+        "values": [
+          619101.591225166,
+          618336.0892530138
+        ],
+        "passed": true
+      }
+    }
+  },
+  "angular_mesh": {
+    "6": {
+      "voltages": [
+        {
+          "voltage_V": 6,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": false,
+          "status": "MESH_FAIL",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 0.0001499435846871634,
+              "L1_L2": 1.7601314861539693e-05,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 0.004277489141922232,
+              "L1_L2": 0.0009791894728746154,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 0.004624577412800578,
+              "L1_L2": 0.0013157532865889264,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.013372115114800015,
+              "L1_L2": 0.005007761165412751,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 0.003576905113214736,
+              "L1_L2": 0.000864300244924513,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 0.004861948798360827,
+              "L1_L2": 0.000398582588876455,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.004333213917882254,
+              "L1_L2": 0.0013938405352123052,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.19368776613112917,
+              "L1_L2": 0.12755990851846083,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.0028288832568053625,
+              "L1_L2": 0.004240257233065967,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.005268183218882079,
+              "L1_L2": 0.0016738035059459257,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    },
+    "8": {
+      "voltages": [
+        {
+          "voltage_V": 8,
+          "complete_solve_flux_all_levels": true,
+          "mesh_pass": false,
+          "status": "MESH_FAIL",
+          "changes": {
+            "joule_W": {
+              "L0_L1": 8.545734437585526e-05,
+              "L1_L2": 4.720788796747592e-06,
+              "limit": 0.01
+            },
+            "theta_max_K": {
+              "L0_L1": 0.004773405596266512,
+              "L1_L2": 0.0009218654373282198,
+              "limit": 0.01
+            },
+            "ring_theta_mean_K": {
+              "L0_L1": 0.005029765194205992,
+              "L1_L2": 0.0013264686058890418,
+              "limit": 0.01
+            },
+            "electron_right_A": {
+              "L0_L1": 0.015285573014003467,
+              "L1_L2": 0.005866682819977578,
+              "limit": 0.01
+            },
+            "ring_E_mean_V_m": {
+              "L0_L1": 0.003925110069918137,
+              "L1_L2": 0.0008807055269920401,
+              "limit": 0.02
+            },
+            "ring_Q_mean_W_m3": {
+              "L0_L1": 0.005214144970516721,
+              "L1_L2": 0.00023841967669300626,
+              "limit": 0.02
+            },
+            "ring_abs_n_relative_mean": {
+              "L0_L1": 0.0046383330474127175,
+              "L1_L2": 0.0013528810559557893,
+              "limit": 0.02
+            },
+            "ring_abs_p_relative_mean": {
+              "L0_L1": 0.12167377548081448,
+              "L1_L2": 0.06936815345512388,
+              "limit": 0.02
+            },
+            "ring_Q_p95_W_m3": {
+              "L0_L1": 0.0006061848907997943,
+              "L1_L2": 0.0001523539192973294,
+              "limit": 0.05
+            },
+            "E_p95_V_m": {
+              "L0_L1": 0.0036391776498208013,
+              "L1_L2": 0.0008955672887612047,
+              "limit": 0.05
+            }
+          }
+        }
+      ],
+      "all_mesh_pass": false,
+      "provenance_errors": [],
+      "fully_validated": false,
+      "limitation": "Requires method-appropriate integration/stabilization sensitivity, local-field and model-scope review; no experimental calibration implied."
+    }
+  },
+  "fields": {
+    "SUPG_S0.5_vs_1_V06": {
+      "runs": [
+        "A16_S0.5_V060",
+        "A16_S1_V060"
+      ],
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0020947219694697297,
+          "rms_relative": 0.00081745031033706,
+          "normalization": 6.0,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.005290220445933191,
+          "rms_relative": 0.00317111652682791,
+          "normalization": 14.17370330778654,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.004523426465657627,
+          "rms_relative": 0.0025772086560409955,
+          "normalization": 1.0232728806650778e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.002924801965201297,
+          "rms_relative": 0.0011550306365696137,
+          "normalization": 1.0232728806650778e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0002134284313876582,
+          "rms_relative": 9.598351580605984e-05,
+          "normalization": 1.0232728806650778e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.005277008682594285,
+          "rms_relative": 0.0010749360912498476,
+          "normalization": 1.3262813329945562,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.09542347545260502,
+          "rms_relative": 0.017275509236211066,
+          "normalization": 2.0483040253886577,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "nodes_hashes": [
+        "d7cfb432b3b5f7315f88b61cdddeae7d11b8fed5567980527fa2c4d9dfad391a",
+        "3ba1c6613e98cc13ef32b70d396aa8b57b425f5e3fb4fb54e46e0141e13a1683"
+      ],
+      "scope": "same-node field shape; 2% existing tolerance"
+    },
+    "SUPG_S2_vs_1_V06": {
+      "passed": false,
+      "comparisons": {},
+      "status": "NO_ACCEPTED_COEFFICIENT_STATE"
+    },
+    "field_A16_A24_V06": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0028084856723364893,
+          "rms_relative": 0.0008079769080554132,
+          "normalization": 6.000000000000004,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.00691664591098162,
+          "rms_relative": 0.0034337365759702365,
+          "normalization": 14.173703307786544,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.005848417283015,
+          "rms_relative": 0.0017519028976320206,
+          "normalization": 1.023272880665078e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.003794759366309069,
+          "rms_relative": 0.001339967988285067,
+          "normalization": 1.023272880665078e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0026811454812755075,
+          "rms_relative": 0.000729761103060415,
+          "normalization": 1.023272880665078e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.06726864017918158,
+          "rms_relative": 0.0053849638622516,
+          "normalization": 1.3262813329945256,
+          "limit": 0.02,
+          "passed": false
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.09377921440688432,
+          "rms_relative": 0.012255688091693551,
+          "normalization": 1.979402474372244,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A16_A24_V060\\nodes.csv": "775a33b277a620b20ae4a61c4b3138149ea08a34ee84f69b2ed1a32bcb642e4a",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A16_A24_V060\\transfer_report.json": "9477f93200bdf77e1cbb0dccb86c113c1e34ca3c065373d146740912e92b485e",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060\\nodes.csv": "3ba1c6613e98cc13ef32b70d396aa8b57b425f5e3fb4fb54e46e0141e13a1683",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060\\manifest.json": "bd6e211d1ed1f78c022265e9ec61ef22f609eb43645ae4aff0679226be32bd1c",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060\\execution.json": "46435ff7a4af9216c0dd4e38e68c517815aaf51fd3cbb3dadbf25dd39842f678",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060\\input.nml": "fe1e1c6e2ca81fc54ef2d50ccb4afdf3923b718ce968db64e710339c6e2b91de",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060\\metrics.txt": "b809c09946c6f5b78398cbed7fc4cd221c2429ef90d33c00ceb5870ddc27f19f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V060\\field_audit.json": "4a67a9de69c6a6d9f08e2860ce46205578c3d6e18fa0a94544a8a21489f278ce",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\nodes.csv": "812033536ab0bd4a3236bdd0e70ce897d102e393990378ece9897e60c0af47a6",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\manifest.json": "ee416141e3441c889c3353f13e5ad17c25b7a856a4b8fc1214ec61a69cca4482",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\execution.json": "18d243c74fb745755f75f3ccf9b8e0abd667fde45fc3aabeaa95ff837ea9ad24",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\input.nml": "d7db0aaf8c2b55ed5941fa68dd45fc76e47240962a08be5104024904b5b876ab",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\metrics.txt": "6ca96af804d2142c74f615a168ec339a5b062278bf635cff208b39de190abba2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\field_audit.json": "ad51ea8e849bca05908ea2ea4b64b2ce7b3ca4dc394ad740deb4a79b369566b6"
+      }
+    },
+    "field_A24_A32_V06": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0008530604602356989,
+          "rms_relative": 0.0003035468809361194,
+          "normalization": 6.0000000000000036,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.003124981096426655,
+          "rms_relative": 0.0010366365570683195,
+          "normalization": 14.112334738213828,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.0028925442026308903,
+          "rms_relative": 0.0007339782738475797,
+          "normalization": 1.0238146213076345e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0011738529648724855,
+          "rms_relative": 0.00038771223262219914,
+          "normalization": 1.0238146213076345e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.001398407541027592,
+          "rms_relative": 0.00037542390746446826,
+          "normalization": 1.0238146213076345e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.03022215110165265,
+          "rms_relative": 0.002536071040887064,
+          "normalization": 1.2847298956359778,
+          "limit": 0.02,
+          "passed": false
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.039671280005024415,
+          "rms_relative": 0.005334257190704087,
+          "normalization": 1.9796376430369644,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\nodes.csv": "338105f2db73e56dbc1ccb38b0cda4b0f5cb61d795510519561a9019af603446",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V060\\transfer_report.json": "96e72bd3a61b0f6fc6976044296be8ec4b421c300d8645b4154e6057b3064ffb",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\nodes.csv": "812033536ab0bd4a3236bdd0e70ce897d102e393990378ece9897e60c0af47a6",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\manifest.json": "ee416141e3441c889c3353f13e5ad17c25b7a856a4b8fc1214ec61a69cca4482",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\execution.json": "18d243c74fb745755f75f3ccf9b8e0abd667fde45fc3aabeaa95ff837ea9ad24",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\input.nml": "d7db0aaf8c2b55ed5941fa68dd45fc76e47240962a08be5104024904b5b876ab",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\metrics.txt": "6ca96af804d2142c74f615a168ec339a5b062278bf635cff208b39de190abba2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V060\\field_audit.json": "ad51ea8e849bca05908ea2ea4b64b2ce7b3ca4dc394ad740deb4a79b369566b6",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\nodes.csv": "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\manifest.json": "d224f8b1ceb3689a8d4f077bac9f77c11fa39eb5f16c6b6606d6a526c160310d",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\execution.json": "091e04541a11c8d0f61981dfcf205fbf8652f7eb2a123a9098a50f50461e5cf2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\input.nml": "4310df08a4c00558d5ae51c2c966b0bac717bcdf94ced1047d9b371df2d202f4",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\metrics.txt": "f555c49b56b10e83f11c26775f91cb840c5dfa69867b90e0be81a7f49c840db2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\field_audit.json": "2322078c58bcee0fb08c05e06347985b713eeb30b31323fbf9f20891f6cbd478"
+      }
+    },
+    "SUPG_S0.5_vs_1_V08": {
+      "runs": [
+        "A16_S0.5_V080",
+        "A16_S1_V080"
+      ],
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0024669588431716193,
+          "rms_relative": 0.0008745255451992862,
+          "normalization": 8.000078894911326,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.005366478813984639,
+          "rms_relative": 0.0032437495659155963,
+          "normalization": 24.377737026467674,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.004787210141158297,
+          "rms_relative": 0.0026260649514272018,
+          "normalization": 1.7579599183870181e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0029302162529957453,
+          "rms_relative": 0.0011899689653816223,
+          "normalization": 1.7579599183870181e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.00034757816621327917,
+          "rms_relative": 0.00013975092632761773,
+          "normalization": 1.7579599183870181e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.005510462794660473,
+          "rms_relative": 0.0010150242086491494,
+          "normalization": 2.6864211188743847,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.05948530217076447,
+          "rms_relative": 0.0073807940004810045,
+          "normalization": 7.347870773541333,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "nodes_hashes": [
+        "cf2d1d4d5eb7bfd1b841c837c8c1fa6bcbf1f3680b6435f8ec1c64d21a2f08d3",
+        "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941"
+      ],
+      "scope": "same-node field shape; 2% existing tolerance"
+    },
+    "SUPG_S2_vs_1_V08": {
+      "passed": false,
+      "comparisons": {},
+      "status": "NO_ACCEPTED_COEFFICIENT_STATE"
+    },
+    "field_A16_A24_V08": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0038616208725562057,
+          "rms_relative": 0.0009557526660974502,
+          "normalization": 8.000078894911326,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.007472193370711582,
+          "rms_relative": 0.0037110895502561756,
+          "normalization": 24.377737026467674,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.006177610064185602,
+          "rms_relative": 0.0018090539929182536,
+          "normalization": 1.7579599183870187e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.00395024175880009,
+          "rms_relative": 0.0013354945099410623,
+          "normalization": 1.7579599183870187e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.00260722351526012,
+          "rms_relative": 0.0006524185198691627,
+          "normalization": 1.7579599183870187e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.07264435985264785,
+          "rms_relative": 0.004795003713390593,
+          "normalization": 2.686421118874305,
+          "limit": 0.02,
+          "passed": false
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.06217399116416134,
+          "rms_relative": 0.005723763643144597,
+          "normalization": 7.140344354842753,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A16_A24_V080\\nodes.csv": "b25b14960e4f4d0a9f52cbd6733f697531396410d28f78a9e70243b3d08decbf",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A16_A24_V080\\transfer_report.json": "6defe190c7879c9e79da37b98dcdaa3cc0db7d83f892935d30300178b5ce0fd5",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\nodes.csv": "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\manifest.json": "187cd1f27637d3ed6de1994a9436dc73aff195789fb8e36e9854316ecb185165",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\execution.json": "ae4a981877ead3ba1d41ea8f6cc9482172e5457bcd6587f3034e78e5d2716c24",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\input.nml": "4a6bdc376a08c8c56918bf1f73638744ce0db2e4f8edcd1f195ae64bdb0797a2",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\metrics.txt": "a5f40280197582041e5c1b52d9915ab658c3f88918889802e02becf6a0b70aa0",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\field_audit.json": "35092e65cd1c2cd631472ce22279cbe6c0aea52c2d77f3bf6592bdea9c59f992",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\nodes.csv": "4de94425d7229b68a61d5834eb8a9bad13a1f994d0199b98431af110766b1908",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\manifest.json": "4b8c0610e7d075fd99a4ea35514fc2f52cc44bb46ec18fafd0083f02e2e49446",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\execution.json": "07d49615e3c147cb61cacfcf5fda24607eda99b2d420879c18f6ff84534ae383",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\input.nml": "2fab924ef65c41725e5b45de1a602ba2b0c205a05d3da0e4c566cbf83856641a",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\metrics.txt": "c391dc510274b80685279bb61dd48929a0803715901e8da9a2447ecdc7099416",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\field_audit.json": "34f676dff7a251b2e4dc75dfb2e1e8c6cafc826b4c7dcfaaff4a977cca9be12c"
+      }
+    },
+    "field_A24_A32_V08": {
+      "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+      "comparisons": {
+        "phi_V": {
+          "maximum_relative": 0.0012454058012156815,
+          "rms_relative": 0.00033294093272446813,
+          "normalization": 8.000000000000004,
+          "limit": 0.02,
+          "passed": true
+        },
+        "theta_K": {
+          "maximum_relative": 0.003000379395310601,
+          "rms_relative": 0.0010277482448683693,
+          "normalization": 24.258291702370375,
+          "limit": 0.02,
+          "passed": true
+        },
+        "ux_m": {
+          "maximum_relative": 0.002871402108165977,
+          "rms_relative": 0.0007263450035715555,
+          "normalization": 1.7577988588832642e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uy_m": {
+          "maximum_relative": 0.0011718963409310537,
+          "rms_relative": 0.00038337163709117097,
+          "normalization": 1.7577988588832642e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "uz_m": {
+          "maximum_relative": 0.0013679411703239614,
+          "rms_relative": 0.00032863352131967417,
+          "normalization": 1.7577988588832642e-09,
+          "limit": 0.02,
+          "passed": true
+        },
+        "eta_n_density_perturbation": {
+          "maximum_relative": 0.030243822145826726,
+          "rms_relative": 0.002233429456446986,
+          "normalization": 2.5935281003946753,
+          "limit": 0.02,
+          "passed": false
+        },
+        "eta_p_density_perturbation": {
+          "maximum_relative": 0.03970516034536698,
+          "rms_relative": 0.0025861412269009816,
+          "normalization": 6.852431999128843,
+          "limit": 0.02,
+          "passed": false
+        }
+      },
+      "passed": false,
+      "fully_validated": false,
+      "hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V080\\nodes.csv": "46637a00293889a328ab1a0c03a2b7a2cac95bdedc1deb0edcdedd214abb405e",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A24_A32_V080\\transfer_report.json": "692c8c6411866254d9c45384673737fb5dd6bd4a331a36553e2d86f6bb810a88",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\nodes.csv": "4de94425d7229b68a61d5834eb8a9bad13a1f994d0199b98431af110766b1908",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\manifest.json": "4b8c0610e7d075fd99a4ea35514fc2f52cc44bb46ec18fafd0083f02e2e49446",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\execution.json": "07d49615e3c147cb61cacfcf5fda24607eda99b2d420879c18f6ff84534ae383",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\input.nml": "2fab924ef65c41725e5b45de1a602ba2b0c205a05d3da0e4c566cbf83856641a",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\metrics.txt": "c391dc510274b80685279bb61dd48929a0803715901e8da9a2447ecdc7099416",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\field_audit.json": "34f676dff7a251b2e4dc75dfb2e1e8c6cafc826b4c7dcfaaff4a977cca9be12c",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\nodes.csv": "6075cf6f50838008c7692165ada50e6b3b252310c7b12f84ec558ac67c8f1574",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\manifest.json": "458e424678a2684d5c1c5622adac2e16d6d25e10e0dc379079a6e3bbd2504fad",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\execution.json": "6a1239612136c00f7afa5f3ffbdc1fbabea25bb1023df6933b942e6391005422",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\input.nml": "c21e39858b7188edcf096437b9ffc416e20b0153171b594f4aceb3a8f268edec",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\metrics.txt": "bb442d56ac76433ee3f66c86712b63b51bbbe5350be706e069e41687c7f5123f",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\field_audit.json": "92ff5553cdc2b0fa20b94069400e4f094716e1285567fed7e46648959cd8c284"
+      }
+    }
+  },
+  "source_matches_build": {
+    "src/app/f1_case_runner_m.f90": true,
+    "src/app/main.f90": true,
+    "src/app/production_runner_m.f90": true,
+    "src/core/build_info_m.f90": true,
+    "src/core/constants_m.f90": true,
+    "src/core/field_layout_m.f90": true,
+    "src/core/kinds_m.f90": true,
+    "src/core/model_types_m.f90": true,
+    "src/core/status_m.f90": true,
+    "src/fem/dirichlet_m.f90": true,
+    "src/fem/element_kernel_m.f90": true,
+    "src/fem/global_assembly_m.f90": true,
+    "src/fem/sparse_pattern_m.f90": true,
+    "src/fem/transport_supg_m.f90": true,
+    "src/io/input_schema_m.f90": true,
+    "src/io/native_input_m.f90": true,
+    "src/linear/pardiso_solver_m.f90": true,
+    "src/mesh/boundary_topology_m.f90": true,
+    "src/mesh/dof_map_m.f90": true,
+    "src/mesh/hex20_quadrature_m.f90": true,
+    "src/mesh/hex20_shape_m.f90": true,
+    "src/mesh/mesh_checks_m.f90": true,
+    "src/mesh/mesh_types_m.f90": true,
+    "src/nonlinear/arclength_solver_m.f90": true,
+    "src/nonlinear/continuation_solver_m.f90": true,
+    "src/nonlinear/newton_solver_m.f90": true,
+    "src/nonlinear/scaling_m.f90": true,
+    "src/nonlinear/temperature_control_m.f90": true,
+    "src/physics/equilibrium_m.f90": true,
+    "src/physics/material_point_m.f90": true,
+    "src/physics/recombination_m.f90": true,
+    "src/physics/reference_material_m.f90": true,
+    "src/physics/thermo_piezo_m.f90": true,
+    "src/physics/transport_m.f90": true,
+    "src/physics/zno_candidate_m.f90": true,
+    "src/post/balance_audit_m.f90": true,
+    "src/post/field_metrics_m.f90": true,
+    "src/post/independent_flux_audit_m.f90": true,
+    "src/post/result_writer_m.f90": true,
+    "src/problems/reference_bar_problem_m.f90": true,
+    "src/verification/a1_joint_check_m.f90": true,
+    "src/verification/a2_hole_check_m.f90": true,
+    "src/verification/analytic_benchmarks_m.f90": true,
+    "src/verification/arclength_solver_check_m.f90": true,
+    "src/verification/center_hole_check_m.f90": true,
+    "src/verification/continuation_solver_check_m.f90": true,
+    "src/verification/element_tangent_check_m.f90": true,
+    "src/verification/global_assembly_check_m.f90": true,
+    "src/verification/global_block_jacobian_check_m.f90": true,
+    "src/verification/linear_solver_check_m.f90": true,
+    "src/verification/m0_benchmark_m.f90": true,
+    "src/verification/matched_control_check_m.f90": true,
+    "src/verification/material_tangent_check_m.f90": true,
+    "src/verification/mesh_convergence_check_m.f90": true,
+    "src/verification/newton_solver_check_m.f90": true,
+    "src/verification/production_joule_check_m.f90": true,
+    "src/verification/radius_matrix_check_m.f90": true,
+    "src/verification/supg_check_m.f90": true,
+    "src/verification/temperature_control_check_m.f90": true,
+    "src/verification/verification_driver_m.f90": true
+  },
+  "input_checks": {
+    "A16_S0.5_V060": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A16_S0.5_V080": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A16_S1_V060": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A16_S1_V080": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A16_S2_V060": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A16_S2_V080": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A24_S1_V060": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A24_S1_V080": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A32_S1_V060": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    },
+    "A32_S1_V080": {
+      "only_declared_keys_differ": true,
+      "changed_keys": [
+        "case_id",
+        "mesh_file",
+        "restart_nodes_file",
+        "restart_voltage_factor",
+        "supg_scale"
+      ]
+    }
+  },
+  "prior_evidence_preserved": {
+    "V060": {
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V060\\nodes.csv": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V060\\metrics.txt": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V060.nml": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\material_point_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\transport_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\transport_supg_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\post\\independent_flux_audit_m.f90": true
+    },
+    "V080": {
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\nodes.csv": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\V080\\metrics.txt": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V080.nml": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\material_point_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\transport_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\transport_supg_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\fem\\element_kernel_m.f90": true,
+      "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\post\\independent_flux_audit_m.f90": true
+    }
+  },
+  "baseline_nodes_byte_identical": {
+    "V060": true,
+    "V080": true
+  },
+  "fully_validated": false,
+  "limitations": [
+    "Angular-only refinement is not a full 3D mesh convergence study",
+    "J.E branch remains a current-work diagnostic, not a verified thermodynamic closure",
+    "Field shape audit uses nodal states, not continuity of gradient-derived fields",
+    "Existing solve/flux gates do not include an electrical-power-gap acceptance criterion"
+  ]
+}

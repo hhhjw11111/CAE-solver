@@ -1,0 +1,22 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=36213, elements=8064
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  5.9536E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  3.1250E-02, residual=  1.2825E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0169E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  1.3935E-01, predicted=  8.2239E-13, rho=  9.9924E-01,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  3.1250E-02, residual=  3.5463E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5358E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  7.9239E-04, predicted=  6.2882E-16, rho=  1.0000E+00,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  3.1250E-02, residual=  4.5870E-12,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.2728E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  2.3517E-06, predicted=  1.0520E-23, rho=  1.0000E+00,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  3.1250E-02, residual=  5.7218E-17,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7568E-16,
+pardiso_primary_entries=51942040,hole_entries=1920655
+newton_trust_trial, accepted=T, strategy=0, radius=  2.5000E-01, step_norm=  1.6798E-12, predicted=  1.6370E-33, rho=  1.3216E-01,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  3.1250E-02, residual=  5.3304E-17,
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  7.8125E-02, residual=  1.3388E-07,

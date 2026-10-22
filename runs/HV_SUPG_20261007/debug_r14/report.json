@@ -1,0 +1,12 @@
+[
+  {
+    "check": "SUPGJ",
+    "exit_code": 0,
+    "passed": true
+  },
+  {
+    "check": "SUPGJT",
+    "exit_code": 0,
+    "passed": true
+  }
+]

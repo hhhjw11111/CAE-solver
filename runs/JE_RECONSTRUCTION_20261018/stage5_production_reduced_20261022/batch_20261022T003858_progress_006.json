@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "name": "F_r3_A32_R18_Z14_LQ_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING"
+    },
+    {
+      "name": "H_r3_A32_R18_Z14_LQ_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING"
+    },
+    {
+      "name": "H_r3_A40_R20_Z16_LQ_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V000",
+      "state": "ZERO_VOLTAGE_EQUILIBRIUM_PASS"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V020",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING"
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V040",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING"
+    }
+  ]
+}

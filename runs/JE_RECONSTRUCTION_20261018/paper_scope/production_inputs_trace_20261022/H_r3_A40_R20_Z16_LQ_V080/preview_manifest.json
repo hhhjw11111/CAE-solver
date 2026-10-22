@@ -1,0 +1,50 @@
+{
+  "job": {
+    "name": "H_r3_A40_R20_Z16_LQ_V080",
+    "model": "LQ",
+    "radius": 3,
+    "counts": [
+      40,
+      20,
+      16
+    ],
+    "voltage": 8,
+    "domain": "Y_HALF",
+    "seed": null,
+    "restart": 0.0,
+    "step": null,
+    "group": "lq_check"
+  },
+  "changed_input_keys": [
+    "case_id",
+    "hole_radius",
+    "mesh_file",
+    "restart_joule_factor",
+    "restart_nodes_file",
+    "restart_voltage_factor",
+    "target_voltage"
+  ],
+  "seed_nodes_expected": "",
+  "input_sha256": "288ee62a9f26046623547327c32f3a808b04f2975c39c2417713f36905f929a0",
+  "checks": {
+    "differing_keys": [
+      "case_id",
+      "material_profile",
+      "mesh_file",
+      "restart_joule_factor",
+      "restart_nodes_file",
+      "restart_voltage_factor",
+      "supg_directional_tau",
+      "target_voltage",
+      "transport_supg"
+    ],
+    "unexpected_differences": [],
+    "mesh_sha256": "5b5c0e96d38ee692e6c965bb916f9122975e33fac0e9f5f905f1228244f3c46f",
+    "material_profile": "'ZNO_F1_LQ'",
+    "transport_supg": ".false.",
+    "supg_directional_tau": ".true.",
+    "half_y_symmetry": ".true."
+  },
+  "native_runs": 0,
+  "note": "Preview; the runner rebuilds the identical text at run time, with the seed short path if seeded."
+}

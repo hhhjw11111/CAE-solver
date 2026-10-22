@@ -16,10 +16,25 @@ contains
     type(CaseConfigType), intent(out) :: config
     type(MeshType), intent(out) :: mesh
     type(SolverStatusType), intent(out) :: status
-    integer :: schema_version, unit_id, io_status,max_newton
+    integer :: schema_version, unit_id, io_status,max_newton,newton_stagnation_window
     integer :: continuation_maximum_attempts,continuation_maximum_newton_per_attempt
     integer :: continuation_fast_iterations,continuation_slow_iterations
     logical :: continuation_full_joule_during_voltage
+    logical :: transport_supg
+    integer :: log_weighted_quadrature_order
+    logical :: transport_log_weighted
+    logical :: heat_source_current_work
+    logical :: half_y_symmetry
+    logical :: supg_directional_tau
+    logical :: global_log_step_limit
+    logical :: newton_trust_region
+    real(dp) :: trust_initial_radius,trust_maximum_radius,trust_minimum_radius
+    logical :: continuation_secant_predictor
+    logical :: arclength_enabled
+    real(dp) :: arclength_psi_voltage,arclength_psi_state
+    real(dp) :: arclength_fold_tolerance
+    integer :: arclength_maximum_refinements
+    real(dp) :: supg_scale
     character(len=128) :: case_id
     character(len=64) :: model_level,problem_type,material_profile
     character(len=512) :: mesh_file, mesh_path,restart_nodes_file
@@ -28,23 +43,42 @@ contains
     real(dp) :: restart_voltage_factor,restart_joule_factor
     real(dp) :: field_scales(NDOF_NODE),residual_tolerance,update_tolerance
     real(dp) :: armijo_c1,backtrack_factor,minimum_step,maximum_log_density_update
+    real(dp) :: continuation_voltage_checkpoint_spacing
     real(dp) :: continuation_initial_step,continuation_minimum_step
     real(dp) :: continuation_maximum_step,continuation_cutback_factor
     real(dp) :: continuation_growth_factor
     namelist /case_control/ schema_version, case_id, model_level, mesh_file
     namelist /problem_control/ problem_type,material_profile,target_voltage, &
       target_voltage_factor,target_joule_factor,hole_radius,restart_nodes_file, &
-      restart_voltage_factor,restart_joule_factor
-    namelist /solver_control/ field_scales,max_newton,residual_tolerance, &
+      restart_voltage_factor,restart_joule_factor,half_y_symmetry
+    namelist /solver_control/ field_scales,max_newton,newton_stagnation_window,residual_tolerance, &
+      newton_trust_region,trust_initial_radius,trust_maximum_radius,trust_minimum_radius, &
+      continuation_voltage_checkpoint_spacing, &
       update_tolerance,armijo_c1,backtrack_factor,minimum_step, &
       maximum_log_density_update,continuation_initial_step, &
       continuation_full_joule_during_voltage, &
       continuation_minimum_step,continuation_maximum_step, &
       continuation_cutback_factor,continuation_growth_factor, &
       continuation_maximum_attempts,continuation_maximum_newton_per_attempt, &
-      continuation_fast_iterations,continuation_slow_iterations
+      continuation_fast_iterations,continuation_slow_iterations,transport_supg,supg_scale,global_log_step_limit, &
+      continuation_secant_predictor,supg_directional_tau,transport_log_weighted,log_weighted_quadrature_order, &
+      arclength_enabled,arclength_psi_voltage,arclength_psi_state,heat_source_current_work, &
+      arclength_fold_tolerance,arclength_maximum_refinements
 
     call clear_status(status)
+    transport_supg=.false.;supg_scale=1.0_dp
+    transport_log_weighted=.false.
+    heat_source_current_work=.false.
+    log_weighted_quadrature_order=3
+    half_y_symmetry=.false.
+    supg_directional_tau=.false.
+    global_log_step_limit=.false.
+    newton_trust_region=.false.
+    trust_initial_radius=0.25_dp;trust_maximum_radius=4.0_dp;trust_minimum_radius=1.0e-12_dp
+    continuation_secant_predictor=.false.
+    arclength_enabled=.false.
+    arclength_psi_voltage=1.0_dp;arclength_psi_state=1.0_dp
+    arclength_fold_tolerance=1.0e-4_dp;arclength_maximum_refinements=24
     schema_version = 0
     case_id = 'UNSET'
     model_level = 'UNSET'
@@ -61,6 +95,8 @@ contains
     field_scales=[1.0e-10_dp,1.0e-10_dp,1.0e-10_dp,10.0_dp, &
       1.0e-1_dp,1.0e-1_dp,10.0_dp]
     max_newton=40
+    newton_stagnation_window=0
+    continuation_voltage_checkpoint_spacing=0.0_dp
     residual_tolerance=1.0e-8_dp
     update_tolerance=1.0e-8_dp
     armijo_c1=1.0e-4_dp
@@ -129,7 +165,20 @@ contains
     config%restart_voltage_factor=restart_voltage_factor
     config%restart_joule_factor=restart_joule_factor
     config%field_scales=field_scales
+    config%transport_supg=transport_supg;config%supg_scale=supg_scale
+    config%transport_log_weighted=transport_log_weighted
+    config%heat_source_current_work=heat_source_current_work
+    config%log_weighted_quadrature_order=log_weighted_quadrature_order
+    config%half_y_symmetry=half_y_symmetry
+    config%supg_directional_tau=supg_directional_tau
     config%nonlinear_options%max_newton=max_newton
+    config%nonlinear_options%stagnation_window=newton_stagnation_window
+    config%continuation_options%voltage_checkpoint_spacing=continuation_voltage_checkpoint_spacing
+    config%nonlinear_options%global_log_step_limit=global_log_step_limit
+    config%nonlinear_options%trust_region=newton_trust_region
+    config%nonlinear_options%trust_initial_radius=trust_initial_radius
+    config%nonlinear_options%trust_maximum_radius=trust_maximum_radius
+    config%nonlinear_options%trust_minimum_radius=trust_minimum_radius
     config%nonlinear_options%residual_tolerance=residual_tolerance
     config%nonlinear_options%update_tolerance=update_tolerance
     config%nonlinear_options%armijo_c1=armijo_c1
@@ -137,6 +186,7 @@ contains
     config%nonlinear_options%minimum_step=minimum_step
     config%nonlinear_options%maximum_log_density_update=maximum_log_density_update
     config%continuation_options%initial_step=continuation_initial_step
+    config%continuation_options%secant_predictor=continuation_secant_predictor
     config%continuation_options%full_joule_during_voltage= &
       continuation_full_joule_during_voltage
     config%continuation_options%minimum_step=continuation_minimum_step
@@ -148,6 +198,11 @@ contains
       continuation_maximum_newton_per_attempt
     config%continuation_options%fast_iteration_threshold=continuation_fast_iterations
     config%continuation_options%slow_iteration_threshold=continuation_slow_iterations
+    config%continuation_options%arclength_enabled=arclength_enabled
+    config%continuation_options%arclength_psi_voltage=arclength_psi_voltage
+    config%continuation_options%arclength_psi_state=arclength_psi_state
+    config%continuation_options%arclength_fold_tolerance=arclength_fold_tolerance
+    config%continuation_options%arclength_maximum_refinements=arclength_maximum_refinements
     call validate_case_config(config, status)
     if (.not. status%is_ok()) return
 

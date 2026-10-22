@@ -1,0 +1,65 @@
+{
+  "same_mesh_and_sampling": true,
+  "original_6V": {
+    "sample_count": 392000,
+    "integrated_heat_W": 0.007847940202311929,
+    "sampled_theta_max_K": 21.097573488,
+    "theta_peak_location_um": [
+      -0.17834962111,
+      9.9300140365,
+      -0.49983581472999994
+    ],
+    "heat_density_min_W_m3": 16900365517.0,
+    "heat_density_max_W_m3": 3032166242700000.0,
+    "field_samples_sha256": "72f07447a4a9045f7184bce014b3e03d9731fb9f3740153cae5e5e0e262ecf96"
+  },
+  "current_work_6V": {
+    "sample_count": 392000,
+    "integrated_heat_W": 0.005790727459792382,
+    "sampled_theta_max_K": 14.171395757,
+    "theta_peak_location_um": [
+      -0.14281760591,
+      7.9295252173,
+      -0.49983581472999994
+    ],
+    "heat_density_min_W_m3": 7382404735.9,
+    "heat_density_max_W_m3": 121882575090000.0,
+    "field_samples_sha256": "02b6a8f102f4d6bcd7dcd3269db77adbe2371afcc7181a7e4cb602962ccf7d05"
+  },
+  "heat_power_change_percent": -26.213410009342585,
+  "peak_temperature_change_percent": -32.82926226219639,
+  "descriptive_peak_to_source_ratio_K_per_mW": {
+    "original": 2.6882943733775977,
+    "current_work": 2.4472565589360267,
+    "change_percent": -8.966198673351721,
+    "interpretation": "Describes the solved source distribution and peak location; not a material constant."
+  },
+  "fixed_current_work_6V_state_electrical_work_decomposition_W": {
+    "drift_work": 0.006850473079947429,
+    "diffusion_work": -0.0010597456201530027,
+    "total_current_work": 0.005790727459794426,
+    "interpretation": "Same-state diagnostic identity, not a separate coupled solve or causal isolation."
+  },
+  "electrical_work_gap_percent": [
+    {
+      "voltage_V": 6.0,
+      "gap": 2.5243261632490555
+    },
+    {
+      "voltage_V": 6.5,
+      "gap": 2.638661054510519
+    },
+    {
+      "voltage_V": 7.0,
+      "gap": 2.7511157753158333
+    },
+    {
+      "voltage_V": 7.5,
+      "gap": 2.8619417536679066
+    },
+    {
+      "voltage_V": 8.0,
+      "gap": 2.9711928783412938
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "study": "A2P actual matrix PARDISO equivalent representations",
+  "date": "2026-10-18",
+  "scope": "Independent numerical diagnosis only. Does not change A2P acceptance or establish an A2P PASS.",
+  "matrix_files": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge0_L0.bin": "eae1b6637c41dc10d20cbc783905c53751e910858cf53f419b8211a14df1aed6",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge0_L1.bin": "f5c36235d85bae6e19056028854db6f1a2c2a3f20180e9fe0bb9ac76f91bd143",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge0_L2.bin": "5078df742b3d72ddaecb1ec6cf42adaef317da0e581bfca5725069c85845ffd1",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge1_L0.bin": "9134adffca21fff4f097d9c6ffd6cf1cba1b32caae11119cc2b6e2d2e0624d7d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge1_L1.bin": "adfd884db84ca86b967b6c8539d4c8f389915d6f88bedb1a269bf8633f31c3ec",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge1_L2.bin": "61103af29b2740a34046762c6678da27a9a1f11b5c2d88af445e42dd99184dad",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge2_L0.bin": "e7e26719f2d14b73245eb4f837e0c278b3942a2e4bd7eb564588f069a10f97eb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge2_L1.bin": "70b5254979d63e93a2304a0c42e78de97823ddfd0c786b5d6954f2fe911cecc9",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields\\A2PMAT_gauge2_L2.bin": "46d0f8eb5f559b7dc17838d5c4ad17b97ab1eaf53fdd6dc4552748612099a112"
+  },
+  "representations": [
+    "original CSR",
+    "remove exactly-zero off-diagonal entries; retain all diagonals",
+    "strict elimination of fixed zero increments; retain other explicit zeros",
+    "strict fixed elimination plus exact off-diagonal zero removal"
+  ],
+  "equations": "All nonzero entries unchanged bitwise. Reduced solutions expanded with exact fixed increment 0.",
+  "ungauged_policy": "Gauge case 0: three known-singular structural controls only; never call native factorization.",
+  "rhs": [
+    "original scaled Newton RHS",
+    "NumPy PCG64 seed 20261018+level, standard_normal(n); fixed entries set exactly 0"
+  ],
+  "rhs_pairing": "Same pre-mask random vector on both gauge locations of each level; RHS differences only at their gauge-fixed rows.",
+  "settings": {
+    "mtype": 11,
+    "maxfct": 1,
+    "mnum": 1,
+    "nrhs": 1,
+    "msglvl": 0,
+    "phase": 13,
+    "release_phase": -1,
+    "one_based": true,
+    "LP64": true,
+    "iparm_explicit_1based": {
+      "1": 1,
+      "2": 2,
+      "8": 2,
+      "10": 13,
+      "11": 1,
+      "13": 1,
+      "18": -1,
+      "27": 1,
+      "35": 0
+    },
+    "other_iparm_initial": 0,
+    "thread_count": 4,
+    "storage": "IC"
+  },
+  "metrics": [
+    "all 64 iparm before/after/release",
+    "PARDISO pivots, refinements, factor nonzeros, errors",
+    "full ORIGINAL scaled matrix normwise and componentwise backward errors",
+    "full ORIGINAL raw matrix backward errors with recovered physical increment",
+    "direct-vs-linked-original-wrapper difference",
+    "solution difference from original CSR and independent exact-elimination SuperLU reference"
+  ],
+  "safeguards": [
+    "No tolerance-based coefficient dropping",
+    "No new scaling or reordering by diagnostic code",
+    "No changed PARDISO options",
+    "No PDE, BC, test thresholds or core source edits",
+    "One native child at a time; 180-second hard timeout per solve pair"
+  ],
+  "linked_objects": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_MATRIX\\kinds_m.obj": "44171280337e86232610575880049294ee76971e708af738fa22212ac0bb40b2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_MATRIX\\field_layout_m.obj": "a497e576fba79003bfda69024b325b0db268228df21bfb3b47c1ea7d28f8eccf",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_MATRIX\\status_m.obj": "1ca053b13d99ab473530963c0e9a77438104e7a4d2402607604b18a0283eaee0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_MATRIX\\pardiso_solver_m.obj": "459eba20f8f68d6bc803c5fbb84ccde9018ebf444463a556dcd41fd2e37e76de"
+  },
+  "production_pardiso_source_sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e",
+  "driver_sha256": "45ce98f8eb6578ed9c4f201d80046b8955748c35cf8c6d50b0b2ddf3c8d24cd9",
+  "runner_sha256": "02551d7049d45a46f8598af7fcbbbc43f9f264aa8ccc79e4ea5f31a875ad9b0c"
+}

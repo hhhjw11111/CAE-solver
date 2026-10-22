@@ -1,0 +1,170 @@
+{
+  "domain_symmetry": "FULL",
+  "hole_radius_m": 3e-06,
+  "radius_um": 3,
+  "ring_width_m": 5e-07,
+  "annulus_inner_radius_m": 3e-06,
+  "annulus_outer_radius_m": 3.5e-06,
+  "annulus_corner_index": 8,
+  "counts": {
+    "circumferential": 40,
+    "radial": 20,
+    "thickness": 16
+  },
+  "nodes": 55600,
+  "elements": 12800,
+  "profiles": {
+    "radial_axis_corners_m": [
+      3e-06,
+      3.00875e-06,
+      3.0210000000000004e-06,
+      3.0385000000000002e-06,
+      3.0700000000000003e-06,
+      3.112e-06,
+      3.182e-06,
+      3.31875e-06,
+      3.5e-06,
+      4.625e-06,
+      5.75e-06,
+      6.875e-06,
+      8e-06,
+      9.125e-06,
+      9.645e-06,
+      9.818000000000002e-06,
+      9.902000000000001e-06,
+      9.944e-06,
+      9.972e-06,
+      9.9895e-06,
+      1e-05
+    ],
+    "radial_diagonal_corners_m": [
+      3e-06,
+      3.00875e-06,
+      3.0210000000000004e-06,
+      3.0385000000000002e-06,
+      3.0700000000000003e-06,
+      3.112e-06,
+      3.182e-06,
+      3.31875e-06,
+      3.5e-06,
+      5.4016504294495525e-06,
+      7.303300858899106e-06,
+      9.20495128834866e-06,
+      1.1106601717798212e-05,
+      1.3008252147247766e-05,
+      1.378713562373095e-05,
+      1.3960135623730952e-05,
+      1.4044135623730951e-05,
+      1.408613562373095e-05,
+      1.411413562373095e-05,
+      1.413163562373095e-05,
+      1.4142135623730951e-05
+    ],
+    "z_corners_m": [
+      -5e-07,
+      -4.969374999999999e-07,
+      -4.9125e-07,
+      -4.8075e-07,
+      -4.6149999999999994e-07,
+      -4.2649999999999996e-07,
+      -3.635e-07,
+      -2.445625e-07,
+      0.0,
+      2.445625e-07,
+      3.635e-07,
+      4.2649999999999996e-07,
+      4.6149999999999994e-07,
+      4.8075e-07,
+      4.9125e-07,
+      4.969374999999999e-07,
+      5e-07
+    ]
+  },
+  "maximum_radial_axis_step_m": 1.1250000000000002e-06,
+  "maximum_z_step_m": 2.445625e-07,
+  "volume_3x3x3_m3": 3.717257019530483e-16,
+  "geometry_audit": {
+    "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+    "geometry_coordinate_tolerance_m": 1e-18,
+    "numerical_geometry_relative_tolerance": 1e-10,
+    "bounds_m": [
+      [
+        -1e-05,
+        -1e-05,
+        -5e-07
+      ],
+      [
+        1e-05,
+        1e-05,
+        5e-07
+      ]
+    ],
+    "bound_coordinate_error_m": 0.0,
+    "anchor_counts": [
+      1,
+      1,
+      1
+    ],
+    "contact_counts": [
+      533,
+      533
+    ],
+    "exterior_face_counts": {
+      "x-": 160,
+      "x+": 160,
+      "y-": 160,
+      "y+": 160,
+      "z-": 800,
+      "z+": 800,
+      "hole": 640
+    },
+    "annulus_interface_faces": 640,
+    "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+    "hole_node_radius_error_m": 4.235164736271502e-22,
+    "quadrature": {
+      "3": {
+        "volume_m3": 3.717257019530483e-16,
+        "annulus_volume_m3": 1.0210163183621451e-17,
+        "minimum_jacobian": 1.5773622650249768e-24,
+        "quadratic_boundary_volume_relative_error": 1.326349141780373e-16,
+        "quadratic_boundary_annulus_relative_error": 4.52708912032286e-16
+      },
+      "5": {
+        "volume_m3": 3.717257019530482e-16,
+        "annulus_volume_m3": 1.0210163183621448e-17,
+        "minimum_jacobian": 1.577059681079415e-24,
+        "quadratic_boundary_volume_relative_error": 3.9790474253411187e-16,
+        "quadratic_boundary_annulus_relative_error": 1.5090297067742864e-16
+      }
+    },
+    "expected_quadratic_boundary_volume_m3": 3.7172570195304833e-16,
+    "expected_quadratic_annulus_volume_m3": 1.0210163183621447e-17,
+    "ideal_circle_volume_m3": 3.7172566611769187e-16,
+    "ideal_circle_annulus_volume_m3": 1.0210176124166823e-17,
+    "ideal_circle_volume_relative_geometry_error": 9.640269619675681e-08,
+    "ideal_circle_annulus_relative_geometry_error": -1.2674164694828984e-06,
+    "quadratic_arc_relative_max_inward_sag": 1.1878546196664175e-06,
+    "exterior_area_vector_m2": [
+      -1.2356264418496715e-26,
+      1.6155871338926322e-26,
+      6.23616633682556e-25
+    ],
+    "exterior_area_vector_relative_closure": 7.407663885363338e-16,
+    "divergence_volume_m3": 3.7172570195304833e-16,
+    "divergence_volume_relative_error": 0.0,
+    "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+  },
+  "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+  "scope": "Radius-parametric full-domain geometry; 0.5 um ring retained. Separate radius-specific field/SUPG evidence required.",
+  "mesh_sha256": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+  "generator_sha256": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+  "dependencies": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_paper_radius_mesh_20261018.py": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_global_direction_mesh_20261016.py": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_f1_main_cases.py": "7e098f7b4732fc43365061be353e7b68e8801f4b8b46c1e77505a8c1ec693d4d",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\audit_hex20_boundary_geometry.py": "2c356f26a8cf721064faeec6a5936b44dc4e139d351cc1cfbae68979ef462fb4",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\transfer_hv_initial_guess.py": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\run_hv_sweep.py": "8c99775ace5b78d76e8d46cfa45eeeb21e6d4d8e1562e03e46f3755140fb96b5"
+  }
+}

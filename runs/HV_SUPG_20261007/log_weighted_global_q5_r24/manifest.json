@@ -1,0 +1,241 @@
+{
+  "source": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\tests\\hv_log_weighted_global_q5.f90",
+  "source_sha256": "aa0af2706f553b9a4dff41e795de9f3f3fc34fd8d69820f62606e2132c606584",
+  "prototype_module": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\tests\\log_weighted_probe_m.f90",
+  "prototype_module_sha256": "f1c4309178f9b5efe8a19097c425cc2d210e4e16b8fe210bfa8aba754220b545",
+  "production_build": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_QUAD_20261008_R24",
+  "production_executable_sha256": "023f4d76a6ef429760d30162208d748ab402661c77fdf545375f0b600200c424",
+  "harness_executable_sha256": "a394b97ad934e8d0dccafa09b06ef329f6404a2f301c345cc5743eed0bb12b70",
+  "options": "/nologo /Od /check:all /check:noarg_temp_created /traceback /standard-semantics /I\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_QUAD_20261008_R24\\mod\" /module:\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_global_q5_r24\\mod\" /exe:\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_global_q5_r24\\log_weighted_probe.exe\"",
+  "exit_code": 0,
+  "objects": [
+    {
+      "name": "a1_joint_check_m.obj",
+      "sha256": "eb491ebe144bf82ec50907e41606ae475f3eeb28a2f5dbff6011ac404b04736e"
+    },
+    {
+      "name": "a2_hole_check_m.obj",
+      "sha256": "48051bd56b6d6242bc744be6e26219d3231279f6ba3599054444070c54ad8963"
+    },
+    {
+      "name": "analytic_benchmarks_m.obj",
+      "sha256": "a8ed47a54c296abbe9e9fff71da417d3182d803e6e1a66f468d6e6ecfdf7b3b3"
+    },
+    {
+      "name": "balance_audit_m.obj",
+      "sha256": "c5a0d50127626a787d8960dd9f4e52920045ed2de7f5f5d1efdab06fe8f80ae9"
+    },
+    {
+      "name": "boundary_topology_m.obj",
+      "sha256": "d26b301848e8e113c3573ebfaad2298a6f56a222b85b581bcd1e6f453f3b0df1"
+    },
+    {
+      "name": "build_info_m.obj",
+      "sha256": "fb67bfcffc2e9b55fe008840d07d9b052440149a6d4b15fd5712b1a1edf34d7a"
+    },
+    {
+      "name": "center_hole_check_m.obj",
+      "sha256": "23f96bc7f33da93601bbb447b16c72beec213a9c4952644b9dce55b5875a2071"
+    },
+    {
+      "name": "constants_m.obj",
+      "sha256": "6474699e471bc0ccba33ce0e3eb8c1401d6b925ad063a02985d8d3c49bf36c43"
+    },
+    {
+      "name": "continuation_solver_check_m.obj",
+      "sha256": "98cf71b146077abec89b9d2d96d6f5ab227f04110c4b04bf8b1c07f350c992c9"
+    },
+    {
+      "name": "continuation_solver_m.obj",
+      "sha256": "e14518d889ea1d8fcd0010b7a57f35dd7b997f31f235c408ecc9486897dbe5c9"
+    },
+    {
+      "name": "dirichlet_m.obj",
+      "sha256": "5844162b716c7a1f74bb85e3e5519ec9c11e3f34595ef342873769a30762b5a8"
+    },
+    {
+      "name": "dof_map_m.obj",
+      "sha256": "055fd0375c263869a061e971c07f54515170a6572121fb1ad581ca52acbb065a"
+    },
+    {
+      "name": "element_kernel_m.obj",
+      "sha256": "38aac4f268ddcb88a1ed5e0e7764e2b91664381ef68f99c96905bdc786143215"
+    },
+    {
+      "name": "element_tangent_check_m.obj",
+      "sha256": "db7cf0faccbd3ed2368bc359373dd347c8c9b0544f265fc9104b60c8e3c86711"
+    },
+    {
+      "name": "equilibrium_m.obj",
+      "sha256": "7c048ada1a831f7bea45d935b2dbe16e6bc75a004d75c9876ddf55138b8ddf50"
+    },
+    {
+      "name": "f1_case_runner_m.obj",
+      "sha256": "4cce3ae528386bb0cf82a50c8132dbf01e95e3c65084de376a9b734b64ceeef5"
+    },
+    {
+      "name": "field_layout_m.obj",
+      "sha256": "e74214db0e21296d3c051f46adb7834a22c49f5533cc7604e5fc3b39ca143103"
+    },
+    {
+      "name": "field_metrics_m.obj",
+      "sha256": "e7dc05e847bda9fdacaf1a82579c5988a23f39b315489aca331dc16555c0a98e"
+    },
+    {
+      "name": "global_assembly_check_m.obj",
+      "sha256": "2e62590a38bb05671746d0284f525098d01fbee14c68d2c61bfa6f678025622f"
+    },
+    {
+      "name": "global_assembly_m.obj",
+      "sha256": "e06300d36421ab8b05ca82d8f8ec195c787415a447f4a1e2552b6fd034d4c74d"
+    },
+    {
+      "name": "global_block_jacobian_check_m.obj",
+      "sha256": "8c1e7e964dc90cf63a00c23ef0f3b8a1411b0a09bc6d90ef0cf2d3cb01a26315"
+    },
+    {
+      "name": "hex20_quadrature_m.obj",
+      "sha256": "8bc1f97f92501b79eb8a6030fe48cd12ce87d691a4bd857106e0ffebc5f1f34f"
+    },
+    {
+      "name": "hex20_shape_m.obj",
+      "sha256": "19c7424e0e3cf0f8b8044e0988579adc356937067fe4ec5fb1608d814ca70674"
+    },
+    {
+      "name": "independent_flux_audit_m.obj",
+      "sha256": "08c118b1b16c5a1c3fc28002a296cd782e2e3cbfa2bace50af0d8ac85c7db28f"
+    },
+    {
+      "name": "input_schema_m.obj",
+      "sha256": "5b592a1ef0a1dd9b3faba6a895d4f5246c4ef165a5ad41df96c74a043299f227"
+    },
+    {
+      "name": "kinds_m.obj",
+      "sha256": "ed392c1374c388e3e102bcc68792de7153e697a2401b7b7454143966c2d552a5"
+    },
+    {
+      "name": "linear_solver_check_m.obj",
+      "sha256": "c9e548e21270e2d91bdb576edd9bc15894607515aa0b7585cfb2715d32d5e845"
+    },
+    {
+      "name": "m0_benchmark_m.obj",
+      "sha256": "a2c4f6396e0cc4f7f8e4efb386e4a77b794e334ee2077e10b72253e4a4218943"
+    },
+    {
+      "name": "matched_control_check_m.obj",
+      "sha256": "f852c013cdb6a91798ff53246cadfb097311b8fb49a0379a8e2ac210a6cbcd7a"
+    },
+    {
+      "name": "material_point_m.obj",
+      "sha256": "e761accd51731af22ab3f123662396fdd948d5f89543b3532bb0c5b7cf46bb58"
+    },
+    {
+      "name": "material_tangent_check_m.obj",
+      "sha256": "fedbf62339bf528324449f0ef50df47f17396591fc9a19710e7450aa76b4ee2d"
+    },
+    {
+      "name": "mesh_checks_m.obj",
+      "sha256": "5c7af132ea2af93a1dc22bc41bf96ffd0fc6ebc9d93fd370a597bd2d42a6a613"
+    },
+    {
+      "name": "mesh_convergence_check_m.obj",
+      "sha256": "1cd2b5f5a395bb8d091a7f9c9215b5c61faaf6bad0f1126edde567978625a6b8"
+    },
+    {
+      "name": "mesh_types_m.obj",
+      "sha256": "7d16ce5368b35885712594b49e6d39884c46c59eceb5fd275f57b9fd6c75ac27"
+    },
+    {
+      "name": "model_types_m.obj",
+      "sha256": "66c0e5052fcfe72a83214da792d7e128ab9a90a9ebef03209256b075a2217a1b"
+    },
+    {
+      "name": "native_input_m.obj",
+      "sha256": "7f1f5dd81c630bee214c05712dceb645f5d303d583890126d3e691693337acaa"
+    },
+    {
+      "name": "newton_solver_check_m.obj",
+      "sha256": "eca0fe54ee3921307c32bb4784e032877a74df431985acb95e0192d0accb0991"
+    },
+    {
+      "name": "newton_solver_m.obj",
+      "sha256": "58e2dee3a3180def8545c04f1be954956dd96b0fb34a66760397157227664f04"
+    },
+    {
+      "name": "pardiso_solver_m.obj",
+      "sha256": "136ee5a0835f5ecf78fcfec47f84cbae7f11d42ff0fb29071a83f8235728f746"
+    },
+    {
+      "name": "production_joule_check_m.obj",
+      "sha256": "e0bf8f49467418db704ef52d2da105e7cecdde6f1a5b8c060d4569378da00ec3"
+    },
+    {
+      "name": "production_runner_m.obj",
+      "sha256": "d90268a7c8eca7375cf169d49481c809e23556246fde4eeb822d7ad3c86ae468"
+    },
+    {
+      "name": "radius_matrix_check_m.obj",
+      "sha256": "6bf1338e952a698a24a364acd4577de10bc217fc82345ac45ecbc058c3e5d0c8"
+    },
+    {
+      "name": "recombination_m.obj",
+      "sha256": "a621b1a91ac4eb65be9f0fd5236bfafb3d1dcb5d6d8acedeae7e11709ea225c6"
+    },
+    {
+      "name": "reference_bar_problem_m.obj",
+      "sha256": "34b149da38620effbe0b3eb7fbaface3f2b4ece38a7fe02b473ca28509caa9c1"
+    },
+    {
+      "name": "reference_material_m.obj",
+      "sha256": "7eb7bde699ab104c17e10a126711e62ea33c1be17eae345b52c10ada61a2603d"
+    },
+    {
+      "name": "result_writer_m.obj",
+      "sha256": "1729d4e8de43abafcf70e48d5934baea96b700f56d5c245aa48c59fcc9721bd5"
+    },
+    {
+      "name": "scaling_m.obj",
+      "sha256": "044b61e244cdbd731d50e362e9198afead89a4c35cf5eac2e50faf3593e5fb54"
+    },
+    {
+      "name": "sparse_pattern_m.obj",
+      "sha256": "62dbc06d727098ecd002a3e40ac0b22ba55a72ee22a82747e260efce7b75ec30"
+    },
+    {
+      "name": "status_m.obj",
+      "sha256": "8c064bccca606d414bb336e31a3ccabc5e811a5a152ad91c491ecef505a4c820"
+    },
+    {
+      "name": "supg_check_m.obj",
+      "sha256": "21da26af3395d4c024d329cffd172611cb5b26d9d3c8df76d5236008b15cf051"
+    },
+    {
+      "name": "temperature_control_check_m.obj",
+      "sha256": "30a801f8df8497b08ce6308fe283b6adba652838789dd8906fda37822fce3209"
+    },
+    {
+      "name": "temperature_control_m.obj",
+      "sha256": "3c3cfec67ccccb8595164f4e4010086d89e881250f792afe9044042b08192b92"
+    },
+    {
+      "name": "thermo_piezo_m.obj",
+      "sha256": "79f85bdd339a0482a4b10d857eb69cbf3079492203c1854d2d17ac3d69b0fefa"
+    },
+    {
+      "name": "transport_m.obj",
+      "sha256": "e3398327e219b7a4d83eb78ee3bc3af03af4951b826a1f947ed52e65b1a6fbd1"
+    },
+    {
+      "name": "transport_supg_m.obj",
+      "sha256": "de90ada11ec0d590fc5e993e55324b11d98f7a381e81cbe159acd254eb7d2a13"
+    },
+    {
+      "name": "verification_driver_m.obj",
+      "sha256": "d38986387f8efc6c01a48ad106563795855f8cd212bb2ae9da24de54dd49f2d4"
+    },
+    {
+      "name": "zno_candidate_m.obj",
+      "sha256": "e9651c62a8aef8139c246c99dc7a97b57e1ad4930c56bd5a9008287bb28cc027"
+    }
+  ]
+}

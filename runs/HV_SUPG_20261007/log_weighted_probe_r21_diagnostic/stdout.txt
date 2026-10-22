@@ -1,0 +1,13 @@
+geometry=1,input_field=1,maximum_block_error=  1.4715E-14
+row_block_errors=  7.7214E-15   1.4715E-14   1.0063E-14   1.1082E-14   0.0000E+00   0.0000E+00   0.0000E+00
+geometry=1,input_field=2,maximum_block_error=  3.7759E-14
+row_block_errors=  2.5848E-14   5.3038E-15   1.0127E-14   3.7759E-14   0.0000E+00   0.0000E+00   0.0000E+00
+geometry=1,input_field=3,maximum_block_error=  3.0491E-14
+row_block_errors=  1.8726E-14   1.6510E-14   4.2321E-15   3.0491E-14   0.0000E+00   0.0000E+00   0.0000E+00
+geometry=1,input_field=4,maximum_block_error=  1.3965E-09
+row_block_errors=  7.9972E-13   2.3560E-12   9.0163E-13   4.5590E-14   3.4750E-15   6.4107E-15   1.3965E-09
+geometry=1,input_field=5,maximum_block_error=  1.4057E-07
+row_block_errors=  0.0000E+00   0.0000E+00   0.0000E+00   2.9725E-10   8.9345E-14   0.0000E+00   1.4057E-07
+geometry=1,input_field=6,maximum_block_error=  1.0235E-06
+row_block_errors=  0.0000E+00   0.0000E+00   0.0000E+00   8.0616E-10   0.0000E+00   2.3794E-13   1.0235E-06
+3

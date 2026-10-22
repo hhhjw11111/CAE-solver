@@ -1,0 +1,7 @@
+geometry=1,input_field=1,maximum_block_error=  1.4715E-14
+geometry=1,input_field=2,maximum_block_error=  3.7759E-14
+geometry=1,input_field=3,maximum_block_error=  3.0491E-14
+geometry=1,input_field=4,maximum_block_error=  1.3965E-09
+geometry=1,input_field=5,maximum_block_error=  1.4057E-07
+geometry=1,input_field=6,maximum_block_error=  1.0235E-06
+3

@@ -1,0 +1,11 @@
+{
+  "status": "user_selected_final",
+  "selected_date": "2026-09-09",
+  "script": "solver_v2/scripts/plot_f3_joule_large_surfaces.py",
+  "style": "solver_v2/scripts/styles/joule_map_height_large_surfaces.json",
+  "files_sha256": {
+    "output\\F3_焦耳热_下排放大_20260909\\comparisons\\compare_Q_midplane.png": "c7868ca7724751f0ca6701f7c75f19abd18e2b802f1dc97968b38e53594fd12d",
+    "output\\F3_焦耳热_下排放大_20260909\\comparisons\\compare_Q_midplane.pdf": "a19ff14e4627ef724b6f6441c65e240e76d510573d5d946a1979c306d69b2705",
+    "output\\F3_焦耳热_下排放大_20260909\\comparisons\\compare_Q_midplane.svg": "9c546d3082667343145e4c5859fe97821a9f98e861202bdcab2c6e6543c95a30"
+  }
+}

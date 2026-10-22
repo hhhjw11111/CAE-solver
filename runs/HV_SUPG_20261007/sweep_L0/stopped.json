@@ -1,0 +1,5 @@
+{
+  "status": "STOPPED_FOR_VALIDATED_PARALLEL_REPLACEMENT",
+  "not_physical_failure": true,
+  "reason": "Preserve completed V000 and incomplete V005; restart sweep using R5 after performance and high-voltage diagnosis"
+}

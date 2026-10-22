@@ -1,0 +1,89 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=18517, elements=4032
+newton_iteration=0, voltage_factor=  7.5000E-01, joule_factor=  1.0000E+00, residual=  3.5887E-16,
+temperature_newton_iteration=0,voltage_factor=  8.18588450E-01,theta_control=  2.49132975E+01,residual=  4.36008307E-04,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.4934E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=1,voltage_factor=  7.92709321E-01,theta_control=  2.49132975E+01,residual=  9.52322243E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.2702E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=2,voltage_factor=  7.84084617E-01,theta_control=  2.49132975E+01,residual=  5.85149633E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  7.0704E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=3,voltage_factor=  7.83223148E-01,theta_control=  2.49132975E+01,residual=  7.56772996E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.4514E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=4,voltage_factor=  7.83222401E-01,theta_control=  2.49132975E+01,residual=  3.51520411E-12,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5203E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=5,voltage_factor=  7.83222401E-01,theta_control=  2.49132975E+01,residual=  4.52883107E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.2236E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=6,voltage_factor=  7.83222401E-01,theta_control=  2.49132975E+01,residual=  3.95573320E-16,
+temperature_newton_iteration=0,voltage_factor=  8.16444801E-01,theta_control=  2.89132975E+01,residual=  1.78338045E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.9043E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=1,voltage_factor=  8.02518842E-01,theta_control=  2.89132975E+01,residual=  1.54042332E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.4635E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=2,voltage_factor=  8.02383335E-01,theta_control=  2.89132975E+01,residual=  2.34305905E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.1608E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=3,voltage_factor=  8.02383253E-01,theta_control=  2.89132975E+01,residual=  5.75078601E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.1195E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=4,voltage_factor=  8.02383253E-01,theta_control=  2.89132975E+01,residual=  5.02858325E-16,
+temperature_newton_iteration=0,voltage_factor=  8.21544105E-01,theta_control=  3.29132975E+01,residual=  1.87434351E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.1977E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=1,voltage_factor=  8.07924968E-01,theta_control=  3.29132975E+01,residual=  1.63806221E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.2521E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=2,voltage_factor=  8.07793649E-01,theta_control=  3.29132975E+01,residual=  2.01715978E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.8938E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=3,voltage_factor=  8.07793572E-01,theta_control=  3.29132975E+01,residual=  6.53457205E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.2737E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=4,voltage_factor=  8.07793572E-01,theta_control=  3.29132975E+01,residual=  5.43022377E-16,
+temperature_newton_iteration=0,voltage_factor=  8.13203892E-01,theta_control=  3.69132975E+01,residual=  1.97865349E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  7.2230E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=1,voltage_factor=  7.99265724E-01,theta_control=  3.69132975E+01,residual=  1.78095857E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0917E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=2,voltage_factor=  7.99125518E-01,theta_control=  3.69132975E+01,residual=  3.99183785E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.0392E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=3,voltage_factor=  7.99125443E-01,theta_control=  3.69132975E+01,residual=  7.20431374E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7360E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=4,voltage_factor=  7.99125443E-01,theta_control=  3.69132975E+01,residual=  6.12308007E-16,
+temperature_newton_iteration=0,voltage_factor=  7.90457314E-01,theta_control=  4.09132975E+01,residual=  2.09252520E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.0716E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=1,voltage_factor=  7.75599431E-01,theta_control=  4.09132975E+01,residual=  1.96927474E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7549E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=2,voltage_factor=  7.75435780E-01,theta_control=  4.09132975E+01,residual=  1.16971254E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1977E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=3,voltage_factor=  7.75435701E-01,theta_control=  4.09132975E+01,residual=  8.49786892E-16,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7677E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=4,voltage_factor=  7.75435701E-01,theta_control=  4.09132975E+01,residual=  6.37807040E-16,
+temperature_newton_iteration=0,voltage_factor=  7.51745958E-01,theta_control=  4.49132975E+01,residual=  2.21494890E-06,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.1606E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=1,voltage_factor=  7.35198092E-01,theta_control=  4.49132975E+01,residual=  2.22979278E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7086E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=2,voltage_factor=  7.34986959E-01,theta_control=  4.49132975E+01,residual=  3.35966512E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.4620E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=3,voltage_factor=  7.34986868E-01,theta_control=  4.49132975E+01,residual=  2.88009689E-15,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.9434E-16,
+pardiso_primary_entries=25976454,hole_entries=965671
+temperature_newton_iteration=4,voltage_factor=  7.34986868E-01,theta_control=  4.49132975E+01,residual=  7.44961060E-16,
+inverse_maximum_sampled_voltage_V= 6.4623485769774760E+000

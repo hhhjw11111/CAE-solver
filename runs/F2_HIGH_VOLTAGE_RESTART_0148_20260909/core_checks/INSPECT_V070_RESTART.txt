@@ -1,0 +1,8 @@
+inspect_result=PASS
+case_id=F2_H1_NT_L0_V070_RESTART_V060
+schema_version=2
+model_level=M2_THERMO_TWO_CARRIER
+node_count=10144
+element_count=2240
+minimum_jacobian_determinant= 2.8693360421241954E-023
+integrated_volume= 3.7172706054966828E-016

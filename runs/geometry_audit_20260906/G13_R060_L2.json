@@ -1,0 +1,90 @@
+{
+  "schema": "hex20-boundary-geometry-v1",
+  "mesh_path": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\cases\\validation\\G13_endpoint_mesh_sensitivity\\R060\\L2\\mesh.dat",
+  "mesh_sha256": "f25019ff662f35ccbe22f9554582e4cece5a2a05364f69ed2cae48ae4c713543",
+  "node_count": 1056,
+  "element_count": 128,
+  "sampling_not_global_positivity_proof": true,
+  "original": {
+    "volume_3": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 4.548969429624863e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.07353352642830949,
+      "worst_location": {
+        "element": 65,
+        "natural_point": [
+          -0.7745966692414834,
+          -0.7745966692414834,
+          0.7745966692414834
+        ]
+      },
+      "points_per_element": 27
+    },
+    "volume_5": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 4.474557471196943e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.07093467622672743,
+      "worst_location": {
+        "element": 65,
+        "natural_point": [
+          -0.906179845938664,
+          -0.5384693101056831,
+          0.5384693101056831
+        ]
+      },
+      "points_per_element": 125
+    },
+    "all_faces_5": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 4.422584065996e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.069191762987339,
+      "worst_location": {
+        "element": 33,
+        "natural_point": [
+          -1.0,
+          -0.5384693101056831,
+          -0.5384693101056831
+        ]
+      },
+      "points_per_element": 150
+    },
+    "near_faces_0_999": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 4.42313803444468e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.06921034016040836,
+      "worst_location": {
+        "element": 1,
+        "natural_point": [
+          -0.999,
+          -0.5384693101056831,
+          0.0
+        ]
+      },
+      "points_per_element": 150
+    },
+    "closed_grid_9": {
+      "status": "PASS_SAMPLED",
+      "invalid_points": 0,
+      "invalid_elements": [],
+      "minimum_det_m3": 4.422717190750666e-25,
+      "minimum_det_over_max_jacobian_cubed": 0.06909009351918086,
+      "worst_location": {
+        "element": 97,
+        "natural_point": [
+          -1.0,
+          -0.5,
+          -0.25
+        ]
+      },
+      "points_per_element": 729
+    }
+  }
+}

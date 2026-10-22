@@ -1,0 +1,38 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\build\\ARC_JE_FINAL_20261012\\TPSolverV2.exe",
+  "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\mesh_thickness_16\\H1_XY0_Z3.mesh",
+  "mesh_sha256": "40a43a1f409208e01f3a8794ead221866061f55c933fe1a8ef743fb3271519d5",
+  "model": "JE_CURRENT_WORK_DIAGNOSTIC_ZNO_NT",
+  "voltages": [
+    6
+  ],
+  "supg_scale": 1.0,
+  "domain_symmetry": "FULL",
+  "log_weighted_quadrature_order": 3,
+  "runtime_env": {
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "TPS_PARDISO_STORAGE": "OOC",
+    "TPS_PARDISO_SPLIT_HOLES": "0",
+    "MKL_PARDISO_OOC_CFG_FILE_NAME": "run_ooc.cfg",
+    "MKL_PARDISO_OOC_CFG_PATH": "C:\\Users\\ADMINI~1\\Desktop\\GEMINI~1\\Console3\\SOLVER~2\\runs\\JE_FIN~1\\A32_R1~3\\pardiso_ooc",
+    "MKL_PARDISO_OOC_FILE_NAME": "C:\\Users\\ADMINI~1\\Desktop\\GEMINI~1\\Console3\\SOLVER~2\\runs\\JE_FIN~1\\A32_R1~3\\pardiso_ooc\\factors",
+    "MKL_PARDISO_OOC_KEEP_FILE": "1",
+    "MKL_PARDISO_OOC_MAX_CORE_SIZE": "4000",
+    "MKL_PARDISO_OOC_MAX_SWAP_SIZE": "0"
+  },
+  "seed_nodes": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\transfer_A32_R14_Z16_S1_V060\\nodes.csv",
+  "seed_sha256": "b86ea9a0dc3ae883365cb6de5997273dfa9e5e615e6fff4b0a6f1187b9e1b4de",
+  "initial_guess_status": "REQUIRES_REEQUILIBRATION",
+  "heat_source_unchanged": true,
+  "input_template": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_6_8_HALF_V_20261013\\input_V060.nml",
+  "changed_input_keys": [
+    "case_id",
+    "mesh_file",
+    "restart_nodes_file",
+    "restart_voltage_factor",
+    "supg_scale"
+  ],
+  "wall_time_limit_seconds": 7200
+}

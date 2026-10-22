@@ -1,0 +1,177 @@
+{
+  "scope": "SAMPLED_SYMMETRIC_BRANCH_EQUIVALENCE",
+  "full_run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080",
+  "half_run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed",
+  "errors": [],
+  "passed": true,
+  "nodal": {
+    "ux_m": {
+      "maximum_scaled_difference": 1.0122622746117676e-12,
+      "scale": 1e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_scaled_difference": 5.624828165360588e-13,
+      "scale": 1e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_scaled_difference": 1.5102508527628326e-13,
+      "scale": 1e-10,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "phi_V": {
+      "maximum_scaled_difference": 1.5654144647214707e-13,
+      "scale": 8.0,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "eta_n": {
+      "maximum_scaled_difference": 7.86102519884091e-12,
+      "scale": 0.1,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "eta_p": {
+      "maximum_scaled_difference": 1.4354052668696937e-10,
+      "scale": 0.1,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_scaled_difference": 6.232474853667165e-14,
+      "scale": 35.0,
+      "limit": 1e-08,
+      "passed": true
+    }
+  },
+  "physical": {
+    "joule_W": {
+      "full": 0.009856347336882267,
+      "half_reconstructed_full": 0.009856347336882815,
+      "relative_difference": 5.5616203414158194e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "electron_right_A": {
+      "full": 0.0012219515819909055,
+      "half_reconstructed_full": 0.0012219515819909949,
+      "relative_difference": 7.311112840268325e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "hole_right_A": {
+      "full": 6.970456076573821e-57,
+      "half_reconstructed_full": 6.970456076574182e-57,
+      "relative_difference": 5.180366955926435e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "total_volume_m3": {
+      "full": 3.717257535702436e-16,
+      "half_reconstructed_full": 3.717257535702307e-16,
+      "relative_difference": 3.4750342689272617e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_volume_m3": {
+      "full": 1.0210144544087083e-17,
+      "half_reconstructed_full": 1.0210144544086655e-17,
+      "relative_difference": 4.195110243368441e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "theta_max_K": {
+      "full": 24.258501666531913,
+      "half_reconstructed_full": 24.258501666532766,
+      "relative_difference": 3.514855511824315e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_theta_mean_K": {
+      "full": 20.34703031127547,
+      "half_reconstructed_full": 20.34703031127686,
+      "relative_difference": 6.827094800370519e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_E_mean_V_m": {
+      "full": 498912.35666713445,
+      "half_reconstructed_full": 498912.3566671758,
+      "relative_difference": 8.283506851711707e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_Q_mean_W_m3": {
+      "full": 44398311917359.33,
+      "half_reconstructed_full": 44398311917362.09,
+      "relative_difference": 6.22912196559999e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_abs_n_relative_mean": {
+      "full": 0.03908858614709954,
+      "half_reconstructed_full": 0.03908858614710223,
+      "relative_difference": 6.869913203578922e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "ring_abs_p_relative_mean": {
+      "full": 0.08799252421314821,
+      "half_reconstructed_full": 0.08799252421314215,
+      "relative_difference": 6.89216876802441e-14,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "stress_von_mises_max_Pa": {
+      "full": 6288351.644642201,
+      "half_reconstructed_full": 6288351.644641105,
+      "relative_difference": 1.743170121945031e-13,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "heat_out_W": {
+      "full": 0.009855125615589868,
+      "half_reconstructed_full": 0.009855125615605118,
+      "relative_difference": 1.5474134650465076e-12,
+      "limit": 1e-08,
+      "passed": true
+    },
+    "terminal_power_W": {
+      "full": 0.009776585358196064,
+      "half_reconstructed_full": 0.00977658535827154,
+      "relative_difference": 7.720086405466496e-12,
+      "limit": 1e-08,
+      "passed": true
+    }
+  },
+  "gauge": {
+    "translation_m": [
+      3.314960109067853e-10,
+      1.7854923321366518e-10,
+      -9.736644150796984e-12
+    ],
+    "rotation_rad": [
+      2.688634008404901e-20,
+      3.040413366253127e-07,
+      -1.876327516454856e-18
+    ],
+    "maximum_symmetry_uy_m": 7.951670656143212e-24
+  },
+  "mesh_validated": false,
+  "complete_quantitative_0_8V": false,
+  "evidence_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed\\nodes.csv": "e6a091d32111124ecdfff4f08c360795752c6bf13547af2290a8284493d3e575",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed\\metrics.txt": "23d28e1d8a553b9e5c5d99dd589322d639c5d66852cebce6e8a6340842d920a7",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed\\execution.json": "78f85c1302a1ba8c657cae890703c0a13fe748f4020cdd37002a543081b604eb",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed\\input.nml": "67dccf1ac47e8da5873b2eefe592fedd1446e908a86eeba72f3916aa52c46991",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed\\manifest.json": "0adae663032f066dab0213d2a0552a7ecaaeaa928ca243c84c870ddd33f12781",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\A32_R18_Z14_V080_hole_perturbed\\field_audit.json": "542ca4334265b5e2dcccbff73afd62bc458070e269b3123357f3cbd6a4a13efd",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\nodes.csv": "2dd917af3ad201884a44803dc4d7a23d4f9aa762c2e08b3835be9a4ea66ed848",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V080\\metrics.txt": "9d4db81b6e0d2f9edeaf0f1eddca930340dcc75df8eaecec2c08beb663f31ad4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_equivalence_20261020_v2\\seeds\\A32_R18_Z14_V080_hole_perturbed\\manifest.json": "42dd0c2ea0fae7d6d262a2aa2dd2eaf333ca64f65350b19e84706e5d24859c8f"
+  }
+}

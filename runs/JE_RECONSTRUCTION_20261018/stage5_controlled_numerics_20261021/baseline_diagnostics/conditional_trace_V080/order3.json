@@ -1,0 +1,35 @@
+{
+  "order": 3,
+  "metric": "trace",
+  "scale": 1.0,
+  "iterations": [
+    {
+      "iteration": 0,
+      "scaled_residual": 0.014785967131725856,
+      "update": 0.024483300707487977,
+      "step": 1.0
+    },
+    {
+      "iteration": 1,
+      "scaled_residual": 8.212065534498384e-05,
+      "update": 0.00022742475214806873,
+      "step": 1.0
+    },
+    {
+      "iteration": 2,
+      "scaled_residual": 8.397035276232975e-09,
+      "update": 2.152746074867081e-08,
+      "step": 1.0
+    },
+    {
+      "iteration": 3,
+      "scaled_residual": 6.348809685967603e-16,
+      "update": 0.0
+    }
+  ],
+  "ring_abs_p_relative_mean": 0.08089371525074887,
+  "native_ring_abs_p_relative_mean": 0.08137112790750514,
+  "maximum_eta_change": 0.02425585442787916,
+  "local_density_perturbation_change": 0.00597013003967692,
+  "seconds": 159.32900000000154
+}

@@ -1,0 +1,7 @@
+{
+  "state": "RESOURCE_OR_TIMEOUT_STOP",
+  "mesh_validated": false,
+  "power_gap_validated": false,
+  "elapsed_seconds": 296.0789999999979,
+  "stop_reason": "RESOURCE_STOP_AVAILABLE_RAM_BELOW_512_MIB"
+}

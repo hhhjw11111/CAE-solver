@@ -1,0 +1,14 @@
+{
+  "ux_m": 0.0,
+  "uy_m": 0.0,
+  "uz_m": 0.0,
+  "phi_V": 0.0,
+  "eta_n": 0.0,
+  "eta_p": 0.0,
+  "theta_K": 0.0,
+  "all_primary_fields_exact_zero": true,
+  "n_min": 6e+22,
+  "n_max": 6e+22,
+  "p_min": 1.4016666666666668e-30,
+  "p_max": 1.4016666666666668e-30
+}

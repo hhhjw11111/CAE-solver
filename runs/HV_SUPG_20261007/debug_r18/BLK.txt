@@ -1,0 +1,8 @@
+verification_id=BLK_checked_hole_block_linear_solve
+pardiso_hole_split=ACCEPTED,full_backward_error=  9.8096E-17,
+block_case=1,split_accepted=T,solution_error=  2.1515E-16,full_matrix_difference=  1.1102E-16
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.7977+308,
+block_case=2,split_accepted=F,solution_error=  2.1515E-16,full_matrix_difference=  0.0000E+00
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  7.6694E-01,
+block_case=3,split_accepted=F,solution_error=  2.2204E-16,full_matrix_difference=  0.0000E+00
+verification_result=PASS

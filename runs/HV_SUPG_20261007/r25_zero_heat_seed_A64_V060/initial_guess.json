@@ -1,0 +1,26 @@
+{
+  "status": "INITIAL_GUESS_ONLY_NOT_A_SOLUTION",
+  "intended_initial_heat_factor": 0.0,
+  "source_nodes": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V060\\nodes.csv",
+  "source_sha256": "ff665b2851ae55dbddf30534f186e7eeb7635950c12411494c3c201f91775ea6",
+  "output_sha256": "350272f0672df9296c72faef1b5b1900d9ddae58b7622a63c2cc3cdf56970617",
+  "reset_fields": [
+    "ux_m",
+    "uy_m",
+    "uz_m",
+    "theta_K",
+    "eta_n",
+    "eta_p"
+  ],
+  "preserved_fields": [
+    "node",
+    "x_m",
+    "y_m",
+    "z_m",
+    "phi_V"
+  ],
+  "background_n_m3": 6e+22,
+  "background_p_m3": 1.4016666666666667e-30,
+  "nodes": 36213,
+  "final_heat_factor_must_be": 1.0
+}

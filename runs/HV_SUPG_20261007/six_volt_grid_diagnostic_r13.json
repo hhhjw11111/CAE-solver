@@ -1,0 +1,106 @@
+{
+  "status": "DIAGNOSTIC_CROSS_BUILD_MESH_COMPARISON_NOT_FINAL_ACCEPTANCE",
+  "source_runs": [
+    {
+      "path": "solver_v2\\runs\\HV_SUPG_20261007\\r6_audit_V060",
+      "metrics_sha256": "d4e6859556b2d33eedaa0f1348dab78b24d07a32f1d04377dfe84b847d2228d7"
+    },
+    {
+      "path": "solver_v2\\runs\\HV_SUPG_20261007\\r8_L1_V060",
+      "metrics_sha256": "aced4eeaad70310f18230e62f1a737386556447adea9feb4a6b605c18a32ad5a"
+    },
+    {
+      "path": "solver_v2\\runs\\HV_SUPG_20261007\\r13_L2_V060",
+      "metrics_sha256": "2a0ddb23b88e855ae1ef457119eb53a426c84f9d509f280d1724e58342796742"
+    }
+  ],
+  "heat_balance_relative": [
+    0.04457164114143245,
+    0.01915102420527142,
+    0.006605806795691119
+  ],
+  "metrics": {
+    "theta_max_K": {
+      "values": [
+        20.944379414165496,
+        20.90633126010107,
+        20.886939240809795
+      ],
+      "L1_L2_relative": 0.0009275668241363387
+    },
+    "joule_W": {
+      "values": [
+        0.007805549558705737,
+        0.00781296411819533,
+        0.007811197890938667
+      ],
+      "L1_L2_relative": 0.00022606365905995972
+    },
+    "electron_right_A": {
+      "values": [
+        0.0009147432265495536,
+        0.0009275832469087419,
+        0.0009324947635949219
+      ],
+      "L1_L2_relative": 0.005267071599678761
+    },
+    "ring_theta_mean_K": {
+      "values": [
+        16.93521844113144,
+        16.900207967279204,
+        16.880778686669455
+      ],
+      "L1_L2_relative": 0.0011496474272604652
+    },
+    "ring_E_mean_V_m": {
+      "values": [
+        377437.7903066445,
+        376245.8556139469,
+        375935.70717541216
+      ],
+      "L1_L2_relative": 0.0008243238667138712
+    },
+    "ring_Q_mean_W_m3": {
+      "values": [
+        33532012246718.918,
+        33433636924198.363,
+        33416226335559.266
+      ],
+      "L1_L2_relative": 0.0005207506643256135
+    },
+    "ring_abs_n_relative_mean": {
+      "values": [
+        0.03258446579098034,
+        0.03252524309697332,
+        0.03248567442085209
+      ],
+      "L1_L2_relative": 0.0012165528172459463
+    },
+    "ring_abs_p_relative_mean": {
+      "values": [
+        0.09057966170943235,
+        0.07681632061762841,
+        0.06978862918278979
+      ],
+      "L1_L2_relative": 0.09148695717698638
+    },
+    "ring_Q_p95_W_m3": {
+      "values": [
+        58210962774765.5,
+        58093294023165.45,
+        58019435401767.95
+      ],
+      "L1_L2_relative": 0.0012713794705469432
+    },
+    "E_p95_V_m": {
+      "values": [
+        467839.2524414032,
+        466524.88259594,
+        467118.2609157667
+      ],
+      "L1_L2_relative": 0.001270295703412196
+    }
+  },
+  "fully_validated": false,
+  "reason": "Coarse flux gates fail; builds differ; stabilization sensitivity and hole-field convergence remain open."
+}

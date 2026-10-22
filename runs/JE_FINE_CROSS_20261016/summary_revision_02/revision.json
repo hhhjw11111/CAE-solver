@@ -1,0 +1,6 @@
+{
+  "reason": "Report a native field-audit failure as a failed row, instead of aborting collection",
+  "script_sha256": "938f5f1c954bf6a697a5507bd1492d9bcc7a2b02ea415215081efc291260d8f8",
+  "physics_or_gate_change": false,
+  "old_snapshot_preserved": true
+}

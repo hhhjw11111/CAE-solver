@@ -1,0 +1,6 @@
+{
+  "native_solve_flux_fields": true,
+  "physical_power_integrals_checked": true,
+  "trace_decomposition": "Separate trace_power review required",
+  "fully_validated": false
+}

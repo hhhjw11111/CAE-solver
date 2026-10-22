@@ -1,0 +1,266 @@
+{
+  "method": "HISTORICAL_REPORT_REFERENCE_WITH_FILE_HASH_AND_FAILURE_STATUS_RECHECK",
+  "recomputed_angular_radial_or_SUPG_fields": false,
+  "records": [
+    {
+      "scope": "angular",
+      "voltage_V": 6,
+      "levels": [
+        16,
+        24,
+        32
+      ],
+      "last_pair": [
+        24,
+        32
+      ],
+      "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\analysis\\summary.json",
+      "source_pointer": "angular_mesh.6",
+      "scalar_ring_pass": false,
+      "local_field_pass": false,
+      "local_electron": {
+        "maximum_relative": 0.03022215110165265,
+        "rms_relative": 0.002536071040887064,
+        "normalization": 1.2847298956359778,
+        "limit": 0.02,
+        "passed": false
+      },
+      "local_hole": {
+        "maximum_relative": 0.039671280005024415,
+        "rms_relative": 0.005334257190704087,
+        "normalization": 1.9796376430369644,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_hole": {
+        "L0_L1": 0.19368776613112917,
+        "L1_L2": 0.12755990851846083,
+        "limit": 0.02
+      },
+      "whole_study_certificate": false
+    },
+    {
+      "scope": "radial",
+      "voltage_V": 6,
+      "levels": [
+        14,
+        16,
+        18
+      ],
+      "last_pair": [
+        16,
+        18
+      ],
+      "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+      "source_pointer": "mesh.radial_V6",
+      "scalar_ring_pass": false,
+      "local_field_pass": false,
+      "local_electron": {
+        "maximum_relative": 0.004124756606165868,
+        "rms_relative": 0.0002871926708251092,
+        "normalization": 1.2783561646622852,
+        "limit": 0.02,
+        "passed": true
+      },
+      "local_hole": {
+        "maximum_relative": 0.024134878008232042,
+        "rms_relative": 0.002407553446181067,
+        "normalization": 1.9803988400100092,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_hole": {
+        "L0_L1": 0.06369139578098036,
+        "L1_L2": 0.05299512710431687,
+        "limit": 0.02
+      },
+      "whole_study_certificate": false
+    },
+    {
+      "scope": "SUPG",
+      "voltage_V": 6,
+      "grid": [
+        32,
+        14,
+        14
+      ],
+      "required_scales": [
+        0.5,
+        1,
+        2
+      ],
+      "compared_completed_scales": [
+        0.5,
+        1
+      ],
+      "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+      "source_pointer": "SUPG_pairs.V6_S0.5",
+      "scalar_ring_pass": false,
+      "local_field_pass": false,
+      "local_electron": {
+        "maximum_relative": 0.0013854029487266435,
+        "rms_relative": 0.000229285467688174,
+        "normalization": 1.2785564204421256,
+        "limit": 0.02,
+        "passed": true
+      },
+      "local_hole": {
+        "maximum_relative": 0.06399945745210003,
+        "rms_relative": 0.007402229394010221,
+        "normalization": 2.0010730977181246,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_hole": {
+        "values": [
+          0.0499673679475122,
+          0.040766247268867316
+        ],
+        "relative_span": 0.18414259258782897,
+        "limit": 0.01,
+        "passed": false
+      },
+      "scale2": {
+        "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V060",
+        "state": "FAILED_NO_COMPLETE_STATE",
+        "seconds": 1670.530999999959,
+        "timed_out": false,
+        "has_accepted_final_state": false
+      },
+      "whole_study_certificate": false
+    },
+    {
+      "scope": "angular",
+      "voltage_V": 8,
+      "levels": [
+        16,
+        24,
+        32
+      ],
+      "last_pair": [
+        24,
+        32
+      ],
+      "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\analysis\\summary.json",
+      "source_pointer": "angular_mesh.8",
+      "scalar_ring_pass": false,
+      "local_field_pass": false,
+      "local_electron": {
+        "maximum_relative": 0.030243822145826726,
+        "rms_relative": 0.002233429456446986,
+        "normalization": 2.5935281003946753,
+        "limit": 0.02,
+        "passed": false
+      },
+      "local_hole": {
+        "maximum_relative": 0.03970516034536698,
+        "rms_relative": 0.0025861412269009816,
+        "normalization": 6.852431999128843,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_hole": {
+        "L0_L1": 0.12167377548081448,
+        "L1_L2": 0.06936815345512388,
+        "limit": 0.02
+      },
+      "whole_study_certificate": false
+    },
+    {
+      "scope": "radial",
+      "voltage_V": 8,
+      "levels": [
+        14,
+        16,
+        18
+      ],
+      "last_pair": [
+        16,
+        18
+      ],
+      "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+      "source_pointer": "mesh.radial_V8",
+      "scalar_ring_pass": true,
+      "local_field_pass": true,
+      "local_electron": {
+        "maximum_relative": 0.00447989813889243,
+        "rms_relative": 0.00026311194117187336,
+        "normalization": 2.5803048955480983,
+        "limit": 0.02,
+        "passed": true
+      },
+      "local_hole": {
+        "maximum_relative": 0.012631966316232509,
+        "rms_relative": 0.0009686625774738437,
+        "normalization": 6.865652483033139,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ring_hole": {
+        "L0_L1": 0.019395243460125115,
+        "L1_L2": 0.015751940260506157,
+        "limit": 0.02
+      },
+      "whole_study_certificate": false
+    },
+    {
+      "scope": "SUPG",
+      "voltage_V": 8,
+      "grid": [
+        32,
+        14,
+        14
+      ],
+      "required_scales": [
+        0.5,
+        1,
+        2
+      ],
+      "compared_completed_scales": [
+        0.5,
+        1
+      ],
+      "source_report": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json",
+      "source_pointer": "SUPG_pairs.V8_S0.5",
+      "scalar_ring_pass": false,
+      "local_field_pass": false,
+      "local_electron": {
+        "maximum_relative": 0.0017726131466433903,
+        "rms_relative": 0.0002781470108361058,
+        "normalization": 2.5823825577918775,
+        "limit": 0.02,
+        "passed": true
+      },
+      "local_hole": {
+        "maximum_relative": 0.0362602779120292,
+        "rms_relative": 0.003239653158551614,
+        "normalization": 6.927751322510417,
+        "limit": 0.02,
+        "passed": false
+      },
+      "ring_hole": {
+        "values": [
+          0.09116900467999908,
+          0.08433066405832623
+        ],
+        "relative_span": 0.07500729711457588,
+        "limit": 0.01,
+        "passed": false
+      },
+      "scale2": {
+        "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\A32_R14_Z14_S2_V080",
+        "state": "FAILED_NO_COMPLETE_STATE",
+        "seconds": 3662.686999999918,
+        "timed_out": false,
+        "has_accepted_final_state": false
+      },
+      "whole_study_certificate": false
+    }
+  ],
+  "limitations": [
+    "The 8 V radial last-pair pass covers the radial direction only.",
+    "SUPG=0.5 cannot be selected merely to reduce the power discrepancy.",
+    "No data point or boundary node was excluded.",
+    "Initial OOC -9 attempts and the retired RESOURCE_RETRY remain historical failures, not accepted evidence."
+  ]
+}

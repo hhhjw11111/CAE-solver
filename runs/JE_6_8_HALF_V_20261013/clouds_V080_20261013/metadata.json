@@ -1,0 +1,169 @@
+{
+  "case": "JE_GRID_V080",
+  "model": "NT",
+  "voltage_magnitude_V": 8,
+  "target_voltage_V": -8,
+  "hole_radius_um": 3,
+  "mesh": "XY0_Z2",
+  "node_count": 13920,
+  "element_count": 3136,
+  "n0_m3": 6e+22,
+  "p0_m3": 1.4016666666666668e-30,
+  "thermal_beta_Pa_per_K": [
+    1687447.0,
+    1687447.0,
+    1431103.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "shared_color_limits": {
+    "joule_density": [
+      -320.0167057313764,
+      320.0167057313764
+    ],
+    "potential": [
+      -8.000214113140023,
+      0.00016984090789626683
+    ],
+    "electron_density": [
+      -268.6421118874385,
+      268.6421118874385
+    ],
+    "hole_density": [
+      -714.034435484284,
+      714.034435484284
+    ],
+    "coupled_stress": [
+      0.038597433886532966,
+      7.183609986229878
+    ],
+    "thermal_constitutive_stress": [
+      -41.136139212101796,
+      -0.0
+    ],
+    "temperature": [
+      0.0,
+      24.377737026467674
+    ]
+  },
+  "subdivisions_per_original_element_edge": 16,
+  "patch_count_per_plane": {
+    "midplane": 224,
+    "top": 224,
+    "bottom": 224
+  },
+  "points_per_plane": {
+    "midplane": 64736,
+    "top": 64736,
+    "bottom": 64736
+  },
+  "current_source_matches_native_build": {
+    "src/physics/material_point_m.f90": true,
+    "src/physics/zno_candidate_m.f90": true,
+    "src/physics/transport_m.f90": true,
+    "src/physics/thermo_piezo_m.f90": true,
+    "src/mesh/hex20_shape_m.f90": true
+  },
+  "heat_source": "E dot (Jn+Jp), includes diffusion current work",
+  "stress_definition": "C:strain - e^T E - beta*theta",
+  "thermal_constitutive_xx_definition": "-beta_xx*theta; not the total stress caused by the thermal load after re-equilibration",
+  "planes": "Exact HEX20 z=0, +/-0.5 um evaluations; one-sided material gradients, not thickness averages.",
+  "integrity": "Independent element-patch triangles, no averaging between element gradients, no cross-hole interpolation.",
+  "status": "Converged numerical candidate, not physically or spatially certified.",
+  "electrical_work_relative_gap": 0.029711928783412934,
+  "native_global_theta_max_K": 24.373359998820035,
+  "native_global_von_mises_max_MPa": 6.9030826235584755,
+  "local_color_limits": {
+    "midplane": {
+      "joule_density": [
+        0.00017222846576530324,
+        105.03598480252236
+      ],
+      "potential": [
+        -8.0,
+        0.0
+      ],
+      "electron_density": [
+        -0.18031530498491266,
+        0.18031530498491266
+      ],
+      "hole_density": [
+        -32.6270016755674,
+        32.6270016755674
+      ],
+      "coupled_stress": [
+        0.038597433886532966,
+        5.614122706336338
+      ],
+      "thermal_constitutive_stress": [
+        -41.11392943141674,
+        -0.0
+      ],
+      "temperature": [
+        0.0,
+        24.364575261573695
+      ]
+    },
+    "top": {
+      "joule_density": [
+        -33.69818059866985,
+        33.69818059866985
+      ],
+      "potential": [
+        -8.000214113140023,
+        0.0
+      ],
+      "electron_density": [
+        -89.56616433535967,
+        89.56616433535967
+      ],
+      "hole_density": [
+        -714.034435484284,
+        714.034435484284
+      ],
+      "coupled_stress": [
+        0.5549735579002786,
+        7.091891105963065
+      ],
+      "thermal_constitutive_stress": [
+        -41.100668521661085,
+        -0.0
+      ],
+      "temperature": [
+        0.0,
+        24.35671669786434
+      ]
+    },
+    "bottom": {
+      "joule_density": [
+        -320.0167057313764,
+        320.0167057313764
+      ],
+      "potential": [
+        -8.0,
+        0.00016984090789626683
+      ],
+      "electron_density": [
+        -268.6421118874385,
+        268.6421118874385
+      ],
+      "hole_density": [
+        -75.19719863733366,
+        75.19719863733366
+      ],
+      "coupled_stress": [
+        0.5730541271200044,
+        7.183609986229878
+      ],
+      "thermal_constitutive_stress": [
+        -41.136139212101796,
+        -0.0
+      ],
+      "temperature": [
+        0.0,
+        24.377737026467674
+      ]
+    }
+  }
+}

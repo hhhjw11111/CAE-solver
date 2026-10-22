@@ -1,0 +1,53 @@
+{
+  "scope": "RUNNER_SCOPE_VALIDATION_NO_NATIVE_SOLVE",
+  "preliminary": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\runner_scope_validation\\preliminary_checks.json",
+  "preliminary_sha256": "a5a99f3d6dc32429f54d5fa907bd80c8190a0431ce89c90665c6ca1c7a74a26f",
+  "checks": [
+    {
+      "check": "actual_paper_acceptance_recomputed",
+      "passed": true,
+      "scope": "JE_PAPER_MINIMAL_20261018",
+      "evidence_files": 138,
+      "gate_sha256": "112721dd832210f1363e9fee2662b35edf37533814f103ce5e6418a3eda8b13c"
+    },
+    {
+      "check": "reject_declared_evidence_hash_change",
+      "passed": true,
+      "error_type": "ValueError",
+      "message": "Acceptance evidence changed: C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_paper_reuse_20261018.py"
+    },
+    {
+      "check": "reject_executable_identity_claim_change",
+      "passed": true,
+      "error_type": "ValueError",
+      "message": "Acceptance claim differs from actual re-audit: baseline_sha256"
+    },
+    {
+      "check": "reject_actual_altered_copy_content",
+      "passed": true,
+      "error_type": "ValueError",
+      "message": "Acceptance evidence changed: C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\runner_scope_validation\\SYNTHETIC_altered_log.txt"
+    }
+  ],
+  "original_FAIL_retained": true,
+  "original_FAIL_sha256": "fd2e95cc3c544d597cc4b922fd6b1b07d14dbb3806ee324cb87d50e217924f93",
+  "resources": {
+    "rss_bytes": 40243200,
+    "peak_rss_bytes": 41512960,
+    "private_bytes": 532951040,
+    "peak_pagefile_bytes": 534130688,
+    "available_physical_bytes": 13053771776,
+    "free_disk_bytes": 37858246656,
+    "required_start_disk_bytes": 17179869184
+  },
+  "baseline_seed_rechecked": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+  "source_mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+  "runner_sha256": "087a9ff302a63f5e87c9d937657265702190eddf52117ae3e7e2fcb66fad0c9a",
+  "generator_sha256": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+  "auditor_sha256": "df2a60b276309a2365b0c62cf947c5aa45c2b6c03991386e837b52870f7761a5",
+  "unresolved": [
+    "No A40 native solve yet; actual factor/RAM peak remains unmeasured",
+    "Mapped initial guess and physical power audit run only after explicit execution; no interpolation is a solved result"
+  ],
+  "native_started": false
+}

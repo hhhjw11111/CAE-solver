@@ -1,0 +1,17 @@
+{
+  "all_passed": false,
+  "core_sources_unchanged": true,
+  "frozen_gates_unchanged": true,
+  "build_manifests_verified": true,
+  "source_still_same": true,
+  "legacy_passed": 16,
+  "legacy_total": 16,
+  "targeted_passed": 10,
+  "targeted_total": 11,
+  "attempt": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\attempt01",
+  "candidate": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_FINAL\\TPSolverV2.exe",
+  "candidate_sha256": "ad50431beee4c732268fdf384d503cf4491321212aad568a52131457345fe609",
+  "baseline": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\ARC_JE_FINAL_20261012\\TPSolverV2.exe",
+  "baseline_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92",
+  "limitation": "Numerical verification only; stage4 mesh/SUPG and stage5 production remain separate"
+}

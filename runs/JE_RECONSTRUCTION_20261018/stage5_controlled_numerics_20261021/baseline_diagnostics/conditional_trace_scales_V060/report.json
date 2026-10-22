@@ -1,0 +1,52 @@
+{
+  "diagnostic_only": true,
+  "results": [
+    {
+      "scale": 0.5,
+      "ring_abs_p_relative_mean": 0.03584471765030716,
+      "history": [
+        {
+          "iteration": 0,
+          "scaled_residual": 0.00048404674982791766,
+          "update": 0.0013089635463595184,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 6.438278900764249e-08,
+          "update": 3.631646018305317e-07,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 6.145795419270721e-15,
+          "update": 0.0
+        }
+      ]
+    },
+    {
+      "scale": 2.0,
+      "ring_abs_p_relative_mean": 0.036031913598476115,
+      "history": [
+        {
+          "iteration": 0,
+          "scaled_residual": 0.0009404095620593488,
+          "update": 0.002112211657000533,
+          "step": 1.0
+        },
+        {
+          "iteration": 1,
+          "scaled_residual": 1.9997871190577657e-07,
+          "update": 1.0376900163452316e-06,
+          "step": 1.0
+        },
+        {
+          "iteration": 2,
+          "scaled_residual": 6.886587774386555e-14,
+          "update": 0.0
+        }
+      ]
+    }
+  ],
+  "model_unchanged": true
+}

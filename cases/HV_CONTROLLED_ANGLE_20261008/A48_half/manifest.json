@@ -1,0 +1,17 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_ANGLE_20261008\\A48_full\\H1_XY2_Z2.mesh",
+  "source_mesh_sha256": "12beada92805805d01176977b8d53c945ae50dbb76ec0d56e88c4d081641f8ab",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_ANGLE_20261008\\A48_half\\H1_Y_HALF.mesh",
+  "mesh_sha256": "f7ced5ed18903e54d03596affdafb86f94af2670ddbe077ce2b5dc74d3a8b312",
+  "node_map_sha256": "9c86702d053693ec40b7048619eef04c6a299a32fcdc991a1b4e1c0fea5e1f38",
+  "nodes": 27365,
+  "elements": 6048,
+  "minimum_sampled_jacobian": 6.009702581535107e-25,
+  "reflection_audit": {
+    "matched_nodes": 53088,
+    "matched_elements": 12096,
+    "maximum_coordinate_error_m": 1.6940658945086007e-20
+  }
+}

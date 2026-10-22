@@ -1,0 +1,53 @@
+{
+  "voltage_V": 0.0,
+  "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000",
+  "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000\\manifest.json",
+  "state": "EXACT_ZERO_EQUILIBRIUM_VERIFIED",
+  "fully_validated": true,
+  "evidence_errors": [],
+  "file_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000\\manifest.json": "ca0a472e331f9f8847b66d720e54bb21bd843ab2c5e138ef6ee2ed75b83eda19",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000\\input.nml": "544d893e70e5c17d64ab0a142a7053f813dc8f14b24c5bf47edcc713e47f72ed",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000\\execution.json": "4b301ecd541bce15d24b3974b57d0f1154047e9027764257a39d6e8ce83a7e20",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000\\metrics.txt": "2e27030aadd1b979796f6dda662aff6700992438a77d13ca8230f1054518995e",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\sweep_zero_log_r25\\V000\\nodes.csv": "2f16282f600a4c362ae9cda0b75ec70b917b0b36ce4a78fda014231aa994e380"
+  },
+  "field_audit_recomputed": {
+    "passed": true,
+    "errors": [],
+    "node_count": 5541,
+    "boundary_error": 0.0,
+    "minimum_T_K": 300.0,
+    "minimum_n_m3": 6e+22,
+    "minimum_p_m3": 1.4016666666666668e-30,
+    "domain_symmetry": "Y_HALF",
+    "symmetry_uy_m": 0.0
+  },
+  "domain_symmetry": "Y_HALF",
+  "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+  "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+  "supg_scale": 1.0,
+  "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+  "log_weighted_quadrature_order": 3.0,
+  "metrics": {
+    "theta_max_K": 0.0,
+    "joule_W": 0.0,
+    "electron_right_A": 0.0,
+    "hole_right_A": 0.0,
+    "heat_balance_relative": 0.0,
+    "physical_exterior_heat_balance_relative": 0.0,
+    "electron_balance_relative": 0.0,
+    "hole_balance_diagnostic": 0.0,
+    "ring_abs_n_relative_mean": 0.0,
+    "ring_abs_p_relative_mean": 0.0,
+    "maximum_accepted_residual": 0.0,
+    "maximum_accepted_update": 0.0
+  },
+  "full_domain_integral_factor": 2,
+  "reconstructed_full_integrals": {
+    "joule_W": 0.0,
+    "electron_right_A": 0.0,
+    "hole_right_A": 0.0
+  },
+  "exact_zero_equilibrium_verified": true
+}

@@ -1,0 +1,28 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_INVERSE_20261008_R25_CLEAN\\TPSolverV2.exe",
+  "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_CONTROLLED_ANGLE_20261008\\A64_half\\H1_Y_HALF.mesh",
+  "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2",
+  "voltages": [
+    0.5
+  ],
+  "supg_scale": 1.0,
+  "model": "FROZEN_DRIFT_HEAT_ZNO_NT",
+  "runtime_env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "TPS_PARDISO_STORAGE": "OOC",
+    "TPS_PARDISO_SPLIT_HOLES": "1",
+    "MKL_PARDISO_OOC_CFG_FILE_NAME": "run_ooc.cfg",
+    "MKL_PARDISO_OOC_CFG_PATH": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V005\\pardiso_ooc",
+    "MKL_PARDISO_OOC_FILE_NAME": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_followthrough\\V005\\pardiso_ooc\\factors",
+    "MKL_PARDISO_OOC_KEEP_FILE": "1",
+    "MKL_PARDISO_OOC_MAX_CORE_SIZE": "5000",
+    "MKL_PARDISO_OOC_MAX_SWAP_SIZE": "0"
+  },
+  "log_step_limit": 1.0,
+  "global_log_limit": false,
+  "domain_symmetry": "Y_HALF",
+  "transport_discretization": "HEX20_LOG_WEIGHTED_EXPERIMENTAL",
+  "log_weighted_quadrature_order": 3
+}

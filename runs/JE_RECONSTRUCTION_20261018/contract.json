@@ -1,0 +1,326 @@
+{
+  "model": "JE_SIMPLIFIED_R0_V1",
+  "user_order": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "skipped_step": 2,
+  "archive": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_backups\\HEAT_MIGRATION_20261018",
+  "archive_verification_sha256": "9b8e4a6333316f8ffa8012b418a534dd6fb4c18246e73fbd1b6f5e8004f748a9",
+  "protocol": "docs/je_model_migration_20261018.md",
+  "protocol_sha256": "c76e6c16af571a6ec0029b5bc9cb48558fd57901e1651329d883646047e719ea",
+  "model_scope": "Signed E dot (Jn+Jp), R=0, simplified heat model; not full thermoelectric closure",
+  "legacy_default_changed": false,
+  "original_results_retained": true,
+  "core_sources_before": [
+    {
+      "path": "solver_v2/src/app/f1_case_runner_m.f90",
+      "bytes": 44210,
+      "mtime_ns": 1791819305344329500,
+      "sha256": "a07a9ab4cf08c3fb311542c24233307e65c4c883dae74b938f2129df9f2004aa"
+    },
+    {
+      "path": "solver_v2/src/app/main.f90",
+      "bytes": 7939,
+      "mtime_ns": 1791396317551250600,
+      "sha256": "acec6d3f0674d523205d22b5d0dfeb2cd95b6416d9c8e37945b9d78a52185fc8"
+    },
+    {
+      "path": "solver_v2/src/app/production_runner_m.f90",
+      "bytes": 7558,
+      "mtime_ns": 1788625863549328000,
+      "sha256": "f88ea5c7d71e2eb82f37bc092d21188cf3b0d460585d76a43688ed4659cb514c"
+    },
+    {
+      "path": "solver_v2/src/core/build_info_m.f90",
+      "bytes": 1014,
+      "mtime_ns": 1791467187929198200,
+      "sha256": "c217a752d189f17ccbc923e8a38a5d84ad38ee4eae9c83308c4c30e932ee3638"
+    },
+    {
+      "path": "solver_v2/src/core/constants_m.f90",
+      "bytes": 422,
+      "mtime_ns": 1788181184083477700,
+      "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+    },
+    {
+      "path": "solver_v2/src/core/field_layout_m.f90",
+      "bytes": 1291,
+      "mtime_ns": 1788181184084609500,
+      "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+    },
+    {
+      "path": "solver_v2/src/core/kinds_m.f90",
+      "bytes": 256,
+      "mtime_ns": 1788181184082409200,
+      "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc"
+    },
+    {
+      "path": "solver_v2/src/core/model_types_m.f90",
+      "bytes": 4356,
+      "mtime_ns": 1791648484080830700,
+      "sha256": "f33312792c62ef0723bf21e1aadef4fc3092757dc7267b20f9282c81dbfd74ef"
+    },
+    {
+      "path": "solver_v2/src/core/status_m.f90",
+      "bytes": 1452,
+      "mtime_ns": 1788318366636122100,
+      "sha256": "43fd6ad2928f6d8be3733e1af83aa7b9b3c0cb8f9e8b7fa77bcbe885e862c3af"
+    },
+    {
+      "path": "solver_v2/src/fem/dirichlet_m.f90",
+      "bytes": 6068,
+      "mtime_ns": 1788268976309728600,
+      "sha256": "d23e9432b8b2af39120006173e803979e278e2947ae8762b33bd97a36ded3a06"
+    },
+    {
+      "path": "solver_v2/src/fem/element_kernel_m.f90",
+      "bytes": 12434,
+      "mtime_ns": 1791440133983399300,
+      "sha256": "ce69b2a924e58a91f2edde78bd0568fc3689371ad9a3e65dd4c30f70db0fbda8"
+    },
+    {
+      "path": "solver_v2/src/fem/global_assembly_m.f90",
+      "bytes": 9656,
+      "mtime_ns": 1791388523758612100,
+      "sha256": "fd5c57e8ba49df39ff1533324e86f685063c3776e412f4711cd353ccf575f675"
+    },
+    {
+      "path": "solver_v2/src/fem/sparse_pattern_m.f90",
+      "bytes": 9270,
+      "mtime_ns": 1788268938680533900,
+      "sha256": "74f09280abade1ca2208807a1f71fb78b2f7e30bc54bf72a52d9bb56a93f1393"
+    },
+    {
+      "path": "solver_v2/src/fem/transport_supg_m.f90",
+      "bytes": 7593,
+      "mtime_ns": 1791394582110571300,
+      "sha256": "e9b124fc3f73be6a9a78101fddc76b06fcfd74c867fcf976dc4dbf5d8ab2e62f"
+    },
+    {
+      "path": "solver_v2/src/io/input_schema_m.f90",
+      "bytes": 11537,
+      "mtime_ns": 1791653883117938400,
+      "sha256": "d2ad4fda82d6eb8f330c1b6c67f442ae03074eababdfe3b9b8f13d6e60d804a8"
+    },
+    {
+      "path": "solver_v2/src/io/native_input_m.f90",
+      "bytes": 13570,
+      "mtime_ns": 1791648484630528300,
+      "sha256": "92ad59b4c65121cd1f03e73d23233c92380428e6d040f5d1637aa55c81743ada"
+    },
+    {
+      "path": "solver_v2/src/linear/pardiso_solver_m.f90",
+      "bytes": 12574,
+      "mtime_ns": 1791431210099922400,
+      "sha256": "3fbf4eee2d1d84e05bae46e467037d75be7c14e5e3779586cb26232dc18fdb6e"
+    },
+    {
+      "path": "solver_v2/src/mesh/boundary_topology_m.f90",
+      "bytes": 7321,
+      "mtime_ns": 1788321412452430100,
+      "sha256": "6d62abe825fe71bf50a4fb326d0949861bf1a40e9291344bd46cd2ac3c3cccc4"
+    },
+    {
+      "path": "solver_v2/src/mesh/dof_map_m.f90",
+      "bytes": 1073,
+      "mtime_ns": 1788181382226278900,
+      "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea"
+    },
+    {
+      "path": "solver_v2/src/mesh/hex20_quadrature_m.f90",
+      "bytes": 1830,
+      "mtime_ns": 1791441154380228300,
+      "sha256": "ec0dc3c2ccb539e6045a73ab21905641fd92bad21f604ea61c4dd9d098c620ce"
+    },
+    {
+      "path": "solver_v2/src/mesh/hex20_shape_m.f90",
+      "bytes": 5988,
+      "mtime_ns": 1791387726827309300,
+      "sha256": "b1398bc24ce767e0231dfcd7048b2b70dd12e6ba3b16df50f9fa2ea7596b3e3d"
+    },
+    {
+      "path": "solver_v2/src/mesh/mesh_checks_m.f90",
+      "bytes": 4980,
+      "mtime_ns": 1788627463741711200,
+      "sha256": "e8d75e4ccf82d1b6f5648db86d28bc2bbbada07587b3e9bc6efae424052312ba"
+    },
+    {
+      "path": "solver_v2/src/mesh/mesh_types_m.f90",
+      "bytes": 1316,
+      "mtime_ns": 1788181382224684900,
+      "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74"
+    },
+    {
+      "path": "solver_v2/src/nonlinear/arclength_solver_m.f90",
+      "bytes": 26697,
+      "mtime_ns": 1791785250896136900,
+      "sha256": "ae5278d24a1715aebe35f67bc982b8eda20beb62abeca4d6bf8e1d4a4140c9cf"
+    },
+    {
+      "path": "solver_v2/src/nonlinear/continuation_solver_m.f90",
+      "bytes": 22580,
+      "mtime_ns": 1791648484376210800,
+      "sha256": "acea50272239300a474c7ea002b8586161b4e11dfca7d67f1dd9704a34bce273"
+    },
+    {
+      "path": "solver_v2/src/nonlinear/newton_solver_m.f90",
+      "bytes": 29083,
+      "mtime_ns": 1791467603097111700,
+      "sha256": "1e16b054660830a55c1faeec14b140b333f59d28aab861050524b607c528e712"
+    },
+    {
+      "path": "solver_v2/src/nonlinear/scaling_m.f90",
+      "bytes": 3849,
+      "mtime_ns": 1788270517444694900,
+      "sha256": "6664c999fd0c8d62b7c7c48fc853a47b6806f66683d297d84d685c17f1847319"
+    },
+    {
+      "path": "solver_v2/src/nonlinear/temperature_control_m.f90",
+      "bytes": 10999,
+      "mtime_ns": 1791467222889858300,
+      "sha256": "f9ad961a79664bfea7181a91f0d6a2f8269a02f0b855bb6e5d35d6e07efc71d8"
+    },
+    {
+      "path": "solver_v2/src/physics/equilibrium_m.f90",
+      "bytes": 1200,
+      "mtime_ns": 1788182529451535200,
+      "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421"
+    },
+    {
+      "path": "solver_v2/src/physics/material_point_m.f90",
+      "bytes": 15117,
+      "mtime_ns": 1791645171724655100,
+      "sha256": "f0775431009fe6f970dc145a570d29c4993159f8c43f0250eba0d8764452f90a"
+    },
+    {
+      "path": "solver_v2/src/physics/recombination_m.f90",
+      "bytes": 511,
+      "mtime_ns": 1788182529452573600,
+      "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800"
+    },
+    {
+      "path": "solver_v2/src/physics/reference_material_m.f90",
+      "bytes": 2182,
+      "mtime_ns": 1788318150922611900,
+      "sha256": "48e6f7bbe8682ca51dbef414ec91d17da13a4fc1a7662c36003dec84626ef1af"
+    },
+    {
+      "path": "solver_v2/src/physics/thermo_piezo_m.f90",
+      "bytes": 1069,
+      "mtime_ns": 1788182529453096900,
+      "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+    },
+    {
+      "path": "solver_v2/src/physics/transport_m.f90",
+      "bytes": 2625,
+      "mtime_ns": 1788696388451190500,
+      "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+    },
+    {
+      "path": "solver_v2/src/physics/zno_candidate_m.f90",
+      "bytes": 2103,
+      "mtime_ns": 1788696388453194700,
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "solver_v2/src/post/balance_audit_m.f90",
+      "bytes": 3739,
+      "mtime_ns": 1788698181164657600,
+      "sha256": "f581191415d56801b707155f6f9c30cdd056fa263e07da2145ac37af5eb6e49a"
+    },
+    {
+      "path": "solver_v2/src/post/field_metrics_m.f90",
+      "bytes": 12053,
+      "mtime_ns": 1791433826955921400,
+      "sha256": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2"
+    },
+    {
+      "path": "solver_v2/src/post/independent_flux_audit_m.f90",
+      "bytes": 15093,
+      "mtime_ns": 1791433826956929400,
+      "sha256": "ef84bf6423b6c5342706870ae454641774fe489ce6b3dea2e795bc88842dbe10"
+    },
+    {
+      "path": "solver_v2/src/post/result_writer_m.f90",
+      "bytes": 9498,
+      "mtime_ns": 1788625863548277200,
+      "sha256": "9ede8ace558b335fd8486f39e4ee9de8485260692fd7affc268d5b1d93015e96"
+    },
+    {
+      "path": "solver_v2/src/problems/reference_bar_problem_m.f90",
+      "bytes": 6776,
+      "mtime_ns": 1788321412455003300,
+      "sha256": "152f3ac3f04562a0ae389ada04df3f33352643ee39d56d56f0af57396a54ed39"
+    }
+  ],
+  "frozen_gate_scripts": {
+    "scripts/audit_hv_mesh.py": "41a0eaa2e1db16d4ed70a8630a7d836157d51137c9a9460eebe39aa85d75923b",
+    "scripts/audit_hv_field_shape.py": "96532490c24c0f03bc51493820d19604d669f2bcca517574936ce99343c38bac",
+    "scripts/audit_hv_stabilization.py": "de8ecb61923fa63265cb8f11d6daf996d16a09fc6bc18fb701df9829cf0e14ef",
+    "scripts/audit_hv_half_y.py": "7d5ab2fce9463705dabdfb833eaecca2ba592cc5463b44d7f4e18ce22e5ef7ed",
+    "scripts/audit_je_sensitivity_power_20261015.py": "e54eae6130557bfa22717c0a3b120404bdc1dd7971ed2d65f2aaee80b9c0fda4"
+  },
+  "resources": {
+    "native_concurrency": 1,
+    "threads": 8,
+    "ooc_initial_MB": 6000,
+    "hard_timeout_seconds": 7200
+  },
+  "stage3": {
+    "ids": [
+      "A1",
+      "A2",
+      "A1JJE",
+      "JEGRAD",
+      "A2P",
+      "G02JE",
+      "F1MJE",
+      "G04JE",
+      "SUPG",
+      "SUPGJ",
+      "SUPGJT"
+    ],
+    "legacy_cli": "16 byte-identical comparisons",
+    "jegrad_field_power_tolerance": 1e-08,
+    "jegrad_quadrature_tolerance": 1e-10,
+    "a2p_field_L2": 0.001,
+    "a2p_gradient_L2": 0.02,
+    "a2p_hole_normal": 0.01
+  },
+  "stage4": {
+    "first_probe": "FULL A40 R14 Z14 SUPG1 6V",
+    "angular": [
+      32,
+      40,
+      48
+    ],
+    "radial": [
+      18,
+      20,
+      22
+    ],
+    "voltages": [
+      6,
+      8
+    ],
+    "supg": [
+      0.5,
+      1,
+      2
+    ],
+    "local_carrier_tolerance": 0.02,
+    "supg_scalar_ring_tolerance": 0.01,
+    "power_gap_arbitrary_new_threshold": null,
+    "requires_joint_mesh": true
+  },
+  "stage5_gate": "Requires stage3 and stage4 acceptance; do not promote failed candidates",
+  "statuses": {
+    "stage1": "FROZEN",
+    "stage3": "PENDING",
+    "stage4": "PENDING",
+    "stage5": "GATED"
+  }
+}

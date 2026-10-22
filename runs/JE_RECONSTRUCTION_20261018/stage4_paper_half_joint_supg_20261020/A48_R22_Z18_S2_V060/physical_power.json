@@ -1,0 +1,24 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "voltage_V": 6.0,
+  "raw_half_JE_W": 0.0028948763507324867,
+  "raw_half_all_boundary_power_W": 0.0028653494261161898,
+  "raw_half_symmetry_cut_power_W": 5.702817633349703e-07,
+  "raw_half_physical_exterior_power_W": 0.0028647791443528548,
+  "physical_exterior_gap_W": 3.0097206379631897e-05,
+  "physical_exterior_gap_relative": 0.010396715691161193,
+  "reconstructed_full_JE_W": 0.005789752701464973,
+  "reconstructed_full_physical_exterior_power_W": 0.0057295582887057096,
+  "independent_vs_native_relative": 1.7347058280538216e-12,
+  "comparison_limit": 1e-08,
+  "power_gap_acceptance_threshold": null,
+  "note": "Gap is diagnostic; never heat compensation. Native physical/cut flux gates remain required.",
+  "evidence_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\power_audit\\order3.json": "5fa9dae47ffb176849eca497bf3e4bc18d130212a3ea3a3ee08e0a9cf11fb273",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\power_audit\\order5.json": "02d1de8a988a3d725b315480ebb12cf451caf4d68e59bcd1946becac7250c795",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\power_audit\\decomposition.json": "847e46e37cb76d5fad5baea915aafb54d1fd11ff52f3d06508f8f6b92e15a22a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\power_audit\\provenance.json": "dd7a5090a0037fb10f0d2f31c084817e3d54a61bf45a2ad6ed7137a0f904bd33",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\metrics.txt": "3cb4b60d6b377480baefc4725e177d8e34b2ce8ccf30025e647656f01bf5044e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060\\nodes.csv": "091f7ac2cff7a2815970b4b7f0724772f375d823c6f71e9cc0d0ba6a910dc74b"
+  }
+}

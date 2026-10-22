@@ -1,0 +1,29 @@
+{
+  "scope": "POSTPROCESSING_DIAGNOSTIC_NOT_MODEL_OR_MESH_ACCEPTANCE",
+  "voltage_V": 6.424202798513219,
+  "field_samples_sha256": "de5c3a9e4b9dcfa4e2c43a54f57680ffd7b5b7c1fb13318b71da6e51310b7032",
+  "original_case_acceptance": "FAIL",
+  "heat_source_unchanged": true,
+  "drift_heat_W": 0.010595813196218395,
+  "drift_heat_components_W": {
+    "x": 0.006059877957661786,
+    "y": 0.0001890392241400922,
+    "z": 0.004346896014418069
+  },
+  "drift_heat_fractions": {
+    "x": 0.5719124946280228,
+    "y": 0.017840935909247586,
+    "z": 0.4102465694628761
+  },
+  "terminal_power_W": 0.006068774533529053,
+  "drift_minus_terminal_W": 0.0045270386626893415,
+  "drift_over_terminal": 1.7459559813399137,
+  "quadrature_temperature_min_K": 300.0022307183892,
+  "quadrature_temperature_max_K": 329.904179682,
+  "volume_above_330K_fraction": 0.0,
+  "reconstruction": {
+    "material_heat_relative": 1.3113797672021385e-13,
+    "volume_integral_relative": 6.515969380105506e-14
+  },
+  "limitation": "Power definitions differ in the frozen model. This gap alone is not a flux-gate failure or a proof of physical instability."
+}

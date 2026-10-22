@@ -1,0 +1,146 @@
+{
+  "pdf": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\supplemental_figures\\S2_JEGRAD_summary.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 86,
+  "text_trace_count": 86,
+  "stroke_path_count": 189,
+  "filled_region_count": 124,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 5,
+    "warn": 0,
+    "contained_fill_overlays": 10,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "Analytical diffusion work",
+      "text_bbox": [
+        77.03031158447266,
+        65.59732055664062,
+        156.93032836914062,
+        73.09732055664062
+      ],
+      "other_text": null,
+      "other_bbox": [
+        49.28031539916992,
+        68.25994873046875,
+        243.53195190429688,
+        68.25994873046875
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        18
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "JE volume integral",
+      "text_bbox": [
+        77.03031158447266,
+        262.6192626953125,
+        138.71908569335938,
+        270.1192626953125
+      ],
+      "other_text": null,
+      "other_bbox": [
+        49.28031539916992,
+        264.887451171875,
+        243.53195190429688,
+        264.887451171875
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        117
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "FEM peak",
+      "text_bbox": [
+        339.27001953125,
+        54.42544937133789,
+        373.447509765625,
+        61.92544937133789
+      ],
+      "other_text": null,
+      "other_bbox": [
+        311.52001953125,
+        59.84808349609375,
+        505.77166748046875,
+        59.84808349609375
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        66
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 2 stroked path(s)",
+      "text": "Order 4 versus order 5",
+      "text_bbox": [
+        339.27001953125,
+        273.6973876953125,
+        414.71368408203125,
+        281.1973876953125
+      ],
+      "other_text": null,
+      "other_bbox": [
+        311.52001953125,
+        277.8995666503906,
+        505.77166748046875,
+        277.8995666503906
+      ],
+      "object_count": 2,
+      "object_indexes": [
+        162,
+        166
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 2 stroked path(s)",
+      "text": "Integration limit: 1e-10",
+      "text_bbox": [
+        339.27001953125,
+        295.9630126953125,
+        413.4686584472656,
+        303.4630126953125
+      ],
+      "other_text": null,
+      "other_bbox": [
+        311.52001953125,
+        299.58642578125,
+        505.77166748046875,
+        299.58642578125
+      ],
+      "object_count": 2,
+      "object_indexes": [
+        160,
+        167
+      ]
+    }
+  ]
+}

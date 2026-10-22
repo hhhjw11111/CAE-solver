@@ -1,0 +1,38 @@
+{
+  "scope": "CONTROLLED_TRACE_SUPG_NUMERICAL_VARIANT",
+  "counts": [
+    [
+      32,
+      18,
+      14
+    ],
+    [
+      40,
+      20,
+      16
+    ],
+    [
+      48,
+      22,
+      18
+    ]
+  ],
+  "voltages": [
+    6,
+    8
+  ],
+  "scales": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "existing_input_changed": {
+    "supg_directional_tau": false
+  },
+  "resource_mode": "EXISTING_CHECKED_BLOCK_SOLVER_FULL_MATRIX_LIMIT_1E-11",
+  "original_model_and_heat_unchanged": true,
+  "thresholds_unchanged": true,
+  "power_gap_is_diagnostic_no_added_threshold": true,
+  "production_release_requires_all_original_mesh_supg_and_local_checks": true,
+  "production_started": false
+}

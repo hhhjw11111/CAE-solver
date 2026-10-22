@@ -1,0 +1,58 @@
+"""Write a dated text handoff from preserved evidence, never certify failures."""
+import hashlib,json,time
+from pathlib import Path
+R=Path(r'C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2')
+D=Path(__file__).resolve().parent
+H=R/'runs/HV_SUPG_20261007'
+def sha(p):
+    h=hashlib.sha256()
+    with p.open('rb') as f:
+        for b in iter(lambda:f.read(1048576),b''):h.update(b)
+    return h.hexdigest()
+diag=json.loads((D/'diagnostic.json').read_text())
+lines=['力电热耦合论文证据与补证报告（2026-10-08）','目标期刊：固体力学学报',
+ '阶段报告时间：'+time.strftime('%Y-%m-%d %H:%M:%S%z'),
+ '结论：目前没有通过全部冻结空间/SUPG门槛的非零全场结果。今天已形成证据清单与离线诊断，新增计算获准后正在按最小队列推进；本报告不将待算、FAIL或部分积分量稳定写成完整闭环。',
+ '\n一、当前身份与并行变化',
+ '当前源码0.15.5-y-symmetry-audited；R21可执行sha256=cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e。只读复核58份当前Fortran哈希与R21清单一致。PROJECT_STATE仍保留12:03的R17/R18核查快照；current_execution_plan已更新到13:30的R21证据，不能把旧快照当最新源码。未修改核心代码、材料、边界、阈值；未commit/push或外部上传。',
+ '\n二、窄论文故事与证据对应',
+ '建议题意：限定稳态ZnO候选模型下圆孔局部电热力响应及规定温变输运影响。该物理故事目前只能作为拟证明主张，尚未有完整非零空间/SUPG证书。候选材料不等于实验标定样品。',
+ '方法证据：7自由度HEX20、真实残差Newton、一致切线；16项旧CLI回归、36组局部双载流子零电流极限（最大残差1.509e-16）、全域/半域等价、0V精确零状态已有证据。局部解析测试不代替7场全局生产制造解。',
+ '几何解析证据：A1为独立M0装配，A1J为生产路径合成/简化材料，A2为生产等温合成材料孔边场集中验证。它们不构成未存在的完整ZnO全耦合解析解；新增生产桥接应针对实际未覆盖的路径与力学/热源量，不重复已等价覆盖的验证。',
+ '受控模型比较：N0与NT都含自热；差值只识别规定μ(T)、D(T)温变输运影响。LQ与NT差值混合线性化及单向策略差异，不称纯热反馈。若不主张自热消融，就不添加No-Joule支线。',
+ 'H0/H1×N0/NT：9月四状态L0可复用为探索及初猜，均有原始日志与场；同口径最终网格/稳定化尚未闭环，不等于要再盲跑四次。',
+ '力学输出：R17三网格有环带位移、应力张量和von Mises峰值；R21半域有相同字段。全域/半域刚体规范不同，不能直接比未统一的位移范数。原始应力峰不是已收敛孔边应力集中系数。新增机械流式诊断单独保存，不豁免空穴门槛。',
+ '\n三、已有门槛与失败证据',
+ 'R17 6V XY0_Z2/XY1_Z3/XY2_Z3全通过求解及独立通量；空穴环带相邻变化15.4635%/9.18761%，原2%网格门槛FAIL。SUPG 0.5/1约14.96365%，原1%门槛FAIL。',
+ 'R21 6V固定径向18层、厚度16层的孔周32/48/64：最后空穴变化4.565214%，仍FAIL。0.5V L0/L1/L2空穴变化36.549220%；0.5V L0系数0.5/1/2跨度76.385756%，均FAIL。不能说降低电压自动获得非零可信区间。',
+ '6.5–8V无已接受普通定电压完整结果；转折样本不证明动力失稳或其它分支不存在。半域等价只节约成本，不授予网格证书。',
+ '\n四、本轮离线诊断（保持冻结指标并列）',
+ '源数据为R17三份field_samples.csv，合计2,312,000点；新脚本流式读取，无求解。冻结环带使用5×5×3，原field_samples为5×5×5；后者仅作补充诊断。不同网格点不对齐，区域均值不能当逐点场差。']
+for r in diag['runs']:
+    regs={x['region']:x for x in r['regions']}
+    interior=sum(x['fraction_of_ring_p_integral'] for x in r['regions'] if x['region'].startswith('depth_100_') or x['region'].startswith('depth_250_'))
+    lines.append(f"{r['run']}：冻结p环带={r['original_frozen_metrics']['ring_abs_p_relative_mean']:.12g}；补充采样={regs['annulus']['mean_abs_p_relative']:.12g}；二者差{100*r['sampled_vs_frozen_ring_metric_relative']:.6f}%；环带解析体积差{100*r['sampled_annulus_volume_relative_error']:.6f}%；离上下表面>100nm区域贡献占p绝对扰动积分{100*interior:.3f}%。")
+lines += ['直接结论：两种已有采样阶数的差异远小于9.18761%；简单环带体积/积分点数量误差不能解释主要网格差。固定厚度的XY1→XY2仍改变内部空穴扰动，提示面内输运离散影响；不能由非对齐区域统计唯一证明根因。上/下表面、径向内外区、孔周16分区已在CSV给出。',
+ '不能证明：3阶或5阶已严格积分收敛；唯一误差方向；新模型更物理；所有空穴作用可忽略。端口空穴电流约5.3e-57A只说明该端口贡献极小，不改变2%验收门槛。',
+ '\n五、今日最小补证队列与停止条件',
+ 'Q0（已完成）：既有三网格采样/厚度/径向/孔周诊断及证据身份，约41秒流式计算，结果独立保存。',
+ 'Q1（已授权推进）：6V NT、R21、half-y、SUPG=1、directional tau=T，径向18/厚度16固定，孔周96后128；只改网格。A96半域61,221节点/13,824单元；A128预计约81,317节点/18,432单元（以生成manifest为准）。复用A64暖初猜，经HEX20逆映射后独立重求。串行OOC、4线程、PARDISO预算10000MB，约32GiB总内存；预算不含装配/系统。A48/A64记录18.18/20.11分钟，新大网格预估单点30–90分钟不保证。每点硬超时7200秒，求解/通量/场审核失败停止后继；不调容差。保存input/mesh/exe/source哈希、完整载荷、双容差、独立通量、切面审计及日志。',
+ 'Q2（仅当Q1空间通过后执行）：在最后可接受同网格R21状态上做SUPG 0.5/1/2，复用scale1，两个新求解约1–3小时；原1%门槛任一失败就停止论文可信结论扩展，不追全部电压点。',
+ 'Q3（Q1/Q2通过后才成为必需）：对最终选定电压的H0/H1×N0/NT按同构建/边界/尺寸口径补齐，可复用状态而非承诺四次新运行。输入差异只为孔洞有无及冻结/温变输运；求解、通量、空间、SUPG、力学量均需有证据。预估多小时且取决于实际资源，今天完成风险高。',
+ 'Q4（条件性缺口）：若原有局部/生产/半域等价不足以覆盖拟写力学结论，需现有生产对象链接的针对性制造解/patch或独立参考验证；不要求不存在的完整ZnO解析解。新增验证程序或必要核心改变应明确范围另报，不在本轮暗改核心。',
+ '保留/删减：没有独立No-Joule对照就不主张纯自热贡献；没有可靠孔边应力量就不以电流/温升代替力学主结论；无法今日闭环就明确未完成，不能承诺后续只改稿。',
+ '\n六、交接文件与实际状态',
+ 'diagnose_existing_fields.py、diagnostic.json、regional_metrics.csv：源文件和脚本哈希、冻结指标和诊断量并列。mechanical_existing.py/mechanical_diagnostic.json：既有应力/位移诊断（生成完成后查验）。新网格、初猜与运行目录仅在本独立目录中。',
+ '本报告为UTF-8可读文本，可直接编辑。本轮未生成DOCX，也未安装排版软件、未上传Library。']
+for name in ['solve_A96_V060','solve_A128_V060']:
+    p=D/name
+    if (p/'execution.json').exists():lines.append(name+' execution='+json.dumps(json.loads((p/'execution.json').read_text()),ensure_ascii=False))
+    elif p.exists():lines.append(name+'：已建立运行目录，尚未见完成记录，待确认。')
+    else:lines.append(name+'：尚未启动。')
+out=D/('总结报告_'+time.strftime('%H%M%S')+'.txt')
+out.write_text('\n\n'.join(lines),encoding='utf-8')
+sources=[D/'diagnose_existing_fields.py',D/'diagnostic.json',D/'regional_metrics.csv',Path(__file__),out]
+manifest=dict(created=time.strftime('%Y-%m-%dT%H:%M:%S%z'),files=[dict(path=str(p),sha256=sha(p)) for p in sources],
+    scope='LOCAL_ONLY_PAPER_EVIDENCE_HANDOFF_NOT_ALL_GATES_PASS')
+(D/('报告索引_'+time.strftime('%H%M%S')+'.json')).write_text(json.dumps(manifest,indent=2,ensure_ascii=False),encoding='utf-8')
+print(str(out),flush=True)

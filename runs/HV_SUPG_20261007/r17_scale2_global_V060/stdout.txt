@@ -1,0 +1,13 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.5205E-06,
+newton_global_log_limit, raw_eta_n=  2.2067E-01, raw_eta_p=  1.4356E+00, scale=  6.9658E-01,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.4115E-06,
+newton_global_log_limit, raw_eta_n=  5.0158E-01, raw_eta_p=  3.4437E+01, scale=  2.9039E-02,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.3844E-06,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.1775E-06,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.4838E-06,
+newton_global_log_limit, raw_eta_n=  2.8754E-02, raw_eta_p=  1.5588E+00, scale=  6.4152E-01,
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.0049E-06,
+newton_global_log_limit, raw_eta_n=  1.1965E-01, raw_eta_p=  2.2059E+00, scale=  4.5334E-01,

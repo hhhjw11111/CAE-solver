@@ -1,0 +1,20 @@
+{
+  "checkpoint": "after independent analysis of nine A2PMAT matrices",
+  "archive": "COMPLETE: 10005 ZIP members SHA-256 verified; original files retained",
+  "stage1": "FROZEN: JE_SIMPLIFIED_R0_V1; legacy heat-source default unchanged",
+  "stage3": "IN_PROGRESS; not accepted",
+  "full_run": "stage3_verification/attempt01/result.json",
+  "legacy_cli": "16/16 PASS and byte-identical",
+  "targeted": "10/11 PASS; A2P zero-perturbed-pivot gate FAIL",
+  "A1": "Original zero-current A1 retained; new A1JJE and JEGRAD pass",
+  "A2": "Original A2 passes; new constrained antiplane A2P satisfies field/error gates but not zero-pivot gate",
+  "core": "All 40 nonverification Fortran source hashes still equal archived baseline",
+  "latest_build": "build/JE_VERIFY_20261018_MATRIX",
+  "latest_build_scope": "A2PMAT export tested; full regression not rerun on this instrumentation build",
+  "matrix_evidence": "stage3_verification/a2p_matrix_diagnostic/analysis/summary.json",
+  "matrix_findings": "One constant-potential null mode before gauge; full-rank electrical free block after either gauge; independent solves agree",
+  "current_work": "Original PARDISO settings with equivalent CSR representations, including nonzero diagnostic RHS; no production-core change yet",
+  "stage4": "Prepared and gated; no native mesh probe launched",
+  "stage5": "GATED; no new production cases promoted",
+  "preserved": "Original archive, failed attempts, gauge variants, builds, matrix exports and acceptance limits"
+}

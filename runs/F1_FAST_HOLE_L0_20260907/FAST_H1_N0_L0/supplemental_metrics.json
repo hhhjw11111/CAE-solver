@@ -1,0 +1,19 @@
+{
+  "case": "FAST_H1_N0_L0",
+  "saved_sample_relative_error": 9.43742277911122e-10,
+  "ring_reconstruction_errors": {
+    "ring_volume_m3": 7.56060212230841e-14,
+    "ring_Q_mean_W_m3": 5.652560177342984e-14,
+    "ring_E_mean_V_m": 7.485406176933271e-14,
+    "ring_abs_n_relative_mean": 4.952635523913784e-16
+  },
+  "ring_E_p95_V_m": 269402.95525512745,
+  "right_mean_ux_m": 2.4636952665541397e-10,
+  "right_contact_area_m2": 1.9999999999999992e-11,
+  "thermal_resistance_K_W": 2441.88110897294,
+  "nodes": 10144,
+  "elements": 2240,
+  "method": "Original HEX20 fields; 5x5x3 annulus quadrature and 5x5 face quadrature.",
+  "source_nodes_sha256": "0db26b171f1249949f98420d2af455b2c6c401b5dfa72ab8faece5f0bf5b0114",
+  "source_metrics_sha256": "c8b0507cbbbc7bfb9f07eed0b849a0b3d3fae485b88fa5a9b490e97d21b214e7"
+}

@@ -1,0 +1,26 @@
+{
+  "core_conclusion": "Display the spatial fields of the saved, converged JE NT 8 V candidate on the existing XY0_Z2 mesh; the plots do not certify physical or mesh accuracy.",
+  "archetype": "quantitative grid",
+  "backend": "python",
+  "source_case": "V080",
+  "voltage_magnitude_V": 8,
+  "signed_target_voltage_V": -8,
+  "hole_radius_um": 3,
+  "plate_dimensions_um": [20, 20, 1],
+  "planes_um": [0, 0.5, -0.5],
+  "panels": [
+    {"field": "Q_JE", "meaning": "E dot (Jn + Jp), evaluated from the complete drift-diffusion current", "unit": "1e12 W/m3"},
+    {"field": "phi", "meaning": "Solved electric potential", "unit": "V"},
+    {"field": "electron_relative_change", "meaning": "100 * (exp(eta_n) - 1)", "unit": "%"},
+    {"field": "hole_relative_change", "meaning": "100 * (exp(eta_p) - 1)", "unit": "%"},
+    {"field": "von_mises_total", "meaning": "Total coupled stress C:strain - e^T E - beta*theta; includes elastic, piezoelectric and thermal contributions", "unit": "MPa"},
+    {"field": "thermal_constitutive_xx", "meaning": "The local thermal constitutive contribution -beta_xx*theta; not a separately equilibrated pure thermal-stress solution", "unit": "MPa"}
+  ],
+  "supplement": "Temperature-rise cloud maps and carrier comparisons among the three planes.",
+  "evaluation": "Original HEX20 shape functions and derivatives; exact plane evaluations. Gradients at internal interfaces use the element on the positive-z side. Surface gradients are one-sided from material.",
+  "rendering": "Triangles remain within original element patches; no scattered-data smoothing or triangulation across the hole. No fabricated radius-2 or radius-4 results.",
+  "normalization": "Overview maps use linear local ranges stated by their colorbars so weak midplane carrier changes remain visible. Three-plane comparisons use a shared range for each quantity. Signed carrier and signed current-work maps are centered at zero; no quantile clipping or gamma adjustment.",
+  "exports": ["png", "svg", "pdf", "tiff", "npz", "csv", "json"],
+  "verification": "Match reconstructed 5x5x5 Gauss-point fields and volume integrals to saved native outputs; inspect final rendered figures and editable vector text.",
+  "statistics": "Deterministic FEM postprocessing; no statistical replicates or error bars."
+}

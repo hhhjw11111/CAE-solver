@@ -57,6 +57,7 @@
 			<File RelativePath=".\src\mesh\mesh_checks_m.f90"/>
 		</Filter>
 		<Filter Name="FEM" Filter="f90">
+			<File RelativePath=".\src\fem\transport_supg_m.f90"/>
 			<File RelativePath=".\src\fem\element_kernel_m.f90"/>
 			<File RelativePath=".\src\fem\sparse_pattern_m.f90"/>
 			<File RelativePath=".\src\fem\dirichlet_m.f90"/>
@@ -68,7 +69,9 @@
 		<Filter Name="Nonlinear" Filter="f90">
 			<File RelativePath=".\src\nonlinear\scaling_m.f90"/>
 			<File RelativePath=".\src\nonlinear\newton_solver_m.f90"/>
+			<File RelativePath=".\src\nonlinear\temperature_control_m.f90"/>
 			<File RelativePath=".\src\nonlinear\continuation_solver_m.f90"/>
+			<File RelativePath=".\src\nonlinear\arclength_solver_m.f90"/>
 		</Filter>
 		<Filter Name="Problems" Filter="f90">
 			<File RelativePath=".\src\problems\reference_bar_problem_m.f90"/>
@@ -82,23 +85,28 @@
 		<Filter Name="Verification" Filter="f90">
 			<File RelativePath=".\src\verification\material_tangent_check_m.f90"/>
 			<File RelativePath=".\src\verification\element_tangent_check_m.f90"/>
+			<File RelativePath=".\src\verification\supg_check_m.f90"/>
 			<File RelativePath=".\src\verification\global_assembly_check_m.f90"/>
 			<File RelativePath=".\src\verification\global_block_jacobian_check_m.f90"/>
 			<File RelativePath=".\src\verification\linear_solver_check_m.f90"/>
 			<File RelativePath=".\src\verification\m0_benchmark_m.f90"/>
 			<File RelativePath=".\src\verification\a1_joint_check_m.f90"/>
 			<File RelativePath=".\src\verification\a2_hole_check_m.f90"/>
+			<File RelativePath=".\src\verification\a2_piezo_check_m.f90"/>
+			<File RelativePath=".\src\verification\je_gradient_check_m.f90"/>
 			<File RelativePath=".\src\app\f1_case_runner_m.f90"/>
 			<File RelativePath=".\src\physics\zno_candidate_m.f90"/>
 			<File RelativePath=".\src\verification\analytic_benchmarks_m.f90"/>
 			<File RelativePath=".\src\verification\newton_solver_check_m.f90"/>
 			<File RelativePath=".\src\verification\continuation_solver_check_m.f90"/>
+			<File RelativePath=".\src\verification\arclength_solver_check_m.f90"/>
 			<File RelativePath=".\src\verification\center_hole_check_m.f90"/>
 			<File RelativePath=".\src\verification\mesh_convergence_check_m.f90"/>
 			<File RelativePath=".\src\verification\matched_control_check_m.f90"/>
 			<File RelativePath=".\src\verification\radius_matrix_check_m.f90"/>
 			<File RelativePath=".\src\verification\production_joule_check_m.f90"/>
 			<File RelativePath=".\src\verification\verification_driver_m.f90"/>
+			<File RelativePath=".\src\verification\temperature_control_check_m.f90"/>
 		</Filter>
 		<Filter Name="Application" Filter="f90">
 			<File RelativePath=".\src\app\production_runner_m.f90"/>

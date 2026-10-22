@@ -1,0 +1,23 @@
+{
+  "status": "STARTED_NOT_COMPLETED",
+  "controller_pid": 21588,
+  "python": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "runner": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_je_paper_resumed_20261020.py",
+  "runner_sha256": "e7995ba4f402271df41d08abb254b8010b4c445c4028df71341022cb56e51f03",
+  "arguments": [
+    "-X",
+    "utf8",
+    "\"C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_je_paper_resumed_20261020.py\"",
+    "--batch",
+    "joint",
+    "--joint-level",
+    "1",
+    "--execute"
+  ],
+  "window_style": "Hidden",
+  "batch": "joint",
+  "joint_level": 1,
+  "native_process_limit": 1,
+  "old_6V_reuse_expected": true,
+  "interrupted_8V_preserved": true
+}

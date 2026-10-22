@@ -1,0 +1,165 @@
+{
+  "scope": "SINGLE_VOLTAGE_SAME_MESH_QUADRATURE_SENSITIVITY",
+  "orders": [
+    3,
+    5
+  ],
+  "runs": [
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_Z2_V005",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_Q5_Z2_V005"
+  ],
+  "errors": [],
+  "comparisons": {
+    "joule_W": {
+      "values": [
+        2.1400684699496135e-05,
+        2.140068469841094e-05
+      ],
+      "relative_span": 5.0708419395816654e-11,
+      "limit": 0.01,
+      "passed": true
+    },
+    "theta_max_K": {
+      "values": [
+        0.10278552288616538,
+        0.10278552810086694
+      ],
+      "relative_span": 5.073381103160205e-08,
+      "limit": 0.01,
+      "passed": true
+    },
+    "electron_right_A": {
+      "values": [
+        4.274273788632536e-05,
+        4.274275155473255e-05
+      ],
+      "relative_span": 3.197830437982282e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_theta_mean_K": {
+      "values": [
+        0.08649731753693819,
+        0.08649740165582562
+      ],
+      "relative_span": 9.725018996502346e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_E_mean_V_m": {
+      "values": [
+        27886.908073925966,
+        27886.852342439288
+      ],
+      "relative_span": 1.9984821024449634e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_Q_mean_W_m3": {
+      "values": [
+        186486145559.4495,
+        186485350353.3828
+      ],
+      "relative_span": 4.264156269064e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_abs_n_relative_mean": {
+      "values": [
+        0.0001661556193573881,
+        0.00016615575996807352
+      ],
+      "relative_span": 8.462582666322032e-07,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_abs_p_relative_mean": {
+      "values": [
+        0.00016749647770793308,
+        0.00016749675336239712
+      ],
+      "relative_span": 1.645730191843481e-06,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ring_Q_p95_W_m3": {
+      "values": [
+        385857459084.7111,
+        385861960666.17456
+      ],
+      "relative_span": 1.1666300185869964e-05,
+      "limit": 0.01,
+      "passed": true
+    },
+    "E_p95_V_m": {
+      "values": [
+        31140.087629816993,
+        31139.81352133819
+      ],
+      "relative_span": 8.802431196135694e-06,
+      "limit": 0.01,
+      "passed": true
+    }
+  },
+  "local_field_checks_requested": true,
+  "local_field_comparisons": {
+    "phi_V": {
+      "maximum_relative": 2.096004084184422e-06,
+      "rms_relative": 5.362187342862521e-07,
+      "normalization": 0.5,
+      "limit": 0.01,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 4.424070224615959e-06,
+      "rms_relative": 1.1698452763320936e-06,
+      "normalization": 0.10278796532407088,
+      "limit": 0.01,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 2.425924626628406e-06,
+      "rms_relative": 4.5217174446903103e-07,
+      "normalization": 6.07459905601468e-12,
+      "limit": 0.01,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 1.9008027381917402e-06,
+      "rms_relative": 6.718190068779443e-07,
+      "normalization": 6.07459905601468e-12,
+      "limit": 0.01,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 1.8028947152983874e-06,
+      "rms_relative": 3.988512267358864e-07,
+      "normalization": 6.07459905601468e-12,
+      "limit": 0.01,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 2.4273336066693662e-05,
+      "rms_relative": 1.6431153941504306e-06,
+      "normalization": 0.00709655139261097,
+      "limit": 0.01,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 2.4690940359865875e-05,
+      "rms_relative": 1.6394517795020216e-06,
+      "normalization": 0.0071123128114841385,
+      "limit": 0.01,
+      "passed": true
+    }
+  },
+  "local_field_error": null,
+  "all_requested_checks_passed": true,
+  "node_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_Z2_V005": "d81701f4c68ee529c4b65119965afaafd5eeaa9458e99b588e4b861968451a96",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_Q5_Z2_V005": "93247f33db895a1c42bc4cf6fb9b8b8ef80657aca908006ff1fd7d58a032727b"
+  },
+  "covered_metrics_passed": true,
+  "fully_validated": false,
+  "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+}

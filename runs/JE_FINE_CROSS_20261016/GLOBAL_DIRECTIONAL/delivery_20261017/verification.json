@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-17T00:55:38.917737+08:00",
+  "prior_files_checked": 301,
+  "prior_files_changed": [],
+  "study_artifacts_checked": 388,
+  "study_artifacts_changed": [],
+  "frozen_runtime_scripts_changed": [],
+  "verification_method": "Fresh SHA256 recomputation of preserved_hashes.json, analysis/artifact_hashes.json and script_hashes.json; completed before this delivery record was written",
+  "direction_runs_solve_flux_field_pass": 8,
+  "selected_rows": 14,
+  "direction_mesh_gates": {
+    "radial_V6": false,
+    "thickness_V6": true,
+    "radial_V8": true,
+    "thickness_V8": true
+  },
+  "SUPG_gates": {
+    "6": false,
+    "8": false
+  },
+  "fully_validated": false,
+  "both_runner_and_collector_exit_codes": 0,
+  "delivery_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\REPORT.txt": "34711022c21a2bf02d406cfa267d334d9808c5073c97021af3d94299d6f40305",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\results.csv": "a94e4289399285c49e86b994a378b1221718ee7e929072b8110d07ac13ce2a58",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\summary.json": "cc39cdcf503661b9ddfd356213c59d22befe1f752648935ea55ce63c4de22b4e",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\analysis\\artifact_hashes.json": "02fa5254760b698a15ae3f025ada8dada460cb83c1ce3fdb977743300c784108",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\delivery_20261017\\CONCLUSIONS_zh.txt": "c6e4f206bdf39c7879da100b582692ec64df028931d7c26ad6109bb6071ed1ca"
+  }
+}

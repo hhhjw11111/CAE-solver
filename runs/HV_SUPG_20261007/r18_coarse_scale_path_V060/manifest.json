@@ -1,0 +1,14 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R18\\TPSolverV2.exe",
+  "executable_sha256": "b4b5dad752a562a33830c7533b4deecf1d1591b00343a8d0cd3ca9507afe5d02",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh",
+  "mesh_sha256": "f4bf3b1a59941c7d6046ad8c06b3ee066d9cccabc301e84c5d13f8615043270f",
+  "voltage": 6.0,
+  "seed_run": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale1_V060",
+  "seed_nodes_sha256": "e858c7d6d50222f3d434c4b7a02b1d1962a163bd1b82a1f4ffe4554ad6afeb2e",
+  "starting_scale": 1.0,
+  "target_scale": 2.0,
+  "maximum_step": 0.25,
+  "minimum_step": 0.015625,
+  "status": "NUMERICAL_COEFFICIENT_PATH_NOT_SENSITIVITY_OR_MESH_CERTIFICATE"
+}

@@ -1,0 +1,26 @@
+{
+  "created": "2026-10-08T13:40:47+0800",
+  "files": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\diagnose_existing_fields.py",
+      "sha256": "4ab9331acfcef200b263954a0a2d8b6a75e877f3f64b63c3642f2db4dfdae79c"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\diagnostic.json",
+      "sha256": "8e76570fe90dca97228c12b546e7f922e787256ba6a2998fbb5a15a1f1533ab3"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\regional_metrics.csv",
+      "sha256": "be4e542874665ff0cdb86fdcef1f42146b664e3999a3fe4663b6a196a38bb963"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\write_report.py",
+      "sha256": "556eaf8f01580be79aad08b8a1893bd635e61d1e65120da833451287ed1d9cd5"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\总结报告_134047.txt",
+      "sha256": "a4063ae7e28aff27dbcafdb4e7492d46bfd4a7e9fe7fc9ff54464465609c18e6"
+    }
+  ],
+  "scope": "LOCAL_ONLY_PAPER_EVIDENCE_HANDOFF_NOT_ALL_GATES_PASS"
+}

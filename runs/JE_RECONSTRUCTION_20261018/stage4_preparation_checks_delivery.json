@@ -1,0 +1,10 @@
+{
+  "scope": "PREPARATION_ONLY_NO_NATIVE_SOLVE",
+  "prior_checks": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_preparation_checks_final.json",
+  "prior_checks_sha256": "91d1b9c26fd3f75016ea7f270dc3d56cda4241c03631781ba71e46ba14e83491",
+  "final_change": "Joint/SUPG batches require completed A48 and R22 points at both voltages; failures remain failures",
+  "py_compile_passed": true,
+  "runner_sha256": "4c8ca7667bb178393354107156d4ce74adf19b8e8d289b985c76962f4c39ac01",
+  "generator_sha256": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+  "native_solve_started": false
+}

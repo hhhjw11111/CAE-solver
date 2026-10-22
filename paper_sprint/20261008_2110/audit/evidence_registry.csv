@@ -1,0 +1,10 @@
+evidence_id,description,status,source,claim_boundary
+E001,frozen startup R25 source/build identity,PASS,audit/source_validation/source_audit_runtime_retry.json,58 source + executable matched at startup; excludes later concurrent 0.16 edits; not clean worktree
+E002,historical per-case layered status,PARTIAL,data/case_registry.csv,H0 contemporaneous provenance PENDING; all spatial limitations retained
+E003,fresh small verification of frozen executable,PASS_WITH_SCOPE,validation/runtime_retry/verification_summary.json,five frozen R25 CLI checks plus R22 archived kernel replay; not full 1D production specification
+E004,mathematical reference,PASS_MATH_ONLY,validation/formula_reference/formula_reference_summary.json,not a production/FEM verification
+E005,3V volume postprocessing,PASS_POSTPROCESS_ONLY,data/metrics_summary.csv,L0 exploratory; boundary integrals archived
+E006,local carrier spatial acceptance,FAIL,data/spatial_failure_source.csv,R23 half domain; 2 percent gate
+E007,literature,VERIFIED_WITH_READ_SCOPE,audit/literature/reference_registry.csv,two papers; metadata/abstract/indexed excerpts only
+E008,baseline refs and concurrent edits,BASELINE_PASS_CONCURRENT_CHANGES_RECORDED,audit/protection_check.json,HEAD/main/tag unchanged; external 0.16 source changes preserved; original 58 sources recovered by exact hash
+E009,remaining tasks,PENDING,OPEN_ITEMS.md,no unrun cases or unknown values promoted to PASS

@@ -4,7 +4,7 @@ module hex20_quadrature_m
   private
 
   integer, parameter, public :: HEX20_NGAUSS = 27
-  public :: gauss_rule_3x3x3
+  public :: gauss_rule_3x3x3, gauss_rule_5x5x5
 
 contains
 
@@ -31,4 +31,28 @@ contains
     end do
   end subroutine gauss_rule_3x3x3
 
+  subroutine gauss_rule_5x5x5(points,weights)
+    real(dp), intent(out) :: points(3,125),weights(125)
+    real(dp) :: x(5),w(5),inner,outer
+    integer :: i,j,k,n
+    inner=sqrt(5.0_dp-2.0_dp*sqrt(10.0_dp/7.0_dp))/3.0_dp
+    outer=sqrt(5.0_dp+2.0_dp*sqrt(10.0_dp/7.0_dp))/3.0_dp
+    x=[-outer,-inner,0.0_dp,inner,outer]
+    w=[(322.0_dp-13.0_dp*sqrt(70.0_dp))/900.0_dp, &
+       (322.0_dp+13.0_dp*sqrt(70.0_dp))/900.0_dp,128.0_dp/225.0_dp, &
+       (322.0_dp+13.0_dp*sqrt(70.0_dp))/900.0_dp, &
+       (322.0_dp-13.0_dp*sqrt(70.0_dp))/900.0_dp]
+    n=0
+    do i=1,5
+      do j=1,5
+        do k=1,5
+          n=n+1
+          points(1,n)=x(i)
+          points(2,n)=x(j)
+          points(3,n)=x(k)
+          weights(n)=w(i)*w(j)*w(k)
+        end do
+      end do
+    end do
+  end subroutine gauss_rule_5x5x5
 end module hex20_quadrature_m

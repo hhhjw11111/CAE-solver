@@ -1,0 +1,22 @@
+{
+  "scope": "TRACE_POWER_DIAGNOSTIC_NO_ADDED_THRESHOLD",
+  "voltage_V": 8.0,
+  "raw_half_JE_W": 0.004927806304296845,
+  "raw_half_physical_exterior_power_W": 0.004927749551929503,
+  "raw_half_symmetry_cut_power_W": 2.0336873879152357e-07,
+  "reconstructed_full_JE_W": 0.00985561260859369,
+  "physical_exterior_gap_relative": 1.1516760975886381e-05,
+  "independent_vs_native_relative": 1.0191314331278137e-13,
+  "original_comparison_limit": 1e-08,
+  "assembled_order3_free_residual_max_A": 7.302043716348479e-16,
+  "assembled_order3_identity_remainder_W": 5.5949134643884334e-18,
+  "parts": {
+    "quadrature_W": 2.394651768544698e-10,
+    "SUPG_weighted_W": 1.9302542142843825e-08,
+    "reaction_minus_all_boundary_W": -1.661583796698507e-07,
+    "free_residual_correction_W": 8.946705605139373e-16
+  },
+  "decomposition_remainder_W": 5.594917314410671e-18,
+  "power_gap_acceptance_threshold": null,
+  "production_acceptance": false
+}

@@ -1,0 +1,10 @@
+{
+  "estimates": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_release_scoped_20261021\\preregistered_estimates.csv",
+  "estimates_sha256": "a8d36088dc7fe0cfcc1b5dc6b5fbf890830e1bd61c01cf96c67aaf6bca6fdfb7",
+  "review_limit_relative": 0.02,
+  "compared": 23,
+  "flagged": [],
+  "not_compared_not_accepted": [],
+  "role": "Review aid only; never a pass/fail gate or a substitute for solved states",
+  "script_sha256": "35746136a486ab66ab5b373e5d0b16398c7a820cd944f4f6a41c0438ba44f97f"
+}

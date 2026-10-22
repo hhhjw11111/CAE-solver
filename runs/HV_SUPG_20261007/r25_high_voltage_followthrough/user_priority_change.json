@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-08T20:48:17.984257+08:00",
+  "reason": "User prioritizes fixed-mesh 6-8 V; defer mesh/integration studies",
+  "stopped_queue_pid": 6356,
+  "stopped_comparison_pids": [
+    14948,
+    31512
+  ],
+  "preserved_high_voltage_pids": [
+    32700,
+    2764
+  ],
+  "deferred": [
+    "remaining 3.5 V Q5 comparison",
+    "5 V angular and Q5 comparisons"
+  ],
+  "status": "QUEUE_SUPERSEDED_HIGH_VOLTAGE_CONTINUES",
+  "partial_comparison_is_not_a_result": true
+}

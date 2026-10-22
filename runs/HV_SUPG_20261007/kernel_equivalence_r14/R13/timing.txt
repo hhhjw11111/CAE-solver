@@ -1,0 +1,5 @@
+case=1,cpu_seconds=  2.96875000E-01
+case=2,cpu_seconds=  2.65625000E-01
+case=3,cpu_seconds=  2.65625000E-01
+case=4,cpu_seconds=  2.81250000E-01
+total_cpu_seconds=  1.10937500E+00

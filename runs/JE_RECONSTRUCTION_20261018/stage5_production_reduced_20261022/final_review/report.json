@@ -1,0 +1,1120 @@
+{
+  "created": "2026-10-22T22:57:41+0800",
+  "scope": "REDUCED_30_CASE_TRACE_JE_PRODUCTION",
+  "release": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_release_scoped_20261022\\release.json",
+  "release_sha256": "1f5b5f1465a20befe5adf1518907218c92349b2c09771465791fa9d217d7e413",
+  "case_matrix_sha256": "e1e8326de9763a219881d6d419a4d10fea8543cb1bba3d61a162610257d9a45b",
+  "accepted": 30,
+  "total": 30,
+  "states": [
+    {
+      "name": "F_r3_A32_R18_Z14_LQ_V080",
+      "group": "lq_check",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 8,
+      "domain": "FULL",
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 3502.6100000000006,
+      "metrics_sha256": "892ba8d5eb17e0648b60ff406345911265f5633e23b993549cfac1aec53e0e0b",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A32_R18_Z14_LQ_V080",
+      "group": "lq_check",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 751.25,
+      "metrics_sha256": "047ed4ea431cfc51addc75034aaf7d7c5dd3fb12c23428a29f866d86e82203d2",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A40_R20_Z16_LQ_V080",
+      "group": "lq_check",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1386.1719999999987,
+      "metrics_sha256": "3756129aeff01ddba489862a9d9c8b2d85ec885644da22ab631eb220f435b511",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V000",
+      "group": "lq_sweep",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 0.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "ZERO_VOLTAGE_EQUILIBRIUM_PASS",
+      "accepted": true,
+      "seconds": 123.10899999999674,
+      "metrics_sha256": "260dec9b6ae71146c2635071b5f077946ded39c807f6019472c2a6fc77977549",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V020",
+      "group": "lq_sweep",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 2.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2659.1719999999987,
+      "metrics_sha256": "51c565df41b7d5d79dee25259ea968118367ddb51e9c655fad5752cc0238a7fc",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V040",
+      "group": "lq_sweep",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 4.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2651.9069999999992,
+      "metrics_sha256": "212e0d1b70336f4775cb75cd86293bc79a77becc340ea7d4aa8eaed68da494c0",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V060",
+      "group": "lq_sweep",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 6.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 3099.938000000002,
+      "metrics_sha256": "285bb341a800f221ee24dfb5e10f91301f4c3ac6401e01e278ad73ec6573cf1d",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_LQ_V080",
+      "group": "lq_sweep",
+      "model": "LQ",
+      "radius_um": 3,
+      "voltage_V": 8.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2660.0930000000008,
+      "metrics_sha256": "32d883a5b2674b3599723c7d8e469b3df47cc35bc47448a09140ac434b230dad",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V000",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 0.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "ZERO_VOLTAGE_EQUILIBRIUM_PASS",
+      "accepted": true,
+      "seconds": 62.07800000000134,
+      "metrics_sha256": "36bcf56872523096e833aaf78b9ed92f72da37d7e03856d963106d8985f364a1",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V005",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 0.5,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1230.5469999999987,
+      "metrics_sha256": "19ade39850aae669d59c90e689a3bcade2a98c2cca3b99dc8d33bf9cc1eff73c",
+      "postprocess_recovery": true,
+      "physical_exterior_gap_relative": 5.328802691689084e-07,
+      "independent_vs_native_relative": 9.715124430826556e-13
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V010",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 1.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1206.5619999999908,
+      "metrics_sha256": "7f7f8be8607a4c49b4516cbbeb0ae7a41c51bae1a6933bb2b13c959cc20f2409",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 7.032023200475411e-07,
+      "independent_vs_native_relative": 1.6138856969852821e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V020",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 2.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2056.797000000006,
+      "metrics_sha256": "69345b6a17209e15eebae70be0d3c322379a1c853a308259df595ab295d6b774",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 1.4355496416754142e-06,
+      "independent_vs_native_relative": 3.09002356667228e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V030",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 3.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2054.5469999999914,
+      "metrics_sha256": "dfe92ccf3d747cf3b6a4684b0a5fd1497d9942ca76c934e02f72360511cdd7f7",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 2.810635014688143e-06,
+      "independent_vs_native_relative": 3.1981603311316075e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V040",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 4.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2064.7030000000086,
+      "metrics_sha256": "cda162ed6e86472fb4184c2ccbc3dbe218525e610fee4562a8246f8494dd1e49",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 5.0111568069422596e-06,
+      "independent_vs_native_relative": 1.659116664534115e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V050",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 5.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2044.172000000006,
+      "metrics_sha256": "bb93d476f7adf58045620f295736b8e51790d2c86bcf9fc8298a978ea916bf39",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 8.219379350447541e-06,
+      "independent_vs_native_relative": 1.7273121056924286e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V060",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 6.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2389.2179999999935,
+      "metrics_sha256": "b5b3a700fddde9540517df64edbd405fd89532e73c583ec0b7ec33cfa1e4b421",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 1.2547289278594733e-05,
+      "independent_vs_native_relative": 1.8013928742245661e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V070",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 7.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2408.4060000000027,
+      "metrics_sha256": "b238d595c9aaa156ca06b4f51ebc005fd81505e0d49f2d3518ff54c5a55a5731",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 1.794710197973212e-05,
+      "independent_vs_native_relative": 2.518229610442114e-12
+    },
+    {
+      "name": "H_r3_A48_R22_Z18_NT_V080",
+      "group": "nt_sweep",
+      "model": "NT",
+      "radius_um": 3,
+      "voltage_V": 8.0,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2426.672000000006,
+      "metrics_sha256": "880241d476e485a0667e7ae0fbb8c2d3f1e10763447e2c7185e23b0120713e20",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 2.4112808131574756e-05,
+      "independent_vs_native_relative": 1.8103457993599753e-12
+    },
+    {
+      "name": "H_r2_A48_R22_Z18_LQ_V060",
+      "group": "radius",
+      "model": "LQ",
+      "radius_um": 2,
+      "voltage_V": 6,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 3128.1410000000033,
+      "metrics_sha256": "ce4d2af12baefed071e8192304e9520fe45c934f751d2a8fee21537dd179ca63",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r2_A48_R22_Z18_LQ_V080",
+      "group": "radius",
+      "model": "LQ",
+      "radius_um": 2,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 3107.7969999999987,
+      "metrics_sha256": "f319ec4d0f9b9483dacde0565308f6b11cb1f477f2f45b3aea74ff6853ebf410",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r2_A40_R20_Z16_LQ_V080",
+      "group": "radius_mesh",
+      "model": "LQ",
+      "radius_um": 2,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1414.25,
+      "metrics_sha256": "a2b3f5d6c45485f15a78eaaf40013c31a171ddd7ad75a95389c434bfb3e75b6b",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r2_A48_R22_Z18_NT_V060",
+      "group": "radius",
+      "model": "NT",
+      "radius_um": 2,
+      "voltage_V": 6,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1512.5160000000033,
+      "metrics_sha256": "461c9e1bea17162e40c20b752f36a3dc5cf6a7e1e52744bbdb8abb1a1e58d223",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 1.2395331098276448e-05,
+      "independent_vs_native_relative": 1.211566596080586e-12
+    },
+    {
+      "name": "H_r2_A48_R22_Z18_NT_V080",
+      "group": "radius",
+      "model": "NT",
+      "radius_um": 2,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1550.046000000002,
+      "metrics_sha256": "0ca26fc3efb3bdacbae0e22cc7a1565af36cd0c37cf351354796b8e24833cbd0",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 2.4617620227877122e-05,
+      "independent_vs_native_relative": 9.844141726184152e-13
+    },
+    {
+      "name": "H_r2_A40_R20_Z16_NT_V080",
+      "group": "radius_mesh",
+      "model": "NT",
+      "radius_um": 2,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 591.4379999999946,
+      "metrics_sha256": "9c2f35d572970e93ab5bfff4d1764560c1f3645d70a9f1caca9728b2c0ca80bc",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 3.7418328268904504e-05,
+      "independent_vs_native_relative": 2.036843700582779e-13
+    },
+    {
+      "name": "H_r4_A48_R22_Z18_LQ_V060",
+      "group": "radius",
+      "model": "LQ",
+      "radius_um": 4,
+      "voltage_V": 6,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 2670.4060000000027,
+      "metrics_sha256": "40fbd534c79daea9403820e2fb7be6b33a208cfc89c62b336c28c8e208d749cb",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r4_A48_R22_Z18_LQ_V080",
+      "group": "radius",
+      "model": "LQ",
+      "radius_um": 4,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 3082.0,
+      "metrics_sha256": "bbfb22f1e365c20fe7306baa271217246a1f8c65669bce9c3bda6e1e049dd187",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r4_A40_R20_Z16_LQ_V080",
+      "group": "radius_mesh",
+      "model": "LQ",
+      "radius_um": 4,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1260.3120000000054,
+      "metrics_sha256": "f4277c9153fc1fa63e0fe58bffcb244025b872c591b6acc3b571e2d052b68223",
+      "postprocess_recovery": false
+    },
+    {
+      "name": "H_r4_A48_R22_Z18_NT_V060",
+      "group": "radius",
+      "model": "NT",
+      "radius_um": 4,
+      "voltage_V": 6,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1463.4679999999935,
+      "metrics_sha256": "37aa7b4838c252c000c64702860ea17fb5d1e881115c717dc3dd7fc02e136085",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 1.1844319314185262e-05,
+      "independent_vs_native_relative": 2.543108162354916e-12
+    },
+    {
+      "name": "H_r4_A48_R22_Z18_NT_V080",
+      "group": "radius",
+      "model": "NT",
+      "radius_um": 4,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 1471.75,
+      "metrics_sha256": "608f3ef1793132feabaf73597b4e8eaf28c5fd58a888b64e9fb25b47e28ebf1b",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 2.2088663485069622e-05,
+      "independent_vs_native_relative": 2.9142567652811443e-12
+    },
+    {
+      "name": "H_r4_A40_R20_Z16_NT_V080",
+      "group": "radius_mesh",
+      "model": "NT",
+      "radius_um": 4,
+      "voltage_V": 8,
+      "domain": "Y_HALF",
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "accepted": true,
+      "seconds": 561.125,
+      "metrics_sha256": "0919c3d20296c0d20329019ae3798319f6acde9c0b894269f98af5a01d0eb3a1",
+      "postprocess_recovery": false,
+      "physical_exterior_gap_relative": 3.484037919738421e-05,
+      "independent_vs_native_relative": 1.8190677101858242e-12
+    }
+  ],
+  "audit_file": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\audits\\audits_20261022T172438.json",
+  "audit_sha256": "63bd35768f80ea8a6e5957e040e2c7fe63c1ae8348c937b6af55880d4272bd55",
+  "audit_failures": [
+    "LQ_r2_two_level_8V/L1_L2/ring_abs_n_relative_mean",
+    "LQ_r2_two_level_8V/L1_L2/ring_abs_p_relative_mean",
+    "LQ_r4_two_level_8V/L1_L2/ring_abs_n_relative_mean",
+    "LQ_r4_two_level_8V/L1_L2/ring_abs_p_relative_mean",
+    "NT_r2_two_level_8V/local_fields",
+    "NT_r2_two_level_8V/local_fields/comparisons/eta_p_density_perturbation",
+    "lq_full_half_equivalence",
+    "lq_full_half_equivalence/physical/ring_abs_n_relative_mean",
+    "lq_full_half_equivalence/physical/ring_abs_p_relative_mean",
+    "lq_r3_three_level_8V/L0_L1/ring_abs_n_relative_mean",
+    "lq_r3_three_level_8V/L0_L1/ring_abs_p_relative_mean",
+    "lq_r3_three_level_8V/L1_L2/ring_abs_n_relative_mean",
+    "lq_r3_three_level_8V/L1_L2/ring_abs_p_relative_mean"
+  ],
+  "estimate_comparison_file": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_reduced_20261022\\audits\\estimate_comparison_20261022T172441.json",
+  "estimate_comparison_sha256": "9ea80892e14c9a35cce0b49f8ede71605c9cc97094d80e0d1d5733eacb2f2e2a",
+  "estimate_flagged": [],
+  "paper_states": {
+    "LQ_r2_V6": {
+      "P_mW": 6.6623575936685295,
+      "theta_max_K": 14.780104904697396,
+      "Rth_K_per_W": 2218.4496549304777,
+      "I_n_mA": 1.1103731814034656,
+      "ring_theta_mean_K": 13.648186146651062,
+      "ring_E_mean_V_m": 339810.98053908243,
+      "ring_Q_mean_W_m3": 27329998898485.906,
+      "ring_Q_p95_W_m3": 57205764724790.07,
+      "E_p95_V_m": 343976.39903929253,
+      "ring_abs_n_relative_mean": 7.150253965448861e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 3162626.5990361627
+    },
+    "LQ_r2_V8": {
+      "P_mW": 11.844191277632474,
+      "theta_max_K": 26.275742052795295,
+      "Rth_K_per_W": 2218.4496549305586,
+      "I_n_mA": 1.4804975752048166,
+      "ring_theta_mean_K": 24.263442038491196,
+      "ring_E_mean_V_m": 453081.30738540104,
+      "ring_Q_mean_W_m3": 48586664708415.97,
+      "ring_Q_p95_W_m3": 101699137288518.19,
+      "E_p95_V_m": 458635.19871905586,
+      "ring_abs_n_relative_mean": 9.90209303272749e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 5622447.287174209
+    },
+    "LQ_r3_V2": {
+      "P_mW": 0.6841934541532521,
+      "theta_max_K": 1.6422182221508592,
+      "Rth_K_per_W": 2400.2249834197037,
+      "I_n_mA": 0.3420824658475477,
+      "ring_theta_mean_K": 1.3821697076737833,
+      "ring_E_mean_V_m": 111431.95077494344,
+      "ring_Q_mean_W_m3": 2981862771133.8374,
+      "ring_Q_p95_W_m3": 6165091669514.804,
+      "E_p95_V_m": 124305.45684695683,
+      "ring_abs_n_relative_mean": 1.4377668059599212e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 315146.4274571819
+    },
+    "LQ_r3_V4": {
+      "P_mW": 2.736773816613007,
+      "theta_max_K": 6.568872888603494,
+      "Rth_K_per_W": 2400.2249834197255,
+      "I_n_mA": 0.6841649316950179,
+      "ring_theta_mean_K": 5.5286788306951244,
+      "ring_E_mean_V_m": 222863.9015498869,
+      "ring_Q_mean_W_m3": 11927451084535.38,
+      "ring_Q_p95_W_m3": 24660366678059.363,
+      "E_p95_V_m": 248610.91369391372,
+      "ring_abs_n_relative_mean": 4.168577408391813e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 1260585.709828339
+    },
+    "LQ_r3_V6": {
+      "P_mW": 6.157741087379962,
+      "theta_max_K": 14.779963999357904,
+      "Rth_K_per_W": 2400.2249834194613,
+      "I_n_mA": 1.0262473975425064,
+      "ring_theta_mean_K": 12.439527369065047,
+      "ring_E_mean_V_m": 334295.8523248373,
+      "ring_Q_mean_W_m3": 26836764940202.242,
+      "ring_Q_p95_W_m3": 55485825025634.0,
+      "E_p95_V_m": 372916.3705408708,
+      "ring_abs_n_relative_mean": 6.951366886231255e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 2836317.8471140056
+    },
+    "LQ_r3_V8": {
+      "P_mW": 10.947095266452036,
+      "theta_max_K": 26.27549155441409,
+      "Rth_K_per_W": 2400.224983419734,
+      "I_n_mA": 1.3683298633899919,
+      "ring_theta_mean_K": 22.1147153227805,
+      "ring_E_mean_V_m": 445727.8030997733,
+      "ring_Q_mean_W_m3": 47709804338141.52,
+      "ring_Q_p95_W_m3": 98641466712237.64,
+      "E_p95_V_m": 497221.8273878278,
+      "ring_abs_n_relative_mean": 9.938552800512207e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 5042342.839310482
+    },
+    "LQ_r4_V6": {
+      "P_mW": 5.5103754444366,
+      "theta_max_K": 14.77981524469078,
+      "Rth_K_per_W": 2682.179353062561,
+      "I_n_mA": 0.9183229933625328,
+      "ring_theta_mean_K": 11.028604424237743,
+      "ring_E_mean_V_m": 321019.24473419896,
+      "ring_Q_mean_W_m3": 25065536423239.324,
+      "ring_Q_p95_W_m3": 52288916896393.38,
+      "E_p95_V_m": 393669.3326615835,
+      "ring_abs_n_relative_mean": 7.349001087904661e-17,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 2378119.5255302074
+    },
+    "LQ_r4_V8": {
+      "P_mW": 9.796223012331206,
+      "theta_max_K": 26.275227101672442,
+      "Rth_K_per_W": 2682.1793530626996,
+      "I_n_mA": 1.2244306578169606,
+      "ring_theta_mean_K": 19.606407865310945,
+      "ring_E_mean_V_m": 428025.65964561113,
+      "ring_Q_mean_W_m3": 44560953641315.35,
+      "ring_Q_p95_W_m3": 92958074482477.23,
+      "E_p95_V_m": 524892.4435487788,
+      "ring_abs_n_relative_mean": 1.0206081259992203e-16,
+      "minimum_mu_n_ratio": 1.0,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 4227768.045383284
+    },
+    "NT_r2_V6": {
+      "P_mW": 6.263495489170328,
+      "theta_max_K": 14.111853229093299,
+      "Rth_K_per_W": 2253.031594497496,
+      "I_n_mA": 1.0439561142608957,
+      "ring_theta_mean_K": 13.011589841528034,
+      "ring_E_mean_V_m": 370699.3705284861,
+      "ring_Q_mean_W_m3": 26385593091430.85,
+      "ring_Q_p95_W_m3": 56020057272640.625,
+      "E_p95_V_m": 416313.4144709979,
+      "ring_abs_n_relative_mean": 0.024788197111744296,
+      "minimum_mu_n_ratio": 0.9121659556106156,
+      "E_above_1e6_volume_fraction": 0.004869434221680207,
+      "stress_von_mises_max_Pa": 3918800.745918715
+    },
+    "NT_r2_V8": {
+      "P_mW": 10.663265989052272,
+      "theta_max_K": 24.27723219186089,
+      "Rth_K_per_W": 2276.716365960088,
+      "I_n_mA": 1.3330017279441058,
+      "ring_theta_mean_K": 22.360937104316292,
+      "ring_E_mean_V_m": 516591.1067360717,
+      "ring_Q_mean_W_m3": 45730725646767.04,
+      "ring_Q_p95_W_m3": 97674329507942.6,
+      "E_p95_V_m": 599390.4115437687,
+      "ring_abs_n_relative_mean": 0.04259215750407375,
+      "minimum_mu_n_ratio": 0.8558735288979011,
+      "E_above_1e6_volume_fraction": 0.01886085376388925,
+      "stress_von_mises_max_Pa": 6767946.363197507
+    },
+    "NT_r3_V0.5": {
+      "P_mW": 0.04274259751344789,
+      "theta_max_K": 0.1026037999571372,
+      "Rth_K_per_W": 2400.504553445903,
+      "I_n_mA": 0.08548167204538136,
+      "ring_theta_mean_K": 0.08635465644765684,
+      "ring_E_mean_V_m": 27886.905443140262,
+      "ring_Q_mean_W_m3": 186313759746.90207,
+      "ring_Q_p95_W_m3": 385256727873.01355,
+      "E_p95_V_m": 31129.523123494902,
+      "ring_abs_n_relative_mean": 0.00016589185110937066,
+      "minimum_mu_n_ratio": 0.9993163254249884,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 26040.52141061662
+    },
+    "NT_r3_V1": {
+      "P_mW": 0.17073710760247748,
+      "theta_max_K": 0.4099980733957409,
+      "Rth_K_per_W": 2401.341332022141,
+      "I_n_mA": 0.17073030559218302,
+      "ring_theta_mean_K": 0.3450480915896562,
+      "ring_E_mean_V_m": 55929.277861519826,
+      "ring_Q_mean_W_m3": 744624299839.628,
+      "ring_Q_p95_W_m3": 1540294975536.0454,
+      "E_p95_V_m": 62753.93459590798,
+      "ring_abs_n_relative_mean": 0.0006628518135355936,
+      "minimum_mu_n_ratio": 0.9972722725984074,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 104065.91493854982
+    },
+    "NT_r3_V2": {
+      "P_mW": 0.6792537187857125,
+      "theta_max_K": 1.6333758978289552,
+      "Rth_K_per_W": 2404.662429745555,
+      "I_n_mA": 0.339615132479787,
+      "ring_theta_mean_K": 1.374315394175336,
+      "ring_E_mean_V_m": 112912.76051899749,
+      "ring_Q_mean_W_m3": 2968478023159.4585,
+      "ring_Q_p95_W_m3": 6144595231072.196,
+      "E_p95_V_m": 128659.87772952531,
+      "ring_abs_n_relative_mean": 0.0026400608720973536,
+      "minimum_mu_n_ratio": 0.9891991166869399,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 414766.792222565
+    },
+    "NT_r3_V3": {
+      "P_mW": 1.5147601312843295,
+      "theta_max_K": 3.6507463459752785,
+      "Rth_K_per_W": 2410.115153268456,
+      "I_n_mA": 0.5049068639524406,
+      "ring_theta_mean_K": 3.070573782543345,
+      "ring_E_mean_V_m": 171567.81160823072,
+      "ring_Q_mean_W_m3": 6642073142954.448,
+      "ring_Q_p95_W_m3": 13800709045657.463,
+      "E_p95_V_m": 198894.0063947943,
+      "ring_abs_n_relative_mean": 0.005898380856950388,
+      "minimum_mu_n_ratio": 0.9760988556229138,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 928043.3924427185
+    },
+    "NT_r3_V4": {
+      "P_mW": 2.660206129741477,
+      "theta_max_K": 6.431192752595962,
+      "Rth_K_per_W": 2417.554294268525,
+      "I_n_mA": 0.6650415315972604,
+      "ring_theta_mean_K": 5.406392446854072,
+      "ring_E_mean_V_m": 232263.8527125047,
+      "ring_Q_mean_W_m3": 11718089344782.357,
+      "ring_Q_p95_W_m3": 24405272782813.09,
+      "E_p95_V_m": 273567.7356489433,
+      "ring_abs_n_relative_mean": 0.0103849310667976,
+      "minimum_mu_n_ratio": 0.9584656790238004,
+      "E_above_1e6_volume_fraction": 0.0,
+      "stress_von_mises_max_Pa": 1637172.2675406546
+    },
+    "NT_r3_V5": {
+      "P_mW": 4.093522521078063,
+      "theta_max_K": 9.934173138940537,
+      "Rth_K_per_W": 2426.8030987464294,
+      "I_n_mA": 0.8187029495597822,
+      "ring_theta_mean_K": 8.345867520962205,
+      "ring_E_mean_V_m": 295251.41939747095,
+      "ring_Q_mean_W_m3": 18133877542186.965,
+      "ring_Q_p95_W_m3": 37935272180508.59,
+      "E_p95_V_m": 352049.4766810879,
+      "ring_abs_n_relative_mean": 0.016030569070603292,
+      "minimum_mu_n_ratio": 0.9369223124472399,
+      "E_above_1e6_volume_fraction": 0.0003011490522214653,
+      "stress_von_mises_max_Pa": 2533176.0156535087
+    },
+    "NT_r3_V6": {
+      "P_mW": 5.789087529681786,
+      "theta_max_K": 14.111808721908858,
+      "Rth_K_per_W": 2437.656824077171,
+      "I_n_mA": 0.9648601789795969,
+      "ring_theta_mean_K": 11.84670357979224,
+      "ring_E_mean_V_m": 360729.467748222,
+      "ring_Q_mean_W_m3": 25814544037161.863,
+      "ring_Q_p95_W_m3": 54237672287094.266,
+      "E_p95_V_m": 434438.0967140721,
+      "ring_abs_n_relative_mean": 0.022753949884124797,
+      "minimum_mu_n_ratio": 0.9121662141041854,
+      "E_above_1e6_volume_fraction": 0.004257578398862102,
+      "stress_von_mises_max_Pa": 3605187.886934902
+    },
+    "NT_r3_V7": {
+      "P_mW": 7.719229691923411,
+      "theta_max_K": 18.911302975789,
+      "Rth_K_per_W": 2449.8950971203503,
+      "I_n_mA": 1.1027781495024616,
+      "ring_theta_mean_K": 15.862403128841487,
+      "ring_E_mean_V_m": 428884.9903273727,
+      "ring_Q_mean_W_m3": 34676297880250.32,
+      "ring_Q_p95_W_m3": 73188068395253.47,
+      "E_p95_V_m": 524566.5376709361,
+      "ring_abs_n_relative_mean": 0.030465704634201327,
+      "minimum_mu_n_ratio": 0.884917299939106,
+      "E_above_1e6_volume_fraction": 0.010216345830956337,
+      "stress_von_mises_max_Pa": 4840922.362604429
+    },
+    "NT_r3_V8": {
+      "P_mW": 9.855609452566831,
+      "theta_max_K": 24.277256892703235,
+      "Rth_K_per_W": 2463.29331631342,
+      "I_n_mA": 1.23200523665715,
+      "ring_theta_mean_K": 20.344350318701274,
+      "ring_E_mean_V_m": 499918.056949424,
+      "ring_Q_mean_W_m3": 44629765494556.1,
+      "ring_Q_p95_W_m3": 94577062881987.05,
+      "E_p95_V_m": 615693.9479380787,
+      "ring_abs_n_relative_mean": 0.039072583490889025,
+      "minimum_mu_n_ratio": 0.855873398510735,
+      "E_above_1e6_volume_fraction": 0.017001530331095614,
+      "stress_von_mises_max_Pa": 6227186.918993016
+    },
+    "NT_r4_V6": {
+      "P_mW": 5.180477054195403,
+      "theta_max_K": 14.11150608904859,
+      "Rth_K_per_W": 2723.978108853972,
+      "I_n_mA": 0.8633901968072877,
+      "ring_theta_mean_K": 10.492239440620905,
+      "ring_E_mean_V_m": 342500.1753134005,
+      "ring_Q_mean_W_m3": 24011424917644.21,
+      "ring_Q_p95_W_m3": 50974087039119.484,
+      "E_p95_V_m": 443223.2379707882,
+      "ring_abs_n_relative_mean": 0.020355787660770782,
+      "minimum_mu_n_ratio": 0.912167971770479,
+      "E_above_1e6_volume_fraction": 0.0038120054688639033,
+      "stress_von_mises_max_Pa": 3176447.1509523164
+    },
+    "NT_r4_V8": {
+      "P_mW": 8.819480511849756,
+      "theta_max_K": 24.276517908021503,
+      "Rth_K_per_W": 2752.601797283167,
+      "I_n_mA": 1.1024404735990927,
+      "ring_theta_mean_K": 18.005839532246547,
+      "ring_E_mean_V_m": 471942.14175602,
+      "ring_Q_mean_W_m3": 41396759629824.12,
+      "ring_Q_p95_W_m3": 88741024044803.88,
+      "E_p95_V_m": 619611.4766391132,
+      "ring_abs_n_relative_mean": 0.0349339483072001,
+      "minimum_mu_n_ratio": 0.8558772993670519,
+      "E_above_1e6_volume_fraction": 0.014833813249842474,
+      "stress_von_mises_max_Pa": 5486657.25800752
+    }
+  },
+  "derived": {
+    "nt_vs_lq_r3": {
+      "2": {
+        "P_mW": -0.007219793375037309,
+        "theta_max_K": -0.005384378399067469,
+        "Rth_K_per_W": 0.0018487626603773677,
+        "I_n_mA": -0.007212685869904645
+      },
+      "4": {
+        "P_mW": -0.027977352898782448,
+        "theta_max_K": -0.02095947635802131,
+        "Rth_K_per_W": 0.0072198693741241105,
+        "I_n_mA": -0.02795144739497135
+      },
+      "6": {
+        "P_mW": -0.059868310873563035,
+        "theta_max_K": -0.04520682712610613,
+        "Rth_K_per_W": 0.015595138337566539,
+        "I_n_mA": -0.05981717343197146
+      },
+      "8": {
+        "P_mW": -0.09970551889048795,
+        "theta_max_K": -0.07604937314199034,
+        "Rth_K_per_W": 0.026276008844732912,
+        "I_n_mA": -0.09962848168430838
+      }
+    },
+    "radius_2_to_4um": {
+      "LQ_6V": {
+        "P_mW_2to4": -0.17290908406458072,
+        "theta_max_K_2to4": -1.959796689421367e-05,
+        "Rth_K_per_W_2to4": 0.20903323052720602,
+        "E_p95_V_m_2to4": 0.14446611384118402,
+        "ring_Q_mean_W_m3_2to4": -0.0828562958841551,
+        "ring_E_mean_V_m_2to4": -0.05530055495873587,
+        "ring_theta_mean_K_2to4": -0.19193625396559388,
+        "identity_check": -1.959796689421367e-05
+      },
+      "LQ_8V": {
+        "P_mW_2to4": -0.1729090840645926,
+        "theta_max_K_2to4": -1.9597966893436514e-05,
+        "Rth_K_per_W_2to4": 0.20903323052722445,
+        "E_p95_V_m_2to4": 0.1444661138411878,
+        "ring_Q_mean_W_m3_2to4": -0.08285629588407006,
+        "ring_E_mean_V_m_2to4": -0.055300554958620296,
+        "ring_theta_mean_K_2to4": -0.19193625396563252,
+        "identity_check": -1.959796689332549e-05
+      },
+      "NT_6V": {
+        "P_mW_2to4": -0.17290958967679937,
+        "theta_max_K_2to4": -2.459918191288768e-05,
+        "Rth_K_per_W_2to4": 0.20902792286919247,
+        "E_p95_V_m_2to4": 0.06463837715626863,
+        "ring_Q_mean_W_m3_2to4": -0.08997971603517563,
+        "ring_E_mean_V_m_2to4": -0.07607025384176813,
+        "ring_theta_mean_K_2to4": -0.19362356419092797,
+        "identity_check": -2.4599181912665635e-05
+      },
+      "NT_8V": {
+        "P_mW_2to4": -0.1729100145392123,
+        "theta_max_K_2to4": -2.9421963498199588e-05,
+        "Rth_K_per_W_2to4": 0.20902271290275487,
+        "E_p95_V_m_2to4": 0.03373605033698124,
+        "ring_Q_mean_W_m3_2to4": -0.09477142458703391,
+        "ring_E_mean_V_m_2to4": -0.08642999153073494,
+        "ring_theta_mean_K_2to4": -0.19476364303305915,
+        "identity_check": -2.942196349831061e-05
+      }
+    },
+    "lq_theta_quadratic_deviation": {
+      "2": 0.0,
+      "4": 8.659739592076221e-15,
+      "6": 1.1546319456101628e-14,
+      "8": 1.2878587085651816e-14
+    },
+    "kohlrausch": {
+      "sigma0_S_per_m": 197.06772598199998,
+      "k_W_per_mK": 60.0,
+      "T0_K": 300.0,
+      "beta": 2,
+      "note": "Ideal relation omits diffusion current, space charge, piezo/pyro coupling and D(T)",
+      "states": {
+        "LQ_r2_V6": {
+          "theta_max_K": 14.780104904697396,
+          "ideal_K": 14.780079448650001,
+          "relative": 1.7223214179296065e-06
+        },
+        "LQ_r2_V8": {
+          "theta_max_K": 26.275742052795295,
+          "ideal_K": 26.2756967976,
+          "relative": 1.7223214152650712e-06
+        },
+        "LQ_r3_V2": {
+          "theta_max_K": 1.6422182221508592,
+          "ideal_K": 1.64223104985,
+          "relative": -7.811141521041343e-06
+        },
+        "LQ_r3_V4": {
+          "theta_max_K": 6.568872888603494,
+          "ideal_K": 6.5689241994,
+          "relative": -7.811141512381603e-06
+        },
+        "LQ_r3_V6": {
+          "theta_max_K": 14.779963999357904,
+          "ideal_K": 14.780079448650001,
+          "relative": -7.811141509717068e-06
+        },
+        "LQ_r3_V8": {
+          "theta_max_K": 26.27549155441409,
+          "ideal_K": 26.2756967976,
+          "relative": -7.811141508051733e-06
+        },
+        "LQ_r4_V6": {
+          "theta_max_K": 14.77981524469078,
+          "ideal_K": 14.780079448650001,
+          "relative": -1.7875679230172636e-05
+        },
+        "LQ_r4_V8": {
+          "theta_max_K": 26.275227101672442,
+          "ideal_K": 26.2756967976,
+          "relative": -1.7875679232171038e-05
+        },
+        "NT_r2_V6": {
+          "theta_max_K": 14.111853229093299,
+          "ideal_K": 14.106382912803085,
+          "relative": 0.000387790146065603
+        },
+        "NT_r2_V8": {
+          "theta_max_K": 24.27723219186089,
+          "ideal_K": 24.26084686552763,
+          "relative": 0.0006753814664459679
+        },
+        "NT_r3_V0.5": {
+          "theta_max_K": 0.1026037999571372,
+          "ideal_K": 0.10260434444329114,
+          "relative": -5.306657889558863e-06
+        },
+        "NT_r3_V1": {
+          "theta_max_K": 0.4099980733957409,
+          "ideal_K": 0.409997181575128,
+          "relative": 2.1751871792652366e-06
+        },
+        "NT_r3_V2": {
+          "theta_max_K": 1.6333758978289552,
+          "ideal_K": 1.633322437811291,
+          "relative": 3.273084139832072e-05
+        },
+        "NT_r3_V3": {
+          "theta_max_K": 3.6507463459752785,
+          "ideal_K": 3.650421118220626,
+          "relative": 8.909321530858882e-05
+        },
+        "NT_r3_V4": {
+          "theta_max_K": 6.431192752595962,
+          "ideal_K": 6.430118126909212,
+          "relative": 0.00016712378614824885
+        },
+        "NT_r3_V5": {
+          "theta_max_K": 9.934173138940537,
+          "ideal_K": 9.9315315198244,
+          "relative": 0.0002659830571813959
+        },
+        "NT_r3_V6": {
+          "theta_max_K": 14.111808721908858,
+          "ideal_K": 14.106382912803085,
+          "relative": 0.0003846350364449247
+        },
+        "NT_r3_V7": {
+          "theta_max_K": 18.911302975789,
+          "ideal_K": 18.901438670732198,
+          "relative": 0.0005218811768057385
+        },
+        "NT_r3_V8": {
+          "theta_max_K": 24.277256892703235,
+          "ideal_K": 24.26084686552763,
+          "relative": 0.000676399602477229
+        },
+        "NT_r4_V6": {
+          "theta_max_K": 14.11150608904859,
+          "ideal_K": 14.106382912803085,
+          "relative": 0.00036318142483260374
+        },
+        "NT_r4_V8": {
+          "theta_max_K": 24.276517908021503,
+          "ideal_K": 24.26084686552763,
+          "relative": 0.0006459396318989619
+        }
+      },
+      "max_abs_relative_LQ": 1.7875679232171038e-05,
+      "max_abs_relative_NT": 0.000676399602477229
+    }
+  },
+  "thresholds_changed": false,
+  "physics_changed": false,
+  "fail_records_retained": true,
+  "limitations": [
+    "Observable classification from r=3 6/8 V endpoints; intermediate voltages inherit it",
+    "r=2/4 SUPG sensitivity not measured; inherited from r=3",
+    "Hole quantities excluded from paper claims; LQ ring carrier perturbations are numerical zeros",
+    "J.E current-work heat source (R=0) is not a thermodynamic closure; no r=0 or N0 cases",
+    "NT V005 post-processing completed after an encoding crash without re-solving (postprocess_recovery.json)"
+  ]
+}

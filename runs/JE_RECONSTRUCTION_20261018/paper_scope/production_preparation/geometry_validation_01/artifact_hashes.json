@@ -1,0 +1,20 @@
+{
+  "protocol.json": "21c9d812116cbd4dd719abadae62b09d3ee56db4e739f31906649e82e81a0d78",
+  "report.json": "7aad6f94904f02ffecf9f2f8e8f45bcc669cce098af9d9a96908ff48d56cc761",
+  "r2_A32_R14_Z14\\H1.mesh": "4bb4ba1bdc9aab7bc99fae3613859be698c41e0acee3f0d0a1180dcc2dc3c39e",
+  "r2_A32_R14_Z14\\manifest.json": "f75133e4b5a48d10d9d9a51797233d1972934ef7fe4811857ee1a2afab190520",
+  "r3_A32_R14_Z14\\H1.mesh": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+  "r3_A32_R14_Z14\\manifest.json": "b85893608d17d76d37a1941dff2abc4ae6815a29bdb73e0b0f8541149d5f196a",
+  "r3_A32_R14_Z14_legacy_reference\\H1.mesh": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+  "r3_A32_R14_Z14_legacy_reference\\manifest.json": "64733ee07f4e5b9a37753dd47e6cf8e1e62aac3932cc8fa82c6f8bc6f3c2cecf",
+  "r3_A40_R20_Z16\\H1.mesh": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+  "r3_A40_R20_Z16\\manifest.json": "5f0c468cbd4eadbcf2616b03bfd7b3c5e881de70e466fde06db37db51a5d8a95",
+  "r3_A40_R20_Z16_legacy_reference\\H1.mesh": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+  "r3_A40_R20_Z16_legacy_reference\\manifest.json": "88928f1152256ab0b07d4b250ddd89f3724b300ae6299b78f37041506f1de480",
+  "r3_A48_R22_Z18\\H1.mesh": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+  "r3_A48_R22_Z18\\manifest.json": "c168b891c043f48aee6f851737ae029b5f1a070ea6517f360ca291c1d1723768",
+  "r3_A48_R22_Z18_legacy_reference\\H1.mesh": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+  "r3_A48_R22_Z18_legacy_reference\\manifest.json": "46f24f5ef2a4e1c56cd975af6e192e80bc496ce66ceadefe426fc4720faabc13",
+  "r4_A32_R14_Z14\\H1.mesh": "41fb33fb11de657e2483451e7534c88732f66377ea44f658f08f36d237d10edb",
+  "r4_A32_R14_Z14\\manifest.json": "bcb08e8387968b75d7b09af9012398254aba496d46badd20dbe4e31d4296c1d4"
+}

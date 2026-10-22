@@ -1,0 +1,17 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_20261021\\meshes\\full\\r3_A40_R20_Z16\\H1.mesh",
+  "source_mesh_sha256": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_production_20261021\\meshes\\half\\r3_A40_R20_Z16\\H1_Y_HALF.mesh",
+  "mesh_sha256": "5b5c0e96d38ee692e6c965bb916f9122975e33fac0e9f5f905f1228244f3c46f",
+  "node_map_sha256": "db0ab174271ae154621924927e44a1eb9444db9bad1c9eabb96dd30a76889732",
+  "nodes": 28833,
+  "elements": 6400,
+  "minimum_sampled_jacobian": 1.5773622650250889e-24,
+  "reflection_audit": {
+    "matched_nodes": 55600,
+    "matched_elements": 12800,
+    "maximum_coordinate_error_m": 1.1858461261560205e-20
+  }
+}

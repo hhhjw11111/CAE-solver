@@ -1,0 +1,53 @@
+f1_nodes=35392, elements=8064
+lq_stage=1
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  8.4699E-02,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  1.7258E-16,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  6.3914E-17,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  0.0000E+00, residual=  5.6635E-17,
+lq_stage=2
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.3610E-04,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.7389E-16,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  7.5241E-17,
+lq_stage=3
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.9812E-03,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.6865E-15,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1529E-15,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  9.2329E-16,
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 8.0000000000000000E+000
+hole_radius_m= 3.0000000000000001E-006
+ring_width_m= 4.9999999999999998E-007
+minimum_jacobian= 2.5739165194581568E-024
+total_volume_m3= 3.7172575357024360E-016
+maximum_stage_balance= 1.5891622866415166E-014
+maximum_accepted_residual= 9.2328854907750796E-016
+maximum_accepted_update= 5.3577577480415413E-013
+joule_W= 1.0947182414959152E-002
+total_current_work_W= 1.0947182414959152E-002
+diffusion_work_W=-8.2601964311592195E-019
+absolute_diffusion_work_W= 1.0603353215313390E-018
+terminal_power_W= 1.0947173190902344E-002
+heat_out_W= 1.0947173152260566E-002
+heat_balance_relative= 8.4612626651008740E-007
+electron_balance_relative= 4.7774162696681165E-012
+hole_balance_diagnostic= 4.7761205916291333E-012
+joule_quadrature_4_5_relative= 1.1302841650762938E-009
+electron_right_A= 1.3682645040203781E-003
+hole_right_A= 7.7961412458071560E-057
+ring_volume_m3= 1.0210144544087083E-017
+ring_Q_mean_W_m3= 4.7705119702190266E+013
+ring_Q_p95_W_m3= 9.8831810704148812E+013
+ring_E_mean_V_m= 4.4572497120176442E+005
+ring_abs_n_relative_mean= 7.3313548186688816E-017
+ring_abs_p_relative_mean= 2.9394155651969541E-015
+ring_theta_mean_K= 2.2114929660581538E+001
+ring_displacement_mean_m= 9.9023078602241145E-010
+E_p95_V_m= 4.9746033807652548E+005
+E_above_1e6_volume_fraction= 0.0000000000000000E+000
+theta_max_K= 2.6275308290250848E+001
+maximum_abs_n_relative= 8.8817841970012523E-015
+maximum_abs_p_relative= 1.0658141036401503E-014
+displacement_max_m= 1.9767818522276355E-009
+minimum_mu_n_ratio= 1.0000000000000000E+000
+stress_von_mises_max_Pa= 5.1212410484751025E+006
+case_acceptance=PASS_NOT_MESH_ACCEPTANCE

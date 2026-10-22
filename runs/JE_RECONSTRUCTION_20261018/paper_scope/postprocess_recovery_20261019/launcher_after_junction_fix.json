@@ -1,0 +1,10 @@
+{
+  "scope": "Outer launcher only; unchanged native and frozen scientific runner",
+  "utf8_propagated": true,
+  "junction_resolved_to_physical_script_path": true,
+  "wrapper_sha256": "bede287c7ed4898d0a1cf59756831606be675d8d8a858764952e16ba46bc017a",
+  "original_preflight_positive": "No native active before angular launch",
+  "active_batch": "angular",
+  "prior_native_not_rerun": true,
+  "freeze_identity_check_passed_before_new_native": true
+}

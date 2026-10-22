@@ -1,0 +1,43 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.3291E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.2555E-16,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.0607E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.4945E-16,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.0283E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3924E-16,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  3.2014E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.0620E-16,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0717E-07,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.8445E-16,
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.3147E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.8114E-16,
+newton_iteration=6, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.1086E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.5600E-16,
+newton_iteration=7, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  5.1082E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.8059E-16,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  3.7672E-01, raw_eta_p=  4.7331E+02, component_slope=  2.0942E-13, alpha=  1.2654E-02, log_scale=  1.0000E+00, fallback_slope= -3.8864E-16, raw_max=  4.7331E+02,
+newton_iteration=8, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.6418E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.6258E-16,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  3.1832E-01, raw_eta_p=  9.9054E+02, component_slope=  5.1514E-13, alpha=  1.2747E-02, log_scale=  1.0000E+00, fallback_slope= -7.5129E-17, raw_max=  9.9054E+02,
+newton_iteration=9, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.5564E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.4947E-16,
+newton_iteration=10, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.5560E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3934E-16,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  3.1085E-01, raw_eta_p=  3.8991E+02, component_slope=  1.8718E-13, alpha=  1.1490E-02, log_scale=  1.0000E+00, fallback_slope= -3.4685E-17, raw_max=  3.8991E+02,
+newton_iteration=11, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.5093E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.7615E-16,
+newton_iteration=12, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.5093E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3660E-16,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  2.9927E-01, raw_eta_p=  6.1395E+02, component_slope=  1.4574E-15, alpha=  1.1814E-02, log_scale=  1.0000E+00, fallback_slope= -2.1056E-17, raw_max=  6.1395E+02,
+newton_iteration=13, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.4836E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.3922E-16,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  2.9650E-01, raw_eta_p=  2.5905E+02, component_slope=  6.8086E-14, alpha=  1.0567E-02, log_scale=  1.0000E+00, fallback_slope= -1.4949E-17, raw_max=  2.5905E+02,
+newton_iteration=14, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.4645E-08,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.9380E-16,
+newton_iteration=15, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  4.4645E-08,
+status_code=80
+status_message=Continuation start state is not converged: Newton residual stagnation: reject this load attempt and cut back.
+forrtl: warning (528): IEEE_UNDERFLOW is signaling
+1

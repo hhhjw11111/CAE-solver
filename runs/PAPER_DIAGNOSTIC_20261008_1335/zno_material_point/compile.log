@@ -1,0 +1,12 @@
+
+C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\runs\PAPER_DIAGNOSTIC_20261008_1335\zno_material_point>call "C:\Program Files (x86)\Intel\oneAPI\setvars.bat" intel64 vs2022   1>nul  && ifx /nologo /O2 /standard-semantics /warn:all /stand:f18 /I"C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\mod" /exe:zno_point.exe zno_point.f90 "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\kinds_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\constants_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\status_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\model_types_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\zno_candidate_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\transport_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\recombination_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\thermo_piezo_m.obj" "C:\Users\Administrator\Desktop\codex-workspaces\Console3\solver_v2\build\HV_SUPG_20261008_R21\material_point_m.obj" 
+zno_point.f90(67): warning #8586: Implicit type is given to allow out-of-order declaration. Non-standard extension.   [INPUT_SIZE]
+    real(dp) :: scales(INPUT_SIZE)
+-----------------------^
+zno_point.f90(67): error #7915: A specification expression object must be a dummy argument, a COMMON block object, or an object accessible through host or use association - may be used in multiple contained procedures.   [INPUT_SIZE]
+    real(dp) :: scales(INPUT_SIZE)
+-----------------------^
+zno_point.f90(67): error #6404: This name does not have a type, and must have an explicit type.   [INPUT_SIZE]
+    real(dp) :: scales(INPUT_SIZE)
+-----------------------^
+compilation aborted for zno_point.f90 (code 1)

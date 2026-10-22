@@ -1,0 +1,11 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  7.9688E-01, joule_factor=  1.0000E+00, residual=  7.2243E-16,
+temperature_newton_iteration=0,voltage_factor=  8.24926173E-01,theta_control=  2.99165515E+01,residual=  2.09629010E-03,
+temperature_newton_iteration=1,voltage_factor=  8.25074741E-01,theta_control=  2.99165515E+01,residual=  2.09382803E-03,
+temperature_newton_iteration=2,voltage_factor=  8.25111139E-01,theta_control=  2.99165515E+01,residual=  2.09194379E-03,
+temperature_newton_iteration=3,voltage_factor=  8.25112988E-01,theta_control=  2.99165515E+01,residual=  2.09188894E-03,
+temperature_newton_iteration=4,voltage_factor=  8.25137206E-01,theta_control=  2.99165515E+01,residual=  2.09125499E-03,
+inverse_cutback_K=  1.00000000E+00,reason=Temperature-control corrector failed; caller must roll back.
+temperature_newton_iteration=0,voltage_factor=  8.11021873E-01,theta_control=  2.89165515E+01,residual=  1.12272865E-03,

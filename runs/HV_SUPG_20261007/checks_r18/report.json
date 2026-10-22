@@ -1,0 +1,42 @@
+[
+  {
+    "test": "BLK",
+    "split_enabled": false,
+    "exit_code": 0,
+    "passed": true,
+    "seconds": 0.8910000000000764,
+    "sha256": "fda6dce3f626b60d2286a62c0cebcffafa436b4ce7c2abb9ef9be30cc73ab21e",
+    "split_accepts": 0,
+    "fallbacks": 0
+  },
+  {
+    "test": "G07",
+    "split_enabled": true,
+    "exit_code": 0,
+    "passed": true,
+    "seconds": 0.5619999999998981,
+    "sha256": "1ad3ac13f2a24aa9f4040e7707b6745df7a9b774f040b6953eea1350ba462263",
+    "split_accepts": 2,
+    "fallbacks": 12
+  },
+  {
+    "test": "TCTRL",
+    "split_enabled": true,
+    "exit_code": 0,
+    "passed": true,
+    "seconds": 2.1089999999999236,
+    "sha256": "1c38ba278a15b1780aa58f906ded052dfdf0ca73bb3413b811c882f7fb898bed",
+    "split_accepts": 20,
+    "fallbacks": 65
+  },
+  {
+    "test": "SUPG",
+    "split_enabled": true,
+    "exit_code": 0,
+    "passed": true,
+    "seconds": 61.61000000000013,
+    "sha256": "a99ff025c1e78f34b40a233d4f54296cd650ec668e17892302e588aff33932aa",
+    "split_accepts": 0,
+    "fallbacks": 0
+  }
+]

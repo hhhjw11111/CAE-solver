@@ -1,0 +1,276 @@
+{
+  "status": "ARTIFACT_QA_COMPLETE_NOT_PHYSICAL_ACCEPTANCE",
+  "visual_review": "8 PNG figures viewed after generation; revised power legend avoids overlap; no clipped labels observed; unsmoothed element traces retained.",
+  "figures": [
+    {
+      "stem": "fig01_geometry_boundary",
+      "png_shape": [
+        1254,
+        1829,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 618
+    },
+    {
+      "stem": "fig02_analytic_errors",
+      "png_shape": [
+        829,
+        1829,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 358
+    },
+    {
+      "stem": "fig03_peclet_regions",
+      "png_shape": [
+        854,
+        1829,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 326
+    },
+    {
+      "stem": "fig03b_spatial_failure",
+      "png_shape": [
+        804,
+        1629,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 189
+    },
+    {
+      "stem": "fig04_midplane_fields",
+      "png_shape": [
+        1166,
+        1828,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 564
+    },
+    {
+      "stem": "fig06_thickness_profiles",
+      "png_shape": [
+        1354,
+        1829,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 435
+    },
+    {
+      "stem": "fig07_mechanics",
+      "png_shape": [
+        829,
+        1829,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 371
+    },
+    {
+      "stem": "fig08_power_and_reference",
+      "png_shape": [
+        829,
+        1829,
+        4
+      ],
+      "svg_has_editable_text": true,
+      "pdf_exists": true,
+      "pdf_extractable_text_characters": 294
+    }
+  ],
+  "source_csvs": [
+    {
+      "path": "data/A1_error_source.csv",
+      "rows": 5
+    },
+    {
+      "path": "data/A2_error_source.csv",
+      "rows": 3
+    },
+    {
+      "path": "data/case_registry.csv",
+      "rows": 10
+    },
+    {
+      "path": "data/FAST_H0_LQ_L0_element_peclet.csv",
+      "rows": 1960
+    },
+    {
+      "path": "data/FAST_H0_N0_L0_element_peclet.csv",
+      "rows": 1960
+    },
+    {
+      "path": "data/FAST_H0_NT_L0_element_peclet.csv",
+      "rows": 1960
+    },
+    {
+      "path": "data/FAST_H0_NT_L0_midplane.csv",
+      "rows": 9604
+    },
+    {
+      "path": "data/FAST_H0_NT_L0_midplane_triangles.csv",
+      "rows": 14112
+    },
+    {
+      "path": "data/FAST_H1_LQ_L0_element_peclet.csv",
+      "rows": 2240
+    },
+    {
+      "path": "data/FAST_H1_N0_L0_element_peclet.csv",
+      "rows": 2240
+    },
+    {
+      "path": "data/FAST_H1_NT_L0_element_peclet.csv",
+      "rows": 2240
+    },
+    {
+      "path": "data/FAST_H1_NT_L0_midplane.csv",
+      "rows": 10976
+    },
+    {
+      "path": "data/FAST_H1_NT_L0_midplane_triangles.csv",
+      "rows": 16128
+    },
+    {
+      "path": "data/metrics_summary.csv",
+      "rows": 10
+    },
+    {
+      "path": "data/peclet_regions.csv",
+      "rows": 50
+    },
+    {
+      "path": "data/profiles/FAST_H0_LQ_L0_ring_stress.csv",
+      "rows": 241
+    },
+    {
+      "path": "data/profiles/FAST_H0_LQ_L0_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/FAST_H0_N0_L0_ring_stress.csv",
+      "rows": 241
+    },
+    {
+      "path": "data/profiles/FAST_H0_N0_L0_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/FAST_H0_NT_L0_ring_stress.csv",
+      "rows": 241
+    },
+    {
+      "path": "data/profiles/FAST_H0_NT_L0_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/FAST_H1_LQ_L0_ring_stress.csv",
+      "rows": 241
+    },
+    {
+      "path": "data/profiles/FAST_H1_LQ_L0_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/FAST_H1_N0_L0_ring_stress.csv",
+      "rows": 241
+    },
+    {
+      "path": "data/profiles/FAST_H1_N0_L0_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/FAST_H1_NT_L0_ring_stress.csv",
+      "rows": 241
+    },
+    {
+      "path": "data/profiles/FAST_H1_NT_L0_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/r23_log_half_L0_V030_ring_stress.csv",
+      "rows": 121
+    },
+    {
+      "path": "data/profiles/r23_log_half_L0_V030_thickness.csv",
+      "rows": 415
+    },
+    {
+      "path": "data/profiles/r23_log_half_L1_V030_ring_stress.csv",
+      "rows": 121
+    },
+    {
+      "path": "data/profiles/r23_log_half_L1_V030_thickness.csv",
+      "rows": 421
+    },
+    {
+      "path": "data/profiles/r23_log_half_L2_V030_ring_stress.csv",
+      "rows": 121
+    },
+    {
+      "path": "data/profiles/r23_log_half_L2_V030_thickness.csv",
+      "rows": 425
+    },
+    {
+      "path": "data/profiles/r25_A64_V030_ring_stress.csv",
+      "rows": 121
+    },
+    {
+      "path": "data/profiles/r25_A64_V030_thickness.csv",
+      "rows": 425
+    },
+    {
+      "path": "data/r23_log_half_L0_V030_element_peclet.csv",
+      "rows": 1120
+    },
+    {
+      "path": "data/r23_log_half_L1_V030_element_peclet.csv",
+      "rows": 2304
+    },
+    {
+      "path": "data/r23_log_half_L2_V030_element_peclet.csv",
+      "rows": 4032
+    },
+    {
+      "path": "data/r25_A64_V030_element_peclet.csv",
+      "rows": 8064
+    },
+    {
+      "path": "data/spatial_failure_source.csv",
+      "rows": 7
+    }
+  ],
+  "inverse_mapping_max_residual_m": 2.5411492673856253e-21,
+  "executed_commands": [
+    {
+      "command": "python -B solver_v2/paper_sprint/20261008_2110/scripts/postprocess_3v.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B solver_v2/paper_sprint/20261008_2110/scripts/supplemental_3v.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B solver_v2/paper_sprint/20261008_2110/scripts/refine_pe_regions.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B solver_v2/paper_sprint/20261008_2110/scripts/finalize_postprocess.py",
+      "exit_code": 0
+    }
+  ],
+  "initial_script_issue": "Initial postprocessor N0/LQ scalar thermal-voltage broadcasting error fixed; subsequent full pass completed. This was not a PDE case failure."
+}

@@ -1,0 +1,16 @@
+verification_id=G04_global_assembly
+global_current_work=T
+global_node_count=32
+global_equation_count=224
+global_csr_nnz=36064
+mechanical_row_tangent_error= 3.4539298751166368E-012
+potential_row_tangent_error= 1.4283655191022155E-011
+electron_row_tangent_error= 1.3856254112094145E-011
+hole_row_tangent_error= 1.4481647545938050E-011
+thermal_row_tangent_error= 1.6628403095904582E-010
+csr_structure_error= 0.0000000000000000E+000
+dirichlet_row_error= 0.0000000000000000E+000
+shared_node_scatter_error= 0.0000000000000000E+000
+global_electron_balance= 2.0389123710719652E-017
+global_hole_balance= 2.0590050187730432E-016
+verification_result=PASS

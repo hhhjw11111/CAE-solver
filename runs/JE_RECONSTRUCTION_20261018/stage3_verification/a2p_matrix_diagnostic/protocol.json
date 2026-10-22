@@ -1,0 +1,11 @@
+{
+  "id":"A2PMAT_READONLY_MATRIX_DIAGNOSTIC_V1",
+  "scope":"Mechanical e15=0 fixture; actual projected Newton Jacobian with production Dirichlet rows and original scaling; no production acceptance or solver change",
+  "cases":"L0/L1/L2 times no phi gauge (gauge0), original lower-face gauge (gauge1), preregistered midplane gauge (gauge2)",
+  "native_solver":"Original PARDISO and settings for gauge1/2 only; gauge0 is deliberately singular and never passed to PARDISO",
+  "binary_format":{"endianness":"Windows little endian","integer":"int32","real":"float64","header":["version=1","n","stored_nnz","nodes","gauge_node_1based_or0","gauge_dof_1based_or0","level","gauge_case","native_perturbed_pivots_or_minus1_if_skipped","iterative_refinements","native_error"],"arrays":["ia int32 n+1 (1based)","ja int32 stored_nnz (1based)","raw_BC_Jacobian float64 stored_nnz","scaled_Jacobian float64 stored_nnz","raw_rhs float64 n","scaled_rhs float64 n","variable_column_scales float64 n","row_scales float64 n","native_scaled_solution float64 n","fixed_mask int32 n","coordinates float64 3*nodes (Fortran column major)"]},
+  "independent_analysis":["CSR/scaling reconstruction and fixed identity-row audit","nonzero row and column scales by field","SciPy SuperLU on full scaled matrix with stored zeros and with exactly-zero entries removed","strict fixed-zero-increment elimination and independent sparse-LU residual checks","dense double-precision SVD of only the active phi/eta_n/eta_p block; u3 decoupling checked explicitly","ungauged left/right smallest singular vectors, constant-potential mode alignment and gauge-row left-null coefficients","original ungauged Gauss-row residual at each removed gauge using the native solution"],
+  "rank_scope":"Numerical rank at tau=machine_epsilon*dimension*sigma_max, reported explicitly; not a proof about exact arithmetic and not an altered production tolerance",
+  "libraries":{"numpy":"2.4.6 (existing host)","scipy":"1.18.1 isolated under python_packages; pip standard package index, no global install"},
+  "invariants":"No material/load/heat-source/mesh/PARDISO/gate changes; no repeated search of gauge points; all earlier FAIL records retained"
+}

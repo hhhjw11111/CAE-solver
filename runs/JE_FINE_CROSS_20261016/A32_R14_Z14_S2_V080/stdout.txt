@@ -1,0 +1,26 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=27840, elements=6272
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.3180E-06,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.3378E-06,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.2934E-06,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.2932E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  1.5349E-02, raw_eta_p=  5.4644E+00, component_slope=  3.6164E-13, alpha=  1.0533E-02, log_scale=  1.0000E+00, fallback_slope= -2.4388E-13, raw_max=  5.4644E+00,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1395E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  2.2513E-02, raw_eta_p=  1.4213E+01, component_slope=  9.9183E-13, alpha=  8.5909E-03, log_scale=  1.0000E+00, fallback_slope= -7.0879E-14, raw_max=  1.4213E+01,
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1058E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  6.2034E-02, raw_eta_p=  1.6522E+01, component_slope=  2.3251E-12, alpha=  9.6626E-03, log_scale=  1.0000E+00, fallback_slope= -3.6525E-14, raw_max=  1.6522E+01,
+newton_iteration=6, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0819E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  1.9786E-01, raw_eta_p=  3.6358E+01, component_slope=  3.1549E-12, alpha=  8.0848E-03, log_scale=  1.0000E+00, fallback_slope= -2.3795E-14, raw_max=  3.6358E+01,
+newton_iteration=7, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0693E-06,
+newton_iteration=8, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0691E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  2.3020E-01, raw_eta_p=  3.9331E+01, component_slope=  2.6044E-12, alpha=  9.3467E-03, log_scale=  1.0000E+00, fallback_slope= -1.6900E-14, raw_max=  3.9331E+01,
+newton_iteration=9, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0579E-06,
+newton_iteration=10, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0578E-06,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  3.2337E-01, raw_eta_p=  5.1992E+01, component_slope=  3.1552E-12, alpha=  8.0126E-03, log_scale=  1.0000E+00, fallback_slope= -1.2884E-14, raw_max=  5.1992E+01,
+newton_iteration=11, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0513E-06,
+newton_iteration=12, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0512E-06,
+newton_iteration=13, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.0513E-06,
+status_code=80
+status_message=Continuation start state is not converged: Newton residual stagnation: reject this load attempt and cut back.
+1

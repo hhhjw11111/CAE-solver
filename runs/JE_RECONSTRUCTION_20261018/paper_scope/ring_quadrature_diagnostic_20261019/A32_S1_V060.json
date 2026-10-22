@@ -1,0 +1,76 @@
+{
+  "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+  "voltage_V": 6.0,
+  "native_rule_reproduced": true,
+  "rules": [
+    {
+      "orders": [
+        5,
+        5,
+        3
+      ],
+      "ring_volume_m3": 1.0210144544086177e-17,
+      "ring_abs_n_relative_mean": 0.022760719068224237,
+      "ring_abs_p_relative_mean": 0.049967367947502096,
+      "annulus_sample_count": 168000,
+      "all_domain_sample_count": 470400,
+      "minimum_jacobian_m3": 3.6029184626710955e-24,
+      "p_change_vs_native_fraction": 0.0
+    },
+    {
+      "orders": [
+        5,
+        5,
+        5
+      ],
+      "ring_volume_m3": 1.0210144544086173e-17,
+      "ring_abs_n_relative_mean": 0.02276048290400028,
+      "ring_abs_p_relative_mean": 0.04995340614098163,
+      "annulus_sample_count": 280000,
+      "all_domain_sample_count": 784000,
+      "minimum_jacobian_m3": 3.602918462670865e-24,
+      "p_change_vs_native_fraction": 0.00027941849038630944
+    },
+    {
+      "orders": [
+        7,
+        7,
+        7
+      ],
+      "ring_volume_m3": 1.0210144544086174e-17,
+      "ring_abs_n_relative_mean": 0.02276056605287759,
+      "ring_abs_p_relative_mean": 0.04995750262976083,
+      "annulus_sample_count": 768320,
+      "all_domain_sample_count": 2151296,
+      "minimum_jacobian_m3": 3.6025576535691915e-24,
+      "p_change_vs_native_fraction": 0.0001974352091475685
+    },
+    {
+      "orders": [
+        9,
+        9,
+        9
+      ],
+      "ring_volume_m3": 1.0210144544086176e-17,
+      "ring_abs_n_relative_mean": 0.022760566274532584,
+      "ring_abs_p_relative_mean": 0.049956100804656144,
+      "annulus_sample_count": 1632960,
+      "all_domain_sample_count": 4572288,
+      "minimum_jacobian_m3": 3.602397519334293e-24,
+      "p_change_vs_native_fraction": 0.0002254900209630894
+    }
+  ],
+  "source_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\nodes.csv": "887a8910fe2403cbb69836f65bcbb35c901730bde807c6bb519f0eb176d873db",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\input.nml": "4310df08a4c00558d5ae51c2c966b0bac717bcdf94ced1047d9b371df2d202f4",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\manifest.json": "d224f8b1ceb3689a8d4f077bac9f77c11fa39eb5f16c6b6606d6a526c160310d",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\execution.json": "091e04541a11c8d0f61981dfcf205fbf8652f7eb2a123a9098a50f50461e5cf2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060\\metrics.txt": "f555c49b56b10e83f11c26775f91cb840c5dfa69867b90e0be81a7f49c840db2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_je_ring_quadrature_20261019.py": "e947b0b5c0ae6ec417400ffac1e3f29812f51ca2921760d14900bc8472857bf4",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\src\\post\\field_metrics_m.f90": "b1d928d39ad59cbac7e60af5b3ae8293698e72b42b7fd609d5b0b3a85f8411b2"
+  },
+  "production_acceptance": false,
+  "limitation": "Fixed-field postprocessing only. Native metrics, mesh thresholds and existing FAIL records are unchanged."
+}

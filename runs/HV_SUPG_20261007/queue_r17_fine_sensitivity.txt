@@ -1,0 +1,21 @@
+{
+  "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+  "scales": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "runs": [
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale05_V060",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY1_Z3_V060",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale2_V060"
+  ],
+  "errors": [
+    "r17_fine_scale2_V060:INCOMPLETE_EVIDENCE:FileNotFoundError",
+    "r17_fine_scale2_V060:SOLVE_OR_FLUX_FAIL"
+  ],
+  "comparisons": {},
+  "covered_metrics_passed": false,
+  "fully_validated": false,
+  "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+}

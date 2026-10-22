@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-08T03:51:07.0408036+08:00",
+  "pid": 3284,
+  "reason": "Early termination of the remaining scale=2 numerical trial after completed same-mesh fine scale=0.5/1 states already showed 14.96365 percent annular-hole variation, exceeding the predeclared 1 percent sensitivity limit. This scale=2 attempt is incomplete, not a nonexistence result. Preserve all logs.",
+  "completed_scale2_comparison": false,
+  "physical_nonexistence_proven": false,
+  "command_line": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe run-f1 C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale2_V060\\input.nml C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_scale2_V060"
+}

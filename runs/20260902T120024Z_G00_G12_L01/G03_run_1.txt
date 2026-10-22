@@ -1,0 +1,13 @@
+verification_id=G03_element_kernel
+mechanical_row_tangent_error= 5.8375117527119238E-012
+potential_row_tangent_error= 1.6920098017174143E-011
+electron_row_tangent_error= 1.2552930731686695E-011
+hole_row_tangent_error= 1.3421571531506545E-011
+thermal_row_tangent_error= 1.1846558652772867E-010
+electron_constant_test_balance= 7.0364873641147360E-017
+hole_constant_test_balance= 7.9004497198916906E-017
+element_volume= 1.0000000000000004E+000
+element_min_n= 8.8526044863440735E+020
+element_min_p= 1.6088897801492546E+020
+element_min_temperature= 3.4373256067101181E+002
+verification_result=PASS

@@ -1,0 +1,6 @@
+{
+  "reason": "Clarify graded boundary-layer refinement scope; radial bulk stays unchanged, hence no global h-convergence claim",
+  "script_sha256": "df22c694ff691a308c0897d033667ce21706eb38a0f0ba4f481e51b9f36c91ef",
+  "calculation_or_threshold_change": false,
+  "prior_snapshots_preserved": true
+}

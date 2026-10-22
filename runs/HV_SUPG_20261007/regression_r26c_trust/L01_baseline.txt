@@ -1,0 +1,12 @@
+verification_id=L01_linear_solver
+small_solution_relative_error= 2.8429898420533556E-017
+small_residual_relative_error= 0.0000000000000000E+000
+global_equation_count=224
+global_csr_nnz=36064
+scaled_global_matrix_max_abs= 1.0000000000000000E+000
+global_scaled_solution_relative_error= 1.5968697357855818E-012
+global_physical_residual_relative_error= 3.4350444088022885E-016
+pardiso_factor_nonzeros=37056
+pardiso_perturbed_pivots=0
+pardiso_iterative_refinements=2
+verification_result=PASS

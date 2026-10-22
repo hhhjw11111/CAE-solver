@@ -1,0 +1,24 @@
+{
+  "schema": "TPSolverV2-drift-diffusion-peclet-audit-v1",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\cases\\F2_H1_HIGH_VOLTAGE_20260909\\H1_L0.mesh",
+  "nodes": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\F2_H1_VOLTAGE_SWEEP_L0_20260908\\F2_H1_NT_L0_V050\\nodes.csv",
+  "definition": "Pe_e=(max(phi_node)-min(phi_node))/(2*k_B*T_mean/q)",
+  "interpretation": "diagnostic_only_not_an_error_estimator",
+  "node_count": 10144,
+  "element_count": 2240,
+  "voltage_drop_V": {
+    "median": 0.46406484975768536,
+    "p95": 1.3905838876240295,
+    "maximum": 1.5323514069514865
+  },
+  "peclet": {
+    "median": 8.764220134269394,
+    "p95": 26.419485422834384,
+    "maximum": 28.992929622991355,
+    "elements_over_1": 1920,
+    "fraction_over_1": 0.8571428571428571,
+    "elements_over_2": 1806,
+    "fraction_over_2": 0.80625
+  },
+  "gate": "FAIL_STANDARD_GALERKIN_HIGH_FIELD"
+}

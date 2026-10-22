@@ -1,0 +1,389 @@
+[
+  {
+    "matrix": "A2PMAT_gauge0_L0",
+    "gauge": 0,
+    "level": 0,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 2128,
+        "stored_nnz": 483728,
+        "exact_zeros": 399139,
+        "retained_diagonals": 2128,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3600232051658168e-15
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 2128,
+        "stored_nnz": 84589,
+        "exact_zeros": 0,
+        "retained_diagonals": 2128,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3600232051658168e-15
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 976,
+        "stored_nnz": 113648,
+        "exact_zeros": 53792,
+        "retained_diagonals": 976,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3600232051658168e-15
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 976,
+        "stored_nnz": 59856,
+        "exact_zeros": 0,
+        "retained_diagonals": 976,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3600232051658168e-15
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge0_L1",
+    "gauge": 0,
+    "level": 1,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 4368,
+        "stored_nnz": 1056048,
+        "exact_zeros": 861218,
+        "retained_diagonals": 4368,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3183898417423734e-15
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 4368,
+        "stored_nnz": 194830,
+        "exact_zeros": 0,
+        "retained_diagonals": 4368,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3183898417423734e-15
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 2136,
+        "stored_nnz": 278376,
+        "exact_zeros": 134640,
+        "retained_diagonals": 2136,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3183898417423734e-15
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 2136,
+        "stored_nnz": 143736,
+        "exact_zeros": 0,
+        "retained_diagonals": 2136,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3183898417423734e-15
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge0_L2",
+    "gauge": 0,
+    "level": 2,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 7392,
+        "stored_nnz": 1848672,
+        "exact_zeros": 1498349,
+        "retained_diagonals": 7392,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3322676295501878e-15
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 7392,
+        "stored_nnz": 350323,
+        "exact_zeros": 0,
+        "retained_diagonals": 7392,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3322676295501878e-15
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 3744,
+        "stored_nnz": 515040,
+        "exact_zeros": 251456,
+        "retained_diagonals": 3744,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3322676295501878e-15
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 3744,
+        "stored_nnz": 263584,
+        "exact_zeros": 0,
+        "retained_diagonals": 3744,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.3322676295501878e-15
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge1_L0",
+    "gauge": 1,
+    "level": 0,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 2128,
+        "stored_nnz": 483728,
+        "exact_zeros": 399234,
+        "retained_diagonals": 2128,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 2128,
+        "stored_nnz": 84494,
+        "exact_zeros": 0,
+        "retained_diagonals": 2128,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 975,
+        "stored_nnz": 113471,
+        "exact_zeros": 53754,
+        "retained_diagonals": 975,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 0.48814882739166976
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 975,
+        "stored_nnz": 59717,
+        "exact_zeros": 0,
+        "retained_diagonals": 975,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 0.48814882739166976
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge1_L1",
+    "gauge": 1,
+    "level": 1,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 4368,
+        "stored_nnz": 1056048,
+        "exact_zeros": 861313,
+        "retained_diagonals": 4368,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 4368,
+        "stored_nnz": 194735,
+        "exact_zeros": 0,
+        "retained_diagonals": 4368,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 2135,
+        "stored_nnz": 278199,
+        "exact_zeros": 134602,
+        "retained_diagonals": 2135,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 0.4776029451140751
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 2135,
+        "stored_nnz": 143597,
+        "exact_zeros": 0,
+        "retained_diagonals": 2135,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 0.4776029451140751
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge1_L2",
+    "gauge": 1,
+    "level": 2,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 7392,
+        "stored_nnz": 1848672,
+        "exact_zeros": 1498444,
+        "retained_diagonals": 7392,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 7392,
+        "stored_nnz": 350228,
+        "exact_zeros": 0,
+        "retained_diagonals": 7392,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 3743,
+        "stored_nnz": 514863,
+        "exact_zeros": 251418,
+        "retained_diagonals": 3743,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 0.48653665627876613
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 3743,
+        "stored_nnz": 263445,
+        "exact_zeros": 0,
+        "retained_diagonals": 3743,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 0.48653665627876613
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge2_L0",
+    "gauge": 2,
+    "level": 0,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 2128,
+        "stored_nnz": 483728,
+        "exact_zeros": 399234,
+        "retained_diagonals": 2128,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 2128,
+        "stored_nnz": 84494,
+        "exact_zeros": 0,
+        "retained_diagonals": 2128,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 975,
+        "stored_nnz": 113471,
+        "exact_zeros": 53754,
+        "retained_diagonals": 975,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 975,
+        "stored_nnz": 59717,
+        "exact_zeros": 0,
+        "retained_diagonals": 975,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge2_L1",
+    "gauge": 2,
+    "level": 1,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 4368,
+        "stored_nnz": 1056048,
+        "exact_zeros": 861313,
+        "retained_diagonals": 4368,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 4368,
+        "stored_nnz": 194735,
+        "exact_zeros": 0,
+        "retained_diagonals": 4368,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 2135,
+        "stored_nnz": 278199,
+        "exact_zeros": 134602,
+        "retained_diagonals": 2135,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0000000000000002
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 2135,
+        "stored_nnz": 143597,
+        "exact_zeros": 0,
+        "retained_diagonals": 2135,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "matrix": "A2PMAT_gauge2_L2",
+    "gauge": 2,
+    "level": 2,
+    "representations": [
+      {
+        "representation": "original",
+        "n": 7392,
+        "stored_nnz": 1848672,
+        "exact_zeros": 1498444,
+        "retained_diagonals": 7392,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "drop_exact_zeros",
+        "n": 7392,
+        "stored_nnz": 350228,
+        "exact_zeros": 0,
+        "retained_diagonals": 7392,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0
+      },
+      {
+        "representation": "eliminate_fixed",
+        "n": 3743,
+        "stored_nnz": 514863,
+        "exact_zeros": 251418,
+        "retained_diagonals": 3743,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0000000000000002
+      },
+      {
+        "representation": "eliminate_fixed_drop_exact_zeros",
+        "n": 3743,
+        "stored_nnz": 263445,
+        "exact_zeros": 0,
+        "retained_diagonals": 3743,
+        "mathematical_operator_difference": 0.0,
+        "constant_phi_action_max": 1.0000000000000002
+      }
+    ]
+  }
+]

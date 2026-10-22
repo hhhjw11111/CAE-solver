@@ -1,0 +1,91 @@
+{
+  "strict_byte_identical": false,
+  "original_strict_verdict": false,
+  "same_topology": true,
+  "original_case_acceptance": [
+    "PASS_NOT_MESH_ACCEPTANCE",
+    "PASS_NOT_MESH_ACCEPTANCE"
+  ],
+  "fields": {
+    "ux_m": {
+      "max_absolute": 5.428372769879244e-25,
+      "frozen_input_scale": 1e-10,
+      "scaled_by_frozen_input": 5.428372769879244e-15
+    },
+    "uy_m": {
+      "max_absolute": 2.3264454728053903e-25,
+      "frozen_input_scale": 1e-10,
+      "scaled_by_frozen_input": 2.3264454728053903e-15
+    },
+    "uz_m": {
+      "max_absolute": 3.825710333057753e-24,
+      "frozen_input_scale": 1e-10,
+      "scaled_by_frozen_input": 3.825710333057753e-14
+    },
+    "phi_V": {
+      "max_absolute": 3.552713678800501e-15,
+      "frozen_input_scale": 3.0,
+      "scaled_by_frozen_input": 1.1842378929335002e-15
+    },
+    "eta_n": {
+      "max_absolute": 3.3262061060388225e-15,
+      "frozen_input_scale": 0.1,
+      "scaled_by_frozen_input": 3.326206106038822e-14
+    },
+    "eta_p": {
+      "max_absolute": 4.897788633454423e-15,
+      "frozen_input_scale": 0.1,
+      "scaled_by_frozen_input": 4.897788633454423e-14
+    },
+    "theta_K": {
+      "max_absolute": 5.329070518200751e-15,
+      "frozen_input_scale": 10.0,
+      "scaled_by_frozen_input": 5.329070518200751e-16
+    }
+  },
+  "metrics": {
+    "theta_max_K": {
+      "baseline": 3.694630353062223,
+      "candidate": 3.694630353062223,
+      "absolute_difference": 0.0
+    },
+    "joule_W": {
+      "baseline": 0.0015395123501086175,
+      "candidate": 0.0015395123501086175,
+      "absolute_difference": 0.0
+    },
+    "electron_right_A": {
+      "baseline": 0.0005129845604209171,
+      "candidate": 0.0005129845604209712,
+      "absolute_difference": 5.410168840702667e-17
+    },
+    "heat_balance_relative": {
+      "baseline": 7.222230179043851e-07,
+      "candidate": 7.222230328344718e-07,
+      "absolute_difference": 1.4930086696099865e-14
+    },
+    "electron_balance_relative": {
+      "baseline": 3.733464868851804e-13,
+      "candidate": 6.857723578523507e-13,
+      "absolute_difference": 3.124258709671703e-13
+    },
+    "hole_balance_diagnostic": {
+      "baseline": 3.7402214350105845e-13,
+      "candidate": 6.873916111004275e-13,
+      "absolute_difference": 3.13369467599369e-13
+    }
+  },
+  "maximum_scaled_node_difference": 4.897788633454423e-14,
+  "file_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\F1_FAST_HOLE_L0\\FAST_H1_LQ_L0.nml": "0c54b12dbad1ba38df5b2f7f58df5bf096eeeb49132e0e1617ed2bcb1d063842",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\report.json": "e6e78ca7715dcfebe99b9772bae7b09d6dc780124a79d454ea64f474f468f2b2",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\executions.json": "64a7f43864abba2ed0898aeb25f38ae14a1a76530288d17559ef83329807b08f",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\baseline\\nodes.csv": "fcddd889808d68409a0a62e25b4cdff2a483f6008f372617e7e1068453ea3c72",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\baseline\\metrics.txt": "7578674d67714ce7e89c193e38813249b44df6cb0372b8eb63951a81d61d5ece",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\baseline\\field_samples.csv": "5e3b2cb13b100dee072f3d1dbf5958a34063bd665f91405032770de74ddf0ea2",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\candidate\\nodes.csv": "3b53cacaf45ea45b3277c3128f5c61c678694befb2a46c4b938090f78df8d88f",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\candidate\\metrics.txt": "ecc11e80f5873f6fcb5f6f21c3a4e2108bf555923a70311d6e1a51a6ea04cde2",
+    "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\production_r17_serial\\candidate\\field_samples.csv": "d8cfc490fd817f5f5fa6a52bd00f5ee92679a52d933b7cee26dafd70d0357103"
+  },
+  "interpretation": "Numeric differences and native acceptance are reported separately; the original byte verdict is unchanged. This is one production case."
+}

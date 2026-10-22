@@ -1,0 +1,1067 @@
+{
+  "scope": "ORIGINAL_MODEL_REGISTERED_EVIDENCE_INVENTORY",
+  "plan": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\credibility_plan_r21.json",
+  "plan_sha256": "3911c2c377fcfbe225ce57c012526c5c85b0028e515ad1ad72d5e59f17ffd35a",
+  "points": [
+    {
+      "voltage_V": 0.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000\\manifest.json",
+      "state": "EXACT_ZERO_EQUILIBRIUM_VERIFIED",
+      "fully_validated": true,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000\\manifest.json": "486adef25bcd017f420e3213bb8bbc8faecfb7bf6bf618a52e4055fe1ee4ee94",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000\\input.nml": "13d689af78d24d6e885d05e9451cdc6771724d809a4972749e26ee53a0445f16",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000\\execution.json": "fbba4a73650b022ca5ded8651403dbbf626ca0516a6eddfe4e2d4ec9a05a0fac",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000\\metrics.txt": "a2d37a67948d733fc83259f3f45d3b9594ad2e22fee6890fc67505ce33c10343",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V000\\nodes.csv": "2f16282f600a4c362ae9cda0b75ec70b917b0b36ce4a78fda014231aa994e380"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 5541,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 6e+22,
+        "minimum_p_m3": 1.4016666666666668e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "959b4ddb8e63d3df6403c6059d4b7b504fdfff2562715d7991c5775d31bf6559",
+      "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 0.0,
+        "joule_W": 0.0,
+        "electron_right_A": 0.0,
+        "hole_right_A": 0.0,
+        "heat_balance_relative": 0.0,
+        "physical_exterior_heat_balance_relative": 0.0,
+        "electron_balance_relative": 0.0,
+        "hole_balance_diagnostic": 0.0,
+        "ring_abs_n_relative_mean": 0.0,
+        "ring_abs_p_relative_mean": 0.0,
+        "maximum_accepted_residual": 0.0,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0,
+        "electron_right_A": 0.0,
+        "hole_right_A": 0.0
+      },
+      "exact_zero_equilibrium_verified": true
+    },
+    {
+      "voltage_V": 0.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005\\manifest.json": "ba3b039db954f11107ce71c692378267e645437a0c106c92155c68d2d073c1a1",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005\\input.nml": "3cf62b9538c138450fa2341770a75e0662c0d4a3658819d28ff9748401b4559f",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005\\execution.json": "aeb9259c85407b7b99945d613ab41c2369cd4ab6efa30cbefaa394090433fde2",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005\\metrics.txt": "97eb73d83abca9c1bdb84c4c3d67ad1ddcf388c03cd7f4e83e775e17b750a6cc",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005\\nodes.csv": "421a7ee47d8dfd13515ff33d501a061fb1cc2b80cf6bf2f2c513e7c736716fe5"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 18517,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.957513936428721e+22,
+        "minimum_p_m3": 1.3908954552523397e-30,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "5c1738fd520655a2219dd492e159eb7e64c211956c49838764c69d6e735c1b12",
+      "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 0.10278412468051101,
+        "joule_W": 2.1400753061224898e-05,
+        "electron_right_A": 4.273080175861772e-05,
+        "hole_right_A": 2.4356358865200463e-58,
+        "heat_balance_relative": 0.0003244686251506988,
+        "physical_exterior_heat_balance_relative": 1.8260561645846226e-05,
+        "electron_balance_relative": 9.118020245411691e-08,
+        "hole_balance_diagnostic": 1.62219148216321e-06,
+        "ring_abs_n_relative_mean": 0.00016629006010199923,
+        "ring_abs_p_relative_mean": 0.0008254656871112398,
+        "maximum_accepted_residual": 2.7595983913508728e-17,
+        "maximum_accepted_update": 1.2218066394555847e-12
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 4.2801506122449797e-05,
+        "electron_right_A": 8.546160351723544e-05,
+        "hole_right_A": 4.871271773040093e-58
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 1.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V010",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V010\\input.nml": "79abd0d8981d794559cdcad3a48e1bb56e3f9a183dc2139556e6798a0447cef1",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V010\\execution.json": "699c0dbbf8b9bdc748d28d58d1a99333e697dc5022d88a0d7f8953137d4390c1",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V010\\metrics.txt": "c56dabcd9a5e0ff47749c0db2f65cb9237ce06262e7cc8c35853be12ad29842d",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V010\\nodes.csv": "d90f92951e42bb6f50c20c828d5cf258dd60b7aa7577959fcb5e5d682c6c875e"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.826293284081351e+22,
+        "minimum_p_m3": 1.3205002220757365e-30
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 0.41387550446694377,
+        "joule_W": 0.00017168762889217167,
+        "electron_right_A": 0.0001695321625444463,
+        "hole_right_A": 9.692925458425032e-58,
+        "heat_balance_relative": 0.0006624013544111086,
+        "electron_balance_relative": 1.0787418814780463e-06,
+        "hole_balance_diagnostic": 1.8470374915476746e-06,
+        "ring_abs_n_relative_mean": 0.0006700627978018205,
+        "ring_abs_p_relative_mean": 0.008316021042837334,
+        "maximum_accepted_residual": 5.626763121379808e-17,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.00017168762889217167,
+        "electron_right_A": 0.0001695321625444463,
+        "hole_right_A": 9.692925458425032e-58
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 1.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V015",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V015\\input.nml": "9bf175d369809aaa51d8545c00c4e5953b81a29da4979ff0a116dabed1ec09b7",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V015\\execution.json": "932e7d3b4014cfdaf4ff7c56dcb4d9e7dd22ccbbeece0eb6166cd09beb981ba0",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V015\\metrics.txt": "6100612fdb560d486427d8d284fd205738bc43b62d34970bfbb4f01544e28c23",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V015\\nodes.csv": "5d06c05d62bc8dfd6b3f20dbce7b47e7c6123c1c34fd232fa575879e173df34e"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.611002898444529e+22,
+        "minimum_p_m3": 1.2536709142040377e-30
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 0.9393010632758774,
+        "joule_W": 0.0003881116289212472,
+        "electron_right_A": 0.00025279508579088524,
+        "hole_right_A": 1.44578346830722e-57,
+        "heat_balance_relative": 0.001505148016798247,
+        "electron_balance_relative": 2.993094572944797e-07,
+        "hole_balance_diagnostic": 4.223444049579661e-06,
+        "ring_abs_n_relative_mean": 0.0015189319481612627,
+        "ring_abs_p_relative_mean": 0.01593755017586726,
+        "maximum_accepted_residual": 6.496419599101388e-17,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0003881116289212472,
+        "electron_right_A": 0.00025279508579088524,
+        "hole_right_A": 1.44578346830722e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 2.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V020",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V020\\input.nml": "afe65b7147bf551c0fd7988d8c5f8be39460c055dfb79e49bd15a5b5b96fa9bf",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V020\\execution.json": "39e241500fb74a6f1771f28f78abcdf446693c7980b57dce41ea8808f8d6bbda",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V020\\metrics.txt": "97ae3dc2a65d012081dcfa59c3e258aa4892de96ca0962c9414bd27056b12902",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V020\\nodes.csv": "bfc7831a5af78e869c88d91e3075cf617d341e6d866b49e631419b8b68b36f3f"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 5.313852572500397e+22,
+        "minimum_p_m3": 1.1857123868897939e-30
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 1.6889535254950374,
+        "joule_W": 0.0006946444903393725,
+        "electron_right_A": 0.000334998910912294,
+        "hole_right_A": 1.9161178919001007e-57,
+        "heat_balance_relative": 0.0027098038944662448,
+        "electron_balance_relative": 1.199435345032597e-06,
+        "hole_balance_diagnostic": 5.594659643310634e-06,
+        "ring_abs_n_relative_mean": 0.0027270833107842537,
+        "ring_abs_p_relative_mean": 0.023297102654672244,
+        "maximum_accepted_residual": 7.452076573174183e-17,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0006946444903393725,
+        "electron_right_A": 0.000334998910912294,
+        "hole_right_A": 1.9161178919001007e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 2.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V025",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V025\\input.nml": "4b42e6de0e0e4ec902be32cb9599117cd8f9433fd21b9856e8138b8a4643a6f3",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V025\\execution.json": "40405b295be0d3ca0be53d1f901158f79d28168645df06f44dbd8dcc4ac49c08",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V025\\metrics.txt": "982280a4aaec236e845d9bbc5d36ca7f398671af829aafd60515c2faf2157540",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V025\\nodes.csv": "540f7a28bc4b4c251f994c51d05bdf229a2d26b4150b53d9b238ae24de988a3a"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 4.939621943427282e+22,
+        "minimum_p_m3": 1.1165246749234839e-30
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 2.6776141108402953,
+        "joule_W": 0.0010952195126113782,
+        "electron_right_A": 0.000415996531901185,
+        "hole_right_A": 2.379294428761364e-57,
+        "heat_balance_relative": 0.0043075768941559945,
+        "electron_balance_relative": 4.255914606556466e-06,
+        "hole_balance_diagnostic": 5.289983085313783e-06,
+        "ring_abs_n_relative_mean": 0.004315325542620557,
+        "ring_abs_p_relative_mean": 0.03019895273946557,
+        "maximum_accepted_residual": 9.456608730399467e-17,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0010952195126113782,
+        "electron_right_A": 0.000415996531901185,
+        "hole_right_A": 2.379294428761364e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 3.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay\\manifest.json": "36a0fae3e055bb33867f9e674e84c98b5927bc8e88398b0d6f11f10bd3ba681d",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay\\input.nml": "d7714a2d2dab03ee587823dcfe78302c391fb867525f26bd5eb20e61e1e94a0d",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay\\execution.json": "ef0b2a0c2d436797705edc141d16340946855e4ed1e5f63f2dfaa22a8587ab63",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay\\metrics.txt": "5187177e89f0e701d3fc4a1761beffa54c659b274c85e191aab6ba9b77a5f88a",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_full_L0_V030_replay\\nodes.csv": "c91043765902f1d7f7866185b5806b454e258d962c4976e43dfc9a70930055b4"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 4.494693005005971e+22,
+        "minimum_p_m3": 1.033704149595301e-30
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 3.926852747939506,
+        "joule_W": 0.0015955847113986656,
+        "electron_right_A": 0.0004955495136199177,
+        "hole_right_A": 2.83393360087159e-57,
+        "heat_balance_relative": 0.00635325787120616,
+        "electron_balance_relative": 1.0025348997729985e-05,
+        "hole_balance_diagnostic": 2.5778470833075334e-06,
+        "ring_abs_n_relative_mean": 0.006314010118836132,
+        "ring_abs_p_relative_mean": 0.036674256283707435,
+        "maximum_accepted_residual": 1.231313135804691e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0015955847113986656,
+        "electron_right_A": 0.0004955495136199177,
+        "hole_right_A": 2.83393360087159e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 3.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V035",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V035\\input.nml": "974f4daa11d7c48695efad620e86b2e872ffaf2cf96b5f87defc0f01690816a9",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V035\\execution.json": "82eac21d24ae52483a0a4366b7c8aecfaf76ecaf2a7eded108374cc63252dc5d",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V035\\metrics.txt": "ee3021fdb1595242563b40e8a9c49119c4314c98501f2d2349031fd2eef8ba9b",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V035\\nodes.csv": "34235143a42c479e1e8a7bc01c33f22adaf4e6c868fcc79e7393463e4e19f484"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 3.987246005290098e+22,
+        "minimum_p_m3": 9.362688625400077e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 5.467844649403446,
+        "joule_W": 0.0022040948661079473,
+        "electron_right_A": 0.000573348027940685,
+        "hole_right_A": 3.278336331552133e-57,
+        "heat_balance_relative": 0.008941345961260639,
+        "electron_balance_relative": 2.0308537149496506e-05,
+        "hole_balance_diagnostic": 3.8482975613625835e-06,
+        "ring_abs_n_relative_mean": 0.00876697842290276,
+        "ring_abs_p_relative_mean": 0.04286384011884083,
+        "maximum_accepted_residual": 1.5978643889770935e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0022040948661079473,
+        "electron_right_A": 0.000573348027940685,
+        "hole_right_A": 3.278336331552133e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 4.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V040",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVED_FLUX_GATE_FAILED",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V040\\input.nml": "0203b78395f6d94c3ea65dda67d654dcc58c5b5484c5d26c9431e83a5a0c6cfd",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V040\\execution.json": "e27f17f31ee2cedf41c52758110bdde96c9ace47116df2011ff27c14f0eeed84",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V040\\metrics.txt": "1e37fda5676446913fbfff44cf39ec52441c222ca14adbe2bf2c144cb2ba454c",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V040\\nodes.csv": "0dbf8e63f7dcd3af98752e5a2a91e6d420962a6bf1eb803cbe6bd6f54cb7eb8d"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 3.4274968868670694e+22,
+        "minimum_p_m3": 8.340459987089926e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 7.346489237520018,
+        "joule_W": 0.002933167691048723,
+        "electron_right_A": 0.0006490034258900421,
+        "hole_right_A": 3.710380889452634e-57,
+        "heat_balance_relative": 0.012234567363837146,
+        "electron_balance_relative": 3.792052438050235e-05,
+        "hole_balance_diagnostic": 1.6687564432456375e-05,
+        "ring_abs_n_relative_mean": 0.011738638900782878,
+        "ring_abs_p_relative_mean": 0.04903523642671843,
+        "maximum_accepted_residual": 1.996471276328049e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.002933167691048723,
+        "electron_right_A": 0.0006490034258900421,
+        "hole_right_A": 3.710380889452634e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 4.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V045",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVED_FLUX_GATE_FAILED",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V045\\input.nml": "a49fd1e1571872bdcb57db4b5ee084d7f0f8db6098942cc9b1ddf650091ecdb4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V045\\execution.json": "1af2870af1096298701ab1be663fa7f6f7f889c5bfb8d3f89e6d16bc7841d041",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V045\\metrics.txt": "2cde4b21351958b3e08f8d631b3b19a1410f3a6774989741b803c77ce9e89a61",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V045\\nodes.csv": "ba8c562d5ae8c0b58d630e09a227e03e59aba2f817f424bdeeffdf2f80e75c25"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 2.82790805219774e+22,
+        "minimum_p_m3": 7.2932566052959465e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 9.63365347975082,
+        "joule_W": 0.0038021855712036304,
+        "electron_right_A": 0.0007220115875613759,
+        "hole_right_A": 4.1272828180243515e-57,
+        "heat_balance_relative": 0.016518633235286354,
+        "electron_balance_relative": 6.721974583898836e-05,
+        "hole_balance_diagnostic": 4.1974966590966326e-05,
+        "ring_abs_n_relative_mean": 0.015328245382712729,
+        "ring_abs_p_relative_mean": 0.055621424063128345,
+        "maximum_accepted_residual": 2.6760163785712064e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0038021855712036304,
+        "electron_right_A": 0.0007220115875613759,
+        "hole_right_A": 4.1272828180243515e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 5.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V050",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVED_FLUX_GATE_FAILED",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V050\\input.nml": "f17c23de55c54a9a05b44be088b195269e639c09854d2eec720f45e6ce47122b",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V050\\execution.json": "d9bedb39a0f49e46ac215883c0d14c5a80293894f3a47a6b4c76e6823ea96dd3",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V050\\metrics.txt": "0a2ad10d4a9a292da1e3166536e799f7a882ea7087bb4aeef993495e00034879",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V050\\nodes.csv": "52e8aa757857a2f25e02e9a4ecece24f100a0fb20808bfe80cb8dc61bb60ce45"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 2.2032439555181966e+22,
+        "minimum_p_m3": 6.23724133481778e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 12.448327876793655,
+        "joule_W": 0.0048440383248606715,
+        "electron_right_A": 0.0007916605249652446,
+        "hole_right_A": 4.5250599422613786e-57,
+        "heat_balance_relative": 0.022320987626016694,
+        "electron_balance_relative": 0.00011491600564931925,
+        "hole_balance_diagnostic": 9.466218124055714e-05,
+        "ring_abs_n_relative_mean": 0.019701936340429813,
+        "ring_abs_p_relative_mean": 0.06333754350257617,
+        "maximum_accepted_residual": 3.2916955451669684e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.0048440383248606715,
+        "electron_right_A": 0.0007916605249652446,
+        "hole_right_A": 4.5250599422613786e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 5.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V055",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "SOLVED_FLUX_GATE_FAILED",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json": "15134351c377ae970daa6337db8f47f0f33cbc605b36245880cab84229b63ee4",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V055\\input.nml": "69bf5d248e82264e0161665ce41759c05f77ca80ee25b9ae4a64dcb4b1fac628",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V055\\execution.json": "e9ed674eee5aaf9c3d748250160636940b54d93b092c45692248f677f7081ffe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V055\\metrics.txt": "7a2c2fd87b04dd9284fa9722eea0f27c529fc90652602cbf3e617b83488d1c9a",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V055\\nodes.csv": "ef1c782a272536827b3dc047bd16288296971a1feb0178e2218a1a1466a19681"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 10144,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.569992698885242e+22,
+        "minimum_p_m3": 5.1746114201568285e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "4879db43cd981d08dcd9cf50f2170ec8415f743b3f60e776553e1294ff618fff",
+      "executable_sha256": "3eaf58ecbfa797bbc69a58e9fa74965e69c291829e317ce50da58c6db116fe8b",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 16.02116687704148,
+        "joule_W": 0.006123060401962779,
+        "electron_right_A": 0.0008567758567851299,
+        "hole_right_A": 4.8970882638752565e-57,
+        "heat_balance_relative": 0.03072500805824306,
+        "electron_balance_relative": 0.00019128537716258496,
+        "hole_balance_diagnostic": 0.00021829528089873523,
+        "ring_abs_n_relative_mean": 0.025180505973555055,
+        "ring_abs_p_relative_mean": 0.07363672852437582,
+        "maximum_accepted_residual": 4.2501660976069206e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.006123060401962779,
+        "electron_right_A": 0.0008567758567851299,
+        "hole_right_A": 4.8970882638752565e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 6.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060\\manifest.json": "7eee89f586a328939ea9961e67b7359f3e350df055af3a6534c01e3135428e1c",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060\\input.nml": "a47312578c55aa4049c64001079773a43791a3c6a19ef94669b74470c252442e",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060\\execution.json": "2e2357c9b31ff82c59cfd8780108c3fe7a6d833d8b0e27eccfdd1d7d8c9d963b",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060\\metrics.txt": "1b6ca7987f7398257fcb2e9add56d12581bf32143305290f78a29d3138f8ee63",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060\\nodes.csv": "fe4a083ff1d0d93531c845213dacbf0a87dde2a8324355d4b92a8a7d9bff81a7"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 41125,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.0099549391673268e+22,
+        "minimum_p_m3": 4.382375811697675e-31,
+        "domain_symmetry": "Y_HALF",
+        "symmetry_uy_m": 0.0
+      },
+      "domain_symmetry": "Y_HALF",
+      "mesh_sha256": "ac57c48d96135a8a87c9ba2ad3688fba3fae741267875a0cec96b2d19e112683",
+      "executable_sha256": "cde32cfcbd1a8988fc7ffe78f320b03461d120baea81c5dd1a5ffa027fafe90e",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 20.881662850826444,
+        "joule_W": 0.0039047290812640576,
+        "electron_right_A": 0.0004689002203127854,
+        "hole_right_A": 2.6733012874248935e-57,
+        "heat_balance_relative": 0.001936075339788335,
+        "physical_exterior_heat_balance_relative": 0.001975230921093982,
+        "electron_balance_relative": 6.305092064931617e-05,
+        "hole_balance_diagnostic": 2.2146132784876505e-06,
+        "ring_abs_n_relative_mean": 0.032459530863395945,
+        "ring_abs_p_relative_mean": 0.060542526118039966,
+        "maximum_accepted_residual": 3.8653104545111267e-16,
+        "maximum_accepted_update": 1.0071151898048689e-11
+      },
+      "full_domain_integral_factor": 2,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.007809458162528115,
+        "electron_right_A": 0.0009378004406255708,
+        "hole_right_A": 5.346602574849787e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 6.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V065",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "MISSING_POINT_EVIDENCE",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {}
+    },
+    {
+      "voltage_V": 7.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V070",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "MISSING_POINT_EVIDENCE",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {}
+    },
+    {
+      "voltage_V": 7.5,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V075",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "MISSING_POINT_EVIDENCE",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {}
+    },
+    {
+      "voltage_V": 8.0,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\V080",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\trajectory_r13_L0_serial\\manifest.json",
+      "state": "MISSING_POINT_EVIDENCE",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {}
+    }
+  ],
+  "studies": [
+    {
+      "name": "0.5 V three spatial levels",
+      "kind": "mesh",
+      "voltage_V": 0.5,
+      "scope": "Y_HALF / L0-L1-L2 / SUPG scale 1 / R21",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L1_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L2_V005"
+      ],
+      "result": {
+        "voltages": [
+          {
+            "voltage_V": 0.5,
+            "complete_solve_flux_all_levels": true,
+            "mesh_pass": false,
+            "status": "MESH_FAIL",
+            "changes": {
+              "joule_W": {
+                "L0_L1": 3.825903420334864e-05,
+                "L1_L2": 5.460933411763205e-06,
+                "limit": 0.01
+              },
+              "theta_max_K": {
+                "L0_L1": 0.0005760801670499668,
+                "L1_L2": 0.00011922211598878492,
+                "limit": 0.01
+              },
+              "ring_theta_mean_K": {
+                "L0_L1": 0.0005751086078282471,
+                "L1_L2": 0.00011598341574356097,
+                "limit": 0.01
+              },
+              "electron_right_A": {
+                "L0_L1": 0.002209627277046964,
+                "L1_L2": 0.00043706062173484646,
+                "limit": 0.01
+              },
+              "ring_E_mean_V_m": {
+                "L0_L1": 0.0003235326574425289,
+                "L1_L2": 5.0852359105928025e-05,
+                "limit": 0.02
+              },
+              "ring_Q_mean_W_m3": {
+                "L0_L1": 0.0006492735101459025,
+                "L1_L2": 7.705001124362977e-05,
+                "limit": 0.02
+              },
+              "ring_abs_n_relative_mean": {
+                "L0_L1": 0.0016582573621986769,
+                "L1_L2": 0.0005781961297345226,
+                "limit": 0.02
+              },
+              "ring_abs_p_relative_mean": {
+                "L0_L1": 0.5289138639435338,
+                "L1_L2": 0.3654921995325052,
+                "limit": 0.02
+              },
+              "ring_Q_p95_W_m3": {
+                "L0_L1": 0.0005150498139956524,
+                "L1_L2": 0.005514059872606168,
+                "limit": 0.05
+              },
+              "E_p95_V_m": {
+                "L0_L1": 0.006168164732227264,
+                "L1_L2": 0.002898653818014185,
+                "limit": 0.05
+              }
+            }
+          }
+        ],
+        "all_mesh_pass": false,
+        "provenance_errors": [],
+        "fully_validated": false,
+        "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+      }
+    },
+    {
+      "name": "6 V angular refinement",
+      "kind": "mesh",
+      "voltage_V": 6.0,
+      "scope": "Y_HALF / angular 32-48-64 / fixed radial 18 and thickness 16 / SUPG scale 1 / R21",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_XY2_Z3_V060",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A48_V060",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_A64_V060"
+      ],
+      "result": {
+        "voltages": [
+          {
+            "voltage_V": 6.0,
+            "complete_solve_flux_all_levels": true,
+            "mesh_pass": false,
+            "status": "MESH_FAIL",
+            "changes": {
+              "joule_W": {
+                "L0_L1": 0.0004266546719022979,
+                "L1_L2": 2.0957357019525e-05,
+                "limit": 0.01
+              },
+              "theta_max_K": {
+                "L0_L1": 0.0006763775530874112,
+                "L1_L2": 0.00018102426543853338,
+                "limit": 0.01
+              },
+              "ring_theta_mean_K": {
+                "L0_L1": 0.0008947529172867225,
+                "L1_L2": 4.5306235095038295e-05,
+                "limit": 0.01
+              },
+              "electron_right_A": {
+                "L0_L1": 0.004136532325096319,
+                "L1_L2": 0.0015561912412056364,
+                "limit": 0.01
+              },
+              "ring_E_mean_V_m": {
+                "L0_L1": 2.4355335083796874e-05,
+                "L1_L2": 0.0004389314720750469,
+                "limit": 0.02
+              },
+              "ring_Q_mean_W_m3": {
+                "L0_L1": 0.00047130026030227926,
+                "L1_L2": 0.0009098687163135264,
+                "limit": 0.02
+              },
+              "ring_abs_n_relative_mean": {
+                "L0_L1": 0.0009805883334151873,
+                "L1_L2": 1.3676247825223438e-05,
+                "limit": 0.02
+              },
+              "ring_abs_p_relative_mean": {
+                "L0_L1": 0.0910949626616893,
+                "L1_L2": 0.04565214403171132,
+                "limit": 0.02
+              },
+              "ring_Q_p95_W_m3": {
+                "L0_L1": 0.001733081274192678,
+                "L1_L2": 0.0013177469435935651,
+                "limit": 0.05
+              },
+              "E_p95_V_m": {
+                "L0_L1": 0.0008017273707780163,
+                "L1_L2": 0.001473968671255895,
+                "limit": 0.05
+              }
+            }
+          }
+        ],
+        "all_mesh_pass": false,
+        "provenance_errors": [],
+        "fully_validated": false,
+        "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+      }
+    },
+    {
+      "name": "0.5 V stabilization sensitivity",
+      "kind": "stabilization",
+      "voltage_V": 0.5,
+      "scope": "Y_HALF / L0 only / SUPG scale 0.5-1-2 / R21",
+      "runs": [
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_scale05_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V005",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_scale2_V005"
+      ],
+      "result": {
+        "scope": "SINGLE_VOLTAGE_SAME_MESH_STABILIZATION_SENSITIVITY",
+        "scales": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "runs": [
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_scale05_V005",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_V005",
+          "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r21_half_L0_scale2_V005"
+        ],
+        "errors": [],
+        "comparisons": {
+          "joule_W": {
+            "values": [
+              2.1401291261922194e-05,
+              2.1401688737891972e-05,
+              2.1403766139127957e-05
+            ],
+            "relative_span": 0.00011562811841970363,
+            "limit": 0.01,
+            "passed": true
+          },
+          "theta_max_K": {
+            "values": [
+              0.10279274349397838,
+              0.10285563337293979,
+              0.10311625802552271
+            ],
+            "relative_span": 0.003137376566401963,
+            "limit": 0.01,
+            "passed": true
+          },
+          "electron_right_A": {
+            "values": [
+              4.2696883203679184e-05,
+              4.261774792958822e-05,
+              4.230801397276461e-05
+            ],
+            "relative_span": 0.009107672545078497,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_theta_mean_K": {
+            "values": [
+              0.08650969063787048,
+              0.08655972166934169,
+              0.0867673421887906
+            ],
+            "relative_span": 0.0029694530732487087,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_E_mean_V_m": {
+            "values": [
+              27885.721015830946,
+              27895.51925751519,
+              27935.55529661053
+            ],
+            "relative_span": 0.0017839015638121832,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_Q_mean_W_m3": {
+            "values": [
+              186474016291.1902,
+              186596738299.75748,
+              187099342774.57782
+            ],
+            "relative_span": 0.0033422163547685143,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_abs_n_relative_mean": {
+            "values": [
+              0.00016627005497753592,
+              0.00016666263353494538,
+              0.00016778068966696066
+            ],
+            "relative_span": 0.009003626653480253,
+            "limit": 0.01,
+            "passed": true
+          },
+          "ring_abs_p_relative_mean": {
+            "values": [
+              0.0014279695876586067,
+              0.002761606119784291,
+              0.0060470688166665
+            ],
+            "relative_span": 0.7638575595959916,
+            "limit": 0.01,
+            "passed": false
+          },
+          "ring_Q_p95_W_m3": {
+            "values": [
+              384876569858.74084,
+              385054377386.58405,
+              385846783724.0425
+            ],
+            "relative_span": 0.002514505514177183,
+            "limit": 0.01,
+            "passed": true
+          },
+          "E_p95_V_m": {
+            "values": [
+              31009.945494062868,
+              31034.73256941917,
+              31114.29215154214
+            ],
+            "relative_span": 0.003353656800902058,
+            "limit": 0.01,
+            "passed": true
+          }
+        },
+        "covered_metrics_passed": false,
+        "fully_validated": false,
+        "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+      }
+    }
+  ],
+  "off_grid_points": [
+    {
+      "voltage_V": 6.459300885488345,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03\\manifest.json": "2004c7cc0f4f3fb4b27138173285f681cefe2575e52ea62f7ea661e2a5eb9ab5",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03\\input.nml": "251e44c35baca5cf9a532dd8010b686c1f09f20bfec82f6f030c360a1f57ac5f",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03\\execution.json": "bb118ae0cc6b29482748122814e00b3110d6cb51c15cd8cfc3e3830869576b67",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03\\metrics.txt": "105e58a34911b26b57b2958705066aba6a36acfbf768319facad48951cc45164",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_03\\nodes.csv": "532f2f09b0fb98ab92035fc438267f7e70d517bf065ab3e149bf41f532e3a955"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 26928,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 2.710008160126953e+21,
+        "minimum_p_m3": 2.5972596599930087e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "8297c0fadd0ca7a9b2485fbcbf0a34afaa991b7cad337e61ee26da5daab8f0e7",
+      "executable_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 31.910149651090705,
+        "joule_W": 0.01121015418812872,
+        "electron_right_A": 0.0009559443862629229,
+        "hole_right_A": 5.458540297434625e-57,
+        "heat_balance_relative": 0.004762124277731575,
+        "electron_balance_relative": 1.8638562953917576e-05,
+        "hole_balance_diagnostic": 1.2370691703146166e-06,
+        "ring_abs_n_relative_mean": 0.048321998512877065,
+        "ring_abs_p_relative_mean": 0.13664489697068566,
+        "maximum_accepted_residual": 8.588894452449605e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.01121015418812872,
+        "electron_right_A": 0.0009559443862629229,
+        "hole_right_A": 5.458540297434625e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    },
+    {
+      "voltage_V": 6.372938703023685,
+      "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04",
+      "manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04\\manifest.json",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "fully_validated": false,
+      "evidence_errors": [],
+      "file_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04\\manifest.json": "7ca463ab1c657cc31951cb02713e499400ec06902a5257c0ed8f1ccd5d851fa9",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04\\input.nml": "e759efe2980330390c7c816ea572fab2a5fc357bd811ec96760523095d16d60c",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04\\execution.json": "15cb7a0dd98c152dfb62f5c0858418f5b0a5ef48eaeeef53721eccf07d77f51f",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04\\metrics.txt": "81d723e9519609e2bb571bc2d6919070c1868ba229375cc5a51acab3bc33e369",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_fine_replay_branch_04\\nodes.csv": "9537bc38abdac9bf789cc988933e9beee2695ec5c49b88029724e1f520080639"
+      },
+      "field_audit_recomputed": {
+        "passed": true,
+        "errors": [],
+        "node_count": 26928,
+        "boundary_error": 0.0,
+        "minimum_T_K": 300.0,
+        "minimum_n_m3": 1.2757350852819983e+21,
+        "minimum_p_m3": 2.009790177043053e-31
+      },
+      "domain_symmetry": "FULL",
+      "mesh_sha256": "8297c0fadd0ca7a9b2485fbcbf0a34afaa991b7cad337e61ee26da5daab8f0e7",
+      "executable_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685",
+      "supg_scale": 1.0,
+      "metrics": {
+        "theta_max_K": 37.39826068650291,
+        "joule_W": 0.012703197893795959,
+        "electron_right_A": 0.0009243509955227128,
+        "hole_right_A": 5.278491564877078e-57,
+        "heat_balance_relative": 0.006789689962065258,
+        "electron_balance_relative": 3.1476192539636044e-05,
+        "hole_balance_diagnostic": 8.600199995531653e-06,
+        "ring_abs_n_relative_mean": 0.05574018788510116,
+        "ring_abs_p_relative_mean": 0.18262818770891465,
+        "maximum_accepted_residual": 9.701678324207378e-16,
+        "maximum_accepted_update": 0.0
+      },
+      "full_domain_integral_factor": 1,
+      "reconstructed_full_integrals": {
+        "joule_W": 0.012703197893795959,
+        "electron_right_A": 0.0009243509955227128,
+        "hole_right_A": 5.278491564877078e-57
+      },
+      "exact_zero_equilibrium_verified": false
+    }
+  ],
+  "verified_exact_voltages_V": [
+    0.0
+  ],
+  "certified_nonzero_interval": null,
+  "complete_quantitative_0_8V": false,
+  "model": "FROZEN_DRIFT_HEAT_ZNO_NT",
+  "limitation": "Studies keep their own voltage, mesh, executable and domain scope. Nonzero field-shape/model review is not automated; no interpolation, interval certificate, dynamical stability or experimental calibration implied."
+}

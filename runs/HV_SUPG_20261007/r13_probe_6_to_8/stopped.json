@@ -1,0 +1,6 @@
+{
+  "pid": 23352,
+  "reason": "Coarse L0 already fails the independent 6 V heat gate; preserve accepted 6.375 V and move computational effort to the surface-refined mesh. The first 6.5 V attempt stagnated and cut back; this manual stop is NOT proof of nonexistence at 8 V.",
+  "time": "2026-10-08T01:33:44.8122568+08:00",
+  "last_accepted_voltage": 6.375
+}

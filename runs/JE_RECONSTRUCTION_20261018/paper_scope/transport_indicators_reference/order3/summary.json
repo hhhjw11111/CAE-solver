@@ -1,0 +1,141 @@
+{
+  "status": "DIAGNOSTIC_REFERENCE_ONLY_NOT_ACCEPTANCE",
+  "reports": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\transport_indicators_reference\\order3\\A32_S1_V060\\report.json",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\transport_indicators_reference\\order3\\A32_S1_V080\\report.json"
+  ],
+  "descriptive_maxima": {
+    "Pe": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 24.216275551277654,
+      "sample_index_0based": 83112,
+      "element_1based": 3079,
+      "gauss_point_1based": 7,
+      "xyz_m": [
+        9.545538516546501e-06,
+        -9.971930620359521e-06,
+        -2.4799988452649726e-07
+      ],
+      "natural_coordinates": [
+        -0.7745966692414834,
+        0.7745966692414834,
+        -0.7745966692414834
+      ]
+    },
+    "n_abs_relative_perturbation": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 2.4369284286752766,
+      "sample_index_0based": 8970,
+      "element_1based": 333,
+      "gauss_point_1based": 7,
+      "xyz_m": [
+        -2.1594142811118878e-07,
+        -9.802671673556909e-06,
+        -4.996055441711725e-07
+      ],
+      "natural_coordinates": [
+        -0.7745966692414834,
+        0.7745966692414834,
+        -0.7745966692414834
+      ]
+    },
+    "p_abs_relative_perturbation": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 6.56372367736807,
+      "sample_index_0based": 166608,
+      "element_1based": 6171,
+      "gauss_point_1based": 19,
+      "xyz_m": [
+        2.1594142811118526e-07,
+        -9.80267167355691e-06,
+        4.996055441711725e-07
+      ],
+      "natural_coordinates": [
+        -0.7745966692414834,
+        -0.7745966692414834,
+        0.7745966692414834
+      ]
+    },
+    "grad_n_relative_magnitude_per_m": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 319892031.9878586,
+      "sample_index_0based": 8970,
+      "element_1based": 333,
+      "gauss_point_1based": 7,
+      "xyz_m": [
+        -2.1594142811118878e-07,
+        -9.802671673556909e-06,
+        -4.996055441711725e-07
+      ],
+      "natural_coordinates": [
+        -0.7745966692414834,
+        0.7745966692414834,
+        -0.7745966692414834
+      ]
+    },
+    "grad_p_relative_magnitude_per_m": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 717758531.1680409,
+      "sample_index_0based": 166583,
+      "element_1based": 6170,
+      "gauss_point_1based": 21,
+      "xyz_m": [
+        2.1493672996044154e-07,
+        -9.757376871526757e-06,
+        4.996055441711725e-07
+      ],
+      "natural_coordinates": [
+        0.7745966692414834,
+        -0.7745966692414834,
+        0.7745966692414834
+      ]
+    },
+    "E_magnitude_V_m": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 2690822.6268078755,
+      "sample_index_0based": 166583,
+      "element_1based": 6170,
+      "gauss_point_1based": 21,
+      "xyz_m": [
+        2.1493672996044154e-07,
+        -9.757376871526757e-06,
+        4.996055441711725e-07
+      ],
+      "natural_coordinates": [
+        0.7745966692414834,
+        -0.7745966692414834,
+        0.7745966692414834
+      ]
+    },
+    "temperature_K": {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080",
+      "voltage_V": 8.0,
+      "value": 324.23159241379216,
+      "sample_index_0based": 3024,
+      "element_1based": 113,
+      "gauss_point_1based": 1,
+      "xyz_m": [
+        -6.656237724541284e-08,
+        3.000831341986117e-06,
+        -4.996055441711725e-07
+      ],
+      "natural_coordinates": [
+        -0.7745966692414834,
+        -0.7745966692414834,
+        -0.7745966692414834
+      ]
+    }
+  },
+  "all_sources_unchanged": true,
+  "same_mesh": true,
+  "same_order": true,
+  "native_solver_started": false,
+  "production_acceptance": false,
+  "limitation": "Endpoint sample maxima are descriptive references, not PASS limits for intermediate voltages."
+}

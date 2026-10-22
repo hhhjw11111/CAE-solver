@@ -1,0 +1,15 @@
+{
+  "scope": "SCHEDULING_PREFLIGHT_NOT_NUMERICAL_ACCEPTANCE",
+  "created_utc": "2026-10-18T16:11:44.5583988Z",
+  "script": "scripts/invoke_je_paper_batch_20261019.ps1",
+  "script_sha256": "6419b94864e2caf934332e5f28c867f528c8667b9e4a3bfb575e95212ad02956",
+  "tested_command": "invoke_je_paper_batch_20261019.ps1 -PreflightOnly",
+  "observed_expected_exit_code": 1,
+  "observed_rejection": "ANOTHER_NATIVE_SOLVER_ACTIVE",
+  "observed_process_id": 46228,
+  "observed_process_name": "TPSOLV~1",
+  "existing_solver_still_alive": true,
+  "existing_solver_killed": false,
+  "numerical_core_changed": false,
+  "frozen_runner_changed": false
+}

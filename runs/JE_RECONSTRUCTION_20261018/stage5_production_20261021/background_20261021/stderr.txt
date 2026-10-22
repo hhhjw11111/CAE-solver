@@ -1,0 +1,308 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 365, in execute
+    state = run_native(job, gate)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_production_20261021.py", line 202, in run_native
+    preflight()
+  File "C:\Users\Administrator\Desktop\gemini修改\Console3\solver_v2\scripts\run_je_paper_ooc8000_20261020.py", line 26, in preflight
+    if result.stdout.strip(): raise RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: '+result.stdout.decode('utf-8-sig'))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ANOTHER_NATIVE_SOLVER_ACTIVE: {"Id":25288,"ProcessName":"TPSOLV~1"}
+

@@ -1,0 +1,109 @@
+pardiso_hole_split=ACCEPTED,full_backward_error=  1.0351E-12,
+pardiso_primary_entries=12662,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.1845E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.7243E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.6519E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.8822E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.4062E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.5023E-13,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.5919E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.5969E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.0337E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.6202E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.0826E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.2091E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  7.6762E-12,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  8.8439E-12,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.5087E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  6.8999E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.6349E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.3487E-09,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  5.0253E-08,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.8635E-05,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.8809E-03,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  7.6896E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  4.9019E-13,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.0820E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  7.3697E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.7455E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  5.9830E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.5067E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.2264E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.9774E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.3563E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.4961E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.0641E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.0179E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.8639E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  2.6476E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.4816E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.0035E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.8765E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.3210E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.9407E-14,
+pardiso_primary_entries=13607,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  2.7609E-12,
+pardiso_primary_entries=13607,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  1.4320E-12,
+pardiso_primary_entries=13607,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  1.7420E-12,
+pardiso_primary_entries=13607,hole_entries=432
+temperature_control_test=1,load_error= 2.2204460492503131E-016,field_error= 2.6426777433030679E-013,balance= 2.7734516211360266E-016,
+pardiso_hole_split=ACCEPTED,full_backward_error=  1.6821E-12,
+pardiso_primary_entries=12662,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  5.5781E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.5106E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.2872E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.2035E-12,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.9665E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.0650E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  6.2011E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.6362E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.2059E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.3363E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  8.8015E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.6924E-09,
+pardiso_hole_split=ACCEPTED,full_backward_error=  3.8316E-12,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.6881E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  7.5071E-10,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  8.3307E-09,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.4090E-06,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.7872E-04,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.7876E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  8.3886E-14,
+pardiso_primary_entries=12838,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.3579E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.7210E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.4074E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  4.7922E-12,
+pardiso_primary_entries=13670,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.7916E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  9.1627E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  4.9769E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  4.8656E-12,
+pardiso_primary_entries=13670,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.7547E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  9.5010E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.7746E-10,
+pardiso_hole_split=ACCEPTED,full_backward_error=  5.0339E-12,
+pardiso_primary_entries=13670,hole_entries=432
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  1.7269E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  9.7959E-11,
+pardiso_hole_split=FULL_MATRIX_FALLBACK,rejected_backward_error=  3.8422E-11,
+pardiso_hole_split=ACCEPTED,full_backward_error=  6.7253E-15,
+pardiso_primary_entries=13607,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  3.3567E-13,
+pardiso_primary_entries=13607,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  7.0066E-13,
+pardiso_primary_entries=13607,hole_entries=432
+pardiso_hole_split=ACCEPTED,full_backward_error=  9.5877E-13,
+pardiso_primary_entries=13607,hole_entries=432
+temperature_control_test=2,load_error= 2.2204460492503131E-016,field_error= 1.7541523789077473E-013,balance= 5.4519855530218917E-016,
+verification_id=TCTRL_original_PDE_and_voltage_replay
+verification_result=PASS

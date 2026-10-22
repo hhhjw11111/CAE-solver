@@ -1,0 +1,165 @@
+{
+  "schema": "TPSolverV2-build-manifest-v1",
+  "solver_version": "0.2.0-g03",
+  "theory_version": "2.1",
+  "architecture_id": "TPS-V2-ARCH-001",
+  "generated_utc": "2026-09-01T13:13:45.5015554Z",
+  "files": [
+    {
+      "path": "build/Debug/TPSolverV2.exe",
+      "bytes": 1692160,
+      "modified_utc": "2026-09-01T13:13:45.2566477Z",
+      "sha256": "b4c57002759a278791a181ccf54f29b5bdc6e1f07c07deb822b7e56dd7b564d9"
+    },
+    {
+      "path": "src/app/main.f90",
+      "bytes": 3430,
+      "modified_utc": "2026-09-01T13:11:51.9145478Z",
+      "sha256": "7e7cb8b8e5935882cb32ba46ebb51f673cb4253da23805170dd08e68e8430240"
+    },
+    {
+      "path": "src/core/build_info_m.f90",
+      "bytes": 935,
+      "modified_utc": "2026-09-01T13:13:27.3215123Z",
+      "sha256": "4596e2d1a196bd085ada6729b732b3ddfcbbd92f8620061444c7b3b4c0c3768c"
+    },
+    {
+      "path": "src/core/constants_m.f90",
+      "bytes": 422,
+      "modified_utc": "2026-08-31T12:59:44.0834777Z",
+      "sha256": "dc6872db24efbbb10627ef53a0b46fb182a9b61940a66c2497456d99c31c0d15"
+    },
+    {
+      "path": "src/core/field_layout_m.f90",
+      "bytes": 1291,
+      "modified_utc": "2026-08-31T12:59:44.0846095Z",
+      "sha256": "0b02e79e04674d322966a1076e64dbb944ffb1634d6d007a7e24e7acde335c96"
+    },
+    {
+      "path": "src/core/kinds_m.f90",
+      "bytes": 256,
+      "modified_utc": "2026-08-31T12:59:44.0824092Z",
+      "sha256": "fb2e591a6a8732de2a20c5a4d0aa38ee0db7e0840ef938f74ecfed54ca1a95fc"
+    },
+    {
+      "path": "src/core/model_types_m.f90",
+      "bytes": 2056,
+      "modified_utc": "2026-08-31T12:59:44.0851338Z",
+      "sha256": "a87cd8853974a9a05eb5c939b6960bb5fd308e9f10588003d30215334394c183"
+    },
+    {
+      "path": "src/core/status_m.f90",
+      "bytes": 1255,
+      "modified_utc": "2026-08-31T12:59:44.0840056Z",
+      "sha256": "21382d35c1d891db81cbfdaae9e041d175deb758c3479954b17d9baf8a77e77b"
+    },
+    {
+      "path": "src/fem/element_kernel_m.f90",
+      "bytes": 8587,
+      "modified_utc": "2026-08-31T13:32:21.2268130Z",
+      "sha256": "0e2971ac393f29b51fa9688dd134ac293438a413a5b1f4b778c99459ecb9696f"
+    },
+    {
+      "path": "src/io/input_schema_m.f90",
+      "bytes": 1720,
+      "modified_utc": "2026-08-31T13:05:06.3922779Z",
+      "sha256": "c0472ae1aaec08edfbd008cfe2289e8b649645202169fe7761b8e2dc5e269425"
+    },
+    {
+      "path": "src/io/native_input_m.f90",
+      "bytes": 5037,
+      "modified_utc": "2026-08-31T13:05:06.3932761Z",
+      "sha256": "1c8e6bbaca6172e0ffb7a5fe1c4f9bc0166a9f8911f0417c616d0f5561c0153c"
+    },
+    {
+      "path": "src/mesh/dof_map_m.f90",
+      "bytes": 1073,
+      "modified_utc": "2026-08-31T13:03:02.2262789Z",
+      "sha256": "e3889fbe33e6e41281cd5f54401c57c20eebd21edb8610d790c9592c98a0eeea"
+    },
+    {
+      "path": "src/mesh/hex20_quadrature_m.f90",
+      "bytes": 951,
+      "modified_utc": "2026-08-31T13:12:55.7474243Z",
+      "sha256": "9276ba0307663c1bb28154c080c1240c8388c1ca3a074cd3185f661a36c7e80e"
+    },
+    {
+      "path": "src/mesh/hex20_shape_m.f90",
+      "bytes": 5750,
+      "modified_utc": "2026-08-31T13:03:02.2252700Z",
+      "sha256": "4419c35fea7f2fa674b94c4c983607b4da133e4aee8366f8d13c8cae3ca7a7f1"
+    },
+    {
+      "path": "src/mesh/mesh_checks_m.f90",
+      "bytes": 3550,
+      "modified_utc": "2026-08-31T13:03:02.2272759Z",
+      "sha256": "bdd1ce6a353f880357ed3eb97dfd1716b9222d9e89cbf9eab3238920c6f1d5b3"
+    },
+    {
+      "path": "src/mesh/mesh_types_m.f90",
+      "bytes": 1316,
+      "modified_utc": "2026-08-31T13:03:02.2246849Z",
+      "sha256": "bfda2cd3698e8d466ea22559603f1efd1890b2c51b90a236e6f56b68b526ef74"
+    },
+    {
+      "path": "src/physics/equilibrium_m.f90",
+      "bytes": 1200,
+      "modified_utc": "2026-08-31T13:22:09.4515352Z",
+      "sha256": "31774d14691a34fc7b0e33b7865e8dcb4be121a5bf934ff7744fb19d58212421"
+    },
+    {
+      "path": "src/physics/material_point_m.f90",
+      "bytes": 10767,
+      "modified_utc": "2026-08-31T13:30:06.5593057Z",
+      "sha256": "ab900468050329d4c4a7c3172c831f2ae08df51bd679535aa2e09b4cdfb9ebd6"
+    },
+    {
+      "path": "src/physics/recombination_m.f90",
+      "bytes": 511,
+      "modified_utc": "2026-08-31T13:22:09.4525736Z",
+      "sha256": "06133b7b899ca05634e56b40afc9fe3f7509d3b15033a340b30d9a88200cf800"
+    },
+    {
+      "path": "src/physics/thermo_piezo_m.f90",
+      "bytes": 1069,
+      "modified_utc": "2026-08-31T13:22:09.4530969Z",
+      "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+    },
+    {
+      "path": "src/physics/transport_m.f90",
+      "bytes": 2236,
+      "modified_utc": "2026-08-31T13:22:09.4520532Z",
+      "sha256": "c85771a31f395520268ba3d3f7a850848f8ba515d144553c3fce8be83abc8ed1"
+    },
+    {
+      "path": "src/verification/element_tangent_check_m.f90",
+      "bytes": 8845,
+      "modified_utc": "2026-09-01T13:12:34.0302844Z",
+      "sha256": "6ae724bcd905ccfae5eee8653147a3afa94fbfb806b1b3722a8998b9bff9cd21"
+    },
+    {
+      "path": "src/verification/material_tangent_check_m.f90",
+      "bytes": 11513,
+      "modified_utc": "2026-09-01T13:11:51.9125411Z",
+      "sha256": "1b6a13910fdc35f0016346fc2404ae440db7bf00703158531257176eee94c6b7"
+    },
+    {
+      "path": "src/verification/verification_driver_m.f90",
+      "bytes": 7466,
+      "modified_utc": "2026-09-01T13:11:51.9145478Z",
+      "sha256": "1fc32af3590331bbaa3b0fcc6ac916a96b983593e1e2b5028ab05ede0e10c185"
+    },
+    {
+      "path": "TPSolverV2.vfproj",
+      "bytes": 3569,
+      "modified_utc": "2026-09-01T13:12:00.1983273Z",
+      "sha256": "e932354e33ded0dafe37b4fa51a1583ce939a9e8020544f8ddd07eb515d83388"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 10,
+      "modified_utc": "2026-09-01T13:13:27.3209775Z",
+      "sha256": "41b93ba9382253f72ef82d25835b0d6d40b56d8480cf82fec3ef53df944faca3"
+    }
+  ]
+}

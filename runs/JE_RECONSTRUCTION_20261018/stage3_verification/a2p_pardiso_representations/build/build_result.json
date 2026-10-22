@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\WINDOWS\\system32\\cmd.exe",
+    "/d",
+    "/c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_pardiso_representations\\build\\build.cmd"
+  ],
+  "returncode": 1,
+  "compiler": "C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\bin\\ifx.exe",
+  "compiler_sha256": "fe44425899192889c7b866316c0f46f4fa61b9a2dc36b4e2fb174ea432d12d49",
+  "libraries": {
+    "C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\lib\\mkl_intel_lp64.lib": "2840b2fbfb5cd0f2b7a2e8ff9035527202751b2091d6e1b79cf89d6e84ebe145",
+    "C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\lib\\mkl_intel_thread.lib": "5e602cadd63f1c3a58a71d624e9fa8e4803da4bc8e30e4edbaa5810ee7922c64",
+    "C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\lib\\mkl_core.lib": "366a0c56472a08b8dfabe833a3e997121059a729e413940d43aa89a1f27e14ce",
+    "C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\lib\\libiomp5md.lib": "08562c7b2f2974499e49de5687b3a746a1e1b6ca2227b8edf9e4973ac84c08e7"
+  },
+  "response_file_sha256": "d6591b62339eb8207add42ee4a08cf6627516118760c500a4b9a02b9a22d42dc",
+  "build_log_sha256": "9782eef664b045677675793c339b986a7427d24a0b1d05461413c72baea6d044"
+}

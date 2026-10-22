@@ -1,0 +1,21 @@
+{
+  "version": "0.15.1-supg-inverse-experimental",
+  "complete_quantitative_0_8V": false,
+  "preserved_legacy_cli_checks": 16,
+  "legacy_cli_byte_identical": true,
+  "python_test_exit": 0,
+  "production_strict_byte_identical": false,
+  "production_maximum_scaled_node_difference": 4.897788633454423e-14,
+  "validated_source_snapshot_records": 62,
+  "highest_fixed_voltage_solve_and_flux_pass_V": 6.459300885488345,
+  "exact_fold_voltage_verified": false,
+  "dynamical_stability_verified": false,
+  "material_experimental_calibration_verified": false,
+  "missing_grid_voltages_V": [
+    6.5,
+    7.0,
+    7.5,
+    8.0
+  ],
+  "limitation": "Mixed-mesh evidence index; no common-mesh full-interval curve or missing-voltage interpolation."
+}

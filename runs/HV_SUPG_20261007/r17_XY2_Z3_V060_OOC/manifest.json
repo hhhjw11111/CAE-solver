@@ -1,0 +1,24 @@
+{
+  "executable": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+  "executable_sha256": "0819e6351db9b0dc3d95d35916624d6cd1957ad0c5bdb26314cd7bd78997d685",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY2_Z3\\H1_XY2_Z3.mesh",
+  "mesh_sha256": "fc6827087d6a85f7751bed8acac74b3cecab521374ba7e1c8c79e1f5ddf672b2",
+  "voltages": [
+    6.0
+  ],
+  "supg_scale": 1.0,
+  "model": "FROZEN_DRIFT_HEAT_ZNO_NT",
+  "runtime_env": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "TPS_PARDISO_STORAGE": "OOC",
+    "MKL_PARDISO_OOC_CFG_FILE_NAME": "run_ooc.cfg",
+    "MKL_PARDISO_OOC_CFG_PATH": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY2_Z3_V060_OOC\\pardiso_ooc",
+    "MKL_PARDISO_OOC_FILE_NAME": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY2_Z3_V060_OOC\\pardiso_ooc\\factors",
+    "MKL_PARDISO_OOC_KEEP_FILE": "1",
+    "MKL_PARDISO_OOC_MAX_CORE_SIZE": "12000",
+    "MKL_PARDISO_OOC_MAX_SWAP_SIZE": "0"
+  },
+  "log_step_limit": 1.0,
+  "global_log_limit": false
+}

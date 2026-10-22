@@ -1,0 +1,133 @@
+{
+  "scope": "FIRST_JOINT_PAIR_ONLY_NOT_THREE_LEVEL_ACCEPTANCE",
+  "voltage_V": 6,
+  "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060",
+  "target": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060",
+  "comparisons": {
+    "joule_W": {
+      "coarse": 0.005789287722243996,
+      "joint1": 0.005789207778629318,
+      "pair_change_percent": 0.0013808886086383511,
+      "original_mesh_limit_percent": 1.0
+    },
+    "theta_max_K": {
+      "coarse": 14.108171752572275,
+      "joint1": 14.106379396166403,
+      "pair_change_percent": 0.012704384645339678,
+      "original_mesh_limit_percent": 1.0
+    },
+    "ring_theta_mean_K": {
+      "coarse": 11.851687859723716,
+      "joint1": 11.847383574380828,
+      "pair_change_percent": 0.03631791010557911,
+      "original_mesh_limit_percent": 1.0
+    },
+    "electron_right_A": {
+      "coarse": 0.0009585950987489296,
+      "joint1": 0.0009610232486185051,
+      "pair_change_percent": 0.2526629686707372,
+      "original_mesh_limit_percent": 1.0
+    },
+    "ring_E_mean_V_m": {
+      "coarse": 360210.4557244621,
+      "joint1": 360261.1259893735,
+      "pair_change_percent": 0.014064871632268983,
+      "original_mesh_limit_percent": 2.0
+    },
+    "ring_Q_mean_W_m3": {
+      "coarse": 25716995744652.44,
+      "joint1": 25738453537982.777,
+      "pair_change_percent": 0.0833686192477346,
+      "original_mesh_limit_percent": 2.0
+    },
+    "ring_abs_n_relative_mean": {
+      "coarse": 0.02277001937079801,
+      "joint1": 0.022759430404289495,
+      "pair_change_percent": 0.0465039855086577,
+      "original_mesh_limit_percent": 2.0
+    },
+    "ring_abs_p_relative_mean": {
+      "coarse": 0.044305506060666286,
+      "joint1": 0.039574127553304965,
+      "pair_change_percent": 10.67898536331529,
+      "original_mesh_limit_percent": 2.0
+    },
+    "ring_Q_p95_W_m3": {
+      "coarse": 54023313747310.305,
+      "joint1": 54041057176330.76,
+      "pair_change_percent": 0.032833238185104384,
+      "original_mesh_limit_percent": 5.0
+    },
+    "E_p95_V_m": {
+      "coarse": 435575.54690143256,
+      "joint1": 434467.8820194773,
+      "pair_change_percent": 0.2542991427858797,
+      "original_mesh_limit_percent": 5.0
+    }
+  },
+  "local_fields": {
+    "phi_V": {
+      "maximum_relative": 0.0004429007727237234,
+      "rms_relative": 0.00018546913549574452,
+      "normalization": 6.0000000000000036,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.0015003100788675344,
+      "rms_relative": 0.0003740747414836742,
+      "normalization": 14.10857018483907,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.0015496248506512423,
+      "rms_relative": 0.00041305952454917446,
+      "normalization": 1.0250624900221479e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0006567396198261022,
+      "rms_relative": 0.0001568433797714312,
+      "normalization": 1.0250624900221479e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.0007482513150429231,
+      "rms_relative": 0.00024319645825419912,
+      "normalization": 1.0250624900221479e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.01790631320304832,
+      "rms_relative": 0.0015630090240916156,
+      "normalization": 1.277114552075688,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.029849257068123077,
+      "rms_relative": 0.0036650157627617836,
+      "normalization": 1.9865163726298518,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "thresholds_changed": false,
+  "production_acceptance": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\manifest.json": "5577f680edc89dfc12e142c627c8c4faebe7d4c62d73e8ceba6bcd3c96cef47b",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\metrics.txt": "e3b2c60e6aee949deba709c453cdf46f4942898e147a7606d4f98ad8e4da1dc0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\execution.json": "018e0197451024341ee9280674ef2d5486e3a159fe1160e0459b28e6d74b2b17",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\input.nml": "822c269c821ae8ed4a400e19cb2afbd4ce4391113050db09db003a8692cef65a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R18_Z14_S1_V060\\nodes.csv": "ed0678c1bbb5ebbe4b760143675611001a9c9c14ebf81800c54508a17e1460ea",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\manifest.json": "c900c9fe7ecef48f602e780629509db447c9c461e78635d79a6d00bc88e88301",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\metrics.txt": "b8670b10fef47fd6c9170fb5c534adcc99876c8fc0d18389f8f0634503bac4fe",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\execution.json": "e229022fbf39360e6cc26f4323c92a66cf7169ab78fd501aa639e57ef2d3b8d2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\input.nml": "dc84b987f2a3035f5e357d1e159cca53a767c3948e7c6077b1ddf551aed9d7b8",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060\\nodes.csv": "5d712dca8d7f57e13c6bdce7e1707cd8282b58a078a8381a4e7249079af47ba1"
+  }
+}

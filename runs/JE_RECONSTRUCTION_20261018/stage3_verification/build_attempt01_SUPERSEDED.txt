@@ -1,0 +1,7 @@
+The first build completed, but one A2P explanatory stdout line was added while
+compilation was in progress. Its executable is preserved but is not used as
+verified evidence: the precise source read time is not proven.
+
+All verification sources were frozen before the second, separate build:
+build/JE_VERIFY_20261018_FINAL. Use that build and its manifest for stage 3.
+No physical equation, numerical threshold, or historical executable was changed.

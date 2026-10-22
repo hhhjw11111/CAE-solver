@@ -1,0 +1,31 @@
+{
+  "jobs": [
+    {
+      "name": "A48_R22_Z18_S1_V060",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "voltage": 6,
+      "supg_scale": 1.0,
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc12000_20261020\\A48_R22_Z18_S1_V060",
+      "kind": "joint"
+    },
+    {
+      "name": "A48_R22_Z18_S1_V080",
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "voltage": 8,
+      "supg_scale": 1.0,
+      "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc12000_20261020\\A48_R22_Z18_S1_V080",
+      "kind": "joint"
+    }
+  ],
+  "production_acceptance": false
+}

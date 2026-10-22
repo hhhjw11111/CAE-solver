@@ -1,0 +1,3 @@
+﻿voltage_V,mesh_L1_L2_hole_percent,mesh_pass,supg_pass,supg_failed_metrics,local_hole_percent,local_hole_pass,power_gap_percent,paper_production_use
+6,6.8840093927633985,False,False,ring_abs_p_relative_mean,1.9803568605119524,True,0.26076521584421175,NO_UNTIL_ORIGINAL_GATES_PASS
+8,2.9863319084879936,False,False,electron_right_A;ring_Q_mean_W_m3;ring_abs_p_relative_mean;ring_Q_p95_W_m3,1.435975728598043,True,0.34834213006449055,NO_UNTIL_ORIGINAL_GATES_PASS

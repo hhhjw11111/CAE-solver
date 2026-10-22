@@ -1,0 +1,28 @@
+{
+  "status": "FAIL",
+  "contrast_checks": 27,
+  "maximum_scaled_contrast_discrepancy": 0.07388613646062762,
+  "issues": [
+    "Missing or invalid numeric field: g12_r060_h00_annulus_volume_relative_error",
+    "Invalid H00 annulus-volume error at r=060",
+    "Printed contrast does not match its control: r=060, annulus_joule_mean",
+    "Printed contrast does not match its control: r=060, annulus_joule_p95",
+    "Printed contrast does not match its control: r=060, annulus_electric_mean",
+    "Printed contrast does not match its control: r=060, annulus_n_relative_mean",
+    "Printed contrast does not match its control: r=060, annulus_p_relative_mean",
+    "Printed contrast does not match its control: r=060, annulus_temperature_rise_mean",
+    "Printed contrast does not match its control: r=060, annulus_displacement_mean",
+    "Missing or invalid numeric field: g12_r090_h00_annulus_volume_relative_error",
+    "Invalid H00 annulus-volume error at r=090",
+    "Printed contrast does not match its control: r=090, annulus_joule_mean",
+    "Printed contrast does not match its control: r=090, annulus_joule_p95",
+    "Printed contrast does not match its control: r=090, annulus_electric_mean",
+    "Printed contrast does not match its control: r=090, annulus_n_relative_mean",
+    "Printed contrast does not match its control: r=090, annulus_p_relative_mean",
+    "Printed contrast does not match its control: r=090, annulus_temperature_rise_mean",
+    "Printed contrast does not match its control: r=090, annulus_displacement_mean",
+    "Missing or invalid numeric field: g12_r120_h00_annulus_volume_relative_error",
+    "Invalid H00 annulus-volume error at r=120"
+  ],
+  "log_sha256": "f5a6dfb8d280f99d599f8928f7eddaa27acac6ed445320adaec8484f65d3cf09"
+}

@@ -1,0 +1,176 @@
+{
+  "domain_symmetry": "FULL",
+  "hole_radius_m": 2e-06,
+  "radius_um": 2,
+  "ring_width_m": 5e-07,
+  "annulus_inner_radius_m": 2e-06,
+  "annulus_outer_radius_m": 2.4999999999999998e-06,
+  "annulus_corner_index": 9,
+  "counts": {
+    "circumferential": 48,
+    "radial": 22,
+    "thickness": 18
+  },
+  "nodes": 81888,
+  "elements": 19008,
+  "profiles": {
+    "radial_axis_corners_m": [
+      2e-06,
+      2.0077777777777777e-06,
+      2.017111111111111e-06,
+      2.0326666666666666e-06,
+      2.0544444444444446e-06,
+      2.0855555555555556e-06,
+      2.1353333333333335e-06,
+      2.1975555555555555e-06,
+      2.3388888888888888e-06,
+      2.4999999999999998e-06,
+      3.7115384615384614e-06,
+      4.923076923076923e-06,
+      6.134615384615384e-06,
+      7.346153846153846e-06,
+      8.557692307692308e-06,
+      9.544615384615385e-06,
+      9.745384615384616e-06,
+      9.850307692307694e-06,
+      9.914923076923077e-06,
+      9.953692307692308e-06,
+      9.97523076923077e-06,
+      9.990307692307693e-06,
+      1e-05
+    ],
+    "radial_diagonal_corners_m": [
+      2e-06,
+      2.0077777777777777e-06,
+      2.017111111111111e-06,
+      2.0326666666666666e-06,
+      2.0544444444444446e-06,
+      2.0855555555555556e-06,
+      2.1353333333333335e-06,
+      2.1975555555555555e-06,
+      2.3388888888888888e-06,
+      2.4999999999999998e-06,
+      4.428446550261126e-06,
+      6.356893100522252e-06,
+      8.285339650783377e-06,
+      1.0213786201044504e-05,
+      1.2142232751305632e-05,
+      1.3686751008346336e-05,
+      1.3887520239115566e-05,
+      1.3992443316038644e-05,
+      1.4057058700654027e-05,
+      1.4095827931423259e-05,
+      1.411736639296172e-05,
+      1.4132443316038643e-05,
+      1.4142135623730951e-05
+    ],
+    "z_corners_m": [
+      -5e-07,
+      -4.972777777777777e-07,
+      -4.92611111111111e-07,
+      -4.848333333333333e-07,
+      -4.7238888888888887e-07,
+      -4.5061111111111107e-07,
+      -4.101666666666666e-07,
+      -3.417222222222222e-07,
+      -2.1738888888888885e-07,
+      0.0,
+      2.1738888888888885e-07,
+      3.417222222222222e-07,
+      4.1016666666666665e-07,
+      4.5061111111111107e-07,
+      4.7238888888888887e-07,
+      4.848333333333333e-07,
+      4.92611111111111e-07,
+      4.972777777777777e-07,
+      5e-07
+    ]
+  },
+  "maximum_radial_axis_step_m": 1.211538461538462e-06,
+  "maximum_z_step_m": 2.1738888888888885e-07,
+  "volume_3x3x3_m3": 3.8743363706812503e-16,
+  "geometry_audit": {
+    "status": "GEOMETRY_CHECKS_PASSED_NOT_SOLUTION_ACCEPTANCE",
+    "geometry_coordinate_tolerance_m": 1e-18,
+    "numerical_geometry_relative_tolerance": 1e-10,
+    "bounds_m": [
+      [
+        -1e-05,
+        -1e-05,
+        -5e-07
+      ],
+      [
+        1e-05,
+        1e-05,
+        5e-07
+      ]
+    ],
+    "bound_coordinate_error_m": 0.0,
+    "anchor_counts": [
+      1,
+      1,
+      1
+    ],
+    "contact_counts": [
+      709,
+      709
+    ],
+    "exterior_face_counts": {
+      "x-": 216,
+      "x+": 216,
+      "y-": 216,
+      "y+": 216,
+      "z-": 1056,
+      "z+": 1056,
+      "hole": 864
+    },
+    "annulus_interface_faces": 864,
+    "annulus_interface_node_radius_error_m": 4.235164736271502e-22,
+    "hole_node_radius_error_m": 4.235164736271502e-22,
+    "quadrature": {
+      "3": {
+        "volume_m3": 3.8743363706812503e-16,
+        "annulus_volume_m3": 7.068579149179664e-18,
+        "minimum_jacobian": 6.926884406295848e-25,
+        "quadratic_boundary_volume_relative_error": 1.2725742387629554e-16,
+        "quadratic_boundary_annulus_relative_error": 4.3594162928446445e-16
+      },
+      "5": {
+        "volume_m3": 3.87433637068125e-16,
+        "annulus_volume_m3": 7.068579149179657e-18,
+        "minimum_jacobian": 6.925112896560291e-25,
+        "quadratic_boundary_volume_relative_error": 2.545148477525911e-16,
+        "quadratic_boundary_annulus_relative_error": 1.3078248878533932e-15
+      }
+    },
+    "expected_quadratic_boundary_volume_m3": 3.874336370681251e-16,
+    "expected_quadratic_annulus_volume_m3": 7.068579149179667e-18,
+    "ideal_circle_volume_m3": 3.8743362938564085e-16,
+    "ideal_circle_annulus_volume_m3": 7.06858347057703e-18,
+    "ideal_circle_volume_relative_geometry_error": 1.9829162083343926e-08,
+    "ideal_circle_annulus_relative_geometry_error": -6.113526678879226e-07,
+    "quadratic_arc_relative_max_inward_sag": 5.730263764602839e-07,
+    "exterior_area_vector_m2": [
+      -2.711923055248305e-28,
+      5.977672395402738e-26,
+      6.85008944770476e-25
+    ],
+    "exterior_area_vector_relative_closure": 7.926972183436284e-16,
+    "divergence_volume_m3": 3.8743363706812513e-16,
+    "divergence_volume_relative_error": 1.2725742387629554e-16,
+    "limitation": "Positive Jacobians sampled at tensor orders 3 and 5; geometry checks are not FEM solution or spatial-convergence acceptance."
+  },
+  "status": "MESH_DESIGN_NOT_NUMERICAL_ACCEPTANCE",
+  "scope": "Radius-parametric full-domain geometry; 0.5 um ring retained. Separate radius-specific field/SUPG evidence required.",
+  "mesh_sha256": "9854572bc52d7e627079b51c65e30ad2d838e91b425eae48c14a72fd6caae200",
+  "generator_sha256": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+  "dependencies": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_paper_radius_mesh_20261018.py": "447937ce8dd225f50bb82ef85aba27b7b98df144382896af7a0d000aebcb6991",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_je_global_direction_mesh_20261016.py": "6f70a7508e358f65bbbb405eb223cc8185f4da846feb54293eaca88d4ca0d1dc",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\generate_f1_main_cases.py": "7e098f7b4732fc43365061be353e7b68e8801f4b8b46c1e77505a8c1ec693d4d",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\audit_hex20_boundary_geometry.py": "2c356f26a8cf721064faeec6a5936b44dc4e139d351cc1cfbae68979ef462fb4",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\transfer_hv_initial_guess.py": "bda7f471788e7c51779a4bcbb7ff6d1ccf80e1838c99e6d97c287e1214ae5e25",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\scripts\\run_hv_sweep.py": "8c99775ace5b78d76e8d46cfa45eeeb21e6d4d8e1562e03e46f3755140fb96b5"
+  }
+}

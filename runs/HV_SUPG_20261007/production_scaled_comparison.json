@@ -1,0 +1,92 @@
+{
+  "parallel_r5": {
+    "ux_m": {
+      "max_absolute": 9.822769774067204e-25,
+      "scaled_by_frozen_input": 9.822769774067204e-15
+    },
+    "uy_m": {
+      "max_absolute": 4.652890945610781e-25,
+      "scaled_by_frozen_input": 4.652890945610781e-15
+    },
+    "uz_m": {
+      "max_absolute": 1.5445013000013564e-23,
+      "scaled_by_frozen_input": 1.5445013000013564e-13
+    },
+    "phi_V": {
+      "max_absolute": 8.881784197001252e-16,
+      "scaled_by_frozen_input": 2.9605947323337506e-16
+    },
+    "eta_n": {
+      "max_absolute": 2.309762586204303e-15,
+      "scaled_by_frozen_input": 2.309762586204303e-14
+    },
+    "eta_p": {
+      "max_absolute": 3.3160250994614806e-15,
+      "scaled_by_frozen_input": 3.3160250994614806e-14
+    },
+    "theta_K": {
+      "max_absolute": 5.329070518200751e-15,
+      "scaled_by_frozen_input": 5.329070518200751e-16
+    }
+  },
+  "same_compile_options_r6": {
+    "ux_m": {
+      "max_absolute": 4.652890945610781e-25,
+      "scaled_by_frozen_input": 4.652890945610781e-15
+    },
+    "uy_m": {
+      "max_absolute": 3.360421238496675e-25,
+      "scaled_by_frozen_input": 3.360421238496675e-15
+    },
+    "uz_m": {
+      "max_absolute": 2.3296766470731756e-24,
+      "scaled_by_frozen_input": 2.3296766470731756e-14
+    },
+    "phi_V": {
+      "max_absolute": 4.440892098500626e-16,
+      "scaled_by_frozen_input": 1.4802973661668753e-16
+    },
+    "eta_n": {
+      "max_absolute": 2.079928348240466e-15,
+      "scaled_by_frozen_input": 2.079928348240466e-14
+    },
+    "eta_p": {
+      "max_absolute": 2.7228293572228292e-15,
+      "scaled_by_frozen_input": 2.722829357222829e-14
+    },
+    "theta_K": {
+      "max_absolute": 4.440892098500626e-15,
+      "scaled_by_frozen_input": 4.440892098500626e-16
+    }
+  },
+  "baseline_self_repeat": {
+    "ux_m": {
+      "max_absolute": 4.911384887033602e-25,
+      "scaled_by_frozen_input": 4.911384887033602e-15
+    },
+    "uy_m": {
+      "max_absolute": 2.8434333556510326e-25,
+      "scaled_by_frozen_input": 2.8434333556510326e-15
+    },
+    "uz_m": {
+      "max_absolute": 5.3120504962389746e-24,
+      "scaled_by_frozen_input": 5.3120504962389746e-14
+    },
+    "phi_V": {
+      "max_absolute": 4.440892098500626e-16,
+      "scaled_by_frozen_input": 1.4802973661668753e-16
+    },
+    "eta_n": {
+      "max_absolute": 1.5326800102224602e-15,
+      "scaled_by_frozen_input": 1.5326800102224602e-14
+    },
+    "eta_p": {
+      "max_absolute": 2.168998762756246e-15,
+      "scaled_by_frozen_input": 2.168998762756246e-14
+    },
+    "theta_K": {
+      "max_absolute": 4.884981308350689e-15,
+      "scaled_by_frozen_input": 4.884981308350689e-16
+    }
+  }
+}

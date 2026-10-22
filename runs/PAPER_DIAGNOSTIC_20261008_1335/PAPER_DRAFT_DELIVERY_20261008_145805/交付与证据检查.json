@@ -1,0 +1,337 @@
+{
+  "encoding": "UTF-8 without BOM",
+  "format": "txt, not DOCX; dependency unavailable; no render claim",
+  "evidence_cutoff": "2026-10-08 14:47 +08:00",
+  "generated_at": "2026-10-08T14:58:44.009243+08:00",
+  "paper_characters": 13333,
+  "report_characters": 4634,
+  "placeholder_count": 10,
+  "reference_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "required_sections_present": true,
+  "has_replacement_character": false,
+  "has_control_characters": false,
+  "deliverables": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\PAPER_DRAFT_DELIVERY_20261008_145805\\今日执行详细总结.txt",
+      "bytes": 10358,
+      "sha256": "9d43240ec09a352d60ddd6f1b04281efd527980cf7d51da7d4dfa5162409e833"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\PAPER_DRAFT_DELIVERY_20261008_145805\\论文完整初稿_工作版本.txt",
+      "bytes": 26821,
+      "sha256": "400e4743dcfd1cce4e10c1f6dd9cb2483843f7da8eb0daa4938028a73ad32033"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\material_point_m.f90",
+      "sha256": "649601bea7dd70704f9eecfe3d4b28de7cc80cb7b33c4ab6a8ddb8568e2ee0aa"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\thermo_piezo_m.f90",
+      "sha256": "0acecab76b6e6468b90107c75d32b69b74a08fc0599e61584a3cf5f71ea0e65d"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\transport_m.f90",
+      "sha256": "7215021b45f41f4e0cb7654d1bbe1318275581af2eaade621b9d0cd5dee48bd1"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\src\\physics\\zno_candidate_m.f90",
+      "sha256": "407519d9ec931d9d29ed1a32d2204f34a74238f1ed0ccb2cbeaf3b2c63f81026"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\docs\\zno_material_input_audit_v2.md",
+      "sha256": "49ce9e1fb041a2eb6710689f1325e83ac91479b20bc8b148e709a497700f2590"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\docs\\analytic_and_hole_study_design_v2.md",
+      "sha256": "41fd2b9d99fa9d9ae36b2068b622c029f92e8ea69069fa3c97a3f179faba2b90"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\zno_material_point_v2\\evidence.json",
+      "sha256": "767da30978d5d4ef90e0123864bbe2b54b5c4101c24b3bc9272a11d525f6e6a5"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\mechanical_diagnostic.json",
+      "sha256": "f59bdf115f59797260a216190c65c8aba2801d4ef05525e74870a1887f0c89e0"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\diagnostic.json",
+      "sha256": "8e76570fe90dca97228c12b546e7f922e787256ba6a2998fbb5a15a1f1533ab3"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\PAPER_DIAGNOSTIC_20261008_1335\\a96_incomplete_observation_1417.json",
+      "sha256": "ae0f1661c4dfca1663212d229e8697d6fd3a07e65ed0e5d9ad4c291893bb0e87"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r21_half_A32_A48_A64_V060.json",
+      "sha256": "337250fa350d289fd92266aca13ede66da4af19f07d1debc725e4e5bf39169af"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r21_half_L0_L1_L2_V005.json",
+      "sha256": "6c3d925c2a4d3b388cfa838116b8e51f5772d96ca3b95a33510d89cc66932e6a"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r22_log_half_L0_L1_L2_V005.json",
+      "sha256": "2171dca1bc14d9180d781e9c5a6abacbb0c15faf7b061cde363f4820f2d4fdf0"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\field_shape_r22_L1_L2_V005.json",
+      "sha256": "20f80015283113afbddc0f581dcdda950d418b0e22cbac2f204988c1e715570a"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\quadrature_r23_log_half_L1_V005.json",
+      "sha256": "4ba4f04e2baaa5923df8f69aa9ae706f09864a938eafac975b01a431c33f43b9"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\metrics.txt",
+      "sha256": "4a597ef05e8652e54f342b5fb71bd8c84f7258723df05f4afdd9137d63270e88"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_r24_q5_replay_equivalence.json",
+      "sha256": "f23aa81fa6cc3bcdc31fdd17c3867249e44f263caff4025d4fac601db89a72f1"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L0_V005\\metrics.txt",
+      "sha256": "83d6f0e4f3212abebd38a18e7aa1f38a90a7aa3bf176d00972488c3e87af8079"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\metrics.txt",
+      "sha256": "528b376ff4d0415f926205147e4e0f7c19f981c30ff8e9080e4264b2c7c3a22d"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\metrics.txt",
+      "sha256": "886613284d77b744290d86839147b6b53bceaa83b0c5141c7395ee9332fb537c"
+    }
+  ],
+  "background_reference_provenance": "Refs1-10 provided by parent as verified bibliographic/abstract information; no claim of local paid-fulltext read. Refs11-14 from repository audit, remaining gaps explicit.",
+  "reference_source_categories": [
+    {
+      "id": 1,
+      "description": "Sladek et al. FEM FGM PSC",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 2,
+      "description": "Zhao et al. PSC plates FEM",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 3,
+      "description": "Qu et al. temperature mobile charges",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 4,
+      "description": "Qu et al. thermoelectric mechanisms",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 5,
+      "description": "Qiao et al. GaN conductivity",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 6,
+      "description": "Zhang et al. in-plane current thermal control",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 7,
+      "description": "Xiao et al. nonlinear coupled plates",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 8,
+      "description": "Zhang et al. 2D crack BEM",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 9,
+      "description": "Li et al. 3D thermal PSC cracks",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 10,
+      "description": "Tandis and Tandis PSC plate PINN",
+      "category": "Parent verified bibliographic and abstract information; directly cite within that scope; no fulltext claim",
+      "source": "Parent delegation reference list"
+    },
+    {
+      "id": 11,
+      "description": "Look et al. bulk ZnO electrical properties",
+      "category": "Repository old material audit only; pending independent bibliographic/experimental constraint verification; not newly verified",
+      "source": "docs/material_selection_and_parameter_freeze_v1.md + docs/zno_material_input_audit_v2.md"
+    },
+    {
+      "id": 12,
+      "description": "Kobiakov ZnO/CdS tensors",
+      "category": "Repository old material audit only; pending independent bibliographic/experimental constraint verification; not newly verified",
+      "source": "docs/material_selection_and_parameter_freeze_v1.md + docs/zno_material_input_audit_v2.md"
+    },
+    {
+      "id": 13,
+      "description": "Ozgur and Morkoc ZnO book chapter",
+      "category": "Repository old material audit only; pending independent bibliographic/experimental constraint verification; not newly verified",
+      "source": "docs/material_selection_and_parameter_freeze_v1.md + docs/zno_material_input_audit_v2.md"
+    },
+    {
+      "id": 14,
+      "description": "Bateman elastic moduli title record",
+      "category": "Repository old material audit only; pending independent bibliographic/experimental constraint verification; not newly verified",
+      "source": "docs/material_selection_and_parameter_freeze_v1.md + docs/zno_material_input_audit_v2.md"
+    }
+  ],
+  "last_accuracy_review": {
+    "at": "2026-10-08T15:04:14.701526+08:00",
+    "old_sha256": {
+      "论文完整初稿_工作版本.txt": "5f54c7f69697b8af4ce18958d60444ea3146d006361b5842ff70b80d145198a3",
+      "今日执行详细总结.txt": "cf5c1ce2d0cc0a16a22c76b45641aab278645ddb6f48cd0a5036b24f095d811a",
+      "交付与证据检查.json": "cad88e8b9b382606539e0efdc7c4d9386a6b428162294bdb18a6fb912569f2c2"
+    },
+    "corrections": [
+      "Displacement maximum is 5x5x5 sampling maximum, not nodal maximum. Numeric values unchanged.",
+      "Refs11-14 explicitly pending verification; preserve old DOI/page records without claiming newverification."
+    ],
+    "numeric_spot_checks": [
+      {
+        "run": "r22_log_half_L0_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "ring_displacement_mean_m",
+        "raw": 2.325807247576856e-12,
+        "expected": 2.325807247576856e-12,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L0_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "displacement_max_m",
+        "raw": 6.0928443768773605e-12,
+        "expected": 6.0928443768773605e-12,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L0_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "stress_von_mises_max_Pa",
+        "raw": 28440.025788303497,
+        "expected": 28440.025788303497,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L1_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "ring_displacement_mean_m",
+        "raw": 2.3240449581334136e-12,
+        "expected": 2.3240449581334136e-12,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L1_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "displacement_max_m",
+        "raw": 6.124474047511801e-12,
+        "expected": 6.124474047511801e-12,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L1_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "stress_von_mises_max_Pa",
+        "raw": 26809.033694233683,
+        "expected": 26809.033694233683,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L2_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "ring_displacement_mean_m",
+        "raw": 2.3237996114855838e-12,
+        "expected": 2.3237996114855838e-12,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L2_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "displacement_max_m",
+        "raw": 6.137862101166708e-12,
+        "expected": 6.137862101166708e-12,
+        "matched": true
+      },
+      {
+        "run": "r22_log_half_L2_V005",
+        "build": "R22",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 0.5,
+        "metric": "stress_von_mises_max_Pa",
+        "raw": 26400.794585971093,
+        "expected": 26400.794585971093,
+        "matched": true
+      },
+      {
+        "run": "r23_log_half_L0_V060",
+        "build": "R23 q3",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 6,
+        "mesh": "Y_HALF L0 5541nodes1120elements",
+        "metric": "heat_balance_relative",
+        "raw": 0.041198378014967216,
+        "matched": true
+      },
+      {
+        "run": "r23_log_half_L0_V060",
+        "build": "R23 q3",
+        "model": "ZNO_F1_NT + log weighted",
+        "voltage": 6,
+        "mesh": "Y_HALF L0 5541nodes1120elements",
+        "metric": "physical_exterior_heat_balance_relative",
+        "raw": 0.04377610571947903,
+        "matched": true
+      }
+    ],
+    "route_scope_review": "R17/R21/R22/R23/R24 quantities retain correct model,voltage,mesh and scope. Synthetic material tangent PASS not promoted to actualZnO global validation. Delivery date not experiment completion.",
+    "no_new_research_or_solver": true,
+    "definition_source": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_source_snapshot\\src\\app\\f1_case_runner_m.f90",
+    "definition_source_sha256": "5faeed33dc4300a7603d80e1134b2fe8ceedf2ae423bd472889ea7ee04655a25"
+  }
+}

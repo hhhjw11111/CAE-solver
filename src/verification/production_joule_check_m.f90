@@ -27,42 +27,50 @@ module production_joule_check_m
 
 contains
 
-  subroutine verify_production_joule_a1j(status)
+  subroutine verify_production_joule_a1j(status,current_work)
     type(SolverStatusType), intent(out) :: status
+    logical, optional, intent(in) :: current_work
     integer :: profile,level,total
-    logical :: passed,one_pass
+    logical :: passed,one_pass,use_current_work
     character(len=48) :: label
 
     call clear_status(status)
+    use_current_work=.false.
+    if (present(current_work)) use_current_work=current_work
     passed=.true.; total=0
-    write(*,'(a)') 'verification_id=A1J_production_joule_independent_flux'
+    if (use_current_work) then
+      write(*,'(a)') 'verification_id=A1JJE_production_joule_independent_flux'
+      write(*,'(a)') 'a1j_heat_source=current_work'
+    else
+      write(*,'(a)') 'verification_id=A1J_production_joule_independent_flux'
+    end if
     write(*,'(a)') 'a1j_scope=production_material_assembly_newton_continuation_not_native_run_profile'
     write(*,'(a)') 'a1j_interpolation=linear_phi_quadratic_theta_exactly_representable'
     do profile=1,2
       do level=1,size(COUNTS)
         write(label,'(a,i0,a,i0)') 'p',profile,'_nx',COUNTS(level)
         call solve_case(trim(label),profile,COUNTS(level),1,1,3.0_dp,1.0_dp, &
-          level == 2,one_pass,status)
+          level == 2,one_pass,status,use_current_work)
         if (.not. status%is_ok()) return
         passed=passed .and. one_pass; total=total+1
       end do
     end do
-    call solve_case('reverse_voltage',1,2,1,1,-3.0_dp,1.0_dp,.false.,one_pass,status)
+    call solve_case('reverse_voltage',1,2,1,1,-3.0_dp,1.0_dp,.false.,one_pass,status,use_current_work)
     if (.not. status%is_ok()) return
     passed=passed .and. one_pass; total=total+1
-    call solve_case('zero_voltage',1,2,1,1,0.0_dp,1.0_dp,.false.,one_pass,status)
+    call solve_case('zero_voltage',1,2,1,1,0.0_dp,1.0_dp,.false.,one_pass,status,use_current_work)
     if (.not. status%is_ok()) return
     passed=passed .and. one_pass; total=total+1
-    call solve_case('half_voltage',1,2,1,1,1.5_dp,1.0_dp,.false.,one_pass,status)
+    call solve_case('half_voltage',1,2,1,1,1.5_dp,1.0_dp,.false.,one_pass,status,use_current_work)
     if (.not. status%is_ok()) return
     passed=passed .and. one_pass; total=total+1
-    call solve_case('joule_off',1,2,1,1,3.0_dp,0.0_dp,.false.,one_pass,status)
+    call solve_case('joule_off',1,2,1,1,3.0_dp,0.0_dp,.false.,one_pass,status,use_current_work)
     if (.not. status%is_ok()) return
     passed=passed .and. one_pass; total=total+1
-    call solve_case('transverse_refinement',1,2,2,2,3.0_dp,1.0_dp,.false.,one_pass,status)
+    call solve_case('transverse_refinement',1,2,2,2,3.0_dp,1.0_dp,.false.,one_pass,status,use_current_work)
     if (.not. status%is_ok()) return
     passed=passed .and. one_pass; total=total+1
-    call verify_flux_patch(one_pass,status)
+    call verify_flux_patch(one_pass,status,use_current_work)
     if (.not. status%is_ok()) return
     passed=passed .and. one_pass
     write(*,'(a,i0)') 'a1j_solved_cases=',total
@@ -74,11 +82,11 @@ contains
     end if
   end subroutine verify_production_joule_a1j
 
-  subroutine solve_case(label,profile,nx,ny,nz,voltage,joule_factor,extra_checks,passed,status)
+  subroutine solve_case(label,profile,nx,ny,nz,voltage,joule_factor,extra_checks,passed,status,current_work)
     character(len=*), intent(in) :: label
     integer, intent(in) :: profile,nx,ny,nz
     real(dp), intent(in) :: voltage,joule_factor
-    logical, intent(in) :: extra_checks
+    logical, intent(in) :: extra_checks,current_work
     logical, intent(out) :: passed
     type(SolverStatusType), intent(out) :: status
     type(MeshType) :: mesh
@@ -101,6 +109,7 @@ contains
     passed=.false.
     call build_box(nx,ny,nz,mesh)
     call define_material(profile,materials(1))
+    materials(1)%heat_source_current_work=current_work
     call validate_mesh(mesh,minimum_det,volume,status)
     if (.not. status%is_ok()) return
     call define_boundaries(mesh,voltage,boundaries)
@@ -376,8 +385,9 @@ contains
     errors(6)=maxval(abs(exp(state%x(F_ETA_P::NDOF_NODE))-1.0_dp))
   end subroutine field_errors
 
-  subroutine verify_flux_patch(passed,status)
+  subroutine verify_flux_patch(passed,status,current_work)
     logical, intent(out) :: passed
+    logical, intent(in) :: current_work
     type(SolverStatusType), intent(out) :: status
     type(MeshType) :: mesh
     type(MaterialType) :: materials(1)
@@ -388,6 +398,7 @@ contains
     integer :: node
     call build_box(2,2,2,mesh)
     call define_material(1,materials(1))
+    materials(1)%heat_source_current_work=current_work
     allocate(state%x(NDOF_NODE*mesh%number_of_nodes()))
     state%x=0.0_dp
     efield=[1.0e3_dp,2.0e3_dp,3.0e3_dp]

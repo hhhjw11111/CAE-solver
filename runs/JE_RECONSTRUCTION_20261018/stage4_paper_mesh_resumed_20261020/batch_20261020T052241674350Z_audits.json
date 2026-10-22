@@ -1,0 +1,7 @@
+{
+  "batch": "joint",
+  "joint_level": 1,
+  "studies": [],
+  "fully_validated": false,
+  "limitation": "Explicit references to actual completed runs across immutable roots. No production acceptance."
+}

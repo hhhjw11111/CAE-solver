@@ -1,0 +1,16 @@
+{
+  "missing_required": [],
+  "broken_document_images": [],
+  "required_files": [
+    "reports/study_report_final.md",
+    "reports/study_report_final.pdf",
+    "manuscript/manuscript_working_draft.md",
+    "manuscript/manuscript_working_draft.pdf",
+    "OPEN_ITEMS.md",
+    "CHANGELOG.md",
+    "analysis/postprocess_report.md",
+    "audit/manuscript_pdf_qa.md",
+    "audit/render_qa.md"
+  ],
+  "status": "PASS"
+}

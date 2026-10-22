@@ -1,0 +1,11 @@
+{
+  "storage": "IC",
+  "threads": 4,
+  "KMP_AFFINITY": "granularity=fine,compact,1,0",
+  "MKL_DYNAMIC": "FALSE",
+  "input_sha256": "9967D50A3626623A445F9F48ECDDDA95F5CAC5AC07D8A50012DBE766DE851A06",
+  "case": "F3_R02_LQ_L0",
+  "input_name": "F3_R02_LQ_L0",
+  "started_utc": "2026-09-08T15:31:15.9524363Z",
+  "executable_sha256": "18B5C1F55E18F8E2516BE28A542D548888DE0C570060F791A1899F89DDC63618"
+}

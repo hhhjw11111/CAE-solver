@@ -1,0 +1,47 @@
+test_changed_input_or_execution_identity_is_invalid (test_hv_credibility.CredibilityLedger.test_changed_input_or_execution_identity_is_invalid) ... ok
+test_half_integrals_are_explicit_and_temperature_is_not_doubled (test_hv_credibility.CredibilityLedger.test_half_integrals_are_explicit_and_temperature_is_not_doubled) ... ok
+test_missing_grid_points_stay_missing (test_hv_credibility.CredibilityLedger.test_missing_grid_points_stay_missing) ... ok
+test_nonzero_pass_and_wrong_voltage_do_not_certify (test_hv_credibility.CredibilityLedger.test_nonzero_pass_and_wrong_voltage_do_not_certify) ... ok
+test_off_grid_branch_sample_does_not_fill_next_grid_voltage (test_hv_credibility.CredibilityLedger.test_off_grid_branch_sample_does_not_fill_next_grid_voltage) ... ok
+test_zero_needs_actual_exact_zero_field (test_hv_credibility.CredibilityLedger.test_zero_needs_actual_exact_zero_field) ... ok
+test_local_boltzmann_balance_has_zero_current_but_nonzero_frozen_heat (test_hv_current_diagnostic.CurrentLimits.test_local_boltzmann_balance_has_zero_current_but_nonzero_frozen_heat) ... ok
+test_uniform_density_recovers_drift_power (test_hv_current_diagnostic.CurrentLimits.test_uniform_density_recovers_drift_power) ... ok
+test_arbitrary_rigid_motion_recovers_symmetric_strain_field (test_hv_half_y.HalfY.test_arbitrary_rigid_motion_recovers_symmetric_strain_field) ... ok
+test_crossing_elements_are_rejected (test_hv_half_y.HalfY.test_crossing_elements_are_rejected) ... ok
+test_reflection_requires_coordinates_and_materials (test_hv_half_y.HalfY.test_reflection_requires_coordinates_and_materials) ... ok
+test_restriction_retains_every_element_coordinate (test_hv_half_y.HalfY.test_restriction_retains_every_element_coordinate) ... ok
+test_changed_executable_and_empty_study_cannot_pass (test_hv_mesh.MeshGate.test_changed_executable_and_empty_study_cannot_pass) ... ok
+test_holes_must_converge_at_frozen_two_percent_limit (test_hv_mesh.MeshGate.test_holes_must_converge_at_frozen_two_percent_limit) ... ok
+test_missing_holes_and_wrong_voltage_cannot_pass (test_hv_mesh.MeshGate.test_missing_holes_and_wrong_voltage_cannot_pass) ... ok
+test_mixed_domain_integrals_cannot_pass (test_hv_mesh.MeshGate.test_mixed_domain_integrals_cannot_pass) ... ok
+test_mixed_transport_weak_forms_cannot_pass (test_hv_mesh.MeshGate.test_mixed_transport_weak_forms_cannot_pass) ... ok
+test_default_does_not_inherit_experimental_block_mode (test_hv_runtime.RuntimeIsolation.test_default_does_not_inherit_experimental_block_mode) ... ok
+test_invalid_budget_is_rejected_before_creating_files (test_hv_runtime.RuntimeIsolation.test_invalid_budget_is_rejected_before_creating_files) ... ok
+test_runs_do_not_share_or_overwrite_inherited_scratch (test_hv_runtime.RuntimeIsolation.test_runs_do_not_share_or_overwrite_inherited_scratch) ... ok
+test_descending_path_and_target_are_actual_steps (test_hv_scale_path.CoefficientRollback.test_descending_path_and_target_are_actual_steps) ... ok
+test_failed_trial_keeps_last_accepted_coefficient (test_hv_scale_path.CoefficientRollback.test_failed_trial_keeps_last_accepted_coefficient) ... ok
+test_short_final_failure_does_not_repeat_same_trial (test_hv_scale_path.CoefficientRollback.test_short_final_failure_does_not_repeat_same_trial) ... ok
+test_unrequested_or_nonfinite_states_are_rejected (test_hv_scale_path.CoefficientRollback.test_unrequested_or_nonfinite_states_are_rejected) ... ok
+test_failed_flux_and_missing_audit_do_not_pass (test_hv_stabilization.StabilizationAuditTests.test_failed_flux_and_missing_audit_do_not_pass) ... ok
+test_inactive_supg_coefficients_cannot_certify_log_weighted_transport (test_hv_stabilization.StabilizationAuditTests.test_inactive_supg_coefficients_cannot_certify_log_weighted_transport) ... ok
+test_large_hole_metric_variation_fails (test_hv_stabilization.StabilizationAuditTests.test_large_hole_metric_variation_fails) ... ok
+test_mixed_domain_integrals_cannot_pass (test_hv_stabilization.StabilizationAuditTests.test_mixed_domain_integrals_cannot_pass) ... ok
+test_null_coefficient_is_rejected (test_hv_stabilization.StabilizationAuditTests.test_null_coefficient_is_rejected) ... ok
+test_small_variation_is_not_full_validation (test_hv_stabilization.StabilizationAuditTests.test_small_variation_is_not_full_validation) ... ok
+test_wrong_voltage_and_stale_mesh_hash_fail (test_hv_stabilization.StabilizationAuditTests.test_wrong_voltage_and_stale_mesh_hash_fail) ... ok
+test_complete_means_mesh_pending (test_hv_status.StatusGate.test_complete_means_mesh_pending) ... ok
+test_copied_mesh_is_not_three_level_evidence (test_hv_status.StatusGate.test_copied_mesh_is_not_three_level_evidence) ... ok
+test_full_heat_restart_path (test_hv_status.StatusGate.test_full_heat_restart_path) ... ok
+test_missing_mesh_evidence_fails_closed (test_hv_status.StatusGate.test_missing_mesh_evidence_fails_closed) ... ok
+test_partial_or_invalid_checkpoint_is_never_a_grid_point (test_hv_status.StatusGate.test_partial_or_invalid_checkpoint_is_never_a_grid_point) ... ok
+test_independent_angular_refinement_preserves_layers (test_hv_surface_mesh.SurfaceMesh.test_independent_angular_refinement_preserves_layers) ... ok
+test_original_level_is_byte_identical_to_frozen_mesh (test_hv_surface_mesh.SurfaceMesh.test_original_level_is_byte_identical_to_frozen_mesh) ... ok
+test_thickness_refinement_preserves_contacts_and_inplane_coordinates (test_hv_surface_mesh.SurfaceMesh.test_thickness_refinement_preserves_contacts_and_inplane_coordinates) ... ok
+test_curved_linear_field_and_nodal_identity (test_hv_transfer.Transfer.test_curved_linear_field_and_nodal_identity) ... ok
+test_hex20_nodal_identity (test_hv_transfer.Transfer.test_hex20_nodal_identity) ... ok
+test_large_extrapolation_rejected (test_hv_transfer.Transfer.test_large_extrapolation_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 6.767s
+
+OK

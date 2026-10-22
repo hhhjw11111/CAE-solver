@@ -26,6 +26,8 @@ module newton_solver_m
     integer :: maximum_perturbed_pivots = 0
     integer :: log_limited_steps = 0
     integer :: cauchy_merit_fallback_steps = 0
+    integer :: trust_region_steps = 0
+    integer :: trust_region_rejections = 0
     real(dp) :: initial_residual_rms = huge(1.0_dp)
     real(dp) :: final_residual_rms = huge(1.0_dp)
     real(dp) :: final_update_rms = huge(1.0_dp)
@@ -39,6 +41,7 @@ module newton_solver_m
   end type NewtonReportType
 
   public :: solve_single_load_newton
+  public :: dogleg_direction
 
 contains
 
@@ -71,7 +74,8 @@ contains
     real(dp) :: base_merit,trial_merit,armijo_bound,armijo_violation,step,merit_slope
     real(dp) :: component_merit_slope,raw_log_density_update,cauchy_log_factor
     real(dp) :: raw_eta_n_update,raw_eta_p_update,cauchy_alpha
-    integer :: iteration,backtracks,equation_count
+    real(dp) :: trust_radius,predicted_reduction,actual_reduction,trust_ratio,direction_norm
+    integer :: iteration,backtracks,equation_count,trust_strategy
     logical :: accepted,log_step_limited
 
     call clear_status(status)
@@ -114,6 +118,7 @@ contains
     report%step_history=-1.0_dp
     accepted_update_rms=huge(1.0_dp)
     request%need_jacobian=.true.
+    trust_radius=options%trust_initial_radius
 
     do iteration=0,options%max_newton
       call assemble_global_system(mesh,materials,state,load,context,boundary_conditions, &
@@ -150,6 +155,20 @@ contains
       end if
       if (iteration == options%max_newton) exit
 
+      ! Optional early rejection of a stalled LOAD ATTEMPT, never acceptance.
+      ! Continuation restores the last accepted state and reduces its load step.
+      ! Scaled residuals change with row equilibration, so this is a work-limit
+      ! heuristic only; it makes no claim about absence of a physical solution.
+      if(options%stagnation_window>0 .and.residual_rms>options%residual_tolerance) then
+        if(iteration>=options%stagnation_window) then
+          if(residual_rms>=0.99_dp*report%residual_history(iteration+1-options%stagnation_window)) then
+            call set_status(status,STATUS_NONLINEAR_SOLVER_FAILED, &
+              'Newton residual stagnation: reject this load attempt and cut back.')
+            return
+          end if
+        end if
+      end if
+
       call solve_csr_pardiso(equation_count,context%ia,context%ja,scaled_values, &
         scaled_rhs,scaled_increment,linear_diagnostics,local_status)
       if (.not. local_status%is_ok()) then
@@ -167,8 +186,119 @@ contains
       raw_log_density_update=maximum_log_density_increment(raw_increment)
       raw_eta_n_update=maximum_field_increment(raw_increment,F_ETA_N)
       raw_eta_p_update=maximum_field_increment(raw_increment,F_ETA_P)
-      call limit_log_density_increment(increment,options%maximum_log_density_update, &
-        log_step_limited)
+      if (options%trust_region) then
+        ! The merit and row scales stay frozen during all trials for this Jacobian.
+        ! Rejected trials reuse the same factorization, rather than another costly solve.
+        base_merit=0.5_dp*residual_rms*residual_rms
+        scaled_residual=system%residual/residual_scales
+        where(fixed) scaled_increment=0.0_dp
+        call csr_transpose_matvec_free(context,scaled_values,scaled_residual,fixed,scaled_merit_gradient)
+        call csr_matvec(context,scaled_values,scaled_merit_gradient,scaled_gradient_action,local_status)
+        if (.not.local_status%is_ok()) then
+          call copy_failure(local_status,status);return
+        end if
+        cauchy_alpha=free_dot(scaled_merit_gradient,scaled_merit_gradient,fixed)/ &
+          max(free_dot(scaled_gradient_action,scaled_gradient_action,fixed),tiny(1.0_dp))
+        scaled_merit_gradient=-cauchy_alpha*scaled_merit_gradient
+        accepted=.false.;backtracks=0;trust_strategy=0
+        request%need_jacobian=.false.
+        do
+          if(trust_strategy==0) then
+            ! Preserve the effective legacy candidate when its linear model
+            ! predicts descent. Never accept clipping on faith: test its model.
+            increment=raw_increment
+            call limit_log_density_increment(increment,options%maximum_log_density_update,log_step_limited)
+            scaled_direction=increment/variable_scales
+            scaled_direction=scaled_direction*min(1.0_dp,trust_radius/ &
+              max(free_rms(scaled_direction,fixed),tiny(1.0_dp)))
+          else if(trust_strategy==2) then
+            call dogleg_direction(scaled_increment,scaled_merit_gradient,fixed,trust_radius,scaled_direction)
+          else
+            ! Try the coupled Newton direction next. A Cauchy-heavy dogleg
+            ! can crawl in ill-conditioned multiphysics systems despite good rho.
+            scaled_direction=scaled_increment*min(1.0_dp,trust_radius/ &
+              max(free_rms(scaled_increment,fixed),tiny(1.0_dp)))
+          end if
+          increment=variable_scales*scaled_direction
+          ! One scalar cap preserves direction; component clipping need not preserve descent.
+          cauchy_log_factor=min(1.0_dp,options%maximum_log_density_update/ &
+            max(maximum_log_density_increment(increment),tiny(1.0_dp)))
+          increment=cauchy_log_factor*increment
+          scaled_direction=increment/variable_scales
+          direction_norm=free_rms(scaled_direction,fixed)
+          call csr_matvec(context,scaled_values,scaled_direction,scaled_jacobian_action,local_status)
+          if (.not.local_status%is_ok()) then
+            call copy_failure(local_status,status);return
+          end if
+          predicted_reduction=-free_dot(scaled_residual,scaled_jacobian_action,fixed)- &
+            0.5_dp*free_dot(scaled_jacobian_action,scaled_jacobian_action,fixed)
+          trust_ratio=-huge(1.0_dp)
+          if (ieee_is_finite(predicted_reduction).and.predicted_reduction>0.0_dp) then
+            trial_state%x=state%x+increment
+            call project_dirichlet_state(trial_state,boundary_conditions,load,mesh%number_of_nodes(),local_status)
+            if(local_status%is_ok()) call assemble_global_system(mesh,materials,trial_state,load,context, &
+              boundary_conditions,request,trial_system,trial_diagnostics,local_status)
+            if(local_status%is_ok()) then
+              trial_scaled_residual=trial_system%residual/residual_scales
+              trial_residual_rms=free_rms(trial_scaled_residual,fixed)
+              trial_merit=0.5_dp*trial_residual_rms*trial_residual_rms
+              actual_reduction=base_merit-trial_merit
+              if(ieee_is_finite(actual_reduction)) trust_ratio=actual_reduction/predicted_reduction
+            end if
+          end if
+          accepted=ieee_is_finite(trust_ratio).and.trust_ratio>1.0e-4_dp
+          if(options%verbose) then
+            write(output_unit,'(a,l1,a,i0,a,4(es12.4,a))') 'newton_trust_trial, accepted=',accepted, &
+              ', strategy=',trust_strategy, &
+              ', radius=',trust_radius,', step_norm=',direction_norm,', predicted=',predicted_reduction, &
+              ', rho=',trust_ratio,','
+            flush(output_unit)
+          end if
+          if(.not.accepted) then
+            backtracks=backtracks+1
+            report%trust_region_rejections=report%trust_region_rejections+1
+            if(trust_strategy<2) then
+              trust_strategy=trust_strategy+1
+              cycle
+            end if
+          end if
+          if(trust_ratio<0.25_dp.or..not.ieee_is_finite(trust_ratio)) then
+            trust_radius=0.25_dp*min(trust_radius,max(direction_norm,options%trust_minimum_radius))
+          else if(trust_ratio>0.75_dp.and.direction_norm>=0.8_dp*trust_radius) then
+            trust_radius=min(2.0_dp*trust_radius,options%trust_maximum_radius)
+          end if
+          if(accepted) exit
+          trust_strategy=0
+          if(trust_radius<options%trust_minimum_radius.or.backtracks>=40) then
+            call set_status(status,STATUS_NONLINEAR_SOLVER_FAILED, &
+              'Trust region exhausted without true residual reduction: reject load attempt.')
+            return
+          end if
+        end do
+        request%need_jacobian=.true.
+        state%x=trial_state%x
+        accepted_update_rms=direction_norm
+        call scaled_update_by_field(increment,variable_scales,report%final_update_by_field)
+        report%iterations=iteration+1
+        report%trust_region_steps=report%trust_region_steps+1
+        report%total_backtracks=report%total_backtracks+backtracks
+        if(cauchy_log_factor<1.0_dp) report%log_limited_steps=report%log_limited_steps+1
+        report%update_history(iteration+1)=accepted_update_rms
+        report%step_history(iteration+1)=1.0_dp
+        report%final_update_rms=accepted_update_rms
+        cycle
+      end if
+      if (options%global_log_step_limit) then
+        log_step_limited=raw_log_density_update>options%maximum_log_density_update
+        if(log_step_limited) increment=increment*(options%maximum_log_density_update/raw_log_density_update)
+        if(options%verbose .and.log_step_limited) then
+          write(output_unit,'(a,3(es12.4,a))') 'newton_global_log_limit, raw_eta_n=',raw_eta_n_update, &
+            ', raw_eta_p=',raw_eta_p_update,', scale=',options%maximum_log_density_update/raw_log_density_update,','
+          flush(output_unit)
+        end if
+      else
+        call limit_log_density_increment(increment,options%maximum_log_density_update,log_step_limited)
+      end if
       if (log_step_limited) report%log_limited_steps=report%log_limited_steps+1
 
       base_merit=0.5_dp*residual_rms*residual_rms
@@ -300,7 +430,8 @@ contains
     if (any(field_scales <= 0.0_dp) .or. .not. all(ieee_is_finite(field_scales))) then
       call set_status(status,STATUS_INVALID_ARGUMENT, &
         'Newton field scales must be finite and positive.')
-    else if (options%max_newton < 1 .or. options%residual_tolerance <= 0.0_dp .or. &
+    else if (options%max_newton < 1 .or. options%stagnation_window < 0 .or. &
+             options%stagnation_window > options%max_newton .or. options%residual_tolerance <= 0.0_dp .or. &
              options%update_tolerance <= 0.0_dp) then
       call set_status(status,STATUS_INVALID_ARGUMENT,'Newton iteration limits are invalid.')
     else if (options%armijo_c1 <= 0.0_dp .or. options%armijo_c1 >= 0.5_dp .or. &
@@ -310,7 +441,42 @@ contains
              .not. ieee_is_finite(options%maximum_log_density_update)) then
       call set_status(status,STATUS_INVALID_ARGUMENT,'Newton Armijo options are invalid.')
     end if
+    if (.not.status%is_ok()) return
+    if (options%trust_region) then
+      if (.not.all(ieee_is_finite([options%trust_initial_radius,options%trust_maximum_radius, &
+          options%trust_minimum_radius])).or.options%trust_minimum_radius<=0.0_dp.or. &
+          options%trust_initial_radius<options%trust_minimum_radius.or. &
+          options%trust_maximum_radius<options%trust_initial_radius) then
+        call set_status(status,STATUS_INVALID_ARGUMENT,'Newton trust region radii are invalid.')
+      end if
+    end if
   end subroutine validate_options
+
+  subroutine dogleg_direction(newton,cauchy,fixed,radius,direction)
+    real(dp), intent(in) :: newton(:),cauchy(:),radius
+    logical, intent(in) :: fixed(:)
+    real(dp), intent(out) :: direction(:)
+    real(dp) :: norm_n,norm_c,a,b,c,tau,discriminant
+    norm_n=free_rms(newton,fixed);norm_c=free_rms(cauchy,fixed)
+    if(norm_n<=radius) then
+      direction=newton
+    else if(norm_c>=radius) then
+      direction=cauchy*(radius/max(norm_c,tiny(1.0_dp)))
+    else
+      direction=newton-cauchy
+      a=free_dot(direction,direction,fixed)
+      b=free_dot(cauchy,direction,fixed)
+      c=norm_c**2-radius**2
+      discriminant=sqrt(max(0.0_dp,b*b-a*c))
+      if(b>=0.0_dp) then
+        tau=-c/max(b+discriminant,tiny(1.0_dp))
+      else
+        tau=(-b+discriminant)/max(a,tiny(1.0_dp))
+      end if
+      direction=cauchy+max(0.0_dp,min(1.0_dp,tau))*direction
+    end if
+    where(fixed) direction=0.0_dp
+  end subroutine dogleg_direction
 
   real(dp) function free_rms(vector,fixed) result(value)
     real(dp), intent(in) :: vector(:)

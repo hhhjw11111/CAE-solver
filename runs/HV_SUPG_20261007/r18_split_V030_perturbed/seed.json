@@ -1,0 +1,6 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\seed_r18_V030_hole_perturbation\\nodes.csv",
+  "sha256": "81236c066d119b05c9b245405df0fccbe6bb208bc3b7e11d3172ba7763a820fb",
+  "voltage": 3.0,
+  "status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION"
+}

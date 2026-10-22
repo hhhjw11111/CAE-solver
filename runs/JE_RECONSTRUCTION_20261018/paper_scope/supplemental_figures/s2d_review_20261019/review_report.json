@@ -1,0 +1,76 @@
+{
+  "result": "PASS_NO_FIGURE_DEFECT_FOUND",
+  "original_v2_unchanged": true,
+  "script_matches_v2_provenance": true,
+  "new_release_required": false,
+  "native_runs": 0,
+  "actual_axis_state": {
+    "yscale": "log",
+    "ylim": [
+      1e-18,
+      1e-05
+    ],
+    "ticks": [
+      1e-16,
+      1e-14,
+      1e-12,
+      1e-10,
+      1e-08,
+      1e-06
+    ],
+    "ticklabels": [
+      "1e-16",
+      "1e-14",
+      "1e-12",
+      "1e-10",
+      "1e-8",
+      "1e-6"
+    ],
+    "line_y": [
+      [
+        1e-08,
+        1e-08
+      ],
+      [
+        1e-10,
+        1e-10
+      ]
+    ],
+    "labels": [
+      "d",
+      "Limit: 1e-8",
+      "Limit: 1e-10"
+    ]
+  },
+  "independent_visual_confirmation": [
+    "Crop of original 600dpi PNG",
+    "PyMuPDF rendering of original PDF panel d"
+  ],
+  "original_png_crop_xyxy": [
+    2250,
+    2100,
+    4322,
+    3450
+  ],
+  "pdf_clip_points": [
+    265,
+    248,
+    518,
+    418
+  ],
+  "pdf_render_scale": 3,
+  "interpretation": "Both frozen limits and all six logarithmic tick labels exist in original PNG/PDF/SVG. Earlier whole-figure preview was insufficient for this review; its display behavior was not diagnosed.",
+  "source_sha256": {
+    "runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\supplemental_figures\\release_v2\\S2_JEGRAD_summary.png": "f06b23ccb062e932970dcc77b7985a2f329a4f4712b5280beb23fb5760f7955a",
+    "runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\supplemental_figures\\release_v2\\S2_JEGRAD_summary.pdf": "afd6f822243fe5690d07803477e83be0c52364917f2489b4e0eb300442a8e270",
+    "runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\supplemental_figures\\release_v2\\S2_JEGRAD_summary.svg": "c1d1e072f3136b40722376ae6077caa6be7d7e84d609562f0c2519f1e14c543f",
+    "scripts\\plot_je_paper_supplements_20261018.py": "4153bbba48bc5bf53ec8c0fcafb1080acaef020174a459ab14f9c79b77238680"
+  },
+  "diagnostic_sha256": {
+    "axis_state.json": "e1d4709b700f98d8feefbacafa422ca1901b0ab0da79535e95efb3e90cc41f81",
+    "pdf_text.txt": "38e97a9e2310f69fcf0614c37095b29e255ac08c5c6dea1da1a7019dc667ba62",
+    "S2d_original_PNG_crop.png": "d1f58ef02b0eecf02126470f7ed89576db3fe847568525e52408af480064a116",
+    "S2d_PDF_render.png": "3b003ca0bef63dda72ba7c92d781d2190460d23173bddb884245b982e2330f29"
+  },
+  "diagnostics_scope": "Inspection-only crops; not replacement publication figures"
+}

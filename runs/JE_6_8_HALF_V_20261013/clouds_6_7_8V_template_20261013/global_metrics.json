@@ -1,0 +1,29 @@
+[
+  {
+    "voltage_V": 6,
+    "joule_mW": 5.790727459794426,
+    "theta_max_K": 14.171395756992865,
+    "VM_max_MPa": 4.001171474208003,
+    "terminal_power_mW": 5.644550611484388,
+    "heat_balance_percent": 0.0043184408369648965,
+    "JE_terminal_gap_percent": 2.5243261632490555
+  },
+  {
+    "voltage_V": 7,
+    "joule_mW": 7.721414275045117,
+    "theta_max_K": 18.988104763041008,
+    "VM_max_MPa": 5.3695523895789385,
+    "terminal_power_mW": 7.508989228846861,
+    "heat_balance_percent": 0.007685125607925571,
+    "JE_terminal_gap_percent": 2.7511157753158333
+  },
+  {
+    "voltage_V": 8,
+    "joule_mW": 9.85840097677121,
+    "theta_max_K": 24.373359998820035,
+    "VM_max_MPa": 6.9030826235584755,
+    "terminal_power_mW": 9.565488869031054,
+    "heat_balance_percent": 0.012510528964482931,
+    "JE_terminal_gap_percent": 2.9711928783412933
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "question": "Does the existing stabilized carrier discretization converge to its analytical bar solution?",
+  "claim": "Both carrier signs pass the unchanged finest-grid criteria across six bar Pe values.",
+  "panels": [
+    "Electron density",
+    "Electron current",
+    "Hole density",
+    "Hole current"
+  ],
+  "archetype": "Paired concentration/current accuracy across transport regimes",
+  "observations": 38,
+  "statistical_replicates": false,
+  "uncertainty_intervals": "Not applicable to deterministic solves",
+  "data_policy": "All logged refinement cases; no fitted order, synthetic FEM curves or omitted failures",
+  "limits": {
+    "density_finest": 0.001,
+    "current_finest": 0.01
+  },
+  "export": {
+    "width_mm": 183,
+    "height_mm": 165,
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  "style_source": "Style-only reuse of existing project supplemental plots; no scientific transformations reused",
+  "device_mesh_supg_acceptance": false
+}

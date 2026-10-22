@@ -1,0 +1,22 @@
+{
+  "time": "2026-10-08T21:59:52.9488347+08:00",
+  "reason": "Replace gradual zero-heat voltage ramp with re-equilibrated 8 V zero-heat initial guess and verified R26C trust-region heat continuation",
+  "manual_interruption": true,
+  "native_failure_claim": false,
+  "old_native": 21116,
+  "old_collector": 32612,
+  "kept_native": 2764,
+  "source_checkpoint": "r25_log_A64_voltage_then_heat_cold_V080/accepted_00001_load.txt",
+  "source_is_final_solution": false,
+  "retained_full_heat_solutions": [
+    6.0,
+    6.25
+  ],
+  "candidate_checks": [
+    "G07TR PASS, legacy agreement 1.9587024068800524e-14",
+    "G07S PASS",
+    "TCTRL PASS",
+    "16 frozen CLI byte-identical PASS",
+    "76 Python tests PASS"
+  ]
+}

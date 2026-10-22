@@ -1,0 +1,6 @@
+{
+  "native_reproduction_eta_error": 9.351470986462829e-12,
+  "q3_to_q5_ring_p_relative": 4.387582438123435e-05,
+  "decision": "Do not change native quadrature: effect insufficient to explain SUPG sensitivity; preserve original core.",
+  "production_acceptance": false
+}

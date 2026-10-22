@@ -1,0 +1,11 @@
+{
+  "mesh_sha256": "aebe1219b0bf1d09aba3ae1e983fb620ffb617120966a502dc941ed526d0cba2",
+  "executable_sha256": "a47da18f47ceca0209ef9b6fcc17bb13c1175f4e3a3181ffc1eb4d7b7f2f6814",
+  "routes": [
+    "solver_v2\\runs\\HV_SUPG_20261007\\r25_high_voltage_followthrough\\target_V080",
+    "solver_v2\\runs\\HV_SUPG_20261007\\r25_log_A64_voltage_then_heat_V080"
+  ],
+  "collector_script_sha256": "1409ebd8b0d9f4ea0afa1e1d796b33ef598c841acc4eecaaab7666139c850887",
+  "source_snapshot": "scripts/run_hv_point.py",
+  "native_source_changed": false
+}

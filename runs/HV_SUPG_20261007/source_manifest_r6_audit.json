@@ -1,0 +1,230 @@
+{
+  "source_files": 56,
+  "all_match": true,
+  "files": [
+    {
+      "path": "src/app/f1_case_runner_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/app/main.f90",
+      "match": true
+    },
+    {
+      "path": "src/app/production_runner_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/core/build_info_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/core/constants_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/core/field_layout_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/core/kinds_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/core/model_types_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/core/status_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/fem/dirichlet_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/fem/element_kernel_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/fem/global_assembly_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/fem/sparse_pattern_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/fem/transport_supg_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/io/input_schema_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/io/native_input_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/linear/pardiso_solver_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/mesh/boundary_topology_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/mesh/dof_map_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/mesh/hex20_quadrature_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/mesh/hex20_shape_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/mesh/mesh_checks_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/mesh/mesh_types_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/nonlinear/continuation_solver_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/nonlinear/newton_solver_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/nonlinear/scaling_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/equilibrium_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/material_point_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/recombination_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/reference_material_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/thermo_piezo_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/transport_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/physics/zno_candidate_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/post/balance_audit_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/post/field_metrics_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/post/independent_flux_audit_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/post/result_writer_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/problems/reference_bar_problem_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/a1_joint_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/a2_hole_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/analytic_benchmarks_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/center_hole_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/continuation_solver_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/element_tangent_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/global_assembly_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/global_block_jacobian_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/linear_solver_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/m0_benchmark_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/matched_control_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/material_tangent_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/mesh_convergence_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/newton_solver_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/production_joule_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/radius_matrix_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/supg_check_m.f90",
+      "match": true
+    },
+    {
+      "path": "src/verification/verification_driver_m.f90",
+      "match": true
+    }
+  ]
+}

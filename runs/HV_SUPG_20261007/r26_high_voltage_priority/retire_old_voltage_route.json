@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-08T22:12:40.7162246+08:00",
+  "reason": "User requests closing duplicate work; retire old-algorithm voltage route after preserving accepted 6.375 V; concentrate on R26C fixed 8 V heat continuation",
+  "manual_interruption": true,
+  "native_failure_claim": false,
+  "stopped_native": 2764,
+  "retained_native": 29376,
+  "checkpoint": "solver_v2/runs/HV_SUPG_20261007/r25_high_voltage_followthrough/target_V080/accepted_00003_load.txt",
+  "automation_status": "PAUSED remains paused"
+}

@@ -1,0 +1,735 @@
+diff --git a/src/app/f1_case_runner_m.f90 b/src/app/f1_case_runner_m.f90
+index b04bbbc..610fd68 100644
+--- a/src/app/f1_case_runner_m.f90
++++ b/src/app/f1_case_runner_m.f90
+@@ -1,5 +1,6 @@
+ module f1_case_runner_m
+   use, intrinsic :: iso_fortran_env, only : output_unit
++  use, intrinsic :: ieee_arithmetic, only : ieee_is_finite
+   use kinds_m, only : dp
+   use constants_m, only : ELEMENTARY_CHARGE
+   use field_layout_m, only : NDOF_NODE,F_U1,F_U2,F_U3,F_PHI,F_ETA_N,F_ETA_P, &
+@@ -10,10 +11,12 @@ module f1_case_runner_m
+   use native_input_m, only : read_native_case
+   use mesh_checks_m, only : validate_mesh
+   use zno_candidate_m, only : define_zno_candidate
+-  use status_m, only : SolverStatusType,clear_status,set_status,STATUS_INPUT_ERROR,STATUS_VERIFICATION_FAILED
+-  use dirichlet_m, only : DirichletBCType
++  use status_m, only : SolverStatusType,clear_status,set_status,STATUS_INPUT_ERROR,STATUS_VERIFICATION_FAILED, &
++    STATUS_NONLINEAR_SOLVER_FAILED
++  use dirichlet_m, only : DirichletBCType,build_fixed_dof_mask
+   use sparse_pattern_m, only : SparseAssemblyContextType,initialize_sparse_context
+   use newton_solver_m, only : NewtonReportType,solve_single_load_newton
++  use temperature_control_m, only : solve_temperature_controlled_newton
+   use continuation_solver_m, only : ContinuationReportType,solve_load_continuation
+   use balance_audit_m, only : audit_global_balances
+   use independent_flux_audit_m, only : IndependentFluxReportType,integrate_independent_fluxes,independent_gauss_rule
+@@ -27,9 +30,11 @@ module f1_case_runner_m
+   private
+   public :: run_f1_case
+ contains
+-  subroutine run_f1_case(case_path,directory,status)
++  subroutine run_f1_case(case_path,directory,status,inverse_step,inverse_count)
+     character(len=*), intent(in) :: case_path,directory
+     type(SolverStatusType), intent(out) :: status
++    real(dp), optional, intent(in) :: inverse_step
++    integer, optional, intent(in) :: inverse_count
+     type(CaseConfigType) :: config
+     type(MeshType) :: mesh
+     type(MaterialType) :: materials(1)
+@@ -44,10 +49,21 @@ contains
+     type(HoleFieldMetricsType) :: ring
+     character(len=2) :: model
+     real(dp) :: minimum_det,volume,balance(4),bc_error,max_balance,max_residual,max_update
+-    real(dp) :: heat_error,jn_error,jp_error,quad_error,power_scale,current_scale,extra(8)
+-    integer :: unit_id,io,stage,point,total_iterations
++    real(dp) :: heat_error,jn_error,jp_error,quad_error,power_scale,current_scale,extra(8),domain_fraction
++    real(dp) :: external_heat_error,external_jn_error,external_jp_error,symmetry_heat_error,symmetry_jn_error,symmetry_jp_error
++    integer :: unit_id,io,stage,point,total_iterations,inverse_node
+     logical :: accepted
+     call clear_status(status)
++    domain_fraction=1.0_dp
++    inverse_node=0
++    if(present(inverse_step).neqv.present(inverse_count)) then
++      call set_status(status,STATUS_INPUT_ERROR,'Inverse diagnostics require both temperature step and point count.');return
++    end if
++    if(present(inverse_step)) then
++      if(.not.ieee_is_finite(inverse_step).or.inverse_step<=0.or.inverse_count<1.or.inverse_count>100) then
++        call set_status(status,STATUS_INPUT_ERROR,'Invalid inverse diagnostic step or count.');return
++      end if
++    end if
+     call read_native_case(case_path,config,mesh,status)
+     if (.not. status%is_ok()) return
+     select case(trim(config%material_profile))
+@@ -66,21 +82,51 @@ contains
+     write(unit_id,'(a)') 'material_evidence=NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED'
+     write(unit_id,'(a)') 'source=ZNO_300K_CANDIDATE_V2; plan=F1_20260906'
+     write(unit_id,'(a)') 'heat_source=DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK'
++    if(config%half_y_symmetry) then
++      domain_fraction=0.5_dp
++      write(unit_id,'(a)') 'domain_symmetry=Y_HALF'
++      write(unit_id,'(a)') 'integral_scope=ACTUAL_HALF_DOMAIN_NO_AUTOMATIC_DOUBLING'
++    end if
+     flush(unit_id)
+     call validate_mesh(mesh,minimum_det,volume,status)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+     call define_zno_candidate(model,materials(1))
++    materials(1)%transport_supg=config%transport_supg
++    materials(1)%transport_log_weighted=config%transport_log_weighted
++    materials(1)%log_weighted_quadrature_order=config%log_weighted_quadrature_order
++    materials(1)%supg_scale=config%supg_scale
++    materials(1)%supg_directional_tau=config%supg_directional_tau
++    if(config%transport_log_weighted) then
++      write(unit_id,'(a,i0)') 'log_weighted_quadrature_order=',config%log_weighted_quadrature_order
++      write(unit_id,'(a)') 'transport_discretization=HEX20_LOG_WEIGHTED_EXPERIMENTAL'
++      write(unit_id,'(a)') 'supg_parameters_applicable=F'
++      write(unit_id,'(a,es24.16e3)') 'supg_scale=',config%supg_scale
++      write(unit_id,'(a,l1)') 'supg_directional_tau=',config%supg_directional_tau
++      write(unit_id,'(a)') 'algebraic_carrier_balance=WEIGHTED_FREE_ROWS_NOT_PHYSICAL_CURRENT'
++    else if(config%transport_supg) then
++      write(unit_id,'(a)') 'transport_discretization=HEX20_CONSISTENT_SUPG_EXPERIMENTAL'
++      write(unit_id,'(a,es24.16e3)') 'supg_scale=',config%supg_scale
++      write(unit_id,'(a,l1)') 'supg_directional_tau=',config%supg_directional_tau
++    end if
+     config%continuation_options%heat_balance_reference_power=ELEMENTARY_CHARGE*( &
+       materials(1)%reference_n*materials(1)%mobility_n0(1,1)+ &
+       materials(1)%reference_p*materials(1)%mobility_p0(1,1))*config%target_voltage**2*1.0e-6_dp
++    if(config%half_y_symmetry) config%continuation_options%heat_balance_reference_power= &
++      domain_fraction*config%continuation_options%heat_balance_reference_power
+     write(unit_id,'(a,es24.16e3)') 'zero_source_heat_reference_W=', &
+       config%continuation_options%heat_balance_reference_power
+-    call define_boundaries(mesh,config%target_voltage,bc,status)
++    if(config%transport_supg.or.config%transport_log_weighted) then
++      write(output_unit,'(a)') 'f1_setup=BOUNDARIES';flush(output_unit)
++    end if
++    call define_boundaries(mesh,config%target_voltage,bc,status,config%half_y_symmetry)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
++    if(config%transport_supg.or.config%transport_log_weighted) then
++      write(output_unit,'(a)') 'f1_setup=SPARSE_PATTERN';flush(output_unit)
++    end if
+     call initialize_sparse_context(mesh,context,status)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+@@ -97,6 +143,17 @@ contains
+     end if
+     config%nonlinear_options%verbose=.true.
+     max_balance=0.0_dp;max_residual=0.0_dp;max_update=0.0_dp;total_iterations=0
++    if(present(inverse_step)) then
++      if(model=='LQ'.or..not.(config%transport_supg.or.config%transport_log_weighted).or. &
++         len_trim(config%restart_nodes_file)==0.or. &
++         config%restart_joule_factor/=1.or.config%restart_voltage_factor<=0.or.config%restart_voltage_factor>=1) then
++        call set_status(status,STATUS_INPUT_ERROR, &
++          'Inverse diagnostics require a nonzero subtarget full-heat SUPG or log-weighted restart.')
++      else
++        call trace_temperature_branch()
++      end if
++      close(unit_id);return
++    end if
+     if (model=='LQ') then
+       write(unit_id,'(a)') 'solution_mode=THREE_STAGE_LQ_NO_RETURN_FEEDBACK'
+       do stage=1,3
+@@ -133,8 +190,13 @@ contains
+       else
+         write(unit_id,'(a)') 'continuation_path=VOLTAGE_THEN_JOULE'
+       end if
+-      call solve_load_continuation(mesh,materials,context,bc,config%field_scales,config%nonlinear_options, &
+-        config%continuation_options,target,state,load,continuation,status)
++      if(config%transport_supg.or.config%transport_log_weighted) then
++        call solve_load_continuation(mesh,materials,context,bc,config%field_scales,config%nonlinear_options, &
++          config%continuation_options,target,state,load,continuation,status,save_accepted)
++      else
++        call solve_load_continuation(mesh,materials,context,bc,config%field_scales,config%nonlinear_options, &
++          config%continuation_options,target,state,load,continuation,status)
++      end if
+       if (.not. status%is_ok()) then
+         close(unit_id);return
+       end if
+@@ -159,15 +221,20 @@ contains
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+-    call integrate_independent_fluxes(mesh,materials,state,load,5,flux,status)
++    call integrate_independent_fluxes(mesh,materials,state,load,5,flux,status,half_y=config%half_y_symmetry)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+-    call integrate_independent_fluxes(mesh,materials,state,load,4,flux4,status)
++    call integrate_independent_fluxes(mesh,materials,state,load,4,flux4,status,half_y=config%half_y_symmetry)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+-    call evaluate_hole_field_metrics(mesh,materials,state,load,config%hole_radius,0.5e-6_dp,ring,status)
++    if(config%half_y_symmetry) then
++      call evaluate_hole_field_metrics(mesh,materials,state,load,config%hole_radius,0.5e-6_dp,ring,status, &
++        hole_center=[0.0_dp,0.0_dp])
++    else
++      call evaluate_hole_field_metrics(mesh,materials,state,load,config%hole_radius,0.5e-6_dp,ring,status)
++    end if
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+@@ -176,11 +243,15 @@ contains
+       close(unit_id);return
+     end if
+     power_scale=max(abs(flux%joule),abs(sum(flux%heat_out)),1.7736095e-3_dp*1.0e-12_dp)
++    if(config%half_y_symmetry) power_scale=max(abs(flux%joule),abs(sum(flux%heat_out)), &
++      domain_fraction*1.7736095e-3_dp*1.0e-12_dp)
+     current_scale=max(sum(abs(flux%electron_out(1:2))),tiny(1.0_dp))
+     heat_error=abs(sum(flux%heat_out)-flux%joule)/power_scale
+     jn_error=abs(sum(flux%electron_out))/current_scale
+     jp_error=abs(sum(flux%hole_out))/max(sum(abs(flux%hole_out(1:2))),tiny(1.0_dp))
+     quad_error=abs(flux%joule-flux4%joule)/max(abs(flux%joule),1.7736095e-15_dp)
++    if(config%half_y_symmetry) quad_error=abs(flux%joule-flux4%joule)/ &
++      max(abs(flux%joule),domain_fraction*1.7736095e-15_dp)
+     call metric('voltage_V',abs(config%target_voltage))
+     call metric('hole_radius_m',config%hole_radius)
+     call metric('ring_width_m',0.5e-6_dp)
+@@ -189,12 +260,42 @@ contains
+     call metric('maximum_stage_balance',max_balance)
+     call metric('maximum_accepted_residual',max_residual)
+     call metric('maximum_accepted_update',max_update)
++    if(config%transport_supg.or.config%transport_log_weighted) then
++      call metric('final_voltage_factor',load%voltage_factor)
++      call metric('final_joule_factor',load%joule_factor)
++      write(unit_id,'(a)') 'spatial_acceptance=REQUIRES_INDEPENDENT_MESH_AND_STABILIZATION_STUDIES'
++    end if
+     call metric('joule_W',flux%joule)
+     call metric('terminal_power_W',flux%terminal_power)
+     call metric('heat_out_W',sum(flux%heat_out))
+     call metric('heat_balance_relative',heat_error)
+     call metric('electron_balance_relative',jn_error)
+     call metric('hole_balance_diagnostic',jp_error)
++    if(config%half_y_symmetry) then
++      ! Retain the actual-half balance above, and independently require the
++      ! original physical exterior and artificial symmetry cut to pass. Their
++      ! errors must not cancel to grant a full-domain conservation claim.
++      power_scale=max(abs(flux%joule),abs(sum(flux%heat_out)-flux%symmetry_heat_out), &
++        domain_fraction*1.7736095e-15_dp)
++      external_heat_error=abs(sum(flux%heat_out)-flux%symmetry_heat_out-flux%joule)/power_scale
++      external_jn_error=abs(sum(flux%electron_out)-flux%symmetry_electron_out)/current_scale
++      external_jp_error=abs(sum(flux%hole_out)-flux%symmetry_hole_out)/ &
++        max(sum(abs(flux%hole_out(1:2))),tiny(1.0_dp))
++      symmetry_heat_error=abs(flux%symmetry_heat_out)/power_scale
++      symmetry_jn_error=abs(flux%symmetry_electron_out)/current_scale
++      symmetry_jp_error=abs(flux%symmetry_hole_out)/max(sum(abs(flux%hole_out(1:2))),tiny(1.0_dp))
++      call metric('physical_exterior_heat_out_W',sum(flux%heat_out)-flux%symmetry_heat_out)
++      call metric('physical_exterior_terminal_power_W',flux%terminal_power-flux%symmetry_terminal_power)
++      call metric('physical_exterior_heat_balance_relative',external_heat_error)
++      call metric('physical_exterior_electron_balance_relative',external_jn_error)
++      call metric('physical_exterior_hole_balance_diagnostic',external_jp_error)
++      call metric('symmetry_heat_out_W',flux%symmetry_heat_out)
++      call metric('symmetry_electron_out_A',flux%symmetry_electron_out)
++      call metric('symmetry_hole_out_A',flux%symmetry_hole_out)
++      call metric('symmetry_heat_flux_relative',symmetry_heat_error)
++      call metric('symmetry_electron_flux_relative',symmetry_jn_error)
++      call metric('symmetry_hole_flux_diagnostic',symmetry_jp_error)
++    end if
+     call metric('joule_quadrature_4_5_relative',quad_error)
+     call metric('electron_right_A',flux%electron_out(2))
+     call metric('hole_right_A',flux%hole_out(2))
+@@ -213,6 +314,11 @@ contains
+     write(unit_id,'(a,i0)') 'total_newton_iterations=',total_iterations
+     accepted=max_balance<1.0e-8_dp .and. max_residual<1.0e-9_dp .and. max_update<1.0e-9_dp .and. &
+       heat_error<0.01_dp .and. jn_error<0.01_dp .and. quad_error<0.001_dp
++    if(config%transport_supg.or.config%transport_log_weighted) accepted=accepted .and. jp_error<0.01_dp .and. &
++      load%voltage_factor==1.0_dp .and. load%joule_factor==1.0_dp
++    if(config%half_y_symmetry) accepted=accepted .and. &
++      external_heat_error<0.01_dp.and.external_jn_error<0.01_dp.and.external_jp_error<0.01_dp.and. &
++      symmetry_heat_error<0.01_dp.and.symmetry_jn_error<0.01_dp.and.symmetry_jp_error<0.01_dp
+     if (accepted) then
+       write(unit_id,'(a)') 'case_acceptance=PASS_NOT_MESH_ACCEPTANCE'
+       write(output_unit,'(a)') 'case_acceptance=PASS_NOT_MESH_ACCEPTANCE'
+@@ -223,6 +329,156 @@ contains
+     end if
+     close(unit_id)
+   contains
++    subroutine trace_temperature_branch()
++      type(StateType) :: base_state,previous_state
++      type(LoadStateType) :: base_load,previous_load
++      type(SolverStatusType) :: attempt_status
++      logical, allocatable :: fixed(:)
++      real(dp) :: base_theta,previous_theta,step,theta_goal,ratio,max_factor
++      integer :: node,equation,trace_unit,accepted_count,attempts,descending
++      logical :: have_previous,saw_increase,stopped_by_criterion
++      write(unit_id,'(a)') 'solution_mode=INVERSE_TEMPERATURE_DIAGNOSTIC_ONLY'
++      write(unit_id,'(a)') 'acceptance=REQUIRES_FIXED_VOLTAGE_REPLAY_FLUX_AND_MESH_AUDITS'
++      load%voltage_factor=config%restart_voltage_factor;load%joule_factor=1
++      call solve_single_load_newton(mesh,materials,load,context,bc,config%field_scales, &
++        config%nonlinear_options,state,newton,status)
++      if(.not.status%is_ok()) return
++      call build_fixed_dof_mask(bc,mesh%number_of_nodes(),fixed,status)
++      if(.not.status%is_ok()) return
++      base_theta=-huge(1.0_dp)
++      do node=1,mesh%number_of_nodes()
++        equation=global_dof(node,F_THETA)
++        if(fixed(equation)) cycle
++        if(state%x(equation)>base_theta) then
++          base_theta=state%x(equation);inverse_node=node
++        end if
++      end do
++      if(base_theta<=0.or.inverse_node==0) then
++        call set_status(status,STATUS_INPUT_ERROR,'Inverse control needs a warm, free temperature node.');return
++      end if
++      equation=global_dof(inverse_node,F_THETA)
++      write(unit_id,'(a,i0)') 'inverse_control_node=',inverse_node
++      open(newunit=trace_unit,file=trim(directory)//'/inverse_branch.csv',status='new',action='write',iostat=io)
++      if(io/=0) then
++        call set_status(status,STATUS_INPUT_ERROR,'Cannot create inverse branch trace.');return
++      end if
++      write(trace_unit,'(a)') 'point,voltage_V,theta_control_K,residual,update,newton_iterations'
++      call save_accepted(state,load,1,newton%final_residual_rms,newton%final_update_rms,status)
++      if(.not.status%is_ok()) then
++        close(trace_unit);return
++      end if
++      write(trace_unit,'(i0,4(",",es24.16e3),",",i0)') 1,abs(config%target_voltage*load%voltage_factor), &
++        base_theta,newton%final_residual_rms,newton%final_update_rms,newton%iterations
++      flush(trace_unit)
++      base_state=state;base_load=load;step=inverse_step
++      accepted_count=0;attempts=0;descending=0;have_previous=.false.;saw_increase=.false.
++      stopped_by_criterion=.false.
++      max_factor=load%voltage_factor
++      do while(accepted_count<inverse_count.and.attempts<20*inverse_count)
++        attempts=attempts+1;theta_goal=base_theta+step;state=base_state;load=base_load
++        if(have_previous) then
++          ratio=step/(base_theta-previous_theta)
++          state%x=base_state%x+ratio*(base_state%x-previous_state%x)
++          load%voltage_factor=base_load%voltage_factor+ratio*(base_load%voltage_factor-previous_load%voltage_factor)
++        else
++          state%x(F_THETA::NDOF_NODE)=state%x(F_THETA::NDOF_NODE)*(theta_goal/base_theta)
++          load%voltage_factor=base_load%voltage_factor*sqrt(theta_goal/base_theta)
++          ! Lift the whole potential guess when changing the electrode factor;
++          ! changing contacts alone creates a spurious field in the first layer.
++          do node=1,mesh%number_of_nodes()
++            ratio=(mesh%coordinates(1,node)+10e-6_dp)/(20e-6_dp)
++            state%x(global_dof(node,F_PHI))=state%x(global_dof(node,F_PHI))+ &
++              (load%voltage_factor-base_load%voltage_factor)*config%target_voltage*ratio
++          end do
++        end if
++        call solve_temperature_controlled_newton(mesh,materials,load,context,bc,config%field_scales, &
++          config%nonlinear_options,inverse_node,theta_goal,state,newton,attempt_status)
++        if(attempt_status%is_ok()) then
++          call audit_global_balances(mesh,materials,state,load,context,bc,balance,bc_error,diagnostics,attempt_status)
++          if(attempt_status%is_ok()) then
++            if(maxval(balance)>=1e-8_dp.or.bc_error>=1e-10_dp) &
++              call set_status(attempt_status,STATUS_VERIFICATION_FAILED,'Inverse point fails original algebraic balances.')
++          end if
++        end if
++        if(.not.attempt_status%is_ok()) then
++          state=base_state;load=base_load;step=.5_dp*step
++          write(output_unit,'(a,es16.8,a,a)') 'inverse_cutback_K=',step,',reason=',trim(attempt_status%message)
++          flush(output_unit)
++          if(step<inverse_step/64) then
++            status=attempt_status;exit
++          end if
++          cycle
++        end if
++        accepted_count=accepted_count+1
++        call save_accepted(state,load,accepted_count+1,newton%final_residual_rms,newton%final_update_rms,status)
++        if(.not.status%is_ok()) exit
++        write(trace_unit,'(i0,4(",",es24.16e3),",",i0)') accepted_count+1, &
++          abs(config%target_voltage*load%voltage_factor),theta_goal,newton%final_residual_rms, &
++          newton%final_update_rms,newton%iterations
++        flush(trace_unit)
++        if(load%voltage_factor>base_load%voltage_factor+1e-5_dp) saw_increase=.true.
++        if(load%voltage_factor<base_load%voltage_factor-1e-5_dp) then
++          descending=descending+1
++        else
++          descending=0
++        end if
++        max_factor=max(max_factor,load%voltage_factor)
++        previous_state=base_state;previous_load=base_load;previous_theta=base_theta
++        base_state=state;base_load=load;base_theta=theta_goal;have_previous=.true.
++        step=min(inverse_step,step*1.5_dp)
++        if(load%voltage_factor>=1) then
++          stopped_by_criterion=.true.
++          write(unit_id,'(a)') 'inverse_stop=TARGET_CROSSED_REQUIRES_FIXED_TARGET_REPLAY';exit
++        end if
++        if(descending>=3) then
++          stopped_by_criterion=.true.
++          if(saw_increase) then
++            write(unit_id,'(a)') 'inverse_stop=SAMPLED_TURNING_BRANCH_NOT_A_DYNAMICAL_STABILITY_PROOF'
++          else
++            write(unit_id,'(a)') 'inverse_stop=DESCENDING_BRANCH_REQUIRES_LOWER_TEMPERATURE_BRACKET'
++          end if
++          exit
++        end if
++      end do
++      if(status%is_ok().and..not.stopped_by_criterion.and.accepted_count<inverse_count) then
++        write(unit_id,'(a)') 'inverse_stop=ATTEMPT_LIMIT'
++        call set_status(status,STATUS_NONLINEAR_SOLVER_FAILED,'Inverse trace reached its attempt limit; partial points retained.')
++      end if
++      call metric('inverse_maximum_sampled_voltage_V',abs(config%target_voltage)*max_factor)
++      write(unit_id,'(a,i0)') 'inverse_accepted_increments=',accepted_count
++      write(unit_id,'(a)') 'inverse_scope=ALGEBRAIC_BRANCH_ONLY_NO_COMPLETE_0_8V_CLAIM'
++      close(trace_unit)
++    end subroutine trace_temperature_branch
++
++    subroutine save_accepted(saved_state,saved_load,index,residual,update,saved_status)
++      type(StateType), intent(in) :: saved_state
++      type(LoadStateType), intent(in) :: saved_load
++      integer, intent(in) :: index
++      real(dp), intent(in) :: residual,update
++      type(SolverStatusType), intent(out) :: saved_status
++      integer :: checkpoint_unit,checkpoint_io
++      character(len=40) :: name
++      write(name,'(a,i5.5)') 'accepted_',index
++      call write_nodes(directory,mesh,materials(1),saved_state,saved_status,trim(name)//'_nodes.csv')
++      if(.not.saved_status%is_ok()) return
++      open(newunit=checkpoint_unit,file=trim(directory)//'/'//trim(name)//'_load.txt', &
++        status='new',action='write',iostat=checkpoint_io)
++      if(checkpoint_io/=0) then
++        call set_status(saved_status,STATUS_INPUT_ERROR,'Cannot create accepted-load checkpoint.');return
++      end if
++      write(checkpoint_unit,'(a)') 'status=ALGEBRAIC_CHECKPOINT_NOT_FLUX_OR_MESH_ACCEPTANCE'
++      write(checkpoint_unit,'(a,es24.16e3)') 'applied_voltage_V=',config%target_voltage*saved_load%voltage_factor
++      write(checkpoint_unit,'(a,es24.16e3)') 'voltage_factor=',saved_load%voltage_factor
++      write(checkpoint_unit,'(a,es24.16e3)') 'joule_factor=',saved_load%joule_factor
++      write(checkpoint_unit,'(a,es24.16e3)') 'residual=',residual
++      write(checkpoint_unit,'(a,es24.16e3)') 'update=',update
++      if(inverse_node>0) then
++        write(checkpoint_unit,'(a,i0)') 'temperature_control_node=',inverse_node
++        write(checkpoint_unit,'(a,es24.16e3)') 'theta_control_K=',saved_state%x(global_dof(inverse_node,F_THETA))
++        write(checkpoint_unit,'(a)') 'replay=REQUIRES_ORDINARY_FIXED_VOLTAGE_SOLVE'
++      end if
++      close(checkpoint_unit)
++    end subroutine save_accepted
+     subroutine metric(name,value)
+       character(len=*), intent(in) :: name
+       real(dp), intent(in) :: value
+@@ -283,24 +539,51 @@ contains
+     end if
+   end subroutine read_restart_nodes
+ 
+-  subroutine define_boundaries(mesh,voltage,bc,status)
++  subroutine define_boundaries(mesh,voltage,bc,status,half_y)
+     type(MeshType), intent(in) :: mesh
+     real(dp), intent(in) :: voltage
+     type(DirichletBCType), allocatable, intent(out) :: bc(:)
+     type(SolverStatusType), intent(out) :: status
+-    integer, allocatable :: nodes(:),left(:),right(:),a(:),b(:),c(:)
++    logical, intent(in) :: half_y
++    integer, allocatable :: left(:),right(:)
++    integer :: a(1),b(1),c(1),anchors(3),nleft,nright,il,ir
++    real(dp) :: xyz(3)
+     real(dp), parameter :: tol=1.0e-15_dp
+     integer :: i
+     call clear_status(status)
+-    nodes=[(i,i=1,mesh%number_of_nodes())]
+-    left=pack(nodes,abs(mesh%coordinates(1,:)+10e-6_dp)<tol)
+-    right=pack(nodes,abs(mesh%coordinates(1,:)-10e-6_dp)<tol)
+-    a=pack(nodes,maxval(abs(mesh%coordinates-spread([-10e-6_dp,-10e-6_dp,-0.5e-6_dp],2,size(nodes))),dim=1)<tol)
+-    b=pack(nodes,maxval(abs(mesh%coordinates-spread([-10e-6_dp,10e-6_dp,-0.5e-6_dp],2,size(nodes))),dim=1)<tol)
+-    c=pack(nodes,maxval(abs(mesh%coordinates-spread([-10e-6_dp,-10e-6_dp,0.5e-6_dp],2,size(nodes))),dim=1)<tol)
+-    if (size(a)/=1 .or. size(b)/=1 .or. size(c)/=1 .or. size(left)<8 .or. size(right)<8) then
++    if(half_y) then
++      call define_half_y_boundaries(mesh,voltage,bc,status)
++      return
++    end if
++    ! Scalar scans avoid several 3*node_count automatic SPREAD temporaries.
++    ! The geometric predicates and ascending contact-node order are unchanged.
++    nleft=0;nright=0;anchors=0;a=0;b=0;c=0
++    do i=1,mesh%number_of_nodes()
++      xyz=mesh%coordinates(:,i)
++      if(abs(xyz(1)+10e-6_dp)<tol) nleft=nleft+1
++      if(abs(xyz(1)-10e-6_dp)<tol) nright=nright+1
++      if(maxval(abs(xyz-[-10e-6_dp,-10e-6_dp,-0.5e-6_dp]))<tol) then
++        anchors(1)=anchors(1)+1;a=i
++      end if
++      if(maxval(abs(xyz-[-10e-6_dp,10e-6_dp,-0.5e-6_dp]))<tol) then
++        anchors(2)=anchors(2)+1;b=i
++      end if
++      if(maxval(abs(xyz-[-10e-6_dp,-10e-6_dp,0.5e-6_dp]))<tol) then
++        anchors(3)=anchors(3)+1;c=i
++      end if
++    end do
++    if (any(anchors/=1) .or. nleft<8 .or. nright<8) then
+       call set_status(status,STATUS_INPUT_ERROR,'F1 mesh lacks prescribed contacts or rigid-body anchors.');return
+     end if
++    allocate(left(nleft),right(nright));il=0;ir=0
++    do i=1,mesh%number_of_nodes()
++      if(abs(mesh%coordinates(1,i)+10e-6_dp)<tol) then
++        il=il+1;left(il)=i
++      end if
++      if(abs(mesh%coordinates(1,i)-10e-6_dp)<tol) then
++        ir=ir+1;right(ir)=i
++      end if
++    end do
+     allocate(bc(11))
+     bc(1)%field_id=1;bc(1)%node_ids=[a,b,c]
+     bc(2)%field_id=2;bc(2)%node_ids=a
+@@ -312,6 +595,66 @@ contains
+     bc(5)%value_end=voltage
+   end subroutine define_boundaries
+ 
++  subroutine define_half_y_boundaries(mesh,voltage,bc,status)
++    ! Reflection plane y=0: uy=0, natural tangential tractions and scalar fluxes.
++    ! Only the remaining x/z translations and y rotation are removed by A/B.
++    ! Retaining the full-domain anchors would overconstrain the half problem.
++    type(MeshType), intent(in) :: mesh
++    real(dp), intent(in) :: voltage
++    type(DirichletBCType), allocatable, intent(out) :: bc(:)
++    type(SolverStatusType), intent(out) :: status
++    integer, allocatable :: left(:),right(:),symmetry(:)
++    integer :: i,a,b,na,nb,nleft,nright,nsym,il,ir,isym
++    real(dp) :: xyz(3),lo(3),hi(3)
++    real(dp), parameter :: tol=1.0e-15_dp
++    call clear_status(status)
++    lo=minval(mesh%coordinates,dim=2);hi=maxval(mesh%coordinates,dim=2)
++    if(maxval(abs(lo-[-10e-6_dp,0.0_dp,-0.5e-6_dp]))>tol.or. &
++       maxval(abs(hi-[10e-6_dp,10e-6_dp,0.5e-6_dp]))>tol) then
++      call set_status(status,STATUS_INPUT_ERROR,'Y-half mesh must occupy x=[-10,10], y=[0,10], z=[-0.5,0.5] um.')
++      return
++    end if
++    nleft=0;nright=0;nsym=0;na=0;nb=0;a=0;b=0
++    do i=1,mesh%number_of_nodes()
++      xyz=mesh%coordinates(:,i)
++      if(abs(xyz(1)+10e-6_dp)<tol) nleft=nleft+1
++      if(abs(xyz(1)-10e-6_dp)<tol) nright=nright+1
++      if(abs(xyz(2))<tol) nsym=nsym+1
++      if(maxval(abs(xyz-[-10e-6_dp,0.0_dp,-0.5e-6_dp]))<tol) then
++        a=i;na=na+1
++      end if
++      if(maxval(abs(xyz-[10e-6_dp,0.0_dp,-0.5e-6_dp]))<tol) then
++        b=i;nb=nb+1
++      end if
++    end do
++    if(na/=1.or.nb/=1.or.nleft<8.or.nright<8.or.nsym<8) then
++      call set_status(status,STATUS_INPUT_ERROR,'Y-half mesh lacks contacts, symmetry nodes or in-plane rigid anchors.')
++      return
++    end if
++    allocate(left(nleft),right(nright),symmetry(nsym));il=0;ir=0;isym=0
++    do i=1,mesh%number_of_nodes()
++      xyz=mesh%coordinates(:,i)
++      if(abs(xyz(1)+10e-6_dp)<tol) then
++        il=il+1;left(il)=i
++      end if
++      if(abs(xyz(1)-10e-6_dp)<tol) then
++        ir=ir+1;right(ir)=i
++      end if
++      if(abs(xyz(2))<tol) then
++        isym=isym+1;symmetry(isym)=i
++      end if
++    end do
++    allocate(bc(11))
++    bc(1)%field_id=F_U1;bc(1)%node_ids=[a]
++    bc(2)%field_id=F_U2;bc(2)%node_ids=symmetry
++    bc(3)%field_id=F_U3;bc(3)%node_ids=[a,b]
++    do i=4,7
++      bc(2*i-4)%field_id=i;bc(2*i-4)%node_ids=left
++      bc(2*i-3)%field_id=i;bc(2*i-3)%node_ids=right
++    end do
++    bc(5)%value_end=voltage
++  end subroutine define_half_y_boundaries
++
+   subroutine stage_boundaries(mesh,bc,state,stage,stage_bc)
+     type(MeshType), intent(in) :: mesh
+     type(DirichletBCType), intent(in) :: bc(:)
+@@ -336,16 +679,20 @@ contains
+     end do
+   end subroutine stage_boundaries
+ 
+-  subroutine write_nodes(directory,mesh,material,state,status)
++  subroutine write_nodes(directory,mesh,material,state,status,filename)
+     character(len=*), intent(in) :: directory
+     type(MeshType), intent(in) :: mesh
+     type(MaterialType), intent(in) :: material
+     type(StateType), intent(in) :: state
+     type(SolverStatusType), intent(out) :: status
++    character(len=*), intent(in), optional :: filename
++    character(len=80) :: name
+     integer :: unit_id,io,node
+     real(dp) :: nratio,pratio
+     call clear_status(status)
+-    open(newunit=unit_id,file=trim(directory)//'/nodes.csv',status='new',action='write',iostat=io)
++    name='nodes.csv'
++    if(present(filename)) name=filename
++    open(newunit=unit_id,file=trim(directory)//'/'//trim(name),status='new',action='write',iostat=io)
+     if(io/=0) then
+       call set_status(status,STATUS_INPUT_ERROR,'Cannot create F1 nodes.csv.');return
+     end if
+@@ -429,3 +776,4 @@ contains
+     extra(1)=weighted_percentile(efields,weights,0.95_dp);extra(2)=highvol/vol
+   end subroutine extra_fields
+ end module f1_case_runner_m
++
+diff --git a/src/core/model_types_m.f90 b/src/core/model_types_m.f90
+index 0079979..b52fd0d 100644
+--- a/src/core/model_types_m.f90
++++ b/src/core/model_types_m.f90
+@@ -8,6 +8,11 @@ module model_types_m
+     character(len=64) :: name = 'UNSET'
+     logical :: frozen_transport = .false. ! N0/LQ: freeze BOTH mobility and diffusion at T0.
+     logical :: linear_carriers = .false. ! LQ relative perturbations, not log densities.
++    logical :: transport_supg = .false. ! Opt-in consistent HEX20 residual stabilization.
++    logical :: transport_log_weighted = .false. ! Opt-in density-normalized weak transport.
++    integer :: log_weighted_quadrature_order = 3
++    logical :: supg_directional_tau = .false.
++    real(dp) :: supg_scale = 1.0_dp
+     real(dp) :: elastic(6,6) = 0.0_dp
+     real(dp) :: piezoelectric(3,6) = 0.0_dp
+     real(dp) :: permittivity(3,3) = 0.0_dp
+@@ -37,7 +42,9 @@ module model_types_m
+ 
+   type, public :: NonlinearOptionsType
+     logical :: verbose = .false.
++    logical :: global_log_step_limit = .false.
+     integer :: max_newton = 40
++    integer :: stagnation_window = 0
+     real(dp) :: residual_tolerance = 1.0e-8_dp
+     real(dp) :: update_tolerance = 1.0e-8_dp
+     real(dp) :: armijo_c1 = 1.0e-4_dp
+@@ -48,6 +55,8 @@ module model_types_m
+ 
+   type, public :: ContinuationOptionsType
+     logical :: full_joule_during_voltage = .false.
++    logical :: secant_predictor = .false.
++    real(dp) :: voltage_checkpoint_spacing = 0.0_dp
+     real(dp) :: heat_balance_reference_power = 0.0_dp ! Optional physical scale when QJ is exactly off.
+     real(dp) :: initial_step = 0.25_dp
+     real(dp) :: minimum_step = 0.03125_dp
+diff --git a/src/fem/element_kernel_m.f90 b/src/fem/element_kernel_m.f90
+index 2224ae2..521604c 100644
+--- a/src/fem/element_kernel_m.f90
++++ b/src/fem/element_kernel_m.f90
+@@ -1,11 +1,13 @@
+ module element_kernel_m
++  use, intrinsic :: ieee_arithmetic, only : ieee_is_finite
+   use kinds_m, only : dp
+   use constants_m, only : ELEMENTARY_CHARGE
+-  use status_m, only : SolverStatusType, clear_status, set_status, STATUS_GEOMETRY_ERROR
++  use status_m, only : SolverStatusType, clear_status, set_status, STATUS_GEOMETRY_ERROR, STATUS_INVALID_ARGUMENT
+   use field_layout_m, only : F_U1, F_U2, F_U3, F_PHI, F_ETA_N, F_ETA_P, F_THETA, local_dof
+   use mesh_types_m, only : HEX20_NNODE
+-  use hex20_quadrature_m, only : HEX20_NGAUSS, gauss_rule_3x3x3
++  use hex20_quadrature_m, only : HEX20_NGAUSS, gauss_rule_3x3x3, gauss_rule_5x5x5
+   use hex20_shape_m, only : hex20_geometry
++  use transport_supg_m, only : hex20_hessians,add_transport_supg
+   use dof_map_m, only : HEX20_NDOF
+   use model_types_m, only : MaterialType, LoadStateType
+   use material_point_m, only : MATERIAL_INPUT_SIZE, MATERIAL_RESPONSE_SIZE, &
+@@ -44,27 +46,41 @@ contains
+     real(dp), intent(out) :: jacobian_e(HEX20_NDOF,HEX20_NDOF)
+     type(ElementDiagnosticsType), intent(out) :: diagnostics
+     type(SolverStatusType), intent(out) :: status
+-    real(dp) :: points(3,HEX20_NGAUSS), weights(HEX20_NGAUSS)
++    real(dp) :: points(3,125), weights(125)
+     real(dp) :: shape(HEX20_NNODE), derivative_global(3,HEX20_NNODE)
+     real(dp) :: determinant, integration_weight
++    real(dp) :: hess(3,3,HEX20_NNODE),metric(3,3)
+     real(dp) :: state_operator(MATERIAL_INPUT_SIZE,HEX20_NDOF)
+     real(dp) :: test_operator(HEX20_NDOF,MATERIAL_RESPONSE_SIZE)
+     real(dp) :: independent_state(MATERIAL_INPUT_SIZE)
+     real(dp) :: response_vector(MATERIAL_RESPONSE_SIZE)
+     real(dp) :: tangent_matrix(MATERIAL_RESPONSE_SIZE,MATERIAL_INPUT_SIZE)
++    real(dp) :: log_weights(2)
+     type(MaterialPointStateType) :: point_state
+     type(MaterialPointResponseType) :: point_response
+     type(MaterialPointTangentType) :: point_tangent
+     type(SolverStatusType) :: local_status
+-    integer :: point
++    integer :: point,point_count
+ 
+     call clear_status(status)
+     residual_e = 0.0_dp
+     jacobian_e = 0.0_dp
+     diagnostics = ElementDiagnosticsType()
+-    call gauss_rule_3x3x3(points, weights)
++    if(material%transport_log_weighted.and.(material%transport_supg.or.material%linear_carriers)) then
++      call set_status(status,STATUS_INVALID_ARGUMENT,'Log-weighted transport excludes SUPG and linear carriers.')
++      return
++    end if
++    point_count=HEX20_NGAUSS
++    if(material%log_weighted_quadrature_order==5.and.material%transport_log_weighted) then
++      point_count=125
++      call gauss_rule_5x5x5(points,weights)
++    else if(material%log_weighted_quadrature_order==3) then
++      call gauss_rule_3x3x3(points(:,1:HEX20_NGAUSS),weights(1:HEX20_NGAUSS))
++    else
++      call set_status(status,STATUS_INVALID_ARGUMENT,'Unsupported transport quadrature combination.');return
++    end if
+ 
+-    do point = 1, HEX20_NGAUSS
++    do point = 1, point_count
+       call hex20_geometry(coordinates, points(1,point), points(2,point), points(3,point), &
+         shape, derivative_global, determinant, local_status)
+       if (.not. local_status%is_ok()) then
+@@ -75,6 +91,14 @@ contains
+       integration_weight = weights(point) * determinant
+       call build_operators(shape, derivative_global, state_operator, test_operator)
+       independent_state = matmul(state_operator, state_e)
++      if(material%transport_log_weighted) then
++        if(any(.not.ieee_is_finite(independent_state([14,18]))).or. &
++            any(abs(independent_state([14,18]))>=log(huge(1.0_dp)))) then
++          call set_status(status,STATUS_INVALID_ARGUMENT,'Log-weighted transport exponent is out of range.')
++          return
++        end if
++        call log_transport_tests(shape,derivative_global,independent_state,test_operator,log_weights)
++      end if
+       call unpack_point_state(material, independent_state, point_state)
+       call evaluate_material_point(material, point_state, load, point_response, &
+         point_tangent, local_status)
+@@ -90,6 +114,21 @@ contains
+         call material_tangent_matrix(point_tangent, tangent_matrix)
+         jacobian_e = jacobian_e + integration_weight * &
+           matmul(test_operator, matmul(tangent_matrix, state_operator))
++        if(material%transport_log_weighted) then
++          call add_log_test_derivative(shape,derivative_global,test_operator,response_vector, &
++            log_weights,integration_weight,jacobian_e)
++        end if
++      end if
++      if (material%transport_supg) then
++        call hex20_hessians(coordinates,points(:,point),hess,metric,local_status)
++        if (.not.local_status%is_ok()) then
++          status=local_status;return
++        end if
++        call add_transport_supg(material,shape,derivative_global,hess,metric,state_e, &
++          integration_weight,request%need_jacobian,residual_e,jacobian_e,local_status)
++        if (.not.local_status%is_ok()) then
++          status=local_status;return
++        end if
+       end if
+       diagnostics%volume = diagnostics%volume + integration_weight
+       diagnostics%min_temperature = min(diagnostics%min_temperature, point_state%temperature)
+@@ -102,6 +141,38 @@ contains
+     end do
+   end subroutine evaluate_hex20_element
+ 
++  subroutine log_transport_tests(shape,dn,q,test,weights)
++    real(dp), intent(in) :: shape(20),dn(3,20),q(21)
++    real(dp), intent(inout) :: test(140,21)
++    real(dp), intent(out) :: weights(2)
++    integer :: i,nrow,prow
++    weights=exp(-q([14,18]))
++    do i=1,20
++      nrow=local_dof(i,F_ETA_N);prow=local_dof(i,F_ETA_P)
++      test(nrow,11:13)=weights(1)*(dn(:,i)-shape(i)*q(15:17))
++      test(prow,14:16)=weights(2)*(dn(:,i)-shape(i)*q(19:21))
++      test(nrow,21)=weights(1)*ELEMENTARY_CHARGE*shape(i)
++      test(prow,21)=-weights(2)*ELEMENTARY_CHARGE*shape(i)
++    end do
++  end subroutine log_transport_tests
++
++  subroutine add_log_test_derivative(shape,dn,test,response,weights,integration_weight,k)
++    real(dp), intent(in) :: shape(20),dn(3,20),test(140,21),response(21),weights(2),integration_weight
++    real(dp), intent(inout) :: k(140,140)
++    real(dp) :: base_n,base_p
++    integer :: i,j,nrow,prow
++    do i=1,20
++      nrow=local_dof(i,F_ETA_N);prow=local_dof(i,F_ETA_P)
++      base_n=dot_product(test(nrow,:),response);base_p=dot_product(test(prow,:),response)
++      do j=1,20
++        k(nrow,local_dof(j,F_ETA_N))=k(nrow,local_dof(j,F_ETA_N))-integration_weight*( &
++          shape(j)*base_n+weights(1)*shape(i)*dot_product(dn(:,j),response(11:13)))
++        k(prow,local_dof(j,F_ETA_P))=k(prow,local_dof(j,F_ETA_P))-integration_weight*( &
++          shape(j)*base_p+weights(2)*shape(i)*dot_product(dn(:,j),response(14:16)))
++      end do
++    end do
++  end subroutine add_log_test_derivative
++
+   subroutine build_operators(shape, derivative_global, state_operator, test_operator)
+     real(dp), intent(in) :: shape(HEX20_NNODE), derivative_global(3,HEX20_NNODE)
+     real(dp), intent(out) :: state_operator(MATERIAL_INPUT_SIZE,HEX20_NDOF)

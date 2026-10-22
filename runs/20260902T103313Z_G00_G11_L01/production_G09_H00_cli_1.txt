@@ -1,0 +1,13 @@
+run_result=PASS
+case_id=G09_H00_PLAIN_CONTROL
+node_count=155
+element_count=16
+minimum_jacobian_determinant= 5.6249999999999846E-023
+integrated_volume= 7.1999999999999562E-021
+accepted_points=8
+rejected_attempts=0
+total_newton_iterations=32
+maximum_balance_defect= 1.8490095505434557E-016
+maximum_boundary_error= 0.0000000000000000E+000
+final_voltage_factor= 1.0000000000000000E+000
+final_joule_factor= 1.0000000000000000E+000

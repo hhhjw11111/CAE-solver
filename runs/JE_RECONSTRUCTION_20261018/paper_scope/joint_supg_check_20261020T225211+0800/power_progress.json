@@ -1,0 +1,51 @@
+{
+  "comparison": "Same physical-exterior convention, A32/R18/Z14 to A40/R20/Z16",
+  "rows": [
+    {
+      "voltage_V": 6,
+      "coarse_counts": [
+        32,
+        18,
+        14
+      ],
+      "joint1_counts": [
+        40,
+        20,
+        16
+      ],
+      "coarse_physical_power_gap_percent": 0.6419808439398138,
+      "joint1_physical_power_gap_percent": 0.39481116362597113,
+      "gap_reduced": true,
+      "power_gap_threshold": null,
+      "finest_result_available": false,
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\audits\\coarse_power_V060.json": "1809dd7b5c16e37191267ddca4ded4f01da74b12030c173d31c01aa11f9fc3bf",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060\\physical_power.json": "b93dece29c6de15785c7776177724cec5bd1825923596181d76238e97cef89fe"
+      }
+    },
+    {
+      "voltage_V": 8,
+      "coarse_counts": [
+        32,
+        18,
+        14
+      ],
+      "joint1_counts": [
+        40,
+        20,
+        16
+      ],
+      "coarse_physical_power_gap_percent": 0.809244804043928,
+      "joint1_physical_power_gap_percent": 0.5108156584970993,
+      "gap_reduced": true,
+      "power_gap_threshold": null,
+      "finest_result_available": false,
+      "evidence_hashes": {
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\audits\\coarse_power_V080.json": "1d898d3d32f3437e71d98be5f89934925963bcfa451e0befc4d190667c769acf",
+        "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V080\\physical_power.json": "ea39085d80d7a845d0d57c783aa3eeb4268f2df669796f971e8dac605b38f815"
+      }
+    }
+  ],
+  "finest_improvement_not_yet_determined": true,
+  "production_acceptance": false
+}

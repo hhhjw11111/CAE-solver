@@ -1,0 +1,35 @@
+{
+  "domain_symmetry": "Y_HALF",
+  "status": "MESH_AND_INITIAL_GUESS_ONLY",
+  "source_mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY2_Z3\\H1_XY2_Z3.mesh",
+  "source_mesh_sha256": "fc6827087d6a85f7751bed8acac74b3cecab521374ba7e1c8c79e1f5ddf672b2",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_HALF_Y_20261008\\XY2_Z3_V060\\H1_Y_HALF.mesh",
+  "mesh_sha256": "b79b73c78eadfb6d27bd6a321b500cf38da6711e16193204bdff30d1e9f1b860",
+  "node_map_sha256": "95d4e49413419f5f30c6d52e1d3faeb126a594b0a6053f7fe14e15b5493ae5a5",
+  "nodes": 21029,
+  "elements": 4608,
+  "minimum_sampled_jacobian": 4.503254417694386e-25,
+  "reflection_audit": {
+    "matched_nodes": 40192,
+    "matched_elements": 9216,
+    "maximum_coordinate_error_m": 1.1858461261560205e-20
+  },
+  "seed_nodes": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_XY2_Z3_V060_OOC\\nodes.csv",
+  "seed_sha256": "6332cdb467e3cbc7f96706aa353322fe40502b466fd27e163c94ef4e1a13755c",
+  "seed_status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION",
+  "rigid_gauge": {
+    "translation_m": [
+      2.850729013999605e-10,
+      1.4047646970784814e-10,
+      -1.153239546694053e-12
+    ],
+    "rotation_rad": [
+      -9.11492865664862e-19,
+      -5.518000694330922e-07,
+      2.7437980502011454e-19
+    ],
+    "maximum_symmetry_uy_m": 7.077232530749336e-24
+  },
+  "hole_perturbation": 0.0,
+  "output_seed_sha256": "56b591076a626f0662d654e1c1bc472ce0b50c7a497edccd80b0a13b17dd7e8a"
+}

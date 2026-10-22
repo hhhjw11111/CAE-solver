@@ -1,0 +1,114 @@
+{
+  "released_at": "2026-10-21T10:40:14.478802+00:00",
+  "authorization": {
+    "source": "user chat 2026-10-21",
+    "text": "同意按分观测量限定范围放行，从阶段1开始执行，并补上 LQ r=2/4 的对照。"
+  },
+  "release_type": "OBSERVABLE_SCOPED_PRODUCTION",
+  "thresholds_changed": false,
+  "physics_changed": false,
+  "original_fail_records_retained": true,
+  "original_production_release_field_unchanged": false,
+  "primary": [
+    "joule_W",
+    "theta_max_K",
+    "ring_theta_mean_K",
+    "ring_E_mean_V_m",
+    "ring_abs_n_relative_mean",
+    "E_p95_V_m"
+  ],
+  "with_band": [
+    "electron_right_A",
+    "ring_Q_mean_W_m3",
+    "ring_Q_p95_W_m3"
+  ],
+  "excluded": [
+    "ring_abs_p_relative_mean",
+    "local_hole_field_and_hole_profiles"
+  ],
+  "production_matrix": {
+    "r3_LQ_V": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0
+    ],
+    "r3_NT_V": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0
+    ],
+    "radius_NT": {
+      "radii_um": [
+        2,
+        4
+      ],
+      "voltages_V": [
+        6,
+        8
+      ]
+    },
+    "radius_LQ": {
+      "radii_um": [
+        2,
+        4
+      ],
+      "voltages_V": [
+        6,
+        8
+      ],
+      "added_by_user": true
+    }
+  },
+  "mesh": "Y-half A48/R22/Z18 (full/half equivalence passed six times on A32/A40 at 6/8 V)",
+  "limitations": [
+    "Scope classification uses r=3 6/8 V evidence; other radii get their own 8 V two-level mesh check",
+    "LQ half-domain equivalence must be checked separately before LQ production",
+    "J.E heat source is a diagnostic current-work source, not a thermodynamic closure",
+    "Estimates are pre-registered for review only and never substitute for solved states"
+  ],
+  "estimate_model": {
+    "LQ": "P,theta from 3 V LQ L0 states scaled by (V/3)^2 (linear transport)",
+    "NT": "P=P_LQ*(1+s*theta_max/T0)^-2; Rth=Rth_LQ*(1+c*theta_max); self-consistent fixed point",
+    "s": 0.6669566185554308,
+    "c_per_K": 0.001072267929159143,
+    "T0_K": 300.0,
+    "calibration": "r=3 finest half NT 6/8 V, SUPG=1",
+    "status": "ESTIMATE_ONLY_NOT_A_RESULT",
+    "deviation_review_threshold_relative": 0.02
+  },
+  "evidence_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\final_joint_supg_review_20261021\\report.json": "0c083c77faa24633d1d930cced588681d0d2b1246033eeb2e73cb88f2ad3900c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\output\\paper_draft_20261008\\data\\radius_source.csv": "ea280f492e0d475fd7d65c498c26b4cc2232cd34a0a9eafcde5d344b7f905df5",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\release_je_paper_scoped_20261021.py": "c9ae4371d72a7fd0142c7188a12296c736e1f201d98cb5123456a3ca83db5254",
+    "observable_scope.csv": "ff17fe3b7f1b899c2772f19fc3c7bdb53b7926562366d0378f32b8e5b690fd0b",
+    "preregistered_estimates.csv": "a8d36088dc7fe0cfcc1b5dc6b5fbf890830e1bd61c01cf96c67aaf6bca6fdfb7"
+  }
+}

@@ -1,0 +1,98 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  8.0588E-01, joule_factor=  1.0000E+00, residual=  8.7585E-16,
+arc_accepted=1,voltage_factor= 8.0588171803657715E-001
+arc_iteration=0,lambda=  8.071315E-01,residual=  1.740459E-06,update=  1.797693+308,constraint= -1.554312E-14,
+arc_iteration=1,lambda=  7.962992E-01,residual=  1.252016E-08,update=  3.196729E-02,constraint=  1.354472E-14,
+arc_iteration=2,lambda=  7.962067E-01,residual=  1.512351E-12,update=  4.491941E-04,constraint= -1.432188E-14,
+arc_iteration=3,lambda=  7.962067E-01,residual=  1.067223E-15,update=  1.430458E-07,constraint=  1.709743E-14,
+arc_iteration=4,lambda=  7.962067E-01,residual=  9.024977E-16,update=  3.070255E-12,constraint=  3.774758E-15,
+arc_accepted=2,voltage_factor= 7.9620671368831919E-001
+arc_iteration=0,lambda=  8.065066E-01,residual=  4.438997E-07,update=  1.797693+308,constraint= -7.882583E-15,
+arc_iteration=1,lambda=  8.038098E-01,residual=  7.913883E-10,update=  7.840959E-03,constraint=  8.881784E-16,
+arc_iteration=2,lambda=  8.038041E-01,residual=  5.546027E-15,update=  2.667795E-05,constraint=  4.329870E-15,
+arc_iteration=3,lambda=  8.038041E-01,residual=  9.798328E-16,update=  5.002388E-10,constraint=  3.219647E-15,
+arc_accepted=3,voltage_factor= 8.0380410228108556E-001
+arc_iteration=0,lambda=  8.061942E-01,residual=  1.121619E-07,update=  1.797693+308,constraint= -4.135581E-15,
+arc_iteration=1,lambda=  8.055215E-01,residual=  4.977185E-11,update=  1.940947E-03,constraint=  4.607426E-15,
+arc_iteration=2,lambda=  8.055212E-01,residual=  9.433940E-16,update=  1.623377E-06,constraint= -3.885781E-16,
+arc_iteration=3,lambda=  8.055212E-01,residual=  9.068290E-16,update=  3.486921E-12,constraint= -2.775558E-16,
+arc_accepted=4,voltage_factor= 8.0552117928895861E-001
+arc_iteration=0,lambda=  8.060379E-01,residual=  2.819468E-08,update=  1.797693+308,constraint= -1.984524E-15,
+arc_iteration=1,lambda=  8.058700E-01,residual=  3.120917E-12,update=  4.828330E-04,constraint=  1.443290E-15,
+arc_iteration=2,lambda=  8.058700E-01,residual=  9.379996E-16,update=  1.001336E-07,constraint=  1.054712E-15,
+arc_iteration=3,lambda=  8.058700E-01,residual=  8.348845E-16,update=  2.363370E-12,constraint=  1.387779E-16,
+arc_accepted=5,voltage_factor= 8.0586996677291245E-001
+arc_iteration=0,lambda=  8.059598E-01,residual=  7.068316E-09,update=  1.797693+308,constraint= -1.020017E-15,
+arc_iteration=1,lambda=  8.059179E-01,residual=  1.953835E-13,update=  1.204090E-04,constraint=  1.124101E-15,
+arc_iteration=2,lambda=  8.059179E-01,residual=  9.039339E-16,update=  6.216314E-09,constraint= -4.302114E-16,
+arc_iteration=3,lambda=  8.059179E-01,residual=  8.444423E-16,update=  3.427044E-12,constraint=  2.775558E-17,
+arc_accepted=6,voltage_factor= 8.0591786544984823E-001
+arc_iteration=0,lambda=  8.059208E-01,residual=  1.769558E-09,update=  1.797693+308,constraint= -4.787837E-16,
+arc_iteration=1,lambda=  8.059103E-01,residual=  1.225528E-14,update=  3.006490E-05,constraint=  3.191891E-16,
+arc_iteration=2,lambda=  8.059103E-01,residual=  8.992126E-16,update=  3.872729E-10,constraint=  1.249001E-16,
+arc_accepted=7,voltage_factor= 8.0591028570783807E-001
+arc_iteration=0,lambda=  8.059193E-01,residual=  4.435362E-10,update=  1.797693+308,constraint=  6.245005E-17,
+arc_iteration=1,lambda=  8.059167E-01,residual=  1.192719E-15,update=  7.540055E-06,constraint= -1.214306E-16,
+arc_iteration=2,lambda=  8.059167E-01,residual=  8.759712E-16,update=  2.459107E-11,constraint=  6.591949E-17,
+arc_accepted=8,voltage_factor= 8.0591670048136399E-001
+arc_iteration=0,lambda=  8.059186E-01,residual=  1.110277E-10,update=  1.797693+308,constraint=  5.204170E-18,
+arc_iteration=1,lambda=  8.059179E-01,residual=  9.150467E-16,update=  1.888032E-06,constraint=  3.816392E-17,
+arc_iteration=2,lambda=  8.059179E-01,residual=  8.556336E-16,update=  4.132279E-12,constraint= -2.081668E-17,
+arc_accepted=9,voltage_factor= 8.0591793937114908E-001
+arc_iteration=0,lambda=  8.059182E-01,residual=  2.777489E-11,update=  1.797693+308,constraint= -2.428613E-17,
+arc_iteration=1,lambda=  8.059181E-01,residual=  9.192425E-16,update=  4.723517E-07,constraint=  4.336809E-18,
+arc_iteration=2,lambda=  8.059181E-01,residual=  8.207734E-16,update=  2.738157E-12,constraint= -5.030698E-17,
+arc_accepted=10,voltage_factor= 8.0591806653458375E-001
+arc_iteration=0,lambda=  8.059181E-01,residual=  6.944338E-12,update=  1.797693+308,constraint= -8.239937E-18,
+arc_iteration=1,lambda=  8.059180E-01,residual=  9.178099E-16,update=  1.180660E-07,constraint= -8.239937E-18,
+arc_iteration=2,lambda=  8.059180E-01,residual=  8.365490E-16,update=  2.889364E-12,constraint= -1.084202E-17,
+arc_accepted=11,voltage_factor= 8.0591804398105693E-001
+arclength_fold_detected= 1.0000000000000000E+000
+arclength_fold_located= 1.0000000000000000E+000
+arclength_target_crossed= 0.0000000000000000E+000
+arclength_fold_voltage_factor= 8.0591806653458375E-001
+arclength_fold_bracket_width= 1.9531355632939444E-003
+arclength_fold_left_voltage_factor= 8.0591804398105693E-001
+arclength_fold_right_voltage_factor= 8.0591806653458375E-001
+f1_solve=COMPLETE; independent_flux_and_fields=START
+voltage_V= 8.0000000000000000E+000
+hole_radius_m= 3.0000000000000001E-006
+ring_width_m= 4.9999999999999998E-007
+minimum_jacobian= 7.1733401053097288E-024
+total_volume_m3= 3.7172706054966015E-016
+maximum_stage_balance= 1.4307791746844188E-013
+maximum_accepted_residual= 9.7983280627006140E-016
+maximum_accepted_update= 5.0023880681839752E-010
+final_voltage_factor= 8.0591806653458375E-001
+final_joule_factor= 1.0000000000000000E+000
+joule_W= 1.1341421061387122E-002
+total_current_work_W= 6.2342312235094495E-003
+diffusion_work_W=-5.1071898378776889E-003
+absolute_diffusion_work_W= 5.1074738472112937E-003
+terminal_power_W= 6.0513852871781661E-003
+heat_out_W= 1.1161717171799684E-002
+heat_balance_relative= 1.5844918252727266E-002
+electron_balance_relative= 1.7045829426662348E-004
+hole_balance_diagnostic= 4.0941602458806021E-005
+joule_quadrature_4_5_relative= 1.8105366029342088E-008
+electron_right_A= 9.3811441043013691E-004
+hole_right_A= 5.3631817210779061E-057
+ring_volume_m3= 1.0209672579288141E-017
+ring_Q_mean_W_m3= 4.7456634303534742E+013
+ring_Q_p95_W_m3= 8.0328524409591953E+013
+ring_E_mean_V_m= 4.3348989363318239E+005
+ring_abs_n_relative_mean= 4.9085197944964021E-002
+ring_abs_p_relative_mean= 1.5328435256999476E-001
+ring_theta_mean_K= 2.5479245529611624E+001
+ring_displacement_mean_m= 1.1473733088515472E-009
+E_p95_V_m= 5.5379519595453632E+005
+E_above_1e6_volume_fraction= 2.2748843965819523E-002
+theta_max_K= 3.2498266291473442E+001
+maximum_abs_n_relative= 3.8280658067075768E+000
+maximum_abs_p_relative= 1.7877427874683004E+001
+displacement_max_m= 2.2887231587894641E-009
+minimum_mu_n_ratio= 8.1407372768448161E-001
+stress_von_mises_max_Pa= 9.0064257612469420E+006
+case_acceptance=FAIL

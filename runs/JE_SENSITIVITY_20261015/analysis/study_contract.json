@@ -1,0 +1,22 @@
+{
+  "scope": "JE fixed-physics 6 V and 8 V numerical sensitivity, not thermodynamic model validation",
+  "voltage_V": [6, 8],
+  "supg_scales_on_A16": [0.5, 1, 2],
+  "angular_counts_at_scale_1": [16, 24, 32],
+  "radial_elements": 14,
+  "thickness_elements": 14,
+  "refinement_limitation": "Directional angular refinement only; radial and thickness convergence remain untested by this sequence",
+  "heat_source": "E_DOT_TOTAL_CURRENT_DIAGNOSTIC_NOT_THERMODYNAMIC_CLOSURE",
+  "executable_sha256": "405e953c8cb0b1eca2a61eccc011945892924b43fca6805e87fd8fec19006d92",
+  "residual_tolerance": 1e-9,
+  "update_tolerance": 1e-9,
+  "stabilization_sensitivity_metric_relative_span_limit": 0.01,
+  "mapped_field_maximum_relative_limit": 0.02,
+  "mesh_limits_source": "scripts/audit_hv_mesh.py:LIMITS unchanged",
+  "solve_flux_limits_source": "scripts/run_hv_sweep.py:classify unchanged",
+  "power_gap_reporting": "Signed (JE volume - boundary power)/JE volume; report both all-exterior and electrode-only power",
+  "power_gap_threshold": null,
+  "power_gap_threshold_note": "No new acceptance threshold invented; report measured reduction and existing independent gates",
+  "preserve": "Original physics, source, old inputs and results; write isolated new runs only",
+  "transfer": "Initial guesses only; all new mesh results require native nonlinear re-equilibration"
+}

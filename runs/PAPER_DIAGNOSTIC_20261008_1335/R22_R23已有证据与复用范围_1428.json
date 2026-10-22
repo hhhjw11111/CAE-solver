@@ -1,0 +1,321 @@
+{
+  "checked_at": "2026-10-08T14:28:19.853470+08:00",
+  "identity": {
+    "R22": {
+      "build_manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_WEIGHTED_20261008_R22\\build_manifest.json",
+      "manifest_sha256": "d1bec2d1c0878743be70713aa545dafe79850c7c05ff5d2ae75acf1311e5a27b",
+      "exe_sha256": "e96418b8dab5ee5ddb1b3285d3a7b59a32fbf603c6695e1e74ecaee7d4b6e11e",
+      "fortran_record_count": 58,
+      "current_source_mismatches": [
+        "src/app/f1_case_runner_m.f90",
+        "src/core/build_info_m.f90",
+        "src/core/model_types_m.f90",
+        "src/fem/element_kernel_m.f90",
+        "src/io/input_schema_m.f90",
+        "src/io/native_input_m.f90",
+        "src/mesh/hex20_quadrature_m.f90"
+      ],
+      "snapshot_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_source_snapshot",
+      "snapshot_missing": [],
+      "snapshot_mismatch": []
+    },
+    "R23": {
+      "build_manifest": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_LOG_QUAD_20261008_R23\\build_manifest.json",
+      "manifest_sha256": "bc064f8aa3ca763321b15e16b5a8d94978f9e934b0ea1a66fe6c15e6b47d4082",
+      "exe_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9",
+      "fortran_record_count": 58,
+      "current_source_mismatches": [],
+      "snapshot_path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_source_snapshot",
+      "snapshot_missing": [
+        "src/app/f1_case_runner_m.f90",
+        "src/app/main.f90",
+        "src/app/production_runner_m.f90",
+        "src/core/build_info_m.f90",
+        "src/core/constants_m.f90",
+        "src/core/field_layout_m.f90",
+        "src/core/kinds_m.f90",
+        "src/core/model_types_m.f90",
+        "src/core/status_m.f90",
+        "src/fem/dirichlet_m.f90",
+        "src/fem/element_kernel_m.f90",
+        "src/fem/global_assembly_m.f90",
+        "src/fem/sparse_pattern_m.f90",
+        "src/fem/transport_supg_m.f90",
+        "src/io/input_schema_m.f90",
+        "src/io/native_input_m.f90",
+        "src/linear/pardiso_solver_m.f90",
+        "src/mesh/boundary_topology_m.f90",
+        "src/mesh/dof_map_m.f90",
+        "src/mesh/hex20_quadrature_m.f90",
+        "src/mesh/hex20_shape_m.f90",
+        "src/mesh/mesh_checks_m.f90",
+        "src/mesh/mesh_types_m.f90",
+        "src/nonlinear/continuation_solver_m.f90",
+        "src/nonlinear/newton_solver_m.f90",
+        "src/nonlinear/scaling_m.f90",
+        "src/nonlinear/temperature_control_m.f90",
+        "src/physics/equilibrium_m.f90",
+        "src/physics/material_point_m.f90",
+        "src/physics/recombination_m.f90",
+        "src/physics/reference_material_m.f90",
+        "src/physics/thermo_piezo_m.f90",
+        "src/physics/transport_m.f90",
+        "src/physics/zno_candidate_m.f90",
+        "src/post/balance_audit_m.f90",
+        "src/post/field_metrics_m.f90",
+        "src/post/independent_flux_audit_m.f90",
+        "src/post/result_writer_m.f90",
+        "src/problems/reference_bar_problem_m.f90",
+        "src/verification/a1_joint_check_m.f90",
+        "src/verification/a2_hole_check_m.f90",
+        "src/verification/analytic_benchmarks_m.f90",
+        "src/verification/center_hole_check_m.f90",
+        "src/verification/continuation_solver_check_m.f90",
+        "src/verification/element_tangent_check_m.f90",
+        "src/verification/global_assembly_check_m.f90",
+        "src/verification/global_block_jacobian_check_m.f90",
+        "src/verification/linear_solver_check_m.f90",
+        "src/verification/m0_benchmark_m.f90",
+        "src/verification/matched_control_check_m.f90",
+        "src/verification/material_tangent_check_m.f90",
+        "src/verification/mesh_convergence_check_m.f90",
+        "src/verification/newton_solver_check_m.f90",
+        "src/verification/production_joule_check_m.f90",
+        "src/verification/radius_matrix_check_m.f90",
+        "src/verification/supg_check_m.f90",
+        "src/verification/temperature_control_check_m.f90",
+        "src/verification/verification_driver_m.f90"
+      ],
+      "snapshot_mismatch": []
+    }
+  },
+  "r22_snapshot_vs_current_r23_changed_sources": [
+    "src/app/f1_case_runner_m.f90",
+    "src/core/build_info_m.f90",
+    "src/core/model_types_m.f90",
+    "src/fem/element_kernel_m.f90",
+    "src/io/input_schema_m.f90",
+    "src/io/native_input_m.f90",
+    "src/mesh/hex20_quadrature_m.f90"
+  ],
+  "quadrature": {
+    "scope": "SINGLE_VOLTAGE_SAME_MESH_QUADRATURE_SENSITIVITY",
+    "orders": [
+      3,
+      5
+    ],
+    "runs": [
+      "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_q3_half_L1_V005",
+      "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_q5_half_L1_V005"
+    ],
+    "errors": [],
+    "comparisons": {
+      "joule_W": {
+        "values": [
+          2.1400793869271175e-05,
+          2.1400793810086188e-05
+        ],
+        "relative_span": 2.7655510162343105e-09,
+        "limit": 0.01,
+        "passed": true
+      },
+      "theta_max_K": {
+        "values": [
+          0.10277953310963994,
+          0.10277954132982359
+        ],
+        "relative_span": 7.997879284653953e-08,
+        "limit": 0.01,
+        "passed": true
+      },
+      "electron_right_A": {
+        "values": [
+          4.2736949122648577e-05,
+          4.273691247811587e-05
+        ],
+        "relative_span": 8.574438151704204e-07,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_theta_mean_K": {
+        "values": [
+          0.08649745847840444,
+          0.08649751756526029
+        ],
+        "relative_span": 6.831046429507282e-07,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_E_mean_V_m": {
+        "values": [
+          27886.044341167595,
+          27885.988118575267
+        ],
+        "relative_span": 2.0161551649218783e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_Q_mean_W_m3": {
+        "values": [
+          186474443894.20956,
+          186473637678.22308
+        ],
+        "relative_span": 4.323466366995009e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_abs_n_relative_mean": {
+        "values": [
+          0.00016613989519497117,
+          0.0001661398999987762
+        ],
+        "relative_span": 2.8914216463040824e-08,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_abs_p_relative_mean": {
+        "values": [
+          0.00016747820647758564,
+          0.00016747833985992843
+        ],
+        "relative_span": 7.96415482187334e-07,
+        "limit": 0.01,
+        "passed": true
+      },
+      "ring_Q_p95_W_m3": {
+        "values": [
+          384916683469.49646,
+          384920118299.3905
+        ],
+        "relative_span": 8.92348757767803e-06,
+        "limit": 0.01,
+        "passed": true
+      },
+      "E_p95_V_m": {
+        "values": [
+          31204.117120402978,
+          31204.10859874278
+        ],
+        "relative_span": 2.7309409734076686e-07,
+        "limit": 0.01,
+        "passed": true
+      }
+    },
+    "covered_metrics_passed": true,
+    "fully_validated": false,
+    "limitation": "Still requires mesh convergence, field-shape review and model-scope validation; no full-interval certificate."
+  },
+  "q3_replay": {
+    "nodes.csv": true,
+    "field_samples.csv": true,
+    "scope": "R22_TO_R23_UNCHANGED_Q3_0.5V_L1_REPLAY"
+  },
+  "mesh": {
+    "voltages": [
+      {
+        "voltage_V": 0.5,
+        "complete_solve_flux_all_levels": true,
+        "mesh_pass": true,
+        "status": "MESH_PASS_STABILIZATION_SENSITIVITY_PENDING",
+        "changes": {
+          "joule_W": {
+            "L0_L1": 1.7550086230983383e-05,
+            "L1_L2": 3.110303542258313e-06,
+            "limit": 0.01
+          },
+          "theta_max_K": {
+            "L0_L1": 7.648753448593328e-05,
+            "L1_L2": 1.048097874976602e-05,
+            "limit": 0.01
+          },
+          "ring_theta_mean_K": {
+            "L0_L1": 4.9760266600158485e-05,
+            "L1_L2": 1.684258720690932e-06,
+            "limit": 0.01
+          },
+          "electron_right_A": {
+            "L0_L1": 0.00017553729644642293,
+            "L1_L2": 6.850227668756654e-05,
+            "limit": 0.01
+          },
+          "ring_E_mean_V_m": {
+            "L0_L1": 0.00012824021936436495,
+            "L1_L2": 2.1906012451593284e-05,
+            "limit": 0.02
+          },
+          "ring_Q_mean_W_m3": {
+            "L0_L1": 0.00022060352321124447,
+            "L1_L2": 4.151150545953767e-05,
+            "limit": 0.02
+          },
+          "ring_abs_n_relative_mean": {
+            "L0_L1": 0.00046165789052914546,
+            "L1_L2": 5.5240716073808837e-05,
+            "limit": 0.02
+          },
+          "ring_abs_p_relative_mean": {
+            "L0_L1": 0.00043962356758799753,
+            "L1_L2": 6.334276491151308e-05,
+            "limit": 0.02
+          },
+          "ring_Q_p95_W_m3": {
+            "L0_L1": 0.00011459884738635011,
+            "L1_L2": 0.00547220493847558,
+            "limit": 0.05
+          },
+          "E_p95_V_m": {
+            "L0_L1": 0.006272494320688022,
+            "L1_L2": 0.0016686740618985542,
+            "limit": 0.05
+          }
+        }
+      }
+    ],
+    "all_mesh_pass": true,
+    "provenance_errors": [],
+    "fully_validated": false,
+    "limitation": "Requires stabilization-sensitivity and model-scope review; no experimental calibration implied."
+  },
+  "evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\quadrature_r23_log_half_L1_V005.json",
+      "sha256": "4ba4f04e2baaa5923df8f69aa9ae706f09864a938eafac975b01a431c33f43b9"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_r23_q3_replay_equivalence.json",
+      "sha256": "c1c91e1225082b3e6124333275a3c7c5ea634163f494823f3fbbe24757dc14e2"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r22_log_half_L0_L1_L2_V005.json",
+      "sha256": "2171dca1bc14d9180d781e9c5a6abacbb0c15faf7b061cde363f4820f2d4fdf0"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_production_r22_rsp\\stdout.txt",
+      "sha256": "9e471bd2f82ea8b72249aa42062605c4d42c88ae31fce20e3c85f271d2a9fb53"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_production_r22_rsp\\driver_source.f90",
+      "sha256": "2ac79cc6f9323fde4e26e99dc2d7ff3b9e4f2a7efabe6e2afd67d2d3fb993f81"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_global_r22\\stdout.txt",
+      "sha256": "c096f556cc113f2bd2cb9b62f80f53ec515ab0052d7ebd6d843812547aa024d9"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_global_r22\\driver_source.f90",
+      "sha256": "0ecd814fe5b752611283d32e7ff5300578c244adfce7c69fcfe48b71da2bc444"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_q5_r23\\stdout.txt",
+      "sha256": "0aab4626556c9faad421af013578d83670974c358a5da8ad5d4533fa5ae11203"
+    }
+  ],
+  "interpretation": [
+    "Continuous zero-recombination continuity and homogeneous natural flux/Dirichlet BC preserved under positive exp(-eta) test weighting; this is a source-based mathematical inference, not empirical proof of every state.",
+    "Finite-dimensional state-dependent test space differs from standard Galerkin/SUPG; weighted carrier residual is not the original unweighted algebraic residual.",
+    "R23 q5 changes common element quadrature for all rows, not solely carrier rows. q3 retains prior path; existing0.5V L1 replay node/sample files byte identical.",
+    "R22 global Jacobian and R22/R23 element Jacobian fixtures use synthetic test material, not actualZnO production global tangent.",
+    "Independent original physical flux integrals and external/symmetry-plane gates retained. No direct original strong/local residual convergence report found for accepted actualZnO weighted solutions. Requiring two different discrete algebraic residuals simultaneously zero would be inappropriate.",
+    "R22 0.5V three meshes pass10 frozen metrics; R23 L1 q3/q5 pass ten1% sensitivity metrics. This does not certify q5 multi-grid convergence, allvoltages, stresspeak, or experimental applicability."
+  ]
+}

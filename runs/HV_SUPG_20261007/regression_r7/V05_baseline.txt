@@ -1,0 +1,8 @@
+verification_id=V05_M0_analytic
+v05_linear_temperature_l2_error= 2.1200535759410834E-015
+v05_linear_temperature_h1_error= 4.2583528474042261E-015
+v05_uniform_source_l2_error= 2.3708966580529557E-015
+v05_uniform_source_h1_error= 3.0728375399295394E-015
+v05_uniform_source_energy_balance= 1.6263032587282568E-015
+v05_max_perturbed_pivots=0
+verification_result=PASS

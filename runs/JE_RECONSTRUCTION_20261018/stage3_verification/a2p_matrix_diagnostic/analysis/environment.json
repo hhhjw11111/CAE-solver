@@ -1,0 +1,8 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.18.1",
+  "executable": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "analysis_script_sha256": "a52e15d176552fabb8050d0b92b5e3eb756cdb8a3ba85d5be034d2d6f08e1a2c",
+  "protocol_sha256": "d59d4b3613da568adba18b16d6922218cbb7d9b5d15352f203a54cfdec4247b7"
+}

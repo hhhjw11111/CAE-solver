@@ -1,0 +1,147 @@
+{
+  "checked_at": "2026-10-08T14:38:03.766586+08:00",
+  "identity": {
+    "R23": {
+      "exe_sha256": "fa1b3c693c951ff9f95b53d46b7faa1b2126eca24e0b5b23ca4e8bd9585be2a9",
+      "current_source_mismatches": [
+        "src/core/build_info_m.f90",
+        "src/mesh/hex20_quadrature_m.f90"
+      ],
+      "snapshot_exists": true,
+      "snapshot_mismatches": [],
+      "source_count": 58
+    },
+    "R24": {
+      "exe_sha256": "023f4d76a6ef429760d30162208d748ab402661c77fdf545375f0b600200c424",
+      "current_source_mismatches": [],
+      "snapshot_exists": false,
+      "snapshot_mismatches": [],
+      "source_count": 58
+    }
+  },
+  "field_shape": {
+    "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+    "comparisons": {
+      "phi_V": {
+        "maximum_relative": 0.0001107929231454196,
+        "rms_relative": 2.512145534179189e-05,
+        "normalization": 0.5000000000000003,
+        "limit": 0.02,
+        "passed": true
+      },
+      "theta_K": {
+        "maximum_relative": 0.002263287575050067,
+        "rms_relative": 0.0004486842936370682,
+        "normalization": 0.10279189812997538,
+        "limit": 0.02,
+        "passed": true
+      },
+      "ux_m": {
+        "maximum_relative": 0.0029724441591975222,
+        "rms_relative": 0.0007430359445732721,
+        "normalization": 6.0664303124646374e-12,
+        "limit": 0.02,
+        "passed": true
+      },
+      "uy_m": {
+        "maximum_relative": 0.0014426904752132994,
+        "rms_relative": 0.00026319537465539604,
+        "normalization": 6.0664303124646374e-12,
+        "limit": 0.02,
+        "passed": true
+      },
+      "uz_m": {
+        "maximum_relative": 0.0012851051817783126,
+        "rms_relative": 0.0002483011536352076,
+        "normalization": 6.0664303124646374e-12,
+        "limit": 0.02,
+        "passed": true
+      },
+      "eta_n_density_perturbation": {
+        "maximum_relative": 0.030070499493426776,
+        "rms_relative": 0.0033345217253276348,
+        "normalization": 0.007138257706908362,
+        "limit": 0.02,
+        "passed": false
+      },
+      "eta_p_density_perturbation": {
+        "maximum_relative": 0.030138710757482184,
+        "rms_relative": 0.0033247268376482768,
+        "normalization": 0.007154267657835098,
+        "limit": 0.02,
+        "passed": false
+      }
+    },
+    "passed": false,
+    "fully_validated": false,
+    "hashes": {
+      "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_r22_L1_L2_V005\\nodes.csv": "2ef945f8e1205473e1d85ebac55e7989ffeb9b00f69a7d482c8584f3ff0ac643",
+      "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\shape_mapping_r22_L1_L2_V005\\transfer_report.json": "fb67aade11df45105737e0c048da352bf4b6581d90ba4699d494c34abe34eec4",
+      "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L1_V005\\nodes.csv": "ab00bdfe9663caf6123e9482212e566774a30076870741a0c6a345a6faee38fc",
+      "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r22_log_half_L2_V005\\nodes.csv": "1bd15edb0cca909141e6f432914903dcb8aa195bd5c3827a0d7a29dc2ad420c8"
+    }
+  },
+  "evidence": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r21_half_A32_A48_A64_V060.json",
+      "sha256": "337250fa350d289fd92266aca13ede66da4af19f07d1debc725e4e5bf39169af"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r21_half_L0_L1_L2_V005.json",
+      "sha256": "6c3d925c2a4d3b388cfa838116b8e51f5772d96ca3b95a33510d89cc66932e6a"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\mesh_r22_log_half_L0_L1_L2_V005.json",
+      "sha256": "2171dca1bc14d9180d781e9c5a6abacbb0c15faf7b061cde363f4820f2d4fdf0"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\field_shape_r22_L1_L2_V005.json",
+      "sha256": "20f80015283113afbddc0f581dcdda950d418b0e22cbac2f204988c1e715570a"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\quadrature_r23_log_half_L1_V005.json",
+      "sha256": "4ba4f04e2baaa5923df8f69aa9ae706f09864a938eafac975b01a431c33f43b9"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_q5_debug_r23\\stdout.txt",
+      "sha256": "302258343e60fa6b114b7b2b7d5c016e757ebc3e834fe46132234299bb1c35b9"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\log_weighted_q5_debug_r24\\stdout.txt",
+      "sha256": "0aab4626556c9faad421af013578d83670974c358a5da8ad5d4533fa5ae11203"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V030\\summary.json",
+      "sha256": "a001cfa5282bfc2aa299b2072e73f044eeb1897175ab0c19c445c25a0e2aaa57"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L1_V030\\summary.json",
+      "sha256": "a001cfa5282bfc2aa299b2072e73f044eeb1897175ab0c19c445c25a0e2aaa57"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\manifest.json",
+      "sha256": "cc269284d63e16ca52ccd64d430e6bd82b46409e8fedff2e9fd2fb95f7d0e72b"
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060\\stdout.txt",
+      "sha256": "eccb6e9cddf16adf3ebaa7a5105d982759fcefe928ec1d6cd257e5770fca6ac8"
+    }
+  ],
+  "active_run_observation": {
+    "pid": 11972,
+    "directory": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V060",
+    "exe": "R23",
+    "voltage": 6,
+    "domain": "Y_HALF",
+    "nodes": 5541,
+    "elements": 1120,
+    "model": "ZNO_F1_NT; transport_log_weighted=true; SUPG=false; quadrature3",
+    "latest_voltage_factor": 0.85417,
+    "latest_iteration": 2,
+    "latest_residual": 2.8464e-10,
+    "terminal_complete": false
+  },
+  "next_check_local": "2026-10-08 14:45 +08:00",
+  "actions": "Read existing evidence only; no new solve, stop, restart or core edit.",
+  "report_sha256": "c234347601df935f6e94edbb515ba7dc4b89ff2ab46cc0d801d384a2ba1cb50e"
+}

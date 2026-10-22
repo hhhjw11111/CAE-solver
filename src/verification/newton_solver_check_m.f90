@@ -6,14 +6,15 @@ module newton_solver_check_m
   use mesh_types_m, only : MeshType
   use model_types_m, only : MaterialType, StateType, LoadStateType, &
     NonlinearOptionsType, DiagnosticsType
-  use status_m, only : SolverStatusType, clear_status, set_status, STATUS_VERIFICATION_FAILED
+  use status_m, only : SolverStatusType, clear_status, set_status, STATUS_VERIFICATION_FAILED, &
+    STATUS_NONLINEAR_SOLVER_FAILED
   use equilibrium_m, only : compute_equilibrium_densities
   use sparse_pattern_m, only : SparseAssemblyContextType, initialize_sparse_context
   use dirichlet_m, only : DirichletBCType, project_dirichlet_state, build_fixed_dof_mask
   use global_assembly_m, only : GlobalAssemblyRequestType, GlobalSystemType, &
     assemble_global_system
   use scaling_m, only : build_variable_scaling
-  use newton_solver_m, only : NewtonReportType, solve_single_load_newton
+  use newton_solver_m, only : NewtonReportType, solve_single_load_newton,dogleg_direction
   use material_tangent_check_m, only : define_test_material
   use global_assembly_check_m, only : build_two_element_mesh
   implicit none
@@ -26,8 +27,10 @@ module newton_solver_check_m
 
 contains
 
-  subroutine verify_newton_solver_g07(status)
+  subroutine verify_newton_solver_g07(status,stagnation_check,trust_check)
     type(SolverStatusType), intent(out) :: status
+    logical, intent(in), optional :: stagnation_check
+    logical, intent(in), optional :: trust_check
     type(MeshType) :: mesh
     type(MaterialType) :: materials(1)
     type(StateType) :: warm_state,cold_state
@@ -63,6 +66,11 @@ contains
     options%backtrack_factor=0.5_dp
     options%minimum_step=1.0e-8_dp
     options%maximum_log_density_update=1.0_dp
+    if(present(stagnation_check)) then
+      if(stagnation_check) then
+        options%stagnation_window=4
+      end if
+    end if
 
     call define_g07_boundary_conditions(mesh,boundary_conditions,local_status)
     if (.not. local_status%is_ok()) then
@@ -81,6 +89,13 @@ contains
       call copy_verification_failure('G07 warm-start Newton failed: ',local_status,status); return
     end if
     call define_initial_state(mesh,.false.,cold_state)
+    if(present(trust_check)) then
+      if(trust_check) then
+        options%trust_region=.true.
+        options%trust_initial_radius=0.025_dp
+        options%max_newton=100
+      end if
+    end if
     call solve_single_load_newton(mesh,materials,load,context,boundary_conditions, &
       FIELD_SCALES,options,cold_state,cold_report,local_status)
     if (.not. local_status%is_ok()) then
@@ -130,6 +145,59 @@ contains
       ieee_is_finite(minimum_temperature) .and. ieee_is_finite(maximum_temperature) .and. &
       ieee_is_finite(minimum_n) .and. ieee_is_finite(maximum_n) .and. &
       ieee_is_finite(minimum_p) .and. ieee_is_finite(maximum_p)
+
+    if(present(stagnation_check)) then
+      if(stagnation_check) then
+        block
+          type(StateType) :: stalled_state
+          type(NewtonReportType) :: stalled_report
+          call define_initial_state(mesh,.false.,stalled_state)
+          options%global_log_step_limit=.true.
+          options%maximum_log_density_update=1.0e-8_dp
+          call solve_single_load_newton(mesh,materials,load,context,boundary_conditions, &
+            FIELD_SCALES,options,stalled_state,stalled_report,local_status)
+          passed=passed .and. local_status%code==STATUS_NONLINEAR_SOLVER_FAILED .and. &
+            index(local_status%message,'stagnation')>0 .and. .not.stalled_report%converged .and. &
+            stalled_report%iterations==options%stagnation_window
+          write(*,'(a,i0)') 'g07_stagnation_rejected_after_iterations=',stalled_report%iterations
+          write(*,'(a)') 'g07_stagnation_message='//trim(local_status%message)
+        end block
+      end if
+    end if
+
+    if(present(trust_check)) then
+      if(trust_check) then
+        block
+          real(dp) :: pn(3),pc(3),direction(3),radius,norm_d
+          logical :: mask(3)
+          integer :: test
+          type(StateType) :: rejected_state
+          type(NewtonReportType) :: rejected_report
+          pn=[4.0_dp,2.0_dp,99.0_dp];pc=[0.5_dp,0.5_dp,0.0_dp];mask=[.false.,.false.,.true.]
+          do test=1,3
+            select case(test)
+            case(1);radius=0.1_dp
+            case(2);radius=1.0_dp
+            case(3);radius=5.0_dp
+            end select
+            call dogleg_direction(pn,pc,mask,radius,direction)
+            norm_d=sqrt(sum(direction(1:2)**2)/2.0_dp)
+            passed=passed.and.direction(3)==0.0_dp.and.norm_d<=radius*(1.0_dp+1.0e-14_dp)
+            if(test<3) passed=passed.and.abs(norm_d-radius)<1.0e-14_dp
+            if(test==3) passed=passed.and.maxval(abs(direction(1:2)-pn(1:2)))==0.0_dp
+          end do
+          passed=passed.and.cold_report%trust_region_steps>0.and.warm_report%trust_region_steps==0
+          call define_initial_state(mesh,.false.,rejected_state)
+          options%trust_initial_radius=-1.0_dp
+          call solve_single_load_newton(mesh,materials,load,context,boundary_conditions, &
+            FIELD_SCALES,options,rejected_state,rejected_report,local_status)
+          passed=passed.and..not.local_status%is_ok().and..not.rejected_report%converged
+          write(*,'(a,i0)') 'g07_trust_accepted_steps=',cold_report%trust_region_steps
+          write(*,'(a,i0)') 'g07_trust_rejected_trials=',cold_report%trust_region_rejections
+          write(*,'(a)') 'g07_trust_comparison=LEGACY_WARM_VS_TRUST_COLD'
+        end block
+      end if
+    end if
 
     write(*,'(a)') 'verification_id=G07_true_residual_newton'
     call print_report('warm',warm_report)

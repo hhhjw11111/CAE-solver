@@ -1,0 +1,7 @@
+{
+  "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+  "mesh_validated": false,
+  "power_gap_validated": false,
+  "elapsed_seconds": 969.4379999999983,
+  "stop_reason": null
+}

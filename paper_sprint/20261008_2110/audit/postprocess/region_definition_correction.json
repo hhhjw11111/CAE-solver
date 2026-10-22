@@ -1,0 +1,5 @@
+{
+  "reason": "Centroid |x|>=9um produced empty contact sets on F1 and R23 meshes; revised contact definition is boundary-touching first element layer, before interpreting regional conclusions.",
+  "final_definition": "Contact first: element has at least one x=+/-10um node. Surface: remaining elements |z_centroid|>=0.45um. Near-hole: remaining r_centroid<=3.5um. Bulk: remainder.",
+  "physics_and_global_metrics_unchanged": true
+}

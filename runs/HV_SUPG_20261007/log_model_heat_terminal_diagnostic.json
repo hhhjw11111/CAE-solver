@@ -1,0 +1,38 @@
+[
+  {
+    "run": "r22_log_half_L2_V005",
+    "voltage": 0.5,
+    "half_drift_heat_W": 2.1400727306306196e-05,
+    "half_terminal_power_W": 2.136993845076084e-05,
+    "excess_fraction_of_drift_heat": 0.0014386826720737195,
+    "metrics_sha256": "886613284d77b744290d86839147b6b53bceaa83b0c5141c7395ee9332fb537c",
+    "scope": "HEAT_FORMULA_DIAGNOSTIC_NOT_AN_ADDITIONAL_ACCEPTANCE_GATE"
+  },
+  {
+    "run": "r23_log_half_L2_V030",
+    "voltage": 3.0,
+    "half_drift_heat_W": 0.0007974461883926063,
+    "half_terminal_power_W": 0.000756582750077007,
+    "excess_fraction_of_drift_heat": 0.05124287871758058,
+    "metrics_sha256": "c573e97fafd024eeed04b7d059e35e5c8ce083644d132ad8893a6a2d4f2f7cc2",
+    "scope": "HEAT_FORMULA_DIAGNOSTIC_NOT_AN_ADDITIONAL_ACCEPTANCE_GATE"
+  },
+  {
+    "run": "r23_log_half_L2_V060",
+    "voltage": 6.0,
+    "half_drift_heat_W": 0.0039064829997737735,
+    "half_terminal_power_W": 0.002819831195016544,
+    "excess_fraction_of_drift_heat": 0.2781662699722892,
+    "metrics_sha256": "0743c76094181a826d5da340be06d00ec186ec837b105f1706dcfeeca8992d5c",
+    "scope": "HEAT_FORMULA_DIAGNOSTIC_NOT_AN_ADDITIONAL_ACCEPTANCE_GATE"
+  },
+  {
+    "run": "r23_log_half_L0_V065_replay",
+    "voltage": 6.5,
+    "half_drift_heat_W": 0.005503404428251043,
+    "half_terminal_power_W": 0.0031826227714085087,
+    "excess_fraction_of_drift_heat": 0.42169927489411646,
+    "metrics_sha256": "2eb5d2d482ab01f9f7d0ab422cee2fb873d2c863abc134c272a7f35a11049d94",
+    "scope": "HEAT_FORMULA_DIAGNOSTIC_NOT_AN_ADDITIONAL_ACCEPTANCE_GATE"
+  }
+]

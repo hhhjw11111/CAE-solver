@@ -1,0 +1,100 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 6.512682589060455e-05,
+      "rms_relative": 1.6139865181046776e-05,
+      "normalization": 8.000000000000005,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 4.1584104243769955e-05,
+      "rms_relative": 2.2194786241841267e-05,
+      "normalization": 24.235908762559777,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 1.5530221610045167e-05,
+      "rms_relative": 6.22672461516254e-06,
+      "normalization": 1.7578177064355416e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 2.321348928967742e-05,
+      "rms_relative": 9.111350172301339e-06,
+      "normalization": 1.7578177064355416e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 3.050002396591552e-05,
+      "rms_relative": 1.1178976357854522e-05,
+      "normalization": 1.7578177064355416e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.002390799351822445,
+      "rms_relative": 0.0004404590571528877,
+      "normalization": 2.5791542904443734,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.0018325140013030622,
+      "rms_relative": 0.00021040682417128214,
+      "normalization": 6.842872500065212,
+      "limit": 0.02,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z16_S1_V080\\nodes.csv": "567d8dd303bf912904511efe1e09665bb45e2719e24c299fdbc201e5d7e40ea9",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\transfer_A32_R14_Z16_S1_V080\\transfer_report.json": "4f9fa1df82a1fc7bab9f598466479e35b70ed31ddc859b2624aef85d5e05cfc2",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\nodes.csv": "6075cf6f50838008c7692165ada50e6b3b252310c7b12f84ec558ac67c8f1574",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\manifest.json": "458e424678a2684d5c1c5622adac2e16d6d25e10e0dc379079a6e3bbd2504fad",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\execution.json": "6a1239612136c00f7afa5f3ffbdc1fbabea25bb1023df6933b942e6391005422",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\input.nml": "c21e39858b7188edcf096437b9ffc416e20b0153171b594f4aceb3a8f268edec",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\metrics.txt": "bb442d56ac76433ee3f66c86712b63b51bbbe5350be706e069e41687c7f5123f",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V080\\field_audit.json": "92ff5553cdc2b0fa20b94069400e4f094716e1285567fed7e46648959cd8c284",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\nodes.csv": "ee92ea605d191b8c8c6054c99ca0d606db73d749e43b6c1505b4a073eec26223",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\manifest.json": "26550ee4b9048478164a5eccb80ccddd00aeea88917100122d5ba3551552598e",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\execution.json": "68bbee9ba44026d0d7a492085a9c6921009aa091528fe4dbdd58c5fcc7db9107",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\input.nml": "fa165ba2fb12d83f7454557082ad381836d1202bd7c53366bf6da2053f24eeda",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\metrics.txt": "042b914d9b36129f90714aa1710e012e55b145b5e07c26ad4c7b7775361834f1",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\A32_R14_Z16_S1_V080\\field_audit.json": "11a42e3d62ff7d67f371e7261d0627115aabadc34a7cdfde682bd004e359e6d9"
+  },
+  "carrier_locations": {
+    "eta_n": {
+      "maximum_difference_node": 7576,
+      "xyz_um": [
+        6.063226302578546e-16,
+        9.902000000000001,
+        -0.47112499999999996
+      ],
+      "source_perturbation_at_node": 0.21599877501501752,
+      "target_perturbation_at_node": 0.20983253460917303,
+      "maximum_absolute_perturbation_difference": 0.006166240405844486,
+      "target_density_min_m3": 6.850688090657735e+21,
+      "target_density_max_m3": 2.147492574266624e+23
+    },
+    "eta_p": {
+      "maximum_difference_node": 25567,
+      "xyz_um": [
+        1.9481547061731936,
+        -9.794035091115322,
+        0.47112499999999996
+      ],
+      "source_perturbation_at_node": 0.5206548007100815,
+      "target_perturbation_at_node": 0.5081151410445803,
+      "maximum_absolute_perturbation_difference": 0.01253965966550119,
+      "target_density_min_m3": 3.725156988525118e-31,
+      "target_density_max_m3": 1.0993092954258074e-29
+    }
+  }
+}

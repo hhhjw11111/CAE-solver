@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-08T21:16:03.853651+08:00",
+  "status": "MANUALLY_INTERRUPTED_FOR_IMPROVED_INITIAL_GUESS_NOT_NATIVE_FAILURE",
+  "reason": "Zero-heat start from heated 6 V state stalled near residual 2.1192e-5; reset only initial thermal/mechanical/carrier perturbations and re-solve",
+  "old_run": "r25_log_A64_voltage_then_heat_V080",
+  "replacement_run": "r25_log_A64_voltage_then_heat_cold_V080",
+  "unchanged_mesh": true,
+  "unchanged_physics": true,
+  "unchanged_tolerances": true,
+  "preserved_direct_voltage_pid": 2764,
+  "stopped_pids": [
+    2644,
+    19736,
+    22984
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "R03_LQ_V025",
+  "radius_um": 3,
+  "model": "LQ",
+  "voltage_V": 2.5,
+  "heat_source": "SIGNED_E_DOT_MODEL_CURRENT_R0",
+  "status": "INPUT_ONLY_CANDIDATE_GRID_NOT_SOLVED",
+  "prepared_input": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\voltage_radius_scope_20261020_v2\\candidate_inputs\\R03_LQ_V025\\input.nml",
+  "grid_selected": false,
+  "production_acceptance": false,
+  "input_sha256": "0622b4dd82ad5eb669dcdb9055c999c6e1b3e32dc52fe36e58be6230dedff48c",
+  "mesh": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\paper_scope\\production_preparation\\geometry_validation_01\\r3_A48_R22_Z18\\H1.mesh",
+  "mesh_sha256": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+  "candidate_counts": [
+    48,
+    22,
+    18
+  ],
+  "material_profile": "ZNO_F1_LQ",
+  "transport_supg": false,
+  "native_runs": 0,
+  "seed": "COLD_STATE_NO_CROSS_MODEL_TRANSFER",
+  "validation_pending": [
+    "native inspect",
+    "native solve",
+    "independent flux",
+    "model-specific spatial checks"
+  ]
+}

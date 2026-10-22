@@ -1,0 +1,12 @@
+[
+  {
+    "name": "supg",
+    "exit_code": 1,
+    "passed": true
+  },
+  {
+    "name": "lq",
+    "exit_code": 1,
+    "passed": true
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "scope": "TRACE_SUPG_POWER_AUDIT",
+  "supg_directional_tau": false,
+  "supg_scale": 0.5,
+  "verification": {
+    "affine_constant_current_power_relative_error": 1.5043636905115733e-15
+  },
+  "source_hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\audit_je_trace_power_20261021.py": "a263a9f3842260590e4404ec16f71f79cc38e75a3446f5472a8962c4444f4cdd",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\diagnose_je_power_gap_20261015.py": "d9f398ef998fcfeb7a702d1475bb933a46e15b7dd527b26ae5052bb997379ded",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_power\\A48_R22_Z18_S0.5_V080\\trace_power_kernel.py": "2457c8e92269231aed24cef121580a8d18c9bb9d330393addb75c42e80477d3a",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\plot_je_8v_clouds_20261013.py": "a947e7541093f772437c1d5f65bb1012436a50663fc06572c30744e1b4b739be",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V080\\nodes.csv": "be295c725dd65ac1256f46bfc12a926b2b5fcd36a4c63cc022a6a583e5d7ca61",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V080\\manifest.json": "d9703d927b27a5201ef5c8457bb8d8ffb3485862ff3c0486dd94884bcd3963c2",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V080\\execution.json": "201f4ce77c458785b0f3da287f603bbf8652b0591d04819fc81e095c283e321c",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V080\\metrics.txt": "7d83afccc287b94423682ff241373fe1d010263d2e1e74bf7e4fc555270b78ad",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage5_controlled_numerics_20261021\\trace_joint_supg\\A48_R22_Z18_S0.5_V080\\input.nml": "f2a8d3cd639add50152b3c50bb830d5207498e0c3ec53f53f14579784fa87d04"
+  },
+  "heat_changed": false,
+  "historical_directional_decomposition_applicable": false
+}

@@ -1,0 +1,6 @@
+{
+  "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r23_log_half_L0_V080\\accepted_00003_nodes.csv",
+  "sha256": "d066cc607a5966eeeb7da9055596654a32c37b1b154757327bd04014901172d2",
+  "voltage": 6.5,
+  "status": "INITIAL_GUESS_REQUIRES_REEQUILIBRATION"
+}

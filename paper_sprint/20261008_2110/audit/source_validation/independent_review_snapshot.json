@@ -1,0 +1,26 @@
+{
+  "snapshot_time": "2026-10-08T21:34:06.2969471+08:00",
+  "classification": "Independent read-only evidence and wording review; not spatial validation",
+  "files": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\reports\\study_report_final.md",
+      "sha256": "43b9400325b7630d4ce5e9d6b81f0b26ec7919f6e449ef3eb6969b10ec5b1365",
+      "bytes": 25645
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\manuscript\\manuscript_working_draft.md",
+      "sha256": "d0794869680ef28ebfb0d4005c2797a9a5606f40da3fe1a33c44786078c425c9",
+      "bytes": 39794
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\data\\metrics_summary.json",
+      "sha256": "7d9fa2e1fab1ea5d9c90efba1a7a0bad993045e4ab3fcebf27aa7c7b3d70f7d9",
+      "bytes": 16160
+    },
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\paper_sprint\\20261008_2110\\scripts\\postprocess_3v.py",
+      "sha256": "1382b915fcc2fc9263d9a3349ada9665454a85e9b4502c08c62dfcd8e8f25037",
+      "bytes": 20482
+    }
+  ]
+}

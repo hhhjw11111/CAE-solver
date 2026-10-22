@@ -1,0 +1,13 @@
+{
+  "wrapper": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_production_20261022.py",
+  "wrapper_sha256": "7cf8dd08d52e74e37bbd4b63fadd079b05413a30cb1506ee05a5361ed4694af9",
+  "release_sha256": "1f5b5f1465a20befe5adf1518907218c92349b2c09771465791fa9d217d7e413",
+  "case_matrix_sha256": "e1e8326de9763a219881d6d419a4d10fea8543cb1bba3d61a162610257d9a45b",
+  "groups": [
+    "lq_check",
+    "lq_sweep",
+    "nt_sweep",
+    "radius",
+    "radius_mesh"
+  ]
+}

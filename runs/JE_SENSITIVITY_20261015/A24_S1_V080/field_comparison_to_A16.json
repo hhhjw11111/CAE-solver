@@ -1,0 +1,72 @@
+{
+  "scope": "POINTWISE_MAPPED_FIELD_SHAPE_ONLY",
+  "comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0038616208725562057,
+      "rms_relative": 0.0009557526660974502,
+      "normalization": 8.000078894911326,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.007472193370711582,
+      "rms_relative": 0.0037110895502561756,
+      "normalization": 24.377737026467674,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.006177610064185602,
+      "rms_relative": 0.0018090539929182536,
+      "normalization": 1.7579599183870187e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.00395024175880009,
+      "rms_relative": 0.0013354945099410623,
+      "normalization": 1.7579599183870187e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.00260722351526012,
+      "rms_relative": 0.0006524185198691627,
+      "normalization": 1.7579599183870187e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.07264435985264785,
+      "rms_relative": 0.004795003713390593,
+      "normalization": 2.686421118874305,
+      "limit": 0.02,
+      "passed": false
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.06217399116416134,
+      "rms_relative": 0.005723763643144597,
+      "normalization": 7.140344354842753,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "fully_validated": false,
+  "hashes": {
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A16_A24_V080\\nodes.csv": "b25b14960e4f4d0a9f52cbd6733f697531396410d28f78a9e70243b3d08decbf",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\transfer_A16_A24_V080\\transfer_report.json": "6defe190c7879c9e79da37b98dcdaa3cc0db7d83f892935d30300178b5ce0fd5",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\nodes.csv": "5bcd1d02e0985c6ad404a40560e4bb9a949777b79d0ca154a993fda660899941",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\manifest.json": "187cd1f27637d3ed6de1994a9436dc73aff195789fb8e36e9854316ecb185165",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\execution.json": "ae4a981877ead3ba1d41ea8f6cc9482172e5457bcd6587f3034e78e5d2716c24",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\input.nml": "4a6bdc376a08c8c56918bf1f73638744ce0db2e4f8edcd1f195ae64bdb0797a2",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\metrics.txt": "a5f40280197582041e5c1b52d9915ab658c3f88918889802e02becf6a0b70aa0",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A16_S1_V080\\field_audit.json": "35092e65cd1c2cd631472ce22279cbe6c0aea52c2d77f3bf6592bdea9c59f992",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\nodes.csv": "4de94425d7229b68a61d5834eb8a9bad13a1f994d0199b98431af110766b1908",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\manifest.json": "4b8c0610e7d075fd99a4ea35514fc2f52cc44bb46ec18fafd0083f02e2e49446",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\execution.json": "07d49615e3c147cb61cacfcf5fda24607eda99b2d420879c18f6ff84534ae383",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\input.nml": "2fab924ef65c41725e5b45de1a602ba2b0c205a05d3da0e4c566cbf83856641a",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\metrics.txt": "c391dc510274b80685279bb61dd48929a0803715901e8da9a2447ecdc7099416",
+    "C:\\Users\\Administrator\\Desktop\\gemini\u4fee\u6539\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A24_S1_V080\\field_audit.json": "34f676dff7a251b2e4dc75dfb2e1e8c6cafc826b4c7dcfaaff4a977cca9be12c"
+  }
+}

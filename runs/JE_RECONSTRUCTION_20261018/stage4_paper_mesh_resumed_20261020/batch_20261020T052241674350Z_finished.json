@@ -1,0 +1,17 @@
+{
+  "all_requested_attempts_completed": true,
+  "events": [
+    {
+      "name": "A40_R20_Z16_S1_V060",
+      "state": "EXPLICIT_REFERENCE_REUSE",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_ooc8000_20261020\\A40_R20_Z16_S1_V060"
+    },
+    {
+      "name": "A40_R20_Z16_S1_V080",
+      "state": "SOLVE_FLUX_PASS_MESH_PENDING",
+      "directory": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh_resumed_20261020\\A40_R20_Z16_S1_V080",
+      "local_comparison_passed": false
+    }
+  ],
+  "fully_validated": false
+}

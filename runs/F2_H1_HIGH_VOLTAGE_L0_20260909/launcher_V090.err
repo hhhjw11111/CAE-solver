@@ -1,0 +1,5 @@
+Exception: C:\Users\Administrator\Desktop\geminiÐÞ¸Ä\Console3\solver_v2\runs\F1_FAST_HOLE_L0_20260907\evidence\delivery_scripts\run_fast_case.ps1:52
+Line |
+  52 |  if (-not $accepted) { throw "Fast case failed: $CaseName" }
+     |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Fast case failed: F2_H1_NT_L0_V090

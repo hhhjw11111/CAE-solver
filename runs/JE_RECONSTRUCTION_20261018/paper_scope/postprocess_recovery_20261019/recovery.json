@@ -1,0 +1,86 @@
+{
+  "status": "POSTPROCESSING_COMPLETED_LOCAL_FIELD_FAIL_RETAINED",
+  "utf8_mode": 1,
+  "native_rerun": false,
+  "native_seconds": 1912.469000000041,
+  "workspace_alias": "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2",
+  "physical_root": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2",
+  "source": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\A32_S1_V060",
+  "target": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060",
+  "gap": {
+    "gap_W": 2.9130033504612754e-05,
+    "gap_relative": 0.005031344992961475,
+    "electrode_gap_relative": 0.005080429042015345,
+    "parts": {
+      "quadrature_W": 1.9833172153205236e-09,
+      "SUPG_weighted_W": 2.9069254588169996e-05,
+      "reaction_minus_physical_boundary_W": 5.879559909945098e-08,
+      "free_residual_correction_W": 1.1967362370252802e-16
+    },
+    "decomposition_remainder_W": 8.314475410248212e-18,
+    "SUPG_fraction_of_gap": 0.9979135308432401,
+    "free_residual_max_A": 5.284085117059556e-16
+  },
+  "local_comparisons": {
+    "phi_V": {
+      "maximum_relative": 0.0003843457808943016,
+      "rms_relative": 0.0001692692406313933,
+      "normalization": 6.0000000000000036,
+      "limit": 0.02,
+      "passed": true
+    },
+    "theta_K": {
+      "maximum_relative": 0.0015878166236327844,
+      "rms_relative": 0.0004182575006532741,
+      "normalization": 14.097876611116973,
+      "limit": 0.02,
+      "passed": true
+    },
+    "ux_m": {
+      "maximum_relative": 0.001494252835367365,
+      "rms_relative": 0.0003901314947292917,
+      "normalization": 1.0244427967208266e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uy_m": {
+      "maximum_relative": 0.0005945925197131036,
+      "rms_relative": 0.00015848855931390227,
+      "normalization": 1.0244427967208266e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "uz_m": {
+      "maximum_relative": 0.0007921108813656869,
+      "rms_relative": 0.00023013953432934786,
+      "normalization": 1.0244427967208266e-09,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_n_density_perturbation": {
+      "maximum_relative": 0.019023597572727636,
+      "rms_relative": 0.0015395382316359257,
+      "normalization": 1.27762718285756,
+      "limit": 0.02,
+      "passed": true
+    },
+    "eta_p_density_perturbation": {
+      "maximum_relative": 0.023495958397970498,
+      "rms_relative": 0.003108599029798363,
+      "normalization": 1.9891975524201335,
+      "limit": 0.02,
+      "passed": false
+    }
+  },
+  "verification_scope": "JE_PAPER_MINIMAL_20261018",
+  "fully_validated": false,
+  "wrapper_sha256": "fac55cf65798ff46a7116d654e0116026e89d28a6b56f8a698eb4ef6e25097d1",
+  "recovery_script_sha256": "9d149c9806a3d50eaecd385910c996b8dd6bee220980f2cfab8adb1acd856f00",
+  "completed_files": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\completion.json": "985882d5a29b999efdd655503ef75814c633d077d019983c8f5bda388be804e3",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\mapped_field_comparison.json": "d0115f73f3bb96d7c20e78f8e34a19f942511e50068b03e565841cc579674579",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\power_audit\\decomposition.json": "f8d07cdfbc48155a32fe3e4548f980c33d1dcc08284fa070e0fea020f27e79dd",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\nodes.csv": "654dae7792790b8678a415679098919aceebb939dc2f0cfca033d9fa61c5d7b0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_mesh\\A40_R14_Z14_S1_V060\\input.nml": "1feb7ee87d7a4cd9d5045007d1f4864815b383fb377a91d4ecdbc72e0e2987dd"
+  }
+}

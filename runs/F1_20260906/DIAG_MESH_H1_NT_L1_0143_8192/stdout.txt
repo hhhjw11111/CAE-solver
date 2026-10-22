@@ -1,0 +1,14 @@
+f1_nodes=20496, elements=4608
+newton_iteration=0, voltage_factor=  0.0000E+00, joule_factor=  0.0000E+00, residual=  0.0000E+00,
+newton_iteration=0, voltage_factor=  2.5000E-01, joule_factor=  0.0000E+00, residual=  2.2580E-02,
+forrtl: severe (170): Program Exception - stack overflow
+Image              PC                Routine            Line        Source             
+TPSolverV2.exe     00007FF7DD19DE07  Unknown               Unknown  Unknown
+TPSolverV2.exe     00007FF7D8D00901  SOLVE_SINGLE_LOAD         226  newton_solver_m.f90
+TPSolverV2.exe     00007FF7D8D115F6  SOLVE_LOAD_CONTIN         122  continuation_solver_m.f90
+TPSolverV2.exe     00007FF7D8D1ED94  RUN_F1_CASE               117  f1_case_runner_m.f90
+TPSolverV2.exe     00007FF7D8D9789B  TPSOLVERV2                 89  main.f90
+TPSolverV2.exe     00007FF7D91C12AB  Unknown               Unknown  Unknown
+TPSolverV2.exe     00007FF7DD19E024  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFFA7F8CCB7  Unknown               Unknown  Unknown
+ntdll.dll          00007FFFA8D2AD6C  Unknown               Unknown  Unknown

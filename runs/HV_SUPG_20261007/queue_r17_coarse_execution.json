@@ -1,0 +1,78 @@
+{
+  "scope": "ORCHESTRATION_ONLY_CHILD_RESULTS_ARE_AUTHORITATIVE",
+  "steps": [
+    {
+      "label": "scale2_trace",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_temperature_trace.py",
+        "--exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+        "--mesh",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_inverse_scale2",
+        "--seed-nodes",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r13_XY0_Z2_V060\\nodes.csv",
+        "--seed-voltage",
+        "6",
+        "--step-k",
+        "5.4",
+        "--points",
+        "3",
+        "--supg-scale",
+        "2",
+        "--omp-threads",
+        "2",
+        "--mkl-threads",
+        "2",
+        "--max-seconds",
+        "5400"
+      ],
+      "exit_code": 1,
+      "seconds": 968.9689999999991
+    },
+    {
+      "label": "scale05_V060",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\run_hv_point.py",
+        "--exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\build\\HV_SUPG_20261008_R17\\TPSolverV2.exe",
+        "--mesh",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\cases\\HV_SURFACE_20261008\\XY0_Z2\\H1_XY0_Z2.mesh",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale05_V060",
+        "--voltage",
+        "6",
+        "--seed-nodes",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_inverse_scale05\\accepted_00001_nodes.csv",
+        "--seed-voltage",
+        "6",
+        "--supg-scale",
+        "0.5",
+        "--omp-threads",
+        "2",
+        "--mkl-threads",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 33.26599999999962
+    },
+    {
+      "label": "sensitivity",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\scripts\\audit_hv_stabilization.py",
+        "--runs",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale05_V060",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale1_V060",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\r17_scale2_V060",
+        "--output",
+        "C:\\Users\\Administrator\\Desktop\\codex-workspaces\\Console3\\solver_v2\\runs\\HV_SUPG_20261007\\stabilization_coarse_V060_r17.json"
+      ],
+      "exit_code": 1,
+      "seconds": 0.7810000000008586
+    }
+  ]
+}

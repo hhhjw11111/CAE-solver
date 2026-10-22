@@ -1,0 +1,107 @@
+[
+  {
+    "tag": "r3_A48_R22_Z18",
+    "radius_um": 3,
+    "counts": [
+      48,
+      22,
+      18
+    ],
+    "full_mesh_sha256": "0e24e5515b3b6942de571b14011841878e47cfd61efc64b006975b9a8742fcf0",
+    "half_mesh_sha256": "3905ef1c2d9e333b880a3f347c088bf2d02f4e9c1eca595f0efbae762659f733",
+    "half_nodes": 42213,
+    "half_elements": 9504,
+    "minimum_sampled_jacobian": 1.0388809302272432e-24,
+    "matches_released_reference": true
+  },
+  {
+    "tag": "r3_A40_R20_Z16",
+    "radius_um": 3,
+    "counts": [
+      40,
+      20,
+      16
+    ],
+    "full_mesh_sha256": "cd24eac41e01ca1d0a6e5fee32d4232d442dabff9ea284dabd7b1ad02b857fe3",
+    "half_mesh_sha256": "5b5c0e96d38ee692e6c965bb916f9122975e33fac0e9f5f905f1228244f3c46f",
+    "half_nodes": 28833,
+    "half_elements": 6400,
+    "minimum_sampled_jacobian": 1.5773622650250889e-24,
+    "matches_released_reference": false
+  },
+  {
+    "tag": "r3_A32_R18_Z14",
+    "radius_um": 3,
+    "counts": [
+      32,
+      18,
+      14
+    ],
+    "full_mesh_sha256": "8114c22ccde7c6dc775dd6e19c281de879fc5d21e97beed8f0f96ca4f866639f",
+    "half_mesh_sha256": "7283a1af7a08441aafb93a9717c61853a2de5f5da2c215778b22c9a403925922",
+    "half_nodes": 18517,
+    "half_elements": 4032,
+    "minimum_sampled_jacobian": 2.573916519458159e-24,
+    "matches_released_reference": false
+  },
+  {
+    "tag": "r2_A48_R22_Z18",
+    "radius_um": 2,
+    "counts": [
+      48,
+      22,
+      18
+    ],
+    "full_mesh_sha256": "9854572bc52d7e627079b51c65e30ad2d838e91b425eae48c14a72fd6caae200",
+    "half_mesh_sha256": "2e5abf7a2505508ec640c55aa1c04fbf3a1a19b1633c417b1ecf4f83bbce86b7",
+    "half_nodes": 42213,
+    "half_elements": 9504,
+    "minimum_sampled_jacobian": 6.926884406295848e-25,
+    "matches_released_reference": false
+  },
+  {
+    "tag": "r2_A40_R20_Z16",
+    "radius_um": 2,
+    "counts": [
+      40,
+      20,
+      16
+    ],
+    "full_mesh_sha256": "a84ba6084ee71b0844742c2da0d726fb73b061284ba8969bca120cb34ddbea78",
+    "half_mesh_sha256": "ef6afb3209ea3834bf8e1f24140401797c4d5ffee945681a03e122f2f99505f6",
+    "half_nodes": 28833,
+    "half_elements": 6400,
+    "minimum_sampled_jacobian": 1.0517476198170071e-24,
+    "matches_released_reference": false
+  },
+  {
+    "tag": "r4_A48_R22_Z18",
+    "radius_um": 4,
+    "counts": [
+      48,
+      22,
+      18
+    ],
+    "full_mesh_sha256": "1679937f14f43f3a03023a3537253b1365398c049c3b1a4a79804ec537f0a6b6",
+    "half_mesh_sha256": "43aff0a0b35db98665fb1ef363df4f8c8675c3d90e55a658d7e1bcf9678aac18",
+    "half_nodes": 42213,
+    "half_elements": 9504,
+    "minimum_sampled_jacobian": 1.385073419824598e-24,
+    "matches_released_reference": false
+  },
+  {
+    "tag": "r4_A40_R20_Z16",
+    "radius_um": 4,
+    "counts": [
+      40,
+      20,
+      16
+    ],
+    "full_mesh_sha256": "6ae86fb5b2804088c1f908a3e4647b6d321a42aca9145255eb33e17a1de682b8",
+    "half_mesh_sha256": "2ccf988885fa874b24664feabf2571b4db73d7c4c2a552a28d9536fff401627d",
+    "half_nodes": 28833,
+    "half_elements": 6400,
+    "minimum_sampled_jacobian": 2.102976910232801e-24,
+    "matches_released_reference": false
+  }
+]

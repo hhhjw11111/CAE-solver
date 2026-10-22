@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "native_started": false,
+  "case": "Injected launch failure cannot create accepted result; real half input and resource environment constructed",
+  "input_sha256": "3bd33279be82a19031675e937ae9dd07e9ef6a8d0b6afdbbb86a83b945888086"
+}

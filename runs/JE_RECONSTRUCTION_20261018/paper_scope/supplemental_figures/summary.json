@@ -1,0 +1,27 @@
+{
+  "S1": {
+    "cases": 13,
+    "maximum_field_error": 2.9286452827605095e-13,
+    "maximum_flux_error": 2.3993466648123426e-13,
+    "maximum_heat_balance_defect": 3.1665184170056956e-14,
+    "maximum_quadrature_error": 6.926196394490521e-14
+  },
+  "S2": {
+    "cases": 10,
+    "maximum_field_current_flux_error": 2.869935586979943e-13,
+    "maximum_quadrature_error": 2.5528353485046484e-13
+  },
+  "logarithmic_plot_exact_zero_omissions_by_case_index": {
+    "S1c_field": [
+      10
+    ],
+    "S1c_flux": [
+      10
+    ],
+    "S1d_quadrature": [],
+    "S2d_field_current_flux": [],
+    "S2d_quadrature": []
+  },
+  "excluded_solved_cases": 0,
+  "new_native_runs": 0
+}

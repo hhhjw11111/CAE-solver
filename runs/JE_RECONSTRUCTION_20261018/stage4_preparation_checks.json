@@ -1,0 +1,82 @@
+{
+  "scope": "PREPARATION_ONLY_NO_NATIVE_SOLVE",
+  "historical_mesh_reproduction": [
+    {
+      "counts": [
+        32,
+        14,
+        14
+      ],
+      "reference": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_SENSITIVITY_20261015\\mesh_A32\\H1_XY0_Z2.mesh",
+      "byte_identical": true,
+      "mesh_sha256": "450d97a02e9ce3788361611eb3690fd876abb840a6936868f49e4b74d7b37133",
+      "geometry": {
+        "minimum_jacobian_3x3x3": 3.604024415294573e-24,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          381,
+          381
+        ]
+      }
+    },
+    {
+      "counts": [
+        32,
+        18,
+        14
+      ],
+      "reference": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\mesh_radial_18\\H1.mesh",
+      "byte_identical": true,
+      "mesh_sha256": "8114c22ccde7c6dc775dd6e19c281de879fc5d21e97beed8f0f96ca4f866639f",
+      "geometry": {
+        "minimum_jacobian_3x3x3": 2.573916519458159e-24,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          381,
+          381
+        ]
+      }
+    },
+    {
+      "counts": [
+        32,
+        14,
+        18
+      ],
+      "reference": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_FINE_CROSS_20261016\\GLOBAL_DIRECTIONAL\\mesh_thickness_18\\H1.mesh",
+      "byte_identical": true,
+      "mesh_sha256": "47951d709bd90eabcb279a58098f781f6b1380715b00d71c9fef1de19b6f0207",
+      "geometry": {
+        "minimum_jacobian_3x3x3": 2.803130100784268e-24,
+        "anchor_counts": [
+          1,
+          1,
+          1
+        ],
+        "contact_counts": [
+          485,
+          485
+        ]
+      }
+    }
+  ],
+  "stage3_gate": {
+    "absent_gate_rejected": true,
+    "message": "STAGE3_GATE_MISSING: C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\acceptance.json"
+  },
+  "py_compile": true,
+  "help_commands": true,
+  "windows_process_memory_api_smoke": true,
+  "files": {
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\generate_je_reconstruction_mesh_20261018.py": "8b2999220e4d9bc838aa2d87d58a9a8b67fc11006612a9691a19fb2b49b6baf0",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\scripts\\run_je_reconstruction_mesh_20261018.py": "ca0dc0556a3b50e4cf1367362d52446615f95e2403c78331c606fcc82410d266"
+  }
+}

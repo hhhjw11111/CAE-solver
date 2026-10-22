@@ -1,0 +1,3 @@
+verification_id=G12C_radius_control_guard
+g12c_negative_checks=90
+verification_result=PASS

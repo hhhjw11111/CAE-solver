@@ -1,0 +1,176 @@
+{
+  "snapshot_at": "2026-10-20T22:52:13.514254+08:00",
+  "processes": [
+    {
+      "Id": 36024,
+      "ProcessName": "python",
+      "CPU": 128
+    },
+    {
+      "Id": 34064,
+      "ProcessName": "TPSOLV~1",
+      "CPU": 566.640625
+    }
+  ],
+  "controller_alive": true,
+  "controller_stopped_record": false,
+  "records": [
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V060",
+      "voltage_V": 6,
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "supg_scale": 1.0,
+      "state": "SOLVE_AND_AUDITS_COMPLETE_NOT_OVERALL_ACCEPTANCE",
+      "local_hole_percent": 2.984925706812062,
+      "local_electron_percent": 1.790631320304832,
+      "physical_power_gap_percent": 0.39481116362597113,
+      "local_hole_pass": false,
+      "local_all_fields_pass": false,
+      "theta_max_K": 14.106379396165323,
+      "reconstructed_full_JE_mW": 5.789207778629461,
+      "evidence_sha256": {
+        "completion.json": "1e0b51f4f8c938c05af8017108cbaa4418b1d5e9c27b28eaf7b4fec2041b33d1",
+        "field_comparison.json": "6ad3cdf9d08db1abff8c7576f6cf11df8edc7051481f73978243f8ee911a32c4",
+        "physical_power.json": "b93dece29c6de15785c7776177724cec5bd1825923596181d76238e97cef89fe",
+        "execution.json": "1753f94cf35f1b5f4bf7cd25fd9c06d0bed29f4cb492147ccfbe06d69a95517e"
+      },
+      "first_pair_ring_hole_percent": 10.678985363295961
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A40_R20_Z16_S1_V080",
+      "voltage_V": 8,
+      "counts": [
+        40,
+        20,
+        16
+      ],
+      "supg_scale": 1.0,
+      "state": "SOLVE_AND_AUDITS_COMPLETE_NOT_OVERALL_ACCEPTANCE",
+      "local_hole_percent": 2.213539785583308,
+      "local_electron_percent": 1.8937710404898962,
+      "physical_power_gap_percent": 0.5108156584970993,
+      "local_hole_pass": false,
+      "local_all_fields_pass": false,
+      "theta_max_K": 24.258294681416032,
+      "reconstructed_full_JE_mW": 9.856141252058167,
+      "evidence_sha256": {
+        "completion.json": "1e0b51f4f8c938c05af8017108cbaa4418b1d5e9c27b28eaf7b4fec2041b33d1",
+        "field_comparison.json": "8d46475b5a11be31ad023d6b1ec62b2d045b751282380f270be3c226a5583d74",
+        "physical_power.json": "ea39085d80d7a845d0d57c783aa3eeb4268f2df669796f971e8dac605b38f815",
+        "execution.json": "054ab321c3de8f2895912897eabe07b8f3a4083b4b662c09cc6bc58d4836c1e8"
+      },
+      "first_pair_ring_hole_percent": 4.678331852900671
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V060",
+      "voltage_V": 6,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 1.0,
+      "state": "RUNNING",
+      "local_hole_percent": null,
+      "local_electron_percent": null,
+      "physical_power_gap_percent": null,
+      "pid": 34064,
+      "latest_newton_line": "newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  2.9864E-05,",
+      "latest_resource_sample": {
+        "rss_bytes": 9456881664,
+        "peak_rss_bytes": 9456881664,
+        "private_bytes": 14720831488,
+        "peak_pagefile_bytes": 14720847872,
+        "available_physical_bytes": 11296890880,
+        "elapsed_seconds": 225.96899999998277,
+        "disk_free_bytes": 45885947904,
+        "scratch_bytes": 9506642917
+      }
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S1_V080",
+      "voltage_V": 8,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 1.0,
+      "state": "NOT_STARTED",
+      "local_hole_percent": null,
+      "local_electron_percent": null,
+      "physical_power_gap_percent": null
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V060",
+      "voltage_V": 6,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 0.5,
+      "state": "NOT_STARTED",
+      "local_hole_percent": null,
+      "local_electron_percent": null,
+      "physical_power_gap_percent": null
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S0.5_V080",
+      "voltage_V": 8,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 0.5,
+      "state": "NOT_STARTED",
+      "local_hole_percent": null,
+      "local_electron_percent": null,
+      "physical_power_gap_percent": null
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V060",
+      "voltage_V": 6,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 2.0,
+      "state": "NOT_STARTED",
+      "local_hole_percent": null,
+      "local_electron_percent": null,
+      "physical_power_gap_percent": null
+    },
+    {
+      "run": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage4_paper_half_joint_supg_20261020\\A48_R22_Z18_S2_V080",
+      "voltage_V": 8,
+      "counts": [
+        48,
+        22,
+        18
+      ],
+      "supg_scale": 2.0,
+      "state": "NOT_STARTED",
+      "local_hole_percent": null,
+      "local_electron_percent": null,
+      "physical_power_gap_percent": null
+    }
+  ],
+  "frozen_scripts_and_executable_verified": true,
+  "joint_mesh_status": "PENDING",
+  "supg_and_local_final_status": "PENDING",
+  "production_acceptance": false,
+  "thresholds": {
+    "local_fields_percent": 2,
+    "ring_hole_mesh_percent": 2,
+    "supg_span_percent": 1,
+    "power_gap_threshold": null
+  },
+  "note": "Only completed, hashed evidence has numeric errors. Running or unstarted cases remain null; no extrapolated improvement."
+}

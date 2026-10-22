@@ -1,0 +1,7 @@
+{
+  "status": "LAUNCH_FAILED_NO_PROCESS_STARTED",
+  "reason": "Python command resolved to two executable paths; Start-Process rejected the array",
+  "controller_pid": null,
+  "supersedes_status_field_in": "launch.json",
+  "native_started": false
+}

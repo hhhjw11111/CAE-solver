@@ -1,0 +1,8 @@
+inspect_result=PASS
+case_id=JE_PAPER_R03_NT_V000
+schema_version=2
+model_level=M2_THERMO_TWO_CARRIER
+node_count=81888
+element_count=19008
+minimum_jacobian_determinant= 1.0388809302272332E-024
+integrated_volume= 3.7172568340334683E-016

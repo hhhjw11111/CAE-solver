@@ -1,0 +1,11 @@
+f1_nodes=10144, elements=2240
+newton_iteration=0, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  6.6434E-04,
+newton_iteration=1, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.7790E-04,
+newton_iteration=2, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.6128E-04,
+newton_iteration=3, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.2123E-04,
+newton_iteration=4, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.2122E-04,
+newton_descent_fallback=CAUCHY_MERIT, raw_eta_n=  3.4372E+02, raw_eta_p=  3.1106E+02, component_slope=  1.2552E-06, alpha=  1.2762E-02, log_scale=  1.0000E+00, fallback_slope= -1.6315E-09, raw_max=  3.4372E+02,
+newton_iteration=5, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1430E-04,
+newton_iteration=6, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1372E-04,
+newton_iteration=7, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1366E-04,
+newton_iteration=8, voltage_factor=  1.0000E+00, joule_factor=  1.0000E+00, residual=  1.1342E-04,

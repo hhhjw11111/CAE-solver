@@ -1,0 +1,375 @@
+--- r19/src/app/f1_case_runner_m.f90
++++ r21/src/app/f1_case_runner_m.f90
+@@ -49,10 +49,12 @@
+     type(HoleFieldMetricsType) :: ring
+     character(len=2) :: model
+     real(dp) :: minimum_det,volume,balance(4),bc_error,max_balance,max_residual,max_update
+-    real(dp) :: heat_error,jn_error,jp_error,quad_error,power_scale,current_scale,extra(8)
++    real(dp) :: heat_error,jn_error,jp_error,quad_error,power_scale,current_scale,extra(8),domain_fraction
++    real(dp) :: external_heat_error,external_jn_error,external_jp_error,symmetry_heat_error,symmetry_jn_error,symmetry_jp_error
+     integer :: unit_id,io,stage,point,total_iterations,inverse_node
+     logical :: accepted
+     call clear_status(status)
++    domain_fraction=1.0_dp
+     inverse_node=0
+     if(present(inverse_step).neqv.present(inverse_count)) then
+       call set_status(status,STATUS_INPUT_ERROR,'Inverse diagnostics require both temperature step and point count.');return
+@@ -80,6 +82,11 @@
+     write(unit_id,'(a)') 'material_evidence=NUMERICAL_CANDIDATE_NOT_EXPERIMENTALLY_CALIBRATED'
+     write(unit_id,'(a)') 'source=ZNO_300K_CANDIDATE_V2; plan=F1_20260906'
+     write(unit_id,'(a)') 'heat_source=DRIFT_CONDUCTIVITY_NOT_TOTAL_CURRENT_WORK'
++    if(config%half_y_symmetry) then
++      domain_fraction=0.5_dp
++      write(unit_id,'(a)') 'domain_symmetry=Y_HALF'
++      write(unit_id,'(a)') 'integral_scope=ACTUAL_HALF_DOMAIN_NO_AUTOMATIC_DOUBLING'
++    end if
+     flush(unit_id)
+     call validate_mesh(mesh,minimum_det,volume,status)
+     if (.not. status%is_ok()) then
+@@ -97,12 +104,14 @@
+     config%continuation_options%heat_balance_reference_power=ELEMENTARY_CHARGE*( &
+       materials(1)%reference_n*materials(1)%mobility_n0(1,1)+ &
+       materials(1)%reference_p*materials(1)%mobility_p0(1,1))*config%target_voltage**2*1.0e-6_dp
++    if(config%half_y_symmetry) config%continuation_options%heat_balance_reference_power= &
++      domain_fraction*config%continuation_options%heat_balance_reference_power
+     write(unit_id,'(a,es24.16e3)') 'zero_source_heat_reference_W=', &
+       config%continuation_options%heat_balance_reference_power
+     if(config%transport_supg) then
+       write(output_unit,'(a)') 'f1_setup=BOUNDARIES';flush(output_unit)
+     end if
+-    call define_boundaries(mesh,config%target_voltage,bc,status)
++    call define_boundaries(mesh,config%target_voltage,bc,status,config%half_y_symmetry)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+@@ -201,15 +210,20 @@
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+-    call integrate_independent_fluxes(mesh,materials,state,load,5,flux,status)
++    call integrate_independent_fluxes(mesh,materials,state,load,5,flux,status,half_y=config%half_y_symmetry)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+-    call integrate_independent_fluxes(mesh,materials,state,load,4,flux4,status)
++    call integrate_independent_fluxes(mesh,materials,state,load,4,flux4,status,half_y=config%half_y_symmetry)
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+-    call evaluate_hole_field_metrics(mesh,materials,state,load,config%hole_radius,0.5e-6_dp,ring,status)
++    if(config%half_y_symmetry) then
++      call evaluate_hole_field_metrics(mesh,materials,state,load,config%hole_radius,0.5e-6_dp,ring,status, &
++        hole_center=[0.0_dp,0.0_dp])
++    else
++      call evaluate_hole_field_metrics(mesh,materials,state,load,config%hole_radius,0.5e-6_dp,ring,status)
++    end if
+     if (.not. status%is_ok()) then
+       close(unit_id);return
+     end if
+@@ -218,11 +232,15 @@
+       close(unit_id);return
+     end if
+     power_scale=max(abs(flux%joule),abs(sum(flux%heat_out)),1.7736095e-3_dp*1.0e-12_dp)
++    if(config%half_y_symmetry) power_scale=max(abs(flux%joule),abs(sum(flux%heat_out)), &
++      domain_fraction*1.7736095e-3_dp*1.0e-12_dp)
+     current_scale=max(sum(abs(flux%electron_out(1:2))),tiny(1.0_dp))
+     heat_error=abs(sum(flux%heat_out)-flux%joule)/power_scale
+     jn_error=abs(sum(flux%electron_out))/current_scale
+     jp_error=abs(sum(flux%hole_out))/max(sum(abs(flux%hole_out(1:2))),tiny(1.0_dp))
+     quad_error=abs(flux%joule-flux4%joule)/max(abs(flux%joule),1.7736095e-15_dp)
++    if(config%half_y_symmetry) quad_error=abs(flux%joule-flux4%joule)/ &
++      max(abs(flux%joule),domain_fraction*1.7736095e-15_dp)
+     call metric('voltage_V',abs(config%target_voltage))
+     call metric('hole_radius_m',config%hole_radius)
+     call metric('ring_width_m',0.5e-6_dp)
+@@ -242,6 +260,31 @@
+     call metric('heat_balance_relative',heat_error)
+     call metric('electron_balance_relative',jn_error)
+     call metric('hole_balance_diagnostic',jp_error)
++    if(config%half_y_symmetry) then
++      ! Retain the actual-half balance above, and independently require the
++      ! original physical exterior and artificial symmetry cut to pass. Their
++      ! errors must not cancel to grant a full-domain conservation claim.
++      power_scale=max(abs(flux%joule),abs(sum(flux%heat_out)-flux%symmetry_heat_out), &
++        domain_fraction*1.7736095e-15_dp)
++      external_heat_error=abs(sum(flux%heat_out)-flux%symmetry_heat_out-flux%joule)/power_scale
++      external_jn_error=abs(sum(flux%electron_out)-flux%symmetry_electron_out)/current_scale
++      external_jp_error=abs(sum(flux%hole_out)-flux%symmetry_hole_out)/ &
++        max(sum(abs(flux%hole_out(1:2))),tiny(1.0_dp))
++      symmetry_heat_error=abs(flux%symmetry_heat_out)/power_scale
++      symmetry_jn_error=abs(flux%symmetry_electron_out)/current_scale
++      symmetry_jp_error=abs(flux%symmetry_hole_out)/max(sum(abs(flux%hole_out(1:2))),tiny(1.0_dp))
++      call metric('physical_exterior_heat_out_W',sum(flux%heat_out)-flux%symmetry_heat_out)
++      call metric('physical_exterior_terminal_power_W',flux%terminal_power-flux%symmetry_terminal_power)
++      call metric('physical_exterior_heat_balance_relative',external_heat_error)
++      call metric('physical_exterior_electron_balance_relative',external_jn_error)
++      call metric('physical_exterior_hole_balance_diagnostic',external_jp_error)
++      call metric('symmetry_heat_out_W',flux%symmetry_heat_out)
++      call metric('symmetry_electron_out_A',flux%symmetry_electron_out)
++      call metric('symmetry_hole_out_A',flux%symmetry_hole_out)
++      call metric('symmetry_heat_flux_relative',symmetry_heat_error)
++      call metric('symmetry_electron_flux_relative',symmetry_jn_error)
++      call metric('symmetry_hole_flux_diagnostic',symmetry_jp_error)
++    end if
+     call metric('joule_quadrature_4_5_relative',quad_error)
+     call metric('electron_right_A',flux%electron_out(2))
+     call metric('hole_right_A',flux%hole_out(2))
+@@ -262,6 +305,9 @@
+       heat_error<0.01_dp .and. jn_error<0.01_dp .and. quad_error<0.001_dp
+     if(config%transport_supg) accepted=accepted .and. jp_error<0.01_dp .and. &
+       load%voltage_factor==1.0_dp .and. load%joule_factor==1.0_dp
++    if(config%half_y_symmetry) accepted=accepted .and. &
++      external_heat_error<0.01_dp.and.external_jn_error<0.01_dp.and.external_jp_error<0.01_dp.and. &
++      symmetry_heat_error<0.01_dp.and.symmetry_jn_error<0.01_dp.and.symmetry_jp_error<0.01_dp
+     if (accepted) then
+       write(unit_id,'(a)') 'case_acceptance=PASS_NOT_MESH_ACCEPTANCE'
+       write(output_unit,'(a)') 'case_acceptance=PASS_NOT_MESH_ACCEPTANCE'
+@@ -482,17 +528,22 @@
+     end if
+   end subroutine read_restart_nodes
+ 
+-  subroutine define_boundaries(mesh,voltage,bc,status)
++  subroutine define_boundaries(mesh,voltage,bc,status,half_y)
+     type(MeshType), intent(in) :: mesh
+     real(dp), intent(in) :: voltage
+     type(DirichletBCType), allocatable, intent(out) :: bc(:)
+     type(SolverStatusType), intent(out) :: status
++    logical, intent(in) :: half_y
+     integer, allocatable :: left(:),right(:)
+     integer :: a(1),b(1),c(1),anchors(3),nleft,nright,il,ir
+     real(dp) :: xyz(3)
+     real(dp), parameter :: tol=1.0e-15_dp
+     integer :: i
+     call clear_status(status)
++    if(half_y) then
++      call define_half_y_boundaries(mesh,voltage,bc,status)
++      return
++    end if
+     ! Scalar scans avoid several 3*node_count automatic SPREAD temporaries.
+     ! The geometric predicates and ascending contact-node order are unchanged.
+     nleft=0;nright=0;anchors=0;a=0;b=0;c=0
+@@ -532,6 +583,66 @@
+     end do
+     bc(5)%value_end=voltage
+   end subroutine define_boundaries
++
++  subroutine define_half_y_boundaries(mesh,voltage,bc,status)
++    ! Reflection plane y=0: uy=0, natural tangential tractions and scalar fluxes.
++    ! Only the remaining x/z translations and y rotation are removed by A/B.
++    ! Retaining the full-domain anchors would overconstrain the half problem.
++    type(MeshType), intent(in) :: mesh
++    real(dp), intent(in) :: voltage
++    type(DirichletBCType), allocatable, intent(out) :: bc(:)
++    type(SolverStatusType), intent(out) :: status
++    integer, allocatable :: left(:),right(:),symmetry(:)
++    integer :: i,a,b,na,nb,nleft,nright,nsym,il,ir,isym
++    real(dp) :: xyz(3),lo(3),hi(3)
++    real(dp), parameter :: tol=1.0e-15_dp
++    call clear_status(status)
++    lo=minval(mesh%coordinates,dim=2);hi=maxval(mesh%coordinates,dim=2)
++    if(maxval(abs(lo-[-10e-6_dp,0.0_dp,-0.5e-6_dp]))>tol.or. &
++       maxval(abs(hi-[10e-6_dp,10e-6_dp,0.5e-6_dp]))>tol) then
++      call set_status(status,STATUS_INPUT_ERROR,'Y-half mesh must occupy x=[-10,10], y=[0,10], z=[-0.5,0.5] um.')
++      return
++    end if
++    nleft=0;nright=0;nsym=0;na=0;nb=0;a=0;b=0
++    do i=1,mesh%number_of_nodes()
++      xyz=mesh%coordinates(:,i)
++      if(abs(xyz(1)+10e-6_dp)<tol) nleft=nleft+1
++      if(abs(xyz(1)-10e-6_dp)<tol) nright=nright+1
++      if(abs(xyz(2))<tol) nsym=nsym+1
++      if(maxval(abs(xyz-[-10e-6_dp,0.0_dp,-0.5e-6_dp]))<tol) then
++        a=i;na=na+1
++      end if
++      if(maxval(abs(xyz-[10e-6_dp,0.0_dp,-0.5e-6_dp]))<tol) then
++        b=i;nb=nb+1
++      end if
++    end do
++    if(na/=1.or.nb/=1.or.nleft<8.or.nright<8.or.nsym<8) then
++      call set_status(status,STATUS_INPUT_ERROR,'Y-half mesh lacks contacts, symmetry nodes or in-plane rigid anchors.')
++      return
++    end if
++    allocate(left(nleft),right(nright),symmetry(nsym));il=0;ir=0;isym=0
++    do i=1,mesh%number_of_nodes()
++      xyz=mesh%coordinates(:,i)
++      if(abs(xyz(1)+10e-6_dp)<tol) then
++        il=il+1;left(il)=i
++      end if
++      if(abs(xyz(1)-10e-6_dp)<tol) then
++        ir=ir+1;right(ir)=i
++      end if
++      if(abs(xyz(2))<tol) then
++        isym=isym+1;symmetry(isym)=i
++      end if
++    end do
++    allocate(bc(11))
++    bc(1)%field_id=F_U1;bc(1)%node_ids=[a]
++    bc(2)%field_id=F_U2;bc(2)%node_ids=symmetry
++    bc(3)%field_id=F_U3;bc(3)%node_ids=[a,b]
++    do i=4,7
++      bc(2*i-4)%field_id=i;bc(2*i-4)%node_ids=left
++      bc(2*i-3)%field_id=i;bc(2*i-3)%node_ids=right
++    end do
++    bc(5)%value_end=voltage
++  end subroutine define_half_y_boundaries
+ 
+   subroutine stage_boundaries(mesh,bc,state,stage,stage_bc)
+     type(MeshType), intent(in) :: mesh
+--- r19/src/core/build_info_m.f90
++++ r21/src/core/build_info_m.f90
+@@ -3,7 +3,7 @@
+   private
+ 
+   character(len=*), parameter, public :: SOLVER_NAME = 'TPSolverV2'
+-  character(len=*), parameter, public :: SOLVER_VERSION = '0.15.3-sparse-block-experimental'
++  character(len=*), parameter, public :: SOLVER_VERSION = '0.15.5-y-symmetry-audited'
+   character(len=*), parameter, public :: THEORY_VERSION = '2.1'
+   character(len=*), parameter, public :: ARCHITECTURE_ID = 'TPS-V2-ARCH-001'
+   character(len=*), parameter, public :: VERIFIED_SCOPE = 'See run-specific evidence; legacy graded-hole geometry INVALID'
+--- r19/src/io/input_schema_m.f90
++++ r21/src/io/input_schema_m.f90
+@@ -36,6 +36,7 @@
+     type(NonlinearOptionsType) :: nonlinear_options
+     type(ContinuationOptionsType) :: continuation_options
+     logical :: transport_supg = .false.
++    logical :: half_y_symmetry = .false.
+     logical :: supg_directional_tau = .false.
+     real(dp) :: supg_scale = 1.0_dp
+   end type CaseConfigType
+@@ -49,6 +50,14 @@
+     type(SolverStatusType), intent(out) :: status
+ 
+     call clear_status(status)
++    if(config%half_y_symmetry) then
++      if(trim(config%problem_type)/=PROBLEM_CENTER_HOLE_PLATE.or. &
++         (trim(config%material_profile)/='ZNO_F1_NT'.and. &
++          trim(config%material_profile)/='ZNO_F1_N0'.and.trim(config%material_profile)/='ZNO_F1_LQ')) then
++        call set_status(status,STATUS_INPUT_ERROR,'Y-half symmetry requires the explicitly symmetric F1 ZnO hole profile.')
++        return
++      end if
++    end if
+     if (.not.ieee_is_finite(config%supg_scale) .or. config%supg_scale <= 0.0_dp) then
+       call set_status(status,STATUS_INPUT_ERROR,'supg_scale must be finite and positive.');return
+     end if
+--- r19/src/io/native_input_m.f90
++++ r21/src/io/native_input_m.f90
+@@ -21,6 +21,7 @@
+     integer :: continuation_fast_iterations,continuation_slow_iterations
+     logical :: continuation_full_joule_during_voltage
+     logical :: transport_supg
++    logical :: half_y_symmetry
+     logical :: supg_directional_tau
+     logical :: global_log_step_limit
+     logical :: continuation_secant_predictor
+@@ -40,7 +41,7 @@
+     namelist /case_control/ schema_version, case_id, model_level, mesh_file
+     namelist /problem_control/ problem_type,material_profile,target_voltage, &
+       target_voltage_factor,target_joule_factor,hole_radius,restart_nodes_file, &
+-      restart_voltage_factor,restart_joule_factor
++      restart_voltage_factor,restart_joule_factor,half_y_symmetry
+     namelist /solver_control/ field_scales,max_newton,newton_stagnation_window,residual_tolerance, &
+       continuation_voltage_checkpoint_spacing, &
+       update_tolerance,armijo_c1,backtrack_factor,minimum_step, &
+@@ -54,6 +55,7 @@
+ 
+     call clear_status(status)
+     transport_supg=.false.;supg_scale=1.0_dp
++    half_y_symmetry=.false.
+     supg_directional_tau=.false.
+     global_log_step_limit=.false.
+     continuation_secant_predictor=.false.
+@@ -144,6 +146,7 @@
+     config%restart_joule_factor=restart_joule_factor
+     config%field_scales=field_scales
+     config%transport_supg=transport_supg;config%supg_scale=supg_scale
++    config%half_y_symmetry=half_y_symmetry
+     config%supg_directional_tau=supg_directional_tau
+     config%nonlinear_options%max_newton=max_newton
+     config%nonlinear_options%stagnation_window=newton_stagnation_window
+--- r19/src/post/field_metrics_m.f90
++++ r21/src/post/field_metrics_m.f90
+@@ -34,7 +34,7 @@
+ contains
+ 
+   subroutine evaluate_hole_field_metrics(mesh,materials,state,load,hole_radius, &
+-                                         annulus_width,metrics,status,annulus_subdivisions)
++                                         annulus_width,metrics,status,annulus_subdivisions,hole_center)
+     type(MeshType), intent(in) :: mesh
+     type(MaterialType), intent(in) :: materials(:)
+     type(StateType), intent(in) :: state
+@@ -43,6 +43,7 @@
+     type(HoleFieldMetricsType), intent(out) :: metrics
+     type(SolverStatusType), intent(out) :: status
+     integer, intent(in), optional :: annulus_subdivisions
++    real(dp), intent(in), optional :: hole_center(2)
+     real(dp) :: points(3,NQ),weights(NQ),coordinates_e(3,HEX20_NNODE)
+     real(dp) :: state_e(HEX20_NDOF),shape(HEX20_NNODE)
+     real(dp) :: derivative_global(3,HEX20_NNODE),determinant,integration_weight
+@@ -77,6 +78,7 @@
+     end if
+     center=0.5_dp*(minval(mesh%coordinates(1:2,:),dim=2)+ &
+       maxval(mesh%coordinates(1:2,:),dim=2))
++    if(present(hole_center)) center=hole_center
+     allocate(annulus_joule(NQ*mesh%number_of_elements()*subdivision_count**2), &
+       annulus_weights(NQ*mesh%number_of_elements()*subdivision_count**2))
+     annulus_joule=0.0_dp; annulus_weights=0.0_dp; sample_count=0
+--- r19/src/post/independent_flux_audit_m.f90
++++ r21/src/post/independent_flux_audit_m.f90
+@@ -22,13 +22,16 @@
+     real(dp) :: charge=0.0_dp,absolute_charge=0.0_dp,recombination_charge=0.0_dp
+     real(dp) :: joule=0.0_dp,terminal_power=0.0_dp,total_current_work=0.0_dp
+     real(dp) :: diffusion_work=0.0_dp,absolute_diffusion_work=0.0_dp
++    ! Measured one-sided FE flux on the artificial symmetry cut, not forced zero.
++    real(dp) :: symmetry_electron_out=0.0_dp,symmetry_hole_out=0.0_dp,symmetry_heat_out=0.0_dp
++    real(dp) :: symmetry_terminal_power=0.0_dp
+   end type IndependentFluxReportType
+ 
+   public :: integrate_independent_fluxes, independent_gauss_rule
+ 
+ contains
+ 
+-  subroutine integrate_independent_fluxes(mesh,materials,state,load,order,report,status)
++  subroutine integrate_independent_fluxes(mesh,materials,state,load,order,report,status,half_y)
+     type(MeshType), intent(in) :: mesh
+     type(MaterialType), intent(in) :: materials(:)
+     type(StateType), intent(in) :: state
+@@ -36,6 +39,7 @@
+     integer, intent(in) :: order
+     type(IndependentFluxReportType), intent(out) :: report
+     type(SolverStatusType), intent(out) :: status
++    logical, optional, intent(in) :: half_y
+     type(BoundaryFaceType), allocatable :: faces(:)
+     type(MaterialPointResponseType) :: response
+     type(MaterialPointStateType) :: point_state
+@@ -44,6 +48,7 @@
+     real(dp) :: dn(3,HEX20_NNODE),jacobian(3,3),rst(3),area_vector(3)
+     real(dp) :: det,weight,phi,current_out,displacement_out,diffusion(3)
+     integer :: element,i,j,k,face,axis,axis_a,axis_b,set_id,mat
++    logical :: symmetry_face
+ 
+     call clear_status(status)
+     report=IndependentFluxReportType()
+@@ -109,6 +114,10 @@
+       axis_a=mod(axis,3)+1
+       axis_b=mod(axis+1,3)+1
+       set_id=faces(face)%boundary_set
++      symmetry_face=.false.
++      if(present(half_y)) then
++        if(half_y) symmetry_face=all(abs(mesh%coordinates(2,faces(face)%node_ids))<1.0e-15_dp)
++      end if
+       rst=0.0_dp
+       rst(axis)=real(2*mod(faces(face)%local_face+1,2)-1,dp)
+       do j=1,order
+@@ -144,6 +153,12 @@
+           report%absolute_displacement_out=report%absolute_displacement_out+abs(displacement_out)
+           current_out=dot_product(response%current_n+response%current_p,area_vector)
+           report%terminal_power=report%terminal_power-phi*current_out
++          if(symmetry_face) then
++            report%symmetry_electron_out=report%symmetry_electron_out+dot_product(response%current_n,area_vector)
++            report%symmetry_hole_out=report%symmetry_hole_out+dot_product(response%current_p,area_vector)
++            report%symmetry_heat_out=report%symmetry_heat_out+dot_product(response%heat_flux,area_vector)
++            report%symmetry_terminal_power=report%symmetry_terminal_power-phi*current_out
++          end if
+         end do
+       end do
+     end do

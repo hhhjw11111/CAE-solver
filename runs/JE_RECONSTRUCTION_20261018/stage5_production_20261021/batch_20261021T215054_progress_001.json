@@ -1,0 +1,8 @@
+{
+  "events": [
+    {
+      "name": "F_r3_A32_R18_Z14_LQ_V080",
+      "state": "RUNNER_ERROR: RuntimeError('ANOTHER_NATIVE_SOLVER_ACTIVE: {\"Id\":25288,\"ProcessName\":\"TPSOLV~1\"}\\r\\n')"
+    }
+  ]
+}

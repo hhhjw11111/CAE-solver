@@ -1,0 +1,18 @@
+log_probe_bar_max_element_Pe=  1.7603E-05,overshoot=  0.0000E+00,maximum_backward_step=  0.0000E+00,
+elements=16,weighted_density_and_current_errors=  1.2556E-05   1.4679E-03
+log_probe_bar_max_element_Pe=  1.7603E-05,overshoot=  0.0000E+00,maximum_backward_step=  0.0000E+00,
+elements=16,low_pe_original_galerkin_difference= 7.6602729126573621E-007
+log_probe_bar_max_element_Pe=  9.0851E-06,overshoot=  0.0000E+00,maximum_backward_step=  0.0000E+00,
+elements=32,weighted_density_and_current_errors=  1.6107E-06   3.6698E-04
+log_probe_bar_max_element_Pe=  9.0851E-06,overshoot=  0.0000E+00,maximum_backward_step=  0.0000E+00,
+elements=32,low_pe_original_galerkin_difference= 5.4552323436318773E-008
+log_probe_bar_max_element_Pe=  4.6146E-06,overshoot=  0.0000E+00,maximum_backward_step=  0.0000E+00,
+elements=64,weighted_density_and_current_errors=  2.0375E-07   9.1673E-05
+log_probe_bar_max_element_Pe=  4.6146E-06,overshoot=  0.0000E+00,maximum_backward_step=  0.0000E+00,
+elements=64,low_pe_original_galerkin_difference= 3.3453234626890094E-009
+log_probe_bar_max_element_Pe=  2.3255E+01,overshoot=  2.2604E-13,maximum_backward_step=  4.1955E-12,
+production_Pe1000_carrier=1,errors= 7.5958331255177036E-005  2.5183306517720895E-003
+log_probe_bar_max_element_Pe=  2.3255E+01,overshoot=  2.0561E-13,maximum_backward_step=  4.2453E-12,
+production_Pe1000_carrier=2,errors= 4.0479195906661936E-005  1.6628813821955646E-003
+scope=LOW_PE_REFINEMENT_CHECK_16_ELEMENT_FAILURE_RETAINED
+verification_result=PASS

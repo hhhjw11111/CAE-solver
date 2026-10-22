@@ -1,0 +1,21 @@
+f1_setup=BOUNDARIES
+f1_setup=SPARSE_PATTERN
+f1_nodes=13920, elements=3136
+newton_iteration=0, voltage_factor=  8.0577E-01, joule_factor=  1.0000E+00, residual=  8.9392E-16,
+arc_accepted=1,voltage_factor= 8.0576556480271533E-001
+arc_iteration=0,lambda=  8.085927E-01,residual=  3.322380E-02,update=  1.797693+308,constraint=  4.683753E-17,
+arc_iteration=1,lambda=  8.088204E-01,residual=  1.116834E-02,update=  1.755723E+00,constraint= -4.403684E-03,
+arc_iteration=2,lambda=  8.089234E-01,residual=  1.060886E-03,update=  4.771246E-01,constraint= -3.113967E-03,
+arc_cutback=  2.500000E-03,reason=Bordered corrector failed; caller must roll back.
+arc_iteration=0,lambda=  8.071791E-01,residual=  1.661191E-02,update=  1.797693+308,constraint=  2.385245E-17,
+arc_iteration=1,lambda=  8.072620E-01,residual=  8.081323E-04,update=  6.870680E-01,constraint= -1.726574E-03,
+arc_iteration=2,lambda=  8.072987E-01,residual=  4.370402E-04,update=  4.517884E-02,constraint= -1.589107E-03,
+arc_cutback=  1.250000E-03,reason=Bordered corrector failed; caller must roll back.
+arc_iteration=0,lambda=  8.064723E-01,residual=  8.305964E-03,update=  1.797693+308,constraint=  4.315125E-17,
+arc_iteration=1,lambda=  8.065126E-01,residual=  2.842093E-04,update=  3.383155E-01,constraint= -8.504336E-04,
+arc_iteration=2,lambda=  8.065312E-01,residual=  2.873275E-04,update=  2.043468E-02,constraint= -7.871341E-04,
+arc_cutback=  6.250000E-04,reason=Bordered corrector failed; caller must roll back.
+arc_iteration=0,lambda=  8.061190E-01,residual=  4.152981E-03,update=  1.797693+308,constraint= -9.649399E-18,
+arc_iteration=1,lambda=  8.061387E-01,residual=  1.014026E-04,update=  1.671998E-01,constraint= -4.203646E-04,
+arc_iteration=2,lambda=  8.061480E-01,residual=  1.710816E-04,update=  9.432272E-03,constraint= -3.907571E-04,
+arc_cutback=  3.125000E-04,reason=Bordered corrector failed; caller must roll back.

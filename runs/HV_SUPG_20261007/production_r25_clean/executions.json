@@ -1,0 +1,12 @@
+[
+  {
+    "label": "baseline",
+    "exit_code": 0,
+    "seconds": 316.34400000000096
+  },
+  {
+    "label": "candidate",
+    "exit_code": 0,
+    "seconds": 293.15599999999904
+  }
+]

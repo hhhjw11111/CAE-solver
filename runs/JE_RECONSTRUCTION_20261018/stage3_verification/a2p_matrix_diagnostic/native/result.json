@@ -1,0 +1,17 @@
+{
+  "check": "A2PMAT",
+  "label": "export",
+  "command": [
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\build\\JE_VERIFY_20261018_MATRIX\\TPSolverV2.exe",
+    "verify",
+    "A2PMAT",
+    "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_fields"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "seconds": 3.812000000034459,
+  "log": "C:\\Users\\Administrator\\Desktop\\gemini修改\\Console3\\solver_v2\\runs\\JE_RECONSTRUCTION_20261018\\stage3_verification\\a2p_matrix_diagnostic\\native\\A2PMAT_export.txt",
+  "sha256": "dde073728891c0c77d2e94f57cfa1d0ebf07e834113ea780d1c709e92d260f25",
+  "exports_complete": true,
+  "passed": true
+}
