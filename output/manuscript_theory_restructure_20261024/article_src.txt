@@ -1,0 +1,358 @@
+# 标记说明（构建脚本 build_theory_docx.py 读取）：
+# H1/H2/H3 标题；P 首行缩进正文；N 顶格正文（式中、其中）；EQ 标签 ... /EQ 为一个编号公式组，每行一个公式对象；
+# FIG 文件|中文图题|英文图题；TABLE 中文表题|英文表题 ... /TABLE；REF 键|著录；$...$ 行内公式；
+# [[键]] 上标文献引用（按首次引用顺序自动编号）；(@标签) 引用公式编号。以 # 开头的行为注释。
+
+H1 1　热—压电半导体多场耦合的三维有限元方法
+
+P 本节建立描述热—压电半导体中弹性变形、电场、双载流子输运与热传导相互作用的三维稳态模型，依次给出控制方程与边界条件、非线性来源与弱形式、有限元离散、载流子输运的稳定化以及非线性方程组的求解方法。理论框架以经典热压电本构、半导体漂移—扩散理论和傅里叶导热定律为基础[[yang,kong,selberherr]]，空间离散采用二十节点等参六面体单元[[zhao]]，各物理场通过七场联合 Newton 迭代统一求解。
+
+H2 1.1　基本假设与控制方程
+
+P 本文模型基于以下假设：（1）小变形和线性热压电本构，除载流子输运系数外，各材料常数取参考温度 $T_0$ 下的值；（2）载流子服从非简并统计，且与晶格具有同一局部温度；（3）电离杂质浓度 $N_{\mathrm D}^{+}$、$N_{\mathrm A}^{-}$ 为给定常数；（4）仅考虑稳态响应，忽略惯性项及载流子浓度随时间的变化。在上述条件下，动量平衡方程、Gauss 定律、电子与空穴连续性方程以及热传导方程为
+
+EQ governing
+\sigma_{ij,j}+f_i=0
+D_{i,i}=q\left(p-n+N_{\mathrm D}^{+}-N_{\mathrm A}^{-}\right)
+J^{n}_{i,i}=qR,\qquad J^{p}_{i,i}=-qR
+h_{i,i}=Q_{\mathrm{ext}}+Q_{\mathrm J}
+/EQ
+
+N 式中，$\sigma_{ij}$ 为 Cauchy 应力，$f_i$ 为体力；$D_i$ 为电位移，$q>0$ 为元电荷，$n$ 和 $p$ 分别为电子和空穴浓度；$J^{n}_i$ 和 $J^{p}_i$ 分别为电子和空穴电流密度，$R$ 为载流子净产生—复合率；$h_i$ 为热流密度，$Q_{\mathrm{ext}}$ 和 $Q_{\mathrm J}$ 分别为外部体热源和焦耳热源。本文取 $R=0$，此时两种载流子的连续性方程均化为电流无散条件。
+
+P 考虑弹性变形、压电效应、热膨胀、热释电效应以及载流子的漂移与扩散，本构关系为
+
+EQ constitutive
+\sigma_{ij}=C_{ijkl}\varepsilon_{kl}-e_{kij}E_k-b_{ij}\theta
+D_i=e_{ikl}\varepsilon_{kl}+\kappa_{ij}E_j+\pi_i\theta
+J^{n}_i=qn\mu^{n}_{ij}(T)E_j+qD^{n}_{ij}(T)n_{,j}
+J^{p}_i=qp\mu^{p}_{ij}(T)E_j-qD^{p}_{ij}(T)p_{,j}
+h_i=-k_{ij}T_{,j}
+/EQ
+
+N 其中，$\varepsilon_{ij}$ 为小应变，$E_i$ 为电场强度，$T$ 为绝对温度，$\theta=T-T_0$ 为相对均匀参考温度 $T_0$ 的温升；$C_{ijkl}$、$e_{kij}$、$\kappa_{ij}$、$b_{ij}$、$\pi_i$ 和 $k_{ij}$ 分别为弹性刚度、压电应力常数、介电常数、热应力系数、热释电系数和热导率；热应力系数满足 $b_{ij}=C_{ijkl}\alpha_{kl}$，$\alpha_{kl}$ 为热膨胀系数；介电常数和热释电系数均按定应变条件定义。为避免与空穴浓度 $p$ 混淆，热释电系数记为 $\pi_i$。$\mu^{c}_{ij}$ 和 $D^{c}_{ij}$ 分别为载流子的迁移率和扩散系数，上标 $c\in\{n,p\}$ 分别对应电子和空穴。
+
+P 应变、电场和温度梯度与基本场量 $u_i$、$\varphi$ 和 $\theta$ 的关系为
+
+EQ kinematics
+\varepsilon_{ij}=\frac{1}{2}\left(u_{i,j}+u_{j,i}\right),\qquad E_i=-\varphi_{,i},\qquad T_{,i}=\theta_{,i}
+/EQ
+
+P 迁移率的温度依赖采用幂律描述，扩散系数由非简并条件下的 Einstein 关系确定[[selberherr]]：
+
+EQ mobility
+\mu^{c}_{ij}(T)=\mu^{c}_{ij}(T_0)\left(\frac{T}{T_0}\right)^{-\beta_c},\qquad D^{c}_{ij}(T)=\frac{k_{\mathrm B}T}{q}\mu^{c}_{ij}(T),\qquad c\in\{n,p\}
+/EQ
+
+N 式中，$k_{\mathrm B}$ 为 Boltzmann 常数，$\beta_n$ 和 $\beta_p$ 分别为电子和空穴迁移率的温度指数，$\mu^{c}_{ij}(T_0)$ 为参考温度下的迁移率。
+
+P 焦耳热源取总电流对电场所做的功：
+
+EQ joule
+Q_{\mathrm J}=E_i\left(J^{n}_i+J^{p}_i\right)=Q_{\mathrm{drift}}+Q_{\mathrm{diff}}
+Q_{\mathrm{drift}}=q\left(n\mu^{n}_{ij}+p\mu^{p}_{ij}\right)E_iE_j,\qquad Q_{\mathrm{diff}}=qE_i\left(D^{n}_{ij}n_{,j}-D^{p}_{ij}p_{,j}\right)
+/EQ
+
+N 其中，$Q_{\mathrm{drift}}$ 为漂移电导热，$Q_{\mathrm{diff}}$ 为扩散电流所做的功。在扩散电流与电场反向的区域 $Q_{\mathrm{diff}}$ 为负，$Q_{\mathrm J}$ 可局部为负；计算中保留其符号，不作截断。若略去 $Q_{\mathrm{diff}}$，式(@joule)即退化为常用的漂移电导热源。式(@joule)是 $R=0$ 条件下的简化电流做功热源，未计入复合热以及 Peltier、Thomson 等热电效应，并不构成完整的载流子—晶格能量闭合。
+
+P 在稳态且 $R=0$ 的条件下，由式(@governing)和式(@kinematics)并应用散度定理，可得
+
+EQ power
+\int_{\Omega}Q_{\mathrm J}\,\mathrm d\Omega=-\int_{\partial\Omega}\varphi\left(J^{n}_i+J^{p}_i\right)\nu_i\,\mathrm d\Gamma
+/EQ
+
+N 式中，$\Omega$ 为计算域，$\nu_i$ 为边界外法向单位矢量。式(@power)表明焦耳热总功率等于经边界输入的电功率；结合热传导方程，体热源总功率还应等于边界净流出的热流。这两项整体关系不依赖于有限元离散，可用于数值解的独立功率与热流核验。
+
+P 由式(@governing)~(@joule)可见，电势和载流子分布通过焦耳热影响温度场，温度又通过输运系数改变电流和热源，并通过热应力和热释电效应影响位移和电势，各物理场之间形成双向耦合。
+
+H2 1.2　边界条件
+
+P 材料与外界的相互作用由边界上的力学、电学、载流子及热学条件给定。各物理场的本质边界条件与自然边界条件为
+
+EQ bc
+u_i=\bar{u}_i\ \ \text{于}\ \Gamma_{u_i},\qquad \sigma_{ij}\nu_j=\bar{t}_i\ \ \text{于}\ \Gamma_{t_i}
+\varphi=\bar{\varphi}\ \ \text{于}\ \Gamma_{\varphi},\qquad D_i\nu_i=\bar{d}\ \ \text{于}\ \Gamma_{d}
+n=\bar{n}\ \ \text{于}\ \Gamma_{n},\qquad J^{n}_i\nu_i=\bar{j}_n\ \ \text{于}\ \Gamma_{j_n}
+p=\bar{p}\ \ \text{于}\ \Gamma_{p},\qquad J^{p}_i\nu_i=\bar{j}_p\ \ \text{于}\ \Gamma_{j_p}
+\theta=\bar{\theta}\ \ \text{于}\ \Gamma_{\theta},\qquad h_i\nu_i=\bar{h}\ \ \text{于}\ \Gamma_{h}
+/EQ
+
+N 式中，上横线表示给定值：$\bar{u}_i$ 和 $\bar{t}_i$ 为给定位移和面力，按位移分量分别划分边界；$\bar{\varphi}$ 和 $\bar{d}$ 为给定电势和法向电位移；$\bar{n}$、$\bar{p}$ 为给定载流子浓度，$\bar{j}_n$、$\bar{j}_p$ 为按外法向定义的给定电子、空穴法向电流密度；$\bar{\theta}=\bar{T}-T_0$ 为给定温升，$\bar{h}$ 为给定外向热流密度，正值表示热量流出计算域。对每一组互补边界 $(\Gamma_A,\Gamma_B)$，即 $(\Gamma_{u_i},\Gamma_{t_i})$、$(\Gamma_{\varphi},\Gamma_d)$、$(\Gamma_n,\Gamma_{j_n})$、$(\Gamma_p,\Gamma_{j_p})$ 和 $(\Gamma_{\theta},\Gamma_h)$，均有
+
+EQ partition
+\Gamma_A\cup\Gamma_B=\partial\Omega,\qquad \Gamma_A\cap\Gamma_B=\varnothing
+/EQ
+
+N 在当前程序实现及本文算例中，$f_i$、$Q_{\mathrm{ext}}$ 和各给定法向通量均为零；为保持一般性，以下推导保留这些项。
+
+H2 1.3　非线性来源与弱形式
+
+P 模型的非线性主要来自载流子浓度与电场的乘积耦合、输运系数的温度依赖以及焦耳热源，各物理场之间的耦合路径如图1所示。
+
+FIG fig01_nonlinear_coupling.png|图1　多场耦合模型中的非线性来源|Fig. 1　Sources of nonlinearity in the coupled multi-field model
+
+P 以均匀零场平衡态为参考，记 $n=n_0+\Delta n$、$p=p_0+\Delta p$，浓度变化量不作小扰动限制。参考态满足电中性条件 $p_0-n_0+N_{\mathrm D}^{+}-N_{\mathrm A}^{-}=0$。以 $\mu^{c0}_{ij}=\mu^{c}_{ij}(T_0)$ 和 $D^{c0}_{ij}=D^{c}_{ij}(T_0)$ 表示参考温度下的输运系数，电流密度可分解为
+
+EQ split
+J^{n}_i=J^{n,\mathrm L}_i+J^{n,\mathrm C}_i+\Delta J^{n,\mathrm T}_i,\qquad J^{p}_i=J^{p,\mathrm L}_i+J^{p,\mathrm C}_i+\Delta J^{p,\mathrm T}_i
+/EQ
+
+N 其中，$J^{c,\mathrm L}_i$ 为参考态下的一阶输运电流，$J^{c,\mathrm C}_i$ 为浓度变化与电场耦合产生的非线性漂移电流，$\Delta J^{c,\mathrm T}_i$ 为输运系数随温度变化引起的修正，即
+
+EQ splitterms
+J^{n,\mathrm L}_i=qn_0\mu^{n0}_{ij}E_j+qD^{n0}_{ij}\Delta n_{,j},\qquad J^{p,\mathrm L}_i=qp_0\mu^{p0}_{ij}E_j-qD^{p0}_{ij}\Delta p_{,j}
+J^{n,\mathrm C}_i=q\Delta n\,\mu^{n0}_{ij}E_j,\qquad J^{p,\mathrm C}_i=q\Delta p\,\mu^{p0}_{ij}E_j
+\Delta J^{n,\mathrm T}_i=qn\,\Delta\mu^{n}_{ij}E_j+q\Delta D^{n}_{ij}n_{,j},\qquad \Delta J^{p,\mathrm T}_i=qp\,\Delta\mu^{p}_{ij}E_j-q\Delta D^{p}_{ij}p_{,j}
+/EQ
+
+N 式中，$\Delta\mu^{c}_{ij}=\mu^{c}_{ij}(T)-\mu^{c0}_{ij}$，$\Delta D^{c}_{ij}=D^{c}_{ij}(T)-D^{c0}_{ij}$。将式(@split)代入式(@joule)，焦耳热源相应分解为
+
+EQ qsplit
+Q_{\mathrm J}=Q^{\mathrm L}_{\mathrm J}+Q^{\mathrm C}_{\mathrm J}+Q^{\mathrm T}_{\mathrm J},\qquad Q^{\mathrm L}_{\mathrm J}=E_i\left(J^{n,\mathrm L}_i+J^{p,\mathrm L}_i\right)
+Q^{\mathrm C}_{\mathrm J}=q\left(\Delta n\,\mu^{n0}_{ij}+\Delta p\,\mu^{p0}_{ij}\right)E_iE_j,\qquad Q^{\mathrm T}_{\mathrm J}=E_i\left(\Delta J^{n,\mathrm T}_i+\Delta J^{p,\mathrm T}_i\right)
+/EQ
+
+N 其中，$Q^{\mathrm C}_{\mathrm J}$ 和 $Q^{\mathrm T}_{\mathrm J}$ 分别表征浓度重分布和温变输运对焦耳热的修正。
+
+P 依据式(@split)中保留的项，本文区分三种模型层级，如表1所示。为统一表述，引入无量纲浓度变量 $\eta_c$：N0 和 NT 模型采用指数表示 $c=c_0\exp\eta_c$，LQ 模型采用线性相对扰动 $c=c_0(1+\eta_c)$。LQ 模型只保留一阶输运项，并按三个阶段顺序求解：第一阶段在 $\theta=0$ 且不计焦耳热的条件下求解力、电和载流子场；第二阶段固定上述各场求解温升；第三阶段固定电势、载流子和温度，更新位移以计入热应力。该模型中温度不再反馈至电学场。N0 和 NT 模型进行七场联合求解，二者的区别仅在于输运系数是否随温度变化，因此其差异同时包含迁移率和扩散系数的温度效应。
+
+TABLE 表1　三种模型层级的比较|Table 1　Comparison of the three model levels
+模型|载流子浓度|输运系数|电流密度|焦耳热源|求解方式
+LQ|$c=c_0(1+\eta_c)$|取 $T_0$ 下的值|$J^{c,\mathrm L}_i$|$Q^{\mathrm L}_{\mathrm J}$|三阶段顺序求解
+N0|$c=c_0\exp\eta_c$|取 $T_0$ 下的值|$J^{c,\mathrm L}_i+J^{c,\mathrm C}_i$|$Q^{\mathrm L}_{\mathrm J}+Q^{\mathrm C}_{\mathrm J}$|七场联合求解
+NT|$c=c_0\exp\eta_c$|随 $T$ 变化|$J^{c,\mathrm L}_i+J^{c,\mathrm C}_i+\Delta J^{c,\mathrm T}_i$|$Q_{\mathrm J}$|七场联合求解
+/TABLE
+
+P 将各控制方程分别乘以在相应本质边界上为零的检验函数 $v_i$、$\psi$、$w_n$、$w_p$ 和 $\zeta$，在 $\Omega$ 上积分，应用散度定理、应力对称性及自然边界条件，并利用参考态电中性条件，得到弱形式：求满足本质边界条件的 $(u_i,\varphi,n,p,\theta)$，使对任意容许检验函数有
+
+EQ weak
+\int_{\Omega}\sigma_{ij}v_{i,j}\,\mathrm d\Omega=\int_{\Omega}f_iv_i\,\mathrm d\Omega+\sum_{i}\int_{\Gamma_{t_i}}\bar{t}_iv_i\,\mathrm d\Gamma
+\int_{\Omega}\left[D_i\psi_{,i}+q\left(\Delta p-\Delta n\right)\psi\right]\mathrm d\Omega=\int_{\Gamma_d}\bar{d}\,\psi\,\mathrm d\Gamma
+\int_{\Omega}J^{n}_iw_{n,i}\,\mathrm d\Omega=\int_{\Gamma_{j_n}}\bar{j}_nw_n\,\mathrm d\Gamma,\qquad \int_{\Omega}J^{p}_iw_{p,i}\,\mathrm d\Omega=\int_{\Gamma_{j_p}}\bar{j}_pw_p\,\mathrm d\Gamma
+\int_{\Omega}\left(k_{ij}\theta_{,j}\zeta_{,i}-Q_{\mathrm J}\zeta\right)\mathrm d\Omega=\int_{\Omega}Q_{\mathrm{ext}}\zeta\,\mathrm d\Omega-\int_{\Gamma_h}\bar{h}\,\zeta\,\mathrm d\Gamma
+/EQ
+
+N 式中，$\Delta p-\Delta n=p-n+N_{\mathrm D}^{+}-N_{\mathrm A}^{-}$ 由参考态电中性条件得到。式(@weak)中载流子浓度与电场的乘积、温度相关输运以及焦耳热反馈使离散系统呈现强非线性和非对称耦合；同时，漂移占优时的陡峭浓度梯度以及各场变量量级的差异，进一步增加了稳定离散与迭代收敛的难度。为此，下文将对数浓度插值、SUPG 稳定化与基于一致切线的阻尼 Newton 迭代相结合，在保证浓度正性的同时提高输运离散的稳定性和多场耦合求解的稳健性。
+
+H2 1.4　有限元离散
+
+P 采用二十节点等参六面体（HEX20）单元对式(@weak)进行空间离散。以下以 N0 和 NT 模型的指数浓度表示叙述，LQ 模型将指数关系替换为线性关系即可。为保证载流子浓度为正，以对数浓度为基本未知量：
+
+EQ logvar
+\eta_n=\ln\frac{n}{n_0},\qquad \eta_p=\ln\frac{p}{p_0}
+/EQ
+
+N 其中，$n_0>0$ 和 $p_0>0$ 为参考态浓度；浓度本质边界条件相应写为 $\eta_n=\ln(\bar{n}/n_0)$ 和 $\eta_p=\ln(\bar{p}/p_0)$。每个节点的自由度依次为 $(u_1,u_2,u_3,\varphi,\eta_n,\eta_p,\theta)$，单元共 140 个自由度。单元自由度向量按物理场分组为
+
+EQ dofs
+\boldsymbol{x}^{e}=\left[(\boldsymbol{x}^{e}_{u})^{\mathrm T},(\boldsymbol{x}^{e}_{\varphi})^{\mathrm T},(\boldsymbol{x}^{e}_{n})^{\mathrm T},(\boldsymbol{x}^{e}_{p})^{\mathrm T},(\boldsymbol{x}^{e}_{\theta})^{\mathrm T}\right]^{\mathrm T}
+\boldsymbol{x}^{e}_{u}\in\mathbb{R}^{60},\qquad \boldsymbol{x}^{e}_{\varphi},\ \boldsymbol{x}^{e}_{n},\ \boldsymbol{x}^{e}_{p},\ \boldsymbol{x}^{e}_{\theta}\in\mathbb{R}^{20}
+/EQ
+
+N 其中，$\boldsymbol{x}^{e}_{n}$ 和 $\boldsymbol{x}^{e}_{p}$ 分别由节点对数浓度 $\eta_n$ 和 $\eta_p$ 构成。记 $N_a$ 为第 $a$ 个节点的形函数，定义
+
+EQ shape
+\boldsymbol{N}=\left[N_1,\cdots,N_{20}\right],\qquad \boldsymbol{G}=\left[\nabla N_1,\cdots,\nabla N_{20}\right]
+\boldsymbol{N}_u=\left[N_1\boldsymbol{I}_3,\cdots,N_{20}\boldsymbol{I}_3\right],\qquad \boldsymbol{B}=\left[\boldsymbol{B}_1,\cdots,\boldsymbol{B}_{20}\right]
+/EQ
+
+N 式中，$\boldsymbol{I}_3$ 为三阶单位矩阵，$\boldsymbol{B}$ 为应变矩阵；应变按工程应变排列为 $\boldsymbol{\varepsilon}=[\varepsilon_{11},\varepsilon_{22},\varepsilon_{33},2\varepsilon_{23},2\varepsilon_{13},2\varepsilon_{12}]^{\mathrm T}$，应力向量按与之共轭的顺序排列。单元内各场及其梯度表示为
+
+EQ interp
+\boldsymbol{u}=\boldsymbol{N}_u\boldsymbol{x}^{e}_{u},\qquad \boldsymbol{\varepsilon}=\boldsymbol{B}\boldsymbol{x}^{e}_{u},\qquad \varphi=\boldsymbol{N}\boldsymbol{x}^{e}_{\varphi},\qquad \boldsymbol{E}=-\boldsymbol{G}\boldsymbol{x}^{e}_{\varphi}
+\eta_c=\boldsymbol{N}\boldsymbol{x}^{e}_{c},\qquad \boldsymbol{g}_c=\nabla\eta_c=\boldsymbol{G}\boldsymbol{x}^{e}_{c},\qquad c\in\{n,p\}
+\theta=\boldsymbol{N}\boldsymbol{x}^{e}_{\theta},\qquad T=T_0+\theta,\qquad \nabla T=\boldsymbol{G}\boldsymbol{x}^{e}_{\theta}
+/EQ
+
+P 积分点处的载流子浓度及其梯度由对数变量恢复：
+
+EQ recover
+c=c_0\exp\left(\boldsymbol{N}\boldsymbol{x}^{e}_{c}\right),\qquad \nabla c=c\,\boldsymbol{G}\boldsymbol{x}^{e}_{c},\qquad c\in\{n,p\}
+/EQ
+
+N 该插值对任意有限的节点值均保证 $c>0$，并完整保留浓度变化的非线性。需要指出，浓度正性并不等同于空间精度，后者仍须通过网格和稳定化参数的收敛性检验确认。
+
+P 检验函数采用与试探函数相同的形函数。由式(@weak)，单元残差向量写为内部贡献与外载项之差：
+
+EQ elres
+\boldsymbol{R}^{e}\left(\boldsymbol{x}^{e}\right)=\boldsymbol{P}^{e}\left(\boldsymbol{x}^{e}\right)-\boldsymbol{F}^{e}
+\boldsymbol{P}^{e}=\left[(\boldsymbol{P}^{e}_{u})^{\mathrm T},(\boldsymbol{P}^{e}_{\varphi})^{\mathrm T},(\boldsymbol{P}^{e}_{n})^{\mathrm T},(\boldsymbol{P}^{e}_{p})^{\mathrm T},(\boldsymbol{P}^{e}_{\theta})^{\mathrm T}\right]^{\mathrm T}
+\boldsymbol{F}^{e}=\left[(\boldsymbol{F}^{e}_{u})^{\mathrm T},(\boldsymbol{F}^{e}_{\varphi})^{\mathrm T},(\boldsymbol{F}^{e}_{n})^{\mathrm T},(\boldsymbol{F}^{e}_{p})^{\mathrm T},(\boldsymbol{F}^{e}_{\theta})^{\mathrm T}\right]^{\mathrm T}
+/EQ
+
+P 由插值关系及本构方程，力学项为
+
+EQ mech
+\boldsymbol{P}^{e}_{u}=\int_{\Omega_e}\boldsymbol{B}^{\mathrm T}\left(\boldsymbol{C}\boldsymbol{B}\boldsymbol{x}^{e}_{u}+\boldsymbol{e}^{\mathrm T}\boldsymbol{G}\boldsymbol{x}^{e}_{\varphi}-\boldsymbol{b}\boldsymbol{N}\boldsymbol{x}^{e}_{\theta}\right)\mathrm d\Omega
+\boldsymbol{F}^{e}_{u}=\int_{\Omega_e}\boldsymbol{N}_u^{\mathrm T}\boldsymbol{f}\,\mathrm d\Omega+\int_{\Gamma^{e}_{t}}\boldsymbol{N}_u^{\mathrm T}\bar{\boldsymbol{t}}\,\mathrm d\Gamma
+/EQ
+
+P 电学项为
+
+EQ elec
+\boldsymbol{P}^{e}_{\varphi}=\int_{\Omega_e}\left[\boldsymbol{G}^{\mathrm T}\left(\boldsymbol{e}\boldsymbol{B}\boldsymbol{x}^{e}_{u}-\boldsymbol{\kappa}\boldsymbol{G}\boldsymbol{x}^{e}_{\varphi}+\boldsymbol{\pi}\boldsymbol{N}\boldsymbol{x}^{e}_{\theta}\right)+q\boldsymbol{N}^{\mathrm T}\left(p-n+N_{\mathrm D}^{+}-N_{\mathrm A}^{-}\right)\right]\mathrm d\Omega
+\boldsymbol{F}^{e}_{\varphi}=\int_{\Gamma^{e}_{d}}\boldsymbol{N}^{\mathrm T}\bar{d}\,\mathrm d\Gamma
+/EQ
+
+P 电子与空穴输运项分别为
+
+EQ carrier
+\boldsymbol{P}^{e}_{n}=\int_{\Omega_e}qn\,\boldsymbol{G}^{\mathrm T}\left(-\boldsymbol{\mu}^{n}\boldsymbol{G}\boldsymbol{x}^{e}_{\varphi}+\boldsymbol{D}^{n}\boldsymbol{G}\boldsymbol{x}^{e}_{n}\right)\mathrm d\Omega,\qquad \boldsymbol{F}^{e}_{n}=\int_{\Gamma^{e}_{j_n}}\boldsymbol{N}^{\mathrm T}\bar{j}_n\,\mathrm d\Gamma
+\boldsymbol{P}^{e}_{p}=\int_{\Omega_e}qp\,\boldsymbol{G}^{\mathrm T}\left(-\boldsymbol{\mu}^{p}\boldsymbol{G}\boldsymbol{x}^{e}_{\varphi}-\boldsymbol{D}^{p}\boldsymbol{G}\boldsymbol{x}^{e}_{p}\right)\mathrm d\Omega,\qquad \boldsymbol{F}^{e}_{p}=\int_{\Gamma^{e}_{j_p}}\boldsymbol{N}^{\mathrm T}\bar{j}_p\,\mathrm d\Gamma
+/EQ
+
+P 热学项为
+
+EQ thermal
+\boldsymbol{P}^{e}_{\theta}=\int_{\Omega_e}\left(\boldsymbol{G}^{\mathrm T}\boldsymbol{k}\boldsymbol{G}\boldsymbol{x}^{e}_{\theta}-\boldsymbol{N}^{\mathrm T}Q_{\mathrm J}\right)\mathrm d\Omega
+\boldsymbol{F}^{e}_{\theta}=\int_{\Omega_e}\boldsymbol{N}^{\mathrm T}Q_{\mathrm{ext}}\,\mathrm d\Omega-\int_{\Gamma^{e}_{h}}\boldsymbol{N}^{\mathrm T}\bar{h}\,\mathrm d\Gamma
+/EQ
+
+N 式中，$\boldsymbol{C}$、$\boldsymbol{e}$、$\boldsymbol{\kappa}$、$\boldsymbol{b}$、$\boldsymbol{\pi}$ 和 $\boldsymbol{k}$ 分别为弹性、压电、介电、热应力、热释电及热导系数的矩阵或向量形式；$\boldsymbol{\mu}^{c}$ 和 $\boldsymbol{D}^{c}$ 为迁移率和扩散系数矩阵；$\Gamma^{e}_{b}=\partial\Omega_e\cap\Gamma_b$ 表示单元位于相应自然边界上的部分，面力项按各位移分量的自然边界分别积分。焦耳热源在积分点处按下式计算：
+
+EQ qgauss
+Q_{\mathrm J}=\boldsymbol{E}^{\mathrm T}\left(\boldsymbol{J}^{n}+\boldsymbol{J}^{p}\right)=q\boldsymbol{E}^{\mathrm T}\left[\left(n\boldsymbol{\mu}^{n}+p\boldsymbol{\mu}^{p}\right)\boldsymbol{E}+n\boldsymbol{D}^{n}\boldsymbol{g}_n-p\boldsymbol{D}^{p}\boldsymbol{g}_p\right]
+/EQ
+
+N 载流子浓度和输运系数在各积分点按当前状态更新。单元体积分采用 $3\times3\times3$ Gauss 积分，残差及其一致切线使用相同的积分规则；各单元残差经组装形成整体非线性方程组（见1.6节）。
+
+H2 1.5　载流子输运的 SUPG 稳定化
+
+P 当单元 Péclet 数较大时，标准 Galerkin 离散在漂移占优的载流子输运中易产生非物理振荡。为此采用流线迎风 Petrov–Galerkin（SUPG）方法[[brooks,tezduyar]]，在 Galerkin 残差上附加以强形式残差加权的稳定化项。令 $\boldsymbol{v}_c=\boldsymbol{\mu}^{c}\boldsymbol{E}$，并取 $s_n=1$、$s_p=-1$，则式(@constitutive)中的电流可统一写为 $\boldsymbol{J}^{c}=qc\left(\boldsymbol{v}_c+s_c\boldsymbol{D}^{c}\boldsymbol{g}_c\right)$。载流子方程按 $qc$ 归一化的强形式残差为
+
+EQ strong
+\mathcal{S}_c=\frac{\nabla\cdot\boldsymbol{J}^{c}}{qc}=\boldsymbol{v}_c\cdot\boldsymbol{g}_c+\nabla\cdot\boldsymbol{v}_c
++s_c\left[\boldsymbol{D}^{c}:\nabla\nabla\eta_c+\boldsymbol{g}_c^{\mathrm T}\boldsymbol{D}^{c}\boldsymbol{g}_c+\left(\nabla T\right)^{\mathrm T}\boldsymbol{D}^{c}_{,T}\boldsymbol{g}_c\right]
+/EQ
+
+N 式中，冒号表示双重缩并，$\boldsymbol{D}^{c}_{,T}=\partial\boldsymbol{D}^{c}/\partial T$，$\nabla\cdot\boldsymbol{v}_c=-\boldsymbol{\mu}^{c}:\nabla\nabla\varphi+\left(\boldsymbol{\mu}^{c}_{,T}\boldsymbol{E}\right)\cdot\nabla T$；二阶导数 $\nabla\nabla\eta_c$ 和 $\nabla\nabla\varphi$ 由 HEX20 形函数的二阶导数计算，并计入等参映射的修正项。由于精确解满足 $\mathcal{S}_c=0$，稳定化项不改变原问题的解。对应第 $a$ 个节点的稳定化残差为
+
+EQ supgres
+S^{e}_{c,a}=\int_{\Omega_e}s_cqc\,\tau_c\left(\boldsymbol{v}_c\cdot\nabla N_a\right)\mathcal{S}_c\,\mathrm d\Omega
+/EQ
+
+N 电子的物理漂移速度为 $-\boldsymbol{\mu}^{n}\boldsymbol{E}$，空穴为 $\boldsymbol{\mu}^{p}\boldsymbol{E}$。结合载流子方程 Galerkin 残差的符号约定可以验证，符号因子 $s_c$ 使式(@supgres)对两种载流子均等价于沿各自物理漂移方向的标准 SUPG 加权。
+
+P 以等参映射的 Jacobian 矩阵 $\boldsymbol{J}_g=\partial\boldsymbol{X}/\partial\boldsymbol{\xi}$ 定义单元几何度量 $\boldsymbol{M}=\boldsymbol{J}_g^{-\mathrm T}\boldsymbol{J}_g^{-1}$，并记 $\bar{D}_c=\operatorname{tr}\left(\boldsymbol{D}^{c}\right)/3$。稳定化参数取为
+
+EQ tau
+\tau_c=\frac{a_{\mathrm S}}{\sqrt{\boldsymbol{v}_c^{\mathrm T}\boldsymbol{M}\boldsymbol{v}_c+\left(4\bar{D}_c\gamma_c\right)^{2}}}
+\gamma_c=\operatorname{tr}\left(\boldsymbol{M}\right)\quad\text{或}\quad\gamma_c=\frac{\boldsymbol{v}_c^{\mathrm T}\boldsymbol{M}\boldsymbol{v}_c+\epsilon_c\operatorname{tr}\left(\boldsymbol{M}\right)/3}{\boldsymbol{v}_c^{\mathrm T}\boldsymbol{v}_c+\epsilon_c},\qquad \epsilon_c=10^{-12}\bar{D}_c^{2}\operatorname{tr}\left(\boldsymbol{M}\right)
+/EQ
+
+N 其中，$a_{\mathrm S}$ 为稳定化尺度系数，默认取1；系数4对应二次单元的扩散项尺度。$\gamma_c$ 的第一种形式为各向同性度量；第二种形式为方向度量，按漂移方向取单元尺度，可避免厚度方向的极薄单元在横向边界层中过度削弱沿流线的稳定化，$\epsilon_c$ 保证漂移速度趋于零时 $\gamma_c$ 光滑可微。所用形式与 $a_{\mathrm S}$ 的取值在算例中给出。记 $\boldsymbol{S}^{e}$ 为仅在电子和空穴分量上非零的稳定化残差向量，则稳定化后的单元残差为
+
+EQ supgelem
+\boldsymbol{R}^{e}_{\mathrm S}=\boldsymbol{R}^{e}+\boldsymbol{S}^{e}
+/EQ
+
+P 以 $\delta(\cdot)$ 表示当前状态处沿求解增量的一阶线性化，并记 $a_c=\boldsymbol{v}_c\cdot\nabla N_a$，稳定化残差的一致增量为
+
+EQ supglin
+\delta S^{e}_{c,a}=\int_{\Omega_e}s_cqc\left(\tau_ca_c\mathcal{S}_c\,\delta\eta_c+a_c\mathcal{S}_c\,\delta\tau_c+\tau_c\mathcal{S}_c\,\delta a_c+\tau_ca_c\,\delta\mathcal{S}_c\right)\mathrm d\Omega
+\delta a_c=\left(\delta\boldsymbol{v}_c\right)\cdot\nabla N_a,\qquad \delta\boldsymbol{v}_c=\boldsymbol{\mu}^{c}\delta\boldsymbol{E}+\boldsymbol{\mu}^{c}_{,T}\boldsymbol{E}\,\delta T
+/EQ
+
+N 其中，$\delta\mathcal{S}_c$ 和 $\delta\tau_c$ 分别由式(@strong)和式(@tau)求导得到，计入电势、对数浓度和温度的依赖。因此，稳定化切线完整计入了浓度、漂移速度、强形式残差及稳定化参数对状态的依赖。热方程中的焦耳热源仍按式(@qgauss)由物理电流计算，不附加稳定化修正。
+
+H2 1.6　非线性方程组的求解
+
+P 采用 Newton–Raphson 方法求解离散后的多场耦合方程。记 $\boldsymbol{L}_e$ 为全局自由度到单元自由度的映射，$\boldsymbol{x}^{e}=\boldsymbol{L}_e\boldsymbol{x}$；以 $\boldsymbol{r}^{e}$ 表示实际采用的单元残差，Galerkin 离散取 $\boldsymbol{r}^{e}=\boldsymbol{R}^{e}$，SUPG 离散取 $\boldsymbol{r}^{e}=\boldsymbol{R}^{e}_{\mathrm S}$。
+
+H3 1.6.1　残差与一致切线
+
+P 组装后的非线性方程及其切线矩阵为
+
+EQ global
+\boldsymbol{R}(\boldsymbol{x})=\sum_{e}\boldsymbol{L}_e^{\mathrm T}\boldsymbol{r}^{e}\left(\boldsymbol{L}_e\boldsymbol{x}\right)=\boldsymbol{0}
+\boldsymbol{K}_{\mathrm T}=\frac{\partial\boldsymbol{R}}{\partial\boldsymbol{x}}=\sum_{e}\boldsymbol{L}_e^{\mathrm T}\boldsymbol{k}^{e}_{\mathrm T}\boldsymbol{L}_e,\qquad \boldsymbol{k}^{e}_{\mathrm T}=\frac{\partial\boldsymbol{r}^{e}}{\partial\boldsymbol{x}^{e}}
+/EQ
+
+N 一致切线由单元残差逐项解析求导得到。在对数变量下，电流 $\boldsymbol{J}^{c}$ 的线性化为
+
+EQ jlin
+\delta\boldsymbol{J}^{c}=\boldsymbol{J}^{c}\delta\eta_c+qc\,\boldsymbol{\mu}^{c}\delta\boldsymbol{E}+s_cqc\,\boldsymbol{D}^{c}\nabla\delta\eta_c+qc\left(\boldsymbol{\mu}^{c}_{,T}\boldsymbol{E}+s_c\boldsymbol{D}^{c}_{,T}\boldsymbol{g}_c\right)\delta T
+/EQ
+
+N 式中，由式(@mobility)得 $\boldsymbol{\mu}^{c}_{,T}=-(\beta_c/T)\boldsymbol{\mu}^{c}$，$\boldsymbol{D}^{c}_{,T}=\left[(1-\beta_c)/T\right]\boldsymbol{D}^{c}$；N0 和 LQ 模型中二者为零。相应地，焦耳热源的线性化为
+
+EQ qlin
+\delta Q_{\mathrm J}=\left(\boldsymbol{J}^{n}+\boldsymbol{J}^{p}\right)^{\mathrm T}\delta\boldsymbol{E}+\boldsymbol{E}^{\mathrm T}\left(\delta\boldsymbol{J}^{n}+\delta\boldsymbol{J}^{p}\right)
+/EQ
+
+N 结合热压电本构及空间电荷的导数，即可得到各场切线块。式(@jlin)和式(@qlin)保留了输运系数的温度依赖及焦耳热的交叉导数，整体切线矩阵因而是非对称的；采用 SUPG 时，载流子切线还包含式(@supglin)的贡献。
+
+H3 1.6.2　变量缩放与阻尼更新
+
+P 在第 $k$ 次迭代状态 $\boldsymbol{x}^{(k)}$ 处组装残差和切线，在自由自由度上求解 Newton 方程
+
+EQ newton
+\boldsymbol{K}^{(k)}_{\mathrm T}\Delta\boldsymbol{x}^{(k)}_{\mathrm N}=-\boldsymbol{R}^{(k)},\qquad \boldsymbol{R}^{(k)}=\boldsymbol{R}\left(\boldsymbol{x}^{(k)}\right)
+/EQ
+
+N 本质边界条件直接施加于状态向量，相应自由度的增量为零。由于位移、电势、对数浓度和温升的数值量级相差悬殊，引入变量缩放矩阵 $\boldsymbol{S}_x$ 与行缩放矩阵 $\boldsymbol{S}_r$，将 Newton 方程改写为
+
+EQ scaling
+\left(\boldsymbol{S}_r\right)_{ii}=\max_{j}\left[\left|\left(\boldsymbol{K}_{\mathrm T}\right)_{ij}\right|\left(\boldsymbol{S}_x\right)_{jj}\right]
+\hat{\boldsymbol{K}}=\boldsymbol{S}_r^{-1}\boldsymbol{K}_{\mathrm T}\boldsymbol{S}_x,\qquad \hat{\boldsymbol{R}}=\boldsymbol{S}_r^{-1}\boldsymbol{R}
+\hat{\boldsymbol{K}}\Delta\boldsymbol{z}=-\hat{\boldsymbol{R}},\qquad \Delta\boldsymbol{x}_{\mathrm N}=\boldsymbol{S}_x\Delta\boldsymbol{z}
+/EQ
+
+N 其中，$\boldsymbol{S}_x$ 为对角矩阵，其元素按自由度所属物理场取给定的特征尺度；$\boldsymbol{S}_r$ 使缩放后矩阵每行的最大元素为1。缩放后的线性方程组采用稀疏直接求解器 PARDISO[[pardiso]]求解。
+
+P 记 $\mathcal{F}$ 为自由自由度集合，$N_{\mathcal{F}}$ 为其数目。在同一次迭代的全部线搜索试探中固定行缩放 $\boldsymbol{S}_{r,k}$，定义价值函数
+
+EQ merit
+\Phi_k(\boldsymbol{x})=\frac{1}{2N_{\mathcal{F}}}\sum_{i\in\mathcal{F}}\left[\left(\boldsymbol{S}_{r,k}^{-1}\boldsymbol{R}(\boldsymbol{x})\right)_i\right]^{2}
+/EQ
+
+P 为避免对数浓度单步变化过大，对 Newton 增量中的对数浓度分量逐分量限幅，使 $\left|\Delta\eta_c\right|\le\Delta\eta_{\max}$，本文取 $\Delta\eta_{\max}=1$。逐分量限幅可能使更新方向不再是 $\Phi_k$ 的下降方向，此时改用缩放变量空间中的 Cauchy 方向[[nocedal]]：
+
+EQ cauchy
+\hat{\boldsymbol{g}}=\hat{\boldsymbol{K}}^{\mathrm T}\hat{\boldsymbol{R}},\qquad \alpha_{\mathrm C}=\frac{\hat{\boldsymbol{g}}^{\mathrm T}\hat{\boldsymbol{g}}}{\left(\hat{\boldsymbol{K}}\hat{\boldsymbol{g}}\right)^{\mathrm T}\left(\hat{\boldsymbol{K}}\hat{\boldsymbol{g}}\right)},\qquad \boldsymbol{d}_{\mathrm C}=-\omega\,\alpha_{\mathrm C}\boldsymbol{S}_x\hat{\boldsymbol{g}}
+/EQ
+
+N 式中，$\hat{\boldsymbol{g}}$ 为 $\Phi_k$ 在缩放变量下的梯度方向（仅计自由自由度），$\alpha_{\mathrm C}$ 使线性化模型沿 $-\hat{\boldsymbol{g}}$ 取极小；$\omega=\min\left\{1,\Delta\eta_{\max}/\left\|\Delta\boldsymbol{\eta}\right\|_{\infty}\right\}$ 为整体缩放因子，$\Delta\boldsymbol{\eta}$ 为 $-\alpha_{\mathrm C}\boldsymbol{S}_x\hat{\boldsymbol{g}}$ 的对数浓度分量，整体缩放不改变方向。由此得到更新方向 $\boldsymbol{d}^{(k)}$ 后进行阻尼更新：
+
+EQ damped
+\boldsymbol{x}^{(k+1)}=\boldsymbol{x}^{(k)}+\alpha_k\boldsymbol{d}^{(k)}
+/EQ
+
+P 步长 $\alpha_k$ 由回溯线搜索确定：从 $\alpha=1$ 开始试探，取首个满足 Armijo 充分下降条件[[armijo]]的步长，即
+
+EQ armijo
+\Phi_k\left(\boldsymbol{x}^{(k)}+\alpha\boldsymbol{d}^{(k)}\right)\le\Phi_k\left(\boldsymbol{x}^{(k)}\right)+c_1\alpha m_k
+m_k=\frac{1}{N_{\mathcal{F}}}\sum_{i\in\mathcal{F}}\hat{R}^{(k)}_i\left(\boldsymbol{S}_{r,k}^{-1}\boldsymbol{K}^{(k)}_{\mathrm T}\boldsymbol{d}^{(k)}\right)_i<0
+/EQ
+
+N 其中，$c_1\in(0,1)$ 为充分下降系数，$m_k$ 为 $\Phi_k$ 沿 $\boldsymbol{d}^{(k)}$ 的方向导数。本文取 $c_1=10^{-4}$、回溯因子0.5；若步长减至 $10^{-8}$ 仍不满足式(@armijo)，或修正后的方向仍有 $m_k\ge0$，则判定本次求解失败而不强行更新。各试探状态均重新计算真实残差并满足本质边界条件；接受新状态后，重新组装残差与一致切线。
+
+H3 1.6.3　收敛判据与载荷延续
+
+P 采用自由自由度上的缩放残差与缩放更新量的均方根共同判定收敛：
+
+EQ conv
+e^{(k)}_{R}=\sqrt{\frac{1}{N_{\mathcal{F}}}\sum_{i\in\mathcal{F}}\left[\frac{R^{(k)}_i}{\left(\boldsymbol{S}_{r,k}\right)_{ii}}\right]^{2}},\qquad e^{(k)}_{x}=\sqrt{\frac{1}{N_{\mathcal{F}}}\sum_{i\in\mathcal{F}}\left[\frac{x^{(k)}_i-x^{(k-1)}_i}{\left(\boldsymbol{S}_x\right)_{ii}}\right]^{2}}
+e^{(k)}_{R}\le\varepsilon_R,\qquad e^{(k)}_{x}\le\varepsilon_x
+/EQ
+
+N 其中，$\varepsilon_R$ 和 $\varepsilon_x$ 分别为残差和更新量容差。初始状态（$k=0$）仅检查残差判据，其余迭代须两项判据同时满足。若残差在连续若干次迭代内下降不足，则判为停滞，交由载荷延续过程减小步长。需要强调，Newton 收敛仅表明给定的离散方程已被充分求解，不能替代空间离散精度、独立通量守恒及网格收敛性的检验。
+
+P 对强耦合的高电压工况，直接以目标载荷求解往往难以收敛，因此采用电载荷与热源延续。引入电压因子 $\lambda_V$ 和热源因子 $\lambda_{\mathrm J}$，分别缩放给定电势和焦耳热源：
+
+EQ cont
+\bar{\varphi}^{(\lambda_V)}=\lambda_V\bar{\varphi},\qquad Q^{(\lambda_{\mathrm J})}_{\mathrm J}=\lambda_{\mathrm J}Q_{\mathrm J},\qquad \lambda_V,\ \lambda_{\mathrm J}\in[0,1]
+/EQ
+
+N 延续过程先在 $\lambda_{\mathrm J}=0$ 下将 $\lambda_V$ 由0增至1，再在目标电压下将 $\lambda_{\mathrm J}$ 由0增至1；对高电压工况，也可在 $\lambda_{\mathrm J}=1$ 下从已收敛的较低电压状态出发继续增加电压。各延续步以上一收敛解或其割线外推值为初值，内迭代中 $\lambda_V$ 和 $\lambda_{\mathrm J}$ 保持不变，热源切线同步乘以 $\lambda_{\mathrm J}$。延续步长按 Newton 迭代次数自适应调整：收敛较快时增大步长；求解失败时回退至上一收敛状态并减半步长。仅 $\lambda_V=\lambda_{\mathrm J}=1$ 时的收敛解作为目标工况的结果，中间状态不作为物理结果使用。
+
+REFS
+REF yang|Yang J S. Analysis of Piezoelectric Semiconductor Structures[M]. Cham: Springer, 2020.
+REF kong|Kong D J, He Z Z, Liu C B, Zhang C L. Analysis of multi-field coupling behaviors of sandwich piezoelectric semiconductor beams under thermal loadings[J]. Applied Mathematics and Mechanics (English Edition), 2025, 46(8): 1571-1590.
+REF selberherr|Selberherr S. Analysis and Simulation of Semiconductor Devices[M]. Wien: Springer-Verlag, 1984.
+REF zhao|Zhao M H, Yan X Y, Wang B B, Zhang Q Y. Finite element formulation for piezoelectric semiconductor plates[J]. Materials Today Communications, 2022, 30: 103098.
+REF brooks|Brooks A N, Hughes T J R. Streamline upwind/Petrov-Galerkin formulations for convection dominated flows with particular emphasis on the incompressible Navier-Stokes equations[J]. Computer Methods in Applied Mechanics and Engineering, 1982, 32(1-3): 199-259.
+REF tezduyar|Tezduyar T E, Osawa Y. Finite element stabilization parameters computed from element matrices and vectors[J]. Computer Methods in Applied Mechanics and Engineering, 2000, 190(3-4): 411-430.
+REF pardiso|Schenk O, Gärtner K. Solving unsymmetric sparse systems of linear equations with PARDISO[J]. Future Generation Computer Systems, 2004, 20(3): 475-487.
+REF nocedal|Nocedal J, Wright S J. Numerical Optimization[M]. 2nd ed. New York: Springer, 2006.
+REF armijo|Armijo L. Minimization of functions having Lipschitz continuous first partial derivatives[J]. Pacific Journal of Mathematics, 1966, 16(1): 1-3.
